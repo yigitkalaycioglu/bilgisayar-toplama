@@ -4,3 +4,5 @@ __pycache__/
 .DS_Store
 Thumbs.db
 node_modules/
+scraper/auto_update.log
+scraper/auto_update.lock

@@ -33,7 +33,10 @@ python scraper/build_data.py            # data/*.json dosyalarını üretir
 
 - Yalnızca epey.com `robots.txt`'nin izin verdiği sayfalar (kategori liste sayfaları ve ürün sayfaları) okunur; istekler arasında bekleme vardır ve sunucu yavaşlama isterse (HTTP 429) otomatik olarak beklenir.
 - Fiyatı olan (satışta) ürünler alınır. Teknik özellikler `scraper/cache/` altında saklandığı için sonraki çalışmalarda yalnızca fiyatlar ve yeni ürünler indirilir (ilk tam tarama ~2 saat, sonrakiler ~10-15 dakika).
-- **Otomatik güncelleme:** `.github/workflows/update-data.yml` her gün 06:17'de (TSİ) çalışır. Fiyatları tazeler, epey'e yeni eklenen ürünleri siteye ekler, satıştan kalkanları çıkarır ve sonucu commit'ler; GitHub Pages siteyi kendiliğinden yeniden yayınlar. Actions sekmesinden "Run workflow" ile elle de başlatılabilir.
+- **Otomatik güncelleme:** epey.com, GitHub Actions gibi veri merkezi sunucularından gelen istekleri engellediği (HTTP 403) için güncelleme sahibinin kendi bilgisayarında çalışır. `scraper/auto_update.py` her gün Windows Görev Zamanlayıcı ile çalışıp fiyatları tazeler, epey'e yeni eklenen ürünleri siteye ekler, satıştan kalkanları çıkarır ve sonucu GitHub'a gönderir; GitHub Pages siteyi kendiliğinden yeniden yayınlar. Bilgisayar o saatte kapalıysa açıldığında çalışır.
+  - Kurulum: `powershell -ExecutionPolicy Bypass -File scraper\install_task.ps1` (varsayılan saat 10:00, `-At 08:30` ile değiştirilebilir)
+  - Kaldırma: `Unregister-ScheduledTask -TaskName "PC Toplama - epey veri guncelleme" -Confirm:$false`
+  - Günlük: `scraper/auto_update.log`
 - Bir kategorinin listesi yarıda kesilirse ya da ürün sayısı şüpheli biçimde düşerse o kategorinin önceki verisi korunur.
 
 ## Yerelde çalıştırma
