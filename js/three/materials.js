@@ -29,18 +29,106 @@ export const isLight = (hex) => {
   return c.r * 0.3 + c.g * 0.59 + c.b * 0.11 > 0.55;
 };
 
+// ---- prosedürel normal haritaları (yükseklik alanından Sobel türevi) ----
+function prng(seed) { let s = seed >>> 0; return () => ((s = (s * 1664525 + 1013904223) >>> 0) / 4294967296); }
+function normalFromHeight(key, size, heightFn, strength) {
+  if (texCache.has(key)) return texCache.get(key);
+  const hgt = new Float32Array(size * size);
+  heightFn(hgt, size);
+  const c = document.createElement('canvas');
+  c.width = c.height = size;
+  const g = c.getContext('2d');
+  const img = g.createImageData(size, size);
+  const at = (x, y) => hgt[((y + size) % size) * size + ((x + size) % size)];
+  for (let y = 0; y < size; y++) {
+    for (let x = 0; x < size; x++) {
+      const dx = (at(x + 1, y) - at(x - 1, y)) * strength;
+      const dy = (at(x, y + 1) - at(x, y - 1)) * strength;
+      const l = Math.hypot(dx, dy, 1);
+      const i = (y * size + x) * 4;
+      img.data[i] = (-dx / l * 0.5 + 0.5) * 255;
+      img.data[i + 1] = (dy / l * 0.5 + 0.5) * 255;
+      img.data[i + 2] = (1 / l * 0.5 + 0.5) * 255;
+      img.data[i + 3] = 255;
+    }
+  }
+  g.putImageData(img, 0, 0);
+  const t = new THREE.CanvasTexture(c);
+  t.wrapS = t.wrapT = THREE.RepeatWrapping;
+  t.anisotropy = 4;
+  texCache.set(key, t);
+  return t;
+}
+// değer gürültüsü (yumuşak, döşenebilir)
+function valueNoise(hgt, size, cells, amp, rnd) {
+  const grid = Array.from({ length: cells * cells }, () => rnd());
+  const v = (i, j) => grid[((j % cells) + cells) % cells * cells + ((i % cells) + cells) % cells];
+  for (let y = 0; y < size; y++) {
+    for (let x = 0; x < size; x++) {
+      const fx = (x / size) * cells, fy = (y / size) * cells;
+      const i = Math.floor(fx), j = Math.floor(fy);
+      let tx = fx - i, ty = fy - j;
+      tx = tx * tx * (3 - 2 * tx); ty = ty * ty * (3 - 2 * ty);
+      const a = v(i, j) + (v(i + 1, j) - v(i, j)) * tx;
+      const b = v(i, j + 1) + (v(i + 1, j + 1) - v(i, j + 1)) * tx;
+      hgt[y * size + x] += (a + (b - a) * ty) * amp;
+    }
+  }
+}
+// fırçalanmış metal: yatay ince çizgiler
+export const brushedNormal = () => normalFromHeight('n:brushed', 256, (h, n) => {
+  const rnd = prng(11);
+  for (let y = 0; y < n; y++) {
+    let run = rnd();
+    for (let x = 0; x < n; x++) {
+      run += (rnd() - 0.5) * 0.08;
+      h[y * n + x] = run * 0.6 + rnd() * 0.08;
+    }
+  }
+  // satırlar arası keskin farklar çizgi hissi verir; x yönünde yumuşat
+  const tmp = new Float32Array(h);
+  for (let y = 0; y < n; y++) for (let x = 0; x < n; x++) {
+    let acc = 0;
+    for (let k = -6; k <= 6; k++) acc += tmp[y * n + ((x + k + n) % n)];
+    h[y * n + x] = acc / 13;
+  }
+}, 2.2);
+// toz boya / portakal kabuğu: yumuşak küçük tümsekler
+export const powderNormal = () => normalFromHeight('n:powder', 256, (h, n) => {
+  const rnd = prng(23);
+  valueNoise(h, n, 64, 1.0, rnd);
+  valueNoise(h, n, 128, 0.5, rnd);
+}, 1.4);
+// plastik mikro doku
+export const grainNormal = () => normalFromHeight('n:grain', 256, (h, n) => {
+  const rnd = prng(37);
+  valueNoise(h, n, 128, 1.0, rnd);
+  for (let i = 0; i < h.length; i++) h[i] += rnd() * 0.25;
+}, 0.9);
+
+const withNormal = (m, tex, scale, rep = 3) => {
+  m.normalMap = tex;
+  m.normalScale.set(scale, scale);
+  if (rep !== 3) { const c = tex.clone(); c.repeat.set(rep, rep); c.needsUpdate = true; c.userData.clone = true; m.normalMap = c; }
+  else tex.repeat.set(3, 3);
+  return m;
+};
+
 // ---- temel malzemeler (her çağrıda yeni örnek: parça bazlı vurgulama için) ----
 export const M = {
-  painted: (color, rough = 0.55) => new THREE.MeshStandardMaterial({ color, metalness: 0.25, roughness: rough }),
-  metal: (color = 0xb9bec7, rough = 0.32) => new THREE.MeshStandardMaterial({ color, metalness: 1, roughness: rough }),
-  plastic: (color = 0x15171b, rough = 0.62) => new THREE.MeshStandardMaterial({ color, metalness: 0.05, roughness: rough }),
-  rubber: (color = 0x0c0d10) => new THREE.MeshStandardMaterial({ color, metalness: 0, roughness: 0.9 }),
-  gold: () => new THREE.MeshStandardMaterial({ color: 0xd8b25a, metalness: 1, roughness: 0.28 }),
-  copper: () => new THREE.MeshStandardMaterial({ color: 0xc27a4a, metalness: 1, roughness: 0.3 }),
-  nickel: () => new THREE.MeshStandardMaterial({ color: 0xd2d5da, metalness: 1, roughness: 0.18 }),
-  glass: (tint = 0x1a2633) => new THREE.MeshPhysicalMaterial({
-    color: tint, metalness: 0, roughness: 0.22, transparent: true, opacity: 0.1,
-    envMapIntensity: 0.3, specularIntensity: 0.18, side: THREE.DoubleSide, depthWrite: false,
+  // boyalı/toz boyalı metal: yüzey dielektriktir (boya), hafif cila katmanı yumuşak parlaklık verir
+  painted: (color, rough = 0.55) => withNormal(new THREE.MeshPhysicalMaterial({ color, metalness: 0.0, roughness: rough, clearcoat: 0.22, clearcoatRoughness: 0.5 }), powderNormal(), 0.18),
+  // fırçalanmış alüminyum (anizotropik yansıma)
+  metal: (color = 0xb9bec7, rough = 0.32) => withNormal(new THREE.MeshPhysicalMaterial({ color, metalness: 1, roughness: rough, anisotropy: 0.55 }), brushedNormal(), 0.22),
+  plastic: (color = 0x15171b, rough = 0.62) => withNormal(new THREE.MeshStandardMaterial({ color, metalness: 0.0, roughness: rough }), grainNormal(), 0.12),
+  rubber: (color = 0x0c0d10) => withNormal(new THREE.MeshStandardMaterial({ color, metalness: 0, roughness: 0.88 }), grainNormal(), 0.25),
+  gold: () => new THREE.MeshStandardMaterial({ color: 0xd8b25a, metalness: 1, roughness: 0.26 }),
+  copper: () => new THREE.MeshStandardMaterial({ color: 0xc27a4a, metalness: 1, roughness: 0.24 }),
+  nickel: () => new THREE.MeshStandardMaterial({ color: 0xd2d5da, metalness: 1, roughness: 0.16 }),
+  // füme temperli cam
+  glass: (tint = 0x080b10) => new THREE.MeshPhysicalMaterial({
+    color: tint, metalness: 0, roughness: 0.18, transparent: true, opacity: 0.2,
+    envMapIntensity: 0.25, specularIntensity: 0.12, side: THREE.DoubleSide, depthWrite: false,
   }),
   emissive: (color, intensity = 2) => {
     const m = new THREE.MeshStandardMaterial({ color: 0x050505, emissive: color, emissiveIntensity: intensity, roughness: 0.4 });

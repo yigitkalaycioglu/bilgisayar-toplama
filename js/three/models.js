@@ -11,8 +11,13 @@ import {
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const r1 = (v) => Math.round(v * 10) / 10;
 
+// Kutu: 2,5 mm'den kalın parçalarda kenarlar pahlanır (gerçek ürünler gibi ışığı kenarda yakalar)
 function box(w, h, d, mat, x = 0, y = 0, z = 0) {
-  const m = new THREE.Mesh(cachedGeo(`b${r1(w)}|${r1(h)}|${r1(d)}`, () => new THREE.BoxGeometry(w, h, d)), mat);
+  const mn = Math.min(w, h, d);
+  const geo = mn >= 2.5
+    ? cachedGeo(`bb${r1(w)}|${r1(h)}|${r1(d)}`, () => new RoundedBoxGeometry(w, h, d, 2, Math.min(1.6, mn * 0.18)))
+    : cachedGeo(`b${r1(w)}|${r1(h)}|${r1(d)}`, () => new THREE.BoxGeometry(w, h, d));
+  const m = new THREE.Mesh(geo, mat);
   m.position.set(x, y, z);
   return m;
 }
@@ -835,9 +840,11 @@ export function makeRamStick(x) {
 export function makeGPU(x) {
   const g = new THREE.Group();
   g.name = 'gpu';
-  const L = clamp(x.len || 280, 150, 380);
-  const Hc = clamp(x.ht || 125, 100, 175);
-  const T = clamp(x.th || 50, 20, 90);
+  const cool = x.cool || 'fan';                 // fan | passive | liquid | block
+  const lp = !!x.lp;                            // düşük profil (yarım braket)
+  const L = clamp(x.len || (lp ? 170 : 280), 140, 380);
+  const Hc = clamp(x.ht || (lp ? 68 : 125), 60, 175);
+  const T = clamp(x.th || (cool === 'block' ? 22 : 50), 18, 90);
   const col = colorOf(x.col, 0x1c1f24);
   const light = isLight(col);
   const shroud = M.painted(col, light ? 0.4 : 0.46);
@@ -845,83 +852,146 @@ export function makeGPU(x) {
   const accent = x.mk === 'NVIDIA' ? 0x76b900 : x.mk === 'AMD' ? 0xed1c24 : x.mk === 'Intel' ? 0x0071c5 : 0x7c6cff;
   const plateT = 8; // fan tarafındaki kapak kalınlığı
 
-  // PCB + altın uçlar
-  g.add(box(L - 10, 1.6, Hc - 8, M.plastic(0x101a14, 0.6), 4 + (L - 10) / 2, 0, (Hc - 8) / 2));
+  // PCB + altın uçlar + görünen bileşenler
+  const pcbMat = M.plastic(0x101a14, 0.6);
+  g.add(box(L - 10, 1.6, Hc - 8, pcbMat, 4 + (L - 10) / 2, 0, (Hc - 8) / 2));
   g.add(box(80, 1.7, 6, M.gold(), 48 + 40, 0, -3));
-  // arka plaka (+y)
-  g.add(rbox(L - 6, 2.4, Hc - 6, 1, M.metal(light ? 0xe2e4e8 : 0x22252b, 0.45), 3 + (L - 6) / 2, 2.1, (Hc - 6) / 2 + 2));
-  const bpLbl = labelTexture([{ text: (x.br || '').toUpperCase(), size: 0.7, spacing: 6 }], { w: 512, h: 96, bg: null, fg: light ? '#61666f' : '#b8bdc6', align: 'center' });
-  const bpText = plane(Math.min(120, L * 0.45), 22, new THREE.MeshStandardMaterial({ map: bpLbl, transparent: true }), L * 0.55, 3.4, Hc * 0.5);
-  bpText.rotation.x = -Math.PI / 2;
-  g.add(bpText);
 
-  // soğutucu kanatçık bloğu (yan yüzlerde dikey kanatçık görünümü)
-  const finT = Math.max(6, T - plateT - 3);
-  const finSide = new THREE.MeshStandardMaterial({ color: 0xffffff, map: cloneTex(finVTexture, (L - 12) / 18, 1), metalness: 0.6, roughness: 0.45 });
-  const finEnd = M.metal(0x2c3036, 0.5);
-  const fins = new THREE.Mesh(cachedGeo(`gpufin${r1(L)}|${r1(finT)}|${r1(Hc)}`, () => new THREE.BoxGeometry(L - 12, finT, Hc - 6)), [finEnd, finEnd, finEnd, finEnd, finSide, finSide]);
-  fins.position.set(L / 2, -1.5 - finT / 2, (Hc - 6) / 2 + 2);
-  g.add(fins);
-
-  // fan tarafı kapak: fan delikli tek parça
-  const nf = clamp(x.fans || (L > 280 ? 3 : 2), 1, 3);
-  const fsz = Math.min(Hc - 18, (L - 24) / nf - 6, 102);
-  const centers = Array.from({ length: nf }, (_, i) => 12 + (L - 24) * ((i + 0.5) / nf));
-  const plateGeo = cachedGeo(`gpuplate${r1(L)}|${r1(Hc)}|${nf}|${r1(fsz)}`, () => {
-    const r = 6, z0 = 0, z1 = Hc + 3;
-    const sh = new THREE.Shape();
-    sh.moveTo(r, z0); sh.lineTo(L - r, z0); sh.quadraticCurveTo(L, z0, L, z0 + r);
-    sh.lineTo(L, z1 - r); sh.quadraticCurveTo(L, z1, L - r, z1);
-    sh.lineTo(r, z1); sh.quadraticCurveTo(0, z1, 0, z1 - r);
-    sh.lineTo(0, z0 + r); sh.quadraticCurveTo(0, z0, r, z0);
-    for (const cx of centers) {
-      const hole = new THREE.Path();
-      hole.absarc(cx, (z0 + z1) / 2, fsz / 2 + 1.5, 0, Math.PI * 2, true);
-      sh.holes.push(hole);
-    }
-    const geo = new THREE.ExtrudeGeometry(sh, { depth: plateT, bevelEnabled: true, bevelThickness: 1, bevelSize: 1, bevelSegments: 2, curveSegments: 40 });
-    geo.rotateX(Math.PI / 2);
-    return geo;
-  });
-  const plate = new THREE.Mesh(plateGeo, shroud);
-  plate.position.set(0, -T + plateT + 1, -0.5);
-  g.add(plate);
-  const fans = [];
-  for (const cx of centers) {
-    const fan = makeFan(fsz, { blade: light ? 0xe9ebee : 0x1d2025, thickness: 11, speed: 0.8, frameless: true });
-    fan.rotation.x = Math.PI / 2;
-    fan.position.set(cx, -T + plateT / 2 + 1, Hc / 2 + 1);
-    g.add(fan);
-    fans.push(fan);
-    const ring = new THREE.Mesh(cachedGeo(`gpuring${r1(fsz)}`, () => new THREE.TorusGeometry(fsz / 2 + 1.5, 1.1, 6, 48)), x.rgb ? rgbMaterial(1, 2.4) : shroud2);
-    ring.rotation.x = Math.PI / 2;
-    ring.position.set(cx, -T + 1, Hc / 2 + 1);
-    g.add(ring);
+  // arka plaka (+y): metal, plastik ya da yok (yoksa PCB üzerindeki bileşenler görünür)
+  const bp = x.bp || 'metal';
+  if (bp === 'metal' || bp === 'plastic') {
+    const bpMat = bp === 'metal' ? M.metal(light ? 0xe2e4e8 : 0x22252b, 0.42) : M.plastic(light ? 0xe6e8ec : 0x15171b, 0.55);
+    g.add(rbox(L - 6, 2.4, Hc - 6, 1, bpMat, 3 + (L - 6) / 2, 2.1, (Hc - 6) / 2 + 2));
+    // akış delikli arka plaka ucu (uzun kartlarda)
+    if (L > 250 && bp === 'metal') g.add(box(L * 0.18, 0.6, Hc * 0.6, M.plastic(0x050506, 0.7), L - L * 0.13, 3.4, Hc * 0.5));
+    const bpLbl = labelTexture([{ text: (x.br || '').toUpperCase(), size: 0.7, spacing: 6 }], { w: 512, h: 96, bg: null, fg: light ? '#61666f' : '#b8bdc6', align: 'center' });
+    const bpText = plane(Math.min(120, L * 0.45), 22, new THREE.MeshStandardMaterial({ map: bpLbl, transparent: true }), L * 0.5, 3.4, Hc * 0.5);
+    bpText.rotation.x = -Math.PI / 2;
+    g.add(bpText);
+  } else {
+    const chip = M.plastic(0x16181b, 0.45);
+    for (let i = 0; i < Math.floor((L - 60) / 26); i++) g.add(box(12, 1.2, 12, chip, 40 + i * 26, 1.4, Hc * 0.62));
+    for (let i = 0; i < 6; i++) g.add(cyl(3, 4, M.metal(0x8a8f98, 0.35), 12, 30 + i * 12, 3, Hc * 0.25));
   }
-  // uç kapağı
-  g.add(rbox(10, T - 1, Hc + 3, 3, shroud, L - 5, -T / 2 + 0.5, (Hc + 3) / 2 - 0.5));
+
+  const fans = [];
+  const tubePorts = [];
+  if (cool === 'block') {
+    // su bloğu: ince akrilik/metal blok, iki rakor; fan yok
+    const blockMat = new THREE.MeshPhysicalMaterial({ color: 0x0d1016, metalness: 0.2, roughness: 0.12, clearcoat: 1, clearcoatRoughness: 0.08 });
+    g.add(rbox(L - 8, T - 6, Hc - 4, 4, blockMat, L / 2, -T / 2 - 1, Hc / 2 + 1));
+    g.add(rbox(L * 0.55, 2, Hc * 0.55, 2, M.metal(0xb9bec7, 0.25), L * 0.45, -T + 3, Hc * 0.5));
+    for (const dz of [-14, 14]) {
+      const fit = cyl(6, 12, M.nickel(), 20, L * 0.78, -T / 2, Hc + 4 + 0 * dz);
+      fit.rotation.x = Math.PI / 2;
+      fit.position.x += dz;
+      g.add(fit);
+    }
+  } else {
+    // soğutucu kanatçık bloğu (yan yüzlerde dikey kanatçık görünümü)
+    const finT = cool === 'passive' ? T - 3 : Math.max(6, T - plateT - 3);
+    const finSide = new THREE.MeshStandardMaterial({ color: 0xffffff, map: cloneTex(finVTexture, (L - 12) / 18, 1), metalness: 0.6, roughness: 0.45 });
+    const finEnd = M.metal(0x2c3036, 0.5);
+    const fins = new THREE.Mesh(cachedGeo(`gpufin${r1(L)}|${r1(finT)}|${r1(Hc)}`, () => new THREE.BoxGeometry(L - 12, finT, Hc - 6)), [finEnd, finEnd, finEnd, finEnd, finSide, finSide]);
+    fins.position.set(L / 2, -1.5 - finT / 2, (Hc - 6) / 2 + 2);
+    g.add(fins);
+    if (cool === 'passive') {
+      // pasif: açık alüminyum kanatçıklar, alt yüzde de kanatçık dokusu
+      const under = new THREE.MeshStandardMaterial({ color: 0xc9cdd3, map: cloneTex(finVTexture, (L - 12) / 18, 1), metalness: 0.8, roughness: 0.4 });
+      const bottom = plane(L - 12, Hc - 6, under, L / 2, -T + 1.4, (Hc - 6) / 2 + 2);
+      bottom.rotation.x = Math.PI / 2;
+      g.add(bottom);
+    }
+  }
+
+  if (cool === 'fan' || cool === 'liquid') {
+    // fan tarafı kapak; sıvı soğutmalı kartlarda fan deliği yok (hortumlar radyatöre gider)
+    const nf = cool === 'liquid' ? 0 : clamp(x.fans || (L > 280 ? 3 : 2), 1, 3);
+    const fsz = nf ? Math.min(Hc - 18, (L - 24) / nf - 6, 102) : 0;
+    const centers = Array.from({ length: nf }, (_, i) => 12 + (L - 24) * ((i + 0.5) / nf));
+    const plateGeo = cachedGeo(`gpuplate${r1(L)}|${r1(Hc)}|${nf}|${r1(fsz)}`, () => {
+      const r = 6, z0 = 0, z1 = Hc + 3;
+      const sh = new THREE.Shape();
+      sh.moveTo(r, z0); sh.lineTo(L - r, z0); sh.quadraticCurveTo(L, z0, L, z0 + r);
+      sh.lineTo(L, z1 - r); sh.quadraticCurveTo(L, z1, L - r, z1);
+      sh.lineTo(r, z1); sh.quadraticCurveTo(0, z1, 0, z1 - r);
+      sh.lineTo(0, z0 + r); sh.quadraticCurveTo(0, z0, r, z0);
+      for (const cx of centers) {
+        const hole = new THREE.Path();
+        hole.absarc(cx, (z0 + z1) / 2, fsz / 2 + 1.5, 0, Math.PI * 2, true);
+        sh.holes.push(hole);
+      }
+      const geo = new THREE.ExtrudeGeometry(sh, { depth: plateT, bevelEnabled: true, bevelThickness: 1, bevelSize: 1, bevelSegments: 2, curveSegments: 40 });
+      geo.rotateX(Math.PI / 2);
+      return geo;
+    });
+    const plate = new THREE.Mesh(plateGeo, shroud);
+    plate.position.set(0, -T + plateT + 1, -0.5);
+    g.add(plate);
+    for (const cx of centers) {
+      const fan = makeFan(fsz, { blade: light ? 0xe9ebee : 0x1d2025, thickness: 11, speed: 0.8, frameless: true });
+      fan.rotation.x = Math.PI / 2;
+      fan.position.set(cx, -T + plateT / 2 + 1, Hc / 2 + 1);
+      g.add(fan);
+      fans.push(fan);
+      const ring = new THREE.Mesh(cachedGeo(`gpuring${r1(fsz)}`, () => new THREE.TorusGeometry(fsz / 2 + 1.5, 1.1, 6, 48)), x.rgb ? rgbMaterial(1, 2.4) : shroud2);
+      ring.rotation.x = Math.PI / 2;
+      ring.position.set(cx, -T + 1, Hc / 2 + 1);
+      g.add(ring);
+    }
+    if (cool === 'liquid') {
+      // hibrit: fansız kapak üzerinde havalandırma çizgileri; hortumlar kartın ön ucundan çıkar
+      for (let i = 0; i < 5; i++) g.add(box(L * 0.5, 0.8, 2.4, M.plastic(0x050506, 0.6), L * 0.45, -T - 0.2, Hc * 0.3 + i * Hc * 0.1));
+      const fitMat = M.metal(0x2a2d33, 0.35);
+      for (const dz of [Hc * 0.38, Hc * 0.62]) {
+        const fit = cyl(5.5, 12, fitMat, 16, L + 4, -T / 2, dz);
+        fit.rotation.z = Math.PI / 2;
+        g.add(fit);
+        tubePorts.push(new THREE.Vector3(L + 10, -T / 2, dz));
+      }
+    }
+    // uç kapağı
+    g.add(rbox(10, T - 1, Hc + 3, 3, shroud, L - 5, -T / 2 + 0.5, (Hc + 3) / 2 - 0.5));
+  }
 
   // cam tarafı (+z) yan kapak: logo, vurgu çizgisi, RGB
-  const coverH = Math.max(12, Math.min(T * 0.42, 26));
-  const coverY = -T + plateT + 1 + coverH / 2 - 2;
-  const coverL = L * 0.74;
-  g.add(rbox(coverL, coverH, 3.2, 1.2, shroud, L * 0.52, coverY, Hc + 2.6));
-  const chipTxt = (x.chip || x.n || '').replace(/^GeForce\s*/i, 'GEFORCE ').toUpperCase();
-  const sideTex = labelTexture([{ text: chipTxt, size: 0.62, spacing: 3 }], { w: 1024, h: 96, bg: null, fg: light ? '#3d424b' : '#e2e6ec' });
-  g.add(plane(Math.min(coverL * 0.55, 180), Math.min(coverH * 0.55, 12), new THREE.MeshStandardMaterial({ map: sideTex, transparent: true }), L * 0.42, coverY + 1, Hc + 4.25));
-  g.add(box(coverL * 0.92, 1.3, 0.6, M.painted(accent, 0.4), L * 0.52, coverY - coverH / 2 + 2.2, Hc + 4.3));
-  if (x.rgb) g.add(rbox(coverL * 0.86, 2.2, 1.2, 0.5, rgbMaterial(1.4, 2.8), L * 0.52, coverY + coverH / 2 - 1.6, Hc + 4.3));
+  if (cool !== 'passive') {
+    const coverH = Math.max(10, Math.min(T * 0.42, 26));
+    const coverY = -T + (cool === 'block' ? 4 : plateT + 1) + coverH / 2 - 2;
+    const coverL = L * 0.74;
+    g.add(rbox(coverL, coverH, 3.2, 1.2, shroud, L * 0.52, coverY, Hc + 2.6));
+    const chipTxt = (x.chip || x.n || '').replace(/^GeForce\s*/i, 'GEFORCE ').toUpperCase();
+    const sideTex = labelTexture([{ text: chipTxt, size: 0.62, spacing: 3 }], { w: 1024, h: 96, bg: null, fg: light ? '#3d424b' : '#e2e6ec' });
+    g.add(plane(Math.min(coverL * 0.55, 180), Math.min(coverH * 0.55, 12), new THREE.MeshStandardMaterial({ map: sideTex, transparent: true }), L * 0.42, coverY + 1, Hc + 4.25));
+    g.add(box(coverL * 0.92, 1.3, 0.6, M.painted(accent, 0.4), L * 0.52, coverY - coverH / 2 + 2.2, Hc + 4.3));
+    if (x.rgb) g.add(rbox(coverL * 0.86, 2.2, 1.2, 0.5, rgbMaterial(1.4, 2.8), L * 0.52, coverY + coverH / 2 - 1.6, Hc + 4.3));
+  }
 
-  // braket
+  // braket: düşük profil kartta yarım boy; portlar (DP/HDMI) dış yüzde
   const br = M.metal(0x9ea3ab, 0.35);
-  g.add(box(1.2, Math.max(T + 6, 22), 121, br, -1, -T / 2 + 6, 121 / 2 - 8));
-  g.add(box(14, Math.max(T + 6, 22), 1.2, br, 6, -T / 2 + 6, 114));
-  // güç soketi (üst kenar)
-  const is16 = /16|12V/i.test(x.conn || '');
-  const pcount = is16 ? 1 : Math.min(3, Number(((x.conn || '').match(/(\d)\s*[xX×]/) || [0, 1])[1]) || 1);
-  for (let i = 0; i < pcount; i++) g.add(box(is16 ? 18 : 20, 8, 7, M.plastic(0x0d0e10), L * 0.62 + i * 22, -4, Hc + 1.5));
+  const brH = lp ? 79 : 121;
+  const brW = Math.max(T + 6, 22);
+  g.add(box(1.2, brW, brH, br, -1, -T / 2 + 6, brH / 2 - 8));
+  g.add(box(14, brW, 1.2, br, 6, -T / 2 + 6, brH - 7));
+  const portMat = M.plastic(0x050506, 0.7);
+  const ports = [...Array(clamp(x.dp ?? 3, 0, 4)).fill('dp'), ...Array(clamp(x.hdmi ?? 1, 0, 2)).fill('hdmi')];
+  ports.slice(0, lp ? 3 : 6).forEach((t, i) => {
+    g.add(box(1, t === 'dp' ? 5 : 4.5, t === 'dp' ? 16 : 14, portMat, -1.8, -6, 6 + i * 19));
+  });
+
+  // güç soketleri (üst kenar): 8/6 pin ya da 12V-2x6 (16 pin); "pinsiz" kartlarda yok
+  const pw = x.pw || (/pinsiz/i.test(x.conn || '') ? [] : /16|12V/i.test(x.conn || '') ? ['16'] : ['8']);
+  let px = L * 0.6;
+  for (const p of pw.slice(0, 3)) {
+    const w = p === '16' ? 18 : p === '6' ? 15 : 20;
+    g.add(box(w, 8, 7, M.plastic(0x0d0e10, 0.6), px, -4, Hc + 1.5));
+    px += w + 3;
+  }
+
   g.userData.fans = fans;
   g.userData.dims = { L, H: Hc, T };
+  g.userData.liquid = cool === 'liquid';
+  g.userData.ports = tubePorts;
   return shadowize(g);
 }
 

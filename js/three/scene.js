@@ -1,6 +1,6 @@
 // 3D sahne: parçaları seçimlere göre ekler/çıkarır, yerleştirir ve canlandırır.
 import * as THREE from '../../vendor/three.bundle.js';
-import { OrbitControls, RoomEnvironment, EffectComposer, RenderPass, UnrealBloomPass, OutputPass } from '../../vendor/three.bundle.js';
+import { OrbitControls, RoomEnvironment, EffectComposer, RenderPass, UnrealBloomPass, OutputPass, GTAOPass, HDRLoader } from '../../vendor/three.bundle.js';
 import { floorTexture, tickRgb, setRgbEnabled, disposeObject, rgbActive, M } from './materials.js';
 import {
   makeCase, makeMotherboard, makeGhostBoard, makeBenchStand, boardLayout, makeCPU, makeAirCooler,
@@ -50,19 +50,21 @@ export class PCScene {
 
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
     renderer.setPixelRatio(Math.min(devicePixelRatio, this.coarse ? 1.5 : 2));
+    // ürün fotoğrafçılığına uygun, renkleri koruyan ton eşleme
     renderer.toneMapping = THREE.NeutralToneMapping;
-    renderer.toneMappingExposure = 0.95;
+    renderer.toneMappingExposure = 1.05;
     renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFShadowMap;
+    renderer.shadowMap.type = THREE.PCFShadowMap; // r186: radius ile yumuşak (Vogel disk) gölge
     this.renderer = renderer;
 
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x0b0d12);
-    const pmrem = new THREE.PMREMGenerator(renderer);
-    scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+    // HDRI yüklenene kadar sentetik oda ortamı
+    this.pmrem = new THREE.PMREMGenerator(renderer);
+    scene.environment = this.pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
     scene.environmentIntensity = 0.85;
-    pmrem.dispose();
     this.scene = scene;
+    this._loadEnvironment('assets/env/studio_small_09_512.hdr');
 
     const camera = new THREE.PerspectiveCamera(34, 1, 10, 20000);
     camera.position.copy(DEFAULT_DIR.clone().multiplyScalar(1500).add(V(0, 260, 0)));
@@ -79,26 +81,24 @@ export class PCScene {
     controls.addEventListener('start', () => { this.userMovedCamera = true; this.camTween = null; });
     this.controls = controls;
 
-    // ışıklar
-    scene.add(new THREE.HemisphereLight(0xdfe7ff, 0x1a1d24, 0.6));
-    const key = new THREE.DirectionalLight(0xffffff, 1.9);
+    // ışıklar: aydınlatmanın çoğu stüdyo HDRI'ından gelir; anahtar ışık yumuşak gölge verir
+    this.hemi = new THREE.HemisphereLight(0xdfe7ff, 0x1a1d24, 0.15);
+    scene.add(this.hemi);
+    const key = new THREE.DirectionalLight(0xfff6ec, 2.2);
     key.position.set(650, 1150, 950);
     key.castShadow = true;
-    key.shadow.mapSize.set(this.coarse ? 1024 : 2048, this.coarse ? 1024 : 2048);
+    const sm = this.coarse ? 1024 : 2048;
+    key.shadow.mapSize.set(sm, sm);
     Object.assign(key.shadow.camera, { left: -700, right: 700, top: 700, bottom: -700, near: 200, far: 3500 });
-    key.shadow.bias = -0.0004;
-    key.shadow.normalBias = 0.8;
-    key.shadow.radius = 4;
+    key.shadow.bias = -0.0003;
+    key.shadow.normalBias = 0.5;
+    key.shadow.radius = 5;
     scene.add(key);
     this.keyLight = key;
-    const rim = new THREE.DirectionalLight(0x8fb0ff, 0.9);
+    const rim = new THREE.DirectionalLight(0x9db8ff, 0.5);
     rim.position.set(-900, 600, -800);
     scene.add(rim);
-    // kasanın içini cam taraftan aydınlatan gölgesiz dolgu ışıkları
-    const side = new THREE.DirectionalLight(0xe8eeff, 0.9);
-    side.position.set(250, 420, 1300);
-    scene.add(side);
-    this.fill = new THREE.PointLight(0xffffff, 1.4, 700, 0);
+    this.fill = new THREE.PointLight(0xffffff, 1.0, 700, 0);
     this.fill.position.set(0, 260, 40);
     scene.add(this.fill);
     this.rgbLights = [new THREE.PointLight(0xff00ff, 0, 520, 0), new THREE.PointLight(0x00ffff, 0, 520, 0)];
@@ -109,10 +109,12 @@ export class PCScene {
     floor.rotation.x = -Math.PI / 2;
     floor.position.y = -0.6;
     floor.renderOrder = -1;
+    floor.userData.noAO = true;
     scene.add(floor);
-    const shadowCatcher = new THREE.Mesh(new THREE.PlaneGeometry(3200, 3200), new THREE.ShadowMaterial({ opacity: 0.42 }));
+    const shadowCatcher = new THREE.Mesh(new THREE.PlaneGeometry(3200, 3200), new THREE.ShadowMaterial({ opacity: 0.5 }));
     shadowCatcher.rotation.x = -Math.PI / 2;
     shadowCatcher.receiveShadow = true;
+    shadowCatcher.userData.noAO = true;
     scene.add(shadowCatcher);
 
     this.root = new THREE.Group();
@@ -122,24 +124,9 @@ export class PCScene {
     this.root.add(this.anchor);
     this.tubes = [];
 
-    // son işlem: bloom (dokunmatik/zayıf cihazlarda kapalı)
+    // son işlem: MSAA + ortam kapanması (GTAO) + RGB parlaması (dokunmatik/zayıf cihazlarda kapalı)
     this.bloom = !this.coarse;
-    if (this.bloom) {
-      this.composer = new EffectComposer(renderer);
-      this.composer.addPass(new RenderPass(scene, camera));
-      this.bloomPass = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.5, 0.4, 2.5);
-      // Yalnızca doygun renkli parlak pikseller (RGB aydınlatma) parlasın; ışığın beyaz
-      // yansımaları (cam, metal) "güneş" gibi parlamasın
-      const hp = this.bloomPass.materialHighPassFilter;
-      hp.fragmentShader = hp.fragmentShader.replace(
-        'float v = luminance( texel.xyz );',
-        'float mx = max( texel.r, max( texel.g, texel.b ) ); float mn = min( texel.r, min( texel.g, texel.b ) );' +
-        ' float v = mx * smoothstep( 0.35, 0.7, ( mx - mn ) / max( mx, 1e-4 ) );',
-      );
-      hp.needsUpdate = true;
-      this.composer.addPass(this.bloomPass);
-      this.composer.addPass(new OutputPass());
-    }
+    if (this.bloom) this._buildComposer();
 
     this.raycaster = new THREE.Raycaster();
     this.pointer = new THREE.Vector2();
@@ -157,6 +144,61 @@ export class PCScene {
     this.io.observe(host);
     renderer.setAnimationLoop(() => this._frame());
     onReady && requestAnimationFrame(onReady);
+  }
+
+  // ------------------------------------------------------------ ortam ve son işlem
+  _loadEnvironment(url) {
+    new HDRLoader().load(url, (tex) => {
+      tex.mapping = THREE.EquirectangularReflectionMapping;
+      const env = this.pmrem.fromEquirectangular(tex).texture;
+      tex.dispose();
+      const old = this.scene.environment;
+      this.scene.environment = env;
+      this.scene.environmentIntensity = 0.7;
+      this.scene.environmentRotation.set(0, Math.PI * 0.35, 0);
+      if (old && old !== env) old.dispose();
+    }, undefined, () => { /* HDRI yüklenemezse oda ortamı kalır */ });
+  }
+
+  _buildComposer() {
+    const r = this.renderer;
+    const rt = new THREE.WebGLRenderTarget(1, 1, { type: THREE.HalfFloatType, samples: 4 });
+    this.composer = new EffectComposer(r, rt);
+    this.composer.addPass(new RenderPass(this.scene, this.camera));
+
+    const gtao = new GTAOPass(this.scene, this.camera, 1, 1);
+    gtao.updateGtaoMaterial({ radius: 34, distanceExponent: 1.6, thickness: 10, scale: 1.15, samples: 16, distanceFallOff: 1 });
+    gtao.updatePdMaterial({ lumaPhi: 10, depthPhi: 2, normalPhi: 3, radius: 6, rings: 2, samples: 12 });
+    gtao.blendIntensity = 0.9;
+    // cam, delikli paneller ve zemin AO'yu bozmasın: normal/derinlik geçişinde gizlenir
+    const baseOverride = gtao._overrideVisibility.bind(gtao);
+    gtao._overrideVisibility = function () {
+      baseOverride();
+      const cache = this._visibilityCache;
+      this.scene.traverse((o) => {
+        if (!o.visible || !(o.isMesh || o.isInstancedMesh)) return;
+        const m = o.material;
+        if (o.userData.noAO || (m && (m.transparent || m.alphaTest > 0))) { o.visible = false; cache.push(o); }
+      });
+    };
+    // AO yarım çözünürlükte hesaplanır (performans)
+    const baseSize = gtao.setSize.bind(gtao);
+    gtao.setSize = (w, h) => baseSize(Math.max(1, Math.ceil(w * 0.5)), Math.max(1, Math.ceil(h * 0.5)));
+    this.gtaoPass = gtao;
+    this.composer.addPass(gtao);
+
+    this.bloomPass = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.5, 0.4, 2.5);
+    // Yalnızca doygun renkli parlak pikseller (RGB aydınlatma) parlasın; ışığın beyaz
+    // yansımaları (cam, metal) "güneş" gibi parlamasın
+    const hp = this.bloomPass.materialHighPassFilter;
+    hp.fragmentShader = hp.fragmentShader.replace(
+      'float v = luminance( texel.xyz );',
+      'float mx = max( texel.r, max( texel.g, texel.b ) ); float mn = min( texel.r, min( texel.g, texel.b ) );' +
+      ' float v = mx * smoothstep( 0.35, 0.7, ( mx - mn ) / max( mx, 1e-4 ) );',
+    );
+    hp.needsUpdate = true;
+    this.composer.addPass(this.bloomPass);
+    this.composer.addPass(new OutputPass());
   }
 
   // ------------------------------------------------------------ dışa açık ayarlar
@@ -374,7 +416,7 @@ export class PCScene {
     if (CL) {
       this.fill.position.set(0, CL.H * 0.55, CL.mainZ + 40);
       this.fill.distance = Math.max(CL.H, CL.D) * 1.4;
-      this.fill.intensity = 2.1;
+      this.fill.intensity = 1.1;
       this.rgbLights[0].position.set(CL.xF - 60, CL.H * 0.62, CL.mainZ);
       this.rgbLights[1].position.set(CL.boardRearX + s.u + 30, CL.boardTopY - s.v, CL.mainZ + 30);
     } else {
@@ -670,10 +712,16 @@ export class PCScene {
         const ts = this.frameTimes.slice(Math.floor(this.frameTimes.length / 3));
         const fps = (ts.length - 1) / ((ts[ts.length - 1] - ts[0]) / 1000);
         if (fps < 28) {
-          this.bloom = false;
-          this.composer = null;
-          this.renderer.setPixelRatio(Math.min(devicePixelRatio, 1.25));
-          this._resize();
+          if (this.gtaoPass && this.gtaoPass.enabled && fps >= 18) {
+            this.gtaoPass.enabled = false;      // önce en pahalı adım
+            this.perfChecked = false;           // tekrar ölç
+            this.perfStart = null;
+          } else {
+            this.bloom = false;
+            this.composer = null;
+            this.renderer.setPixelRatio(Math.min(devicePixelRatio, 1.25));
+            this._resize();
+          }
         }
         this.frameTimes = [];
       }

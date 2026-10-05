@@ -152,11 +152,22 @@ COLOR_NORMAL = {"siyah": "Siyah", "beyaz": "Beyaz", "gri": "Gri", "gümüş": "G
                 "bej": "Bej", "şeffaf": "Şeffaf", "ahşap": "Ahşap"}
 
 
-def color_of(sp, *labels):
-    v = first(sp, *labels)
-    if not v:
+def color_of(sp, *labels, name=""):
+    vals = []
+    for l in labels:
+        vals = allv(sp, l)
+        if vals:
+            break
+    if not vals:
         return None
-    return COLOR_NORMAL.get(v.strip().lower(), v.strip())
+    norm = [COLOR_NORMAL.get(v.strip().lower(), v.strip()) for v in vals]
+    if len(norm) > 1:
+        # "Beyaz | Siyah" gibi seçeneklerde: adı beyaz diyorsa beyaz, yoksa siyah varsayılır
+        if is_white_name(name) and "Beyaz" in norm:
+            return "Beyaz"
+        if "Siyah" in norm:
+            return "Siyah"
+    return norm[0]
 
 
 WHITE_HINT = re.compile(r"\b(white|beyaz|ice|glacial|snow|frost|arctic white|w)\b", re.I)
@@ -208,6 +219,14 @@ def norm_cpu(sp, row):
     }
 
 
+def cover_flag(sp, part):
+    """Pasif/fanlı soğutma kapsamında parça varsa 1, kapsam bilgisi var ama parça yoksa 0, bilgi yoksa None."""
+    cov = " | ".join(allv(sp, "Pasif Soğutma Kapsamı") + allv(sp, "Fan Soğutma Kapsamı"))
+    if not cov:
+        return None
+    return 1 if part in cov else 0
+
+
 def norm_mobo(sp, row):
     sock = norm_socket(first(sp, "İşlemci Soketi"))
     if not sock:
@@ -247,6 +266,9 @@ def norm_mobo(sp, row):
         "h": within(mm(first(sp, "Boy")), 140, 360),
         "rgb": yes(sp, "Aydınlatma"),
         "white": 1 if is_white_name(row["name"]) else 0,
+        "hsVRM": cover_flag(sp, "VRM"),
+        "hsM2": cover_flag(sp, "M.2"),
+        "lcd": yes(sp, "Ekran"),
     }
 
 
@@ -267,7 +289,18 @@ def norm_gpu(sp, row):
     if not chip:
         return None
     fans = intnum(first(sp, "Fan Sayısı"))
-    cool = first(sp, "Soğutma Tipi")
+    cool_raw = (first(sp, "Soğutma Tipi") or "").lower()
+    cool = ("liquid" if "sıvı soğutmalı" in cool_raw else "block" if "destekli" in cool_raw
+            else "passive" if "pasif" in cool_raw else "fan")
+    tech = " | ".join(allv(sp, "Donanım Teknolojileri"))
+    lp = 1 if re.search(r"düşük profil|\blp\b|low profile", tech + " " + row["name"], re.I) else 0
+    bp_raw = (first(sp, "Arka Plaka Tipi") or "").lower()
+    if bp_raw:
+        bp = "plastic" if "plast" in bp_raw else "metal"
+    else:
+        bp = "metal" if yes(sp, "Arka Plaka") else ("none" if first(sp, "Arka Plaka") == "Yok" else None)
+    conn_raw = first(sp, "Güç Bağlantısı") or ""
+    pw = [] if "pinsiz" in conn_raw.lower() else re.findall(r"\d+", conn_raw)
     return {
         "br": brand_of(row["name"]),
         "mk": gpu_maker(sp, row["name"]),
@@ -284,8 +317,14 @@ def norm_gpu(sp, row):
         "th": within(mm(first(sp, "Genişlik")), 15, 100),
         "fans": fans,
         "cool": cool,
+        "lp": lp,
+        "bp": bp,
+        "pw": pw,
+        "dp": intnum(first(sp, "Display Port Çıkışı")),
+        "hdmi": intnum(first(sp, "HDMI Çıkışı")),
+        "rgbT": first(sp, "Aydınlatma Tipi"),
         "rgb": yes(sp, "Aydınlatma"),
-        "col": color_of(sp, "Renk", "Renk Seçenekleri"),
+        "col": color_of(sp, "Renk", "Renk Seçenekleri", name=row["name"]),
         "pm": intnum(first(sp, "PassMark Puanı")),
         "yr": intnum(first(sp, "GPU Çıkış Yılı")),
     }
@@ -329,7 +368,7 @@ def norm_ram(sp, row):
         "cl": intnum(first(sp, "CL (Tepkime Süresi)")),
         "rgb": 1 if yes(sp, "Işıklandırma") and re.search(r"rgb", first(sp, "Işıklandırma Özelliği") or "rgb", re.I) else 0,
         "hs": yes(sp, "Soğutucu"),
-        "col": color_of(sp, "Renk Seçenekleri", "Renk"),
+        "col": color_of(sp, "Renk Seçenekleri", "Renk", name=row["name"]),
         "ht": within(mm(first(sp, "Yükseklik")), 25, 70),
     }
 
@@ -345,7 +384,9 @@ def norm_storage(sp, row):
     frame = first(sp, "Çerçeve Boyutu") or ""
     if re.search(r"usb|thunderbolt", iface) or re.search(r"usb", bus, re.I):
         return None
-    if "HDD" in cls or "hdd" in dtype.lower():
+    if re.search(r"msata", frame, re.I):
+        return None
+    if "HDD" in cls or "SSHD" in cls or "hdd" in dtype.lower():
         kind = "hdd"
     elif "m.2" in iface or "m.2" in frame.lower():
         kind = "nvme" if ("nvme" in proto or "pcie" in bus.lower()) else "m2sata"
@@ -383,7 +424,7 @@ def norm_storage(sp, row):
         "bus": bus_std,
         "hs": yes(sp, "Soğutucu"),
         "rpm": rpm,
-        "col": color_of(sp, "Renk Seçenekleri", "Renk"),
+        "col": color_of(sp, "Renk Seçenekleri", "Renk", name=row["name"]),
     }
 
 
@@ -427,7 +468,8 @@ def norm_psu(sp, row):
         "ff": ff,
         "dw": within(dw, 90, 220), "dh": within(dh, 40, 130), "dd": within(dd, 90, 260),
         "fan": mm(first(sp, "Fan Boyutu")),
-        "col": color_of(sp, "Renk Seçenekleri", "Renk"),
+        "rgb": yes(sp, "Aydınlatma"),
+        "col": color_of(sp, "Renk Seçenekleri", "Renk", name=row["name"]),
     }
 
 
@@ -471,7 +513,9 @@ def norm_case(sp, row):
         "w": within(mm(first(sp, "Genişlik")), 120, 500),
         "h": within(mm(first(sp, "Yükseklik")), 150, 800),
         "d": within(mm(first(sp, "Derinlik")), 150, 800),
-        "col": color_of(sp, "Renk", "Renk Seçenekleri"),
+        "col": color_of(sp, "Renk", "Renk Seçenekleri", name=row["name"]),
+        "strip": 1 if any("Kasa" in v for v in allv(sp, "Aydınlatma Tipi")) else 0,
+        "dglass": 1 if re.search(r"çift temperli cam", " | ".join(allv(sp, "Diğer Özellikler")), re.I) else 0,
         "b25": intnum(first(sp, "Disk Yuvası (2.5)")),
         "b35": intnum(first(sp, "Disk Yuvası (3.5)")),
         "rgb": yes(sp, "Aydınlatma"),
@@ -486,8 +530,8 @@ def norm_cooler(sp, row):
             if s and s not in socks:
                 socks.append(s)
     ctype = (first(sp, "Soğutma Türü") or "").lower()
-    kind = "aio" if ("sıvı" in ctype or first(sp, "Radyatör Boyutu")) else "air"
     tower = first(sp, "Soğutucu Tipi")
+    kind = "aio" if ("sıvı" in ctype or first(sp, "Radyatör Boyutu")) else "stock" if "stok" in (tower or "").lower() else "air"
     if kind == "aio" and tower in ("Kapalı Devre",):
         tower = "Kapalı devre"
     fans = intnum(first(sp, "Fan Sayısı"))
@@ -497,7 +541,8 @@ def norm_cooler(sp, row):
         "kind": kind,
         "socks": socks,
         "tower": tower,
-        "ht": within(ht, 25, 200) if kind == "air" else None,
+        "ht": within(ht, 25, 200) if kind != "aio" else None,
+        "pipes": intnum(first(sp, "Isı Borusu Sayısı")),
         "rad": intnum(first(sp, "Radyatör Boyutu")) if kind == "aio" else None,
         "radl": mm(first(sp, "Radyatör Uzunluğu")) if kind == "aio" else None,
         "radt": mm(first(sp, "Radyatör Yüksekliği")) if kind == "aio" else None,
@@ -505,7 +550,7 @@ def norm_cooler(sp, row):
         "fsz": mm(first(sp, "Fan Boyutu (Büyük)", "Fan Boyutu")),
         "tdp": intnum(first(sp, "Isı Yayma Kapasitesi (TDP)")),
         "rgb": yes(sp, "Aydınlatma"),
-        "col": color_of(sp, "Renk Seçenekleri", "Renk"),
+        "col": color_of(sp, "Renk Seçenekleri", "Renk", name=row["name"]),
         "len": mm(first(sp, "Uzunluk")),
         "wid": mm(first(sp, "Genişlik")),
         "lcd": yes(sp, "Ekran"),

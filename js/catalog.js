@@ -49,7 +49,9 @@ export const fmtNum = (v) => nf0.format(v);
 export const fmtCap = (gb) => (gb >= 1000 ? `${+(gb / 1000).toFixed(gb % 1000 ? 1 : 0)} TB` : `${gb} GB`);
 
 const STORAGE_KIND = { nvme: 'NVMe SSD', m2sata: 'M.2 SATA SSD', ssd: 'SATA SSD', hdd: 'HDD' };
-const COOLER_KIND = { air: 'Hava soğutma', aio: 'Sıvı soğutma' };
+const COOLER_KIND = { air: 'Hava soğutma', stock: 'Stok tip hava soğutma', aio: 'Sıvı soğutma' };
+export const GPU_COOL = { fan: 'Fanlı', liquid: 'Sıvı soğutmalı (hibrit)', block: 'Su bloğu (özel döngü)', passive: 'Pasif (fansız)' };
+const GPU_BP = { metal: 'Metal', plastic: 'Plastik', none: 'Yok' };
 export const storageKindLabel = (k) => STORAGE_KIND[k] || 'Depolama';
 
 // Her kategori için: listede gösterilecek kısa özellikler (chips) ve tek satırlık özet.
@@ -75,6 +77,8 @@ export const SPECS = {
   gpu: (x) => [
     x.chip && { t: x.chip, hl: true },
     x.vram && `${x.vram} GB ${x.vt || ''}`.trim(),
+    x.cool && x.cool !== 'fan' ? { t: GPU_COOL[x.cool], hl: true } : null,
+    x.lp ? 'Düşük profil' : null,
     x.len && `${x.len} mm`,
     x.tdp && `${x.tdp} W`,
     x.rec && `Önerilen PSU ${x.rec} W`,
@@ -113,7 +117,7 @@ export const SPECS = {
   cooler: (x) => [
     { t: COOLER_KIND[x.kind] || 'Soğutucu', hl: true },
     x.kind === 'aio' && x.rad ? `${x.rad} mm radyatör` : null,
-    x.kind === 'air' && x.ht ? `${x.ht} mm yükseklik` : null,
+    x.kind !== 'aio' && x.ht ? `${x.ht} mm yükseklik` : null,
     x.tower,
     x.tdp && `${x.tdp} W TDP`,
     x.rgb ? 'RGB' : null,
@@ -164,6 +168,8 @@ export const FACETS = {
     { id: 'chip', label: 'Grafik işlemcisi', get: (x) => x.chip },
     { id: 'br', label: 'Marka', get: (x) => x.br },
     { id: 'vram', label: 'Bellek', get: (x) => x.vram && `${x.vram} GB`, sort: 'num' },
+    { id: 'cool', label: 'Soğutma', get: (x) => GPU_COOL[x.cool || 'fan'] },
+    { id: 'lp', label: 'Düşük profil', get: (x) => (x.lp ? 'Evet' : 'Hayır') },
   ],
   ram: [
     { id: 'mt', label: 'Bellek türü', get: (x) => x.mt },
@@ -219,13 +225,16 @@ export const DETAILS = {
     ['Soket', x.sock], ['Yonga seti', x.chip], ['Form faktörü', x.ff], ['Bellek', x.mem && `${x.mem}, ${x.slots || '?'} yuva`],
     ['Azami bellek', u(x.mmax, 'GB')], ['Bellek hızı (OC)', u(x.mspd, 'MT/s')], ['M.2 yuvası', x.m2], ['SATA', x.sata],
     ['PCIe x16', x.x16 && `${x.x16} adet${x.pcie ? ' (PCIe ' + x.pcie + ')' : ''}`], ['Wi-Fi', x.wifi || 'Yok'],
-    ['Bluetooth', yn(x.bt)], ['Ölçüler', x.w && x.h ? `${x.w} × ${x.h} mm` : null],
+    ['Bluetooth', yn(x.bt)], ['VRM soğutucusu', yn(x.hsVRM)], ['M.2 soğutucusu', yn(x.hsM2)],
+    ['Ölçüler', x.w && x.h ? `${x.w} × ${x.h} mm` : null],
   ],
   gpu: (x) => [
     ['Grafik işlemcisi', x.chip], ['Üretici', x.mk], ['Bellek', x.vram && `${x.vram} GB ${x.vt || ''}`.trim()],
     ['Artırılmış frekans', u(x.boost, 'MHz')], ['Kart gücü', u(x.tdp, 'W')], ['Önerilen PSU', u(x.rec, 'W')],
     ['Güç bağlantısı', x.conn], ['Uzunluk / yükseklik / kalınlık', x.len && `${x.len} / ${x.ht || '—'} / ${x.th || '—'} mm`],
-    ['Fan', x.fans], ['RGB', yn(x.rgb)], ['Renk', x.col], ['PassMark', x.pm && fmtNum(x.pm)], ['Çıkış yılı', x.yr],
+    ['Soğutma', x.cool && GPU_COOL[x.cool]], ['Fan', x.fans], ['Düşük profil', x.lp ? 'Evet' : null], ['Arka plaka', GPU_BP[x.bp]],
+    ['Görüntü çıkışları', x.dp != null || x.hdmi != null ? [x.dp && `${x.dp} × DisplayPort`, x.hdmi && `${x.hdmi} × HDMI`].filter(Boolean).join(', ') || null : null],
+    ['Aydınlatma', x.rgb ? x.rgbT || 'Var' : yn(x.rgb)], ['Renk', x.col], ['PassMark', x.pm && fmtNum(x.pm)], ['Çıkış yılı', x.yr],
   ],
   ram: (x) => [
     ['Tür', x.mt], ['Kapasite', u(x.cap, 'GB')], ['Modül', x.mods && `${x.mods} × ${x.per} GB`], ['Hız', u(x.spd, 'MT/s')],
@@ -247,11 +256,11 @@ export const DETAILS = {
     ['Radyatör desteği', x.rad ? Object.entries(x.rad).map(([k, v]) => `${RAD_NAMES[k] || k} ${Math.max(...v)}`).join(', ') + ' mm' : null],
     ['Dahili fan', x.fans != null ? (x.fans ? `${x.fans}${x.fsz ? ' × ' + x.fsz + ' mm' : ''}${x.frgb ? ' (ışıklı)' : ''}` : 'Yok') : null],
     ['Güç kaynağı', x.psu ? `Dahil${x.psuw ? ' (' + x.psuw + ' W)' : ''}` : 'Dahil değil'], ['PSU konumu', x.pos],
-    ['Cam panel', yn(x.glass)], ['Disk yuvası (2.5" / 3.5")', x.b25 != null || x.b35 != null ? `${x.b25 ?? '—'} / ${x.b35 ?? '—'}` : null],
+    ['Cam panel', x.glass ? (x.dglass ? 'Ön ve yan (çift cam)' : 'Var') : yn(x.glass)], ['Kasa aydınlatması', x.strip ? 'LED şerit' : null], ['Disk yuvası (2.5" / 3.5")', x.b25 != null || x.b35 != null ? `${x.b25 ?? '—'} / ${x.b35 ?? '—'}` : null],
     ['Ölçüler (G × Y × D)', x.w && x.h && x.d ? `${x.w} × ${x.h} × ${x.d} mm` : null], ['Renk', x.col],
   ],
   cooler: (x) => [
-    ['Tür', x.kind === 'aio' ? 'Sıvı soğutma' : 'Hava soğutma'], ['Yapı', x.tower], ['Radyatör', u(x.rad, 'mm')],
+    ['Tür', COOLER_KIND[x.kind]], ['Yapı', x.tower], ['Radyatör', u(x.rad, 'mm')], ['Isı borusu', x.pipes],
     ['Yükseklik', u(x.ht, 'mm')], ['Fan', x.fans && `${x.fans}${x.fsz ? ' × ' + x.fsz + ' mm' : ''}`], ['TDP', u(x.tdp, 'W')],
     ['Soketler', x.socks && x.socks.join(', ')], ['RGB', yn(x.rgb)], ['Ekran', x.lcd ? 'Var' : null], ['Renk', x.col],
   ],
