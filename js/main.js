@@ -615,10 +615,14 @@ async function init() {
   meta = await loadMeta();
   if (meta) {
     const total = Object.values(meta.counts || {}).reduce((a, b) => a + b, 0);
-    const d = meta.built ? new Date(meta.built) : null;
-    $('#data-meta').innerHTML = `Veriler: <b>epey.com</b> · ${fmtNum(total)} ürün${d ? ` · ${d.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })} güncellemesi` : ''}`;
+    const fmt = (d) => d.toLocaleString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
+    const times = Object.values(meta.updated || {}).map((s) => new Date(s)).filter((d) => !Number.isNaN(+d));
+    const newest = times.length ? new Date(Math.max(...times)) : meta.built ? new Date(meta.built) : null;
+    $('#data-meta').innerHTML = `${fmtNum(total)} ürün${newest ? ` · fiyatlar <b>${fmt(newest)}</b> itibarıyla` : ''}`;
+    $('#data-meta').title = Object.entries(meta.updated || {})
+      .map(([k, v]) => `${CAT[k] ? CAT[k].label : k}: ${fmt(new Date(v))}`).join('\n');
   } else {
-    $('#data-meta').textContent = 'Veriler yüklenemedi';
+    $('#data-meta').textContent = 'Ürün verileri yüklenemedi';
   }
   await restore();
   renderBuilder();
