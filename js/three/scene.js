@@ -22,7 +22,7 @@ const CAT_LABEL = {
 
 const V = (x = 0, y = 0, z = 0) => new THREE.Vector3(x, y, z);
 const easeInOut = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
-const DEFAULT_DIR = V(0.62, 0.38, 1).normalize();
+const DEFAULT_DIR = V(0.55, 0.36, 1).normalize();
 
 // RAM modüllerinin dolduracağı yuvalar (işlemciye yakın taraftan A1, A2, B1, B2…)
 function ramSlotOrder(nSlots, n) {
@@ -369,7 +369,7 @@ export class PCScene {
     if (CL) {
       this.fill.position.set(0, CL.H * 0.55, CL.mainZ + 40);
       this.fill.distance = Math.max(CL.H, CL.D) * 1.4;
-      this.fill.intensity = 1.4;
+      this.fill.intensity = 2.1;
       this.rgbLights[0].position.set(CL.xF - 60, CL.H * 0.62, CL.mainZ);
       this.rgbLights[1].position.set(CL.boardRearX + s.u + 30, CL.boardTopY - s.v, CL.mainZ + 30);
     } else {

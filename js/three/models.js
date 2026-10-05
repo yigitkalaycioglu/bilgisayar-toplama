@@ -4,7 +4,7 @@
 import * as THREE from '../../vendor/three.bundle.js';
 import { RoundedBoxGeometry, mergeGeometries } from '../../vendor/three.bundle.js';
 import {
-  M, rgbMaterial, pcbTexture, meshAlpha, finTexture, grillTexture, labelTexture,
+  M, rgbMaterial, pcbTexture, meshAlpha, finTexture, finVTexture, grillTexture, labelTexture,
   colorOf, isLight, cachedGeo, cloneTex,
 } from './materials.js';
 
@@ -48,9 +48,10 @@ const accentOf = (brand, fallback = 0x7c6cff) => BRAND_ACCENT[brand] ?? fallback
 // =====================================================================
 // FAN — ekseni yerel z
 // =====================================================================
-export function makeFan(size = 120, { frame = 0x15171b, blade = 0x22252b, rgb = false, thickness = 25, speed = 1 } = {}) {
+export function makeFan(size = 120, { frame = 0x15171b, blade = 0x22252b, rgb = false, thickness = 25, speed = 1, frameless = false } = {}) {
   const g = new THREE.Group();
   const s = size / 2;
+  if (frameless) return makeRotorOnly(g, size, thickness, blade, speed);
   const frameGeo = cachedGeo(`fanframe${size}|${thickness}`, () => {
     const r = size * 0.09;
     const shape = new THREE.Shape();
@@ -73,23 +74,7 @@ export function makeFan(size = 120, { frame = 0x15171b, blade = 0x22252b, rgb = 
   const hub = cyl(size * 0.17, thickness * 0.72, hubMat, 32);
   hub.rotation.x = Math.PI / 2;
   rotor.add(hub);
-  const bladesGeo = cachedGeo(`blades${size}`, () => {
-    const rh = size * 0.15, rt = size * 0.455;
-    const sh = new THREE.Shape();
-    sh.moveTo(rh, -size * 0.06);
-    sh.quadraticCurveTo((rh + rt) / 2, -size * 0.14, rt, -size * 0.07);
-    sh.quadraticCurveTo(rt + size * 0.012, size * 0.05, rt - size * 0.03, size * 0.12);
-    sh.quadraticCurveTo((rh + rt) / 2, size * 0.05, rh, size * 0.07);
-    sh.closePath();
-    const one = new THREE.ExtrudeGeometry(sh, { depth: 1.1, bevelEnabled: false, curveSegments: 8 });
-    one.translate(0, 0, -0.55);
-    one.rotateX(0.5);
-    const n = 9, parts = [];
-    for (let k = 0; k < n; k++) parts.push(one.clone().rotateZ((k * Math.PI * 2) / n));
-    const merged = mergeGeometries(parts);
-    one.dispose(); parts.forEach((p) => p.dispose());
-    return merged;
-  });
+  const bladesGeo = bladesGeometry(size);
   const bladeMat = rgb
     ? new THREE.MeshStandardMaterial({ color: 0xf2f2f2, roughness: 0.35, transparent: true, opacity: 0.55 })
     : M.plastic(blade, 0.5);
@@ -123,6 +108,39 @@ export function makeFan(size = 120, { frame = 0x15171b, blade = 0x22252b, rgb = 
     cap.rotation.x = Math.PI / 2;
     rotor.add(cap);
   }
+  g.userData.rotor = rotor;
+  return g;
+}
+
+function bladesGeometry(size) {
+  return cachedGeo(`blades${size}`, () => {
+    const rh = size * 0.15, rt = size * 0.455;
+    const sh = new THREE.Shape();
+    sh.moveTo(rh, -size * 0.06);
+    sh.quadraticCurveTo((rh + rt) / 2, -size * 0.14, rt, -size * 0.07);
+    sh.quadraticCurveTo(rt + size * 0.012, size * 0.05, rt - size * 0.03, size * 0.12);
+    sh.quadraticCurveTo((rh + rt) / 2, size * 0.05, rh, size * 0.07);
+    sh.closePath();
+    const one = new THREE.ExtrudeGeometry(sh, { depth: 1.1, bevelEnabled: false, curveSegments: 8 });
+    one.translate(0, 0, -0.55);
+    one.rotateX(0.5);
+    const parts = [];
+    for (let k = 0; k < 9; k++) parts.push(one.clone().rotateZ((k * Math.PI * 2) / 9));
+    const merged = mergeGeometries(parts);
+    one.dispose(); parts.forEach((p) => p.dispose());
+    return merged;
+  });
+}
+
+// çerçevesiz fan (ekran kartları için): yalnızca göbek + kanatlar
+function makeRotorOnly(g, size, thickness, blade, speed) {
+  const rotor = new THREE.Group();
+  rotor.userData.spin = speed * (0.9 + Math.random() * 0.25);
+  const hub = cyl(size * 0.17, thickness * 0.72, M.plastic(blade, 0.5), 32);
+  hub.rotation.x = Math.PI / 2;
+  rotor.add(hub);
+  rotor.add(new THREE.Mesh(bladesGeometry(size), M.plastic(blade, 0.5)));
+  g.add(rotor);
   g.userData.rotor = rotor;
   return g;
 }
@@ -820,46 +838,86 @@ export function makeGPU(x) {
   const T = clamp(x.th || 50, 20, 90);
   const col = colorOf(x.col, 0x1c1f24);
   const light = isLight(col);
-  const shroud = M.painted(col, light ? 0.4 : 0.48);
-  const dark = M.plastic(light ? 0xd5d8dd : 0x101114, 0.5);
+  const shroud = M.painted(col, light ? 0.4 : 0.46);
+  const shroud2 = M.painted(new THREE.Color(col).multiplyScalar(light ? 0.86 : 1.6), 0.5);
   const accent = x.mk === 'NVIDIA' ? 0x76b900 : x.mk === 'AMD' ? 0xed1c24 : x.mk === 'Intel' ? 0x0071c5 : 0x7c6cff;
-  // PCB
+  const plateT = 8; // fan tarafındaki kapak kalınlığı
+
+  // PCB + altın uçlar
   g.add(box(L - 10, 1.6, Hc - 8, M.plastic(0x101a14, 0.6), 4 + (L - 10) / 2, 0, (Hc - 8) / 2));
   g.add(box(80, 1.7, 6, M.gold(), 48 + 40, 0, -3));
-  // arka plaka
+  // arka plaka (+y)
   g.add(rbox(L - 6, 2.4, Hc - 6, 1, M.metal(light ? 0xe2e4e8 : 0x22252b, 0.45), 3 + (L - 6) / 2, 2.1, (Hc - 6) / 2 + 2));
   const bpLbl = labelTexture([{ text: (x.br || '').toUpperCase(), size: 0.7, spacing: 6 }], { w: 512, h: 96, bg: null, fg: light ? '#61666f' : '#b8bdc6', align: 'center' });
   const bpText = plane(Math.min(120, L * 0.45), 22, new THREE.MeshStandardMaterial({ map: bpLbl, transparent: true }), L * 0.55, 3.4, Hc * 0.5);
   bpText.rotation.x = -Math.PI / 2;
   g.add(bpText);
-  // soğutucu gövdesi
-  const bodyT = T - 4;
-  g.add(rbox(L, bodyT, Hc, 5, shroud, L / 2, -bodyT / 2 - 1, Hc / 2 + 1));
-  // yan yüz: model yazısı + vurgu çizgisi
-  const chipTxt = (x.chip || x.n || '').replace(/^GeForce\s*/i, 'GEFORCE ').toUpperCase();
-  const sideTex = labelTexture([{ text: chipTxt, size: 0.55, spacing: 3 }], { w: 1024, h: 96, bg: null, fg: light ? '#3d424b' : '#e2e6ec' });
-  const sideText = plane(Math.min(L * 0.55, 190), Math.min(bodyT * 0.42, 16), new THREE.MeshStandardMaterial({ map: sideTex, transparent: true }), L * 0.38, -bodyT / 2 - 1, Hc + 1.2);
-  g.add(sideText);
-  g.add(box(L * 0.9, 1.4, 0.8, M.painted(accent, 0.4), L / 2, -bodyT + 4, Hc + 1.2));
-  if (x.rgb) g.add(rbox(L * 0.78, 3, 1.4, 0.6, rgbMaterial(1.4, 2.6), L * 0.52, -5, Hc + 1.4));
-  // fanlar (alt yüz)
+
+  // soğutucu kanatçık bloğu (yan yüzlerde dikey kanatçık görünümü)
+  const finT = Math.max(6, T - plateT - 3);
+  const finSide = new THREE.MeshStandardMaterial({ color: 0xffffff, map: cloneTex(finVTexture, (L - 12) / 18, 1), metalness: 0.6, roughness: 0.45 });
+  const finEnd = M.metal(0x2c3036, 0.5);
+  const fins = new THREE.Mesh(cachedGeo(`gpufin${r1(L)}|${r1(finT)}|${r1(Hc)}`, () => new THREE.BoxGeometry(L - 12, finT, Hc - 6)), [finEnd, finEnd, finEnd, finEnd, finSide, finSide]);
+  fins.position.set(L / 2, -1.5 - finT / 2, (Hc - 6) / 2 + 2);
+  g.add(fins);
+
+  // fan tarafı kapak: fan delikli tek parça
   const nf = clamp(x.fans || (L > 280 ? 3 : 2), 1, 3);
-  const fsz = Math.min(Hc - 16, (L - 20) / nf - 4, 104);
+  const fsz = Math.min(Hc - 18, (L - 24) / nf - 6, 102);
+  const centers = Array.from({ length: nf }, (_, i) => 12 + (L - 24) * ((i + 0.5) / nf));
+  const plateGeo = cachedGeo(`gpuplate${r1(L)}|${r1(Hc)}|${nf}|${r1(fsz)}`, () => {
+    const r = 6, z0 = 0, z1 = Hc + 3;
+    const sh = new THREE.Shape();
+    sh.moveTo(r, z0); sh.lineTo(L - r, z0); sh.quadraticCurveTo(L, z0, L, z0 + r);
+    sh.lineTo(L, z1 - r); sh.quadraticCurveTo(L, z1, L - r, z1);
+    sh.lineTo(r, z1); sh.quadraticCurveTo(0, z1, 0, z1 - r);
+    sh.lineTo(0, z0 + r); sh.quadraticCurveTo(0, z0, r, z0);
+    for (const cx of centers) {
+      const hole = new THREE.Path();
+      hole.absarc(cx, (z0 + z1) / 2, fsz / 2 + 1.5, 0, Math.PI * 2, true);
+      sh.holes.push(hole);
+    }
+    const geo = new THREE.ExtrudeGeometry(sh, { depth: plateT, bevelEnabled: true, bevelThickness: 1, bevelSize: 1, bevelSegments: 2, curveSegments: 40 });
+    geo.rotateX(Math.PI / 2);
+    return geo;
+  });
+  const plate = new THREE.Mesh(plateGeo, shroud);
+  plate.position.set(0, -T + plateT + 1, -0.5);
+  g.add(plate);
   const fans = [];
-  for (let i = 0; i < nf; i++) {
-    const fan = makeFan(fsz, { frame: light ? 0xe6e8ec : 0x15171b, blade: light ? 0xeef0f2 : 0x23262b, rgb: false, thickness: 12, speed: 0.8 });
+  for (const cx of centers) {
+    const fan = makeFan(fsz, { blade: light ? 0xe9ebee : 0x1d2025, thickness: 11, speed: 0.8, frameless: true });
     fan.rotation.x = Math.PI / 2;
-    fan.position.set(10 + (L - 20) * ((i + 0.5) / nf), -bodyT - 1 + 5.5, Hc / 2 + 1);
+    fan.position.set(cx, -T + plateT / 2 + 1, Hc / 2 + 1);
     g.add(fan);
     fans.push(fan);
+    const ring = new THREE.Mesh(cachedGeo(`gpuring${r1(fsz)}`, () => new THREE.TorusGeometry(fsz / 2 + 1.5, 1.1, 6, 48)), x.rgb ? rgbMaterial(1, 2.4) : shroud2);
+    ring.rotation.x = Math.PI / 2;
+    ring.position.set(cx, -T + 1, Hc / 2 + 1);
+    g.add(ring);
   }
+  // uç kapağı
+  g.add(rbox(10, T - 1, Hc + 3, 3, shroud, L - 5, -T / 2 + 0.5, (Hc + 3) / 2 - 0.5));
+
+  // cam tarafı (+z) yan kapak: logo, vurgu çizgisi, RGB
+  const coverH = Math.max(12, Math.min(T * 0.42, 26));
+  const coverY = -T + plateT + 1 + coverH / 2 - 2;
+  const coverL = L * 0.74;
+  g.add(rbox(coverL, coverH, 3.2, 1.2, shroud, L * 0.52, coverY, Hc + 2.6));
+  const chipTxt = (x.chip || x.n || '').replace(/^GeForce\s*/i, 'GEFORCE ').toUpperCase();
+  const sideTex = labelTexture([{ text: chipTxt, size: 0.62, spacing: 3 }], { w: 1024, h: 96, bg: null, fg: light ? '#3d424b' : '#e2e6ec' });
+  g.add(plane(Math.min(coverL * 0.55, 180), Math.min(coverH * 0.55, 12), new THREE.MeshStandardMaterial({ map: sideTex, transparent: true }), L * 0.42, coverY + 1, Hc + 4.25));
+  g.add(box(coverL * 0.92, 1.3, 0.6, M.painted(accent, 0.4), L * 0.52, coverY - coverH / 2 + 2.2, Hc + 4.3));
+  if (x.rgb) g.add(rbox(coverL * 0.86, 2.2, 1.2, 0.5, rgbMaterial(1.4, 2.8), L * 0.52, coverY + coverH / 2 - 1.6, Hc + 4.3));
+
   // braket
   const br = M.metal(0x9ea3ab, 0.35);
   g.add(box(1.2, Math.max(T + 6, 22), 121, br, -1, -T / 2 + 6, 121 / 2 - 8));
   g.add(box(14, Math.max(T + 6, 22), 1.2, br, 6, -T / 2 + 6, 114));
-  // güç soketi
-  const pcount = /16|12V/i.test(x.conn || '') ? 1 : /2\s*[xX×]|3\s*[xX×]/.test(x.conn || '') ? Number((x.conn.match(/(\d)\s*[xX×]/) || [0, 2])[1]) : 1;
-  for (let i = 0; i < Math.min(pcount, 3); i++) g.add(box(pcount === 1 && /16/.test(x.conn || '') ? 18 : 20, 8, 7, M.plastic(0x0d0e10), L * 0.62 + i * 22, -4, Hc + 4.5));
+  // güç soketi (üst kenar)
+  const is16 = /16|12V/i.test(x.conn || '');
+  const pcount = is16 ? 1 : Math.min(3, Number(((x.conn || '').match(/(\d)\s*[xX×]/) || [0, 1])[1]) || 1);
+  for (let i = 0; i < pcount; i++) g.add(box(is16 ? 18 : 20, 8, 7, M.plastic(0x0d0e10), L * 0.62 + i * 22, -4, Hc + 1.5));
   g.userData.fans = fans;
   g.userData.dims = { L, H: Hc, T };
   return shadowize(g);

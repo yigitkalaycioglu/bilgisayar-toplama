@@ -67,6 +67,11 @@ def mm(s):
     return int(round(v))
 
 
+def within(v, lo, hi):
+    """Makul aralık dışındaki (epey'de hatalı girilmiş) ölçüleri yok say."""
+    return v if v is not None and lo <= v <= hi else None
+
+
 def gb(s):
     """'1 TB' -> 1000, '512 GB' -> 512"""
     if not s:
@@ -238,8 +243,8 @@ def norm_mobo(sp, row):
         "bt": yes(sp, "Bluetooth"),
         "archs": allv(sp, "İşlemci Mimarisi"),
         "vout": vout,
-        "w": mm(first(sp, "En")),
-        "h": mm(first(sp, "Boy")),
+        "w": within(mm(first(sp, "En")), 140, 360),
+        "h": within(mm(first(sp, "Boy")), 140, 360),
         "rgb": yes(sp, "Aydınlatma"),
         "white": 1 if is_white_name(row["name"]) else 0,
     }
@@ -274,9 +279,9 @@ def norm_gpu(sp, row):
         "tdp": intnum(first(sp, "Grafik Kartı Gücü")),
         "rec": intnum(first(sp, "Önerilen Sistem Gücü")),
         "conn": first(sp, "Güç Bağlantısı"),
-        "len": mm(first(sp, "Derinlik")),
-        "ht": mm(first(sp, "Yükseklik")),
-        "th": mm(first(sp, "Genişlik")),
+        "len": within(mm(first(sp, "Derinlik")), 120, 460),
+        "ht": within(mm(first(sp, "Yükseklik")), 60, 200),
+        "th": within(mm(first(sp, "Genişlik")), 15, 100),
         "fans": fans,
         "cool": cool,
         "rgb": yes(sp, "Aydınlatma"),
@@ -322,7 +327,7 @@ def norm_ram(sp, row):
         "rgb": 1 if yes(sp, "Işıklandırma") and re.search(r"rgb", first(sp, "Işıklandırma Özelliği") or "rgb", re.I) else 0,
         "hs": yes(sp, "Soğutucu"),
         "col": color_of(sp, "Renk Seçenekleri", "Renk"),
-        "ht": mm(first(sp, "Yükseklik")),
+        "ht": within(mm(first(sp, "Yükseklik")), 25, 70),
     }
 
 
@@ -417,7 +422,7 @@ def norm_psu(sp, row):
         "atx3": 1 if re.search(r"ATX\s*3", compat) else 0,
         "pcie5": 1 if re.search(r"PCIe\s*5", compat) or re.search(r"pcie\s*5|12vhpwr|12v-2x6", row["name"], re.I) else 0,
         "ff": ff,
-        "dw": dw, "dh": dh, "dd": dd,
+        "dw": within(dw, 90, 220), "dh": within(dh, 40, 130), "dd": within(dd, 90, 260),
         "fan": mm(first(sp, "Fan Boyutu")),
         "col": color_of(sp, "Renk Seçenekleri", "Renk"),
     }
@@ -449,8 +454,8 @@ def norm_case(sp, row):
         "br": brand_of(name),
         "ct": ct,
         "mb": mb,
-        "gpu": mm(first(sp, "GPU Uzunluğu (max)")),
-        "cool": mm(first(sp, "CPU Fan Yüksekliği")),
+        "gpu": within(mm(first(sp, "GPU Uzunluğu (max)")), 120, 700),
+        "cool": within(mm(first(sp, "CPU Fan Yüksekliği")), 25, 300),
         "psu": yes(sp, "Güç Kaynağı (PSU)"),
         "psuw": intnum(first(sp, "Güç Kaynağı Kapasitesi")),
         "pos": pos,
@@ -460,9 +465,9 @@ def norm_case(sp, row):
         "frgb": 1 if re.search(r"ışıklı|rgb", fans_types, re.I) else 0,
         "glass": 1 if "cam" in mat else 0,
         "mesh": 1 if re.search(r"\b(flow|air|mesh|airflow|vent)\b", name, re.I) or "mesh" in mat or "file" in mat else 0,
-        "w": mm(first(sp, "Genişlik")),
-        "h": mm(first(sp, "Yükseklik")),
-        "d": mm(first(sp, "Derinlik")),
+        "w": within(mm(first(sp, "Genişlik")), 120, 500),
+        "h": within(mm(first(sp, "Yükseklik")), 150, 800),
+        "d": within(mm(first(sp, "Derinlik")), 150, 800),
         "col": color_of(sp, "Renk", "Renk Seçenekleri"),
         "b25": intnum(first(sp, "Disk Yuvası (2.5)")),
         "b35": intnum(first(sp, "Disk Yuvası (3.5)")),
@@ -489,7 +494,7 @@ def norm_cooler(sp, row):
         "kind": kind,
         "socks": socks,
         "tower": tower,
-        "ht": ht if kind == "air" else None,
+        "ht": within(ht, 25, 200) if kind == "air" else None,
         "rad": intnum(first(sp, "Radyatör Boyutu")) if kind == "aio" else None,
         "radl": mm(first(sp, "Radyatör Uzunluğu")) if kind == "aio" else None,
         "radt": mm(first(sp, "Radyatör Yüksekliği")) if kind == "aio" else None,

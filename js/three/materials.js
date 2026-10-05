@@ -130,6 +130,14 @@ export const finTexture = canvasTex('fins', 8, 256, (g, w, h) => {
   }
 }, { repeat: true });
 
+// ---- dikey kanatçık çizgileri (ekran kartı soğutucusunun yandan görünüşü) ----
+export const finVTexture = canvasTex('finsV', 64, 4, (g, w, h) => {
+  for (let x = 0; x < w; x += 8) {
+    g.fillStyle = '#3a3f47'; g.fillRect(x, 0, 3, h);
+    g.fillStyle = '#0b0c0f'; g.fillRect(x + 3, 0, 5, h);
+  }
+}, { repeat: true });
+
 // ---- PSU fan ızgarası ----
 export const grillTexture = canvasTex('grill', 256, 256, (g, w, h) => {
   g.clearRect(0, 0, w, h);
