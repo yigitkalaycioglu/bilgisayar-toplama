@@ -19,7 +19,8 @@ Parçaları birbiriyle **uyumlu** olacak şekilde seçtiren ve seçilen sistemi 
   - ayrık (patlatılmış) görünüm, yan paneli aç/kapat, RGB aç/kapat, otomatik döndürme
   - parçanın üzerine gelince adı, tıklayınca yakın plan
 - Arama, marka/özellik filtreleri, fiyat aralığı, sıralama (fiyat, performans, fiyat/performans).
-- Seçimler bağlantıya yazılır: **Paylaş** ile sistemi başkasına gönderebilir, **Listeyi kopyala** ile metin olarak alabilirsiniz.
+- **Her ziyaretçi kendi oturumunda:** seçilen sistem yalnızca o tarayıcı sekmesinde tutulur (sayfa yenilenince korunur); site her yeni ziyarette boş açılır ve başkasının topladığı sistem görünmez. Sunucuda hiçbir seçim saklanmaz.
+- **Paylaş** düğmesi sistemi bilerek başkasına göndermek için bağlantı üretir; bağlantıyı açan kişi sistemi kendi oturumunda görür. **Listeyi kopyala** ile parça listesi metin olarak alınabilir.
 
 ## Veriler nasıl güncellenir?
 

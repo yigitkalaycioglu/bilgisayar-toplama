@@ -46,15 +46,34 @@ function serialize() {
   }
   return p.toString().replace(/%2C/g, ',');
 }
+// Her ziyaretçinin sistemi yalnızca kendi sekmesinin oturumunda (sessionStorage) tutulur:
+// sayfa yenilenince korunur, yeni ziyarette site boş açılır, adres çubuğuna hiçbir şey yazılmaz.
+// Başkasıyla paylaşmak için "Paylaş" düğmesinin ürettiği bağlantı kullanılır.
+const SESSION_KEY = 'pc-toplama-oturum';
+const CAT_KEYS_RE = new RegExp(`(^|&)(${CATEGORIES.map((c) => c.key).join('|')})=`);
+
 function persist() {
   const s = serialize();
-  history.replaceState(null, '', s ? `#${s}` : location.pathname + location.search);
-  try { localStorage.setItem('pc-toplama-build', s); } catch { /* gizli sekme vb. */ }
+  try { s ? sessionStorage.setItem(SESSION_KEY, s) : sessionStorage.removeItem(SESSION_KEY); } catch { /* gizli sekme vb. */ }
+}
+function shareUrl() {
+  const s = serialize();
+  return location.origin + location.pathname + (s ? `#paylas=${s}` : '');
 }
 async function restore() {
-  let s = location.hash.slice(1);
-  if (!s) { try { s = localStorage.getItem('pc-toplama-build') || ''; } catch { s = ''; } }
+  // önceki sürümün tarayıcıda kalıcı tuttuğu kaydı sil
+  try { localStorage.removeItem('pc-toplama-build'); } catch { /* yok say */ }
+  let s = '', shared = false;
+  const h = location.hash.slice(1);
+  if (h) {
+    if (h.startsWith('paylas=')) { try { s = decodeURIComponent(h.slice(7)); } catch { s = h.slice(7); } shared = true; }
+    else if (CAT_KEYS_RE.test(h)) { s = h; shared = true; } // eski biçimli paylaşım bağlantıları
+    // paylaşılan sistem bu ziyaretçinin oturumuna alınır; adres çubuğu temizlenir
+    history.replaceState(null, '', location.pathname + location.search);
+  }
+  if (!s) { try { s = sessionStorage.getItem(SESSION_KEY) || ''; } catch { s = ''; } }
   if (!s) return;
+  if (shared) setTimeout(() => toast('Paylaşılan bir sistem açıldı. Değiştirmek ya da temizlemek sana kalmış.', { ms: 5000 }), 300);
   const p = new URLSearchParams(s);
   let missing = 0;
   await Promise.all(CATEGORIES.map(async (c) => {
@@ -74,6 +93,7 @@ async function restore() {
     sel[c.key] = entries.slice(0, c.multi || 1);
   }));
   if (missing) toast(`${missing} parça artık listede olmadığı için çıkarıldı.`, { kind: 'err' });
+  persist();
 }
 
 // ------------------------------------------------------------------ sağ panel
@@ -509,9 +529,10 @@ function toast(msg, { kind = '', undo = null, ms = 4200 } = {}) {
 
 // ------------------------------------------------------------------ üst çubuk
 $('#btn-share').addEventListener('click', async () => {
-  persist();
-  try { await navigator.clipboard.writeText(location.href); toast('Sistem bağlantısı panoya kopyalandı'); }
-  catch { prompt('Bu bağlantıyı kopyala:', location.href); }
+  if (!CATEGORIES.some((c) => sel[c.key].length)) { toast('Paylaşılacak sistem yok; önce parça seç.', { kind: 'err' }); return; }
+  const url = shareUrl();
+  try { await navigator.clipboard.writeText(url); toast('Paylaşım bağlantısı kopyalandı; açan kişi bu sistemi kendi oturumunda görür.'); }
+  catch { prompt('Bu bağlantıyı kopyala:', url); }
 });
 $('#btn-copy-list').addEventListener('click', async () => {
   const lines = ['PC Toplama — sistem listesi', ''];
@@ -522,7 +543,7 @@ $('#btn-copy-list').addEventListener('click', async () => {
     lines.push(`${c.label}: ${e.qty > 1 ? e.qty + ' × ' : ''}${e.item.n} — ${fmtPrice(p)}`);
   }
   if (lines.length === 2) { toast('Liste boş; önce parça seç.', { kind: 'err' }); return; }
-  lines.push('', `Toplam: ${fmtPrice(total)}`, `Tahmini tüketim: ~${estimatePower(sel).draw} W`, '', location.href);
+  lines.push('', `Toplam: ${fmtPrice(total)}`, `Tahmini tüketim: ~${estimatePower(sel).draw} W`, '', shareUrl());
   try { await navigator.clipboard.writeText(lines.join('\n')); toast('Parça listesi panoya kopyalandı'); }
   catch { prompt('Listeyi kopyala:', lines.join(' | ')); }
 });

@@ -294,12 +294,15 @@ def norm_gpu(sp, row):
 def norm_ram(sp, row):
     plat = first(sp, "Platform")
     form = first(sp, "Bellek Modülü")
-    if plat and not re.search(r"masa", plat, re.I):
-        return None
-    if form and re.search(r"so", form, re.I):
-        return None
     mtype = first(sp, "Modül Türü")
-    if mtype and re.search(r"RDIMM|LRDIMM|Registered", mtype, re.I):
+    # masaüstü bellekler + masaüstü kartlara da takılan tamponsuz (UDIMM) sunucu bellekleri;
+    # dizüstü (SO-DIMM) ve kayıtlı (RDIMM/LRDIMM) bellekler elenir
+    unbuffered = bool(mtype and re.fullmatch(r"\s*UDIMM\s*", mtype, re.I))
+    if plat and not re.search(r"masa", plat, re.I) and not unbuffered:
+        return None
+    if form and re.search(r"so-?dimm", form, re.I):
+        return None
+    if mtype and re.search(r"RDIMM|LRDIMM|Registered|SODIMM", mtype, re.I):
         return None
     mt = first(sp, "Bellek Teknolojisi")
     m = re.match(r"(DDR\d)", mt or "")
