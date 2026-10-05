@@ -216,11 +216,11 @@ export class PCScene {
     }
 
     // anakart tezgâh ayağı
-    const boardEntry = [...this.entries.values()].find((e) => (e.cat === 'mobo' || e.cat === 'ghost') && e.state !== 'exit');
+    const boardEntry = [...this.entries.values()].find((e) => (e.key.startsWith('mobo:') || e.key === 'ghost') && e.state !== 'exit');
     const L = boardEntry ? boardEntry.obj.userData.layout : boardLayout(null);
     const standKey = !cs && mb ? `stand:${Math.round(L.w)}` : null;
     for (const [key, e] of this.entries) if (key.startsWith('stand:') && key !== standKey && e.state !== 'exit') this._exit(e);
-    if (standKey && !this.entries.has(standKey)) this._enter(standKey, { cat: 'mobo', item: mb, parent: 'anchor', make: () => makeBenchStand(L.w) });
+    if (standKey && !this.entries.has(standKey)) this._enter(standKey, { cat: 'stand', item: mb, parent: 'anchor', make: () => makeBenchStand(L.w) });
 
     this._layout({ cs, mb, L, cooler, ramE });
 
