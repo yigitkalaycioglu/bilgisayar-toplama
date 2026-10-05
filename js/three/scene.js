@@ -415,6 +415,67 @@ export class PCScene {
     }
   }
 
+  // ------------------------------------------------------------ güç kabloları
+  // Kasa + anakart + güç kaynağı varken, parçalar yerine oturduktan sonra çizilir.
+  _clearCables() {
+    for (const c of this.cables || []) { this.root.remove(c); c.geometry.dispose(); }
+    this.cables = [];
+    this.cableSig = '';
+  }
+
+  _updateCables() {
+    const CL = this.caseLayout, L = this.boardL;
+    const live = (pre) => [...this.entries.values()].find((e) => e.key.startsWith(pre) && e.state !== 'exit');
+    const mobo = live('mobo:'), psu = live('psu:'), gpu = live('gpu:');
+    const settled = (e) => !e || e.obj.position.distanceTo(e.pos) < 1.5;
+    const ok = CL && L && mobo && psu && !this.exploded && settled(mobo) && settled(psu) && settled(gpu) &&
+      this.anchor.position.distanceTo(this.anchorTarget) < 1.5;
+    if (!ok) { if (this.cables && this.cables.length) this._clearCables(); return; }
+
+    const A = this.anchor.position;
+    const bw = (u, v, z) => V(A.x + u, A.y - v, A.z + z); // anakart yerel -> dünya
+    const paths = [];
+    // 24 pin: kartın ön kenarındaki soketten en yakın kablo geçiş lastiğine
+    const c24 = bw(L.w - 1, L.atx24.v, 8);
+    const gr = CL.grommets.reduce((a, b) => (Math.abs(b.y - c24.y) < Math.abs(a.y - c24.y) ? b : a));
+    const gy = THREE.MathUtils.clamp(c24.y, gr.y - gr.h / 2 + 12, gr.y + gr.h / 2 - 12);
+    paths.push({ r: 7.5, pts: [c24, c24.clone().add(V(16, 0, 4)), V((c24.x + gr.x) / 2 + 10, (c24.y + gy) / 2, CL.trayZ + 22), V(gr.x, gy, CL.trayZ + 6), V(gr.x, gy, CL.trayZ - 14)] });
+    // EPS 8 pin: sol üst köşeden yukarı ve tepsinin arkasına
+    const eps = bw(36, 2, 9);
+    const topY = Math.min(eps.y + 26, CL.yT - 8);
+    paths.push({ r: 4.5, pts: [eps, eps.clone().add(V(0, 10, 2)), V(eps.x, topY, eps.z - 4), V(eps.x, topY + 2, CL.trayZ + 6), V(eps.x, topY + 2, CL.trayZ - 14)] });
+    // ekran kartı: üst kenardaki güç soketinden aşağı, örtünün içine (ya da tepsinin arkasına)
+    if (gpu) {
+      const d = gpu.obj.userData.dims;
+      const n = /16|12V/i.test(gpu.item.conn || '') ? 1 : Math.min(3, Number(((gpu.item.conn || '').match(/(\d)\s*[xX×]/) || [0, 1])[1]) || 1);
+      for (let i = 0; i < n; i++) {
+        const c = V(A.x + gpu.pos.x + d.L * 0.62 + i * 22, A.y + gpu.pos.y - 4, A.z + gpu.pos.z + d.H + 5);
+        const zMax = CL.W / 2 - CL.t - 8;
+        const out = Math.min(c.z + 16, zMax);
+        const endY = CL.hasShroud ? CL.shroudTop : CL.yB + CL.t + 30;
+        const pts = [c, V(c.x, c.y, out), V(c.x + 6, c.y - 30, out), V(c.x + 14, endY + 22, out - 6)];
+        if (CL.hasShroud) pts.push(V(c.x + 16, endY - 14, out - 10));
+        else pts.push(V(c.x + 16, endY, CL.trayZ + 10), V(c.x + 16, endY, CL.trayZ - 14));
+        paths.push({ r: n === 1 ? 5 : 4, pts });
+      }
+    }
+    const sig = paths.map((p) => p.pts.map((v) => `${v.x.toFixed(0)},${v.y.toFixed(0)},${v.z.toFixed(0)}`).join(';')).join('|') + (CL.light ? 'w' : 'b');
+    if (sig === this.cableSig) return;
+    this._clearCables();
+    this.cableSig = sig;
+    const mat = (this.cableMat ||= {});
+    const key = CL.light ? 'w' : 'b';
+    mat[key] ||= new THREE.MeshStandardMaterial({ color: CL.light ? 0xe6e8ec : 0x15161a, roughness: 0.75, metalness: 0.05 });
+    for (const p of paths) {
+      const curve = new THREE.CatmullRomCurve3(p.pts, false, 'centripetal');
+      const m = new THREE.Mesh(new THREE.TubeGeometry(curve, 48, p.r, 10, false), mat[key]);
+      m.castShadow = true;
+      m.userData.partKey = psu.key;
+      this.root.add(m);
+      this.cables.push(m);
+    }
+  }
+
   // ------------------------------------------------------------ kamera
   _sceneBounds() {
     const CL = this.caseLayout, L = this.boardL || boardLayout(null);
@@ -506,7 +567,7 @@ export class PCScene {
 
   _highlight(e, on) {
     const seen = new Set();
-    const objs = [e.obj, ...(e.key.startsWith('rad:') ? this.tubes : [])];
+    const objs = [e.obj, ...(e.key.startsWith('rad:') ? this.tubes : []), ...(e.key.startsWith('psu:') ? this.cables || [] : [])];
     for (const root of objs) root.traverse((o) => {
       if (!o.isMesh) return;
       for (const m of Array.isArray(o.material) ? o.material : [o.material]) {
@@ -572,6 +633,7 @@ export class PCScene {
       }
     }
     this._updateTubes();
+    this._updateCables();
 
     // RGB
     tickRgb(t);

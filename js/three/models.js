@@ -228,9 +228,11 @@ export function makeCase(x) {
   const tray = box(trayX1 - trayX0, yT - shroudTop, 1.5, inner, (trayX0 + trayX1) / 2, (yT + shroudTop) / 2, trayZ);
   g.add(tray);
   // kablo geçiş lastikleri
+  const grommets = [];
   for (const [yy, hh] of [[0.72, 70], [0.42, 55], [0.16, 40]]) {
     const gy = shroudTop + (yT - shroudTop) * yy;
     g.add(rbox(14, hh, 2.5, 4, M.rubber(0x08090b), trayX1 - 16, gy, trayZ + 1));
+    grommets.push({ x: trayX1 - 16, y: gy, h: hh });
   }
   // dual: iki bölmeyi ayıran üst/alt çıta
   const mainZ = (trayZ + W / 2 - t) / 2;
@@ -365,7 +367,7 @@ export function makeCase(x) {
   front.traverse((o) => { o.castShadow = false; });
 
   g.userData.layout = {
-    W, H, D, t, yB, yT, xR, xF, trayZ, mainZ, dual, hasShroud, shroudTop, frontGap,
+    W, H, D, t, yB, yT, xR, xF, trayZ, mainZ, dual, hasShroud, shroudTop, frontGap, grommets, light,
     boardTopY, boardRearX, boardZ: trayZ + 8,
     psu: psuLayout, radLayout, drive35, drive25,
     center: new THREE.Vector3(0, H / 2, 0),

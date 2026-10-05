@@ -225,6 +225,7 @@ async function openPicker(cat, opener) {
   $('#picker-sort').value = P.sort;
   $('#facets').classList.remove('open');
   $('#picker-filter-toggle').setAttribute('aria-expanded', 'false');
+  $('#picker-filter-toggle').textContent = 'Filtreler';
   $('#product-list').innerHTML = '<li class="empty"><span class="spinner"></span></li>';
   $('#compat-bar').innerHTML = '';
   renderFacetsStatic();
@@ -298,7 +299,10 @@ $('#facets').addEventListener('input', (ev) => {
 
 const levelOf = (x) => worstLevel(P.compat.get(x.id) || []);
 function haystack(x) {
-  if (!x._s) x._s = norm(`${x.n} ${x.c || ''} ${x.br || ''} ${shortSpecs(P.cat, x, 8)}`);
+  if (!x._s) {
+    const name = norm(x.n);
+    x._s = `${name} ${name.replace(/ /g, '')} ${norm(`${x.c || ''} ${x.br || ''} ${shortSpecs(P.cat, x, 8)}`)}`;
+  }
   return x._s;
 }
 
@@ -351,12 +355,16 @@ function renderCompatBar(base, compatible) {
   const anySel = CATEGORIES.some((c) => c.key !== P.cat && sel[c.key].length);
   let reasons = '';
   if (hidden) {
-    const cnt = new Map();
+    // aynı türdeki nedenleri grupla, her grup için ilk örneği göster
+    const groups = new Map();
     for (const x of base) for (const p of P.compat.get(x.id) || []) if (p.level === 'err') {
-      const k = p.msg.replace(/\d[\d.,]*\s*(mm|W|GB|MT\/s)?/g, '…').replace(/: .*$/, '');
-      cnt.set(k, (cnt.get(k) || 0) + 1);
+      const shown = p.msg.includes(':') ? p.msg.split(':')[0] : p.msg;
+      const key = shown.replace(/\d[\d.,]*/g, '#');
+      const g = groups.get(key) || { n: 0, shown };
+      g.n++;
+      groups.set(key, g);
     }
-    reasons = [...cnt.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([k]) => k).join(' · ');
+    reasons = [...groups.values()].sort((a, b) => b.n - a.n).slice(0, 3).map((g) => g.shown).join(' · ');
   }
   $('#compat-bar').innerHTML = `
     <span class="pill">${IC.ok}${fmtNum(compatible.length)} uyumlu</span>
