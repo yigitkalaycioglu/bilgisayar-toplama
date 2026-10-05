@@ -31,8 +31,9 @@ python scraper/build_data.py            # data/*.json dosyalarını üretir
 ```
 
 - Yalnızca epey.com `robots.txt`'nin izin verdiği sayfalar (kategori liste sayfaları ve ürün sayfaları) okunur; istekler arasında bekleme vardır ve sunucu yavaşlama isterse (HTTP 429) otomatik olarak beklenir.
-- Fiyatı olan (satışta) ürünler alınır. Teknik özellikler `scraper/cache/` altında saklandığı için sonraki çalışmalarda yalnızca fiyatlar ve yeni ürünler indirilir.
-- `.github/workflows/update-data.yml` her pazartesi verileri otomatik günceller; Actions sekmesinden elle de çalıştırılabilir. İstenmiyorsa Actions sekmesinden devre dışı bırakılabilir.
+- Fiyatı olan (satışta) ürünler alınır. Teknik özellikler `scraper/cache/` altında saklandığı için sonraki çalışmalarda yalnızca fiyatlar ve yeni ürünler indirilir (ilk tam tarama ~2 saat, sonrakiler ~10-15 dakika).
+- **Otomatik güncelleme:** `.github/workflows/update-data.yml` her gün 06:17'de (TSİ) çalışır. Fiyatları tazeler, epey'e yeni eklenen ürünleri siteye ekler, satıştan kalkanları çıkarır ve sonucu commit'ler; GitHub Pages siteyi kendiliğinden yeniden yayınlar. Actions sekmesinden "Run workflow" ile elle de başlatılabilir.
+- Bir kategorinin listesi yarıda kesilirse ya da ürün sayısı şüpheli biçimde düşerse o kategorinin önceki verisi korunur.
 
 ## Yerelde çalıştırma
 

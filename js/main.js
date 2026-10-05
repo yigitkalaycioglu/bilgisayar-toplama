@@ -1,5 +1,5 @@
 import {
-  CATEGORIES, CAT, ICONS, FACETS, specChips, shortSpecs, perfScore, epeyUrl, imageUrl, fmtPrice, fmtNum,
+  CATEGORIES, CAT, ICONS, FACETS, specChips, shortSpecs, perfScore, epeyUrl, imageUrl, fmtPrice, fmtNum, detailRows,
 } from './catalog.js';
 import { checkItem, evaluateBuild, estimatePower, worstLevel, one } from './compat.js';
 import { loadMeta, loadCategory, isLoaded, getLoaded, findItem, norm } from './data.js';
@@ -358,7 +358,8 @@ function renderCompatBar(base, compatible) {
     // aynı türdeki nedenleri grupla, her grup için ilk örneği göster
     const groups = new Map();
     for (const x of base) for (const p of P.compat.get(x.id) || []) if (p.level === 'err') {
-      const shown = p.msg.includes(':') ? p.msg.split(':')[0] : p.msg;
+      const m = p.msg.match(/^([^:(]+):\s/);
+      const shown = m ? m[1] : p.msg;
       const key = shown.replace(/\d[\d.,]*/g, '#');
       const g = groups.get(key) || { n: 0, shown };
       g.n++;
@@ -445,6 +446,7 @@ function productHTML(x) {
       <div class="p-name"><span>${esc(x.n)}</span>${x.c ? `<span class="code">${esc(x.c)}</span>` : ''}</div>
       <div class="p-specs">${chips}${warns}${infos}</div>
       ${why}
+      <details class="p-more"><summary>Tüm özellikler</summary><dl>${detailRows(cat, x).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></details>
     </div>
     <div class="p-side">
       <span class="price">${fmtPrice(x.p)}</span>

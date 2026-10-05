@@ -1,0 +1,58 @@
+name: Epey verilerini güncelle
+
+# Her gün epey.com'daki tüm kategori listeleri taranır:
+#  - fiyatlar ve satıcı sayıları tazelenir,
+#  - epey'e yeni eklenen ürünlerin detay sayfaları indirilip siteye eklenir,
+#  - satıştan kalkan ürünler siteden çıkar,
+#  - teknik özellikler 45 günde bir (her gün en eskilerden bir kısmı) yeniden indirilir.
+# Değişiklik varsa commit'lenir; GitHub Pages siteyi otomatik yeniden yayınlar.
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # her gün 03:17 UTC (06:17 TSİ)
+  workflow_dispatch:
+    inputs:
+      refresh_days:
+        description: "Bu kadar günden eski ürün detaylarını yeniden indir"
+        required: false
+        default: "45"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: epey.com'dan veri çek
+        run: >
+          python scraper/epey_scraper.py
+          --refresh-days "${{ github.event.inputs.refresh_days || '45' }}"
+          --max-refresh 150
+
+      - name: Site verisini derle
+        run: python scraper/build_data.py
+
+      - name: Değişiklikleri kaydet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data scraper/cache
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok"
+            exit 0
+          fi
+          git commit -m "Veriler güncellendi ($(date -u +%Y-%m-%d))"
+          git pull --rebase --autostash origin main
+          git push

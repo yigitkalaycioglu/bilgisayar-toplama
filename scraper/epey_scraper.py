@@ -272,13 +272,15 @@ def save_cache(cat, data):
 
 
 def crawl_listing(fetcher, slug, max_pages):
+    """Fiyatlı ürünleri toplar. (satırlar, tamamlandı_mı) döndürür; bir sayfa indirilemezse tamamlanmamış sayılır."""
     all_rows, seen = [], set()
     page = 1
     while page <= max_pages:
         url = f"{BASE}/{slug}/" if page == 1 else f"{BASE}/{slug}/{page}/"
         text = fetcher.get(url)
         if not text:
-            break
+            log(f"  {slug} sayfa {page} indirilemedi")
+            return all_rows, False
         rows = parse_listing(text)
         priced = [r for r in rows if r["price"]]
         for r in priced:
@@ -289,35 +291,54 @@ def crawl_listing(fetcher, slug, max_pages):
         if not rows or not priced:
             break
         page += 1
-    return all_rows
+    return all_rows, True
 
 
 def scrape_category(fetcher, key, slug, args):
     log(f"== {key} ({slug}) ==")
-    rows = crawl_listing(fetcher, slug, args.max_pages)
-    if not rows:
-        log(f"  {key}: liste boş geldi, önceki veriler korunuyor")
+    rows, complete = crawl_listing(fetcher, slug, args.max_pages)
+    list_path = os.path.join(CACHE_DIR, f"{key}_list.json")
+    prev_count = 0
+    if os.path.exists(list_path):
+        try:
+            with open(list_path, encoding="utf-8") as f:
+                prev_count = len(json.load(f).get("rows", []))
+        except (OSError, ValueError):
+            prev_count = 0
+    # Yarım kalan ya da şüpheli derecede küçülen listeler mevcut veriyi bozmasın
+    if not rows or not complete:
+        log(f"  {key}: liste eksik indirildi ({len(rows)} ürün), önceki veriler korunuyor")
+        return False
+    if prev_count and len(rows) < prev_count * 0.6 and not args.force:
+        log(f"  {key}: ürün sayısı {prev_count} -> {len(rows)} düştü; şüpheli, önceki veriler korunuyor (--force ile zorla)")
         return False
     listing = {
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "rows": rows,
     }
     os.makedirs(CACHE_DIR, exist_ok=True)
-    with open(os.path.join(CACHE_DIR, f"{key}_list.json"), "w", encoding="utf-8", newline="\n") as f:
+    with open(list_path, "w", encoding="utf-8", newline="\n") as f:
         json.dump(listing, f, ensure_ascii=False, indent=0)
 
     cache = load_cache(key)
     now = time.time()
-    todo = []
+    new_rows, stale = [], []
     for r in rows:
         c = cache.get(r["id"])
         if not c or not c.get("specs"):
-            todo.append(r)
+            new_rows.append(r)
         elif args.refresh_days and now - c.get("ts", 0) > args.refresh_days * 86400:
-            todo.append(r)
+            stale.append((c.get("ts", 0), r))
     if args.max_new is not None:
-        todo = todo[: args.max_new]
-    log(f"  {key}: {len(rows)} fiyatlı ürün, {len(todo)} detay sayfası indirilecek")
+        new_rows = new_rows[: args.max_new]
+    stale.sort(key=lambda t: t[0])  # en eski önce
+    todo = new_rows + [r for _, r in stale[: args.max_refresh]]
+    # uzun süredir listede görünmeyen (satıştan kalkmış) ürünleri önbellekten temizle
+    listed = {r["id"] for r in rows}
+    pruned = [pid for pid, c in cache.items() if pid not in listed and now - c.get("ts", 0) > args.prune_days * 86400]
+    for pid in pruned:
+        del cache[pid]
+    log(f"  {key}: {len(rows)} fiyatlı ürün; {len(new_rows)} yeni, {min(len(stale), args.max_refresh)}/{len(stale)} eski detay tazelenecek, {len(pruned)} kayıt temizlendi")
 
     done = 0
     lock = threading.Lock()
@@ -353,6 +374,9 @@ def main():
     ap.add_argument("--max-pages", type=int, default=400)
     ap.add_argument("--max-new", type=int, default=None, help="kategori başına en fazla yeni detay")
     ap.add_argument("--refresh-days", type=float, default=0, help="bu kadar günden eski detayları yenile (0=asla)")
+    ap.add_argument("--max-refresh", type=int, default=100000, help="kategori başına en fazla tazelenecek eski detay (en eskiler önce)")
+    ap.add_argument("--prune-days", type=float, default=180, help="listede olmayan ve bu kadar gündür tazelenmemiş kayıtları sil")
+    ap.add_argument("--force", action="store_true", help="ürün sayısı çok düşse bile listeyi yaz")
     args = ap.parse_args()
 
     cats = args.categories or list(CATEGORIES)
@@ -366,6 +390,7 @@ def main():
         if scrape_category(fetcher, key, CATEGORIES[key], args):
             ok += 1
     log(f"bitti: {ok}/{len(cats)} kategori, {fetcher.count} istek, {fetcher.errors} hata, {time.time() - start:.0f} sn")
+    # Hiçbir kategori güncellenemediyse iş akışı başarısız görünsün (site eski veriyle çalışmaya devam eder)
     return 0 if ok else 1
 
 

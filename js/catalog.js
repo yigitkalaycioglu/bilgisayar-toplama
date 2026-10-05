@@ -201,3 +201,59 @@ export const FACETS = {
     { id: 'rgb', label: 'RGB', get: (x) => (x.rgb ? 'Var' : 'Yok') },
   ],
 };
+
+// Ürün satırındaki "Tüm özellikler" bölümü: [etiket, değer] çiftleri
+const yn = (v) => (v == null ? null : v ? 'Var' : 'Yok');
+const u = (v, unit) => (v == null || v === '' ? null : `${v} ${unit}`);
+const RAD_NAMES = { f: 'Ön', t: 'Üst', b: 'Alt', r: 'Arka', s: 'Yan' };
+export const DETAILS = {
+  cpu: (x) => [
+    ['Soket', x.sock], ['Çekirdek / izlek', x.cores && `${x.cores} / ${x.thr || x.cores}`],
+    ['Temel / artırılmış', x.base && `${x.base} / ${x.boost || '—'} GHz`], ['TDP', u(x.tdp, 'W')],
+    ['Bellek', x.mem && x.mem.length ? x.mem.join(', ') + (x.mspd ? ` (${x.mspd} MHz)` : '') : null],
+    ['Dahili grafik', x.igpu ? x.ign || 'Var' : 'Yok'], ['L3 önbellek', u(x.l3, 'MB')], ['PCIe', x.pcie],
+    ['Mimari', x.arch], ['Nesil', x.gen], ['Çarpan kilidi', x.unl == null ? null : x.unl ? 'Açık' : 'Kapalı'],
+    ['PassMark (çoklu / tekli)', x.pm && `${fmtNum(x.pm)} / ${x.pm1 ? fmtNum(x.pm1) : '—'}`], ['Çıkış yılı', x.yr],
+  ],
+  mobo: (x) => [
+    ['Soket', x.sock], ['Yonga seti', x.chip], ['Form faktörü', x.ff], ['Bellek', x.mem && `${x.mem}, ${x.slots || '?'} yuva`],
+    ['Azami bellek', u(x.mmax, 'GB')], ['Bellek hızı (OC)', u(x.mspd, 'MT/s')], ['M.2 yuvası', x.m2], ['SATA', x.sata],
+    ['PCIe x16', x.x16 && `${x.x16} adet${x.pcie ? ' (PCIe ' + x.pcie + ')' : ''}`], ['Wi-Fi', x.wifi || 'Yok'],
+    ['Bluetooth', yn(x.bt)], ['Ölçüler', x.w && x.h ? `${x.w} × ${x.h} mm` : null],
+  ],
+  gpu: (x) => [
+    ['Grafik işlemcisi', x.chip], ['Üretici', x.mk], ['Bellek', x.vram && `${x.vram} GB ${x.vt || ''}`.trim()],
+    ['Artırılmış frekans', u(x.boost, 'MHz')], ['Kart gücü', u(x.tdp, 'W')], ['Önerilen PSU', u(x.rec, 'W')],
+    ['Güç bağlantısı', x.conn], ['Uzunluk / yükseklik / kalınlık', x.len && `${x.len} / ${x.ht || '—'} / ${x.th || '—'} mm`],
+    ['Fan', x.fans], ['RGB', yn(x.rgb)], ['Renk', x.col], ['PassMark', x.pm && fmtNum(x.pm)], ['Çıkış yılı', x.yr],
+  ],
+  ram: (x) => [
+    ['Tür', x.mt], ['Kapasite', u(x.cap, 'GB')], ['Modül', x.mods && `${x.mods} × ${x.per} GB`], ['Hız', u(x.spd, 'MT/s')],
+    ['Gecikme', x.cl && `CL${x.cl}`], ['Soğutucu', yn(x.hs)], ['RGB', yn(x.rgb)], ['Yükseklik', u(x.ht, 'mm')], ['Renk', x.col],
+  ],
+  storage: (x) => [
+    ['Tür', storageKindLabel(x.kind)], ['Kapasite', x.cap && fmtCap(x.cap)], ['Boyut', x.ff && (x.ff.startsWith('M.2') ? x.ff : `${x.ff}"`)],
+    ['Arayüz', x.bus], ['Sıralı okuma / yazma', x.rd && `${fmtNum(x.rd)} / ${x.wr ? fmtNum(x.wr) : '—'} MB/s`],
+    ['Devir', u(x.rpm, 'RPM')], ['Soğutucu', x.hs ? 'Var' : null],
+  ],
+  psu: (x) => [
+    ['Güç', u(x.w, 'W')], ['Verimlilik', x.eff], ['Kablo', x.mod], ['Boyut', x.ff], ['ATX 3.x', yn(x.atx3)],
+    ['PCIe 5 / 16 pin', yn(x.pcie5)], ['Ölçüler', x.dw && x.dh && x.dd ? `${x.dw} × ${x.dh} × ${x.dd} mm` : null],
+    ['Fan', u(x.fan, 'mm')], ['Renk', x.col],
+  ],
+  case: (x) => [
+    ['Kasa türü', x.ct], ['Anakart desteği', x.mb && x.mb.join(', ')], ['Azami GPU uzunluğu', u(x.gpu, 'mm')],
+    ['Azami soğutucu yüksekliği', u(x.cool, 'mm')],
+    ['Radyatör desteği', x.rad ? Object.entries(x.rad).map(([k, v]) => `${RAD_NAMES[k] || k} ${Math.max(...v)}`).join(', ') + ' mm' : null],
+    ['Dahili fan', x.fans != null ? (x.fans ? `${x.fans}${x.fsz ? ' × ' + x.fsz + ' mm' : ''}${x.frgb ? ' (ışıklı)' : ''}` : 'Yok') : null],
+    ['Güç kaynağı', x.psu ? `Dahil${x.psuw ? ' (' + x.psuw + ' W)' : ''}` : 'Dahil değil'], ['PSU konumu', x.pos],
+    ['Cam panel', yn(x.glass)], ['Disk yuvası (2.5" / 3.5")', x.b25 != null || x.b35 != null ? `${x.b25 ?? '—'} / ${x.b35 ?? '—'}` : null],
+    ['Ölçüler (G × Y × D)', x.w && x.h && x.d ? `${x.w} × ${x.h} × ${x.d} mm` : null], ['Renk', x.col],
+  ],
+  cooler: (x) => [
+    ['Tür', x.kind === 'aio' ? 'Sıvı soğutma' : 'Hava soğutma'], ['Yapı', x.tower], ['Radyatör', u(x.rad, 'mm')],
+    ['Yükseklik', u(x.ht, 'mm')], ['Fan', x.fans && `${x.fans}${x.fsz ? ' × ' + x.fsz + ' mm' : ''}`], ['TDP', u(x.tdp, 'W')],
+    ['Soketler', x.socks && x.socks.join(', ')], ['RGB', yn(x.rgb)], ['Ekran', x.lcd ? 'Var' : null], ['Renk', x.col],
+  ],
+};
+export const detailRows = (cat, x) => (DETAILS[cat] ? DETAILS[cat](x).filter(([, v]) => v != null && v !== '' && v !== false) : []);

@@ -130,7 +130,7 @@ def norm_socket(s):
 
 
 FF_MAP = [
-    (r"ssi[\s-]*eeb", "SSI-EEB"), (r"ssi[\s-]*ceb|^ceb", "SSI-CEB"), (r"xl[\s-]*atx", "XL-ATX"),
+    (r"ssi[\s-]*eeb|^eeb", "SSI-EEB"), (r"ssi[\s-]*ceb|^ceb", "SSI-CEB"), (r"xl[\s-]*atx", "XL-ATX"),
     (r"e[\s-]*atx|extended", "E-ATX"), (r"micro|m[\s-]*atx|µ", "Micro ATX"), (r"mini[\s-]*dtx", "Mini DTX"),
     (r"itx", "Mini ITX"), (r"^atx|\batx\b", "ATX"),
 ]
@@ -576,8 +576,11 @@ def main():
         data = build_category(cat)
         if not data:
             continue
+        # satır başına bir ürün: günlük güncellemelerde git farkları küçük kalır
+        head = json.dumps({"cat": data["cat"], "updated": data["updated"]}, ensure_ascii=False, separators=(",", ":"))[:-1]
+        body = ",\n".join(json.dumps(it, ensure_ascii=False, separators=(",", ":")) for it in data["items"])
         with open(os.path.join(OUT, f"{cat}.json"), "w", encoding="utf-8", newline="\n") as f:
-            json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
+            f.write(head + ',"items":[\n' + body + "\n]}\n")
         meta["counts"][cat] = len(data["items"])
         meta["updated"][cat] = data["updated"]
     with open(os.path.join(OUT, "meta.json"), "w", encoding="utf-8", newline="\n") as f:
