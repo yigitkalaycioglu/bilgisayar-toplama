@@ -318,13 +318,20 @@ $('#facets').addEventListener('input', (ev) => {
 });
 
 const levelOf = (x) => worstLevel(P.compat.get(x.id) || []);
+// Arama metni: "2×16 GB" gibi değerler "2x16", "16gb", "6000mt" yazımlarıyla da bulunur
+const unitText = (s) => s.replace(/×/g, 'x').replace(/MT\/s/gi, 'mts');
 function haystack(x) {
   if (!x._s) {
     const name = norm(x.n);
-    x._s = `${name} ${name.replace(/ /g, '')} ${norm(`${x.c || ''} ${x.br || ''} ${shortSpecs(P.cat, x, 8)}`)}`;
+    const specs = norm(unitText(`${x.c || ''} ${x.br || ''} ${shortSpecs(P.cat, x, 8)}`));
+    const glued = specs.replace(/(\d) (?=[a-z])/g, '$1');
+    const speed = x.spd ? ` ${x.spd}mhz ${x.spd}mts` : '';
+    const total = P.cat === 'ram' && x.cap ? ` ${x.cap}gb` : '';
+    x._s = `${name} ${name.replace(/ /g, '')} ${specs} ${glued}${speed}${total}`;
   }
   return x._s;
 }
+const queryTokens = (q) => norm(unitText(q)).replace(/(\d) (mhz|mts|mt|gb|tb|w|mm)\b/g, '$1$2').split(' ').filter(Boolean);
 
 function facetValues(f, x) {
   const v = f.get(x);
@@ -335,7 +342,7 @@ function facetValues(f, x) {
 function applyFilters() {
   const cat = P.cat;
   if (!cat) return;
-  const tokens = norm(P.q).split(' ').filter(Boolean);
+  const tokens = queryTokens(P.q);
   const base = P.items.filter((x) =>
     (!tokens.length || tokens.every((t) => haystack(x).includes(t))) &&
     (P.pmin == null || (x.p || 0) >= P.pmin) &&
