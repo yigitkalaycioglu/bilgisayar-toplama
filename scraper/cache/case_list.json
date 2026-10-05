@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-05T14:45:21+00:00",
+"updated": "2026-10-05T17:21:03+00:00",
 "rows": [
 {
 "id": "975914",
@@ -39,7 +39,7 @@
 "name": "Lian Li O11 Vision",
 "code": "",
 "img": "https://resim.epey.com/952338/k_lian-li-o11-vision-1.jpg",
-"price": 5719.0,
+"price": 5399.0,
 "sites": 8,
 "score": null,
 "cols": {
@@ -151,7 +151,7 @@
 "name": "Asus TUF Gaming GT302",
 "code": "",
 "img": "https://resim.epey.com/939697/k_asus-gt302-tuf-gaming-1.jpg",
-"price": 6493.41,
+"price": 6799.0,
 "sites": 11,
 "score": null,
 "cols": {
@@ -206,6 +206,22 @@
 "10400": "ATX",
 "6365": "Yok",
 "6383": "4 fan",
+"6391": "10 adet"
+}
+},
+{
+"id": "1027816",
+"url": "https://www.epey.com/bilgisayar-kasasi/corsair-3500x-argb-850w.html",
+"name": "Corsair 3500X ARGB 850W",
+"code": "",
+"img": "https://resim.epey.com/1027816/k_corsair-3500x-argb-850w-1.jpg",
+"price": 9499.0,
+"sites": 10,
+"score": null,
+"cols": {
+"10400": "E-ATX",
+"6365": "Var",
+"6383": "3 fan",
 "6391": "10 adet"
 }
 },
@@ -290,22 +306,6 @@
 }
 },
 {
-"id": "975858",
-"url": "https://www.epey.com/bilgisayar-kasasi/lian-li-o11-dynamic-evo-xl.html",
-"name": "Lian Li O11 Dynamic Evo XL",
-"code": "O11DEXL-X",
-"img": "https://resim.epey.com/975858/k_lian-li-o11-dynamic-evo-xl-g99-o11dexl-x-00-1.jpg",
-"price": 14008.12,
-"sites": 6,
-"score": null,
-"cols": {
-"10400": "E-ATX",
-"6365": "Yok",
-"6383": "0 fan",
-"6391": "11 adet"
-}
-},
-{
 "id": "951954",
 "url": "https://www.epey.com/bilgisayar-kasasi/asus-tuf-gaming-gt302.html",
 "name": "Asus TUF Gaming GT302",
@@ -338,22 +338,6 @@
 }
 },
 {
-"id": "925972",
-"url": "https://www.epey.com/bilgisayar-kasasi/asus-proart-pa602.html",
-"name": "Asus Proart PA602",
-"code": "",
-"img": "https://resim.epey.com/925972/k_asus-proart-pa602-1.jpg",
-"price": 16213.49,
-"sites": 4,
-"score": null,
-"cols": {
-"10400": "E-ATX",
-"6365": "Yok",
-"6383": "3 fan",
-"6391": "6 adet"
-}
-},
-{
 "id": "1061652",
 "url": "https://www.epey.com/bilgisayar-kasasi/nzxt-h2-flow.html",
 "name": "NZXT H2 Flow",
@@ -367,22 +351,6 @@
 "6365": "Yok",
 "6383": "2 fan",
 "6391": "4 adet"
-}
-},
-{
-"id": "1027816",
-"url": "https://www.epey.com/bilgisayar-kasasi/corsair-3500x-argb-850w.html",
-"name": "Corsair 3500X ARGB 850W",
-"code": "",
-"img": "https://resim.epey.com/1027816/k_corsair-3500x-argb-850w-1.jpg",
-"price": 9499.0,
-"sites": 10,
-"score": null,
-"cols": {
-"10400": "E-ATX",
-"6365": "Var",
-"6383": "3 fan",
-"6391": "10 adet"
 }
 },
 {
@@ -408,13 +376,29 @@
 "code": "",
 "img": "https://resim.epey.com/1008764/k_asus-a31-plus-siyah-1.jpg",
 "price": 4679.0,
-"sites": 7,
+"sites": 6,
 "score": null,
 "cols": {
 "10400": "ATX",
 "6365": "Yok",
 "6383": "4 fan",
 "6391": "-"
+}
+},
+{
+"id": "975858",
+"url": "https://www.epey.com/bilgisayar-kasasi/lian-li-o11-dynamic-evo-xl.html",
+"name": "Lian Li O11 Dynamic Evo XL",
+"code": "O11DEXL-X",
+"img": "https://resim.epey.com/975858/k_lian-li-o11-dynamic-evo-xl-g99-o11dexl-x-00-1.jpg",
+"price": 13599.0,
+"sites": 7,
+"score": null,
+"cols": {
+"10400": "E-ATX",
+"6365": "Yok",
+"6383": "0 fan",
+"6391": "11 adet"
 }
 },
 {
@@ -431,6 +415,22 @@
 "6365": "Yok",
 "6383": "0 fan",
 "6391": "10 adet"
+}
+},
+{
+"id": "925972",
+"url": "https://www.epey.com/bilgisayar-kasasi/asus-proart-pa602.html",
+"name": "Asus Proart PA602",
+"code": "",
+"img": "https://resim.epey.com/925972/k_asus-proart-pa602-1.jpg",
+"price": 13199.0,
+"sites": 4,
+"score": null,
+"cols": {
+"10400": "E-ATX",
+"6365": "Yok",
+"6383": "3 fan",
+"6391": "6 adet"
 }
 },
 {
@@ -482,28 +482,12 @@
 }
 },
 {
-"id": "809587",
-"url": "https://www.epey.com/bilgisayar-kasasi/msi-mag-forge-m100r.html",
-"name": "MSI MAG Forge M100R",
-"code": "",
-"img": "https://resim.epey.com/809587/k_msi-mag-forge-m100r-1.png",
-"price": 2397.0,
-"sites": 8,
-"score": null,
-"cols": {
-"10400": "Micro ATX",
-"6365": "Yok",
-"6383": "4 fan",
-"6391": "6 adet"
-}
-},
-{
 "id": "957810",
 "url": "https://www.epey.com/bilgisayar-kasasi/msi-mag-pano-m100r-pz.html",
 "name": "MSI MAG Pano M100R PZ",
 "code": "",
 "img": "https://resim.epey.com/957810/k_msi-mag-pano-m100r-pz-white-1.jpg",
-"price": 4399.0,
+"price": 4230.0,
 "sites": 13,
 "score": null,
 "cols": {
@@ -511,22 +495,6 @@
 "6365": "Yok",
 "6383": "4 fan",
 "6391": "10 adet"
-}
-},
-{
-"id": "1039458",
-"url": "https://www.epey.com/bilgisayar-kasasi/asus-a32-plus-siyah.html",
-"name": "Asus A32 Plus",
-"code": "",
-"img": "https://resim.epey.com/1039458/k_asus-a32-plus-siyah-1.jpg",
-"price": 5909.0,
-"sites": 10,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Yok",
-"6383": "4 fan",
-"6391": "4 adet"
 }
 },
 {
@@ -562,13 +530,29 @@
 }
 },
 {
+"id": "809587",
+"url": "https://www.epey.com/bilgisayar-kasasi/msi-mag-forge-m100r.html",
+"name": "MSI MAG Forge M100R",
+"code": "",
+"img": "https://resim.epey.com/809587/k_msi-mag-forge-m100r-1.png",
+"price": 2397.0,
+"sites": 8,
+"score": null,
+"cols": {
+"10400": "Micro ATX",
+"6365": "Yok",
+"6383": "4 fan",
+"6391": "6 adet"
+}
+},
+{
 "id": "870701",
 "url": "https://www.epey.com/bilgisayar-kasasi/msi-mag-forge-100m.html",
 "name": "MSI MAG Forge 100M",
 "code": "",
 "img": "https://resim.epey.com/870701/k_msi-mag-forge-100m-1.png",
 "price": 2029.58,
-"sites": 12,
+"sites": 11,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -642,22 +626,6 @@
 }
 },
 {
-"id": "1052782",
-"url": "https://www.epey.com/bilgisayar-kasasi/next-gaming-orion-cube-3x-fan-siyah.html",
-"name": "Next Gaming Orion Cube 3X Fan",
-"code": "",
-"img": "https://resim.epey.com/1052782/k_next-gaming-orion-cube-3x-fan-siyah-1.jpg",
-"price": 1493.66,
-"sites": 3,
-"score": null,
-"cols": {
-"10400": "Micro ATX",
-"6365": "Yok",
-"6383": "3 fan",
-"6391": "7 adet"
-}
-},
-{
 "id": "1051316",
 "url": "https://www.epey.com/bilgisayar-kasasi/game-in-game-classic-400w.html",
 "name": "Game in Game Classic 400W",
@@ -706,6 +674,22 @@
 }
 },
 {
+"id": "1039458",
+"url": "https://www.epey.com/bilgisayar-kasasi/asus-a32-plus-siyah.html",
+"name": "Asus A32 Plus",
+"code": "",
+"img": "https://resim.epey.com/1039458/k_asus-a32-plus-siyah-1.jpg",
+"price": 5909.0,
+"sites": 10,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Yok",
+"6383": "4 fan",
+"6391": "4 adet"
+}
+},
+{
 "id": "1039431",
 "url": "https://www.epey.com/bilgisayar-kasasi/asus-a32-plus.html",
 "name": "Asus A32 Plus",
@@ -751,6 +735,38 @@
 "6365": "Var",
 "6383": "7 fan",
 "6391": "10 adet"
+}
+},
+{
+"id": "952341",
+"url": "https://www.epey.com/bilgisayar-kasasi/lian-li-o11-vision-siyah.html",
+"name": "Lian Li O11 Vision",
+"code": "",
+"img": "https://resim.epey.com/952341/k_lian-li-o11-vision-siyah-1.jpg",
+"price": 4900.0,
+"sites": 7,
+"score": null,
+"cols": {
+"10400": "E-ATX",
+"6365": "Yok",
+"6383": "0 fan",
+"6391": "8 adet"
+}
+},
+{
+"id": "952322",
+"url": "https://www.epey.com/bilgisayar-kasasi/vento-vg07f.html",
+"name": "Vento VG07F",
+"code": "",
+"img": "https://resim.epey.com/952322/k_vento-vg07f-no-psu-1.jpg",
+"price": 1349.8,
+"sites": 1,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Yok",
+"6383": "4 fan",
+"6391": "6 adet"
 }
 },
 {
@@ -850,6 +866,22 @@
 }
 },
 {
+"id": "1052782",
+"url": "https://www.epey.com/bilgisayar-kasasi/next-gaming-orion-cube-3x-fan-siyah.html",
+"name": "Next Gaming Orion Cube 3X Fan",
+"code": "",
+"img": "https://resim.epey.com/1052782/k_next-gaming-orion-cube-3x-fan-siyah-1.jpg",
+"price": 1493.66,
+"sites": 3,
+"score": null,
+"cols": {
+"10400": "Micro ATX",
+"6365": "Yok",
+"6383": "3 fan",
+"6391": "7 adet"
+}
+},
+{
 "id": "1039749",
 "url": "https://www.epey.com/bilgisayar-kasasi/thermaltake-view-380-argb-850w-ca-3z2-85m6we-00.html",
 "name": "Thermaltake View 380 ARGB 850W",
@@ -911,22 +943,6 @@
 "6365": "Yok",
 "6383": "3 fan",
 "6391": "5 adet"
-}
-},
-{
-"id": "952322",
-"url": "https://www.epey.com/bilgisayar-kasasi/vento-vg07f.html",
-"name": "Vento VG07F",
-"code": "",
-"img": "https://resim.epey.com/952322/k_vento-vg07f-no-psu-1.jpg",
-"price": 1349.8,
-"sites": 1,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Yok",
-"6383": "4 fan",
-"6391": "6 adet"
 }
 },
 {
@@ -1010,6 +1026,22 @@
 }
 },
 {
+"id": "1064692",
+"url": "https://www.epey.com/bilgisayar-kasasi/msi-mag-forge-151a-b75-750w.html",
+"name": "MSI MAG Forge 151A B75 750W",
+"code": "",
+"img": "https://resim.epey.com/1064692/k_msi-mag-forge-151a-b75-750w-1.jpg",
+"price": 5289.0,
+"sites": 9,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Var",
+"6383": "6 fan",
+"6391": "6 adet"
+}
+},
+{
 "id": "975908",
 "url": "https://www.epey.com/bilgisayar-kasasi/msi-mag-pano-100r-pz.html",
 "name": "MSI MAG Pano 100R PZ",
@@ -1064,7 +1096,7 @@
 "code": "",
 "img": "https://resim.epey.com/1062796/k_quantum-gaming-sirius-qt4000-1.jpg",
 "price": 10721.36,
-"sites": 7,
+"sites": 6,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -1154,12 +1186,28 @@
 }
 },
 {
+"id": "1044237",
+"url": "https://www.epey.com/bilgisayar-kasasi/rampage-nova-siyah.html",
+"name": "Rampage Nova",
+"code": "",
+"img": "https://resim.epey.com/1044237/k_rampage-nova-siyah-1.jpg",
+"price": 7751.71,
+"sites": 6,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Yok",
+"6383": "7 fan",
+"6391": "10 adet"
+}
+},
+{
 "id": "1039675",
 "url": "https://www.epey.com/bilgisayar-kasasi/msi-mag-pano-130r-pz-beyaz.html",
 "name": "MSI MAG Pano 130R PZ",
 "code": "",
 "img": "https://resim.epey.com/1039675/k_msi-mag-pano-130r-pz-beyaz-1.jpg",
-"price": 4729.0,
+"price": 5048.01,
 "sites": 10,
 "score": null,
 "cols": {
@@ -1170,28 +1218,12 @@
 }
 },
 {
-"id": "1031307",
-"url": "https://www.epey.com/bilgisayar-kasasi/fazeon-f12-650w.html",
-"name": "Fazeon F12 650W",
-"code": "",
-"img": "https://resim.epey.com/1031307/k_fazeon-f12-650w-1.jpg",
-"price": 2977.6,
-"sites": 7,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Var",
-"6383": "4 fan",
-"6391": "6 adet"
-}
-},
-{
 "id": "1030388",
 "url": "https://www.epey.com/bilgisayar-kasasi/asus-tuf-gaming-gt502-horizon.html",
 "name": "Asus TUF Gaming GT502 Horizon",
 "code": "",
 "img": "https://resim.epey.com/1030388/k_asus-tuf-gaming-gt502-horizon-1.jpg",
-"price": 10244.22,
+"price": 10265.8,
 "sites": 8,
 "score": null,
 "cols": {
@@ -1218,19 +1250,19 @@
 }
 },
 {
-"id": "1019348",
-"url": "https://www.epey.com/bilgisayar-kasasi/fazeon-f7-650w.html",
-"name": "Fazeon F7 650W",
+"id": "1008070",
+"url": "https://www.epey.com/bilgisayar-kasasi/montech-xr.html",
+"name": "Montech XR",
 "code": "",
-"img": "https://resim.epey.com/1019348/k_fazeon-f7-650w-8684779421109-1.jpg",
+"img": "https://resim.epey.com/1008070/k_montech-xr-siyah-4710562741421-1.jpg",
 "price": 3499.0,
-"sites": 6,
+"sites": 2,
 "score": null,
 "cols": {
 "10400": "ATX",
-"6365": "Var",
-"6383": "4 fan",
-"6391": "5 adet"
+"6365": "Yok",
+"6383": "3 fan",
+"6391": "9 adet"
 }
 },
 {
@@ -1255,7 +1287,7 @@
 "name": "PowerBoost PB-P4367BB",
 "code": "",
 "img": "https://resim.epey.com/972062/k_powerboost-pb-p4367bb-1.jpg",
-"price": 5373.99,
+"price": 5385.31,
 "sites": 8,
 "score": null,
 "cols": {
@@ -1263,22 +1295,6 @@
 "6365": "Yok",
 "6383": "3 fan",
 "6391": "-"
-}
-},
-{
-"id": "952341",
-"url": "https://www.epey.com/bilgisayar-kasasi/lian-li-o11-vision-siyah.html",
-"name": "Lian Li O11 Vision",
-"code": "",
-"img": "https://resim.epey.com/952341/k_lian-li-o11-vision-siyah-1.jpg",
-"price": 5429.0,
-"sites": 7,
-"score": null,
-"cols": {
-"10400": "E-ATX",
-"6365": "Yok",
-"6383": "0 fan",
-"6391": "8 adet"
 }
 },
 {
@@ -1410,22 +1426,6 @@
 }
 },
 {
-"id": "1064692",
-"url": "https://www.epey.com/bilgisayar-kasasi/msi-mag-forge-151a-b75-750w.html",
-"name": "MSI MAG Forge 151A B75 750W",
-"code": "",
-"img": "https://resim.epey.com/1064692/k_msi-mag-forge-151a-b75-750w-1.jpg",
-"price": 5289.0,
-"sites": 9,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Var",
-"6383": "6 fan",
-"6391": "6 adet"
-}
-},
-{
 "id": "1070808",
 "url": "https://www.epey.com/bilgisayar-kasasi/asus-tuf-gaming-gt302-850w.html",
 "name": "Asus TUF Gaming GT302 850W",
@@ -1474,6 +1474,22 @@
 }
 },
 {
+"id": "1052321",
+"url": "https://www.epey.com/bilgisayar-kasasi/deepcool-ch260.html",
+"name": "DeepCool CH260",
+"code": "",
+"img": "https://resim.epey.com/1052321/k_deepcool-ch260-1.jpg",
+"price": 3470.11,
+"sites": 6,
+"score": null,
+"cols": {
+"10400": "Micro ATX",
+"6365": "Yok",
+"6383": "0 fan",
+"6391": "6 adet"
+}
+},
+{
 "id": "1051869",
 "url": "https://www.epey.com/bilgisayar-kasasi/lian-li-lancool-207-digital.html",
 "name": "Lian Li Lancool 207 Digital",
@@ -1503,6 +1519,22 @@
 "6365": "Var",
 "6383": "4 fan",
 "6391": "-"
+}
+},
+{
+"id": "1047230",
+"url": "https://www.epey.com/bilgisayar-kasasi/havn-bf-360.html",
+"name": "Havn BF 360",
+"code": "HVN-CA-BF360-02",
+"img": "https://resim.epey.com/1047230/k_havn-bf-360-1.jpg",
+"price": 8956.22,
+"sites": 5,
+"score": null,
+"cols": {
+"10400": "E-ATX",
+"6365": "Yok",
+"6383": "0 fan",
+"6391": "7 adet"
 }
 },
 {
@@ -1586,22 +1618,6 @@
 }
 },
 {
-"id": "1044237",
-"url": "https://www.epey.com/bilgisayar-kasasi/rampage-nova-siyah.html",
-"name": "Rampage Nova",
-"code": "",
-"img": "https://resim.epey.com/1044237/k_rampage-nova-siyah-1.jpg",
-"price": 7751.71,
-"sites": 6,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Yok",
-"6383": "7 fan",
-"6391": "10 adet"
-}
-},
-{
 "id": "1036010",
 "url": "https://www.epey.com/bilgisayar-kasasi/fazeon-f17-750w-f17a750bbq.html",
 "name": "Fazeon F17 750W",
@@ -1634,12 +1650,44 @@
 }
 },
 {
+"id": "1031330",
+"url": "https://www.epey.com/bilgisayar-kasasi/revenge-terranova.html",
+"name": "Revenge Terranova",
+"code": "",
+"img": "https://resim.epey.com/1031330/k_revenge-terranova-1.jpg",
+"price": 2349.0,
+"sites": 3,
+"score": null,
+"cols": {
+"10400": "Micro ATX",
+"6365": "Yok",
+"6383": "6 fan",
+"6391": "8 adet"
+}
+},
+{
+"id": "1031307",
+"url": "https://www.epey.com/bilgisayar-kasasi/fazeon-f12-650w.html",
+"name": "Fazeon F12 650W",
+"code": "",
+"img": "https://resim.epey.com/1031307/k_fazeon-f12-650w-1.jpg",
+"price": 2977.6,
+"sites": 7,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Var",
+"6383": "4 fan",
+"6391": "6 adet"
+}
+},
+{
 "id": "1026452",
 "url": "https://www.epey.com/bilgisayar-kasasi/cooler-master-masterbox-td500-mesh-v2-850w-4x-fan.html",
 "name": "Cooler Master MasterBox TD500 Mesh V2 850W 4X Fan",
 "code": "TD500V2-WGNN85-STU",
 "img": "https://resim.epey.com/1026452/k_cooler-master-masterbox-td500-mesh-v2-850w-td500v2-wgnn85-stu-1.jpg",
-"price": 11129.0,
+"price": 10909.0,
 "sites": 9,
 "score": null,
 "cols": {
@@ -1703,7 +1751,7 @@
 "name": "Lian Li A3",
 "code": "",
 "img": "https://resim.epey.com/998335/k_lian-li-a3-ahsap-1.jpg",
-"price": 5759.0,
+"price": 5590.0,
 "sites": 8,
 "score": null,
 "cols": {
@@ -1711,22 +1759,6 @@
 "6365": "Yok",
 "6383": "0 fan",
 "6391": "9 adet"
-}
-},
-{
-"id": "997829",
-"url": "https://www.epey.com/bilgisayar-kasasi/powerboost-a601b-600w.html",
-"name": "PowerBoost A601B 600W",
-"code": "JBST-PBA601B",
-"img": "https://resim.epey.com/997829/k_powerboost-a601b-600w-1.jpg",
-"price": 2599.0,
-"sites": 9,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Var",
-"6383": "4 fan",
-"6391": "6 adet"
 }
 },
 {
@@ -1743,6 +1775,22 @@
 "6365": "Var",
 "6383": "3 fan",
 "6391": "8 adet"
+}
+},
+{
+"id": "952204",
+"url": "https://www.epey.com/bilgisayar-kasasi/nzxt-h6-flow-rgb-cc-h61fb-r1.html",
+"name": "NZXT H6 Flow RGB",
+"code": "CC-H61FB-R1",
+"img": "https://resim.epey.com/952204/k_nzxt-h6-flow-rgb-siyah-no-psu-cc-h61fb-r1-1.jpg",
+"price": 6761.02,
+"sites": 8,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Yok",
+"6383": "3 fan",
+"6391": "9 adet"
 }
 },
 {
@@ -1842,22 +1890,6 @@
 }
 },
 {
-"id": "723870",
-"url": "https://www.epey.com/bilgisayar-kasasi/msi-mpg-velox-100p.html",
-"name": "MSI MPG Velox 100P",
-"code": "",
-"img": "https://resim.epey.com/723870/k_msi-mpg-velox-100p-1.jpg",
-"price": 4829.91,
-"sites": 7,
-"score": null,
-"cols": {
-"10400": "E-ATX",
-"6365": "Yok",
-"6383": "4 fan",
-"6391": "7 adet"
-}
-},
-{
 "id": "1070545",
 "url": "https://www.epey.com/bilgisayar-kasasi/aigo-ft418-ultra.html",
 "name": "Aigo FT418 Ultra",
@@ -1880,7 +1912,7 @@
 "code": "",
 "img": "https://resim.epey.com/1071271/k_fsp-m340-850w-1.jpg",
 "price": 6459.0,
-"sites": 5,
+"sites": 3,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -1935,22 +1967,6 @@
 "6365": "Yok",
 "6383": "6 fan",
 "6391": "9 adet"
-}
-},
-{
-"id": "1052766",
-"url": "https://www.epey.com/bilgisayar-kasasi/next-gaming-orion-cube-3x-fan.html",
-"name": "Next Gaming Orion Cube 3X Fan",
-"code": "",
-"img": "https://resim.epey.com/1052766/k_next-gaming-orion-cube-750w-beyaz-7231414006141-1.jpg",
-"price": 1526.73,
-"sites": 3,
-"score": null,
-"cols": {
-"10400": "Micro ATX",
-"6365": "Yok",
-"6383": "3 fan",
-"6391": "7 adet"
 }
 },
 {
@@ -2082,22 +2098,6 @@
 }
 },
 {
-"id": "1047230",
-"url": "https://www.epey.com/bilgisayar-kasasi/havn-bf-360.html",
-"name": "Havn BF 360",
-"code": "HVN-CA-BF360-02",
-"img": "https://resim.epey.com/1047230/k_havn-bf-360-1.jpg",
-"price": 8956.22,
-"sites": 5,
-"score": null,
-"cols": {
-"10400": "E-ATX",
-"6365": "Yok",
-"6383": "0 fan",
-"6391": "7 adet"
-}
-},
-{
 "id": "1047053",
 "url": "https://www.epey.com/bilgisayar-kasasi/antec-ax1000-argb.html",
 "name": "Antec AX1000 ARGB",
@@ -2111,6 +2111,22 @@
 "6365": "Yok",
 "6383": "4 fan",
 "6391": "8 adet"
+}
+},
+{
+"id": "1046968",
+"url": "https://www.epey.com/bilgisayar-kasasi/fazeon-f17-850w.html",
+"name": "Fazeon F17 850W",
+"code": "",
+"img": "https://resim.epey.com/1046968/k_fazeon-f17-750w-a750bbq-1.jpg",
+"price": 4799.0,
+"sites": 6,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Var",
+"6383": "3 fan",
+"6391": "9 adet"
 }
 },
 {
@@ -2247,7 +2263,7 @@
 "name": "Asus Prime AP202 ARGB",
 "code": "",
 "img": "https://resim.epey.com/1032380/k_asus-prime-ap202-argb-beyaz-1.jpg",
-"price": 5299.0,
+"price": 5229.4,
 "sites": 8,
 "score": null,
 "cols": {
@@ -2274,22 +2290,6 @@
 }
 },
 {
-"id": "1031330",
-"url": "https://www.epey.com/bilgisayar-kasasi/revenge-terranova.html",
-"name": "Revenge Terranova",
-"code": "",
-"img": "https://resim.epey.com/1031330/k_revenge-terranova-1.jpg",
-"price": 2349.0,
-"sites": 3,
-"score": null,
-"cols": {
-"10400": "Micro ATX",
-"6365": "Yok",
-"6383": "6 fan",
-"6391": "8 adet"
-}
-},
-{
 "id": "1030393",
 "url": "https://www.epey.com/bilgisayar-kasasi/asus-tuf-gaming-gt502-horizon-siyah.html",
 "name": "Asus TUF Gaming GT502 Horizon",
@@ -2306,19 +2306,19 @@
 }
 },
 {
-"id": "1016601",
-"url": "https://www.epey.com/bilgisayar-kasasi/msi-mag-pano-m100r-pz-siyah.html",
-"name": "MSI MAG Pano M100R PZ",
+"id": "1016909",
+"url": "https://www.epey.com/bilgisayar-kasasi/asus-a23-plus-beyaz.html",
+"name": "Asus A23 Plus",
 "code": "",
-"img": "https://resim.epey.com/1016601/k_msi-mag-pano-m100r-pz-siyah-1.jpg",
-"price": 4529.0,
-"sites": 13,
+"img": "https://resim.epey.com/1016909/k_asus-a23-plus-beyaz-1.jpg",
+"price": 3699.0,
+"sites": 10,
 "score": null,
 "cols": {
 "10400": "Micro ATX",
 "6365": "Yok",
 "6383": "4 fan",
-"6391": "10 adet"
+"6391": "7 adet"
 }
 },
 {
@@ -2335,6 +2335,22 @@
 "6365": "Yok",
 "6383": "4 fan",
 "6391": "10 adet"
+}
+},
+{
+"id": "997829",
+"url": "https://www.epey.com/bilgisayar-kasasi/powerboost-a601b-600w.html",
+"name": "PowerBoost A601B 600W",
+"code": "JBST-PBA601B",
+"img": "https://resim.epey.com/997829/k_powerboost-a601b-600w-1.jpg",
+"price": 2698.36,
+"sites": 9,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Var",
+"6383": "4 fan",
+"6391": "6 adet"
 }
 },
 {
@@ -2520,7 +2536,7 @@
 "code": "",
 "img": "https://resim.epey.com/1068518/k_segotep-endura-pro-plus-850w-6959371317108-1.jpg",
 "price": 8849.0,
-"sites": 1,
+"sites": 2,
 "score": null,
 "cols": {
 "10400": "E-ATX",
@@ -2543,6 +2559,22 @@
 "6365": "Var",
 "6383": "4 fan",
 "6391": "10 adet"
+}
+},
+{
+"id": "1063013",
+"url": "https://www.epey.com/bilgisayar-kasasi/thermaltake-ax700.html",
+"name": "Thermaltake AX700",
+"code": "CA-11B-00F1NN-00",
+"img": "https://resim.epey.com/1063013/k_thermaltake-ax700-1.jpg",
+"price": 10115.3,
+"sites": 5,
+"score": null,
+"cols": {
+"10400": "SSI-EEB",
+"6365": "Yok",
+"6383": "-",
+"6391": "18 adet"
 }
 },
 {
@@ -2658,6 +2690,38 @@
 }
 },
 {
+"id": "1052797",
+"url": "https://www.epey.com/bilgisayar-kasasi/next-gaming-orion-cube-5x-fan.html",
+"name": "Next Gaming Orion Cube 5X Fan",
+"code": "",
+"img": "https://resim.epey.com/1052797/k_next-gaming-orion-cube-750w-beyaz-7231414006141-1.jpg",
+"price": 2095.0,
+"sites": 2,
+"score": null,
+"cols": {
+"10400": "Micro ATX",
+"6365": "Yok",
+"6383": "6 fan",
+"6391": "7 adet"
+}
+},
+{
+"id": "1052766",
+"url": "https://www.epey.com/bilgisayar-kasasi/next-gaming-orion-cube-3x-fan.html",
+"name": "Next Gaming Orion Cube 3X Fan",
+"code": "",
+"img": "https://resim.epey.com/1052766/k_next-gaming-orion-cube-750w-beyaz-7231414006141-1.jpg",
+"price": 1526.73,
+"sites": 3,
+"score": null,
+"cols": {
+"10400": "Micro ATX",
+"6365": "Yok",
+"6383": "3 fan",
+"6391": "7 adet"
+}
+},
+{
 "id": "1052401",
 "url": "https://www.epey.com/bilgisayar-kasasi/havn-hs-420.html",
 "name": "Havn HS 420",
@@ -2703,22 +2767,6 @@
 "6365": "Yok",
 "6383": "1 fan",
 "6391": "9 adet"
-}
-},
-{
-"id": "1052321",
-"url": "https://www.epey.com/bilgisayar-kasasi/deepcool-ch260.html",
-"name": "DeepCool CH260",
-"code": "",
-"img": "https://resim.epey.com/1052321/k_deepcool-ch260-1.jpg",
-"price": 3470.11,
-"sites": 6,
-"score": null,
-"cols": {
-"10400": "Micro ATX",
-"6365": "Yok",
-"6383": "0 fan",
-"6391": "6 adet"
 }
 },
 {
@@ -2786,28 +2834,12 @@
 }
 },
 {
-"id": "1046968",
-"url": "https://www.epey.com/bilgisayar-kasasi/fazeon-f17-850w.html",
-"name": "Fazeon F17 850W",
-"code": "",
-"img": "https://resim.epey.com/1046968/k_fazeon-f17-750w-a750bbq-1.jpg",
-"price": 4799.0,
-"sites": 6,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Var",
-"6383": "3 fan",
-"6391": "9 adet"
-}
-},
-{
 "id": "1044140",
 "url": "https://www.epey.com/bilgisayar-kasasi/quantum-gaming-proxima-850w.html",
 "name": "Quantum Gaming Proxima 850W",
 "code": "",
 "img": "https://resim.epey.com/1044140/k_quantum-proxima-beyaz-850w-8680139104095-1.jpg",
-"price": 8994.84,
+"price": 9012.53,
 "sites": 2,
 "score": null,
 "cols": {
@@ -2882,12 +2914,28 @@
 }
 },
 {
+"id": "1039370",
+"url": "https://www.epey.com/bilgisayar-kasasi/revenge-serenity-v2.html",
+"name": "Revenge Serenity V2",
+"code": "",
+"img": "https://resim.epey.com/1039370/k_revenge-serenity-v2-beyaz-8684441741245-1.jpg",
+"price": 2044.2,
+"sites": 1,
+"score": null,
+"cols": {
+"10400": "Micro ATX",
+"6365": "Yok",
+"6383": "4 fan",
+"6391": "5 adet"
+}
+},
+{
 "id": "1035692",
 "url": "https://www.epey.com/bilgisayar-kasasi/james-donkey-stark-s800-650w.html",
 "name": "James Donkey Stark S800 650W",
 "code": "",
 "img": "https://resim.epey.com/1035692/k_james-donkey-stark-s800-650w-850060042607-1.jpg",
-"price": 5810.5,
+"price": 5822.7,
 "sites": 8,
 "score": null,
 "cols": {
@@ -2946,22 +2994,6 @@
 }
 },
 {
-"id": "1032095",
-"url": "https://www.epey.com/bilgisayar-kasasi/vento-vg4202fla.html",
-"name": "Vento VG4202FLA",
-"code": "",
-"img": "https://resim.epey.com/1032095/k_vento-vg4202fla-3423082027500-1.jpg",
-"price": 3100.0,
-"sites": 7,
-"score": null,
-"cols": {
-"10400": "E-ATX",
-"6365": "Yok",
-"6383": "4 fan",
-"6391": "7 adet"
-}
-},
-{
 "id": "1030330",
 "url": "https://www.epey.com/bilgisayar-kasasi/gigabyte-c201-panoramic.html",
 "name": "Gigabyte C201 Panoramic",
@@ -2978,35 +3010,35 @@
 }
 },
 {
-"id": "1016909",
-"url": "https://www.epey.com/bilgisayar-kasasi/asus-a23-plus-beyaz.html",
-"name": "Asus A23 Plus",
+"id": "1019348",
+"url": "https://www.epey.com/bilgisayar-kasasi/fazeon-f7-650w.html",
+"name": "Fazeon F7 650W",
 "code": "",
-"img": "https://resim.epey.com/1016909/k_asus-a23-plus-beyaz-1.jpg",
-"price": 3699.0,
-"sites": 10,
+"img": "https://resim.epey.com/1019348/k_fazeon-f7-650w-8684779421109-1.jpg",
+"price": 3499.0,
+"sites": 6,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Var",
+"6383": "4 fan",
+"6391": "5 adet"
+}
+},
+{
+"id": "1016601",
+"url": "https://www.epey.com/bilgisayar-kasasi/msi-mag-pano-m100r-pz-siyah.html",
+"name": "MSI MAG Pano M100R PZ",
+"code": "",
+"img": "https://resim.epey.com/1016601/k_msi-mag-pano-m100r-pz-siyah-1.jpg",
+"price": 4529.0,
+"sites": 13,
 "score": null,
 "cols": {
 "10400": "Micro ATX",
 "6365": "Yok",
 "6383": "4 fan",
-"6391": "7 adet"
-}
-},
-{
-"id": "1008070",
-"url": "https://www.epey.com/bilgisayar-kasasi/montech-xr.html",
-"name": "Montech XR",
-"code": "",
-"img": "https://resim.epey.com/1008070/k_montech-xr-siyah-4710562741421-1.jpg",
-"price": 3499.0,
-"sites": 2,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Yok",
-"6383": "3 fan",
-"6391": "9 adet"
+"6391": "10 adet"
 }
 },
 {
@@ -3015,7 +3047,7 @@
 "name": "Gigabyte C500 Panoramic Stealth Ice",
 "code": "GB-C500PI ST",
 "img": "https://resim.epey.com/1007216/k_gigabyte-c500-panoramic-stealth-beyaz-1.jpg",
-"price": 5703.08,
+"price": 5519.08,
 "sites": 10,
 "score": null,
 "cols": {
@@ -3031,7 +3063,7 @@
 "name": "Frisby FC-2730B 300W",
 "code": "",
 "img": "https://resim.epey.com/1004161/k_frisby-fc-2730b-300w-9603427301043-1.jpg",
-"price": 2188.51,
+"price": 2208.1,
 "sites": 7,
 "score": null,
 "cols": {
@@ -3170,22 +3202,6 @@
 }
 },
 {
-"id": "952204",
-"url": "https://www.epey.com/bilgisayar-kasasi/nzxt-h6-flow-rgb-cc-h61fb-r1.html",
-"name": "NZXT H6 Flow RGB",
-"code": "CC-H61FB-R1",
-"img": "https://resim.epey.com/952204/k_nzxt-h6-flow-rgb-siyah-no-psu-cc-h61fb-r1-1.jpg",
-"price": 6761.02,
-"sites": 8,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Yok",
-"6383": "3 fan",
-"6391": "9 adet"
-}
-},
-{
 "id": "952151",
 "url": "https://www.epey.com/bilgisayar-kasasi/msi-mag-forge-m100a-600w.html",
 "name": "MSI MAG Forge M100A 600W",
@@ -3223,7 +3239,7 @@
 "name": "Asus Prime AP201",
 "code": "",
 "img": "https://resim.epey.com/870953/k_asus-prime-ap201-beyaz-1.jpg",
-"price": 4999.0,
+"price": 4499.0,
 "sites": 5,
 "score": null,
 "cols": {
@@ -3255,7 +3271,7 @@
 "name": "PowerBoost VK-D501M 650W",
 "code": "",
 "img": "https://resim.epey.com/698645/k_power-boost-vk-d501m-650w-1.jpg",
-"price": 5043.3,
+"price": 5053.9,
 "sites": 5,
 "score": null,
 "cols": {
@@ -3271,7 +3287,7 @@
 "name": "PowerBoost VK-P15B 600W",
 "code": "",
 "img": "https://resim.epey.com/677054/k_power-boost-vk-p15b-600w-1.jpg",
-"price": 4595.7,
+"price": 4605.4,
 "sites": 6,
 "score": null,
 "cols": {
@@ -3378,6 +3394,22 @@
 }
 },
 {
+"id": "723870",
+"url": "https://www.epey.com/bilgisayar-kasasi/msi-mpg-velox-100p.html",
+"name": "MSI MPG Velox 100P",
+"code": "",
+"img": "https://resim.epey.com/723870/k_msi-mpg-velox-100p-1.jpg",
+"price": 4829.91,
+"sites": 7,
+"score": null,
+"cols": {
+"10400": "E-ATX",
+"6365": "Yok",
+"6383": "4 fan",
+"6391": "7 adet"
+}
+},
+{
 "id": "1070619",
 "url": "https://www.epey.com/bilgisayar-kasasi/asus-proart-pa401-wood-edition-mesh.html",
 "name": "Asus ProArt PA401 Wood Edition Mesh",
@@ -3415,7 +3447,7 @@
 "name": "DeepCool CH690 Digital",
 "code": "",
 "img": "https://resim.epey.com/1067352/k_deepcool-ch690-digital-1.jpg",
-"price": 5670.44,
+"price": 5552.2,
 "sites": 3,
 "score": null,
 "cols": {
@@ -3474,19 +3506,19 @@
 }
 },
 {
-"id": "1063013",
-"url": "https://www.epey.com/bilgisayar-kasasi/thermaltake-ax700.html",
-"name": "Thermaltake AX700",
-"code": "CA-11B-00F1NN-00",
-"img": "https://resim.epey.com/1063013/k_thermaltake-ax700-1.jpg",
-"price": 10094.0,
-"sites": 5,
+"id": "1063069",
+"url": "https://www.epey.com/bilgisayar-kasasi/game-in-game-hexa.html",
+"name": "Game in Game Hexa",
+"code": "",
+"img": "https://resim.epey.com/1063069/k_game-in-game-hexa-1.jpg",
+"price": 3542.0,
+"sites": 3,
 "score": null,
 "cols": {
-"10400": "SSI-EEB",
+"10400": "ATX",
 "6365": "Yok",
-"6383": "-",
-"6391": "18 adet"
+"6383": "7 fan",
+"6391": "10 adet"
 }
 },
 {
@@ -3538,12 +3570,28 @@
 }
 },
 {
+"id": "1056971",
+"url": "https://www.epey.com/bilgisayar-kasasi/darkflash-air-nova-850w-beyaz.html",
+"name": "DarkFlash Air Nova 850W",
+"code": "",
+"img": "https://resim.epey.com/1056971/k_darkflash-air-nova-850w-beyaz-1.jpg",
+"price": 8449.0,
+"sites": 3,
+"score": null,
+"cols": {
+"10400": "E-ATX",
+"6365": "Var",
+"6383": "7 fan",
+"6391": "10 adet"
+}
+},
+{
 "id": "1056017",
 "url": "https://www.epey.com/bilgisayar-kasasi/next-gaming-sirius.html",
 "name": "Next Gaming Sirius",
 "code": "",
 "img": "https://resim.epey.com/1056017/k_next-gaming-sirius-2.jpg",
-"price": 4027.3,
+"price": 4295.0,
 "sites": 2,
 "score": null,
 "cols": {
@@ -3607,7 +3655,7 @@
 "name": "Next Gaming Alpha Elite",
 "code": "",
 "img": "https://resim.epey.com/1053222/k_next-gaming-alpha-elite-siyah-1.jpg",
-"price": 3675.4,
+"price": 3895.0,
 "sites": 2,
 "score": null,
 "cols": {
@@ -3631,22 +3679,6 @@
 "6365": "Yok",
 "6383": "3 fan",
 "6391": "12 adet"
-}
-},
-{
-"id": "1052797",
-"url": "https://www.epey.com/bilgisayar-kasasi/next-gaming-orion-cube-5x-fan.html",
-"name": "Next Gaming Orion Cube 5X Fan",
-"code": "",
-"img": "https://resim.epey.com/1052797/k_next-gaming-orion-cube-750w-beyaz-7231414006141-1.jpg",
-"price": 2095.0,
-"sites": 2,
-"score": null,
-"cols": {
-"10400": "Micro ATX",
-"6365": "Yok",
-"6383": "6 fan",
-"6391": "7 adet"
 }
 },
 {
@@ -3874,35 +3906,19 @@
 }
 },
 {
-"id": "1043390",
-"url": "https://www.epey.com/bilgisayar-kasasi/gamebooster-m6001b-600w.html",
-"name": "GameBooster M6001B 600W",
+"id": "1043892",
+"url": "https://www.epey.com/bilgisayar-kasasi/antec-ax1000-argb-750w.html",
+"name": "Antec AX1000 ARGB 750W",
 "code": "",
-"img": "https://resim.epey.com/1043390/k_gamebooster-m6001b-600w-5.jpg",
-"price": 3195.06,
-"sites": 4,
-"score": null,
-"cols": {
-"10400": "Micro ATX",
-"6365": "Var",
-"6383": "4 fan",
-"6391": "6 adet"
-}
-},
-{
-"id": "1043387",
-"url": "https://www.epey.com/bilgisayar-kasasi/powerboost-m5001w-500w.html",
-"name": "PowerBoost M5001W 500W",
-"code": "",
-"img": "https://resim.epey.com/1043387/k_powerboost-m5001w-500w-5.jpg",
-"price": 2549.9,
+"img": "https://resim.epey.com/1043892/k_antec-ax1000-argb-750w-1.jpg",
+"price": 5999.0,
 "sites": 6,
 "score": null,
 "cols": {
-"10400": "Micro ATX",
+"10400": "E-ATX",
 "6365": "Var",
-"6383": "3 fan",
-"6391": "5 adet"
+"6383": "4 fan",
+"6391": "8 adet"
 }
 },
 {
@@ -3919,22 +3935,6 @@
 "6365": "Var",
 "6383": "8 fan",
 "6391": "11 adet"
-}
-},
-{
-"id": "1039370",
-"url": "https://www.epey.com/bilgisayar-kasasi/revenge-serenity-v2.html",
-"name": "Revenge Serenity V2",
-"code": "",
-"img": "https://resim.epey.com/1039370/k_revenge-serenity-v2-beyaz-8684441741245-1.jpg",
-"price": 2044.2,
-"sites": 1,
-"score": null,
-"cols": {
-"10400": "Micro ATX",
-"6365": "Yok",
-"6383": "4 fan",
-"6391": "5 adet"
 }
 },
 {
@@ -3959,8 +3959,8 @@
 "name": "Thermaltake View 380 ARGB 850W",
 "code": "CA-3Z2-85M1WE-00",
 "img": "https://resim.epey.com/1039746/k_thermaltake-view-380-black-argb-ca-1z2-00m1wn-00-1.jpg",
-"price": 10109.7,
-"sites": 6,
+"price": 9999.0,
+"sites": 7,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -4066,6 +4066,22 @@
 }
 },
 {
+"id": "1032095",
+"url": "https://www.epey.com/bilgisayar-kasasi/vento-vg4202fla.html",
+"name": "Vento VG4202FLA",
+"code": "",
+"img": "https://resim.epey.com/1032095/k_vento-vg4202fla-3423082027500-1.jpg",
+"price": 3100.0,
+"sites": 7,
+"score": null,
+"cols": {
+"10400": "E-ATX",
+"6365": "Yok",
+"6383": "4 fan",
+"6391": "7 adet"
+}
+},
+{
 "id": "1030175",
 "url": "https://www.epey.com/bilgisayar-kasasi/hyte-y70-touch-infinite.html",
 "name": "Hyte Y70 Touch Infinite",
@@ -4087,7 +4103,7 @@
 "name": "Lian Li Vector V100R",
 "code": "V100RW",
 "img": "https://resim.epey.com/1030053/k_lian-li-vector-v100r-1.jpg",
-"price": 5620.0,
+"price": 5140.0,
 "sites": 8,
 "score": null,
 "cols": {
@@ -4119,7 +4135,7 @@
 "name": "Thermaltake View 380XL TG ARGB",
 "code": "CA-11E-00M1WN-00",
 "img": "https://resim.epey.com/1027653/k_thermaltake-view-380xl-siyah-ca-11e-00m1wn-00-4711475649675-1.jpg",
-"price": 9190.94,
+"price": 9210.3,
 "sites": 9,
 "score": null,
 "cols": {
@@ -4151,7 +4167,7 @@
 "name": "PowerBoost PB-A400B 400W",
 "code": "",
 "img": "https://resim.epey.com/1019384/k_powerboost-400w-pb-a400b-8682016345140-1.jpg",
-"price": 2307.91,
+"price": 2312.77,
 "sites": 7,
 "score": null,
 "cols": {
@@ -4343,7 +4359,7 @@
 "name": "DeepCool CG530 4F",
 "code": "",
 "img": "https://resim.epey.com/1002135/k_deepcool-cg530-4f-argb-siyah-6933412765158-1.jpg",
-"price": 4229.86,
+"price": 4142.59,
 "sites": 3,
 "score": null,
 "cols": {
@@ -4519,7 +4535,7 @@
 "name": "PowerBoost PB-P4367BW",
 "code": "",
 "img": "https://resim.epey.com/972061/k_powerboost-pb-p4367bw-1.jpg",
-"price": 5618.7,
+"price": 5630.5,
 "sites": 8,
 "score": null,
 "cols": {
@@ -4527,22 +4543,6 @@
 "6365": "Yok",
 "6383": "3 fan",
 "6391": "-"
-}
-},
-{
-"id": "957381",
-"url": "https://www.epey.com/bilgisayar-kasasi/lian-li-o11-dynamic-evo-rgb-o11dergbx.html",
-"name": "Lian Li O11 Dynamic Evo RGB",
-"code": "O11DERGBX",
-"img": "https://resim.epey.com/957381/k_lian-li-o11d-evo-rgb-siyah-o11dergbx-4718466014153-1.jpg",
-"price": 9999.0,
-"sites": 3,
-"score": null,
-"cols": {
-"10400": "E-ATX",
-"6365": "Yok",
-"6383": "0 fan",
-"6391": "10 adet"
 }
 },
 {
@@ -4626,6 +4626,22 @@
 }
 },
 {
+"id": "952207",
+"url": "https://www.epey.com/bilgisayar-kasasi/nzxt-h6-flow-cc-h61fb-01.html",
+"name": "NZXT H6 Flow",
+"code": "CC-H61FB-01",
+"img": "https://resim.epey.com/952207/k_nzxt-h6-flow-cc-h61fb-01-1.jpg",
+"price": 6593.0,
+"sites": 2,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Yok",
+"6383": "3 fan",
+"6391": "9 adet"
+}
+},
+{
 "id": "937357",
 "url": "https://www.epey.com/bilgisayar-kasasi/hyte-y70-touch-cs-hyte-y70-br-l.html",
 "name": "Hyte Y70 Touch",
@@ -4679,7 +4695,7 @@
 "name": "FSP CMT395A 850W",
 "code": "",
 "img": "https://resim.epey.com/903298/k_fsp-cmt395a-850w-1.jpg",
-"price": 9904.97,
+"price": 9925.84,
 "sites": 1,
 "score": null,
 "cols": {
@@ -4808,7 +4824,7 @@
 "code": "",
 "img": "https://resim.epey.com/801667/k_frisby-fc-2710b-300w-3.jpg",
 "price": 1821.6,
-"sites": 9,
+"sites": 8,
 "score": null,
 "cols": {
 "10400": "Micro ATX",
@@ -4823,7 +4839,7 @@
 "name": "Cougar MG140 Air RGB",
 "code": "CGR-5JM8B-AIR-RGB",
 "img": "https://resim.epey.com/797052/k_cougar-mg140-air-rgb-1.jpg",
-"price": 5587.9,
+"price": 5592.3,
 "sites": 4,
 "score": null,
 "cols": {
@@ -5186,6 +5202,22 @@
 }
 },
 {
+"id": "1070843",
+"url": "https://www.epey.com/bilgisayar-kasasi/asus-proart-pa401-wood-edition-tg-1000w.html",
+"name": "Asus ProArt PA401 Wood Edition TG 1000W",
+"code": "",
+"img": "https://resim.epey.com/1070843/k_asus-proart-pa401-wood-metal-edition-4711387654705-1.jpg",
+"price": 11518.2,
+"sites": 1,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Var",
+"6383": "3 fan",
+"6391": "5 adet"
+}
+},
+{
 "id": "1070527",
 "url": "https://www.epey.com/bilgisayar-kasasi/1stplayer-go2-550w.html",
 "name": "1Stplayer GO2 550W",
@@ -5255,7 +5287,7 @@
 "name": "Bitfenix C20 650W",
 "code": "",
 "img": "https://resim.epey.com/1069973/k_bitfenix-c20-650w-1.jpg",
-"price": 4667.52,
+"price": 4677.35,
 "sites": 1,
 "score": null,
 "cols": {
@@ -5362,28 +5394,12 @@
 }
 },
 {
-"id": "1063069",
-"url": "https://www.epey.com/bilgisayar-kasasi/game-in-game-hexa.html",
-"name": "Game in Game Hexa",
-"code": "",
-"img": "https://resim.epey.com/1063069/k_game-in-game-hexa-1.jpg",
-"price": 3542.0,
-"sites": 3,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Yok",
-"6383": "7 fan",
-"6391": "10 adet"
-}
-},
-{
 "id": "1062977",
 "url": "https://www.epey.com/bilgisayar-kasasi/cooler-master-elite-502-750w.html",
 "name": "Cooler Master Elite 502 750W",
 "code": "E502-KGNN75-S00",
 "img": "https://resim.epey.com/1062977/k_cooler-master-elite-502-750w-1.jpg",
-"price": 8751.4,
+"price": 8769.8,
 "sites": 3,
 "score": null,
 "cols": {
@@ -5479,30 +5495,14 @@
 "name": "Lian Li Lancool 217 INF",
 "code": "LAN217INFW",
 "img": "https://resim.epey.com/1058803/k_lian-li-lancool-217-inf-beyaz-1.jpg",
-"price": 6919.0,
-"sites": 5,
+"price": 6760.0,
+"sites": 6,
 "score": null,
 "cols": {
 "10400": "SSI-EEB",
 "6365": "Yok",
 "6383": "2 fan",
 "6391": "11 adet"
-}
-},
-{
-"id": "1056971",
-"url": "https://www.epey.com/bilgisayar-kasasi/darkflash-air-nova-850w-beyaz.html",
-"name": "DarkFlash Air Nova 850W",
-"code": "",
-"img": "https://resim.epey.com/1056971/k_darkflash-air-nova-850w-beyaz-1.jpg",
-"price": 8449.0,
-"sites": 3,
-"score": null,
-"cols": {
-"10400": "E-ATX",
-"6365": "Var",
-"6383": "7 fan",
-"6391": "10 adet"
 }
 },
 {
@@ -5784,7 +5784,7 @@
 "code": "",
 "img": "https://resim.epey.com/1049656/k_bitfenix-sep-ii-850w-beyaz-1.jpg",
 "price": 6319.0,
-"sites": 2,
+"sites": 3,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -5879,8 +5879,8 @@
 "name": "Enermax StarryFort SF21 600W",
 "code": "",
 "img": "https://resim.epey.com/1047287/k_enermax-starryfort-sf21-600w-1.jpg",
-"price": 8292.25,
-"sites": 2,
+"price": 11975.28,
+"sites": 1,
 "score": null,
 "cols": {
 "10400": "Micro ATX",
@@ -6087,8 +6087,8 @@
 "name": "Antec C8 Wood",
 "code": "",
 "img": "https://resim.epey.com/1044231/k_antec-c8-wood-kahve-1.jpg",
-"price": 5999.0,
-"sites": 7,
+"price": 8499.0,
+"sites": 6,
 "score": null,
 "cols": {
 "10400": "E-ATX",
@@ -6127,22 +6127,6 @@
 "6365": "Yok",
 "6383": "0 fan",
 "6391": "10 adet"
-}
-},
-{
-"id": "1043892",
-"url": "https://www.epey.com/bilgisayar-kasasi/antec-ax1000-argb-750w.html",
-"name": "Antec AX1000 ARGB 750W",
-"code": "",
-"img": "https://resim.epey.com/1043892/k_antec-ax1000-argb-750w-1.jpg",
-"price": 5999.0,
-"sites": 6,
-"score": null,
-"cols": {
-"10400": "E-ATX",
-"6365": "Var",
-"6383": "4 fan",
-"6391": "8 adet"
 }
 },
 {
@@ -6191,6 +6175,38 @@
 "6365": "Yok",
 "6383": "1 fan",
 "6391": "4 adet"
+}
+},
+{
+"id": "1043390",
+"url": "https://www.epey.com/bilgisayar-kasasi/gamebooster-m6001b-600w.html",
+"name": "GameBooster M6001B 600W",
+"code": "",
+"img": "https://resim.epey.com/1043390/k_gamebooster-m6001b-600w-5.jpg",
+"price": 3195.06,
+"sites": 4,
+"score": null,
+"cols": {
+"10400": "Micro ATX",
+"6365": "Var",
+"6383": "4 fan",
+"6391": "6 adet"
+}
+},
+{
+"id": "1043387",
+"url": "https://www.epey.com/bilgisayar-kasasi/powerboost-m5001w-500w.html",
+"name": "PowerBoost M5001W 500W",
+"code": "",
+"img": "https://resim.epey.com/1043387/k_powerboost-m5001w-500w-5.jpg",
+"price": 2555.3,
+"sites": 6,
+"score": null,
+"cols": {
+"10400": "Micro ATX",
+"6365": "Var",
+"6383": "3 fan",
+"6391": "5 adet"
 }
 },
 {
@@ -6503,7 +6519,7 @@
 "name": "İzoly Venüs 450W",
 "code": "",
 "img": "https://resim.epey.com/1032509/k_izoly-venus-450w-8684341415222-1.jpg",
-"price": 2619.44,
+"price": 2703.58,
 "sites": 3,
 "score": null,
 "cols": {
@@ -6631,7 +6647,7 @@
 "name": "Asus TUF Gaming GT502 Plus",
 "code": "",
 "img": "https://resim.epey.com/1030396/k_asus-tuf-gaming-gt502-plus-beyaz-1.jpg",
-"price": 8293.0,
+"price": 8540.0,
 "sites": 10,
 "score": null,
 "cols": {
@@ -6695,7 +6711,7 @@
 "name": "Cooler Master MasterBox TD500 Mesh V2 850W",
 "code": "TD500V2-KGNN85-STU",
 "img": "https://resim.epey.com/1026448/k_coolermaster-td500-v2-750w-td500v2-kgnn75-stu-3.jpg",
-"price": 11193.28,
+"price": 11216.86,
 "sites": 11,
 "score": null,
 "cols": {
@@ -6727,8 +6743,8 @@
 "name": "PowerBoost Eclipse",
 "code": "JBST-PBA100W",
 "img": "https://resim.epey.com/1023100/k_powerboost-eclipse-1.jpg",
-"price": 5682.6,
-"sites": 7,
+"price": 5694.6,
+"sites": 6,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -6994,22 +7010,6 @@
 }
 },
 {
-"id": "1004537",
-"url": "https://www.epey.com/bilgisayar-kasasi/vento-vg4202fl.html",
-"name": "Vento VG4202FL",
-"code": "",
-"img": "https://resim.epey.com/1004537/k_vento-vg4202fl-1.jpg",
-"price": 3119.0,
-"sites": 7,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Yok",
-"6383": "4 fan",
-"6391": "7 adet"
-}
-},
-{
 "id": "1004160",
 "url": "https://www.epey.com/bilgisayar-kasasi/frisby-fc-8970g-300w.html",
 "name": "Frisby FC-8970G 300W",
@@ -7223,7 +7223,7 @@
 "name": "Vento VG3400S",
 "code": "",
 "img": "https://resim.epey.com/957420/k_vento-vg3400s-rgb-4713224220432-1.jpg",
-"price": 2499.0,
+"price": 2350.0,
 "sites": 7,
 "score": null,
 "cols": {
@@ -7362,19 +7362,19 @@
 }
 },
 {
-"id": "952207",
-"url": "https://www.epey.com/bilgisayar-kasasi/nzxt-h6-flow-cc-h61fb-01.html",
-"name": "NZXT H6 Flow",
-"code": "CC-H61FB-01",
-"img": "https://resim.epey.com/952207/k_nzxt-h6-flow-cc-h61fb-01-1.jpg",
-"price": 6593.0,
-"sites": 2,
+"id": "952165",
+"url": "https://www.epey.com/bilgisayar-kasasi/nzxt-h9-flow-cm-h91fb-01.html",
+"name": "NZXT H9 Flow",
+"code": "CM-H91FB-01",
+"img": "https://resim.epey.com/952165/k_nzxt-h9-flow-siyah-no-psu-cm-h91fb-01-1.jpg",
+"price": 11857.02,
+"sites": 8,
 "score": null,
 "cols": {
 "10400": "ATX",
 "6365": "Yok",
-"6383": "3 fan",
-"6391": "9 adet"
+"6383": "4 fan",
+"6391": "10 adet"
 }
 },
 {
@@ -7447,7 +7447,7 @@
 "name": "Vento VG4200S",
 "code": "",
 "img": "https://resim.epey.com/939694/k_vento-vg4200s-1.jpg",
-"price": 2959.77,
+"price": 2399.0,
 "sites": 5,
 "score": null,
 "cols": {
@@ -7464,7 +7464,7 @@
 "code": "",
 "img": "https://resim.epey.com/939695/k_powerboost-pbp1601bw-1.jpg",
 "price": 3058.79,
-"sites": 5,
+"sites": 4,
 "score": null,
 "cols": {
 "10400": "E-ATX",
@@ -7479,7 +7479,7 @@
 "name": "PowerBoost PB-P3720B 850W",
 "code": "",
 "img": "https://resim.epey.com/939698/k_powerboost-pb-p3720b-850-w-1.jpg",
-"price": 5490.8,
+"price": 5502.4,
 "sites": 6,
 "score": null,
 "cols": {
@@ -7511,7 +7511,7 @@
 "name": "PowerBoost PB-T001BW",
 "code": "",
 "img": "https://resim.epey.com/934543/k_powerboost-pb-t001bw-1.jpg",
-"price": 3189.2,
+"price": 3195.9,
 "sites": 7,
 "score": null,
 "cols": {
@@ -7767,7 +7767,7 @@
 "name": "Rampage X-Horse 850W",
 "code": "",
 "img": "https://resim.epey.com/891283/k_rampage-x-horse-850w-1.jpg",
-"price": 6898.89,
+"price": 6913.14,
 "sites": 2,
 "score": null,
 "cols": {
@@ -7826,22 +7826,6 @@
 }
 },
 {
-"id": "882267",
-"url": "https://www.epey.com/bilgisayar-kasasi/rampage-shiva.html",
-"name": "Rampage Shiva",
-"code": "",
-"img": "https://resim.epey.com/882267/k_rampage-shiva-1.jpg",
-"price": 2199.0,
-"sites": 2,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Yok",
-"6383": "4 fan",
-"6391": "6 adet"
-}
-},
-{
 "id": "877879",
 "url": "https://www.epey.com/bilgisayar-kasasi/everest-k250-peak-250w.html",
 "name": "Everest K250 Peak 250W",
@@ -7887,22 +7871,6 @@
 "6365": "Yok",
 "6383": "-",
 "6391": "7 adet"
-}
-},
-{
-"id": "871569",
-"url": "https://www.epey.com/bilgisayar-kasasi/deepcool-cc560-beyaz.html",
-"name": "DeepCool CC560",
-"code": "",
-"img": "https://resim.epey.com/871569/k_deep-cool-cc560-beyaz-1.jpg",
-"price": 3683.46,
-"sites": 2,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Yok",
-"6383": "4 fan",
-"6391": "6 adet"
 }
 },
 {
@@ -7959,7 +7927,7 @@
 "name": "PowerBoost VK-G4306S",
 "code": "",
 "img": "https://resim.epey.com/854458/k_powerboost-vk-g4306s-1.jpg",
-"price": 3253.2,
+"price": 3260.0,
 "sites": 7,
 "score": null,
 "cols": {
@@ -8072,7 +8040,7 @@
 "code": "",
 "img": "https://resim.epey.com/785347/k_vento-ta-k62-650w-1.jpg",
 "price": 3819.71,
-"sites": 8,
+"sites": 7,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -8263,7 +8231,7 @@
 "name": "Zalman N5 TF",
 "code": "",
 "img": "https://resim.epey.com/682060/k_zalman-n5tf-3.jpg",
-"price": 7222.99,
+"price": 7209.72,
 "sites": 4,
 "score": null,
 "cols": {
@@ -8312,7 +8280,7 @@
 "code": "",
 "img": "https://resim.epey.com/677055/k_power-boost-vk-b001s-1.png",
 "price": 1799.0,
-"sites": 7,
+"sites": 8,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -8456,7 +8424,7 @@
 "code": "MB600-WGNN-S00",
 "img": "https://resim.epey.com/953148/k_cooler-master-masterbox-600-beyaz-1.jpg",
 "price": 5571.08,
-"sites": 8,
+"sites": 7,
 "score": null,
 "cols": {
 "10400": "E-ATX",
@@ -8487,7 +8455,7 @@
 "name": "Lian Li Vector V100 Mini",
 "code": "V100RMIX",
 "img": "https://resim.epey.com/1047337/k_lian-li-vector-v100-mini-v100rmix-1.jpg",
-"price": 4420.0,
+"price": 4060.0,
 "sites": 7,
 "score": null,
 "cols": {
@@ -8610,22 +8578,6 @@
 }
 },
 {
-"id": "990646",
-"url": "https://www.epey.com/bilgisayar-kasasi/corsair-9000d-rgb-airflow.html",
-"name": "Corsair 9000D RGB Airflow",
-"code": "CC-9011274-WW",
-"img": "https://resim.epey.com/990646/k_corsair-9000d-rgb-airflow-beyaz-1.jpg",
-"price": 31546.0,
-"sites": 1,
-"score": null,
-"cols": {
-"10400": "E-ATX",
-"6365": "Yok",
-"6383": "0 fan",
-"6391": "21 adet"
-}
-},
-{
 "id": "966874",
 "url": "https://www.epey.com/bilgisayar-kasasi/gameforce-xmesh-6x-rgb-fan.html",
 "name": "Gameforce Xmesh 6X RGB Fan",
@@ -8727,7 +8679,7 @@
 "name": "MSI MAG Forge 151A B75",
 "code": "",
 "img": "https://resim.epey.com/1072525/k_msi-mag-forge-151a-b75-2.jpg",
-"price": 5799.01,
+"price": 5999.0,
 "sites": 7,
 "score": null,
 "cols": {
@@ -8903,7 +8855,7 @@
 "name": "BitFenix Digital T10 ES 10.24\" 850W",
 "code": "",
 "img": "https://resim.epey.com/1070641/k_bitfenix-digital-t10-850w-siyah-digital-es-ef-degil-1.jpg",
-"price": 15376.9,
+"price": 15408.6,
 "sites": 2,
 "score": null,
 "cols": {
@@ -8911,22 +8863,6 @@
 "6365": "Var",
 "6383": "4 fan",
 "6391": "10 adet"
-}
-},
-{
-"id": "1070843",
-"url": "https://www.epey.com/bilgisayar-kasasi/asus-proart-pa401-wood-edition-tg-1000w.html",
-"name": "Asus ProArt PA401 Wood Edition TG 1000W",
-"code": "",
-"img": "https://resim.epey.com/1070843/k_asus-proart-pa401-wood-metal-edition-4711387654705-1.jpg",
-"price": 11518.2,
-"sites": 1,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Var",
-"6383": "3 fan",
-"6391": "5 adet"
 }
 },
 {
@@ -9511,7 +9447,7 @@
 "name": "Frisby Vanta-G 750W",
 "code": "FC-9570G",
 "img": "https://resim.epey.com/1052337/k_frisby-fc-9570g-vanta-g-750w-1.jpg",
-"price": 5899.0,
+"price": 5000.0,
 "sites": 7,
 "score": null,
 "cols": {
@@ -9559,7 +9495,7 @@
 "name": "Frisby FC-9575G 750W",
 "code": "",
 "img": "https://resim.epey.com/1067223/k_frisby-fc-9575g-750w-1.jpg",
-"price": 7045.0,
+"price": 7039.3,
 "sites": 3,
 "score": null,
 "cols": {
@@ -9975,7 +9911,7 @@
 "name": "PowerBoost PB-C9025B 750W",
 "code": "",
 "img": "https://resim.epey.com/1057724/k_powerboost-pb-c9025b-750w-1.jpg",
-"price": 5746.6,
+"price": 5758.7,
 "sites": 4,
 "score": null,
 "cols": {
@@ -10007,7 +9943,7 @@
 "name": "PowerBoost PB-J9031B 750W",
 "code": "",
 "img": "https://resim.epey.com/1057720/k_powerboost-pb-j9031b-750w-1.jpg",
-"price": 5107.2,
+"price": 5118.0,
 "sites": 5,
 "score": null,
 "cols": {
@@ -10119,7 +10055,7 @@
 "name": "Cooler Master MasterFrame 360 Panorama",
 "code": "MF360-KINN-S00",
 "img": "https://resim.epey.com/1052302/k_cooler-master-masterframe-siyah-lcd-siz-mf360-kinn-s00-4719512163412-1.jpg",
-"price": 16295.5,
+"price": 16329.9,
 "sites": 7,
 "score": null,
 "cols": {
@@ -10759,7 +10695,7 @@
 "name": "Iromx Meridian",
 "code": "",
 "img": "https://resim.epey.com/1051811/k_iromx-meridian-1.jpg",
-"price": 2891.17,
+"price": 2832.72,
 "sites": 4,
 "score": null,
 "cols": {
@@ -11042,6 +10978,22 @@
 }
 },
 {
+"id": "1049968",
+"url": "https://www.epey.com/bilgisayar-kasasi/rampage-helios-650w-siyah.html",
+"name": "Rampage Helios 650W",
+"code": "",
+"img": "https://resim.epey.com/1049968/k_rampage-helios-650w-siyah-1.jpg",
+"price": 3999.0,
+"sites": 1,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Var",
+"6383": "4 fan",
+"6391": "-"
+}
+},
+{
 "id": "1049964",
 "url": "https://www.epey.com/bilgisayar-kasasi/rampage-lyron-beyaz.html",
 "name": "Rampage Lyron",
@@ -11240,7 +11192,7 @@
 "code": "",
 "img": "https://resim.epey.com/1049654/k_bitfenix-sep-ii-1.jpg",
 "price": 5349.0,
-"sites": 2,
+"sites": 3,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -11415,7 +11367,7 @@
 "name": "Enermax K1A Air 750W",
 "code": "EC-K1A-AIR-EB750-C",
 "img": "https://resim.epey.com/1047261/k_enermax-k1a-air-750w-1.jpg",
-"price": 4958.05,
+"price": 5055.82,
 "sites": 5,
 "score": null,
 "cols": {
@@ -12183,7 +12135,7 @@
 "name": "Cooler Master MasterFrame 500",
 "code": "MF500M-KHNN-S01",
 "img": "https://resim.epey.com/1039346/k_cooler-master-masterframe-500tg-mf500m-khnn-s01-4719512160909-1.jpg",
-"price": 11692.3,
+"price": 11717.0,
 "sites": 5,
 "score": null,
 "cols": {
@@ -12519,7 +12471,7 @@
 "name": "James Donkey Helix H800 550W",
 "code": "",
 "img": "https://resim.epey.com/1035923/k_james-donkey-helix-h800-550w-850060042881-1.jpg",
-"price": 3700.7,
+"price": 3708.4,
 "sites": 8,
 "score": null,
 "cols": {
@@ -13255,8 +13207,8 @@
 "name": "Xigmatek Duo X 750W",
 "code": "EN46483",
 "img": "https://resim.epey.com/1028238/k_xigmatek-duo-x-750w-1.jpg",
-"price": 5131.11,
-"sites": 5,
+"price": 4598.3,
+"sites": 6,
 "score": null,
 "cols": {
 "10400": "E-ATX",
@@ -13287,7 +13239,7 @@
 "name": "Gamepower Warcry TopGlass 650W",
 "code": "",
 "img": "https://resim.epey.com/1027724/k_gamepower-warcry-topglass-650w-850060042799-1.jpg",
-"price": 8069.0,
+"price": 7988.31,
 "sites": 2,
 "score": null,
 "cols": {
@@ -13639,7 +13591,7 @@
 "name": "1Stplayer WD5 750W",
 "code": "",
 "img": "https://resim.epey.com/1026330/k_1stplayer-wd5-siyah-750w-6977916594654-1.jpg",
-"price": 5879.02,
+"price": 5977.02,
 "sites": 2,
 "score": null,
 "cols": {
@@ -13799,8 +13751,8 @@
 "name": "NZXT H5 Flow 750W",
 "code": "",
 "img": "https://resim.epey.com/1019533/k_nzxt-h5-flow-750w-beya-1.jpg",
-"price": 11799.0,
-"sites": 4,
+"price": 7999.0,
+"sites": 5,
 "score": null,
 "cols": {
 "10400": "E-ATX",
@@ -13911,7 +13863,7 @@
 "name": "1Stplayer FD5-M 600W",
 "code": "",
 "img": "https://resim.epey.com/1019311/k_1stplayer-fd5-m-600w-1.jpg",
-"price": 3821.02,
+"price": 4311.02,
 "sites": 3,
 "score": null,
 "cols": {
@@ -13943,7 +13895,7 @@
 "name": "Vento VS121S 350W",
 "code": "",
 "img": "https://resim.epey.com/1019378/k_vento-vs121s-350w-4713224121500-1.jpg",
-"price": 3340.53,
+"price": 3347.4,
 "sites": 3,
 "score": null,
 "cols": {
@@ -13959,7 +13911,7 @@
 "name": "1Stplayer AR7-G 750W",
 "code": "",
 "img": "https://resim.epey.com/1019308/k_1stplayer-ar7-g-siyah-750w-6977916594609-1.jpg",
-"price": 5899.6,
+"price": 5879.02,
 "sites": 3,
 "score": null,
 "cols": {
@@ -14882,6 +14834,22 @@
 }
 },
 {
+"id": "1004537",
+"url": "https://www.epey.com/bilgisayar-kasasi/vento-vg4202fl.html",
+"name": "Vento VG4202FL",
+"code": "",
+"img": "https://resim.epey.com/1004537/k_vento-vg4202fl-1.jpg",
+"price": 3119.0,
+"sites": 7,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Yok",
+"6383": "4 fan",
+"6391": "7 adet"
+}
+},
+{
 "id": "1004551",
 "url": "https://www.epey.com/bilgisayar-kasasi/zoko-hunter-beyaz.html",
 "name": "Zoko Hunter",
@@ -15207,7 +15175,7 @@
 "name": "Thermaltake The Tower 600",
 "code": "CA-1Z1-00MEWN-00",
 "img": "https://resim.epey.com/1000241/k_thermaltake-the-tower-600-1.jpg",
-"price": 13685.36,
+"price": 13712.41,
 "sites": 1,
 "score": null,
 "cols": {
@@ -15223,7 +15191,7 @@
 "name": "Thermaltake Divider 300 TG",
 "code": "",
 "img": "https://resim.epey.com/999250/k_thermaltake-divider-300-tg-snow-siyah-1.jpg",
-"price": 10065.47,
+"price": 9809.46,
 "sites": 1,
 "score": null,
 "cols": {
@@ -15255,8 +15223,8 @@
 "name": "PowerBoost PB-PS7840B 600W",
 "code": "",
 "img": "https://resim.epey.com/997843/k_powerboost-pb-ps7840b-600w-1.jpg",
-"price": 3572.8,
-"sites": 7,
+"price": 3580.3,
+"sites": 6,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -15303,7 +15271,7 @@
 "name": "PowerBoost PB-PS1951B 500W",
 "code": "",
 "img": "https://resim.epey.com/997827/k_powerboost-pb-ps1951b-500w-1.jpg",
-"price": 4890.66,
+"price": 4934.06,
 "sites": 1,
 "score": null,
 "cols": {
@@ -15512,7 +15480,7 @@
 "code": "BFC-CETB75KKGSK-4A",
 "img": "https://resim.epey.com/995323/k_bitfenix-ceto-premium-edition-750w-1.jpg",
 "price": 5985.8,
-"sites": 6,
+"sites": 5,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -15655,7 +15623,7 @@
 "name": "1Stplayer FD8 750W",
 "code": "",
 "img": "https://resim.epey.com/988832/k_1stplayer-fd8-1.jpg",
-"price": 7699.0,
+"price": 6565.02,
 "sites": 2,
 "score": null,
 "cols": {
@@ -15975,7 +15943,7 @@
 "name": "Dragos Basalt Pro 600W",
 "code": "",
 "img": "https://resim.epey.com/975948/k_dragos-basalt-600w-beyaz-8683261175735-1.jpg",
-"price": 8055.52,
+"price": 8072.08,
 "sites": 2,
 "score": null,
 "cols": {
@@ -16407,7 +16375,7 @@
 "name": "SilverStone RM44",
 "code": "",
 "img": "https://resim.epey.com/947922/k_silverstone-rm44-1.jpg",
-"price": 23199.0,
+"price": 24699.0,
 "sites": 2,
 "score": null,
 "cols": {
@@ -16584,7 +16552,7 @@
 "code": "",
 "img": "https://resim.epey.com/900683/k_powerboost-pb-p1600b-1.jpg",
 "price": 2699.0,
-"sites": 7,
+"sites": 6,
 "score": null,
 "cols": {
 "10400": "E-ATX",
@@ -16847,22 +16815,6 @@
 "6365": "Var",
 "6383": "4 fan",
 "6391": "8 adet"
-}
-},
-{
-"id": "952165",
-"url": "https://www.epey.com/bilgisayar-kasasi/nzxt-h9-flow-cm-h91fb-01.html",
-"name": "NZXT H9 Flow",
-"code": "CM-H91FB-01",
-"img": "https://resim.epey.com/952165/k_nzxt-h9-flow-siyah-no-psu-cm-h91fb-01-1.jpg",
-"price": 11353.37,
-"sites": 8,
-"score": null,
-"cols": {
-"10400": "ATX",
-"6365": "Yok",
-"6383": "4 fan",
-"6391": "10 adet"
 }
 },
 {
@@ -17319,7 +17271,7 @@
 "name": "Power Boost PB-P2252BW",
 "code": "",
 "img": "https://resim.epey.com/935420/k_power-boost-pb-p2252bw-1.jpg",
-"price": 3125.3,
+"price": 3131.9,
 "sites": 4,
 "score": null,
 "cols": {
@@ -17384,7 +17336,7 @@
 "code": "",
 "img": "https://resim.epey.com/934337/k_gamebooster-gb-t005mb-1.jpg",
 "price": 2833.4,
-"sites": 7,
+"sites": 6,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -17479,7 +17431,7 @@
 "name": "Inca Empousa EMG-15XB",
 "code": "",
 "img": "https://resim.epey.com/927231/k_inca-emg-15xb-1.jpg",
-"price": 2315.13,
+"price": 2315.14,
 "sites": 6,
 "score": null,
 "cols": {
@@ -17591,7 +17543,7 @@
 "name": "FSP CMT595AL 850W",
 "code": "",
 "img": "https://resim.epey.com/923102/k_fsp-cmt595al-850w-1.jpg",
-"price": 9467.7,
+"price": 9487.7,
 "sites": 3,
 "score": null,
 "cols": {
@@ -17607,7 +17559,7 @@
 "name": "Gamepower Eclipse 500W",
 "code": "",
 "img": "https://resim.epey.com/922569/k_gamepower-eclipse-500w-1.jpg",
-"price": 3999.0,
+"price": 3759.06,
 "sites": 5,
 "score": null,
 "cols": {
@@ -17847,7 +17799,7 @@
 "name": "PowerBoost PB-P705B 650W",
 "code": "",
 "img": "https://resim.epey.com/904783/k_power-boost-pb-p705b-650w-1.jpg",
-"price": 5043.3,
+"price": 5053.9,
 "sites": 6,
 "score": null,
 "cols": {
@@ -17895,7 +17847,7 @@
 "name": "PowerBoost VK-P1882BW 650W",
 "code": "",
 "img": "https://resim.epey.com/897589/k_power-boost-vk-p1882bw-650w-1.jpg",
-"price": 4851.5,
+"price": 4861.7,
 "sites": 4,
 "score": null,
 "cols": {
@@ -18055,7 +18007,7 @@
 "name": "PowerBoost PB-P3509BW",
 "code": "",
 "img": "https://resim.epey.com/900684/k_powerboost-pb-p3509bw-1.jpg",
-"price": 3061.4,
+"price": 3067.8,
 "sites": 6,
 "score": null,
 "cols": {
@@ -18071,7 +18023,7 @@
 "name": "PowerBoost PB-P2252BP",
 "code": "",
 "img": "https://resim.epey.com/897588/k_power-boost-pb-p2252bp-1.jpg",
-"price": 2869.6,
+"price": 2875.6,
 "sites": 6,
 "score": null,
 "cols": {
@@ -18087,7 +18039,7 @@
 "name": "PowerBoost PB-P2252BO",
 "code": "",
 "img": "https://resim.epey.com/897587/k_power-boost-pb-p2252bo-6.jpg",
-"price": 2869.6,
+"price": 2875.6,
 "sites": 4,
 "score": null,
 "cols": {
@@ -18231,7 +18183,7 @@
 "name": "PowerBoost PB-P2252BB",
 "code": "",
 "img": "https://resim.epey.com/897590/k_power-boost-pb-p2252bb-1.jpg",
-"price": 2741.7,
+"price": 2747.5,
 "sites": 6,
 "score": null,
 "cols": {
@@ -18343,7 +18295,7 @@
 "name": "PowerBoost PB-P3701",
 "code": "",
 "img": "https://resim.epey.com/886342/k_power-boost-pb-p3701-1.jpg",
-"price": 4467.9,
+"price": 4477.3,
 "sites": 6,
 "score": null,
 "cols": {
@@ -18423,7 +18375,7 @@
 "name": "PowerBoost PB-P3509BB 650W",
 "code": "",
 "img": "https://resim.epey.com/891983/k_powerboost-pb-p3509bb-650w-1.jpg",
-"price": 4979.4,
+"price": 4989.8,
 "sites": 6,
 "score": null,
 "cols": {
@@ -18471,7 +18423,7 @@
 "name": "PowerBoost X-12W",
 "code": "",
 "img": "https://resim.epey.com/884395/k_powerboost-x-12w-4.jpg",
-"price": 2805.6,
+"price": 2811.5,
 "sites": 6,
 "score": null,
 "cols": {
@@ -18487,7 +18439,7 @@
 "name": "PowerBoost X-12B",
 "code": "",
 "img": "https://resim.epey.com/882265/k_power-boost-x-12b-1.jpg",
-"price": 2613.8,
+"price": 2619.3,
 "sites": 7,
 "score": null,
 "cols": {
@@ -18578,6 +18530,22 @@
 }
 },
 {
+"id": "882267",
+"url": "https://www.epey.com/bilgisayar-kasasi/rampage-shiva.html",
+"name": "Rampage Shiva",
+"code": "",
+"img": "https://resim.epey.com/882267/k_rampage-shiva-1.jpg",
+"price": 2199.0,
+"sites": 2,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Yok",
+"6383": "4 fan",
+"6391": "6 adet"
+}
+},
+{
 "id": "883401",
 "url": "https://www.epey.com/bilgisayar-kasasi/everest-k250-peak-250w-beyaz.html",
 "name": "Everest K250 Peak 250W",
@@ -18631,7 +18599,7 @@
 "name": "Gamdias Talos E2 Elite 750W",
 "code": "",
 "img": "https://resim.epey.com/878001/k_gamdias-talos-e2-elite-750w-4.jpg",
-"price": 5784.35,
+"price": 5663.66,
 "sites": 4,
 "score": null,
 "cols": {
@@ -18946,6 +18914,22 @@
 }
 },
 {
+"id": "871569",
+"url": "https://www.epey.com/bilgisayar-kasasi/deepcool-cc560-beyaz.html",
+"name": "DeepCool CC560",
+"code": "",
+"img": "https://resim.epey.com/871569/k_deep-cool-cc560-beyaz-1.jpg",
+"price": 3683.46,
+"sites": 2,
+"score": null,
+"cols": {
+"10400": "ATX",
+"6365": "Yok",
+"6383": "4 fan",
+"6391": "6 adet"
+}
+},
+{
 "id": "871456",
 "url": "https://www.epey.com/bilgisayar-kasasi/corsair-icue-220t-cc-9011190-ww.html",
 "name": "Corsair iCUE 220T Cam Ön Panel",
@@ -19255,7 +19239,7 @@
 "name": "PowerBoost VK-W001B",
 "code": "",
 "img": "https://resim.epey.com/857934/k_powerboost-vk-w001b-1.jpg",
-"price": 2871.07,
+"price": 2877.12,
 "sites": 8,
 "score": null,
 "cols": {
@@ -19271,7 +19255,7 @@
 "name": "PowerBoost VK-Z002B",
 "code": "",
 "img": "https://resim.epey.com/857933/k_powerboost-vk-z002b-6.jpg",
-"price": 2741.7,
+"price": 2747.5,
 "sites": 6,
 "score": null,
 "cols": {
@@ -19287,7 +19271,7 @@
 "name": "Gamepower Ravadin",
 "code": "",
 "img": "https://resim.epey.com/856640/k_gamepower-ravadin-1.jpg",
-"price": 4684.1,
+"price": 4693.97,
 "sites": 6,
 "score": null,
 "cols": {
@@ -19383,7 +19367,7 @@
 "name": "PowerBoost VK-H002B",
 "code": "",
 "img": "https://resim.epey.com/854456/k_powerboost-vk-h002b-1.jpg",
-"price": 2997.4,
+"price": 3003.7,
 "sites": 5,
 "score": null,
 "cols": {
@@ -19655,7 +19639,7 @@
 "name": "Frisby FC-2940B 500W",
 "code": "",
 "img": "https://resim.epey.com/835069/k_frisby-fc-2940b-500w-2.jpg",
-"price": 9432.91,
+"price": 9452.62,
 "sites": 1,
 "score": null,
 "cols": {
@@ -19895,7 +19879,7 @@
 "name": "PowerBoost PB-P3701BW",
 "code": "",
 "img": "https://resim.epey.com/789244/k_power-boost-vk-g3701w-2.jpg",
-"price": 2613.8,
+"price": 2619.3,
 "sites": 7,
 "score": null,
 "cols": {
@@ -20071,7 +20055,7 @@
 "name": "Cooler Master MasterCase SL600M",
 "code": "MCM-SL600M-KGNN-S00",
 "img": "https://resim.epey.com/751203/k_cooler-master-mastercase-sl600m-1.jpg",
-"price": 24074.58,
+"price": 24125.3,
 "sites": 1,
 "score": null,
 "cols": {
@@ -20087,7 +20071,7 @@
 "name": "Cooler Master MasterBox MB320L",
 "code": "",
 "img": "https://resim.epey.com/751189/k_cooler-master-masterbox-mb320l-1.jpg",
-"price": 2433.92,
+"price": 2447.9,
 "sites": 5,
 "score": null,
 "cols": {
@@ -20487,7 +20471,7 @@
 "name": "Thermaltake Level 10 GTS",
 "code": "",
 "img": "https://resim.epey.com/682151/k_thermaltake-level-10-gts-1.jpg",
-"price": 6130.1,
+"price": 6143.1,
 "sites": 6,
 "score": null,
 "cols": {
@@ -20504,7 +20488,7 @@
 "code": "",
 "img": "https://resim.epey.com/682112/k_zalman-n5mf-5.jpg",
 "price": 3078.0,
-"sites": 6,
+"sites": 4,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -20823,8 +20807,8 @@
 "name": "PowerBoost VK-1626 350W",
 "code": "",
 "img": "https://resim.epey.com/677081/k_power-boost-vk-1626-350w-4.png",
-"price": 2057.62,
-"sites": 9,
+"price": 2061.95,
+"sites": 8,
 "score": null,
 "cols": {
 "10400": "ATX",
@@ -20839,7 +20823,7 @@
 "name": "PowerBoost VK-G3903S",
 "code": "",
 "img": "https://resim.epey.com/677023/k_power-boost-vk-g3903s-1.jpg",
-"price": 4595.7,
+"price": 4605.4,
 "sites": 7,
 "score": null,
 "cols": {
@@ -20887,7 +20871,7 @@
 "name": "PowerBoost VK-A005S 250W",
 "code": "",
 "img": "https://resim.epey.com/676789/k_power-boost-vk-a005s-250w-2.jpg",
-"price": 1682.18,
+"price": 1685.73,
 "sites": 9,
 "score": null,
 "cols": {
@@ -20903,7 +20887,7 @@
 "name": "PowerBoost VK-G3906S",
 "code": "",
 "img": "https://resim.epey.com/676743/k_power-boost-vk-g3906s-3.png",
-"price": 3445.0,
+"price": 3452.2,
 "sites": 8,
 "score": null,
 "cols": {
@@ -20919,7 +20903,7 @@
 "name": "PowerBoost X58 650W",
 "code": "",
 "img": "https://resim.epey.com/676740/k_power-boost-x58-650w-1.jpg",
-"price": 4723.6,
+"price": 4733.6,
 "sites": 7,
 "score": null,
 "cols": {
@@ -20935,7 +20919,7 @@
 "name": "PowerBoost X58",
 "code": "",
 "img": "https://resim.epey.com/676737/k_power-boost-x58-3.jpg",
-"price": 2741.7,
+"price": 2747.5,
 "sites": 7,
 "score": null,
 "cols": {
@@ -21079,7 +21063,7 @@
 "name": "PowerBoost VK-M202B",
 "code": "",
 "img": "https://resim.epey.com/611932/k_power-boost-vk-m202b-2.jpg",
-"price": 3764.6,
+"price": 3772.6,
 "sites": 4,
 "score": null,
 "cols": {
@@ -21399,7 +21383,7 @@
 "name": "Thermaltake Core P5 V2",
 "code": "CA-1E7-00M1WN-05",
 "img": "https://resim.epey.com/429060/k_thermaltake-core-p5-v2-1.jpg",
-"price": 15464.4,
+"price": 15497.0,
 "sites": 7,
 "score": null,
 "cols": {

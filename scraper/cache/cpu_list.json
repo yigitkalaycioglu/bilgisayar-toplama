@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-05T14:26:54+00:00",
+"updated": "2026-10-05T17:16:24+00:00",
 "rows": [
 {
 "id": "1022564",
@@ -517,7 +517,7 @@
 "name": "AMD Ryzen 9 9900X",
 "code": "100-100000662WOF",
 "img": "https://resim.epey.com/943054/k_amd-ryzen-9900x-1.jpg",
-"price": 21599.0,
+"price": 20599.0,
 "sites": 11,
 "score": 64,
 "cols": {
@@ -862,7 +862,7 @@
 "name": "AMD Ryzen 5 9600X",
 "code": "100-100001405WOF",
 "img": "https://resim.epey.com/943061/k_amd-ryzen-5-9600x-1.jpg",
-"price": 9199.0,
+"price": 8949.0,
 "sites": 11,
 "score": 59,
 "cols": {
@@ -1312,7 +1312,7 @@
 "name": "AMD Ryzen 5 7500F",
 "code": "100-000000597",
 "img": "https://resim.epey.com/890936/k_amd-ryzen-5-7500f-2.jpg",
-"price": 6649.0,
+"price": 6599.0,
 "sites": 13,
 "score": 53,
 "cols": {
@@ -1553,7 +1553,7 @@
 "code": "CM8071505093011",
 "img": "https://resim.epey.com/919221/k_intel-core-i5-14400f-1.jpg",
 "price": 7999.0,
-"sites": 12,
+"sites": 13,
 "score": 50,
 "cols": {
 "5099": "10",
@@ -1748,7 +1748,7 @@
 "code": "",
 "img": "https://resim.epey.com/742815/k_amd-ryzen-7-5800x3d-1.jpg",
 "price": 20359.0,
-"sites": 12,
+"sites": 13,
 "score": 47,
 "cols": {
 "5099": "8",
@@ -3142,7 +3142,7 @@
 "name": "Intel Core i5-10400F",
 "code": "BX8070110400F",
 "img": "https://resim.epey.com/558626/k_intel-core-i5-10400f-2.jpg",
-"price": 6439.08,
+"price": 6899.08,
 "sites": 4,
 "score": 38,
 "cols": {
@@ -3202,7 +3202,7 @@
 "name": "Intel Core i3-10100F",
 "code": "BX8070110100F",
 "img": "https://resim.epey.com/613166/k_intel-core-i3-10100f-1.jpg",
-"price": 2999.01,
+"price": 2899.0,
 "sites": 6,
 "score": 37,
 "cols": {
@@ -3518,7 +3518,7 @@
 "code": "YD3200C5FHBOX",
 "img": "https://resim.epey.com/174210/k_amd-ryzen-3-3200g-1.png",
 "price": 3459.2,
-"sites": 5,
+"sites": 6,
 "score": 36,
 "cols": {
 "5099": "4",
@@ -3622,7 +3622,7 @@
 "name": "Intel Core i5-7600",
 "code": "",
 "img": "https://resim.epey.com/118341/k_intel-core-i5-7600-1.jpg",
-"price": 3554.21,
+"price": 3553.85,
 "sites": 2,
 "score": 35,
 "cols": {
@@ -4702,7 +4702,7 @@
 "name": "Intel Xeon E5-2630",
 "code": "BX80621E52630",
 "img": "https://resim.epey.com/655127/k_intel-xeon-e5-2630-1.jpg",
-"price": 14002.56,
+"price": 14032.06,
 "sites": 2,
 "score": 25,
 "cols": {

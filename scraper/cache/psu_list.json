@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-05T15:44:28+00:00",
+"updated": "2026-10-05T17:19:54+00:00",
 "rows": [
 {
 "id": "877452",
@@ -82,22 +82,6 @@
 }
 },
 {
-"id": "735825",
-"url": "https://www.epey.com/power-supply-psu/msi-mag-a650bn.html",
-"name": "MSI MAG A650BN 650W",
-"code": "",
-"img": "https://resim.epey.com/735825/k_msi-mag-a650bn-3.jpg",
-"price": 3189.0,
-"sites": 12,
-"score": null,
-"cols": {
-"6318": "650 W",
-"6321": "Var",
-"6329": "Modüler Olmayan",
-"6334": "120 mm"
-}
-},
-{
 "id": "1002169",
 "url": "https://www.epey.com/power-supply-psu/msi-mag-a650bnl-650-w.html",
 "name": "MSI MAG A650BNL 650 W",
@@ -130,22 +114,6 @@
 }
 },
 {
-"id": "1070430",
-"url": "https://www.epey.com/power-supply-psu/raijintek-cratos-850w.html",
-"name": "Raijintek Cratos 850W",
-"code": "RJ-0R30B00007",
-"img": "https://resim.epey.com/1070430/k_raijintek-cratos-1.jpg",
-"price": 5449.0,
-"sites": 3,
-"score": null,
-"cols": {
-"6318": "850 W",
-"6321": "Var",
-"6329": "Tam Modüler",
-"6334": "120 mm"
-}
-},
-{
 "id": "1002051",
 "url": "https://www.epey.com/power-supply-psu/msi-mag-a1250gl-1250w.html",
 "name": "MSI MAG A1250GL 1250W",
@@ -159,6 +127,38 @@
 "6321": "Var",
 "6329": "Tam Modüler",
 "6334": "135 mm"
+}
+},
+{
+"id": "735825",
+"url": "https://www.epey.com/power-supply-psu/msi-mag-a650bn.html",
+"name": "MSI MAG A650BN 650W",
+"code": "",
+"img": "https://resim.epey.com/735825/k_msi-mag-a650bn-3.jpg",
+"price": 3189.0,
+"sites": 12,
+"score": null,
+"cols": {
+"6318": "650 W",
+"6321": "Var",
+"6329": "Modüler Olmayan",
+"6334": "120 mm"
+}
+},
+{
+"id": "1070430",
+"url": "https://www.epey.com/power-supply-psu/raijintek-cratos-850w.html",
+"name": "Raijintek Cratos 850W",
+"code": "RJ-0R30B00007",
+"img": "https://resim.epey.com/1070430/k_raijintek-cratos-1.jpg",
+"price": 5449.0,
+"sites": 3,
+"score": null,
+"cols": {
+"6318": "850 W",
+"6321": "Var",
+"6329": "Tam Modüler",
+"6334": "120 mm"
 }
 },
 {
@@ -290,6 +290,22 @@
 }
 },
 {
+"id": "1033143",
+"url": "https://www.epey.com/power-supply-psu/asus-rog-strix-platinum-100w.html",
+"name": "Asus Rog Strix Platinum 1000W",
+"code": "",
+"img": "https://resim.epey.com/1033143/k_asus-rog-strix-platinum-100w-1.jpg",
+"price": 13612.19,
+"sites": 8,
+"score": null,
+"cols": {
+"6318": "1000 W",
+"6321": "Var",
+"6329": "Tam Modüler",
+"6334": "-"
+}
+},
+{
 "id": "988895",
 "url": "https://www.epey.com/power-supply-psu/nzxt-c750-750w.html",
 "name": "NZXT C750 Bronze 750W",
@@ -319,22 +335,6 @@
 "6321": "Var",
 "6329": "Tam Modüler",
 "6334": "135 mm"
-}
-},
-{
-"id": "1033143",
-"url": "https://www.epey.com/power-supply-psu/asus-rog-strix-platinum-100w.html",
-"name": "Asus Rog Strix Platinum 1000W",
-"code": "",
-"img": "https://resim.epey.com/1033143/k_asus-rog-strix-platinum-100w-1.jpg",
-"price": 13612.19,
-"sites": 8,
-"score": null,
-"cols": {
-"6318": "1000 W",
-"6321": "Var",
-"6329": "Tam Modüler",
-"6334": "-"
 }
 },
 {
@@ -418,22 +418,6 @@
 }
 },
 {
-"id": "846109",
-"url": "https://www.epey.com/power-supply-psu/msi-mag-a600dn-600w.html",
-"name": "MSI MAG A600DN 600W",
-"code": "",
-"img": "https://resim.epey.com/846109/k_msi-mag-a600dn-600w-2.png",
-"price": 2547.0,
-"sites": 10,
-"score": null,
-"cols": {
-"6318": "600 W",
-"6321": "Var",
-"6329": "Modüler Olmayan",
-"6334": "120 mm"
-}
-},
-{
 "id": "1030328",
 "url": "https://www.epey.com/power-supply-psu/gigabyte-aorus-elite-gp-ae1000pm-1000w.html",
 "name": "Gigabyte Aorus Elite GP-AE1000PM 1000W",
@@ -466,6 +450,22 @@
 }
 },
 {
+"id": "846109",
+"url": "https://www.epey.com/power-supply-psu/msi-mag-a600dn-600w.html",
+"name": "MSI MAG A600DN 600W",
+"code": "",
+"img": "https://resim.epey.com/846109/k_msi-mag-a600dn-600w-2.png",
+"price": 2547.0,
+"sites": 10,
+"score": null,
+"cols": {
+"6318": "600 W",
+"6321": "Var",
+"6329": "Modüler Olmayan",
+"6334": "120 mm"
+}
+},
+{
 "id": "846000",
 "url": "https://www.epey.com/power-supply-psu/corsair-rm1000e-1000w.html",
 "name": "Corsaır RM1000E 1000W",
@@ -478,22 +478,6 @@
 "6318": "1000 W",
 "6321": "Var",
 "6329": "Tam Modüler",
-"6334": "120 mm"
-}
-},
-{
-"id": "766857",
-"url": "https://www.epey.com/power-supply-psu/rampage-rmp-600-80p-600w.html",
-"name": "Rampage RMP-600-80P 600W",
-"code": "",
-"img": "https://resim.epey.com/766857/k_rampage-rmp-600-80p-600w-1.png",
-"price": 1890.0,
-"sites": 6,
-"score": null,
-"cols": {
-"6318": "600 W",
-"6321": "Var",
-"6329": "Modüler Olmayan",
 "6334": "120 mm"
 }
 },
@@ -530,22 +514,6 @@
 }
 },
 {
-"id": "766850",
-"url": "https://www.epey.com/power-supply-psu/rampage-btc-1650-1650w.html",
-"name": "Rampage BTC-1650 1650W",
-"code": "",
-"img": "https://resim.epey.com/766850/k_rampage-btc-1650-1650w-1.png",
-"price": 2852.0,
-"sites": 4,
-"score": null,
-"cols": {
-"6318": "1650 W",
-"6321": "Var",
-"6329": "Modüler Olmayan",
-"6334": "140 mm"
-}
-},
-{
 "id": "1030325",
 "url": "https://www.epey.com/power-supply-psu/gigabyte-gp-ud850gm-850w.html",
 "name": "Gigabyte GP-UD850GM 850W",
@@ -572,6 +540,22 @@
 "score": null,
 "cols": {
 "6318": "850 W",
+"6321": "Var",
+"6329": "Modüler Olmayan",
+"6334": "120 mm"
+}
+},
+{
+"id": "766857",
+"url": "https://www.epey.com/power-supply-psu/rampage-rmp-600-80p-600w.html",
+"name": "Rampage RMP-600-80P 600W",
+"code": "",
+"img": "https://resim.epey.com/766857/k_rampage-rmp-600-80p-600w-1.png",
+"price": 1890.0,
+"sites": 6,
+"score": null,
+"cols": {
+"6318": "600 W",
 "6321": "Var",
 "6329": "Modüler Olmayan",
 "6334": "120 mm"
@@ -623,6 +607,22 @@
 "6321": "Var",
 "6329": "Modüler Olmayan",
 "6334": "120 mm"
+}
+},
+{
+"id": "766850",
+"url": "https://www.epey.com/power-supply-psu/rampage-btc-1650-1650w.html",
+"name": "Rampage BTC-1650 1650W",
+"code": "",
+"img": "https://resim.epey.com/766850/k_rampage-btc-1650-1650w-1.png",
+"price": 2852.0,
+"sites": 4,
+"score": null,
+"cols": {
+"6318": "1650 W",
+"6321": "Var",
+"6329": "Modüler Olmayan",
+"6334": "140 mm"
 }
 },
 {
@@ -818,6 +818,22 @@
 }
 },
 {
+"id": "1041795",
+"url": "https://www.epey.com/power-supply-psu/lian-li-sp850p-850w.html",
+"name": "Lian Li SP850P 850W",
+"code": "",
+"img": "https://resim.epey.com/1041795/k_lian-li-sp850p-850w-2.jpg",
+"price": 7896.84,
+"sites": 7,
+"score": null,
+"cols": {
+"6318": "850 W",
+"6321": "Var",
+"6329": "Tam Modüler",
+"6334": "92 mm"
+}
+},
+{
 "id": "1033145",
 "url": "https://www.epey.com/power-supply-psu/asus-rog-strix-platinum-1200w.html",
 "name": "Asus Rog Strix Platinum 1200W",
@@ -959,22 +975,6 @@
 "6321": "Var",
 "6329": "Tam Modüler",
 "6334": "120 mm"
-}
-},
-{
-"id": "1041795",
-"url": "https://www.epey.com/power-supply-psu/lian-li-sp850p-850w.html",
-"name": "Lian Li SP850P 850W",
-"code": "",
-"img": "https://resim.epey.com/1041795/k_lian-li-sp850p-850w-2.jpg",
-"price": 7896.84,
-"sites": 7,
-"score": null,
-"cols": {
-"6318": "850 W",
-"6321": "Var",
-"6329": "Tam Modüler",
-"6334": "92 mm"
 }
 },
 {
@@ -1266,6 +1266,22 @@
 }
 },
 {
+"id": "773132",
+"url": "https://www.epey.com/power-supply-psu/asus-rog-thor-1000w.html",
+"name": "Asus Rog Thor 1000P2 Gaming 1000W",
+"code": "",
+"img": "https://resim.epey.com/773132/k_asus-rog-thor-1000w-1.jpg",
+"price": 17196.13,
+"sites": 10,
+"score": null,
+"cols": {
+"6318": "1000 W",
+"6321": "Var",
+"6329": "Tam Modüler",
+"6334": "135 mm"
+}
+},
+{
 "id": "425984",
 "url": "https://www.epey.com/power-supply-psu/everest-eps-1650-1650w.html",
 "name": "Everest EPS-1650 1650W",
@@ -1454,6 +1470,22 @@
 "6318": "850 W",
 "6321": "Var",
 "6329": "Modüler Olmayan",
+"6334": "120 mm"
+}
+},
+{
+"id": "991391",
+"url": "https://www.epey.com/power-supply-psu/deepcool-pn850m-850w.html",
+"name": "Deepcool PN850M 850W",
+"code": "",
+"img": "https://resim.epey.com/991391/k_deepcool-pn850m-850w-6.jpg",
+"price": 6999.0,
+"sites": 3,
+"score": null,
+"cols": {
+"6318": "850 W",
+"6321": "Var",
+"6329": "Tam Modüler",
 "6334": "120 mm"
 }
 },
@@ -1694,6 +1726,22 @@
 "6318": "500 W",
 "6321": "Var",
 "6329": "Modüler Olmayan",
+"6334": "120 mm"
+}
+},
+{
+"id": "685742",
+"url": "https://www.epey.com/power-supply-psu/corsair-cx750f.html",
+"name": "Corsair CX750F 750W",
+"code": "CP-9020218-EU,CP-9020227-EU",
+"img": "https://resim.epey.com/685742/k_corsair-cx750f-1.png",
+"price": 20997.9,
+"sites": 1,
+"score": null,
+"cols": {
+"6318": "750 W",
+"6321": "Var",
+"6329": "Tam Modüler",
 "6334": "120 mm"
 }
 },
@@ -1967,22 +2015,6 @@
 "6321": "Var",
 "6329": "Tam Modüler",
 "6334": "120 mm"
-}
-},
-{
-"id": "773132",
-"url": "https://www.epey.com/power-supply-psu/asus-rog-thor-1000w.html",
-"name": "Asus Rog Thor 1000P2 Gaming 1000W",
-"code": "",
-"img": "https://resim.epey.com/773132/k_asus-rog-thor-1000w-1.jpg",
-"price": 17196.13,
-"sites": 10,
-"score": null,
-"cols": {
-"6318": "1000 W",
-"6321": "Var",
-"6329": "Tam Modüler",
-"6334": "135 mm"
 }
 },
 {
@@ -2479,22 +2511,6 @@
 "6321": "Var",
 "6329": "Tam Modüler",
 "6334": "135 mm"
-}
-},
-{
-"id": "991391",
-"url": "https://www.epey.com/power-supply-psu/deepcool-pn850m-850w.html",
-"name": "Deepcool PN850M 850W",
-"code": "",
-"img": "https://resim.epey.com/991391/k_deepcool-pn850m-850w-6.jpg",
-"price": 6999.0,
-"sites": 3,
-"score": null,
-"cols": {
-"6318": "850 W",
-"6321": "Var",
-"6329": "Tam Modüler",
-"6334": "120 mm"
 }
 },
 {
@@ -4159,22 +4175,6 @@
 "6321": "Var",
 "6329": "Tam Modüler",
 "6334": "140 mm"
-}
-},
-{
-"id": "685742",
-"url": "https://www.epey.com/power-supply-psu/corsair-cx750f.html",
-"name": "Corsair CX750F 750W",
-"code": "CP-9020218-EU,CP-9020227-EU",
-"img": "https://resim.epey.com/685742/k_corsair-cx750f-1.png",
-"price": 20997.9,
-"sites": 1,
-"score": null,
-"cols": {
-"6318": "750 W",
-"6321": "Var",
-"6329": "Tam Modüler",
-"6334": "120 mm"
 }
 },
 {

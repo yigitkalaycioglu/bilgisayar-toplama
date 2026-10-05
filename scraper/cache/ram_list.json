@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-05T15:17:27+00:00",
+"updated": "2026-10-05T17:18:36+00:00",
 "rows": [
 {
 "id": "1023705",
@@ -3983,7 +3983,7 @@
 "code": "KF560C36BBEK2-32TR",
 "img": "https://resim.epey.com/942979/k_kingston-beast-kf560c36bbek2-32tr-1.jpg",
 "price": 36505.27,
-"sites": 6,
+"sites": 7,
 "score": 58,
 "cols": {
 "5193": "DDR5",
@@ -6233,7 +6233,7 @@
 "code": "CP16G56C46U5",
 "img": "https://resim.epey.com/921110/k_crucial-pro-cp16g56c46u5-3.jpg",
 "price": 13557.7,
-"sites": 7,
+"sites": 6,
 "score": 54,
 "cols": {
 "5193": "DDR5",
@@ -8423,7 +8423,7 @@
 "code": "KVR56S46BS8-16",
 "img": "https://resim.epey.com/893245/k_kingston-16gb-kvr56s46bs8-16-1.jpg",
 "price": 13629.06,
-"sites": 10,
+"sites": 9,
 "score": 50,
 "cols": {
 "5193": "DDR5",
@@ -8542,7 +8542,7 @@
 "name": "XPG Gammix D35",
 "code": "AX4U360016G18I-DTBKD35",
 "img": "https://resim.epey.com/973939/k_xpg-gammix-d35-ax4u360016g18i-dtbkd35-3.jpg",
-"price": 13999.0,
+"price": 15809.1,
 "sites": 4,
 "score": 50,
 "cols": {
@@ -10058,7 +10058,7 @@
 "code": "KF432C16BB/32",
 "img": "https://resim.epey.com/721673/k_kingston-fury-beast-kf432c16bb-32-kf426c16bb-4-1.jpg",
 "price": 14072.0,
-"sites": 5,
+"sites": 6,
 "score": 48,
 "cols": {
 "5193": "DDR4",
@@ -10852,7 +10852,7 @@
 "name": "Kingston Server Premier",
 "code": "KSM32ED8-32ME",
 "img": "https://resim.epey.com/813846/k_kingston-ksm32ed8-32me-1.jpg",
-"price": 29384.3,
+"price": 29446.9,
 "sites": 5,
 "score": 47,
 "cols": {
@@ -18322,7 +18322,7 @@
 "name": "SK Hynix HMA82GS6AFR8N-UH",
 "code": "",
 "img": "https://resim.epey.com/701108/k_sk-hynix-hma82gs6afr8n-uh-1.jpg",
-"price": 4058.0,
+"price": 4418.0,
 "sites": 4,
 "score": 40,
 "cols": {
@@ -19552,7 +19552,7 @@
 "name": "Kingston ValueRAM",
 "code": "KVR26S19S8/8",
 "img": "https://resim.epey.com/156959/k_kingston-valueram-1.jpg",
-"price": 2910.0,
+"price": 2918.24,
 "sites": 4,
 "score": 39,
 "cols": {
@@ -22927,7 +22927,7 @@
 "name": "G.Skill Value",
 "code": "F1-3200PHU1-1GBNT",
 "img": "https://resim.epey.com/123126/k_g-skill-1gb-value-400mhz-f1-3200phu1-1gbnt-1.jpg",
-"price": 1585.3,
+"price": 1589.1,
 "sites": 3,
 "score": 34,
 "cols": {
