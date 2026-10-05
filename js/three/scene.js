@@ -128,9 +128,14 @@ export class PCScene {
       this.composer = new EffectComposer(renderer);
       this.composer.addPass(new RenderPass(scene, camera));
       this.bloomPass = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.5, 0.4, 2.5);
-      // eşik parlaklık yerine en güçlü renk kanalına göre: mavi/kırmızı RGB de parlasın, beyaz yüzeyler parlamasın
+      // Yalnızca doygun renkli parlak pikseller (RGB aydınlatma) parlasın; ışığın beyaz
+      // yansımaları (cam, metal) "güneş" gibi parlamasın
       const hp = this.bloomPass.materialHighPassFilter;
-      hp.fragmentShader = hp.fragmentShader.replace('float v = luminance( texel.xyz );', 'float v = max( texel.r, max( texel.g, texel.b ) );');
+      hp.fragmentShader = hp.fragmentShader.replace(
+        'float v = luminance( texel.xyz );',
+        'float mx = max( texel.r, max( texel.g, texel.b ) ); float mn = min( texel.r, min( texel.g, texel.b ) );' +
+        ' float v = mx * smoothstep( 0.35, 0.7, ( mx - mn ) / max( mx, 1e-4 ) );',
+      );
       hp.needsUpdate = true;
       this.composer.addPass(this.bloomPass);
       this.composer.addPass(new OutputPass());

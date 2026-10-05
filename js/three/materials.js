@@ -39,8 +39,8 @@ export const M = {
   copper: () => new THREE.MeshStandardMaterial({ color: 0xc27a4a, metalness: 1, roughness: 0.3 }),
   nickel: () => new THREE.MeshStandardMaterial({ color: 0xd2d5da, metalness: 1, roughness: 0.18 }),
   glass: (tint = 0x1a2633) => new THREE.MeshPhysicalMaterial({
-    color: tint, metalness: 0, roughness: 0.06, transparent: true, opacity: 0.1,
-    envMapIntensity: 0.35, specularIntensity: 0.35, side: THREE.DoubleSide, depthWrite: false,
+    color: tint, metalness: 0, roughness: 0.22, transparent: true, opacity: 0.1,
+    envMapIntensity: 0.3, specularIntensity: 0.18, side: THREE.DoubleSide, depthWrite: false,
   }),
   emissive: (color, intensity = 2) => {
     const m = new THREE.MeshStandardMaterial({ color: 0x050505, emissive: color, emissiveIntensity: intensity, roughness: 0.4 });
