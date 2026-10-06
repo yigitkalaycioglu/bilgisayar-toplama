@@ -22,6 +22,10 @@ export const FF_DIMS = {
   'SSI-EEB': [330, 305], 'SSI-CEB': [305, 267], 'XL-ATX': [345, 262],
 };
 const DIMM_FROM_SOCKET = 62; // işlemci soketi merkezinden ilk bellek yuvasına (gerçek kartlarda ~58-66 mm)
+const DIMM_PITCH = 9.6; // bellek yuvaları arası
+const RAM_HALF = 3.4; // bellek modülünün yuva ekseninden yarı kalınlığı
+const IO_DEPTH = 29; // arka I/O örtüsü kartın arka kenarından bu kadar içeri uzanır (3D model de böyle çizer)
+const DIMM_IO_GAP = 6; // soketin iki yanında yuva olan kartlarda dıştaki yuva ile I/O örtüsü arası
 
 export const boardLayout = memo((x) => {
   const ff = x ? x.ff : 'ATX';
@@ -33,8 +37,16 @@ export const boardLayout = memo((x) => {
   const big = /TR|WRX|LGA4677|LGA3647|LGA4189|LGA2066|LGA2011/.test(sock);
   const s = itx ? { u: w * 0.5 - 12, v: 66 } : { u: Math.min(116, w * 0.46), v: big ? 105 : 80 };
   const nSlots = clamp((x && x.slots) || (itx ? 2 : 4), 1, 8);
+  const pitch = DIMM_PITCH;
+  if (nSlots === 8 && !itx) {
+    // Soketin iki yanında 4'er yuva (HEDT / iş istasyonu kartları): soldaki grubun en dış yuvası arka I/O
+    // örtüsünün önünde kalmalı; gerçek kartlarda soket bu yüzden daha öndedir. Sağdaki grup ise kartın ön
+    // kenarındaki 24 pin konnektöre taşmayacak kadar öne alınabilir.
+    const minU = IO_DEPTH + DIMM_IO_GAP + RAM_HALF + 3 * pitch + DIMM_FROM_SOCKET;
+    const maxU = w - 14 - RAM_HALF - 3 * pitch - DIMM_FROM_SOCKET;
+    s.u = Math.max(s.u, Math.min(minU, maxU));
+  }
   const dimm = [];
-  const pitch = 9.6;
   if (nSlots === 8) {
     for (let i = 0; i < 4; i++) dimm.push({ u: s.u - DIMM_FROM_SOCKET - (3 - i) * pitch, v: s.v + 4 });
     for (let i = 0; i < 4; i++) dimm.push({ u: s.u + DIMM_FROM_SOCKET + i * pitch, v: s.v + 4 });
@@ -82,7 +94,7 @@ export function boardParts(L) {
   const s = L.socket;
   const parts = [
     { tag: 'pcb', u0: 0, u1: L.w, v0: 0, v1: L.h, z0: -2, z1: 16 }, // kart + alçak bileşenler (yuvalar, soketler)
-    { tag: 'io', u0: 0.5, u1: 29, v0: 6, v1: 6 + L.ioH, z0: 0, z1: 40.5 },
+    { tag: 'io', u0: 0.5, u1: IO_DEPTH, v0: 6, v1: 6 + L.ioH, z0: 0, z1: 40.5 },
     { tag: 'vrm', u0: 28, u1: L.vrmU1, v0: 8, v1: 32, z0: 0, z1: 31 },
   ];
   if (L.vrmLeft) parts.push({ tag: 'vrm', u0: 29, u1: 51, v0: 12, v1: s.v + 40, z0: 0, z1: 34 });
@@ -618,7 +630,7 @@ export function planBuild(s) {
     const n = Math.min((s.ram.item.mods || 1) * (s.ram.qty || 1), L.dimm.length);
     for (const i of ramSlotOrder(L.dimm.length, n)) {
       const d = L.dimm[i];
-      const b = W({ u0: d.u - 3.4, u1: d.u + 3.4, v0: d.v - 66.5, v1: d.v + 66.5, z0: RAM_Z, z1: RAM_Z + rd.ht }, 'ram', 'ram');
+      const b = W({ u0: d.u - RAM_HALF, u1: d.u + RAM_HALF, v0: d.v - 66.5, v1: d.v + 66.5, z0: RAM_Z, z1: RAM_Z + rd.ht }, 'ram', 'ram');
       parts.push(b);
       ramBox = ramBox ? { ...ramBox, x0: Math.min(ramBox.x0, b.x0), x1: Math.max(ramBox.x1, b.x1) } : { ...b };
     }
