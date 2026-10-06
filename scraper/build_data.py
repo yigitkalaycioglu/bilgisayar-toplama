@@ -227,6 +227,15 @@ def cover_flag(sp, part):
     return 1 if part in cov else 0
 
 
+def board_ff(ff, w, h):
+    """epey'deki form faktörü kartın ölçüsüyle çelişiyorsa ölçüye güven (ör. 244 x 305 'Micro ATX' -> ATX)."""
+    if w and h and h >= 295 and w >= 240 and ff in ("Micro ATX", "Mini ITX", "Mini DTX", None):
+        return "E-ATX" if w > 262 else "ATX"
+    if w and h and h <= 250 and w <= 250 and h >= 225 and ff in ("Mini ITX", None):
+        return "Micro ATX"
+    return ff
+
+
 def norm_mobo(sp, row):
     sock = norm_socket(first(sp, "İşlemci Soketi"))
     if not sock:
@@ -252,7 +261,7 @@ def norm_mobo(sp, row):
         "slots": intnum(first(sp, "Bellek Yuvası")),
         "mmax": gb(first(sp, "Bellek Kapasitesi")),
         "mspd": intnum(first(sp, "Bellek Saat Hızı (OC)", "Bellek Saat Hızı")),
-        "ff": norm_ff(first(sp, "Form Faktörü")),
+        "ff": board_ff(norm_ff(first(sp, "Form Faktörü")), within(mm(first(sp, "En")), 140, 360), within(mm(first(sp, "Boy")), 140, 360)),
         "m2": intnum(first(sp, "M.2 Yuvası Sayısı"), 0 if first(sp, "M.2 Yuvası") == "Yok" else None),
         "sata": intnum(first(sp, "SATA Yuvası Sayısı"), 0 if first(sp, "SATA Yuvası") == "Yok" else None),
         "x16": intnum(first(sp, "PCIe x16 Sayısı")),
@@ -301,6 +310,14 @@ def norm_gpu(sp, row):
         bp = "metal" if yes(sp, "Arka Plaka") else ("none" if first(sp, "Arka Plaka") == "Yok" else None)
     conn_raw = first(sp, "Güç Bağlantısı") or ""
     pw = [] if "pinsiz" in conn_raw.lower() else re.findall(r"\d+", conn_raw)
+    g_len = within(mm(first(sp, "Derinlik")), 120, 460)
+    g_ht = mm(first(sp, "Yükseklik"))
+    g_ht = within(g_ht, 40, 200)  # 10-12 mm gibi değerler yazım hatası
+    g_th = within(mm(first(sp, "Genişlik")), 15, 100)
+    if fans and fans >= 3 and cool == "fan" and g_ht and g_ht > 100 and g_len and g_len <= 235:
+        g_len = None  # 3 fanlı büyük kartta 230 mm altı uzunluk hatalı girilmiş (ör. 330 yerine 230)
+    if g_ht and g_ht <= 72:
+        lp = 1
     return {
         "br": brand_of(row["name"]),
         "mk": gpu_maker(sp, row["name"]),
@@ -312,9 +329,9 @@ def norm_gpu(sp, row):
         "tdp": intnum(first(sp, "Grafik Kartı Gücü")),
         "rec": intnum(first(sp, "Önerilen Sistem Gücü")),
         "conn": first(sp, "Güç Bağlantısı"),
-        "len": within(mm(first(sp, "Derinlik")), 120, 460),
-        "ht": within(mm(first(sp, "Yükseklik")), 60, 200),
-        "th": within(mm(first(sp, "Genişlik")), 15, 100),
+        "len": g_len,
+        "ht": g_ht,
+        "th": g_th,
         "fans": fans,
         "cool": cool,
         "lp": lp,
@@ -369,8 +386,17 @@ def norm_ram(sp, row):
         "rgb": 1 if yes(sp, "Işıklandırma") and re.search(r"rgb", first(sp, "Işıklandırma Özelliği") or "rgb", re.I) else 0,
         "hs": yes(sp, "Soğutucu"),
         "col": color_of(sp, "Renk Seçenekleri", "Renk", name=row["name"]),
-        "ht": within(mm(first(sp, "Yükseklik")), 25, 70),
+        "ht": ram_height(mm(first(sp, "Yükseklik"))),
     }
+
+
+def ram_height(v):
+    """Modül yüksekliği: 30 mm altı değerler (18-21 mm gibi) çıplak PCB yüksekliği sayılır."""
+    if v is None:
+        return None
+    if v < 30:
+        return 31 if v >= 15 else None
+    return v if v <= 70 else None
 
 
 def norm_storage(sp, row):
@@ -448,16 +474,43 @@ def norm_psu(sp, row):
     mod = first(sp, "Kablo Tipi")
     if mod:
         mod = {"Tam Modüler": "Tam modüler", "Yarı Modüler": "Yarı modüler", "Modüler Olmayan": "Modüler değil"}.get(mod, mod)
-    dw, dh, dd = mm(first(sp, "Genişlik")), mm(first(sp, "Yükseklik")), mm(first(sp, "Derinlik"))
+    raw = []
+    for l in ("Genişlik", "Yükseklik", "Derinlik"):
+        v = num(first(sp, l))
+        if v is not None and "cm" in (first(sp, l) or "") and "mm" not in (first(sp, l) or ""):
+            v *= 10
+        if v and v > 260 and 40 <= v / 10 <= 260:
+            v = v / 10  # ondalık noktası kaybolmuş
+        if v and 30 <= v <= 260:
+            raw.append(v)
+    vals = sorted(raw)
     ff_raw = first(sp, "Form Faktörü", "Boyut", "Tip")
     ff = "ATX"
     text = (ff_raw or "") + " " + row["name"]
     if re.search(r"sfx[\s-]*l", text, re.I):
         ff = "SFX-L"
-    elif re.search(r"\bsfx\b", text, re.I) or (dw and dh and dw <= 126 and dh <= 66):
+    elif re.search(r"\bsfx\b", text, re.I):
         ff = "SFX"
     elif re.search(r"\btfx\b", text, re.I):
         ff = "TFX"
+    elif len(vals) == 3 and vals[0] <= 66 and vals[1] <= 126:
+        ff = "SFX-L" if vals[2] >= 125 else "SFX"
+    # ATX: genişlik 150, yükseklik 86 standarttır; epey'de eksenler sık karışık girildiği için uzunluk,
+    # en küçük (yükseklik) ve 150'ye en yakın (genişlik) değer çıkarıldıktan sonra kalandır
+    dw = dh = dd = None
+    if ff == "ATX":
+        dw, dh = 150, 86
+        rest = vals[1:] if len(vals) == 3 else [v for v in vals if v >= 100]
+        if len(rest) >= 2:
+            wv = min(rest, key=lambda v: abs(v - 150))
+            rest = list(rest)
+            rest.remove(wv)
+            dd = rest[0]
+        elif len(rest) == 1 and rest[0] != 150:
+            dd = rest[0]
+        dd = int(round(dd)) if dd and 120 <= dd <= 230 else (150 if vals else None)
+    elif ff in ("SFX", "SFX-L"):
+        dw, dh, dd = 125, 63.5, 130 if ff == "SFX-L" else 100
     return {
         "br": brand_of(row["name"]),
         "w": w,
@@ -466,14 +519,14 @@ def norm_psu(sp, row):
         "atx3": 1 if re.search(r"ATX\s*3", compat) else 0,
         "pcie5": 1 if re.search(r"PCIe\s*5", compat) or re.search(r"pcie\s*5|12vhpwr|12v-2x6", row["name"], re.I) else 0,
         "ff": ff,
-        "dw": within(dw, 90, 220), "dh": within(dh, 40, 130), "dd": within(dd, 90, 260),
+        "dw": dw, "dh": dh, "dd": dd,
         "fan": mm(first(sp, "Fan Boyutu")),
         "rgb": yes(sp, "Aydınlatma"),
         "col": color_of(sp, "Renk Seçenekleri", "Renk", name=row["name"]),
     }
 
 
-RAD_LABELS = {"Ön": "f", "Üst": "t", "Alt": "b", "Arka": "r", "Sağ": "s", "Sol": "s", "Yan": "s"}
+RAD_LABELS = {"Ön": "f", "Üst": "t", "Alt": "b", "Arka": "r", "Sağ": "s", "Sol": "l", "Yan": "s"}
 
 
 def norm_case(sp, row):
@@ -536,23 +589,65 @@ def norm_cooler(sp, row):
         tower = "Kapalı devre"
     fans = intnum(first(sp, "Fan Sayısı"))
     ht = mm(first(sp, "Yükseklik"))
+    wid, ln = mm(first(sp, "Genişlik")), mm(first(sp, "Uzunluk"))
+    pipes = intnum(first(sp, "Isı Borusu Sayısı"))
+    if kind != "aio" and "kule" in (tower or "").lower():
+        # epey'de kule soğutucuların ölçüleri alanlara karışık girilmiş (ör. NH-U14S 'Yükseklik 78',
+        # gerçekte 165 mm). Kulelerde en büyük ölçü yükseklik; kalan ikisinden fan boyutuna yakın olanı
+        # genişlik (len), diğeri hava akışı yönündeki derinlik (wid) sayılır.
+        dims = sorted((v for v in (ht, wid, ln) if v and 25 <= v <= 200), reverse=True)
+        fsz0 = mm(first(sp, "Fan Boyutu (Büyük)", "Fan Boyutu")) or 120
+        if len(dims) == 3:
+            ht, rest = dims[0], dims[1:]
+            ln = min(rest, key=lambda v: abs(v - (fsz0 + 5)))
+            rest.remove(ln)
+            wid = rest[0]
+        elif dims:
+            ht = max(dims[0], ht or 0)
+    if kind == "stock" and ((ht or 0) > 90 or (pipes or 0) >= 3):
+        kind = "air"  # üstten üflemeli büyük soğutucular stok soğutucu değildir (ör. Noctua NH-C14S)
+    rad = radl = radt = ph = None
+    if kind == "aio":
+        rad = intnum(first(sp, "Radyatör Boyutu"))
+        m = re.search(r"(?<!\d)(120|140|240|280|360|420|480)(?!\d)", row["name"])
+        if m:
+            rad = int(m.group(1))
+        ok = lambda v, r: v is not None and r and r + 25 <= v <= r + 50
+        raw_l = mm(first(sp, "Radyatör Uzunluğu"))
+        alts = [raw_l, mm(first(sp, "Radyatör Genişliği")), ln]
+        # boyut sınıfı adla belirlenemediyse ve uzunluk başka bir sınıfa uyuyorsa sınıfı düzelt
+        if not m and raw_l and not ok(raw_l, rad) and 150 <= raw_l <= 520:
+            cls = min((120, 140, 240, 280, 360, 420, 480), key=lambda c: abs(raw_l - 37 - c))
+            if abs(raw_l - 37 - cls) <= 15:
+                rad = cls
+        radl = next((v for v in alts if ok(v, rad)), None)
+        t = num(first(sp, "Radyatör Yüksekliği"))
+        if t and t > 100 and 20 <= t / 10 <= 45:
+            t = t / 10
+        elif t and 46 <= t <= 60:
+            t = t - 25  # fanla birlikte yazılmış
+        radt = round(t, 1) if t and 20 <= t <= 45 else None
+        screen = num(first(sp, "Ekran Boyutu"))
+        if ht and 30 <= ht <= 90 and not (screen and screen >= 5):
+            ph = ht  # pompa bloğunun yüksekliği
     return {
         "br": brand_of(row["name"]),
         "kind": kind,
         "socks": socks,
         "tower": tower,
         "ht": within(ht, 25, 200) if kind != "aio" else None,
-        "pipes": intnum(first(sp, "Isı Borusu Sayısı")),
-        "rad": intnum(first(sp, "Radyatör Boyutu")) if kind == "aio" else None,
-        "radl": mm(first(sp, "Radyatör Uzunluğu")) if kind == "aio" else None,
-        "radt": mm(first(sp, "Radyatör Yüksekliği")) if kind == "aio" else None,
+        "pipes": pipes,
+        "rad": rad,
+        "radl": radl,
+        "radt": radt,
+        "ph": ph,
         "fans": fans,
         "fsz": mm(first(sp, "Fan Boyutu (Büyük)", "Fan Boyutu")),
         "tdp": intnum(first(sp, "Isı Yayma Kapasitesi (TDP)")),
         "rgb": yes(sp, "Aydınlatma"),
         "col": color_of(sp, "Renk Seçenekleri", "Renk", name=row["name"]),
-        "len": mm(first(sp, "Uzunluk")),
-        "wid": mm(first(sp, "Genişlik")),
+        "len": ln,
+        "wid": wid,
         "lcd": yes(sp, "Ekran"),
     }
 

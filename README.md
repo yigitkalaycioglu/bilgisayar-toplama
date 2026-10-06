@@ -14,6 +14,7 @@ Parçaları birbiriyle **uyumlu** olacak şekilde seçtiren ve seçilen sistemi 
   - hava soğutucu yüksekliği ↔ kasa; sıvı soğutma radyatörü ↔ kasanın radyatör desteği; soğutucu ↔ soket (aynı montajı kullanan soketler dahil)
   - M.2 / SATA sürücü sayısı ↔ anakart yuvaları, 3.5" diskler ↔ kasa yuvaları
   - güç kaynağı ↔ tahmini sistem tüketimi (yetersiz olanlar gizlenir, önerilen değer gösterilir)
+  - **boyut ve yerleşim:** epey'deki ölçülerle (kasa genişlik/yükseklik/derinlik, ekran kartı uzunluk/yükseklik/kalınlık, soğutucu ve RAM yüksekliği, radyatör boyu, PSU uzunluğu, pompa yüksekliği) parçalar 3D sahneyle aynı yerleşim modelinde kasaya yerleştirilir. Yan panele değen soğutucu ya da ekran kartı, örtüye inen kalın kart, üstteki PSU'ya, kartın bileşenlerine ya da uzun ekran kartına çarpan radyatör, yuvası kalmayan disk, kasa yüksekliğine sığmayan anakart, ilk bellek yuvasının üzerine taşan soğutucu gibi çakışmalar uyumsuz sayılır; yüksek bellek için soğutucu fanının yukarı alınması gibi durumlar uyarı olarak gösterilir. Böylece uyumlu görünen bir sistemde parçalar 3D'de iç içe geçmez.
 - Uyumsuz ürünler varsayılan olarak gizlenir; istenirse nedenleriyle soluk gösterilir ve "Değiştir ve seç" ile çakışan parça otomatik çıkarılır.
 - **3D önizleme (three.js):** kasa seçilince kasa gelir, anakart kasaya yerleşir, işlemci sokete, RAM'ler yuvalara, ekran kartı PCIe yuvasına, M.2 SSD anakarta, PSU örtünün altına, AIO radyatörü kasanın uygun yerine takılır. Ölçüler epey verisinden gelir (kasa boyutları, GPU uzunluğu/kalınlığı/fan sayısı, soğutucu yüksekliği, radyatör boyu, RAM yüksekliği, renkler, RGB).
   - ayrık (patlatılmış) görünüm, yan paneli aç/kapat, RGB aç/kapat, otomatik döndürme
@@ -55,6 +56,7 @@ index.html, css/          arayüz
 js/main.js                durum, seçici pencere, özet
 js/catalog.js             kategori tanımları, filtreler, gösterilen özellikler
 js/compat.js              uyumluluk kuralları ve güç hesabı
+js/fit.js                 ortak yerleşim modeli: kasa içi geometri, parça ölçüleri, çakışma denetimi (3D ile aynı)
 js/three/                 3D sahne ve prosedürel parça modelleri
 vendor/three.bundle.js    three.js r186 (MIT)
 data/                     sitenin kullandığı sade JSON verisi

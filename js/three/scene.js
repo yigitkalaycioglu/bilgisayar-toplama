@@ -3,10 +3,10 @@ import * as THREE from '../../vendor/three.bundle.js';
 import { OrbitControls, RoomEnvironment, EffectComposer, RenderPass, UnrealBloomPass, OutputPass, GTAOPass, HDRLoader } from '../../vendor/three.bundle.js';
 import { floorTexture, tickRgb, setRgbEnabled, disposeObject, rgbActive, M } from './materials.js';
 import {
-  makeCase, makeMotherboard, makeGhostBoard, makeBenchStand, boardLayout, makeCPU, makeAirCooler,
+  makeCase, makeMotherboard, makeGhostBoard, makeBenchStand, makeCPU, makeAirCooler,
   makeAIOPump, makeRadiator, makeRamStick, makeGPU, makePSU, makeM2, makeDrive,
 } from './models.js';
-import { radiatorMount } from '../compat.js';
+import { boardLayout, planBuild, planInput, ramSlotOrder, gpuSlot, GPU_OFFSET, COOLER_Z, RAM_Z, gpuRadSize, casePsuItem } from '../fit.js';
 
 export function webglAvailable() {
   try {
@@ -24,13 +24,6 @@ const V = (x = 0, y = 0, z = 0) => new THREE.Vector3(x, y, z);
 const easeInOut = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 const DEFAULT_DIR = V(0.55, 0.36, 1).normalize();
 
-// RAM modüllerinin dolduracağı yuvalar (işlemciye yakın taraftan A1, A2, B1, B2…)
-function ramSlotOrder(nSlots, n) {
-  if (n >= nSlots) return [...Array(nSlots).keys()];
-  if (nSlots === 4) return n === 1 ? [1] : n === 2 ? [1, 3] : [0, 1, 3].slice(0, n);
-  if (nSlots === 8) return [1, 3, 5, 7, 0, 2, 4, 6].slice(0, n).sort((a, b) => a - b);
-  return [...Array(n).keys()];
-}
 
 export class PCScene {
   constructor(canvas, host, { onHover, onPick, onReady } = {}) {
@@ -122,7 +115,7 @@ export class PCScene {
     this.anchor = new THREE.Group();
     this.anchorTarget = V();
     this.root.add(this.anchor);
-    this.tubes = [];
+    this.tubeSets = {};
 
     // son işlem: MSAA + ortam kapanması (GTAO) + RGB parlaması (dokunmatik/zayıf cihazlarda kapalı)
     this.bloom = !this.coarse;
@@ -213,6 +206,8 @@ export class PCScene {
 
   // ------------------------------------------------------------ seçimler -> sahne
   update(sel) {
+    // yerleşim planı: uyumluluk denetimiyle aynı hesap (js/fit.js)
+    this.plan = planBuild(planInput(sel));
     const one = (c) => (sel[c] && sel[c][0] ? sel[c][0] : null);
     const cs = one('case')?.item, mb = one('mobo')?.item, cpu = one('cpu')?.item, cooler = one('cooler')?.item;
     const gpu = one('gpu')?.item, ramE = one('ram'), psu = one('psu')?.item;
@@ -234,7 +229,10 @@ export class PCScene {
     if (cs) add(`case:${cs.id}`, { cat: 'case', item: cs, parent: 'root', make: () => makeCase(cs) });
     if (mb) add(`mobo:${mb.id}`, { cat: 'mobo', item: mb, parent: 'anchor', make: () => makeMotherboard(mb) });
     const boardKids = cpu || cooler || ramE || gpu || m2s.length;
-    if (!mb && boardKids) add('ghost', { cat: 'ghost', parent: 'anchor', make: () => makeGhostBoard() });
+    if (!mb && boardKids) {
+      const GL = this.plan.L;
+      add(`ghost:${GL.w}x${GL.h}`, { cat: 'ghost', parent: 'anchor', make: () => makeGhostBoard(GL) });
+    }
     if (cpu) add(`cpu:${cpu.id}`, { cat: 'cpu', item: cpu, parent: 'anchor', make: () => makeCPU(cpu) });
     if (cooler) {
       if (cooler.kind === 'aio') {
@@ -246,11 +244,17 @@ export class PCScene {
       const n = Math.min((ramE.item.mods || 1) * (ramE.qty || 1), 8);
       for (let i = 0; i < n; i++) add(`ram:${ramE.item.id}:${i}`, { cat: 'ram', item: ramE.item, parent: 'anchor', idx: i, make: () => makeRamStick(ramE.item) });
     }
-    if (gpu) add(`gpu:${gpu.id}`, { cat: 'gpu', item: gpu, parent: 'anchor', make: () => makeGPU(gpu) });
+    if (gpu) {
+      // sandviç / dikey kasalarda kart tepsinin arkasında dikey durur (kasaya bağlı)
+      const vg = !!(this.plan.G && this.plan.G.vgpu);
+      add(`${vg ? 'gpuv' : 'gpu'}:${gpu.id}`, { cat: 'gpu', item: gpu, parent: vg ? 'root' : 'anchor', make: () => makeGPU(gpu) });
+      // sıvı soğutmalı (hibrit) kartın kendi radyatörü
+      if (gpu.cool === 'liquid') add(`grad:${gpu.id}`, { cat: 'gpu', item: gpu, parent: 'root', make: () => makeRadiator({ rad: gpuRadSize(gpu), col: gpu.col, rgb: gpu.rgb, n: gpu.n, br: gpu.br }) });
+    }
     m2s.forEach((s, i) => add(`m2:${s.item.id}:${s.n}`, { cat: 'storage', item: s.item, parent: 'anchor', idx: i, make: () => makeM2(s.item) }));
     satas.forEach((s, i) => add(`drv:${s.item.id}:${s.n}`, { cat: 'storage', item: s.item, parent: 'root', idx: i, make: () => makeDrive(s.item) }));
     if (psu) add(`psu:${psu.id}`, { cat: 'psu', item: psu, parent: 'root', make: () => makePSU(psu) });
-    else if (cs && cs.psu) add(`psu:case:${cs.id}`, { cat: 'psu', item: { n: `Kasa ile gelen güç kaynağı${cs.psuw ? ' (' + cs.psuw + ' W)' : ''}`, w: cs.psuw, br: cs.br }, parent: 'root', generic: true, make: () => makePSU({ w: cs.psuw, br: cs.br }, { generic: true }) });
+    else if (cs && cs.psu) add(`psu:case:${cs.id}`, { cat: 'psu', item: { n: `Kasa ile gelen güç kaynağı${cs.psuw ? ' (' + cs.psuw + ' W)' : ''}`, w: cs.psuw, br: cs.br }, parent: 'root', generic: true, make: () => makePSU({ w: cs.psuw, br: cs.br, ff: casePsuItem(cs).ff }, { generic: true }) });
 
     // çıkarılacaklar
     for (const [key, e] of this.entries) if (!want.has(key) && e.state !== 'exit') this._exit(e);
@@ -263,7 +267,7 @@ export class PCScene {
     }
 
     // anakart tezgâh ayağı
-    const boardEntry = [...this.entries.values()].find((e) => (e.key.startsWith('mobo:') || e.key === 'ghost') && e.state !== 'exit');
+    const boardEntry = [...this.entries.values()].find((e) => (e.key.startsWith('mobo:') || e.key.startsWith('ghost')) && e.state !== 'exit');
     const L = boardEntry ? boardEntry.obj.userData.layout : boardLayout(null);
     const standKey = !cs && mb ? `stand:${Math.round(L.w)}` : null;
     for (const [key, e] of this.entries) if (key.startsWith('stand:') && key !== standKey && e.state !== 'exit') this._exit(e);
@@ -309,55 +313,88 @@ export class PCScene {
     e.obj.parent && e.obj.parent.remove(e.obj);
     disposeObject(e.obj);
     this.entries.delete(e.key);
-    if (e.cat === 'cooler' && e.key.startsWith('rad:')) this._clearTubes();
+    if (e.key.startsWith('rad:')) this._clearTubeSet('cpu');
+    if (e.key.startsWith('grad:')) this._clearTubeSet('gpu');
   }
 
   // ------------------------------------------------------------ yerleşim
   _layout({ cs, mb, L, cooler, ramE }) {
     const caseE = [...this.entries.values()].find((e) => e.cat === 'case' && e.state !== 'exit');
     const CL = caseE ? caseE.obj.userData.layout : null;
+    const plan = this.plan;
     this.caseLayout = CL;
     this.boardL = L;
 
-    // anakart çapası
-    if (CL) this.anchorTarget.set(CL.boardRearX, CL.boardTopY, CL.boardZ);
+    // anakart çapası (kasa varsa plandan, yoksa tezgâh)
+    if (CL) this.anchorTarget.set(plan.anchor.x, plan.anchor.y, plan.anchor.z);
     else this.anchorTarget.set(-L.w / 2, L.h + 53, 0);
     if (this.anchor.position.lengthSq() === 0 && !this._anchorPlaced) { this.anchor.position.copy(this.anchorTarget); this._anchorPlaced = true; }
 
     const s = L.socket;
     const ramSlots = ramE ? ramSlotOrder(L.dimm.length, Math.min((ramE.item.mods || 1) * (ramE.qty || 1), L.dimm.length)) : [];
-    const radMount = cooler && cooler.kind === 'aio' && CL ? radiatorMount(cs, cooler.rad || 240) || 't' : null;
 
-    // kasa fanları: radyatörün oturduğu yerdekileri gizle
-    if (caseE) {
-      const fg = caseE.obj.userData.fanGroups;
-      for (const k of Object.keys(fg)) for (const f of fg[k]) f.visible = !(radMount && k === radMount);
-    }
-    // anakartın M.2 kapakları: dolu yuvada gizle
+    // kasa fanları: radyatörün yerine geçen ya da bir parçayla çakışanlar gizlenir
+    if (caseE) caseE.obj.userData.fanList.forEach((f, i) => { f.visible = plan.fanVisible[i] !== false; });
+    // anakart: M.2 kapakları dolu yuvada gizlenir; VRM soğutucusu alçak soğutucunun altına sığar
     const moboE = [...this.entries.values()].find((e) => e.cat === 'mobo' && e.key.startsWith('mobo:') && e.state !== 'exit');
     const m2Count = [...this.entries.values()].filter((e) => e.key.startsWith('m2:') && e.state !== 'exit').length;
-    if (moboE) moboE.obj.userData.m2Covers.forEach((c, i) => { if (c) c.visible = i >= m2Count; });
+    if (moboE) {
+      moboE.obj.userData.m2Covers.forEach((c, i) => { if (c) c.visible = i >= m2Count; });
+      const v = moboE.obj.userData.vrm;
+      if (v) v.scale.z = plan.vrmMaxZ ? Math.min(1, plan.vrmMaxZ / 34) : 1;
+    }
+    // hava soğutucu: yüksek bellek için fan yukarı alınır; alçak soğutucuda kanatçıklar sıkıştırılır
+    const coolE = [...this.entries.values()].find((e) => e.key.startsWith('cooler:') && e.state !== 'exit');
+    if (coolE) {
+      const ud = coolE.obj.userData;
+      for (const f of ud.fans || []) if (f.userData.baseZ != null && ud.cg && ud.cg.type !== 'low' && ud.cg.type !== 'radial') f.position.z = f.userData.baseZ + (plan.coolerFanLift || 0);
+      if (ud.fins && ud.cg) {
+        const { finZ0, finZ1 } = ud.cg;
+        const z0 = plan.finsZ0 != null ? Math.min(plan.finsZ0, finZ1 - 10) : finZ0;
+        const k = (finZ1 - z0) / (finZ1 - finZ0);
+        ud.fins.scale.z = k;
+        ud.fins.position.z = z0 - finZ0 * k;
+      }
+    }
+    const EXPLODE = { t: V(0, 190, 0), f: V(170, 0, 0), s: V(170, 0, 0), b: V(0, -40, 220), r: V(-170, 0, 0) };
+    const fromPlan = (e, pl) => { e.pos.set(...pl.pos); e.quat.setFromEuler(new THREE.Euler(...pl.rot)); };
+    const benchRad = (e, extra) => {
+      const dims = e.obj.userData.dims;
+      e.pos.set(L.w / 2 + 70 + extra, dims.L / 2 + 12, 30);
+      e.quat.setFromEuler(new THREE.Euler(0, 0, Math.PI / 2));
+      e.explode.set(120, 0, 0);
+    };
 
     for (const e of this.entries.values()) {
       if (e.state === 'exit') continue;
       e.quat.identity();
       const k = e.key;
       if (k.startsWith('case:')) { e.pos.set(0, 0, 0); e.enter.set(0, 420, 0); e.explode.set(0, 0, 0); }
-      else if (k.startsWith('mobo:') || k === 'ghost') { e.pos.set(0, 0, 0); e.enter.set(0, 0, 320); e.explode.set(0, 0, 0); }
+      else if (k.startsWith('mobo:') || k.startsWith('ghost')) { e.pos.set(0, 0, 0); e.enter.set(0, 0, 320); e.explode.set(0, 0, 0); }
       else if (k.startsWith('stand:')) { e.pos.set(0, -L.h, 0); e.enter.set(0, -60, 0); e.explode.set(0, 0, 0); }
       else if (k.startsWith('cpu:')) { e.pos.set(s.u, -s.v, 3.2); e.enter.set(0, 0, 170); e.explode.set(0, 0, 120); }
-      else if (k.startsWith('cooler:') || k.startsWith('pump:')) { e.pos.set(s.u, -s.v, 7.6); e.enter.set(0, 0, 280); e.explode.set(0, 0, 250); }
+      else if (k.startsWith('cooler:') || k.startsWith('pump:')) { e.pos.set(s.u, -s.v, COOLER_Z); e.enter.set(0, 0, 280); e.explode.set(0, 0, 250); }
       else if (k.startsWith('ram:')) {
         const slot = L.dimm[ramSlots[e.idx] ?? e.idx] || L.dimm[L.dimm.length - 1];
         const extra = e.idx >= L.dimm.length ? 60 * (e.idx - L.dimm.length + 1) : 0;
-        e.pos.set(slot.u, -slot.v, 2.2 + extra);
+        e.pos.set(slot.u, -slot.v, RAM_Z + extra);
         e.enter.set(0, 0, 160); e.explode.set(0, 0, 105);
       } else if (k.startsWith('gpu:')) {
-        const p = L.pcie.find((q) => q.x16) || { v: s.v + 82 };
-        e.pos.set(-8, -p.v, 9);
+        const p = gpuSlot(L);
+        e.pos.set(GPU_OFFSET.u, -p.v, GPU_OFFSET.z);
         e.enter.set(0, 0, 300); e.explode.set(0, -30, 200);
+      } else if (k.startsWith('gpuv:')) {
+        const gv = plan.gpuV;
+        if (gv) {
+          e.pos.set(...gv.pos);
+          const [a, b, c] = gv.basis.map((v) => V(...v));
+          e.quat.setFromRotationMatrix(new THREE.Matrix4().makeBasis(a, b, c));
+        }
+        e.enter.set(0, 0, -300); e.explode.set(0, 0, -160);
       } else if (k.startsWith('m2:')) {
         const slot = L.m2[e.idx];
+        // kartın arkasındaki yuvada soğutucusuz (tepsiye sığmaz; uyumluluk uyarısı verir)
+        if (e.obj.userData.hs) { e.obj.userData.hs.visible = !(slot && slot.back); e.obj.userData.label.visible = !!(slot && slot.back); }
         if (slot && !slot.back) { e.pos.set(slot.u, -slot.v, 2.6); e.explode.set(0, 0, 70); }
         else {
           const j = slot ? 0 : e.idx;
@@ -366,40 +403,36 @@ export class PCScene {
           e.explode.set(0, 0, -70);
         }
         e.enter.set(0, 0, 120);
-      } else if (k.startsWith('rad:')) {
-        const dims = e.obj.userData.dims;
-        if (CL) {
-          const T = CL.radLayout(radMount, dims.L, dims.T);
-          e.pos.copy(T.pos); e.quat.setFromEuler(T.rot);
-          e.explode.copy({ t: V(0, 190, 0), f: V(170, 0, 0), s: V(170, 0, 0), b: V(0, 0, 220), r: V(-170, 0, 0) }[radMount] || V(0, 190, 0));
-        } else {
-          e.pos.set(L.w / 2 + 70, dims.L / 2 + 12, 30);
-          e.quat.setFromEuler(new THREE.Euler(0, 0, Math.PI / 2));
-          e.explode.set(120, 0, 0);
-        }
+      } else if (k.startsWith('rad:') || k.startsWith('grad:')) {
+        const r = plan.rads[k.startsWith('rad:') ? 'cpu' : 'gpu'];
+        if (CL && r) { fromPlan(e, r); e.explode.copy(EXPLODE[r.mount] || EXPLODE.t); }
+        else benchRad(e, k.startsWith('grad:') && [...this.entries.keys()].some((x) => x.startsWith('rad:')) ? 75 : 0);
         e.enter.set(0, 260, 0);
       } else if (k.startsWith('psu:')) {
-        if (CL) {
-          e.pos.copy(CL.psu.pos); e.quat.setFromEuler(CL.psu.rot);
-          e.explode.set(0, 0, CL.dual ? -300 : 300);
-          e.enter.set(0, 0, CL.dual ? -400 : 420);
+        if (CL && plan.psu) {
+          fromPlan(e, plan.psu);
+          const behind = plan.psu.name === 'behind';
+          e.explode.set(0, 0, behind ? -300 : 300);
+          e.enter.set(0, 0, behind ? -400 : 420);
         } else {
           e.pos.set(L.w / 2 + 50, 0, 140);
           e.explode.set(80, 0, 120); e.enter.set(0, 0, 400);
         }
       } else if (k.startsWith('drv:')) {
-        const big = (it) => it.kind === 'hdd' && it.ff !== '2.5';
-        const hdd = big(e.item);
-        const satasOfKind = [...this.entries.values()].filter((x) => x.key.startsWith('drv:') && x.state !== 'exit' && big(x.item) === hdd);
-        const idx = satasOfKind.indexOf(e);
-        if (CL) {
-          const slots = hdd ? CL.drive35 : CL.drive25;
-          const sl = slots[Math.min(idx, slots.length - 1)];
-          e.pos.copy(sl.pos);
-          if (idx >= slots.length) e.pos.y += 12 * (idx - slots.length + 1);
-          e.quat.setFromEuler(sl.rot);
-          e.explode.set(0, 0, CL.hasShroud ? 260 : -260);
+        const pl = CL && plan.drives.get(k);
+        if (pl) {
+          fromPlan(e, pl);
+          e.explode.set(0, 0, pl.rot[0] ? -260 : 260);
+        } else if (CL) {
+          // yuva bulunamadı (uyumsuzluk olarak bildirilir): kasanın önünde, altta göster
+          const n = [...this.entries.keys()].filter((x) => x.startsWith('drv:')).indexOf(k);
+          e.pos.set(CL.xF - 90, CL.floorY + 14 + n * 28, CL.zGlass + 70);
+          e.explode.set(0, 0, 120);
         } else {
+          const big = (it) => it.kind === 'hdd' && it.ff !== '2.5';
+          const hdd = big(e.item);
+          const same = [...this.entries.values()].filter((x) => x.key.startsWith('drv:') && x.state !== 'exit' && big(x.item) === hdd);
+          const idx = same.indexOf(e);
           e.pos.set(-L.w / 2 - 110, (hdd ? 13.1 : 3.5) + idx * (hdd ? 27 : 8), 60 + (hdd ? 0 : 130));
           e.explode.set(-60, 0, 80);
         }
@@ -429,36 +462,47 @@ export class PCScene {
   }
 
   // ------------------------------------------------------------ AIO hortumları
-  _clearTubes() {
-    for (const t of this.tubes) { this.root.remove(t); t.geometry.dispose(); }
-    this.tubes = [];
+  _clearTubeSet(id) {
+    const set = this.tubeSets[id];
+    if (!set) return;
+    for (const t of set.meshes) { this.root.remove(t); t.geometry.dispose(); }
+    set.meshes = [];
+    set.sig = '';
   }
 
   _updateTubes() {
-    const pump = [...this.entries.values()].find((e) => e.key.startsWith('pump:') && e.state !== 'exit');
-    const rad = [...this.entries.values()].find((e) => e.key.startsWith('rad:') && e.state !== 'exit');
-    if (!pump || !rad) { if (this.tubes.length) this._clearTubes(); return; }
+    this._tubePair('cpu', 'pump:', 'rad:', V(0, 1, 0));
+    this._tubePair('gpu', 'gpu', 'grad:', V(1, 0, 0));
+  }
+
+  _tubePair(id, aPre, bPre, dirLocal) {
+    const live = (pre) => [...this.entries.values()].find((e) => (pre === 'gpu' ? /^gpuv?:/.test(e.key) : e.key.startsWith(pre)) && e.state !== 'exit');
+    const A = live(aPre), B = live(bPre);
+    const set = (this.tubeSets[id] ||= { sig: '', meshes: [] });
+    const portsA = A && A.obj.userData.ports;
+    if (!A || !B || !portsA || portsA.length < 2) { if (set.meshes.length) this._clearTubeSet(id); return; }
     this.root.updateMatrixWorld(true);
-    const a = pump.obj.userData.ports.map((p) => pump.obj.localToWorld(p.clone()));
-    const b = rad.obj.userData.ports.map((p) => rad.obj.localToWorld(p.clone()));
+    const a = portsA.map((p) => A.obj.localToWorld(p.clone()));
+    const b = B.obj.userData.ports.map((p) => B.obj.localToWorld(p.clone()));
     const sig = [...a, ...b].map((v) => `${v.x.toFixed(0)},${v.y.toFixed(0)},${v.z.toFixed(0)}`).join('|');
-    if (sig === this.tubeSig) return;
-    this.tubeSig = sig;
+    if (sig === set.sig) return;
+    this._clearTubeSet(id);
+    set.sig = sig;
     if (!this.tubeMat) this.tubeMat = M.rubber(0x0b0c0f);
-    this._clearTubes();
+    const origin = A.obj.getWorldPosition(V());
+    const dirA = A.obj.localToWorld(dirLocal.clone()).sub(origin).normalize();
+    const radDir = B.obj.localToWorld(V(0, -1, 0)).sub(B.obj.getWorldPosition(V())).normalize();
     for (let i = 0; i < 2; i++) {
       const p0 = a[i], p3 = b[i];
-      const up = V(0, 1, 0);
-      const p1 = p0.clone().add(up.clone().multiplyScalar(45)).add(V(0, 0, 12));
-      const radDir = rad.obj.localToWorld(V(0, -1, 0)).sub(rad.obj.getWorldPosition(V())).normalize();
-      const p2 = p3.clone().add(radDir.multiplyScalar(55));
+      const p1 = p0.clone().add(dirA.clone().multiplyScalar(45)).add(V(0, 0, 12));
+      const p2 = p3.clone().add(radDir.clone().multiplyScalar(55));
       const mid = p1.clone().lerp(p2, 0.5).add(V(0, -25, 25 + i * 8));
       const curve = new THREE.CatmullRomCurve3([p0, p1, mid, p2, p3], false, 'centripetal');
       const tube = new THREE.Mesh(new THREE.TubeGeometry(curve, 64, 5.5, 10, false), this.tubeMat);
       tube.castShadow = true;
-      tube.userData.partKey = rad.key;
+      tube.userData.partKey = B.key;
       this.root.add(tube);
-      this.tubes.push(tube);
+      set.meshes.push(tube);
     }
   }
 
@@ -494,9 +538,10 @@ export class PCScene {
     // ekran kartı: üst kenardaki güç soketinden aşağı, örtünün içine (ya da tepsinin arkasına)
     if (gpu) {
       const d = gpu.obj.userData.dims;
-      const n = /16|12V/i.test(gpu.item.conn || '') ? 1 : Math.min(3, Number(((gpu.item.conn || '').match(/(\d)\s*[xX×]/) || [0, 1])[1]) || 1);
+      const socks = gpu.obj.userData.powerSockets || [];
+      const n = socks.length;
       for (let i = 0; i < n; i++) {
-        const c = V(A.x + gpu.pos.x + d.L * 0.62 + i * 22, A.y + gpu.pos.y - 4, A.z + gpu.pos.z + d.H + 5);
+        const c = V(A.x + gpu.pos.x + socks[i].x, A.y + gpu.pos.y - 4, A.z + gpu.pos.z + d.H + 5);
         const zMax = CL.W / 2 - CL.t - 8;
         const out = Math.min(c.z + 16, zMax);
         const endY = CL.hasShroud ? CL.shroudTop : CL.yB + CL.t + 30;
@@ -529,7 +574,8 @@ export class PCScene {
     if (CL) return new THREE.Box3(V(-CL.D / 2, 0, -CL.W / 2), V(CL.D / 2, CL.H, CL.W / 2));
     const live = [...this.entries.values()].filter((e) => e.state !== 'exit');
     const box = new THREE.Box3(V(-L.w / 2, 0, -60), V(L.w / 2, L.h + 60, 150));
-    if (live.some((e) => e.key.startsWith('psu:') || e.key.startsWith('rad:'))) box.max.x += 230;
+    if (live.some((e) => e.key.startsWith('psu:') || e.key.startsWith('rad:') || e.key.startsWith('grad:'))) box.max.x += 230;
+    if (live.some((e) => e.key.startsWith('grad:')) && live.some((e) => e.key.startsWith('rad:'))) box.max.x += 75;
     if (live.some((e) => e.key.startsWith('drv:'))) box.min.x -= 200;
     if (live.some((e) => e.key.startsWith('cooler:') || e.key.startsWith('pump:') || e.key.startsWith('gpu:'))) box.max.z += 120;
     return box;
@@ -614,7 +660,10 @@ export class PCScene {
 
   _highlight(e, on) {
     const seen = new Set();
-    const objs = [e.obj, ...(e.key.startsWith('rad:') ? this.tubes : []), ...(e.key.startsWith('psu:') ? this.cables || [] : [])];
+    const group = [...this.entries.values()].filter((x) => x === e || (x.state !== 'exit' && x.item && x.item === e.item && x.cat === e.cat));
+    const keys = new Set(group.map((x) => x.key));
+    const tubes = Object.values(this.tubeSets).flatMap((t) => t.meshes).filter((m) => keys.has(m.userData.partKey));
+    const objs = [...group.map((x) => x.obj), ...tubes, ...(e.key.startsWith('psu:') ? this.cables || [] : [])];
     for (const root of objs) root.traverse((o) => {
       if (!o.isMesh) return;
       for (const m of Array.isArray(o.material) ? o.material : [o.material]) {

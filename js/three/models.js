@@ -7,8 +7,11 @@ import {
   M, rgbMaterial, pcbTexture, meshAlpha, finTexture, finVTexture, grillTexture, labelTexture,
   colorOf, isLight, cachedGeo, cloneTex,
 } from './materials.js';
+import {
+  clamp, boardLayout, caseGeom, coolerGeom, gpuDims, gpuSocketsLayout, psuDims, ramDims, radDims, DRIVE_DIMS, pumpDims,
+} from '../fit.js';
 
-const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+export { boardLayout };
 const r1 = (v) => Math.round(v * 10) / 10;
 
 // Kutu: 2,5 mm'den kalın parçalarda kenarlar pahlanır (gerçek ürünler gibi ışığı kenarda yakalar)
@@ -154,12 +157,9 @@ function makeRotorOnly(g, size, thickness, blade, speed) {
 // KASA
 // =====================================================================
 export function makeCase(x) {
-  let W = x.w || ({ 'Mini ITX': 200, 'Micro ATX': 210 }[x.ct] ?? 225);
-  let H = x.h || ({ 'Mini ITX': 340, 'Micro ATX': 420, 'E-ATX': 520 }[x.ct] ?? 470);
-  let D = x.d || ({ 'Mini ITX': 360, 'Micro ATX': 400, 'E-ATX': 500 }[x.ct] ?? 450);
-  if (W > D * 1.35 && D < 300) [W, D] = [D, W];
-  W = clamp(W, 160, 380); H = clamp(H, 240, 720); D = clamp(D, 260, 680);
-
+  // Tüm iç ölçüler ortak yerleşim modelinden (fit.js) gelir; uyumluluk denetimi de aynı sayıları kullanır.
+  const G = caseGeom(x);
+  const { W, H, D, t, f, yB, yT, xR, xF, dual, trayZ, shroudTop, hasShroud, boardTopY } = G;
   const color = colorOf(x.col, 0x1b1d22);
   const light = isLight(color);
   const body = M.painted(color, light ? 0.48 : 0.58);
@@ -167,15 +167,9 @@ export function makeCase(x) {
   const inner = M.painted(innerC, 0.72);
   const trimMat = M.plastic(light ? 0xd9dce1 : 0x0e0f12, 0.5);
   const darkMat = M.plastic(0x0b0c0f, 0.7);
-  const t = 3, f = 14, yB = f;
-  const dual = /yan/i.test(x.pos || '') && W >= 262;
-  const topPsu = /üst/i.test(x.pos || '');
-  const hasShroud = !dual && !topPsu;
-  const shroudH = hasShroud ? clamp(H * 0.2, 78, 104) : 0;
 
   const g = new THREE.Group();
   g.name = 'case';
-  const xR = -D / 2 + t, xF = D / 2 - t, yT = H - t;
 
   // ---- gövde panelleri ----
   g.add(box(D, t, W, body, 0, yB + t / 2, 0));                        // alt
@@ -203,11 +197,12 @@ export function makeCase(x) {
   io.position.set(D / 2 - 45, H + 1.2, 0);
   g.add(io);
 
-  // ---- ön panel ----
+  // ---- ön panel: çift bölmeli ya da "çift temperli cam" kasalarda cam, diğerlerinde delikli ----
   const front = new THREE.Group();
   front.name = 'front';
   const fw = 16;
-  if (dual) {
+  const glassFront = dual || !!x.dglass;
+  if (glassFront) {
     const gl = box(t, H - yB - 8, W - 8, M.glass(), xF + t / 2, (H + yB) / 2, 0);
     gl.castShadow = false;
     front.add(gl);
@@ -223,30 +218,29 @@ export function makeCase(x) {
     grill.rotation.y = Math.PI / 2;
     front.add(grill);
   }
+  // kasa gövdesindeki LED şerit (ön panelin iki dikey kenarı)
+  if (x.strip) {
+    const strip = rgbMaterial(1, 2.6);
+    for (const sz of [-1, 1]) front.add(box(2, H - yB - 40, 2.4, strip, xF + (glassFront ? 4.4 : 9.6), (H + yB) / 2, sz * (W / 2 - (glassFront ? 3 : fw / 2))));
+  }
   g.add(front);
 
   // ---- anakart tepsisi ----
-  const trayZ = dual ? Math.max(-W / 2 + t + 96, W / 2 - t - 205) : -W / 2 + clamp(W * 0.12, 20, 34);
-  const shroudTop = hasShroud ? yB + t + shroudH : yB + t;
-  const frontGap = dual ? 20 : clamp(D * 0.11, 38, 70);
-  const trayX0 = xR, trayX1 = xF - frontGap;
-  const tray = box(trayX1 - trayX0, yT - shroudTop, 1.5, inner, (trayX0 + trayX1) / 2, (yT + shroudTop) / 2, trayZ);
+  const trayX0 = xR, trayX1 = G.trayX1;
+  const trayTop = G.arch === 'topRear' ? yT - 88 : yT;
+  const tray = box(trayX1 - trayX0, trayTop - shroudTop, 1.5, inner, (trayX0 + trayX1) / 2, (trayTop + shroudTop) / 2, trayZ);
   g.add(tray);
-  // kablo geçiş lastikleri
-  const grommets = [];
-  for (const [yy, hh] of [[0.72, 70], [0.42, 55], [0.16, 40]]) {
-    const gy = shroudTop + (yT - shroudTop) * yy;
-    g.add(rbox(14, hh, 2.5, 4, M.rubber(0x08090b), trayX1 - 16, gy, trayZ + 1));
-    grommets.push({ x: trayX1 - 16, y: gy, h: hh });
+  for (const gr of G.grommets) {
+    if (gr.y + gr.h / 2 > trayTop) continue;
+    g.add(rbox(14, gr.h, 2.5, 4, M.rubber(0x08090b), gr.x, gr.y, trayZ + 1));
   }
-  // dual: iki bölmeyi ayıran üst/alt çıta
-  const mainZ = (trayZ + W / 2 - t) / 2;
 
   // ---- PSU örtüsü ----
   if (hasShroud) {
-    const sx0 = xR, sx1 = xF - 28;
-    const zs0 = trayZ, zs1 = W / 2 - t - 3;
-    g.add(box(sx1 - sx0, t, zs1 - zs0, inner, (sx0 + sx1) / 2, shroudTop - t / 2, (zs0 + zs1) / 2));
+    const sx0 = xR, sx1 = G.shroudX1;
+    const zs0 = trayZ, zs1 = G.shroudZ1;
+    const shroudH = shroudTop - (yB + t);
+    g.add(box(sx1 - sx0, 2, zs1 - zs0, inner, (sx0 + sx1) / 2, shroudTop - 1, (zs0 + zs1) / 2));
     const sm = new THREE.MeshStandardMaterial({ color: innerC, metalness: 0.25, roughness: 0.65, alphaMap: cloneTex(meshAlpha, (sx1 - sx0) / 16, shroudH / 16), alphaTest: 0.5, side: THREE.DoubleSide });
     const side = plane(sx1 - sx0, shroudH - t, sm, (sx0 + sx1) / 2, (shroudTop + yB + t) / 2 - t / 2, zs1);
     g.add(side);
@@ -281,88 +275,38 @@ export function makeCase(x) {
   }
   g.add(side);
 
-  // ---- ayaklar ----
+  // ---- ayaklar (alçak kasalarda kısa) ----
   for (const sxn of [-1, 1]) for (const szn of [-1, 1]) {
-    g.add(rbox(34, f, 22, 4, M.rubber(0x0d0e11), sxn * (D / 2 - 34), f / 2, szn * (W / 2 - 22)));
+    g.add(rbox(34, f, 22, Math.min(4, f / 2 - 0.1), M.rubber(0x0d0e11), sxn * (D / 2 - 34), f / 2, szn * (W / 2 - 22)));
   }
 
   // ---- arka panel detayları (dış yüz) ----
   const rearX = -D / 2 - 0.3;
-  const boardTopGap = topPsu ? 106 : clamp((yT - shroudTop - 305) * 0.5, 16, 64);
-  const boardTopY = yT - boardTopGap;
-  const boardRearX = xR + 10;
-  const ioPlate = box(1, 160, 46, M.metal(0x6b7078, 0.5), rearX, boardTopY - 10 - 80, trayZ + 8 + 24);
+  const ioPlate = box(1, 160, 46, M.metal(0x6b7078, 0.5), rearX, boardTopY - 10 - 80, G.boardZ + 24);
   g.add(ioPlate);
   for (let i = 0; i < 7; i++) {
-    const sy = boardTopY - 160 - i * 20.32;
-    if (sy < shroudTop + 12) break;
-    g.add(box(1, 14, 110, M.metal(light ? 0xd0d3d8 : 0x2b2f36, 0.45), rearX, sy, trayZ + 8 + 60));
+    const sy = boardTopY - 162 - i * 20.32;
+    if (sy < (hasShroud ? shroudTop : G.floorY) + 12) break;
+    g.add(box(1, 14, 110, M.metal(light ? 0xd0d3d8 : 0x2b2f36, 0.45), rearX, sy, G.boardZ + 52));
   }
   const rearGrill = new THREE.MeshStandardMaterial({ color: 0x0a0b0d, alphaMap: grillTexture, transparent: true, alphaTest: 0.4, side: THREE.DoubleSide });
 
-  // ---- fanlar ----
-  const fsz = x.fsz && x.fsz >= 80 ? Math.min(x.fsz, 200) : 120;
-  const nFans = clamp(x.fans || 0, 0, 10);
+  // ---- fanlar (yuvalar ortak modelden; görünürlüğü sahne yerleşim planına göre ayarlar) ----
   const fanOpts = { frame: light ? 0xe2e4e8 : 0x15171b, blade: light ? 0xeceef1 : 0x1d2026, rgb: !!x.frgb };
-  const slots = [];
-  const rearFanSize = Math.min(fsz, 140);
-  const rearFan = { pos: [xR + 13.5, yT - 22 - rearFanSize / 2, mainZ], axis: 'x', size: rearFanSize };
-  const frontCap = dual ? 0 : Math.floor((yT - yB - 30) / (fsz + 4));
-  const fronts = Array.from({ length: Math.min(3, frontCap) }, (_, i) => ({ pos: [xF - 15, yT - 30 - fsz / 2 - i * (fsz + 4), 0], axis: 'x', size: fsz }));
-  const topCap = Math.floor((D - 150) / (fsz + 4));
-  const tops = Array.from({ length: Math.min(3, topCap) }, (_, i) => ({ pos: [xF - frontGap - 15 - fsz / 2 - i * (fsz + 4), yT - 14, mainZ + 6], axis: 'y', size: fsz }));
-  const bottoms = Array.from({ length: Math.min(3, Math.floor((D - 80) / (fsz + 4))) }, (_, i) => ({ pos: [xF - 30 - fsz / 2 - i * (fsz + 4), yB + t + 14, mainZ], axis: 'y', size: fsz }));
-  if (dual) slots.push(...bottoms, ...tops, rearFan);
-  else slots.push(rearFan, ...fronts, ...tops);
-  const used = slots.slice(0, nFans);
-  const fanGroups = { r: [], f: [], t: [], b: [], s: [] };
-  for (const s of used) {
+  const fanList = [];
+  for (const s of G.fans) {
     const fan = makeFan(s.size, fanOpts);
     fan.position.set(...s.pos);
     if (s.axis === 'x') fan.rotation.y = Math.PI / 2;
     else fan.rotation.x = Math.PI / 2;
     g.add(fan);
-    const key = s === rearFan ? 'r' : fronts.includes(s) ? 'f' : tops.includes(s) ? 't' : 'b';
-    fanGroups[key].push(fan);
+    fanList.push(fan);
   }
-  if (!fanGroups.r.length) {
-    const rg = plane(rearFanSize - 4, rearFanSize - 4, rearGrill, rearX - 0.2, rearFan.pos[1], mainZ);
+  if (!G.fans.some((s) => s.g === 'r')) {
+    const rs = G.rearSlot;
+    const rg = plane(rs.size - 4, rs.size - 4, rearGrill, rearX - 0.2, rs.pos[1], rs.pos[2]);
     rg.rotation.y = -Math.PI / 2;
     g.add(rg);
-  }
-
-  // ---- yerleşim bilgisi ----
-  const psuLayout = topPsu
-    ? { pos: new THREE.Vector3(xR + 1, yT - 88, -20), rot: new THREE.Euler(0, 0, 0) }
-    : dual
-      ? { pos: new THREE.Vector3(xF - 35 - 165, yB + t + 76, trayZ - 4), rot: new THREE.Euler(-Math.PI / 2, 0, 0) }
-      : { pos: new THREE.Vector3(xR + 1, yB + t + 0.5, 0), rot: new THREE.Euler(0, 0, 0) };
-
-  const radLayout = (pos, radL, radT) => {
-    const fanT = 25;
-    switch (pos) {
-      case 't': return { pos: new THREE.Vector3(clamp(xF - frontGap - radL / 2 + 10, xR + radL / 2 + 4, xF - radL / 2 - 4), yT - 4 - radT / 2, mainZ + 6), rot: new THREE.Euler(0, 0, 0) };
-      case 'b': return { pos: new THREE.Vector3(clamp(xF - 20 - radL / 2, xR + radL / 2 + 4, xF - radL / 2 - 4), yB + t + 4 + radT / 2, mainZ), rot: new THREE.Euler(Math.PI, 0, 0) };
-      case 'r': return { pos: new THREE.Vector3(xR + fanT + 2 + radT / 2, rearFan.pos[1], mainZ), rot: new THREE.Euler(0, 0, -Math.PI / 2) };
-      case 's':
-      case 'f':
-      default: {
-        const yy = clamp(yT - 24 - radL / 2, yB + radL / 2 + 6, yT - radL / 2 - 4);
-        const zz = dual ? mainZ + 10 : 0;
-        return { pos: new THREE.Vector3(xF - (dual ? 8 : fanT + 6) - radT / 2, yy, zz), rot: new THREE.Euler(0, 0, Math.PI / 2) };
-      }
-    }
-  };
-  // fan alanı radyatörle çakışmasın diye radyatör takılınca o konumdaki kasa fanları gizlenebilir
-  const drive35 = [], drive25 = [];
-  for (let i = 0; i < 4; i++) {
-    if (hasShroud) drive35.push({ pos: new THREE.Vector3(xF - 38 - 74, yB + t + 16 + i * 30, clamp(W / 2 - t - 62, -W / 2, W / 2)), rot: new THREE.Euler(0, 0, 0) });
-    else drive35.push({ pos: new THREE.Vector3(xF - 80, yT - 120 - i * 112, (trayZ - W / 2 + t) / 2), rot: new THREE.Euler(Math.PI / 2, 0, 0) });
-  }
-  for (let i = 0; i < 6; i++) {
-    const col = i % 2, row = Math.floor(i / 2);
-    if (hasShroud) drive25.push({ pos: new THREE.Vector3(xF - 36 - 54, shroudTop + 4 + row * 9, mainZ + (col ? 38 : -38)), rot: new THREE.Euler(0, 0, 0) });
-    else drive25.push({ pos: new THREE.Vector3(xF - 70 - col * 110, yT - 90 - row * 80, trayZ - 6), rot: new THREE.Euler(Math.PI / 2, 0, 0) });
   }
 
   shadowize(g);
@@ -371,71 +315,16 @@ export function makeCase(x) {
   for (const m of topParts) m.castShadow = false;
   front.traverse((o) => { o.castShadow = false; });
 
-  g.userData.layout = {
-    W, H, D, t, yB, yT, xR, xF, trayZ, mainZ, dual, hasShroud, shroudTop, frontGap, grommets, light,
-    boardTopY, boardRearX, boardZ: trayZ + 8,
-    psu: psuLayout, radLayout, drive35, drive25,
-    center: new THREE.Vector3(0, H / 2, 0),
-  };
+  g.userData.layout = { ...G, light, center: new THREE.Vector3(0, H / 2, 0) };
   g.userData.side = side;
   g.userData.front = front;
-  g.userData.fanGroups = fanGroups;
+  g.userData.fanList = fanList;
   return g;
 }
 
 // =====================================================================
 // ANAKART
 // =====================================================================
-const FF_DIMS = { 'Mini ITX': [170, 170], 'Mini DTX': [170, 203], 'Micro ATX': [244, 244], 'ATX': [244, 305], 'E-ATX': [277, 305], 'SSI-EEB': [330, 305], 'SSI-CEB': [305, 267], 'XL-ATX': [345, 262] };
-
-export function boardLayout(x) {
-  const ff = x ? x.ff : 'ATX';
-  const def = FF_DIMS[ff] || FF_DIMS.ATX;
-  let w = (x && x.w) || def[0], h = (x && x.h) || def[1];
-  w = clamp(w, 150, 360); h = clamp(h, 150, 340);
-  const itx = w < 200 && h < 215;
-  const sock = (x && x.sock) || 'AM5';
-  const big = /TR|WRX|LGA4677|LGA3647|LGA4189|LGA2066|LGA2011/.test(sock);
-  const s = itx ? { u: w * 0.5 - 6, v: 70 } : { u: Math.min(116, w * 0.46), v: big ? 105 : 80 };
-  const nSlots = clamp((x && x.slots) || (itx ? 2 : 4), 1, 8);
-  const dimm = [];
-  const pitch = 9.6;
-  if (nSlots === 8) {
-    for (let i = 0; i < 4; i++) dimm.push({ u: s.u - 58 - (3 - i) * pitch, v: s.v + 4 });
-    for (let i = 0; i < 4; i++) dimm.push({ u: s.u + 58 + i * pitch, v: s.v + 4 });
-  } else {
-    const startU = itx ? w - 22 - (nSlots - 1) * pitch : s.u + 48;
-    for (let i = 0; i < nSlots; i++) dimm.push({ u: Math.min(startU + i * pitch, w - 18 - (nSlots - 1 - i) * pitch), v: s.v + 4 });
-  }
-  const pcie = [];
-  const P = 20.32; // genişleme yuvası aralığı
-  const p1 = itx ? h - 24 : s.v + (big ? 95 : 82);
-  const nX16 = clamp((x && x.x16) || (itx ? 1 : 2), 1, 4);
-  const nX1 = clamp((x && x.x1) || 0, 0, 3);
-  const nM2 = clamp(x && x.m2 != null ? x.m2 : 2, 0, 6);
-  const kMax = Math.max(1, Math.floor((h - 14 - p1) / P) + 1);
-  const x16Ks = itx ? [0] : [0, 3, 6].filter((k) => k < kMax).slice(0, nX16);
-  x16Ks.forEach((k) => pcie.push({ u: 52, v: p1 + k * P, len: 89, x16: true }));
-  // M.2: birincisi işlemci ile ilk PCIe arasında, diğerleri x16 yuvalarının arasında
-  const m2Cands = [{ u: itx ? 42 : 58, v: p1 - 30 }];
-  if (!itx && kMax > 2) m2Cands.push({ u: 58, v: p1 + 1.5 * P });
-  if (!itx && kMax > 5) m2Cands.push({ u: 58, v: p1 + 4.5 * P }, { u: 150, v: p1 + 4.5 * P });
-  const m2 = [];
-  for (let i = 0; i < nM2; i++) {
-    if (i < m2Cands.length) m2.push({ ...m2Cands[i], len: 80, back: false });
-    else { const j = i - m2Cands.length; m2.push({ u: 50 + (j % 2) * 95, v: (itx ? 40 : 120) + Math.floor(j / 2) * 40, len: 80, back: true }); }
-  }
-  // x1 yuvaları yalnızca M.2 ile çakışmayan aralıklara
-  const x1Ks = [];
-  if (!itx) {
-    if (nM2 < 2 && kMax > 1) x1Ks.push(1);
-    if (nM2 < 3 && kMax > 4) x1Ks.push(4);
-  }
-  x1Ks.slice(0, nX1).forEach((k) => pcie.push({ u: 52, v: p1 + k * P, len: 25, x16: false }));
-  const chip = itx ? null : { u: w - 14 - 28, v: clamp(p1 + 1.5 * P, p1 + 18, h - 30) };
-  return { w, h, itx, sock, socket: s, dimm, pcie, m2, chip, atx24: { u: w - 6, v: s.v + 36 } };
-}
-
 function socketGeometryFor(sock) {
   if (/^LGA17|^LGA18/.test(sock)) return { w: 45, h: 37.5, intel: true };
   if (/^LGA/.test(sock)) return /4677|3647|4189|2066|2011/.test(sock) ? { w: 56, h: 76, intel: true } : { w: 37.5, h: 37.5, intel: true };
@@ -480,14 +369,17 @@ export function makeMotherboard(x) {
   g.add(lever);
   g.add(box(sg.w - 2, sg.h - 2, 0.5, M.gold(), s.u, -s.v, 3.1));
 
-  // VRM soğutucuları + I/O örtüsü
-  const vrmTop = rbox(Math.min(w * 0.55, s.u + 40) - 28, 24, 30, 3, hsMat, (28 + Math.min(w * 0.55, s.u + 40)) / 2, -20, 15);
-  g.add(vrmTop);
-  g.add(rbox(22, s.v + 40 - 12, 34, 3, hsMat, 40, -(12 + s.v + 40) / 2, 17));
+  // VRM soğutucuları (alçak soğutucularla 3D'de çakışmasın diye sahne yüksekliklerini ölçekleyebilir)
+  const vrm = new THREE.Group();
+  vrm.name = 'vrm';
+  const vU1 = L.vrmU1;
+  vrm.add(rbox(vU1 - 28, 24, 30, 3, hsMat, (28 + vU1) / 2, -20, 15));
+  if (L.vrmLeft) vrm.add(rbox(22, s.v + 40 - 12, 34, 3, hsMat, 40, -(12 + s.v + 40) / 2, 17));
   // kanatçık çizgileri
   const finMat = M.painted(white ? 0xbfc4cb : 0x101216, 0.6);
-  for (let i = 0; i < 6; i++) g.add(box(Math.min(w * 0.55, s.u + 40) - 34, 1, 1, finMat, (28 + Math.min(w * 0.55, s.u + 40)) / 2, -12 - i * 3, 30.4));
-  const ioH = Math.min(s.v + 75, h * 0.55);
+  for (let i = 0; i < 6; i++) vrm.add(box(vU1 - 34, 1, 1, finMat, (28 + vU1) / 2, -12 - i * 3, 30.4));
+  g.add(vrm);
+  const ioH = L.ioH;
   const ioShroud = rbox(27, ioH, 40, 4, hsDark, 14, -6 - ioH / 2, 20);
   g.add(ioShroud);
   g.add(box(1.2, ioH - 16, 20, M.painted(accent, 0.4), 27.7, -6 - ioH / 2, 22));
@@ -554,12 +446,12 @@ export function makeMotherboard(x) {
   shadowize(g);
   g.userData.layout = L;
   g.userData.m2Covers = m2Covers;
+  g.userData.vrm = vrm;
   return g;
 }
 
 // yer tutucu anakart (anakart seçilmeden önce takılan parçalar için)
-export function makeGhostBoard() {
-  const L = boardLayout(null);
+export function makeGhostBoard(L = boardLayout(null)) {
   const g = new THREE.Group();
   const geo = new THREE.PlaneGeometry(L.w, L.h);
   const fill = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ color: 0x6d7cff, transparent: true, opacity: 0.06, depthWrite: false, side: THREE.DoubleSide }));
@@ -622,59 +514,52 @@ export function makeCPU(x) {
 // =====================================================================
 // HAVA SOĞUTUCU — yerel z karttan dışarı (yükseklik), x hava akışı
 // =====================================================================
-function towerType(x) {
-  const t = (x.tower || '').toLowerCase();
-  if (/çift|dual/.test(t)) return 'dual';
-  if (/alçak|low|top|yatay|üstten/.test(t)) return 'low';
-  return 'single';
-}
-
 export function makeAirCooler(x) {
+  const cg = coolerGeom(x);
+  if (cg.type === 'radial') return makeRadialCooler(x, cg);
   const g = new THREE.Group();
   g.name = 'cooler';
-  const type = towerType(x);
-  const Hc = clamp(x.ht || (type === 'low' ? 58 : 155), 30, 190);
-  const fsz = clamp(x.fsz || 120, 80, 140);
-  const width = clamp(x.wid || fsz + 5, 90, 160);
   const white = x.col === 'Beyaz' || /white|beyaz/i.test(x.n || '');
   const finCol = white ? 0xe2e5e9 : x.col === 'Siyah' ? 0x1b1d22 : 0xc4c8ce;
   const finMat = new THREE.MeshStandardMaterial({ color: finCol, metalness: x.col === 'Siyah' || white ? 0.3 : 0.9, roughness: 0.38 });
   const pipeMat = x.col === 'Siyah' ? M.painted(0x15171b, 0.4) : white ? M.painted(0xe6e8ec, 0.4) : M.nickel();
   const fanOpts = { frame: white ? 0xdfe2e6 : 0x15171b, blade: white ? 0xe4e7eb : 0x23262c, rgb: !!x.rgb, thickness: 25 };
+  const mtx = new THREE.Matrix4();
 
   // taban
   g.add(rbox(42, 42, 7, 1.5, M.copper(), 0, 0, 3.5));
   g.add(box(70, 18, 4, M.metal(0x34383f, 0.4), 0, 0, 8));
 
-  if (type === 'low') {
-    const finH = Hc - 25 - 8;
-    const nFin = Math.max(6, Math.floor(finH / 2.4));
-    const inst = new THREE.InstancedMesh(cachedGeo(`lowfin${width}`, () => new THREE.BoxGeometry(width, width, 0.5)), finMat, nFin);
-    const mtx = new THREE.Matrix4();
-    for (let i = 0; i < nFin; i++) { mtx.makeTranslation(0, 0, 10 + i * 2.4); inst.setMatrixAt(i, mtx); }
-    g.add(inst);
-    for (let k = 0; k < 4; k++) {
-      const p = cyl(3, finH + 4, pipeMat, 12, -18 + k * 12, 0, 10 + finH / 2);
+  if (cg.type === 'low') {
+    // üstten üflemeli / alçak: kanatçık yığını + üstte fan; bellek altına girerse yığın yukarı sıkıştırılır
+    const { Hc, ex, ey, fanT, finZ0, finZ1 } = cg;
+    const fins = new THREE.Group();
+    fins.name = 'fins';
+    const finH = finZ1 - finZ0;
+    const nFin = Math.max(4, Math.floor(finH / 2.4));
+    const inst = new THREE.InstancedMesh(cachedGeo(`lowfin${r1(ex)}|${r1(ey)}`, () => new THREE.BoxGeometry(ex, ey, 0.5)), finMat, nFin);
+    for (let i = 0; i < nFin; i++) { mtx.makeTranslation(0, 0, finZ0 + 0.25 + (i * (finH - 0.5)) / (nFin - 1)); inst.setMatrixAt(i, mtx); }
+    fins.add(inst);
+    g.add(fins);
+    const nPipes = clamp(x.pipes || 4, 2, 6);
+    for (let k = 0; k < nPipes; k++) {
+      const p = cyl(3, finZ1 - 8, pipeMat, 12, -((nPipes - 1) * 11) / 2 + k * 11, 0, 8 + (finZ1 - 8) / 2);
       p.rotation.x = Math.PI / 2;
       g.add(p);
     }
-    const fan = makeFan(Math.min(fsz, width - 4), fanOpts);
-    fan.position.set(0, 0, Hc - 12.5);
+    const fan = makeFan(cg.fsz, { ...fanOpts, thickness: fanT });
+    fan.position.set(0, 0, Hc - fanT / 2);
+    fan.userData.baseZ = fan.position.z;
     g.add(fan);
     g.userData.fans = [fan];
+    g.userData.fins = fins;
+    g.userData.cg = cg;
     return shadowize(g);
   }
 
-  const towers = type === 'dual' ? 2 : 1;
-  const depthTotal = clamp(x.len || (towers === 2 ? 125 : 78), 50, 175);
-  const fanCount = clamp(x.fans || (towers === 2 ? 2 : 1), 1, 3);
-  const stackDepth = towers === 2 ? (depthTotal - 25 * Math.max(1, fanCount - 1)) / 2 : depthTotal - 25 * fanCount;
-  const sd = clamp(stackDepth, 22, 70);
-  const zStart = 38, zEnd = Hc - 3;
+  const { Hc, fsz, width, sd, zStart, zEnd, stackCenters } = cg;
   const nFin = Math.max(10, Math.floor((zEnd - zStart) / 2.3));
-  const finGeo = cachedGeo(`fin${r1(sd)}|${width}`, () => new THREE.BoxGeometry(sd, width, 0.45));
-  const stackCenters = towers === 2 ? [-(sd / 2 + 12.5), sd / 2 + 12.5] : [-(fanCount > 1 ? 0 : 12.5)];
-  const mtx = new THREE.Matrix4();
+  const finGeo = cachedGeo(`fin${r1(sd)}|${r1(width)}`, () => new THREE.BoxGeometry(sd, width, 0.45));
   for (const cx of stackCenters) {
     const inst = new THREE.InstancedMesh(finGeo, finMat, nFin);
     for (let i = 0; i < nFin; i++) { mtx.makeTranslation(cx, 0, zStart + i * ((zEnd - zStart) / (nFin - 1))); inst.setMatrixAt(i, mtx); }
@@ -693,30 +578,65 @@ export function makeAirCooler(x) {
   for (let k = 0; k < nPipes; k++) {
     const yy = -width * 0.3 + (k * (width * 0.6)) / (nPipes - 1);
     for (const cx of stackCenters) {
-      const p = cyl(3, zEnd - 12, pipeMat, 12, cx + (k % 2 ? 4 : -4) * (towers === 1 ? 1 : 0.5), yy, 12 + (zEnd - 12) / 2);
+      const p = cyl(3, zEnd - 12, pipeMat, 12, cx + (k % 2 ? 4 : -4) * (stackCenters.length === 1 ? 1 : 0.5), yy, 12 + (zEnd - 12) / 2);
       p.rotation.x = Math.PI / 2;
       g.add(p);
     }
-    if (towers === 2) {
+    if (stackCenters.length === 2) {
       const bridge = cyl(3, stackCenters[1] - stackCenters[0], pipeMat, 12, 0, yy, 12);
       bridge.rotation.z = Math.PI / 2;
       g.add(bridge);
     }
   }
-  // fanlar (hava akışı: önden arkaya)
+  // fanlar (hava akışı: önden arkaya); bellek yüksekse sahne fanları yukarı kaydırır
   const fans = [];
-  const fanZ = clamp(zStart + (zEnd - zStart) / 2, fsz / 2 + 4, Hc - fsz / 2);
-  const fanXs = towers === 2
-    ? (fanCount >= 2 ? [stackCenters[1] + sd / 2 + 12.5, 0] : [0])
-    : [stackCenters[0] + sd / 2 + 12.5, ...(fanCount > 1 ? [stackCenters[0] - sd / 2 - 12.5] : [])];
-  for (const fx of fanXs.slice(0, fanCount)) {
-    const fan = makeFan(fsz, fanOpts);
+  for (const f of cg.fans) {
+    const fan = makeFan(f.size, fanOpts);
     fan.rotation.y = Math.PI / 2;
-    fan.position.set(fx, 0, fanZ);
+    fan.position.set(f.x, 0, f.z);
+    fan.userData.baseZ = f.z;
     g.add(fan);
     fans.push(fan);
   }
   g.userData.fans = fans;
+  g.userData.cg = cg;
+  return shadowize(g);
+}
+
+// stok tipi (AMD Wraith, Intel kutu soğutucusu vb.): ışınsal alüminyum kanatçıklar + üstte fan
+function makeRadialCooler(x, cg) {
+  const g = new THREE.Group();
+  g.name = 'cooler';
+  const { Hc, R, finR, fanT } = cg;
+  const white = x.col === 'Beyaz' || /white|beyaz/i.test(x.n || '');
+  const alu = M.metal(0xc9cdd3, 0.36);
+  const finZ1 = Hc - fanT - 1;
+  const base = cyl(finR * 0.5, 3, alu, 40, 0, 0, 1.5);
+  base.rotation.x = Math.PI / 2;
+  g.add(base);
+  const core = cyl(finR * 0.34, finZ1 - 3, /prism|spire|bakır|copper/i.test(x.n || '') ? M.copper() : alu, 32, 0, 0, 3 + (finZ1 - 3) / 2);
+  core.rotation.x = Math.PI / 2;
+  g.add(core);
+  const nFin = 44;
+  const finLen = finR * 0.66;
+  const finGeo = cachedGeo(`radfin${r1(finLen)}|${r1(finZ1)}`, () => new THREE.BoxGeometry(finLen, 0.9, finZ1 - 4));
+  const inst = new THREE.InstancedMesh(finGeo, alu, nFin);
+  const mtx = new THREE.Matrix4(), q = new THREE.Quaternion(), pos = new THREE.Vector3(), one = new THREE.Vector3(1, 1, 1), ax = new THREE.Vector3(0, 0, 1);
+  for (let i = 0; i < nFin; i++) {
+    const a = (i / nFin) * Math.PI * 2;
+    const rr = finR * 0.34 + finLen / 2;
+    q.setFromAxisAngle(ax, a + 0.22);
+    pos.set(Math.cos(a) * rr, Math.sin(a) * rr, 4 + (finZ1 - 4) / 2);
+    mtx.compose(pos, q, one);
+    inst.setMatrixAt(i, mtx);
+  }
+  g.add(inst);
+  const fan = makeFan(2 * R - 2, { frame: white ? 0xe9ebee : 0x101114, blade: white ? 0xe4e7eb : 0x1d2025, rgb: !!x.rgb, thickness: fanT });
+  fan.position.set(0, 0, Hc - fanT / 2);
+  fan.userData.baseZ = fan.position.z;
+  g.add(fan);
+  g.userData.fans = [fan];
+  g.userData.cg = cg;
   return shadowize(g);
 }
 
@@ -727,32 +647,35 @@ export function makeAIOPump(x) {
   const g = new THREE.Group();
   g.name = 'pump';
   const white = x.col === 'Beyaz' || /white|beyaz/i.test(x.n || '');
+  // yükseklik epey'deki pompa ölçüsünden (yerleşim denetimi de aynı değeri kullanır)
+  const ph = pumpDims(x).z1;
   g.add(rbox(44, 44, 6, 1.5, M.copper(), 0, 0, 3));
-  const body = cyl(33, 34, M.plastic(white ? 0xeceef1 : 0x14161a, 0.45), 48, 0, 0, 23);
+  const body = cyl(33, ph - 8, M.plastic(white ? 0xeceef1 : 0x14161a, 0.45), 48, 0, 0, 6 + (ph - 8) / 2);
   body.rotation.x = Math.PI / 2;
   g.add(body);
   const capMat = x.lcd
     ? new THREE.MeshStandardMaterial({ color: 0x050608, emissive: 0x1f6feb, emissiveIntensity: 0.9, roughness: 0.2, emissiveMap: labelTexture([{ text: (x.br || 'AIO').toUpperCase(), size: 0.5 }, { text: '42°C', size: 0.7 }], { w: 256, h: 256, bg: '#0a1a33', fg: '#cfe3ff', align: 'center' }) })
     : M.plastic(white ? 0xf6f7f9 : 0x0c0d10, 0.25);
-  const cap = cyl(30, 2, capMat, 48, 0, 0, 41);
+  const cap = cyl(30, 2, capMat, 48, 0, 0, ph - 1);
   cap.rotation.x = Math.PI / 2;
   g.add(cap);
   if (x.rgb) {
     const ring = new THREE.Mesh(cachedGeo('pumpring', () => new THREE.TorusGeometry(31.5, 1.6, 8, 64)), rgbMaterial(1, 2.6));
-    ring.position.z = 40.5;
+    ring.position.z = ph - 1.5;
     g.add(ring);
   }
   if (!x.lcd) {
     const lbl = labelTexture([{ text: (x.br || '').toUpperCase(), size: 0.75, spacing: 3 }], { w: 256, h: 64, bg: null, fg: white ? '#41464f' : '#d7dbe2', align: 'center' });
-    g.add(plane(40, 10, new THREE.MeshStandardMaterial({ map: lbl, transparent: true }), 0, 0, 42.1));
+    g.add(plane(40, 10, new THREE.MeshStandardMaterial({ map: lbl, transparent: true }), 0, 0, ph + 0.1));
   }
   // hortum bağlantıları (pompanın üst tarafından çıkar)
   const fitMat = M.metal(0x2a2d33, 0.4);
   const ports = [];
+  const fz = clamp(ph * 0.6, 20, ph - 12);
   for (const dx of [-11, 11]) {
-    const fit = cyl(5.5, 14, fitMat, 16, dx, 33, 28);
+    const fit = cyl(5.5, 14, fitMat, 16, dx, 33, fz);
     g.add(fit);
-    ports.push(new THREE.Vector3(dx, 40, 28));
+    ports.push(new THREE.Vector3(dx, 40, fz));
   }
   g.userData.ports = ports;
   return shadowize(g);
@@ -761,13 +684,7 @@ export function makeAIOPump(x) {
 export function makeRadiator(x) {
   const g = new THREE.Group();
   g.name = 'radiator';
-  const size = x.rad || 240;
-  const fam140 = size % 140 === 0 && size !== 0 && size % 120 !== 0;
-  const fsz = fam140 ? 140 : 120;
-  const n = Math.max(1, Math.round(size / fsz));
-  const L = clamp(x.radl || size + 35, 130, 520);
-  const Wd = fsz + 2;
-  const T = clamp(x.radt || 27, 20, 60);
+  const { fsz, n, L, Wd, T } = radDims(x);
   const white = x.col === 'Beyaz' || /white|beyaz/i.test(x.n || '');
   const finMat = new THREE.MeshStandardMaterial({ color: white ? 0xe9ebee : 0x23262b, map: cloneTex(finTexture, 1, (L - 40) / 8), metalness: 0.5, roughness: 0.55 });
   finMat.map.rotation = Math.PI / 2;
@@ -804,14 +721,28 @@ export function makeRadiator(x) {
 export function makeRamStick(x) {
   const g = new THREE.Group();
   g.name = 'ram';
-  const Ht = clamp(x.ht || (x.rgb ? 44 : 34), 30, 60);
+  const { ht, bare } = ramDims(x);
   const col = colorOf(x.col, 0x1d1f24);
   const light = isLight(col);
-  const pcb = box(1.3, 133, 31, M.plastic(0x1f4f2f, 0.5), 0, 0, 15.5);
-  g.add(pcb);
+  g.add(box(1.3, 133, 31, M.plastic(bare ? 0x1d5a32 : 0x1f4f2f, 0.5), 0, 0, 15.5));
   g.add(box(1.4, 128, 4, M.gold(), 0, 0, 2));
+  if (bare) {
+    // soğutucusuz modül: yeşil PCB üzerinde bellek yongaları ve etiket
+    const chip = M.plastic(0x111214, 0.38);
+    const per = x.mods ? (x.cap || 0) / x.mods : x.per || 8;
+    const sides = per >= 32 ? [-1, 1] : [1];
+    for (const sx of sides) for (let i = 0; i < 8; i++) g.add(box(1.1, 11, 10, chip, sx * 1.2, -57 + i * 15.2 + (i >= 4 ? 6 : 0), 15));
+    if (x.mt === 'DDR5') g.add(box(1.1, 6, 6, chip, 1.2, 3, 25));
+    const lbl = labelTexture([{ text: (x.br || '').toUpperCase(), size: 0.62, weight: 800 }, { text: `${x.per || x.cap || ''}GB ${x.mt || ''}-${x.spd || ''}`, size: 0.42, weight: 500 }], { w: 512, h: 128, bg: '#e9ebee', fg: '#1b1d22' });
+    const p = plane(46, 8, new THREE.MeshStandardMaterial({ map: lbl, roughness: 0.6 }), 0.72, -30, 26.5);
+    p.rotation.y = Math.PI / 2;
+    p.rotation.z = Math.PI / 2;
+    g.add(p);
+    g.userData.height = 31;
+    return shadowize(g);
+  }
   const spread = M.painted(col, light ? 0.35 : 0.42);
-  const hsH = x.hs || x.rgb ? Ht - (x.rgb ? 7 : 0) : 30;
+  const hsH = x.rgb ? ht - 7 : x.hs ? ht - 2 : ht;
   for (const sx of [-1, 1]) {
     g.add(rbox(2.4, 133, hsH - 3, 1, spread, sx * 2, 0, 3 + (hsH - 3) / 2));
   }
@@ -825,12 +756,12 @@ export function makeRamStick(x) {
   const lbl = labelTexture([{ text: (x.br || '').toUpperCase(), size: 0.62, spacing: 2 }, { text: `${x.mt || ''} ${x.spd || ''}`, size: 0.45, weight: 500 }], { w: 512, h: 128, bg: null, fg: light ? '#3c4049' : '#d5d9e0' });
   const lm = new THREE.MeshStandardMaterial({ map: lbl, transparent: true, roughness: 0.4 });
   for (const sx of [-1, 1]) {
-    const p = plane(70, 17, lm, sx * 3.3, 10, hsH * 0.55);
+    const p = plane(70, 17, lm, sx * 3.3, 10, Math.min(hsH * 0.55, hsH - 10));
     p.rotation.y = sx * Math.PI / 2;
     p.rotation.z = Math.PI / 2 * sx;
     g.add(p);
   }
-  g.userData.height = hsH + (x.rgb ? 7 : 2);
+  g.userData.height = ht;
   return shadowize(g);
 }
 
@@ -840,11 +771,10 @@ export function makeRamStick(x) {
 export function makeGPU(x) {
   const g = new THREE.Group();
   g.name = 'gpu';
-  const cool = x.cool || 'fan';                 // fan | passive | liquid | block
-  const lp = !!x.lp;                            // düşük profil (yarım braket)
-  const L = clamp(x.len || (lp ? 170 : 280), 140, 380);
-  const Hc = clamp(x.ht || (lp ? 68 : 125), 60, 175);
-  const T = clamp(x.th || (cool === 'block' ? 22 : 50), 18, 90);
+  // ölçüler ortak modelden: Hc = PCB alt kenarından kapağa (epey yüksekliği - 10 mm)
+  const gd = gpuDims(x);
+  const { cool, lp, L, T } = gd;
+  const Hc = gd.H;
   const col = colorOf(x.col, 0x1c1f24);
   const light = isLight(col);
   const shroud = M.painted(col, light ? 0.4 : 0.46);
@@ -892,13 +822,13 @@ export function makeGPU(x) {
     const finT = cool === 'passive' ? T - 3 : Math.max(6, T - plateT - 3);
     const finSide = new THREE.MeshStandardMaterial({ color: 0xffffff, map: cloneTex(finVTexture, (L - 12) / 18, 1), metalness: 0.6, roughness: 0.45 });
     const finEnd = M.metal(0x2c3036, 0.5);
-    const fins = new THREE.Mesh(cachedGeo(`gpufin${r1(L)}|${r1(finT)}|${r1(Hc)}`, () => new THREE.BoxGeometry(L - 12, finT, Hc - 6)), [finEnd, finEnd, finEnd, finEnd, finSide, finSide]);
-    fins.position.set(L / 2, -1.5 - finT / 2, (Hc - 6) / 2 + 2);
+    const fins = new THREE.Mesh(cachedGeo(`gpufin${r1(L)}|${r1(finT)}|${r1(Hc)}`, () => new THREE.BoxGeometry(L - 12, finT, Hc - 7)), [finEnd, finEnd, finEnd, finEnd, finSide, finSide]);
+    fins.position.set(L / 2, -1.5 - finT / 2, (Hc - 7) / 2 + 3);
     g.add(fins);
     if (cool === 'passive') {
       // pasif: açık alüminyum kanatçıklar, alt yüzde de kanatçık dokusu
       const under = new THREE.MeshStandardMaterial({ color: 0xc9cdd3, map: cloneTex(finVTexture, (L - 12) / 18, 1), metalness: 0.8, roughness: 0.4 });
-      const bottom = plane(L - 12, Hc - 6, under, L / 2, -T + 1.4, (Hc - 6) / 2 + 2);
+      const bottom = plane(L - 12, Hc - 7, under, L / 2, -T + 1.4, (Hc - 7) / 2 + 3);
       bottom.rotation.x = Math.PI / 2;
       g.add(bottom);
     }
@@ -907,10 +837,10 @@ export function makeGPU(x) {
   if (cool === 'fan' || cool === 'liquid') {
     // fan tarafı kapak; sıvı soğutmalı kartlarda fan deliği yok (hortumlar radyatöre gider)
     const nf = cool === 'liquid' ? 0 : clamp(x.fans || (L > 280 ? 3 : 2), 1, 3);
-    const fsz = nf ? Math.min(Hc - 18, (L - 24) / nf - 6, 102) : 0;
+    const fsz = nf ? Math.min(Hc - 20, (L - 24) / nf - 6, 102) : 0;
     const centers = Array.from({ length: nf }, (_, i) => 12 + (L - 24) * ((i + 0.5) / nf));
-    const plateGeo = cachedGeo(`gpuplate${r1(L)}|${r1(Hc)}|${nf}|${r1(fsz)}`, () => {
-      const r = 6, z0 = 0, z1 = Hc + 3;
+    const plateGeo = cachedGeo(`gpuplate2${r1(L)}|${r1(Hc)}|${nf}|${r1(fsz)}`, () => {
+      const r = 6, z0 = 4, z1 = Hc + 3;
       const sh = new THREE.Shape();
       sh.moveTo(r, z0); sh.lineTo(L - r, z0); sh.quadraticCurveTo(L, z0, L, z0 + r);
       sh.lineTo(L, z1 - r); sh.quadraticCurveTo(L, z1, L - r, z1);
@@ -926,17 +856,17 @@ export function makeGPU(x) {
       return geo;
     });
     const plate = new THREE.Mesh(plateGeo, shroud);
-    plate.position.set(0, -T + plateT + 1, -0.5);
+    plate.position.set(0, -T + plateT + 1, 0);
     g.add(plate);
     for (const cx of centers) {
       const fan = makeFan(fsz, { blade: light ? 0xe9ebee : 0x1d2025, thickness: 11, speed: 0.8, frameless: true });
       fan.rotation.x = Math.PI / 2;
-      fan.position.set(cx, -T + plateT / 2 + 1, Hc / 2 + 1);
+      fan.position.set(cx, -T + plateT / 2 + 1, Hc / 2 + 3.5);
       g.add(fan);
       fans.push(fan);
       const ring = new THREE.Mesh(cachedGeo(`gpuring${r1(fsz)}`, () => new THREE.TorusGeometry(fsz / 2 + 1.5, 1.1, 6, 48)), x.rgb ? rgbMaterial(1, 2.4) : shroud2);
       ring.rotation.x = Math.PI / 2;
-      ring.position.set(cx, -T + 1, Hc / 2 + 1);
+      ring.position.set(cx, -T + 1, Hc / 2 + 3.5);
       g.add(ring);
     }
     if (cool === 'liquid') {
@@ -951,7 +881,7 @@ export function makeGPU(x) {
       }
     }
     // uç kapağı
-    g.add(rbox(10, T - 1, Hc + 3, 3, shroud, L - 5, -T / 2 + 0.5, (Hc + 3) / 2 - 0.5));
+    g.add(rbox(10, T - 1, Hc, 3, shroud, L - 5, -T / 2 + 0.5, Hc / 2 + 3));
   }
 
   // cam tarafı (+z) yan kapak: logo, vurgu çizgisi, RGB
@@ -980,14 +910,10 @@ export function makeGPU(x) {
   });
 
   // güç soketleri (üst kenar): 8/6 pin ya da 12V-2x6 (16 pin); "pinsiz" kartlarda yok
-  const pw = x.pw || (/pinsiz/i.test(x.conn || '') ? [] : /16|12V/i.test(x.conn || '') ? ['16'] : ['8']);
-  let px = L * 0.6;
-  for (const p of pw.slice(0, 3)) {
-    const w = p === '16' ? 18 : p === '6' ? 15 : 20;
-    g.add(box(w, 8, 7, M.plastic(0x0d0e10, 0.6), px, -4, Hc + 1.5));
-    px += w + 3;
-  }
+  const sockets = gpuSocketsLayout(gd);
+  for (const sk of sockets) g.add(box(sk.w, 8, 7, M.plastic(0x0d0e10, 0.6), sk.x, -4, Hc + 1.5));
 
+  g.userData.powerSockets = sockets;
   g.userData.fans = fans;
   g.userData.dims = { L, H: Hc, T };
   g.userData.liquid = cool === 'liquid';
@@ -1001,9 +927,8 @@ export function makeGPU(x) {
 export function makePSU(x, { generic = false } = {}) {
   const g = new THREE.Group();
   g.name = 'psu';
-  const sfx = x && /SFX/.test(x.ff || '');
-  let dw = (x && x.dw) || (sfx ? 125 : 150), dh = (x && x.dh) || (sfx ? 63.5 : 86), dd = (x && x.dd) || (sfx ? 100 : 160);
-  dw = clamp(dw, 100, 160); dh = clamp(dh, 50, 100); dd = clamp(dd, 95, 230);
+  const pd = psuDims(x);
+  const { dw, dh, dd } = pd;
   const col = colorOf(x && x.col, 0x15171b);
   const light = isLight(col);
   const bodyMat = M.painted(col, 0.5);
@@ -1028,12 +953,11 @@ export function makePSU(x, { generic = false } = {}) {
   const side = plane(dd * 0.8, dh * 0.8, new THREE.MeshStandardMaterial({ map: tex, transparent: true, roughness: 0.4 }), dd * 0.5, dh / 2, dw / 2 + 0.3);
   g.add(side);
   // ön yüz: modüler soketler veya kablo demeti
-  const modular = x && x.mod && !/değil|olmayan/i.test(x.mod);
-  if (modular) {
+  if (pd.modular) {
     const sock = M.plastic(0x060607, 0.7);
     for (let r = 0; r < 2; r++) for (let c = 0; c < 4; c++) g.add(box(1, 9, 16, sock, dd + 0.2, 18 + r * 22, -dw / 2 + 22 + c * ((dw - 44) / 3)));
   } else {
-    const bundle = cyl(9, 30, M.plastic(0x08090a, 0.6), 16, dd + 12, dh / 2, 0);
+    const bundle = cyl(9, 15, M.plastic(0x08090a, 0.6), 16, dd + 4.5, dh / 2, 0);
     bundle.rotation.z = Math.PI / 2;
     g.add(bundle);
   }
@@ -1056,13 +980,19 @@ export function makeM2(x) {
   const chip = M.plastic(0x15171a, 0.4);
   g.add(box(14, 14, 1.4, chip, 14, 0, 1.6));
   if (L > 40) { g.add(box(16, 15, 1.4, chip, 34, 0, 1.6)); g.add(box(16, 15, 1.4, chip, 55, 0, 1.6)); }
+  // soğutucu (kartın arkasındaki yuvaya takılırsa sahne gizler; sökülmüş sayılır) ve etiket
+  const lbl = labelTexture([{ text: (x.br || '').toUpperCase(), size: 0.55, weight: 800 }, { text: capText(x.cap) + (x.bus ? ' · ' + x.bus : ''), size: 0.38 }], { w: 512, h: 160, bg: '#c9cdd3', fg: '#15171b', accent: '#' + accentOf(x.br, 0x2563eb).toString(16).padStart(6, '0') });
+  const label = plane(L - 12, 19, new THREE.MeshStandardMaterial({ map: lbl, roughness: 0.6 }), L / 2 + 2, 0, 2.45);
+  g.add(label);
   if (x.hs) {
-    g.add(rbox(L - 4, 23, 7, 1.5, M.metal(0x2a2e35, 0.4), L / 2, 0, 4.5));
-    for (let i = 0; i < 5; i++) g.add(box(L - 10, 1.2, 1.5, M.metal(0x41464f, 0.4), L / 2, -8 + i * 4, 8.5));
-  } else {
-    const lbl = labelTexture([{ text: (x.br || '').toUpperCase(), size: 0.55, weight: 800 }, { text: capText(x.cap) + (x.bus ? ' · ' + x.bus : ''), size: 0.38 }], { w: 512, h: 160, bg: '#c9cdd3', fg: '#15171b', accent: '#' + accentOf(x.br, 0x2563eb).toString(16).padStart(6, '0') });
-    g.add(plane(L - 12, 19, new THREE.MeshStandardMaterial({ map: lbl, roughness: 0.6 }), L / 2 + 2, 0, 2.45));
+    const hs = new THREE.Group();
+    hs.add(rbox(L - 4, 23, 7, 1.5, M.metal(0x2a2e35, 0.4), L / 2, 0, 4.5));
+    for (let i = 0; i < 5; i++) hs.add(box(L - 10, 1.2, 1.5, M.metal(0x41464f, 0.4), L / 2, -8 + i * 4, 8.5));
+    g.add(hs);
+    label.visible = false;
+    g.userData.hs = hs;
   }
+  g.userData.label = label;
   return shadowize(g);
 }
 
@@ -1074,7 +1004,8 @@ export function makeDrive(x) {
   const hdd = x.kind === 'hdd';
   const big = hdd && x.ff !== '2.5';
   g.name = hdd ? 'hdd' : 'ssd';
-  const L = big ? 147 : 100, Wd = big ? 101.6 : 69.9, T = big ? 26.1 : hdd ? 9.5 : 7;
+  const dd = big ? DRIVE_DIMS.hdd35 : hdd ? DRIVE_DIMS.hdd25 : DRIVE_DIMS.ssd;
+  const L = dd.L, Wd = dd.W, T = dd.T;
   const bodyMat = hdd ? M.metal(0xaeb3ba, 0.42) : M.painted(colorOf(x.col, 0x23262c), 0.45);
   g.add(rbox(L, T, Wd, 1.5, bodyMat, 0, 0, 0));
   const lbl = labelTexture([

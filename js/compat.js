@@ -2,6 +2,9 @@
 // sel: { kategori: [{ item, qty }] } biçiminde mevcut seçimler.
 
 import { fmtCap, storageKindLabel } from './catalog.js';
+import { planBuild, planInput, radFitsList, RAD_POS_ORDER, RAD_POS_LABEL, RAD_SAME, gpuRadSize } from './fit.js';
+
+export { RAD_POS_LABEL, RAD_SAME, gpuRadSize };
 
 export const one = (sel, cat) => (sel[cat] && sel[cat][0] ? sel[cat][0].item : null);
 const qtyOf = (sel, cat) => (sel[cat] && sel[cat][0] ? sel[cat][0].qty || 1 : 0);
@@ -39,42 +42,12 @@ export function caseFitsBoard(cs, mb) {
 }
 
 // ---- radyatör ----
-const FAM120 = [120, 240, 360, 480];
-const FAM140 = [140, 280, 420];
-function radFitsList(size, list) {
-  if (!list || !list.length) return false;
-  if (list.includes(size)) return true;
-  if (FAM120.includes(size)) return list.some((p) => (FAM120.includes(p) && p >= size) || (FAM140.includes(p) && p >= size + 40));
-  if (FAM140.includes(size)) return list.some((p) => FAM140.includes(p) && p >= size);
-  return list.some((p) => p >= size);
-}
-const RAD_POS_ORDER = ['t', 'f', 's', 'b', 'r'];
-export const RAD_POS_LABEL = { t: 'üst', f: 'ön', s: 'yan', b: 'alt', r: 'arka' };
-// ön ve yan yuvalar bazı kasalarda aynı bölgeyi paylaşır; ikisine birden radyatör konmaz
-export const RAD_SAME = { f: ['f', 's'], s: ['f', 's'] };
 export function radiatorMount(cs, size, exclude = []) {
   if (!cs || !cs.rad) return null;
   const ex = exclude.flatMap((p) => RAD_SAME[p] || [p]);
   for (const p of RAD_POS_ORDER) if (!ex.includes(p) && radFitsList(size, cs.rad[p])) return p;
   return null;
 }
-// Hibrit sıvı soğutmalı ekran kartlarının radyatör boyutu epey'de yok; fan sayısından tahmin edilir
-export const gpuRadSize = (g) => (g && g.cool === 'liquid' ? ((g.fans || 2) >= 3 ? 360 : g.fans === 1 ? 120 : 240) : 0);
-// Kasadaki radyatör yerleşimi: işlemci AIO'su ve ekran kartı radyatörü aynı yuvaya konmaz
-export function radiatorPlan(cs, cooler, gpu) {
-  const cpuSize = cooler && cooler.kind === 'aio' ? cooler.rad || 240 : 0;
-  const gpuSize = gpuRadSize(gpu);
-  const res = { cpu: null, gpu: null, cpuSize, gpuSize };
-  if (!cs || !cs.rad) return res;
-  const fits = (size, ex = []) => RAD_POS_ORDER.filter((p) => !ex.includes(p) && radFitsList(size, cs.rad[p]));
-  const cpuOpts = cpuSize ? fits(cpuSize) : [null];
-  for (const c of cpuOpts) {
-    const g = gpuSize ? fits(gpuSize, c ? RAD_SAME[c] || [c] : [])[0] || null : null;
-    if (!gpuSize || g) return { ...res, cpu: c, gpu: g };
-  }
-  return { ...res, cpu: cpuOpts[0] ?? null };
-}
-const hasRadData = (cs) => cs && cs.rad && Object.keys(cs.rad).length > 0;
 
 // ---- depolama sayımları ----
 const isM2 = (s) => s.kind === 'nvme' || s.kind === 'm2sata';
@@ -159,10 +132,8 @@ export function checkItem(cat, x, sel) {
     if (cs.gpu && gpu.len) {
       if (gpu.len > cs.gpu) err(`Ekran kartı ${gpu.len} mm, kasa en fazla ${cs.gpu} mm alıyor`, cat === 'case' ? 'gpu' : 'case');
       else if (cs.gpu - gpu.len < 15) warn(`Ekran kartı kasaya çok az payla sığıyor (${cs.gpu - gpu.len} mm)`);
-    } else if (!cs.gpu && cs.d && gpu.len && gpu.len > cs.d - 30) {
-      // epey'de sınır yoksa kasa derinliğinden tahmin et
-      err(`Ekran kartı ${gpu.len} mm, kasa derinliği ${cs.d} mm (sığmayabilir)`, cat === 'case' ? 'gpu' : 'case');
     }
+    // epey'de sınır yoksa kasa derinliği aşağıdaki yerleşim denetiminde kullanılır
   }
 
   // Soğutucu ↔ işlemci / anakart soketi
@@ -179,32 +150,11 @@ export function checkItem(cat, x, sel) {
     }
   }
 
-  // Soğutucu ↔ kasa
+  // Soğutucu ↔ kasa (epey'deki sınır; sınır yoksa yerleşim denetimi kasa genişliğini kullanır)
   if (cooler && cs && involves('cooler', 'case')) {
-    if (cooler.kind !== 'aio' && cooler.ht && cs.cool) {
-      if (cooler.ht > cs.cool) err(`Soğutucu ${cooler.ht} mm, kasa en fazla ${cs.cool} mm yükseklik alıyor`, cat === 'case' ? 'cooler' : 'case');
-    } else if (cooler.kind !== 'aio' && cooler.ht && !cs.cool && cs.w && cooler.ht > cs.w - 45) {
-      // epey'de sınır yoksa kasa genişliğinden tahmin et
-      err(`Soğutucu ${cooler.ht} mm, kasa genişliği ${cs.w} mm (sığmayabilir)`, cat === 'case' ? 'cooler' : 'case');
+    if (cooler.kind !== 'aio' && cooler.ht && cs.cool && cooler.ht > cs.cool) {
+      err(`Soğutucu ${cooler.ht} mm, kasa en fazla ${cs.cool} mm yükseklik alıyor`, cat === 'case' ? 'cooler' : 'case');
     }
-    if (cooler.kind === 'aio' && cooler.rad && hasRadData(cs)) {
-      const pos = radiatorPlan(cs, cooler, gpu).cpu;
-      if (!pos) err(`Kasa ${cooler.rad} mm radyatör desteklemiyor`, cat === 'case' ? 'cooler' : 'case');
-      else if (cat === 'cooler') info(`Radyatör kasanın ${RAD_POS_LABEL[pos]} kısmına takılır`);
-    }
-  }
-
-  // Sıvı soğutmalı ekran kartının radyatörü ↔ kasa (ve işlemci AIO'su)
-  if (cs && gpu && gpu.cool === 'liquid' && hasRadData(cs) && (involves('case', 'gpu') || (cat === 'cooler' && x.kind === 'aio'))) {
-    const plan = radiatorPlan(cs, cooler, gpu);
-    if (!plan.gpu) {
-      const alone = radiatorPlan(cs, null, gpu).gpu;
-      if (cat !== 'cooler' || alone) {
-        warn(alone && plan.cpu
-          ? `Ekran kartının ~${plan.gpuSize} mm radyatörü, işlemci radyatörüyle birlikte kasaya sığmayabilir`
-          : `Ekran kartının ~${plan.gpuSize} mm radyatörü için kasada uygun yer görünmüyor`);
-      }
-    } else if (cat === 'gpu') info(`Ekran kartının radyatörü kasanın ${RAD_POS_LABEL[plan.gpu]} kısmına takılır`);
   }
 
   // Depolama ↔ anakart / kasa
@@ -214,11 +164,7 @@ export function checkItem(cat, x, sel) {
       if (mb.m2 != null && c.m2 > mb.m2) err(mb.m2 ? `Anakartta ${mb.m2} M.2 yuvası var, ${c.m2} M.2 sürücü seçildi` : 'Anakartta M.2 yuvası yok', cat === 'mobo' ? 'storage' : 'mobo');
       if (mb.sata != null && c.sata > mb.sata) err(mb.sata ? `Anakartta ${mb.sata} SATA portu var, ${c.sata} SATA sürücü seçildi` : 'Anakartta SATA portu yok', cat === 'mobo' ? 'storage' : 'mobo');
     }
-    if (cs && involves('storage', 'case')) {
-      if (cs.b35 === 0 && c.hdd > 0) err('Kasada 3.5" disk yuvası yok', cat === 'case' ? 'storage' : 'case');
-      else if (cs.b35 != null && c.hdd > cs.b35) warn(`Kasada ${cs.b35} adet 3.5" yuva var`);
-      if (cs.b25 != null && cs.b35 != null && c.ssd + c.hdd > cs.b25 + cs.b35) warn(`Kasada toplam ${cs.b25 + cs.b35} disk yuvası var`);
-    }
+    // kasa yuvaları yerleşim denetiminde (aşağıda)
   }
 
   // Güç kaynağı
@@ -238,6 +184,32 @@ export function checkItem(cat, x, sel) {
   }
   if (cat === 'gpu' && psu && /16|12VHPWR|12V-2x6/i.test(x.conn || '') && !psu.pcie5) {
     info('16 pin güç bağlantısı için adaptör gerekebilir');
+  }
+
+  // Boyutlar ve yerleşim: parçaların kasa içindeki yerleri 3D sahneyle aynı planla (js/fit.js)
+  // hesaplanır; çakışan ya da sığmayan parçalar burada uyumsuz sayılır.
+  // Ürün eklenince ortaya çıkan (önceden olmayan) sorunlar ona yazılır; böylece sorunu dolaylı
+  // yaratan parça da (ör. disk yuvasını kapatan uzun PSU) uyumsuz görünür.
+  if (cat !== 'cpu') {
+    const s2 = { ...sel, [cat]: cat === 'storage' ? storage : [{ item: x, qty: cat === 'ram' ? ramQty : 1 }] };
+    const s0 = { ...sel, [cat]: cat === 'storage' ? sel.storage || [] : [] };
+    const plan = planBuild(planInput(s2));
+    const before = new Set(basePlan(s0).issues.map((i) => i.msg));
+    for (const is of plan.issues) {
+      if (before.has(is.msg)) continue;
+      const other = is.cats.find((c) => c !== cat);
+      if (is.level === 'err') {
+        // aynı çift için epey verisinden gelen bir hata zaten varsa tekrarlama
+        if (out.some((o) => o.level === 'err' && o.blocker === other)) continue;
+        err(is.msg, other);
+      } else if (is.level === 'warn') warn(is.msg);
+      else info(is.msg);
+    }
+    if (cs) {
+      const rc = plan.rads.cpu, rg = plan.rads.gpu;
+      if (cat === 'cooler' && x.kind === 'aio' && rc && !rc.forced) info(`Radyatör kasanın ${RAD_POS_LABEL[rc.mount]} kısmına takılır`);
+      if (cat === 'gpu' && x.cool === 'liquid' && rg && !rg.forced) info(`Ekran kartının ~${rg.size} mm radyatörü kasanın ${RAD_POS_LABEL[rg.mount]} kısmına takılır`);
+    }
   }
 
   return out;
@@ -267,6 +239,15 @@ export function estimatePower(sel) {
   return { draw, rec, parts };
 }
 
+// Seçicide aynı "ürünsüz" sistem için plan her ürün için yeniden hesaplanmasın
+const PLAN_CATS = ['case', 'mobo', 'cooler', 'ram', 'gpu', 'storage', 'psu'];
+let baseKey = null, baseVal = null;
+function basePlan(s0) {
+  const key = PLAN_CATS.map((c) => (s0[c] || []).map((e) => `${e.item.id}x${e.qty || 1}`).join(',')).join('|');
+  if (key !== baseKey) { baseKey = key; baseVal = planBuild(planInput(s0)); }
+  return baseVal;
+}
+
 // ---- tüm sistemin özeti (sağ paneldeki liste) ----
 export function evaluateBuild(sel, categories) {
   const res = [];
@@ -276,6 +257,7 @@ export function evaluateBuild(sel, categories) {
 
   // Her seçili ürünü diğerlerine karşı kontrol et (hataları tekrar etmeden topla)
   const seen = new Set();
+  const errPairs = new Set(); // aynı iki kategori arasındaki ikinci (genel) hatayı tekrarlamamak için
   for (const c of categories) {
     for (const { item } of sel[c.key] || []) {
       const others = { ...sel };
@@ -286,6 +268,7 @@ export function evaluateBuild(sel, categories) {
         // güç uyarıları aşağıdaki tek "Güç" maddesinde toplanır
         if (p.level === 'info' || p.power || seen.has(p.msg)) continue;
         seen.add(p.msg);
+        if (p.level === 'err' && p.blocker) { errPairs.add(`${c.key}|${p.blocker}`); errPairs.add(`${p.blocker}|${c.key}`); }
         add(p.level, p.msg);
       }
     }
@@ -297,9 +280,23 @@ export function evaluateBuild(sel, categories) {
   if (cs && mb && caseFitsBoard(cs, mb) === 'yes') add('ok', `${mb.ff} anakart kasaya uygun`);
   if (cs && gpu && cs.gpu && gpu.len && gpu.len <= cs.gpu) add('ok', `Ekran kartı kasaya sığıyor (${gpu.len}/${cs.gpu} mm)`);
   if (cs && cooler && cooler.kind !== 'aio' && cs.cool && cooler.ht && cooler.ht <= cs.cool) add('ok', `Soğutucu yüksekliği uygun (${cooler.ht}/${cs.cool} mm)`);
-  const plan = cs ? radiatorPlan(cs, cooler, gpu) : null;
-  if (plan && cooler && cooler.kind === 'aio' && cooler.rad && plan.cpu) add('ok', `${cooler.rad} mm radyatör kasanın ${RAD_POS_LABEL[plan.cpu]} kısmına takılır`);
-  if (plan && plan.gpu) add('ok', `Ekran kartının ~${plan.gpuSize} mm radyatörü kasanın ${RAD_POS_LABEL[plan.gpu]} kısmına takılır`);
+  const plan = cs ? planBuild(planInput(sel)) : null;
+  // tüm sistemin yerleşim planındaki, ürün bazında yakalanmamış sorunlar (ör. aynı diskten birden çok)
+  if (plan) {
+    for (const is of plan.issues) {
+      if (is.level === 'info' || seen.has(is.msg)) continue;
+      if (is.level === 'err' && is.cats[1] && errPairs.has(`${is.cats[0]}|${is.cats[1]}`)) continue;
+      seen.add(is.msg);
+      add(is.level, is.msg);
+    }
+  }
+  if (plan) {
+    const rc = plan.rads.cpu, rg = plan.rads.gpu;
+    if (rc && !rc.forced) add('ok', `${rc.size} mm radyatör kasanın ${RAD_POS_LABEL[rc.mount]} kısmına takılır`);
+    if (rg && !rg.forced) add('ok', `Ekran kartının ~${rg.size} mm radyatörü kasanın ${RAD_POS_LABEL[rg.mount]} kısmına takılır`);
+    const placed = ['mobo', 'cooler', 'gpu', 'psu', 'storage', 'ram'].filter((c) => sel[c] && sel[c].length).length;
+    if (placed >= 2 && !plan.issues.some((i) => i.level === 'err')) add('ok', 'Parçalar kasaya birbirine değmeden yerleşiyor');
+  }
 
   // Güç
   const power = estimatePower(sel);
