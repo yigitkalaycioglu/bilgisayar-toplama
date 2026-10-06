@@ -1,6 +1,6 @@
 // 3D sahne: parçaları seçimlere göre ekler/çıkarır, yerleştirir ve canlandırır.
 import * as THREE from '../../vendor/three.bundle.js';
-import { OrbitControls, RoomEnvironment, EffectComposer, RenderPass, UnrealBloomPass, OutputPass, GTAOPass, HDRLoader } from '../../vendor/three.bundle.js';
+import { OrbitControls, RoomEnvironment, EffectComposer, RenderPass, UnrealBloomPass, OutputPass, ShaderPass, GTAOPass, HDRLoader } from '../../vendor/three.bundle.js';
 import { floorTexture, tickRgb, setRgbEnabled, disposeObject, rgbActive, M } from './materials.js';
 import {
   makeCase, makeMotherboard, makeGhostBoard, makeBenchStand, makeCPU, makeAirCooler,
@@ -23,6 +23,26 @@ const CAT_LABEL = {
 const V = (x = 0, y = 0, z = 0) => new THREE.Vector3(x, y, z);
 const easeInOut = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 const DEFAULT_DIR = V(0.55, 0.36, 1).normalize();
+
+// ---- seçici bloom: yalnız ışık yayan malzemeler (RGB, LED) parlar ----
+const BLACK = new THREE.Color(0x000000);
+const emits = (m) => !!(m && (m.userData.rgb || m.userData.glow));
+// bloom geçişinde diğer malzemelerin yerine çizilen siyah malzeme; delikli panellerin delikleri korunur
+const darkMats = new WeakMap();
+function darkFor(m) {
+  let d = darkMats.get(m);
+  if (!d) {
+    d = new THREE.MeshBasicMaterial({ color: 0x000000, side: m.side });
+    if (m.alphaTest > 0) {
+      d.alphaTest = m.alphaTest;
+      d.alphaMap = m.alphaMap || null;
+      if (!m.alphaMap && m.map) d.map = m.map;
+    }
+    darkMats.set(m, d);
+    m.addEventListener('dispose', () => { d.dispose(); darkMats.delete(m); });
+  }
+  return d;
+}
 
 
 export class PCScene {
@@ -180,9 +200,11 @@ export class PCScene {
     this.gtaoPass = gtao;
     this.composer.addPass(gtao);
 
+    // RGB parlaması (seçici bloom): bloom ayrı bir geçişte yalnız RGB/LED malzemelerden hesaplanır, diğer her şey
+    // o geçişte siyah çizilir. Işığın metal ve camdaki yansımaları (renkli RGB ışığınınkiler dahil) hiç parlamaz.
+    this.bloomSource = new THREE.WebGLRenderTarget(1, 1, { type: THREE.HalfFloatType, samples: 4 });
     this.bloomPass = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.5, 0.4, 2.5);
-    // Yalnızca doygun renkli parlak pikseller (RGB aydınlatma) parlasın; ışığın beyaz
-    // yansımaları (cam, metal) "güneş" gibi parlamasın
+    // RGB şeritlerin beyaza yakın (doymamış) kısımları parlamasın; yalnız doygun renkler
     const hp = this.bloomPass.materialHighPassFilter;
     hp.fragmentShader = hp.fragmentShader.replace(
       'float v = luminance( texel.xyz );',
@@ -190,8 +212,59 @@ export class PCScene {
       ' float v = mx * smoothstep( 0.35, 0.7, ( mx - mn ) / max( mx, 1e-4 ) );',
     );
     hp.needsUpdate = true;
-    this.composer.addPass(this.bloomPass);
+    this.bloomSwap = { meshes: [], hidden: [] };
+
+    // ana görüntü + yalnız bloom (bloom geçişinin taban görüntüsü eklenmez, RGB şeritler iki kez parlamaz)
+    this.mixPass = new ShaderPass(new THREE.ShaderMaterial({
+      uniforms: { tDiffuse: { value: null }, tBloom: { value: this.bloomPass.renderTargetsHorizontal[0].texture }, bloomOn: { value: 0 } },
+      vertexShader: 'varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 ); }',
+      fragmentShader: 'uniform sampler2D tDiffuse; uniform sampler2D tBloom; uniform float bloomOn; varying vec2 vUv;' +
+        ' void main() { vec4 base = texture2D( tDiffuse, vUv ); gl_FragColor = vec4( base.rgb + bloomOn * texture2D( tBloom, vUv ).rgb, base.a ); }',
+    }));
+    this.composer.addPass(this.mixPass);
     this.composer.addPass(new OutputPass());
+  }
+
+  // bloom kaynağı: RGB/LED malzemeler olduğu gibi, cam ve çizgiler gizli, diğer her şey siyah (arkadaki RGB'yi örter)
+  _renderBloom() {
+    const { meshes, hidden } = this.bloomSwap;
+    this.scene.traverseVisible((o) => {
+      if (o.isMesh) {
+        const mat = o.material;
+        if (Array.isArray(mat)) {
+          if (mat.some(emits)) return;
+          meshes.push(o, mat);
+          o.material = mat.map(darkFor);
+        } else if (emits(mat)) {
+          // ışık yayan malzeme kendi rengiyle kalır
+        } else if (mat.transparent && !(mat.alphaTest > 0)) {
+          o.visible = false;
+          hidden.push(o);
+        } else {
+          meshes.push(o, mat);
+          o.material = darkFor(mat);
+        }
+      } else if (o.isLine || o.isPoints || o.isSprite) {
+        o.visible = false;
+        hidden.push(o);
+      }
+    });
+    const r = this.renderer;
+    const background = this.scene.background;
+    const shadowUpdate = r.shadowMap.autoUpdate;
+    this.scene.background = BLACK;
+    r.shadowMap.autoUpdate = false; // gölge haritası ana geçişte güncellenir
+    r.setRenderTarget(this.bloomSource);
+    r.render(this.scene, this.camera);
+    // bloom yalnız bu kaynaktan; sonucu bloomPass.renderTargetsHorizontal[0]'da kalır (mixPass okur)
+    this.bloomPass.render(r, null, this.bloomSource, 0, false);
+    r.setRenderTarget(null);
+    r.shadowMap.autoUpdate = shadowUpdate;
+    this.scene.background = background;
+    for (let i = 0; i < meshes.length; i += 2) meshes[i].material = meshes[i + 1];
+    for (const o of hidden) o.visible = true;
+    meshes.length = 0;
+    hidden.length = 0;
   }
 
   // ------------------------------------------------------------ dışa açık ayarlar
@@ -683,8 +756,11 @@ export class PCScene {
     this.camera.aspect = w / h;
     this.camera.updateProjectionMatrix();
     if (this.composer) {
+      const pr = this.renderer.getPixelRatio();
       this.composer.setSize(w, h);
-      this.composer.setPixelRatio(this.renderer.getPixelRatio());
+      this.composer.setPixelRatio(pr);
+      this.bloomSource.setSize(Math.round(w * pr), Math.round(h * pr));
+      this.bloomPass.setSize(Math.round(w * pr), Math.round(h * pr));
     }
   }
 
@@ -748,8 +824,12 @@ export class PCScene {
     }
 
     this.controls.update();
-    if (this.composer) this.composer.render();
-    else this.renderer.render(this.scene, this.camera);
+    if (this.composer) {
+      // RGB kapalıyken ya da sahnede RGB yokken bloom geçişi hiç çalışmaz
+      this.mixPass.uniforms.bloomOn.value = rgbOn ? 1 : 0;
+      if (rgbOn) this._renderBloom();
+      this.composer.render();
+    } else this.renderer.render(this.scene, this.camera);
 
     // yavaş cihazlarda bloom'u kapat ve çözünürlüğü düşür (ilk ~4 sn ölçülür)
     if (this.bloom && !this.perfChecked) {
@@ -768,6 +848,8 @@ export class PCScene {
           } else {
             this.bloom = false;
             this.composer = null;
+            this.bloomSource.dispose();
+            this.bloomPass.dispose();
             this.renderer.setPixelRatio(Math.min(devicePixelRatio, 1.25));
             this._resize();
           }
