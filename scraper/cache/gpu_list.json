@@ -1,14 +1,56 @@
 {
-"updated": "2026-10-09T09:36:18+00:00",
+"updated": "2026-10-10T09:19:39+00:00",
 "rows": [
+{
+"id": "1075552",
+"url": "https://www.epey.com/ekran-karti/nvidia-rtx-pro-6000-workstation.html",
+"name": "NVIDIA RTX Pro 6000 Workstation",
+"code": "",
+"img": "https://resim.epey.com/1075552/k_pny-rtx-pro-6000-1.jpg",
+"price": 1035902.49,
+"sites": 2,
+"score": 100,
+"cols": {
+"4557": "96 GB",
+"4555": "2617 MHz"
+}
+},
 {
 "id": "1030462",
 "url": "https://www.epey.com/ekran-karti/pny-rtx-pro-6000-workstation.html",
 "name": "PNY RTX Pro 6000 Workstation",
 "code": "VCNRTXPRO6000-SB",
 "img": "https://resim.epey.com/1030462/k_pny-rtx-pro-6000-1.jpg",
-"price": 1016123.6,
-"sites": 3,
+"price": 1034000.0,
+"sites": 2,
+"score": 100,
+"cols": {
+"4557": "96 GB",
+"4555": "2617 MHz"
+}
+},
+{
+"id": "1075551",
+"url": "https://www.epey.com/ekran-karti/nvidia-rtx-pro-6000-max-q-workstation.html",
+"name": "NVIDIA RTX Pro 6000 Max-Q Workstation",
+"code": "",
+"img": "https://resim.epey.com/1075551/k_nvidia-rtx-pro-6000-max-q-workstation-1.jpg",
+"price": 1175322.11,
+"sites": 1,
+"score": 100,
+"cols": {
+"4557": "96 GB",
+"4555": "2617 MHz"
+}
+},
+{
+"id": "1075537",
+"url": "https://www.epey.com/ekran-karti/pny-rtx-pro-6000-max-q-workstation.html",
+"name": "PNY RTX PRO 6000 Max-Q Workstation",
+"code": "VCNRTXPRO6000BQ-PB",
+"img": "https://resim.epey.com/1075537/k_pny-rtx-pro-6000-max-q-workstation-1.jpg",
+"price": 1047150.0,
+"sites": 2,
 "score": 100,
 "cols": {
 "4557": "96 GB",
@@ -77,7 +119,7 @@
 "name": "Asus ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition",
 "code": "ROG-ASTRAL-RTX5090-O32G-GAMING",
 "img": "https://resim.epey.com/986507/k_asus-rog-astral-geforce-rtx-5090-32gb-gddr7-oc-edition-1.jpg",
-"price": 369325.0,
+"price": 386100.0,
 "sites": 8,
 "score": 99,
 "cols": {
@@ -106,7 +148,7 @@
 "code": "GV-N5090GAMING OC-32GD",
 "img": "https://resim.epey.com/1002501/k_gigabyte-geforce-rtx-5090-gaming-oc-1.jpg",
 "price": 371000.0,
-"sites": 10,
+"sites": 9,
 "score": 98,
 "cols": {
 "4557": "32 GB",
@@ -120,11 +162,25 @@
 "code": "TUF-RTX5090-O32G-GAMING",
 "img": "https://resim.epey.com/990422/k_asus-tuf-gaming-geforce-rtx-5090-32gb-gddr7-oc-edition-1.jpg",
 "price": 374250.0,
-"sites": 6,
+"sites": 5,
 "score": 98,
 "cols": {
 "4557": "32 GB",
 "4555": "2550 MHz"
+}
+},
+{
+"id": "1075538",
+"url": "https://www.epey.com/ekran-karti/pny-rtx-pro-6000-server.html",
+"name": "PNY RTX Pro 6000 Server",
+"code": "NVRTXPRO6000TCGPU-KIT",
+"img": "https://resim.epey.com/1075538/k_pny-rtx-pro-6000-server-1.jpg",
+"price": 3346984.0,
+"sites": 1,
+"score": 98,
+"cols": {
+"4557": "96 GB",
+"4555": "2617 MHz"
 }
 },
 {
@@ -133,7 +189,7 @@
 "name": "MSI GeForce RTX 5090 Gaming Trio OC",
 "code": "G5090-32GTC",
 "img": "https://resim.epey.com/993397/k_msi-geforce-rtx-5090-32g-gaming-trio-oc-1.jpg",
-"price": 355162.5,
+"price": 376930.0,
 "sites": 6,
 "score": 98,
 "cols": {
@@ -162,7 +218,7 @@
 "code": "G5090-32V3C",
 "img": "https://resim.epey.com/997528/k_msi-geforce-rtx-5090-ventus-3x-oc-1.jpg",
 "price": 365279.0,
-"sites": 8,
+"sites": 7,
 "score": 97,
 "cols": {
 "4557": "32 GB",
@@ -175,12 +231,26 @@
 "name": "Asus TUF Gaming GeForce RTX 5090 32GB GDDR7",
 "code": "TUF-RTX5090-32G-GAMING",
 "img": "https://resim.epey.com/997614/k_asus-tuf-gaming-geforce-rtx-5090-32gb-gddr7-1.jpg",
-"price": 389089.0,
+"price": 385275.0,
 "sites": 5,
 "score": 97,
 "cols": {
 "4557": "32 GB",
 "4555": "2407 MHz"
+}
+},
+{
+"id": "1075521",
+"url": "https://www.epey.com/ekran-karti/lenovo-rtx-pro-5000-48gb.html",
+"name": "Lenovo RTX Pro 5000 48GB",
+"code": "4X61T68168",
+"img": "https://resim.epey.com/1075521/k_lenovo-rtx-pro-5000-48gb-1.jpg",
+"price": 528275.0,
+"sites": 2,
+"score": 83,
+"cols": {
+"4557": "48 GB",
+"4555": "2308 MHz"
 }
 },
 {
@@ -190,7 +260,7 @@
 "code": "VCNRTXPRO5000-SB",
 "img": "https://resim.epey.com/1039083/k_pny-rtx-pro-5000-48gb-1.jpg",
 "price": 513000.0,
-"sites": 7,
+"sites": 6,
 "score": 83,
 "cols": {
 "4557": "48 GB",
@@ -203,7 +273,7 @@
 "name": "Asus ROG Astral GeForce RTX 5080 16GB GDDR7 OC White Edition",
 "code": "ROG-ASTRAL-RTX5080-O16G-WHITE",
 "img": "https://resim.epey.com/1052688/k_asus-rog-astral-geforce-rtx-5080-16gb-gddr7-oc-white-edition-1.jpg",
-"price": 176699.1,
+"price": 179000.0,
 "sites": 2,
 "score": 81,
 "cols": {
@@ -231,8 +301,8 @@
 "name": "Asus ROG Astral GeForce RTX 5080 16GB GDDR7 OC Edition",
 "code": "ROG-ASTRAL-RTX5080-O16G-GAMING",
 "img": "https://resim.epey.com/990399/k_asus-rog-astral-geforce-rtx-5080-16gb-gddr7-oc-edition-1.jpg",
-"price": 170189.1,
-"sites": 6,
+"price": 188977.0,
+"sites": 5,
 "score": 81,
 "cols": {
 "4557": "16 GB",
@@ -274,7 +344,7 @@
 "code": "VCG508016TFXPB1-O",
 "img": "https://resim.epey.com/996457/k_pny-geforce-rtx-5080-oc-triple-1.jpg",
 "price": 118409.0,
-"sites": 7,
+"sites": 6,
 "score": 81,
 "cols": {
 "4557": "16 GB",
@@ -288,7 +358,7 @@
 "code": "GV-N5080GAMING-OC-16GD",
 "img": "https://resim.epey.com/991107/k_gigabyte-geforce-rtx-5080-gaming-oc-16g-1.jpg",
 "price": 120064.0,
-"sites": 9,
+"sites": 8,
 "score": 81,
 "cols": {
 "4557": "16 GB",
@@ -315,7 +385,7 @@
 "name": "Asus ROG Astral GeForce RTX 5080 16GB GDDR7",
 "code": "ROG-ASTRAL-RTX5080-16G-GAMING",
 "img": "https://resim.epey.com/990595/k_asus-rog-astral-geforce-rtx-5080-16gb-gddr7-1.jpg",
-"price": 218377.09,
+"price": 216236.14,
 "sites": 1,
 "score": 81,
 "cols": {
@@ -329,8 +399,8 @@
 "name": "Asus ProArt GeForce RTX 5080 OC",
 "code": "PROART-RTX5080-O16G",
 "img": "https://resim.epey.com/1030976/k_asus-proart-geforce-rtx-5080-oc-1.jpg",
-"price": 114559.0,
-"sites": 6,
+"price": 114252.0,
+"sites": 5,
 "score": 81,
 "cols": {
 "4557": "16 GB",
@@ -344,7 +414,7 @@
 "code": "RTX5080-O16G-NOCTUA",
 "img": "https://resim.epey.com/1025474/k_asus-geforce-rtx-5080-noctua-oc-edition-1.jpg",
 "price": 149499.08,
-"sites": 5,
+"sites": 4,
 "score": 81,
 "cols": {
 "4557": "16 GB",
@@ -358,7 +428,7 @@
 "code": "TUF-RTX5080-O16G-GAMING",
 "img": "https://resim.epey.com/990401/k_asus-tuf-gaming-geforce-rtx-5080-16gb-gddr7-oc-edition-1.jpg",
 "price": 124999.0,
-"sites": 7,
+"sites": 6,
 "score": 81,
 "cols": {
 "4557": "16 GB",
@@ -385,8 +455,8 @@
 "name": "MSI GeForce RTX 5080 Gaming Trio OC",
 "code": "G5080-16GTC",
 "img": "https://resim.epey.com/986468/k_msi-geforce-rtx-5080-16g-gaming-trio-oc-1.jpg",
-"price": 139999.0,
-"sites": 4,
+"price": 146279.08,
+"sites": 3,
 "score": 81,
 "cols": {
 "4557": "16 GB",
@@ -413,8 +483,8 @@
 "name": "Gigabyte GeForce RTX 5080 Windforce OC SFF 16G",
 "code": "GV-N5080WF3OC-16GD",
 "img": "https://resim.epey.com/990343/k_gigabyte-geforce-rtx-5080-windforce-oc-sff-16g-1.jpg",
-"price": 118588.0,
-"sites": 7,
+"price": 99999.0,
+"sites": 4,
 "score": 80,
 "cols": {
 "4557": "16 GB",
@@ -441,8 +511,8 @@
 "name": "Asus Prime GeForce RTX 5080 16GB GDDR7 OC Edition",
 "code": "PRIME-RTX5080-O16G",
 "img": "https://resim.epey.com/990482/k_asus-prime-geforce-rtx-5080-16gb-gddr7-oc-edition-1.jpg",
-"price": 114999.08,
-"sites": 11,
+"price": 111210.2,
+"sites": 10,
 "score": 80,
 "cols": {
 "4557": "16 GB",
@@ -469,7 +539,7 @@
 "name": "Zotac Gaming GeForce RTX 5080 Solid OC White",
 "code": "ZT-B50800Q-10P",
 "img": "https://resim.epey.com/1035721/k_zotac-gaming-geforce-rtx-5080-solid-oc-white-1.jpg",
-"price": 108999.0,
+"price": 106949.07,
 "sites": 3,
 "score": 80,
 "cols": {
@@ -484,7 +554,7 @@
 "code": "G5080-16I3C",
 "img": "https://resim.epey.com/1025516/k_msi-geforce-rtx-5080-inspire-3x-oc-1.jpg",
 "price": 111722.0,
-"sites": 7,
+"sites": 6,
 "score": 80,
 "cols": {
 "4557": "16 GB",
@@ -498,7 +568,7 @@
 "code": "G5080-16V3CW",
 "img": "https://resim.epey.com/1018098/k_msi-geforce-rtx-5080-ventus-3x-oc-white-1.jpg",
 "price": 133650.0,
-"sites": 6,
+"sites": 4,
 "score": 80,
 "cols": {
 "4557": "16 GB",
@@ -512,7 +582,7 @@
 "code": "ZT-B50800J2-10P",
 "img": "https://resim.epey.com/1006470/k_zotac-gaming-geforce-rtx-5080-solid-core-oc-1.jpg",
 "price": 109848.0,
-"sites": 5,
+"sites": 4,
 "score": 80,
 "cols": {
 "4557": "16 GB",
@@ -525,8 +595,8 @@
 "name": "MSI GeForce RTX 5080 Shadow 3X OC",
 "code": "G5080-16S3C",
 "img": "https://resim.epey.com/995018/k_msi-geforce-rtx-5080-16g-shadow-3x-oc-1.jpg",
-"price": 104416.24,
-"sites": 9,
+"price": 108812.71,
+"sites": 8,
 "score": 80,
 "cols": {
 "4557": "16 GB",
@@ -540,7 +610,7 @@
 "code": "G5080-16V3C",
 "img": "https://resim.epey.com/993017/k_msi-geforce-rtx-5080-ventus-3x-oc-2.jpg",
 "price": 109208.09,
-"sites": 11,
+"sites": 10,
 "score": 80,
 "cols": {
 "4557": "16 GB",
@@ -554,7 +624,7 @@
 "code": "N50803-16D7X-17603930",
 "img": "https://resim.epey.com/990655/k_inno3d-geforce-rtx-5080-x3-oc-5.jpg",
 "price": 110999.0,
-"sites": 2,
+"sites": 1,
 "score": 80,
 "cols": {
 "4557": "16 GB",
@@ -567,8 +637,8 @@
 "name": "MSI GeForce RTX 5080 Ventus 3X OC Plus",
 "code": "G5080-16V3CP",
 "img": "https://resim.epey.com/990333/k_msi-geforce-rtx-5080-ventus-3x-oc-plus-1.jpg",
-"price": 118016.1,
-"sites": 9,
+"price": 118713.0,
+"sites": 8,
 "score": 80,
 "cols": {
 "4557": "16 GB",
@@ -590,12 +660,26 @@
 }
 },
 {
+"id": "1075526",
+"url": "https://www.epey.com/ekran-karti/lenovo-geforce-rtx-5080-16gb.html",
+"name": "Lenovo GeForce RTX 5080 16GB",
+"code": "4X61U02755",
+"img": "https://resim.epey.com/1075526/k_lenovo-geforce-rtx-5080-16gb-1.jpg",
+"price": 159965.0,
+"sites": 1,
+"score": 80,
+"cols": {
+"4557": "16 GB",
+"4555": "2617 MHz"
+}
+},
+{
 "id": "1073523",
 "url": "https://www.epey.com/ekran-karti/pny-geforce-rtx-5080-triple.html",
 "name": "PNY GeForce RTX 5080 Triple",
 "code": "",
 "img": "https://resim.epey.com/1073523/k_pny-geforce-rtx-5080-triple-1.jpg",
-"price": 153584.64,
+"price": 157925.38,
 "sites": 1,
 "score": 80,
 "cols": {
@@ -623,8 +707,8 @@
 "name": "Gainward GeForce RTX 5080 Python III",
 "code": "NE75080019T2-GB2035T",
 "img": "https://resim.epey.com/1063665/k_gainward-geforce-rtx-5080-python-iii-1.jpg",
-"price": 121233.92,
-"sites": 3,
+"price": 121378.36,
+"sites": 2,
 "score": 80,
 "cols": {
 "4557": "16 GB",
@@ -652,7 +736,7 @@
 "code": "G5080-16V3P",
 "img": "https://resim.epey.com/1009616/k_msi-geforce-rtx-5080-ventus-3x-plus-1.jpg",
 "price": 118713.0,
-"sites": 6,
+"sites": 5,
 "score": 80,
 "cols": {
 "4557": "16 GB",
@@ -665,7 +749,7 @@
 "name": "Zotac Gaming GeForce RTX 5080 Solid Core",
 "code": "ZT-B50800D2-10P",
 "img": "https://resim.epey.com/1003864/k_zotac-gaming-geforce-rtx-5080-solid-core-1.jpg",
-"price": 119999.0,
+"price": 115000.0,
 "sites": 1,
 "score": 80,
 "cols": {
@@ -721,8 +805,8 @@
 "name": "PNY RTX Pro 4500 Blackwell",
 "code": "VCNRTXPRO4500B-PB",
 "img": "https://resim.epey.com/1035749/k_pny-rtx-pro-4500-blackwell-1.jpg",
-"price": 321980.0,
-"sites": 5,
+"price": 328112.0,
+"sites": 4,
 "score": 77,
 "cols": {
 "4557": "32 GB",
@@ -792,7 +876,7 @@
 "code": "PROART-RTX5070TI-O16G",
 "img": "https://resim.epey.com/1038720/k_asus-proart-geforce-rtx-5070-ti-oc-1.jpg",
 "price": 103950.0,
-"sites": 7,
+"sites": 6,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -806,7 +890,7 @@
 "code": "GV-N507TAERO OC-16GD",
 "img": "https://resim.epey.com/1002119/k_gigabyte-geforce-rtx-5070-ti-aero-oc-1.jpg",
 "price": 93999.0,
-"sites": 7,
+"sites": 6,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -820,7 +904,7 @@
 "code": "GV-N507TGAMING-OC-16GD",
 "img": "https://resim.epey.com/998664/k_gigabyte-geforce-rtx-5070-ti-gaming-oc-1.jpg",
 "price": 91628.0,
-"sites": 8,
+"sites": 7,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -834,7 +918,7 @@
 "code": "TUF-RTX5070TI-O16G-GAMING",
 "img": "https://resim.epey.com/995237/k_asus-tuf-gaming-geforce-rtx-5070-ti-oc-1.jpg",
 "price": 102097.93,
-"sites": 5,
+"sites": 4,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -862,7 +946,7 @@
 "code": "VCG5070T16TFXPB1-O",
 "img": "https://resim.epey.com/1023592/k_pny-geforce-rtx-5070-ti-triple-oc-1.jpg",
 "price": 80812.59,
-"sites": 3,
+"sites": 2,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -875,8 +959,8 @@
 "name": "MSI GeForce RTX 5070 Ti Gaming Trio OC",
 "code": "G507T-16GTC",
 "img": "https://resim.epey.com/1014127/k_msi-geforce-rtx-5070-ti-gaming-trio-oc-1.jpg",
-"price": 93455.35,
-"sites": 8,
+"price": 95016.0,
+"sites": 7,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -889,7 +973,7 @@
 "name": "Gigabyte GeForce RTX 5070 Ti Eagle OC SFF",
 "code": "GV-N507TEAGLE OC-16GD",
 "img": "https://resim.epey.com/995200/k_gigabyte-geforce-rtx-5070-ti-eagle-oc-sff-1.jpg",
-"price": 87031.24,
+"price": 90304.27,
 "sites": 9,
 "score": 76,
 "cols": {
@@ -903,8 +987,8 @@
 "name": "Gigabyte GeForce RTX 5070 Ti Eagle OC Ice SFF",
 "code": "GV-N507TEAGLEOC ICE-16GD",
 "img": "https://resim.epey.com/995198/k_gigabyte-geforce-rtx-5070-ti-eagle-oc-ice-sff-1.jpg",
-"price": 92070.0,
-"sites": 8,
+"price": 92709.0,
+"sites": 7,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -918,7 +1002,7 @@
 "code": "GV-N507TWF3OCV2-16GD",
 "img": "https://resim.epey.com/1047255/k_gigabyte-geforce-rtx-5070-ti-windforce-oc-v2-1.jpg",
 "price": 89100.0,
-"sites": 5,
+"sites": 4,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -932,7 +1016,7 @@
 "code": "GV-N507TWF3OC-16GD",
 "img": "https://resim.epey.com/998643/k_gigabyte-geforce-rtx-5070-ti-windforce-oc-sff-3.jpg",
 "price": 82490.0,
-"sites": 11,
+"sites": 10,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -946,7 +1030,7 @@
 "code": "PRIME-RTX5070TI-O16G",
 "img": "https://resim.epey.com/995266/k_asus-prime-geforce-rtx-5070-ti-oc-1.jpg",
 "price": 96819.06,
-"sites": 11,
+"sites": 10,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -960,7 +1044,7 @@
 "code": "ZT-B50710J3-10A",
 "img": "https://resim.epey.com/1047213/k_zotac-gaming-geforce-rtx-5070-ti-solid-sff-oc-1.jpg",
 "price": 92826.16,
-"sites": 2,
+"sites": 1,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -973,8 +1057,8 @@
 "name": "MSI GeForce RTX 5070 Ti Inspire 3X OC",
 "code": "G507T-16I3C",
 "img": "https://resim.epey.com/1031673/k_msi-geforce-rtx-5070-ti-inspire-3x-oc-1.jpg",
-"price": 92999.1,
-"sites": 2,
+"price": 115366.16,
+"sites": 1,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -1001,8 +1085,8 @@
 "name": "MSI GeForce RTX 5070 Ti Shadow 3X OC",
 "code": "G507T-16S3C",
 "img": "https://resim.epey.com/1000465/k_msi-geforce-rtx-5070-ti-shadow-3x-oc-1.jpg",
-"price": 76499.0,
-"sites": 11,
+"price": 90304.27,
+"sites": 10,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -1015,7 +1099,7 @@
 "name": "MSI GeForce RTX 5070 Ti Ventus 3X OC 16G",
 "code": "G507T-16V3C",
 "img": "https://resim.epey.com/999062/k_msi-geforce-rtx-5070-ti-ventus-3x-oc-16g-1.jpg",
-"price": 85292.74,
+"price": 87777.0,
 "sites": 11,
 "score": 76,
 "cols": {
@@ -1030,7 +1114,7 @@
 "code": "N507T3-16D7X-176068N",
 "img": "https://resim.epey.com/997585/k_inno3d-geforce-rtx-5070-ti-x3-oc-2.jpg",
 "price": 79999.0,
-"sites": 4,
+"sites": 3,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -1044,7 +1128,7 @@
 "code": "VCG5070T16TFXXPB1",
 "img": "https://resim.epey.com/1073517/k_pny-geforce-rtx-5070-ti-epic-x-triple-1.jpg",
 "price": 97906.0,
-"sites": 3,
+"sites": 2,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -1057,8 +1141,8 @@
 "name": "Gainward GeForce RTX 5070 Ti Phoenix-S",
 "code": "NE7507T019T2-GB2031K",
 "img": "https://resim.epey.com/1049350/k_gainward-geforce-rtx-5070-ti-phoenix-s-1.jpg",
-"price": 77190.0,
-"sites": 4,
+"price": 80509.03,
+"sites": 3,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -1071,8 +1155,8 @@
 "name": "Zotac Gaming GeForce RTX 5070 Ti Solid SFF",
 "code": "ZT-B50710D3-10P",
 "img": "https://resim.epey.com/1047218/k_zotac-gaming-geforce-rtx-5070-ti-solid-sff-1.jpg",
-"price": 79069.0,
-"sites": 2,
+"price": 89608.0,
+"sites": 1,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -1086,7 +1170,7 @@
 "code": "VCG5070T16TFXPB1",
 "img": "https://resim.epey.com/1026292/k_pny-geforce-rtx-5070-ti-triple-1.jpg",
 "price": 90229.0,
-"sites": 6,
+"sites": 5,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -1100,7 +1184,7 @@
 "code": "GV-N507TWF3-16GD",
 "img": "https://resim.epey.com/1007528/k_gigabyte-geforce-rtx-5070-ti-windforce-sff-3.jpg",
 "price": 86790.59,
-"sites": 4,
+"sites": 3,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -1114,7 +1198,7 @@
 "code": "NE7507T019T2-GB2031X",
 "img": "https://resim.epey.com/1000712/k_gainward-geforce-rtx-5070-ti-phoenix-4.jpg",
 "price": 82999.0,
-"sites": 4,
+"sites": 3,
 "score": 76,
 "cols": {
 "4557": "16 GB",
@@ -1290,27 +1374,13 @@
 }
 },
 {
-"id": "1022638",
-"url": "https://www.epey.com/ekran-karti/xfx-mercury-radeon-rx-9070-xt-oc-magnetic-air-white.html",
-"name": "XFX Mercury Radeon RX 9070 XT OC Magnetic Air White",
-"code": "RX-97TMARGW9",
-"img": "https://resim.epey.com/1022638/k_xfx-radeon-rx9070-xt-magnetic-air-oc-white-edition-16gb-rx-97tmargw9-1.jpg",
-"price": 95137.1,
-"sites": 1,
-"score": 71,
-"cols": {
-"4557": "16 GB",
-"4555": "3100 MHz"
-}
-},
-{
 "id": "1000477",
 "url": "https://www.epey.com/ekran-karti/asrock-radeon-rx-9070-xt-taichi-oc.html",
 "name": "ASRock Radeon RX 9070 XT Taichi OC",
 "code": "90-GA5HZZ-00UANF",
 "img": "https://resim.epey.com/1000477/k_asrock-radeon-rx-9070-xt-taichi-oc-1.jpg",
 "price": 53460.0,
-"sites": 5,
+"sites": 4,
 "score": 71,
 "cols": {
 "4557": "16 GB",
@@ -1338,7 +1408,7 @@
 "code": "GV-R9070XTGAMING OC-16GD",
 "img": "https://resim.epey.com/1003456/k_gigabyte-radeon-rx-9070-xt-gaming-oc-1.jpg",
 "price": 50209.0,
-"sites": 8,
+"sites": 7,
 "score": 71,
 "cols": {
 "4557": "16 GB",
@@ -1393,8 +1463,8 @@
 "name": "Asus Prime Radeon RX 9070 XT OC White",
 "code": "PRIME-RX9070XT-O16G-WHITE",
 "img": "https://resim.epey.com/1062450/k_asus-prime-radeon-rx-9070-xt-oc-white-1.jpg",
-"price": 111526.2,
-"sites": 2,
+"price": 211118.0,
+"sites": 1,
 "score": 71,
 "cols": {
 "4557": "16 GB",
@@ -1407,8 +1477,8 @@
 "name": "Asus Prime Radeon RX 9070 XT OC",
 "code": "PRIME-RX9070XT-O16G",
 "img": "https://resim.epey.com/1004500/k_asus-prime-radeon-rx-9070-xt-oc-1.jpg",
-"price": 60499.0,
-"sites": 7,
+"price": 62731.87,
+"sites": 6,
 "score": 71,
 "cols": {
 "4557": "16 GB",
@@ -1436,7 +1506,7 @@
 "code": "11348-02-20G",
 "img": "https://resim.epey.com/998687/k_sapphire-pure-radeon-rx-9070-xt-1.jpg",
 "price": 63940.0,
-"sites": 4,
+"sites": 3,
 "score": 71,
 "cols": {
 "4557": "16 GB",
@@ -1450,7 +1520,7 @@
 "code": "RX9070XT CL 16G",
 "img": "https://resim.epey.com/1048268/k_asrock-radeon-rx-9070-xt-challenger-1.jpg",
 "price": 50959.02,
-"sites": 3,
+"sites": 2,
 "score": 71,
 "cols": {
 "4557": "16 GB",
@@ -1464,20 +1534,6 @@
 "code": "RX-97TMAQKW9",
 "img": "https://resim.epey.com/1039226/k_xfx-quicksilver-radeon-rx-9070-xt-magnetic-air-white-1.jpg",
 "price": 54759.0,
-"sites": 2,
-"score": 71,
-"cols": {
-"4557": "16 GB",
-"4555": "2970 MHz"
-}
-},
-{
-"id": "1022641",
-"url": "https://www.epey.com/ekran-karti/xfx-quicksilver-radeon-rx-9070-xt-magnetic-air.html",
-"name": "XFX Quicksilver Radeon RX 9070 XT Magnetic Air",
-"code": "RX-97TMAQKB9",
-"img": "https://resim.epey.com/1022641/k_xfx-quicksilver-radeon-rx-9070-xt-magnetic-air-1.jpg",
-"price": 87325.1,
 "sites": 1,
 "score": 71,
 "cols": {
@@ -1492,20 +1548,6 @@
 "code": "RX-97TQICKB9",
 "img": "https://resim.epey.com/1022640/k_xfx-radeon-rx9070-xt-quicksilver-16gb-rx-97tqickb9-1.jpg",
 "price": 52979.0,
-"sites": 2,
-"score": 71,
-"cols": {
-"4557": "16 GB",
-"4555": "2970 MHz"
-}
-},
-{
-"id": "1022642",
-"url": "https://www.epey.com/ekran-karti/xfx-quicksilver-radeon-rx-9070-xt-white.html",
-"name": "XFX Quicksilver Radeon RX 9070 XT White",
-"code": "RX-97TQICKW9",
-"img": "https://resim.epey.com/1022642/k_xfx-quicksilver-radeon-rx-9070-xt-white-1.jpg",
-"price": 86581.1,
 "sites": 1,
 "score": 71,
 "cols": {
@@ -1519,8 +1561,8 @@
 "name": "XFX Swift Radeon RX 9070 XT White Triple Fan Gaming Edition",
 "code": "RX-97TSWF3W9",
 "img": "https://resim.epey.com/1007436/k_xfx-swift-radeon-rx-9070xt-white-triple-fan-gaming-edition-1.jpg",
-"price": 88341.1,
-"sites": 2,
+"price": 116078.27,
+"sites": 1,
 "score": 71,
 "cols": {
 "4557": "16 GB",
@@ -1534,7 +1576,7 @@
 "code": "RX-97TSWF3B9",
 "img": "https://resim.epey.com/1007433/k_xfx-swift-radeon-rx-9070xt-triple-fan-gaming-edition-1.jpg",
 "price": 55949.0,
-"sites": 5,
+"sites": 4,
 "score": 71,
 "cols": {
 "4557": "16 GB",
@@ -1547,8 +1589,8 @@
 "name": "ASRock Radeon RX 9070 XT Steel Legend",
 "code": "90-GA5DZZ-00UANF",
 "img": "https://resim.epey.com/1004514/k_asrock-radeon-rx-9070-xt-steel-legend-1.jpg",
-"price": 55108.0,
-"sites": 2,
+"price": 82650.96,
+"sites": 1,
 "score": 71,
 "cols": {
 "4557": "16 GB",
@@ -1561,8 +1603,8 @@
 "name": "PowerColor Reaper Radeon RX 9070 XT",
 "code": "RX9070XT 16G-A",
 "img": "https://resim.epey.com/998679/k_powercolor-reaper-radeon-rx-9070-xt-1.jpg",
-"price": 49964.3,
-"sites": 3,
+"price": 50502.33,
+"sites": 2,
 "score": 71,
 "cols": {
 "4557": "16 GB",
@@ -1575,8 +1617,8 @@
 "name": "Sapphire Pulse Radeon RX 9070 XT",
 "code": "11348-03-20G",
 "img": "https://resim.epey.com/997268/k_sapphire-pulse-radeon-rx-9070-xt-1.jpg",
-"price": 53718.8,
-"sites": 5,
+"price": 53635.08,
+"sites": 4,
 "score": 71,
 "cols": {
 "4557": "16 GB",
@@ -1604,7 +1646,7 @@
 "code": "VCG507012TFXXPB1-O",
 "img": "https://resim.epey.com/1023543/k_pny-geforce-rtx-5070-argb-epic-x-triple-oc-1.jpg",
 "price": 53911.59,
-"sites": 6,
+"sites": 5,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1623,6 +1665,20 @@
 "cols": {
 "4557": "12 GB",
 "4555": "2655 MHz"
+}
+},
+{
+"id": "832869",
+"url": "https://www.epey.com/ekran-karti/msi-geforce-rtx-4080-16gb-gaming-x-trio.html",
+"name": "MSI GeForce RTX 4080 16GB Gaming X Trio",
+"code": "",
+"img": "https://resim.epey.com/832869/k_msi-geforce-rtx-4080-16gb-gaming-x-trio-1.jpg",
+"price": 68999.08,
+"sites": 2,
+"score": 70,
+"cols": {
+"4557": "16 GB",
+"4555": "2595 MHz"
 }
 },
 {
@@ -1645,7 +1701,7 @@
 "name": "Gigabyte GeForce RTX 5070 Gaming OC",
 "code": "GV-N5070GAMING-OC-12GD",
 "img": "https://resim.epey.com/1002495/k_gigabyte-geforce-rtx-5070-gaming-oc-1.jpg",
-"price": 68539.08,
+"price": 65489.0,
 "sites": 8,
 "score": 70,
 "cols": {
@@ -1659,8 +1715,8 @@
 "name": "Asus TUF Gaming GeForce RTX 5070 OC",
 "code": "TUF-RTX5070-O12G-GAMING",
 "img": "https://resim.epey.com/999036/k_asus-tuf-gaming-geforce-rtx-5070-oc-1.jpg",
-"price": 65879.49,
-"sites": 7,
+"price": 67879.56,
+"sites": 6,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1674,7 +1730,7 @@
 "code": "G5070-12GTC",
 "img": "https://resim.epey.com/998613/k_msi-geforce-rtx-5070-gaming-trio-oc-1.jpg",
 "price": 72680.0,
-"sites": 4,
+"sites": 3,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1688,7 +1744,7 @@
 "code": "GV-N5070EAGLE OC-12GD",
 "img": "https://resim.epey.com/1002576/k_gigabyte-geforce-rtx-5070-eagle-oc-sff-1.jpg",
 "price": 55879.64,
-"sites": 6,
+"sites": 5,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1715,8 +1771,8 @@
 "name": "Asus Prime GeForce RTX 5070 OC",
 "code": "PRIME-RTX5070-O12G",
 "img": "https://resim.epey.com/999034/k_asus-prime-geforce-rtx-5070-oc-prime-rtx5070-16g-1.jpg",
-"price": 60774.06,
-"sites": 9,
+"price": 64580.94,
+"sites": 8,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1730,21 +1786,7 @@
 "code": "G5070-12I3C",
 "img": "https://resim.epey.com/1022693/k_msi-geforce-rtx-5070-inspire-3x-oc-1.jpg",
 "price": 87287.76,
-"sites": 4,
-"score": 70,
-"cols": {
-"4557": "12 GB",
-"4555": "2542 MHz"
-}
-},
-{
-"id": "1017331",
-"url": "https://www.epey.com/ekran-karti/inno3d-geforce-rtx-5070-x3-oc.html",
-"name": "Inno3D GeForce RTX 5070 X3 OC",
-"code": "N50703-12D7X-195064L",
-"img": "https://resim.epey.com/1017331/k_inno3d-geforce-rtx-5070-x3-oc-1.jpg",
-"price": 83699.1,
-"sites": 1,
+"sites": 3,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1757,8 +1799,8 @@
 "name": "MSI GeForce RTX 5070 Shadow 3X OC",
 "code": "G5070-12S3C",
 "img": "https://resim.epey.com/1004818/k_msi-geforce-rtx-5070-shadow-3x-oc-1.jpg",
-"price": 60243.32,
-"sites": 11,
+"price": 62999.0,
+"sites": 10,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1771,8 +1813,8 @@
 "name": "Gigabyte GeForce RTX 5070 Windforce OC SFF",
 "code": "GV-N5070WF3OC-12GD",
 "img": "https://resim.epey.com/1001152/k_gigabyte-geforce-rtx-5070-windforce-oc-sff-3.jpg",
-"price": 51999.0,
-"sites": 10,
+"price": 53902.0,
+"sites": 8,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1786,7 +1828,7 @@
 "code": "ZT-B50700J-10P",
 "img": "https://resim.epey.com/998609/k_zotac-gaming-geforce-rtx-5070-solid-oc-1.jpg",
 "price": 74039.76,
-"sites": 2,
+"sites": 1,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1800,7 +1842,7 @@
 "code": "",
 "img": "https://resim.epey.com/986484/k_msi-geforce-rtx-5070-12g-ventus-3x-oc-1.jpg",
 "price": 59999.0,
-"sites": 9,
+"sites": 8,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1814,7 +1856,7 @@
 "code": "PRIME-RTX5070-12G",
 "img": "https://resim.epey.com/999027/k_asus-prime-geforce-rtx-5070-prime-rtx5070-16g-1.jpg",
 "price": 58489.48,
-"sites": 2,
+"sites": 1,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1855,22 +1897,8 @@
 "name": "Palit GeForce RTX 5070 Infinity 3",
 "code": "NE75070019K9-GB2050S",
 "img": "https://resim.epey.com/1001562/k_palit-geforce-rtx-5070-infinity-3-1.jpg",
-"price": 54279.08,
-"sites": 3,
-"score": 70,
-"cols": {
-"4557": "12 GB",
-"4555": "2512 MHz"
-}
-},
-{
-"id": "998612",
-"url": "https://www.epey.com/ekran-karti/zotac-gaming-geforce-rtx-5070-solid.html",
-"name": "Zotac Gaming GeForce RTX 5070 Solid",
-"code": "ZT-B50700D-10P",
-"img": "https://resim.epey.com/998612/k_zotac-gaming-geforce-rtx-5070-solid-1.jpg",
-"price": 71124.5,
-"sites": 1,
+"price": 54188.0,
+"sites": 2,
 "score": 70,
 "cols": {
 "4557": "12 GB",
@@ -1897,8 +1925,8 @@
 "name": "Asus Dual GeForce RTX 5070 OC",
 "code": "DUAL-RTX5070-O12G",
 "img": "https://resim.epey.com/1014255/k_asus-dual-geforce-rtx-5070-oc-1.jpg",
-"price": 54999.0,
-"sites": 9,
+"price": 57768.06,
+"sites": 8,
 "score": 69,
 "cols": {
 "4557": "12 GB",
@@ -1911,8 +1939,8 @@
 "name": "MSI GeForce RTX 5070 Shadow 2X OC",
 "code": "G5070-12S2C",
 "img": "https://resim.epey.com/998614/k_msi-geforce-rtx-5070-shadow-2x-oc-1.jpg",
-"price": 56900.6,
-"sites": 10,
+"price": 56891.0,
+"sites": 9,
 "score": 69,
 "cols": {
 "4557": "12 GB",
@@ -1925,7 +1953,7 @@
 "name": "MSI GeForce RTX 5070 Ventus 2X OC White",
 "code": "G5070-12V2CW",
 "img": "https://resim.epey.com/1039246/k_msi-geforce-rtx-5070-ventus-2x-oc-white-1.jpg",
-"price": 58056.24,
+"price": 60232.92,
 "sites": 6,
 "score": 69,
 "cols": {
@@ -1940,7 +1968,7 @@
 "code": "G5070-12V2C",
 "img": "https://resim.epey.com/1000735/k_msi-geforce-rtx-5070-ventus-2x-oc-1.jpg",
 "price": 59390.0,
-"sites": 10,
+"sites": 9,
 "score": 69,
 "cols": {
 "4557": "12 GB",
@@ -1953,8 +1981,8 @@
 "name": "Inno3D GeForce RTX 5070 Twin X2 OC",
 "code": "N50702-12D7X-195064N",
 "img": "https://resim.epey.com/999950/k_inno3d-geforce-rtx-5070-twin-x2-oc-3.jpg",
-"price": 53899.02,
-"sites": 5,
+"price": 49999.0,
+"sites": 4,
 "score": 69,
 "cols": {
 "4557": "12 GB",
@@ -1962,17 +1990,17 @@
 }
 },
 {
-"id": "999938",
-"url": "https://www.epey.com/ekran-karti/inno3d-geforce-rtx-5070-twin-x2-oc-white.html",
-"name": "Inno3D GeForce RTX 5070 Twin X2 OC White",
-"code": "N50702-12D7X-195064W",
-"img": "https://resim.epey.com/999938/k_inno3d-geforce-rtx-5070-twin-x2-oc-white-1.jpg",
-"price": 67218.5,
-"sites": 1,
+"id": "1075533",
+"url": "https://www.epey.com/ekran-karti/lenovo-geforce-rtx-5070.html",
+"name": "Lenovo GeForce RTX 5070",
+"code": "4X61U02754",
+"img": "https://resim.epey.com/1075533/k_lenovo-geforce-rtx-5070-1.jpg",
+"price": 89459.0,
+"sites": 3,
 "score": 69,
 "cols": {
 "4557": "12 GB",
-"4555": "2542 MHz"
+"4555": "2512 MHz"
 }
 },
 {
@@ -1982,7 +2010,7 @@
 "code": "ZT-B50700E-10P",
 "img": "https://resim.epey.com/1009133/k_zotac-gaming-geforce-rtx-5070-twin-edge-1.jpg",
 "price": 57999.0,
-"sites": 3,
+"sites": 2,
 "score": 69,
 "cols": {
 "4557": "12 GB",
@@ -1996,11 +2024,25 @@
 "code": "N50702-12D7-195064N",
 "img": "https://resim.epey.com/1000751/k_inno3d-geforce-rtx-5070-twin-x2-n50702-12d7-195064n-3.jpg",
 "price": 55999.0,
-"sites": 5,
+"sites": 4,
 "score": 69,
 "cols": {
 "4557": "12 GB",
 "4555": "2512 MHz"
+}
+},
+{
+"id": "1075532",
+"url": "https://www.epey.com/ekran-karti/lenovo-rtx-pro-4000.html",
+"name": "Lenovo RTX Pro 4000",
+"code": "4X61T95636",
+"img": "https://resim.epey.com/1075532/k_pny-geforce-rtx-pro-4000-24gb-vcnrtxpro4000-sb-7644472549341-1.jpg",
+"price": 229163.46,
+"sites": 1,
+"score": 69,
+"cols": {
+"4557": "24 GB",
+"4555": "2055 MHz"
 }
 },
 {
@@ -2010,7 +2052,7 @@
 "code": "VCNRTXPRO4000-SB",
 "img": "https://resim.epey.com/1039084/k_pny-geforce-rtx-pro-4000-24gb-vcnrtxpro4000-sb-7644472549341-1.jpg",
 "price": 205000.0,
-"sites": 6,
+"sites": 5,
 "score": 69,
 "cols": {
 "4557": "24 GB",
@@ -2023,8 +2065,8 @@
 "name": "XFX QuickSilver Radeon RX 9070 OC",
 "code": "RX-97QICKBB9",
 "img": "https://resim.epey.com/1022733/k_xfx-quicksilver-radeon-rx-9070-oc-1.jpg",
-"price": 80823.4,
-"sites": 3,
+"price": 87450.0,
+"sites": 2,
 "score": 68,
 "cols": {
 "4557": "16 GB",
@@ -2052,7 +2094,7 @@
 "code": "GV-R9070GAMING OC-16GD",
 "img": "https://resim.epey.com/1001890/k_gigabyte-radeon-rx-9070-gaming-oc-1.jpg",
 "price": 46749.06,
-"sites": 8,
+"sites": 7,
 "score": 68,
 "cols": {
 "4557": "16 GB",
@@ -2065,8 +2107,8 @@
 "name": "ASRock Radeon RX 9070 Steel Legend OC",
 "code": "90-GA5EZZ-00UANF",
 "img": "https://resim.epey.com/1000469/k_asrock-radeon-rx-9070-steel-legend-oc-1.jpg",
-"price": 45495.6,
-"sites": 3,
+"price": 48219.0,
+"sites": 2,
 "score": 68,
 "cols": {
 "4557": "16 GB",
@@ -2136,11 +2178,25 @@
 "code": "PRIME-RX9070-O16G",
 "img": "https://resim.epey.com/1000440/k_asus-prime-radeon-rx-9070-oc-edition-2.jpg",
 "price": 42999.0,
-"sites": 4,
+"sites": 3,
 "score": 68,
 "cols": {
 "4557": "16 GB",
 "4555": "2590 MHz"
+}
+},
+{
+"id": "921217",
+"url": "https://www.epey.com/ekran-karti/msi-geforce-rtx-4070-ti-super-16g-gaming-x-slim.html",
+"name": "MSI GeForce RTX 4070 Ti Super 16G Gaming X Slim",
+"code": "",
+"img": "https://resim.epey.com/921217/k_msi-geforce-rtx-4070-ti-super-16g-gaming-x-slim-1.jpg",
+"price": 51519.08,
+"sites": 1,
+"score": 68,
+"cols": {
+"4557": "16 GB",
+"4555": "2670 MHz"
 }
 },
 {
@@ -2214,6 +2270,20 @@
 }
 },
 {
+"id": "952737",
+"url": "https://www.epey.com/ekran-karti/gigabyte-aorus-geforce-rtx-4070-ti-master-12g.html",
+"name": "Gigabyte Aorus GeForce RTX 4070 Ti Master 12G",
+"code": "GV-N407TAORUS M-12GD",
+"img": "https://resim.epey.com/952737/k_gigabyte-aorus-geforce-rtx-4070-ti-master-12g-1.jpg",
+"price": 50999.0,
+"sites": 1,
+"score": 67,
+"cols": {
+"4557": "12 GB",
+"4555": "2670 MHz"
+}
+},
+{
 "id": "1069867",
 "url": "https://www.epey.com/ekran-karti/gigabyte-radeon-rx-9070-gre-gaming-oc.html",
 "name": "Gigabyte Radeon RX 9070 GRE Gaming OC",
@@ -2248,7 +2318,7 @@
 "code": "RX-97GRE29B7",
 "img": "https://resim.epey.com/1059569/k_xfx-swift-radeon-rx-9070-gre-triple-fan-gaming-1.jpg",
 "price": 38573.0,
-"sites": 5,
+"sites": 4,
 "score": 67,
 "cols": {
 "4557": "12 GB",
@@ -2256,17 +2326,17 @@
 }
 },
 {
-"id": "845285",
-"url": "https://www.epey.com/ekran-karti/asus-tuf-gaming-geforce-rtx-4070-ti-12gb-gddr6x.html",
-"name": "Asus TUF Gaming GeForce RTX 4070 Ti 12GB GDDR6X",
-"code": "TUF-RTX4070TI-12G-GAMING",
-"img": "https://resim.epey.com/845285/k_asus-tuf-gaming-geforce-rtx-4070-ti-12gb-gddr6x-1.jpg",
-"price": 46999.06,
+"id": "862209",
+"url": "https://www.epey.com/ekran-karti/pny-geforce-rtx-4080-16gb-xlr8-gaming-verto-epic-x.html",
+"name": "PNY GeForce RTX 4080 16GB XLR8 Gaming Verto Epic-X",
+"code": "VCG408016TFXXPB1",
+"img": "https://resim.epey.com/862209/k_pny-geforce-rtx-4080-16gb-xlr8-gaming-verto-epic-x-1.jpg",
+"price": 69999.0,
 "sites": 1,
 "score": 66,
 "cols": {
-"4557": "12 GB",
-"4555": "2610 MHz"
+"4557": "16 GB",
+"4555": "2505 MHz"
 }
 },
 {
@@ -2304,7 +2374,7 @@
 "code": "TUF-RTX5060TI-O16G-GAMING",
 "img": "https://resim.epey.com/1004142/k_asus-tuf-gaming-geforce-rtx-5060-ti-16gb-oc-1.jpg",
 "price": 79449.36,
-"sites": 2,
+"sites": 1,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2318,7 +2388,7 @@
 "code": "GV-N506TAERO OC-16GD",
 "img": "https://resim.epey.com/1004607/k_gigabyte-geforce-rtx-5060-ti-aero-oc-16g-1.jpg",
 "price": 52025.08,
-"sites": 2,
+"sites": 1,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2332,7 +2402,7 @@
 "code": "GV-N506TEAGLEMAX-OC-16GD",
 "img": "https://resim.epey.com/1035810/k_gigabyte-rtx-5060-ti-eagle-max-oc-16g-1.jpg",
 "price": 55233.05,
-"sites": 5,
+"sites": 4,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2345,8 +2415,8 @@
 "name": "Asus Prime GeForce RTX 5060 Ti OC 16GB",
 "code": "PRIME-RTX5060TI-O16G",
 "img": "https://resim.epey.com/1004320/k_asus-prime-geforce-rtx-5060-ti-oc-16gb-1.jpg",
-"price": 53474.1,
-"sites": 5,
+"price": 57039.08,
+"sites": 4,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2360,7 +2430,7 @@
 "code": "G506T-16V3C",
 "img": "https://resim.epey.com/1029142/k_msi-geforce-rtx-5060-ti-ventus-3x-oc-16g-1.jpg",
 "price": 82679.26,
-"sites": 2,
+"sites": 1,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2374,7 +2444,7 @@
 "code": "VCG5060T16TFXXPB1-O",
 "img": "https://resim.epey.com/1023608/k_pny-geforce-rtx-5060-ti-16gb-epic-x-argb-triple-oc-1.jpg",
 "price": 50860.3,
-"sites": 8,
+"sites": 7,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2387,7 +2457,7 @@
 "name": "Palit GeForce RTX 5060 Ti Infinity 3 16GB",
 "code": "NE7506T019T1-GB2061S",
 "img": "https://resim.epey.com/1004310/k_palit-geforce-rtx-5060-ti-infinity-3-16gb-1.jpg",
-"price": 47469.06,
+"price": 49349.06,
 "sites": 5,
 "score": 65,
 "cols": {
@@ -2401,7 +2471,7 @@
 "name": "Gainward GeForce RTX 5060 Ti Python III 16GB",
 "code": "NE7506T019T1-GB2061T",
 "img": "https://resim.epey.com/1004298/k_gainward-geforce-rtx-5060-ti-python-iii-16gb-1.jpg",
-"price": 69839.0,
+"price": 46999.0,
 "sites": 1,
 "score": 65,
 "cols": {
@@ -2430,7 +2500,7 @@
 "code": "VCG5060T16DFXPB1-O",
 "img": "https://resim.epey.com/1032986/k_pny-geforce-rtx-5060-ti-16gb-oc-1.jpg",
 "price": 50690.0,
-"sites": 5,
+"sites": 4,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2457,7 +2527,7 @@
 "name": "Colorful iGame GeForce RTX 5060 Ti Ultra Duo OC 16GB-V",
 "code": "",
 "img": "https://resim.epey.com/1075470/k_colorful-igame-geforce-rtx-5060-ti-ultra-duo-oc-16gb-v-1.jpg",
-"price": 52079.1,
+"price": 55999.0,
 "sites": 1,
 "score": 65,
 "cols": {
@@ -2472,7 +2542,7 @@
 "code": "G506T-16I2C",
 "img": "https://resim.epey.com/1055924/k_msi-geforce-rtx-5060-ti-inspire-2x-oc-16gb-1.jpg",
 "price": 54127.12,
-"sites": 4,
+"sites": 3,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2486,7 +2556,7 @@
 "code": "GV-N506TEAGLEOC ICE-16GD",
 "img": "https://resim.epey.com/1004621/k_gigabyte-geforce-rtx-5060-ti-eagle-ice-oc-8g-1.jpg",
 "price": 51400.83,
-"sites": 8,
+"sites": 7,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2514,7 +2584,7 @@
 "code": "G506T16V2CWP",
 "img": "https://resim.epey.com/1035652/k_msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-white-16g-1.jpg",
 "price": 56430.0,
-"sites": 5,
+"sites": 4,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2528,7 +2598,7 @@
 "code": "G506T-16V2CP",
 "img": "https://resim.epey.com/1019446/k_msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-16g-1.jpg",
 "price": 49999.0,
-"sites": 11,
+"sites": 10,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2541,21 +2611,7 @@
 "name": "Inno3D GeForce RTX 5060 Ti 16GB Twin X2 OC",
 "code": "N506T2-16D7X-191073N",
 "img": "https://resim.epey.com/1009641/k_inno3d-geforce-rtx-5060-ti-16gb-twin-x2-oc-4.jpg",
-"price": 47000.0,
-"sites": 3,
-"score": 65,
-"cols": {
-"4557": "16 GB",
-"4555": "2602 MHz"
-}
-},
-{
-"id": "1004371",
-"url": "https://www.epey.com/ekran-karti/zotac-gaming-geforce-rtx-5060-ti-twin-edge-oc-16gb.html",
-"name": "Zotac Gaming GeForce RTX 5060 Ti Twin Edge OC 16GB",
-"code": "ZT-B50620H-10M",
-"img": "https://resim.epey.com/1004371/k_zotac-gaming-geforce-rtx-5060-ti-16gb-twin-edge-1.jpg",
-"price": 49999.0,
+"price": 50500.0,
 "sites": 2,
 "score": 65,
 "cols": {
@@ -2569,8 +2625,8 @@
 "name": "Asus Dual GeForce RTX 5060 Ti OC 16GB",
 "code": "DUAL-RTX5060TI-O16G",
 "img": "https://resim.epey.com/1004316/k_asus-dual-geforce-rtx-5060-ti-oc-16gb-1.jpg",
-"price": 45569.1,
-"sites": 9,
+"price": 45840.5,
+"sites": 8,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2584,7 +2640,7 @@
 "code": "GV-N506TWF2MAX-OC-16GD",
 "img": "https://resim.epey.com/1035645/k_gigabyte-geforce-rtx-5060-ti-windforce-max-oc-16g-1.jpg",
 "price": 51649.53,
-"sites": 8,
+"sites": 7,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2597,8 +2653,8 @@
 "name": "Gigabyte GeForce RTX 5060 Ti Windforce OC 16G",
 "code": "GV-N506TWF2OC-16GD",
 "img": "https://resim.epey.com/1004539/k_gigabyte-geforce-rtx-5060-ti-windforce-oc-16g-1.jpg",
-"price": 50219.1,
-"sites": 7,
+"price": 50699.0,
+"sites": 6,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2612,7 +2668,7 @@
 "code": "VCG5060T8TFXXPB1-O",
 "img": "https://resim.epey.com/1022705/k_pny-geforce-rtx-5060-ti-8gb-epic-x-argb-triple-oc-1.jpg",
 "price": 39900.0,
-"sites": 2,
+"sites": 1,
 "score": 65,
 "cols": {
 "4557": "8 GB",
@@ -2626,7 +2682,7 @@
 "code": "VCG5060T16DFXPB1",
 "img": "https://resim.epey.com/1073528/k_pny-geforce-rtx-5060-ti-16gb-1.jpg",
 "price": 55479.0,
-"sites": 7,
+"sites": 6,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2640,7 +2696,7 @@
 "code": "",
 "img": "https://resim.epey.com/1055432/k_colorful-geforce-rtx-5060-ti-gaming-duo-16gb-v-1.jpg",
 "price": 50999.0,
-"sites": 6,
+"sites": 5,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2681,8 +2737,8 @@
 "name": "MSI GeForce RTX 5060 Ti Ventus 2X Plus 16G",
 "code": "G506T-16V2P",
 "img": "https://resim.epey.com/1009259/k_msi-geforce-rtx-5060-ti-ventus-2x-plus-16g-1.jpg",
-"price": 50999.0,
-"sites": 4,
+"price": 55199.08,
+"sites": 3,
 "score": 65,
 "cols": {
 "4557": "16 GB",
@@ -2724,7 +2780,7 @@
 "code": "TUF-RTX5060TI-O8G-GAMING",
 "img": "https://resim.epey.com/1004518/k_asus-tuf-gaming-geforce-rtx-5060-ti-8gb-oc-1.jpg",
 "price": 42148.82,
-"sites": 3,
+"sites": 1,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2760,13 +2816,27 @@
 }
 },
 {
+"id": "1075493",
+"url": "https://www.epey.com/ekran-karti/gigabyte-rtx-5060-ti-eagle-max-oc-8g.html",
+"name": "Gigabyte RTX 5060 Ti Eagle Max OC 8G",
+"code": "GV-N506TEAGLEMAX OC-8GD",
+"img": "https://resim.epey.com/1075493/k_gigabyte-rtx-5060-ti-eagle-max-oc-8g-1.jpg",
+"price": 35999.0,
+"sites": 2,
+"score": 64,
+"cols": {
+"4557": "8 GB",
+"4555": "2617 MHz"
+}
+},
+{
 "id": "1004377",
 "url": "https://www.epey.com/ekran-karti/asus-prime-geforce-rtx-5060-ti-oc-8gb.html",
 "name": "Asus Prime GeForce RTX 5060 Ti OC 8GB",
 "code": "PRIME-RTX5060TI-O8G",
 "img": "https://resim.epey.com/1004377/k_asus-prime-geforce-rtx-5060-ti-oc-8gb-1.jpg",
-"price": 31999.0,
-"sites": 4,
+"price": 34922.16,
+"sites": 3,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2794,7 +2864,7 @@
 "code": "G506T-8V3C",
 "img": "https://resim.epey.com/1010237/k_msi-geforce-rtx-5060-ti-ventus-3x-oc-8g-1.jpg",
 "price": 32322.0,
-"sites": 11,
+"sites": 10,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2807,7 +2877,7 @@
 "name": "MSI GeForce RTX 5060 Ti Shadow 3X Classic 8G",
 "code": "",
 "img": "https://resim.epey.com/1035770/k_msi-geforce-rtx-5060-ti-shadow-3x-classic-8g-1.jpg",
-"price": 32150.0,
+"price": 32189.0,
 "sites": 3,
 "score": 64,
 "cols": {
@@ -2821,8 +2891,8 @@
 "name": "Asus Prime GeForce RTX 5060 Ti 8GB",
 "code": "PRIME-RTX5060TI-8G",
 "img": "https://resim.epey.com/1004382/k_asus-prime-geforce-rtx-5060-ti-8gb-1.jpg",
-"price": 35831.2,
-"sites": 4,
+"price": 37921.11,
+"sites": 2,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2835,7 +2905,7 @@
 "name": "PNY GeForce RTX 5060 Ti 8GB Dual OC",
 "code": "VCG5060T8DFXPB1-O",
 "img": "https://resim.epey.com/1023603/k_pny-geforce-rtx-5060-ti-8gb-dual-oc-1.jpg",
-"price": 27549.05,
+"price": 28999.0,
 "sites": 6,
 "score": 64,
 "cols": {
@@ -2850,25 +2920,11 @@
 "code": "G506T-8GC",
 "img": "https://resim.epey.com/1009614/k_msi-geforce-rtx-5060-ti-gaming-oc-8g-1.jpg",
 "price": 31427.03,
-"sites": 13,
+"sites": 12,
 "score": 64,
 "cols": {
 "4557": "8 GB",
 "4555": "2647 MHz"
-}
-},
-{
-"id": "1004375",
-"url": "https://www.epey.com/ekran-karti/zotac-gaming-geforce-rtx-5060-ti-amp-8gb.html",
-"name": "Zotac Gaming GeForce RTX 5060 Ti AMP 8GB",
-"code": "ZT-B50610F-10M",
-"img": "https://resim.epey.com/1004375/k_zotac-gaming-geforce-rtx-5060-ti-amp-8gb-1.jpg",
-"price": 51054.7,
-"sites": 1,
-"score": 64,
-"cols": {
-"4557": "8 GB",
-"4555": "2632 MHz"
 }
 },
 {
@@ -2878,7 +2934,7 @@
 "code": "GV-N506TEAGLEOC ICE-8GD",
 "img": "https://resim.epey.com/1004619/k_gigabyte-geforce-rtx-5060-ti-eagle-ice-oc-8g-1.jpg",
 "price": 32999.0,
-"sites": 9,
+"sites": 8,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2892,7 +2948,7 @@
 "code": "GV-N506TEAGLE-OC-8GD",
 "img": "https://resim.epey.com/1004617/k_gigabyte-geforce-rtx-5060-ti-eagle-oc-8g-1.jpg",
 "price": 29259.0,
-"sites": 11,
+"sites": 9,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2905,8 +2961,8 @@
 "name": "MSI GeForce RTX 5060 Ti Shadow 2X OC Plus 8G",
 "code": "G506T-8S2CP",
 "img": "https://resim.epey.com/1035633/k_msi-geforce-rtx-5060-ti-shadow-2x-oc-plus-8g-1.jpg",
-"price": 35609.0,
-"sites": 11,
+"price": 30663.6,
+"sites": 10,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2919,8 +2975,8 @@
 "name": "MSI GeForce RTX 5060 Ti Ventus 2X Plus 8G",
 "code": "G506T-8V2CP",
 "img": "https://resim.epey.com/1029047/k_msi-geforce-rtx-5060-ti-ventus-2x-plus-8g-1.jpg",
-"price": 33432.6,
-"sites": 8,
+"price": 33749.0,
+"sites": 7,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2934,7 +2990,7 @@
 "code": "",
 "img": "https://resim.epey.com/1025991/k_msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-8g-white-1.jpg",
 "price": 37094.37,
-"sites": 4,
+"sites": 3,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2948,7 +3004,7 @@
 "code": "N506T2-08D7X-193075N",
 "img": "https://resim.epey.com/1010308/k_inno3d-geforce-rtx-5060-ti-twin-x2-oc-8gb-1.jpg",
 "price": 28999.0,
-"sites": 7,
+"sites": 6,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2962,7 +3018,7 @@
 "code": "N506T2-08D7X-193075W",
 "img": "https://resim.epey.com/1010307/k_inno3d-geforce-rtx-5060-ti-twin-x2-oc-white-8gb-1.jpg",
 "price": 39999.0,
-"sites": 3,
+"sites": 2,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2976,7 +3032,7 @@
 "code": "G506T-8V2CP",
 "img": "https://resim.epey.com/1010235/k_msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-8g-1.jpg",
 "price": 31168.0,
-"sites": 13,
+"sites": 12,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -2989,12 +3045,26 @@
 "name": "Asus Dual GeForce RTX 5060 Ti OC 8GB",
 "code": "DUAL-RTX5060TI-O8G",
 "img": "https://resim.epey.com/1004531/k_asus-dual-geforce-rtx-5060-ti-oc-8gb-1.jpg",
-"price": 34299.0,
-"sites": 10,
+"price": 34295.0,
+"sites": 9,
 "score": 64,
 "cols": {
 "4557": "8 GB",
 "4555": "2602 MHz"
+}
+},
+{
+"id": "1075488",
+"url": "https://www.epey.com/ekran-karti/gigabyte-geforce-rtx-5060-ti-windforce-max-oc-8g.html",
+"name": "Gigabyte GeForce RTX 5060 Ti WindForce Max OC 8G",
+"code": "GV-N506TWF2MAX OC-8GD",
+"img": "https://resim.epey.com/1075488/k_gigabyte-geforce-rtx-5060-ti-windforce-max-oc-8g-1.jpg",
+"price": 32982.0,
+"sites": 1,
+"score": 64,
+"cols": {
+"4557": "8 GB",
+"4555": "2587 MHz"
 }
 },
 {
@@ -3004,7 +3074,7 @@
 "code": "GV-N506TWF2OC-8GD",
 "img": "https://resim.epey.com/1004541/k_gigabyte-geforce-rtx-5060-ti-windforce-oc-8g-1.jpg",
 "price": 29999.0,
-"sites": 8,
+"sites": 7,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -3012,12 +3082,12 @@
 }
 },
 {
-"id": "1075478",
-"url": "https://www.epey.com/ekran-karti/colorful-geforce-rtx-5060-ti-gaming-duo-8gb-v2-v.html",
-"name": "Colorful GeForce RTX 5060 Ti Gaming Duo 8GB V2-V",
+"id": "1047978",
+"url": "https://www.epey.com/ekran-karti/colorful-geforce-rtx-5060-ti-gaming-duo-8gb-v.html",
+"name": "Colorful GeForce RTX 5060 Ti Gaming Duo 8GB-V",
 "code": "",
-"img": "https://resim.epey.com/1075478/k_colorful-geforce-rtx-5060-ti-gaming-duo-8gb-v2-v-1.jpg",
-"price": 42113.6,
+"img": "https://resim.epey.com/1047978/k_colorful-geforce-rtx-5060-ti-gaming-duo-8gb-v-1.jpg",
+"price": 39995.56,
 "sites": 1,
 "score": 64,
 "cols": {
@@ -3032,7 +3102,7 @@
 "code": "N506T2-08D7-193075N",
 "img": "https://resim.epey.com/1010306/k_inno3d-geforce-rtx-5060-ti-twin-x2-8gb-1.jpg",
 "price": 28999.0,
-"sites": 6,
+"sites": 5,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -3060,7 +3130,7 @@
 "code": "DUAL-RTX5060TI-8G",
 "img": "https://resim.epey.com/1004538/k_asus-dual-geforce-rtx-5060-ti-8gb-1.jpg",
 "price": 32190.8,
-"sites": 9,
+"sites": 7,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -3074,7 +3144,7 @@
 "code": "NE7506T019P1-GB2062D",
 "img": "https://resim.epey.com/1004528/k_palit-geforce-rtx-5060-ti-dual-8gb-1.jpg",
 "price": 30999.0,
-"sites": 6,
+"sites": 5,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -3088,7 +3158,7 @@
 "code": "ZT-B50610E-10M",
 "img": "https://resim.epey.com/1004367/k_zotac-gaming-geforce-rtx-5060-ti-8gb-twin-edge-1.jpg",
 "price": 33649.0,
-"sites": 2,
+"sites": 1,
 "score": 64,
 "cols": {
 "4557": "8 GB",
@@ -3115,8 +3185,8 @@
 "name": "Asus TUF Gaming GeForce RTX 5060 OC",
 "code": "TUF-RTX5060-O8G-GAMING",
 "img": "https://resim.epey.com/1010309/k_asus-tuf-gaming-geforce-rtx-5060-oc-1.jpg",
-"price": 32449.87,
-"sites": 10,
+"price": 32873.82,
+"sites": 9,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3158,7 +3228,7 @@
 "code": "PRIME-RTX5060-O8G",
 "img": "https://resim.epey.com/1010910/k_asus-prime-geforce-rtx-5060-oc-1.jpg",
 "price": 29613.92,
-"sites": 10,
+"sites": 9,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3172,7 +3242,7 @@
 "code": "GV-N5060EAGLEMAX OC-8GD",
 "img": "https://resim.epey.com/1050644/k_gigabyte-geforce-rtx-5060-eagle-max-oc-8g-1.jpg",
 "price": 32999.26,
-"sites": 7,
+"sites": 6,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3185,7 +3255,7 @@
 "name": "Asus GeForce RTX 5060 LP BRK OC",
 "code": "RTX5060-O8G-LP-BRK",
 "img": "https://resim.epey.com/1030588/k_asus-geforce-rtx-5060-lp-brk-oc-1.jpg",
-"price": 28686.2,
+"price": 28686.66,
 "sites": 4,
 "score": 63,
 "cols": {
@@ -3199,8 +3269,8 @@
 "name": "MSI GeForce RTX 5060 Ventus 3X OC",
 "code": "G5060-8V3C",
 "img": "https://resim.epey.com/1020107/k_msi-geforce-rtx-5060-ventus-3x-oc-1.jpg",
-"price": 28764.0,
-"sites": 8,
+"price": 29999.9,
+"sites": 5,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3214,7 +3284,7 @@
 "code": "GV-N5060OC-8GL",
 "img": "https://resim.epey.com/1019964/k_gigabyte-geforce-rtx-5060-oc-low-profile-8g-1.jpg",
 "price": 30727.08,
-"sites": 2,
+"sites": 3,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3242,7 +3312,7 @@
 "code": "G5060-8GC",
 "img": "https://resim.epey.com/1014124/k_msi-geforce-rtx-5060-gaming-oc-1.jpg",
 "price": 26999.0,
-"sites": 13,
+"sites": 12,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3256,7 +3326,7 @@
 "code": "G506T-16S2CP",
 "img": "https://resim.epey.com/1019870/k_msi-geforce-rtx-5060-ti-shadow-2x-oc-plus-1.jpg",
 "price": 52999.99,
-"sites": 9,
+"sites": 8,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3269,8 +3339,8 @@
 "name": "Gigabyte GeForce RTX 5060 Eagle OC Ice",
 "code": "GV-N5060EAGLEOC ICE-8GD",
 "img": "https://resim.epey.com/1050650/k_gigabyte-geforce-rtx-5060-eagle-oc-ice-1.jpg",
-"price": 27249.4,
-"sites": 6,
+"price": 27819.26,
+"sites": 5,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3283,8 +3353,8 @@
 "name": "Gigabyte GeForce RTX 5060 Eagle OC",
 "code": "GV-N5060EAGLE OC-8GD",
 "img": "https://resim.epey.com/1009141/k_gigabyte-geforce-rtx-5060-eagle-oc-1.jpg",
-"price": 27261.1,
-"sites": 9,
+"price": 27819.26,
+"sites": 8,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3312,7 +3382,7 @@
 "code": "DUAL-RTX5060-O8G",
 "img": "https://resim.epey.com/1039263/k_asus-dual-geforce-rtx-5060-8gb-oc-siyah-dualrtx5060o8g-1.jpg",
 "price": 27728.8,
-"sites": 11,
+"sites": 10,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3326,7 +3396,7 @@
 "code": "DUAL-RTX5060-O8G-WHITE",
 "img": "https://resim.epey.com/1035795/k_asus-dual-geforce-rtx-5060-oc-white-1.jpg",
 "price": 29499.0,
-"sites": 12,
+"sites": 11,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3340,7 +3410,7 @@
 "code": "G5060-8I2C",
 "img": "https://resim.epey.com/1032823/k_msi-geforce-rtx-5060-8g-inspire-2x-oc-1.jpg",
 "price": 25641.0,
-"sites": 9,
+"sites": 8,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3396,7 +3466,7 @@
 "code": "G5060-8S2CM",
 "img": "https://resim.epey.com/1045140/k_msi-geforce-rtx-5060-shadow-2x-oc-max-1.jpg",
 "price": 30359.08,
-"sites": 12,
+"sites": 11,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3409,8 +3479,8 @@
 "name": "Inno3D GeForce RTX 5060 Twin X2 OC",
 "code": "N50602-08D7X-195070N",
 "img": "https://resim.epey.com/1019980/k_inno3d-geforce-rtx-5060-twin-x2-oc-1.jpg",
-"price": 29999.0,
-"sites": 4,
+"price": 45606.7,
+"sites": 2,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3423,8 +3493,8 @@
 "name": "MSI GeForce RTX 5060 Ti Shadow 2X OC 8G",
 "code": "G5060-8S2C",
 "img": "https://resim.epey.com/1019932/k_msi-geforce-rtx-5060-ti-shadow-2x-oc-plus-8g-4.jpg",
-"price": 34528.54,
-"sites": 6,
+"price": 34874.71,
+"sites": 5,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3437,8 +3507,8 @@
 "name": "MSI GeForce RTX 5060 Ventus 2X OC White",
 "code": "G5060-8V2CW",
 "img": "https://resim.epey.com/1017423/k_msi-geforce-rtx-5060-ventus-2x-oc-white-1.jpg",
-"price": 26868.03,
-"sites": 12,
+"price": 26499.0,
+"sites": 10,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3451,8 +3521,8 @@
 "name": "Gigabyte Radeon RX 9060 XT Gaming OC 16G",
 "code": "GV-R9060XTGAMING-OC-16GD",
 "img": "https://resim.epey.com/1014265/k_gigabyte-radeon-rx-9060-xt-gaming-oc-16g-1.jpg",
-"price": 32845.2,
-"sites": 9,
+"price": 32999.0,
+"sites": 7,
 "score": 63,
 "cols": {
 "4557": "16 GB",
@@ -3465,8 +3535,8 @@
 "name": "MSI GeForce RTX 5060 Shadow 2X OC",
 "code": "G5060-8S2C",
 "img": "https://resim.epey.com/1012991/k_msi-geforce-rtx-5060-shadow-2x-oc-1.jpg",
-"price": 26669.0,
-"sites": 12,
+"price": 28199.0,
+"sites": 11,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3493,8 +3563,8 @@
 "name": "XFX Swift Radeon RX 9060 XT OC Triple 16GB",
 "code": "RX-96TS316B7",
 "img": "https://resim.epey.com/1012741/k_xfx-swift-radeon-rx-9060-xt-oc-16gb-1.jpg",
-"price": 31799.0,
-"sites": 8,
+"price": 31999.0,
+"sites": 7,
 "score": 63,
 "cols": {
 "4557": "16 GB",
@@ -3535,8 +3605,8 @@
 "name": "MSI GeForce RTX 5060 Ventus 2X OC",
 "code": "G5060-8V2C",
 "img": "https://resim.epey.com/1009086/k_msi-geforce-rtx-5060-ventus-2x-oc-1.jpg",
-"price": 27261.1,
-"sites": 11,
+"price": 27549.0,
+"sites": 10,
 "score": 63,
 "cols": {
 "4557": "8 GB",
@@ -3563,8 +3633,8 @@
 "name": "Gigabyte GeForce RTX 5060 WindForce Max OC 8G",
 "code": "GV-N5060WF2MAX-OC-8GD",
 "img": "https://resim.epey.com/1035642/k_gigabyte-geforce-rtx-5060-windforce-max-oc-8g-1.jpg",
-"price": 25859.0,
-"sites": 9,
+"price": 26910.0,
+"sites": 8,
 "score": 62,
 "cols": {
 "4557": "8 GB",
@@ -3578,7 +3648,7 @@
 "code": "GV-N5060WF2OC-8GD",
 "img": "https://resim.epey.com/1009171/k_gigabyte-geforce-rtx-5060-windforce-oc-8g-1.jpg",
 "price": 28652.0,
-"sites": 10,
+"sites": 9,
 "score": 62,
 "cols": {
 "4557": "8 GB",
@@ -3605,8 +3675,8 @@
 "name": "Asus Prime Radeon RX 9060 XT OC 16GB",
 "code": "PRIME-RX9060XT-O16G",
 "img": "https://resim.epey.com/1012530/k_asus-prime-radeon-rx-9060-xt-oc-16gb-1.jpg",
-"price": 38639.08,
-"sites": 2,
+"price": 133291.0,
+"sites": 1,
 "score": 62,
 "cols": {
 "4557": "16 GB",
@@ -3619,8 +3689,8 @@
 "name": "PNY GeForce RTX 5060 Dual",
 "code": "VCG50608DFXPB1",
 "img": "https://resim.epey.com/1029144/k_pny-geforce-rtx-5060-dual-1.jpg",
-"price": 27342.75,
-"sites": 6,
+"price": 28357.29,
+"sites": 5,
 "score": 62,
 "cols": {
 "4557": "8 GB",
@@ -3633,7 +3703,7 @@
 "name": "Zotac Gaming GeForce RTX 5060 Twin Edge",
 "code": "ZT-B50600E-10M",
 "img": "https://resim.epey.com/1019335/k_zotac-gaming-geforce-rtx-5060-twin-edge-1.jpg",
-"price": 27922.24,
+"price": 27959.0,
 "sites": 8,
 "score": 62,
 "cols": {
@@ -3648,7 +3718,7 @@
 "code": "NE75060019P1-GB2063B",
 "img": "https://resim.epey.com/1012971/k_gainward-geforce-rtx-5060-ghost-1.jpg",
 "price": 27930.0,
-"sites": 6,
+"sites": 5,
 "score": 62,
 "cols": {
 "4557": "8 GB",
@@ -3662,7 +3732,7 @@
 "code": "N50602-08D7-195071N",
 "img": "https://resim.epey.com/1010960/k_inno3d-geforce-rtx-5060-twin-x2-1.jpg",
 "price": 34999.0,
-"sites": 3,
+"sites": 2,
 "score": 62,
 "cols": {
 "4557": "8 GB",
@@ -3689,22 +3759,8 @@
 "name": "MSI GeForce RTX 4070 Gaming X Slim 12G",
 "code": "",
 "img": "https://resim.epey.com/894114/k_msi-geforce-rtx-4070-gaming-x-slim-12g-1.jpg",
-"price": 186000.0,
-"sites": 4,
-"score": 62,
-"cols": {
-"4557": "12 GB",
-"4555": "2610 MHz"
-}
-},
-{
-"id": "862930",
-"url": "https://www.epey.com/ekran-karti/msi-geforce-rtx-4070-gaming-x-trio-12g.html",
-"name": "MSI GeForce RTX 4070 Gaming X Trio 12G",
-"code": "G4070GXT12",
-"img": "https://resim.epey.com/862930/k_msi-geforce-rtx-4070-gaming-x-trio-12g-1.jpg",
-"price": 36799.08,
-"sites": 2,
+"price": 187999.99,
+"sites": 3,
 "score": 62,
 "cols": {
 "4557": "12 GB",
@@ -3723,6 +3779,20 @@
 "cols": {
 "4557": "16 GB",
 "4555": "3320 MHz"
+}
+},
+{
+"id": "1075527",
+"url": "https://www.epey.com/ekran-karti/lenovo-geforce-rtx-5060.html",
+"name": "Lenovo GeForce RTX 5060",
+"code": "4X61U02753",
+"img": "https://resim.epey.com/1075527/k_lenovo-geforce-rtx-5060-1.jpg",
+"price": 39110.0,
+"sites": 1,
+"score": 62,
+"cols": {
+"4557": "8 GB",
+"4555": "2497 MHz"
 }
 },
 {
@@ -3746,21 +3816,7 @@
 "code": "11350-03-20G",
 "img": "https://resim.epey.com/1012728/k_sapphire-pulse-radeon-rx-9060-xt-16gb-1.jpg",
 "price": 29999.0,
-"sites": 4,
-"score": 62,
-"cols": {
-"4557": "16 GB",
-"4555": "3290 MHz"
-}
-},
-{
-"id": "1012540",
-"url": "https://www.epey.com/ekran-karti/sapphire-pure-radeon-rx-9060-xt-16gb.html",
-"name": "Sapphire Pure Radeon RX 9060 XT 16GB",
-"code": "11350-02-20G",
-"img": "https://resim.epey.com/1012540/k_sapphire-pure-radeon-rx-9060-xt-16gb-1.jpg",
-"price": 60447.7,
-"sites": 1,
+"sites": 3,
 "score": 62,
 "cols": {
 "4557": "16 GB",
@@ -3773,7 +3829,7 @@
 "name": "ASRock Radeon RX 9060 XT Challenger 16GB",
 "code": "RX9060XT CL 16G",
 "img": "https://resim.epey.com/1075462/k_asrock-radeon-rx-9060-xt-challenger-16gb-oc-1.jpg",
-"price": 33455.28,
+"price": 33467.77,
 "sites": 2,
 "score": 62,
 "cols": {
@@ -3788,7 +3844,7 @@
 "code": "DUAL-RX9060XT-16G",
 "img": "https://resim.epey.com/1028116/k_asus-dual-radeon-rx-9060-xt-16gb-1.jpg",
 "price": 34407.99,
-"sites": 7,
+"sites": 6,
 "score": 62,
 "cols": {
 "4557": "16 GB",
@@ -3802,7 +3858,7 @@
 "code": "RX9060XT 16G-A",
 "img": "https://resim.epey.com/1012917/k_powercolor-reaper-radeon-rx-9060-xt-16gb-1.jpg",
 "price": 32009.03,
-"sites": 6,
+"sites": 5,
 "score": 62,
 "cols": {
 "4557": "16 GB",
@@ -3843,8 +3899,8 @@
 "name": "Asus Prime Radeon RX 9060 XT OC 8GB",
 "code": "PRIME-RX9060XT-O8G",
 "img": "https://resim.epey.com/1012718/k_asus-prime-radeon-rx-9060-xt-oc-8gb-1.jpg",
-"price": 28086.86,
-"sites": 8,
+"price": 28632.24,
+"sites": 7,
 "score": 62,
 "cols": {
 "4557": "8 GB",
@@ -3863,6 +3919,20 @@
 "cols": {
 "4557": "12 GB",
 "4555": "2505 MHz"
+}
+},
+{
+"id": "862892",
+"url": "https://www.epey.com/ekran-karti/zotac-gaming-geforce-rtx-4070-twin-edge-oc.html",
+"name": "Zotac Gaming GeForce RTX 4070 Twin Edge OC",
+"code": "ZT-D40700H-10M",
+"img": "https://resim.epey.com/862892/k_zotac-gaming-geforce-rtx-4070-twin-edge-oc-1.jpg",
+"price": 39999.0,
+"sites": 1,
+"score": 62,
+"cols": {
+"4557": "12 GB",
+"4555": "2490 MHz"
 }
 },
 {
@@ -3887,20 +3957,6 @@
 "img": "https://resim.epey.com/1012739/k_xfx-swift-radeon-rx-9060-xt-oc-8gb-1.jpg",
 "price": 58638.78,
 "sites": 2,
-"score": 62,
-"cols": {
-"4557": "8 GB",
-"4555": "3320 MHz"
-}
-},
-{
-"id": "1012736",
-"url": "https://www.epey.com/ekran-karti/xfx-swift-radeon-rx-9060-xt-oc-white-8gb.html",
-"name": "XFX Swift Radeon RX 9060 XT OC White Dual 8GB",
-"code": "RX-96TSW8GWQ",
-"img": "https://resim.epey.com/1012736/k_xfx-swift-radeon-rx-9060-xt-oc-white-8gb-1.jpg",
-"price": 48241.4,
-"sites": 1,
 "score": 62,
 "cols": {
 "4557": "8 GB",
@@ -3942,7 +3998,7 @@
 "code": "RX9060XT 8G-A",
 "img": "https://resim.epey.com/1012921/k_powercolor-reaper-radeon-rx-9060-xt-8gb-1.jpg",
 "price": 23471.0,
-"sites": 5,
+"sites": 4,
 "score": 62,
 "cols": {
 "4557": "8 GB",
@@ -3956,7 +4012,7 @@
 "code": "DUAL-RX9060XT-8G",
 "img": "https://resim.epey.com/1012710/k_asus-dual-radeon-rx-9060-xt-8gb-1.jpg",
 "price": 24150.0,
-"sites": 8,
+"sites": 7,
 "score": 62,
 "cols": {
 "4557": "8 GB",
@@ -3997,8 +4053,8 @@
 "name": "Asus Dual Radeon RX 7700 XT OC Edition 12GB GDDR6",
 "code": "",
 "img": "https://resim.epey.com/920798/k_asus-dual-radeon-rx-7700-xt-oc-edition-12gb-gddr6-1.jpg",
-"price": 22999.08,
-"sites": 2,
+"price": 47999.9,
+"sites": 1,
 "score": 61,
 "cols": {
 "4557": "12 GB",
@@ -4054,7 +4110,7 @@
 "code": "",
 "img": "https://resim.epey.com/1002226/k_axle-geforce-rtx-3080-ti-1.jpg",
 "price": 42537.0,
-"sites": 7,
+"sites": 6,
 "score": 61,
 "cols": {
 "4557": "12 GB",
@@ -4090,27 +4146,13 @@
 }
 },
 {
-"id": "987781",
-"url": "https://www.epey.com/ekran-karti/hp-rtx-5000-ada-generation.html",
-"name": "HP RTX 5000 Ada Generation",
-"code": "8D6B6AA",
-"img": "https://resim.epey.com/987781/k_hp-rtx-5000-ada-generation-1.jpg",
-"price": 512313.1,
-"sites": 1,
-"score": 61,
-"cols": {
-"4557": "32 GB",
-"4555": "2550 MHz"
-}
-},
-{
 "id": "1037185",
 "url": "https://www.epey.com/ekran-karti/xfx-swift-radeon-rx-9060.html",
 "name": "XFX Swift Radeon RX 9060",
 "code": "RX-96SWFT8BC",
 "img": "https://resim.epey.com/1037185/k_xfx-swift-radeon-rx-9060-1.jpg",
-"price": 18378.81,
-"sites": 4,
+"price": 18378.92,
+"sites": 3,
 "score": 60,
 "cols": {
 "4557": "8 GB",
@@ -4152,7 +4194,7 @@
 "code": "PRIME-RTX5050-O8G",
 "img": "https://resim.epey.com/1017224/k_asus-prime-geforce-rtx-5050-oc-1.jpg",
 "price": 23505.71,
-"sites": 9,
+"sites": 8,
 "score": 58,
 "cols": {
 "4557": "8 GB",
@@ -4166,7 +4208,7 @@
 "code": "DUAL-RTX5050-O8G",
 "img": "https://resim.epey.com/1016910/k_asus-dual-geforce-rtx-5050-oc-1.jpg",
 "price": 21620.0,
-"sites": 11,
+"sites": 10,
 "score": 58,
 "cols": {
 "4557": "8 GB",
@@ -4180,7 +4222,7 @@
 "code": "G5050-8GC",
 "img": "https://resim.epey.com/1032826/k_msi-geforce-rtx-5050-gaming-oc-1.jpg",
 "price": 19999.0,
-"sites": 13,
+"sites": 12,
 "score": 58,
 "cols": {
 "4557": "8 GB",
@@ -4194,7 +4236,7 @@
 "code": "G5050-8S2C",
 "img": "https://resim.epey.com/1019372/k_msi-geforce-rtx-5050-shadow-2x-oc-1.jpg",
 "price": 19609.0,
-"sites": 13,
+"sites": 12,
 "score": 58,
 "cols": {
 "4557": "8 GB",
@@ -4222,21 +4264,7 @@
 "code": "G5050-8V2C",
 "img": "https://resim.epey.com/1025527/k_msi-geforce-rtx-5050-ventus-2x-oc-1.jpg",
 "price": 20989.0,
-"sites": 13,
-"score": 58,
-"cols": {
-"4557": "8 GB",
-"4555": "2602 MHz"
-}
-},
-{
-"id": "1018373",
-"url": "https://www.epey.com/ekran-karti/zotac-gaming-geforce-rtx-5050-twin-edge-oc.html",
-"name": "Zotac Gaming GeForce RTX 5050 Twin Edge OC",
-"code": "ZT-B50500H-10M",
-"img": "https://resim.epey.com/1018373/k_zotac-gaming-geforce-rtx-5050-twin-edge-oc-1.jpg",
-"price": 32338.4,
-"sites": 1,
+"sites": 12,
 "score": 58,
 "cols": {
 "4557": "8 GB",
@@ -4250,7 +4278,7 @@
 "code": "GV-N5050WF2OC-8GD",
 "img": "https://resim.epey.com/1029122/k_gigabyte-geforce-rtx-5050-windforce-oc-8g-1.jpg",
 "price": 20251.0,
-"sites": 8,
+"sites": 7,
 "score": 58,
 "cols": {
 "4557": "8 GB",
@@ -4264,7 +4292,7 @@
 "code": "MS-RTX5050-TRW-8G",
 "img": "https://resim.epey.com/1062798/k_maxsun-terminator-geforce-rtx-5050-1.jpg",
 "price": 18288.51,
-"sites": 4,
+"sites": 3,
 "score": 58,
 "cols": {
 "4557": "8 GB",
@@ -4278,7 +4306,7 @@
 "code": "",
 "img": "https://resim.epey.com/1055438/k_colorful-geforce-rtx-5050-gaming-duo-8gb-v-1.jpg",
 "price": 28821.0,
-"sites": 5,
+"sites": 4,
 "score": 58,
 "cols": {
 "4557": "8 GB",
@@ -4291,7 +4319,7 @@
 "name": "PNY GeForce RTX 5050 Dual",
 "code": "VCG50508DFXPB1",
 "img": "https://resim.epey.com/1035630/k_pny-geforce-rtx-5050-dual-1.jpg",
-"price": 47339.87,
+"price": 47340.64,
 "sites": 1,
 "score": 58,
 "cols": {
@@ -4333,7 +4361,7 @@
 "name": "Palit GeForce RTX 5050 Dual",
 "code": "NE65050019P1-GB2070D",
 "img": "https://resim.epey.com/1019371/k_palit-geforce-rtx-5050-dual-1.jpg",
-"price": 19999.0,
+"price": 20804.0,
 "sites": 3,
 "score": 58,
 "cols": {
@@ -4347,7 +4375,7 @@
 "name": "Zotac Gaming GeForce RTX 5050 Twin Edge",
 "code": "",
 "img": "https://resim.epey.com/1018050/k_zotac-gaming-geforce-rtx-5050-twin-edge-1.jpg",
-"price": 39074.7,
+"price": 22529.0,
 "sites": 2,
 "score": 58,
 "cols": {
@@ -4356,13 +4384,83 @@
 }
 },
 {
+"id": "889701",
+"url": "https://www.epey.com/ekran-karti/msi-geforce-rtx-4060-ti-gaming-x-16g.html",
+"name": "MSI GeForce RTX 4060 Ti Gaming X 16G",
+"code": "",
+"img": "https://resim.epey.com/889701/k_msi-geforce-rtx-4060-ti-gaming-x-16g-1.jpg",
+"price": 36799.08,
+"sites": 1,
+"score": 58,
+"cols": {
+"4557": "16 GB",
+"4555": "2640 MHz"
+}
+},
+{
+"id": "933601",
+"url": "https://www.epey.com/ekran-karti/zotac-gaming-geforce-rtx-4060-ti-16gb-twin-edge.html",
+"name": "Zotac Gaming GeForce RTX 4060 Ti 16GB Twin Edge",
+"code": "ZT-D40620E-10M",
+"img": "https://resim.epey.com/933601/k_zotac-gaming-geforce-rtx-4060-ti-16gb-twin-edge-1.jpg",
+"price": 35879.08,
+"sites": 2,
+"score": 58,
+"cols": {
+"4557": "16 GB",
+"4555": "2535 MHz"
+}
+},
+{
+"id": "1075555",
+"url": "https://www.epey.com/ekran-karti/nvidia-rtx-pro-2000.html",
+"name": "NVIDIA RTX Pro 2000",
+"code": "",
+"img": "https://resim.epey.com/1075555/k_pny-geforce-rtx-pro-2000-16gb-vcnrtxpro2000-sb-3536403404147-1.jpg",
+"price": 132767.61,
+"sites": 1,
+"score": 58,
+"cols": {
+"4557": "16 GB",
+"4555": "1957 MHz"
+}
+},
+{
+"id": "1075554",
+"url": "https://www.epey.com/ekran-karti/hp-rtx-pro-2000.html",
+"name": "HP RTX Pro 2000",
+"code": "",
+"img": "https://resim.epey.com/1075554/k_pny-geforce-rtx-pro-2000-16gb-vcnrtxpro2000-sb-3536403404147-1.jpg",
+"price": 93434.8,
+"sites": 1,
+"score": 58,
+"cols": {
+"4557": "16 GB",
+"4555": "1957 MHz"
+}
+},
+{
+"id": "1075523",
+"url": "https://www.epey.com/ekran-karti/lenovo-rtx-pro-2000.html",
+"name": "Lenovo RTX Pro 2000",
+"code": "4X61T95638",
+"img": "https://resim.epey.com/1075523/k_pny-geforce-rtx-pro-2000-16gb-vcnrtxpro2000-sb-3536403404147-1.jpg",
+"price": 86309.0,
+"sites": 2,
+"score": 58,
+"cols": {
+"4557": "16 GB",
+"4555": "1957 MHz"
+}
+},
+{
 "id": "1039085",
 "url": "https://www.epey.com/ekran-karti/pny-rtx-pro-2000.html",
 "name": "PNY RTX Pro 2000",
 "code": "VCNRTXPRO2000-SB",
 "img": "https://resim.epey.com/1039085/k_pny-geforce-rtx-pro-2000-16gb-vcnrtxpro2000-sb-3536403404147-1.jpg",
-"price": 89292.1,
-"sites": 9,
+"price": 90601.78,
+"sites": 8,
 "score": 58,
 "cols": {
 "4557": "16 GB",
@@ -4376,7 +4474,7 @@
 "code": "GV-N406TGAMING OC-8GD",
 "img": "https://resim.epey.com/886115/k_gigabyte-geforce-rtx-4060-ti-gaming-oc-8g-1.jpg",
 "price": 33029.0,
-"sites": 4,
+"sites": 3,
 "score": 58,
 "cols": {
 "4557": "8 GB",
@@ -4404,25 +4502,11 @@
 "code": "GV-N406TEAGLE OC-8GD",
 "img": "https://resim.epey.com/869354/k_gigabyte-geforce-rtx-4060-ti-eagle-8g-gv-n406teagle-oc-8gd-1.jpg",
 "price": 31139.0,
-"sites": 3,
+"sites": 2,
 "score": 58,
 "cols": {
 "4557": "8 GB",
 "4555": "2550 MHz"
-}
-},
-{
-"id": "872314",
-"url": "https://www.epey.com/ekran-karti/galax-geforce-rtx-4060-ti-8gb-ex.html",
-"name": "Galax GeForce RTX 4060 Ti 8GB EX",
-"code": "46ISL8MD8AEX",
-"img": "https://resim.epey.com/872314/k_galax-geforce-rtx-4060-ti-8gb-ex-1.jpg",
-"price": 25379.06,
-"sites": 1,
-"score": 57,
-"cols": {
-"4557": "8 GB",
-"4555": "2640 MHz"
 }
 },
 {
@@ -4445,8 +4529,8 @@
 "name": "Asus Dual GeForce RTX 4060 Ti V2 OC Edition 8GB GDDR6",
 "code": "DUAL-RTX4060TI-O8G-V2",
 "img": "https://resim.epey.com/970069/k_asus-dual-geforce-rtx-4060-ti-v2-oc-edition-8gb-gddr6-1.jpg",
-"price": 25635.6,
-"sites": 2,
+"price": 27259.06,
+"sites": 1,
 "score": 57,
 "cols": {
 "4557": "8 GB",
@@ -4460,7 +4544,7 @@
 "code": "DUAL-RTX4060TI-O8G-EVO",
 "img": "https://resim.epey.com/931005/k_asus-dual-geforce-rtx-4060-ti-evo-oc-edition-1.jpg",
 "price": 30329.66,
-"sites": 3,
+"sites": 2,
 "score": 57,
 "cols": {
 "4557": "8 GB",
@@ -4515,7 +4599,7 @@
 "name": "Gigabyte GeForce RTX 4060 Ti Windforce OC 8G",
 "code": "GV-N406TWF2OC-8GD",
 "img": "https://resim.epey.com/886642/k_gigabyte-geforce-rtx-4060-ti-windforce-oc-8g-1.jpg",
-"price": 27259.06,
+"price": 26679.08,
 "sites": 2,
 "score": 57,
 "cols": {
@@ -4572,7 +4656,7 @@
 "code": "",
 "img": "https://resim.epey.com/982179/k_intel-arc-b580-1.jpg",
 "price": 19992.52,
-"sites": 4,
+"sites": 3,
 "score": 55,
 "cols": {
 "4557": "12 GB",
@@ -4622,27 +4706,13 @@
 }
 },
 {
-"id": "877425",
-"url": "https://www.epey.com/ekran-karti/gainward-geforce-rtx-4060-ghost-oc.html",
-"name": "Gainward GeForce RTX 4060 Ghost OC",
-"code": "NE64060T19P1-1070B",
-"img": "https://resim.epey.com/877425/k_gainward-geforce-rtx-4060-ghost-oc-1.jpg",
-"price": 21849.05,
-"sites": 1,
-"score": 55,
-"cols": {
-"4557": "8 GB",
-"4555": "2670 MHz"
-}
-},
-{
 "id": "870757",
 "url": "https://www.epey.com/ekran-karti/sapphire-pulse-radeon-rx-7600-8gb.html",
 "name": "Sapphire Pulse Radeon RX 7600 8GB",
 "code": "11324-01-20G",
 "img": "https://resim.epey.com/870757/k_sapphire-pulse-radeon-rx-7600-8gb-1.jpg",
-"price": 17387.08,
-"sites": 5,
+"price": 16559.08,
+"sites": 4,
 "score": 55,
 "cols": {
 "4557": "8 GB",
@@ -4711,7 +4781,7 @@
 "name": "Asus Dual GeForce RTX 4060 OC Edition White 8GB GDDR6",
 "code": "DUAL-RTX4060-O8G-WHITE",
 "img": "https://resim.epey.com/926756/k_asus-dual-geforce-rtx-4060-oc-edition-white-8gb-gddr6-1.jpg",
-"price": 31019.06,
+"price": 37111.88,
 "sites": 2,
 "score": 55,
 "cols": {
@@ -4726,7 +4796,7 @@
 "code": "RX-76PSWFTFY",
 "img": "https://resim.epey.com/869513/k_xfx-speedster-swft-210-radeon-rx-7600-core-gaming-8gb-1.jpg",
 "price": 17963.0,
-"sites": 9,
+"sites": 8,
 "score": 55,
 "cols": {
 "4557": "8 GB",
@@ -4782,39 +4852,11 @@
 "code": "8GD6XP6IP3R",
 "img": "https://resim.epey.com/948955/k_axle-geforce-rtx-3070-ti-1.jpg",
 "price": 24298.0,
-"sites": 8,
+"sites": 7,
 "score": 55,
 "cols": {
 "4557": "8 GB",
 "4555": "1770 MHz"
-}
-},
-{
-"id": "893299",
-"url": "https://www.epey.com/ekran-karti/colorful-geforce-rtx-4060-nb-duo-8gb-v.html",
-"name": "Colorful GeForce RTX 4060 NB DUO 8GB-V",
-"code": "",
-"img": "https://resim.epey.com/893299/k_colorful-geforce-rtx-4060-nb-duo-8gb-v-1.jpg",
-"price": 21619.06,
-"sites": 1,
-"score": 55,
-"cols": {
-"4557": "8 GB",
-"4555": "2460 MHz"
-}
-},
-{
-"id": "875876",
-"url": "https://www.epey.com/ekran-karti/inno3d-geforce-rtx-4060-twin-x2-8gb.html",
-"name": "Inno3D GeForce RTX 4060 Twin X2 8GB",
-"code": "N40602-08D6-173051N",
-"img": "https://resim.epey.com/875876/k_inno3d-geforce-rtx-4060-twin-x2-8gb-2.jpg",
-"price": 31000.0,
-"sites": 1,
-"score": 55,
-"cols": {
-"4557": "8 GB",
-"4555": "2460 MHz"
 }
 },
 {
@@ -4824,7 +4866,7 @@
 "code": "NED307T019P2-1046X",
 "img": "https://resim.epey.com/732461/k_gainward-geforce-rtx-3070-ti-phoenix-1.jpg",
 "price": 47235.63,
-"sites": 5,
+"sites": 4,
 "score": 55,
 "cols": {
 "4557": "8 GB",
@@ -4871,20 +4913,6 @@
 "cols": {
 "4557": "8 GB",
 "4555": "2655 MHz"
-}
-},
-{
-"id": "732426",
-"url": "https://www.epey.com/ekran-karti/inno3d-geforce-rtx-3070-ichill-x4-lhr.html",
-"name": "Inno3D GeForce RTX 3070 iChill X4 LHR",
-"code": "C30704-08D6X-1710VA35H",
-"img": "https://resim.epey.com/732426/k_inno3d-geforce-rtx-3070-ichill-x4-lhr-2.jpg",
-"price": 21619.06,
-"sites": 1,
-"score": 53,
-"cols": {
-"4557": "8 GB",
-"4555": "1785 MHz"
 }
 },
 {
@@ -5196,20 +5224,6 @@
 }
 },
 {
-"id": "755085",
-"url": "https://www.epey.com/ekran-karti/asus-dual-geforce-rtx-3060-ti-v2-oc-edition-8gb-gddr6.html",
-"name": "Asus Dual GeForce RTX 3060 Ti V2 OC Edition 8GB GDDR6",
-"code": "DUAL-RTX3060TI-O8G-V2",
-"img": "https://resim.epey.com/755085/k_asus-dual-geforce-rtx-3060-ti-v2-oc-edition-8gb-gddr6-1.jpg",
-"price": 20239.08,
-"sites": 1,
-"score": 51,
-"cols": {
-"4557": "8 GB",
-"4555": "1710 MHz"
-}
-},
-{
 "id": "639895",
 "url": "https://www.epey.com/ekran-karti/evga-geforce-rtx-3060-ti-xc-gaming.html",
 "name": "Evga GeForce RTX 3060 Ti XC Gaming",
@@ -5230,7 +5244,7 @@
 "code": "GV-N306TEAGLE OC-8GD",
 "img": "https://resim.epey.com/633220/k_gigabyte-geforce-rtx-3060-ti-eagle-oc-8g-1.jpg",
 "price": 20239.08,
-"sites": 2,
+"sites": 1,
 "score": 51,
 "cols": {
 "4557": "8 GB",
@@ -5272,20 +5286,6 @@
 "code": "VCG3060T8DFMPB",
 "img": "https://resim.epey.com/638569/k_pny-geforce-rtx-3060-ti-8gb-uprising-dual-fan-1.jpg",
 "price": 159000.0,
-"sites": 1,
-"score": 51,
-"cols": {
-"4557": "8 GB",
-"4555": "1665 MHz"
-}
-},
-{
-"id": "633217",
-"url": "https://www.epey.com/ekran-karti/zotac-gaming-geforce-rtx-3060-ti-twin-edge.html",
-"name": "Zotac Gaming GeForce RTX 3060 Ti Twin Edge",
-"code": "ZT-A30610E-10M",
-"img": "https://resim.epey.com/633217/k_zotac-gaming-geforce-rtx-3060-ti-twin-edge-1.jpg",
-"price": 20679.06,
 "sites": 1,
 "score": 51,
 "cols": {
@@ -5356,7 +5356,7 @@
 "code": "90YV0GB2-M0NA10",
 "img": "https://resim.epey.com/860634/k_asus-dual-geforce-rtx-3060-v2-oc-edition-12gb-1.jpg",
 "price": 29039.0,
-"sites": 7,
+"sites": 6,
 "score": 49,
 "cols": {
 "4557": "12 GB",
@@ -5369,8 +5369,8 @@
 "name": "MSI GeForce RTX 3060 Ventus 2X 12G OC",
 "code": "",
 "img": "https://resim.epey.com/673964/k_msi-geforce-rtx-3060-ventus-2x-12g-oc-1.jpg",
-"price": 23644.0,
-"sites": 13,
+"price": 24379.99,
+"sites": 12,
 "score": 49,
 "cols": {
 "4557": "12 GB",
@@ -5398,7 +5398,7 @@
 "code": "",
 "img": "https://resim.epey.com/1075476/k_colorful-battleax-geforce-rtx-3060-duo-12gb-v2-v-1.jpg",
 "price": 21533.03,
-"sites": 3,
+"sites": 2,
 "score": 49,
 "cols": {
 "4557": "12 GB",
@@ -5411,8 +5411,8 @@
 "name": "Biostar GeForce RTX 3060 12GB",
 "code": "VN3606RML9",
 "img": "https://resim.epey.com/1062797/k_biostar-geforce-rtx-3060-1.jpg",
-"price": 25028.0,
-"sites": 3,
+"price": 25297.5,
+"sites": 2,
 "score": 49,
 "cols": {
 "4557": "12 GB",
@@ -5439,8 +5439,8 @@
 "name": "Colorful GeForce RTX 3060 NB Duo 12G V2 L-V",
 "code": "",
 "img": "https://resim.epey.com/766123/k_colorful-geforce-rtx-3060-nb-duo-12g-v2-lv-1.jpg",
-"price": 24644.1,
-"sites": 3,
+"price": 27600.0,
+"sites": 2,
 "score": 49,
 "cols": {
 "4557": "12 GB",
@@ -5523,7 +5523,7 @@
 "name": "HP RTX A4500",
 "code": "5S458AA",
 "img": "https://resim.epey.com/952787/k_hp-rtx-a4500-5s458aa-1.jpg",
-"price": 175581.52,
+"price": 175584.37,
 "sites": 2,
 "score": 48,
 "cols": {
@@ -5537,7 +5537,7 @@
 "name": "PNY RTX A4500",
 "code": "VCNRTXA4500-PB",
 "img": "https://resim.epey.com/754432/k_pny-rtx-a4500-1.jpg",
-"price": 110970.4,
+"price": 130872.0,
 "sites": 7,
 "score": 48,
 "cols": {
@@ -5551,8 +5551,8 @@
 "name": "PNY RTX A2000 16GB",
 "code": "VCNRTX2000ADA-SB",
 "img": "https://resim.epey.com/949529/k_pny-rtx-a2000-1.jpg",
-"price": 56544.3,
-"sites": 7,
+"price": 56731.8,
+"sites": 6,
 "score": 48,
 "cols": {
 "4557": "16 GB",
@@ -5602,6 +5602,20 @@
 }
 },
 {
+"id": "676814",
+"url": "https://www.epey.com/ekran-karti/sapphire-nitro-plus-radeon-rx-6700-xt.html",
+"name": "Sapphire Nitro+ Radeon RX 6700 XT",
+"code": "11306-01-20G",
+"img": "https://resim.epey.com/676814/k_sapphire-nitro-plus-radeon-rx-6700-xt-1.png",
+"price": 22079.08,
+"sites": 2,
+"score": 46,
+"cols": {
+"4557": "12 GB",
+"4555": "2622 MHz"
+}
+},
+{
 "id": "691405",
 "url": "https://www.epey.com/ekran-karti/xfx-speedster-swft-309-radeon-rx-6700-xt-core.html",
 "name": "XFX Speedster SWFT 309 Radeon RX 6700 XT Core",
@@ -5621,8 +5635,8 @@
 "name": "Asus Dual GeForce RTX 3050 V2 OC Edition 8GB",
 "code": "DUAL-RTX3050-O8G-V2",
 "img": "https://resim.epey.com/902176/k_asus-dual-geforce-rtx-3050-v2-oc-edition-8gb-1.jpg",
-"price": 22542.3,
-"sites": 8,
+"price": 22759.0,
+"sites": 7,
 "score": 45,
 "cols": {
 "4557": "8 GB",
@@ -5649,8 +5663,8 @@
 "name": "MSI GeForce RTX 3050 Ventus 2X XS 8G OC",
 "code": "",
 "img": "https://resim.epey.com/955858/k_msi-geforce-rtx-3050-ventus-2x-xs-8g-oc-1.jpg",
-"price": 17055.23,
-"sites": 12,
+"price": 18756.22,
+"sites": 11,
 "score": 45,
 "cols": {
 "4557": "8 GB",
@@ -5706,7 +5720,7 @@
 "code": "AX-RTX3050/8GD6P8DIP",
 "img": "https://resim.epey.com/947919/k_axle-geforce-rtx-3050-8gb-gddr6-ax-rtx3050-8gd6p8dip-1.jpg",
 "price": 16711.8,
-"sites": 9,
+"sites": 8,
 "score": 45,
 "cols": {
 "4557": "8 GB",
@@ -5720,7 +5734,7 @@
 "code": "AF3050-8GD6H5",
 "img": "https://resim.epey.com/942510/k_afox-geforce-rtx-3050-8gb-1.jpg",
 "price": 16979.0,
-"sites": 5,
+"sites": 4,
 "score": 45,
 "cols": {
 "4557": "8 GB",
@@ -5747,7 +5761,7 @@
 "name": "PNY GeForce RTX 3050 8GB Verto Dual Fan Edition",
 "code": "VCG30508DFBPB1",
 "img": "https://resim.epey.com/813390/k_pny-geforce-rtx-3050-8gb-verto-dual-fan-edition-1.jpg",
-"price": 38336.93,
+"price": 38337.54,
 "sites": 1,
 "score": 45,
 "cols": {
@@ -5775,8 +5789,8 @@
 "name": "HP RTX 2000 Ada Generation",
 "code": "8D6B8AA",
 "img": "https://resim.epey.com/975879/k_nvidia-rtx-2000-ada-16gb-3536403399160-1.jpg",
-"price": 56369.1,
-"sites": 2,
+"price": 59717.93,
+"sites": 1,
 "score": 45,
 "cols": {
 "4557": "16 GB",
@@ -5790,7 +5804,7 @@
 "code": "VCNRTX2000ADA-PB",
 "img": "https://resim.epey.com/970275/k_nvidia-rtx-2000-ada-16gb-3536403399160-1.jpg",
 "price": 56273.0,
-"sites": 5,
+"sites": 4,
 "score": 45,
 "cols": {
 "4557": "16 GB",
@@ -5832,7 +5846,7 @@
 "code": "90YV0K60-M0NA00",
 "img": "https://resim.epey.com/925585/k_asus-dual-geforce-rtx-3050-oc-edition-6gb-1.jpg",
 "price": 14167.08,
-"sites": 13,
+"sites": 12,
 "score": 45,
 "cols": {
 "4557": "6 GB",
@@ -5846,7 +5860,7 @@
 "code": "",
 "img": "https://resim.epey.com/1029149/k_msi-geforce-rtx-3050-ventus-2x-e-6g-oc-1.jpg",
 "price": 17019.08,
-"sites": 12,
+"sites": 11,
 "score": 45,
 "cols": {
 "4557": "6 GB",
@@ -5873,8 +5887,8 @@
 "name": "MSI GeForce RTX 3050 LP 6G OC",
 "code": "",
 "img": "https://resim.epey.com/924712/k_msi-geforce-rtx-3050-lp-6g-oc-1.jpg",
-"price": 15199.0,
-"sites": 9,
+"price": 14198.0,
+"sites": 8,
 "score": 45,
 "cols": {
 "4557": "6 GB",
@@ -5915,7 +5929,7 @@
 "name": "Biostar GeForce RTX 3050 6GB",
 "code": "VN3516RF68-6GB",
 "img": "https://resim.epey.com/1048273/k_biostar-geforce-rtx-3050-6gb-2.jpg",
-"price": 16946.58,
+"price": 16980.58,
 "sites": 1,
 "score": 45,
 "cols": {
@@ -5943,7 +5957,7 @@
 "name": "PNY GeForce RTX 3050 Verto Dual 6GB",
 "code": "VCG30506DFXPB1",
 "img": "https://resim.epey.com/996459/k_pny-geforce-rtx-3050-verto-dual-6gb-1.jpg",
-"price": 26160.99,
+"price": 26161.43,
 "sites": 1,
 "score": 45,
 "cols": {
@@ -6120,6 +6134,20 @@
 }
 },
 {
+"id": "723362",
+"url": "https://www.epey.com/ekran-karti/sapphire-pulse-radeon-rx-6600-gaming-8gb.html",
+"name": "Sapphire Pulse Radeon RX 6600 Gaming 8GB",
+"code": "11310-01-20G",
+"img": "https://resim.epey.com/723362/k_sapphire-pulse-radeon-rx-6600-gaming-8gb-1.jpg",
+"price": 15639.08,
+"sites": 2,
+"score": 41,
+"cols": {
+"4557": "8 GB",
+"4555": "2491 MHz"
+}
+},
+{
 "id": "723332",
 "url": "https://www.epey.com/ekran-karti/powercolor-fighter-radeon-rx-6600-8gb-gddr6.html",
 "name": "PowerColor Fighter Radeon RX 6600 8GB GDDR6",
@@ -6266,7 +6294,7 @@
 "code": "",
 "img": "https://resim.epey.com/1050189/k_dell-rtx-a1000-1.jpg",
 "price": 37206.0,
-"sites": 5,
+"sites": 4,
 "score": 38,
 "cols": {
 "4557": "8 GB",
@@ -6280,7 +6308,7 @@
 "code": "VCNRTXA1000-SB",
 "img": "https://resim.epey.com/949541/k_pny-rtx-a1000-1.jpg",
 "price": 37206.0,
-"sites": 9,
+"sites": 8,
 "score": 38,
 "cols": {
 "4557": "8 GB",
@@ -6448,7 +6476,7 @@
 "code": "AFRX580-8192D5H3-V3",
 "img": "https://resim.epey.com/942395/k_afox-radeon-rx-580-2048sp-afrx580-8192d5h3-v3-1.jpg",
 "price": 9950.0,
-"sites": 5,
+"sites": 4,
 "score": 36,
 "cols": {
 "4557": "8 GB",
@@ -6475,7 +6503,7 @@
 "name": "PNY Quadro RTX 4000",
 "code": "VCQRTX4000-PB",
 "img": "https://resim.epey.com/638613/k_pny-quadro-rtx-4000-8gb-1.jpg",
-"price": 55999.0,
+"price": 59000.0,
 "sites": 1,
 "score": 36,
 "cols": {
@@ -6504,7 +6532,7 @@
 "code": "",
 "img": "https://resim.epey.com/952659/k_pny-rtx-a400-1.jpg",
 "price": 15483.0,
-"sites": 9,
+"sites": 8,
 "score": 33,
 "cols": {
 "4557": "4 GB",
@@ -6561,6 +6589,20 @@
 "img": "https://resim.epey.com/637206/k_asrock-radeon-rx-5600-xt-challenger-d-6g-oc-1.jpg",
 "price": 28352.0,
 "sites": 1,
+"score": 32,
+"cols": {
+"4557": "6 GB",
+"4555": "1620 MHz"
+}
+},
+{
+"id": "415040",
+"url": "https://www.epey.com/ekran-karti/msi-radeon-rx-5600-xt-mech-oc.html",
+"name": "MSI Radeon RX 5600 XT Mech OC",
+"code": "",
+"img": "https://resim.epey.com/415040/k_msi-radeon-rx-5600-xt-mech-oc-1.png",
+"price": 11959.08,
+"sites": 2,
 "score": 32,
 "cols": {
 "4557": "6 GB",
@@ -6657,8 +6699,8 @@
 "name": "Peladn Radeon RX 5500 8GB",
 "code": "",
 "img": "https://resim.epey.com/1048270/k_peladn-radeon-rx-5500-8gb-1.jpg",
-"price": 12883.1,
-"sites": 3,
+"price": 13999.0,
+"sites": 2,
 "score": 31,
 "cols": {
 "4557": "8 GB",
@@ -6671,7 +6713,7 @@
 "name": "Axle GeForce GTX 1660 Super 1.12",
 "code": "AX-GTX1660S/6GD6P2DIP",
 "img": "https://resim.epey.com/841194/k_axle-geforce-gtx-1660-super-1-12-1.jpg",
-"price": 16271.37,
+"price": 16551.91,
 "sites": 3,
 "score": 31,
 "cols": {
@@ -6742,7 +6784,7 @@
 "code": "ZT-T16620F-10L",
 "img": "https://resim.epey.com/397289/k_zotac-gaming-geforce-gtx1660-super-6gb-zt-t16620f-10l-1.jpg",
 "price": 21564.08,
-"sites": 4,
+"sites": 3,
 "score": 31,
 "cols": {
 "4557": "6 GB",
@@ -6797,8 +6839,8 @@
 "name": "Afox GeForce GTX 1660 Ti 6GB GDDR6",
 "code": "AF1660TI-6144D6H4",
 "img": "https://resim.epey.com/845351/k_afox-geforce-gtx-1660-ti-6gb-gddr6-1.jpg",
-"price": 12880.0,
-"sites": 5,
+"price": 12899.0,
+"sites": 4,
 "score": 30,
 "cols": {
 "4557": "6 GB",
@@ -6839,8 +6881,8 @@
 "name": "Seclife GeForce GTX 1660 Super",
 "code": "",
 "img": "https://resim.epey.com/1022717/k_seclife-geforce-gtx-1660-super-1.jpg",
-"price": 11380.2,
-"sites": 4,
+"price": 12411.34,
+"sites": 3,
 "score": 30,
 "cols": {
 "4557": "6 GB",
@@ -7016,6 +7058,20 @@
 }
 },
 {
+"id": "176924",
+"url": "https://www.epey.com/ekran-karti/sapphire-pulse-radeon-rx-590-8g-g5.html",
+"name": "Sapphire Pulse Radeon RX 590 8G G5",
+"code": "11289-06-20G",
+"img": "https://resim.epey.com/176924/k_sapphire-rx-590-8g-d5-11289-06-20g-1.jpg",
+"price": 11999.0,
+"sites": 1,
+"score": 28,
+"cols": {
+"4557": "8 GB",
+"4555": "1545 MHz"
+}
+},
+{
 "id": "440139",
 "url": "https://www.epey.com/ekran-karti/xfx-radeon-rx-580-gts-xxx-edition-8gb.html",
 "name": "XFX Radeon RX 580 GTS XXX Edition 8GB",
@@ -7063,8 +7119,8 @@
 "name": "Seclife Radeon RX 580 8GB",
 "code": "",
 "img": "https://resim.epey.com/952837/k_seclife-radeon-rx-580-8gb-1.jpg",
-"price": 8548.5,
-"sites": 4,
+"price": 9320.59,
+"sites": 3,
 "score": 28,
 "cols": {
 "4557": "8 GB",
@@ -7114,20 +7170,6 @@
 }
 },
 {
-"id": "615462",
-"url": "https://www.epey.com/ekran-karti/msi-geforce-gtx-1650-d6-ventus-xs.html",
-"name": "MSI GeForce GTX 1650 D6 Ventus XS",
-"code": "",
-"img": "https://resim.epey.com/615462/k_msi-geforce-gtx-1650-d6-ventus-xs-1.jpg",
-"price": 21119.0,
-"sites": 1,
-"score": 28,
-"cols": {
-"4557": "4 GB",
-"4555": "1590 MHz"
-}
-},
-{
 "id": "611858",
 "url": "https://www.epey.com/ekran-karti/asus-tuf-gaming-geforce-gtx-1650-4gb-gddr6.html",
 "name": "Asus TUF Gaming P GeForce GTX 1650 4GB GDDR6",
@@ -7147,8 +7189,8 @@
 "name": "Peladn Radeon RX 580 8GB",
 "code": "",
 "img": "https://resim.epey.com/1048269/k_peladn-radeon-rx-580-8gb-1.jpg",
-"price": 11777.9,
-"sites": 4,
+"price": 11854.19,
+"sites": 3,
 "score": 28,
 "cols": {
 "4557": "8 GB",
@@ -7162,7 +7204,7 @@
 "code": "",
 "img": "https://resim.epey.com/893524/k_turbox-antares-volga-radeon-rx-580-8gb-1.jpg",
 "price": 8449.0,
-"sites": 4,
+"sites": 3,
 "score": 28,
 "cols": {
 "4557": "8 GB",
@@ -7189,8 +7231,8 @@
 "name": "Axle Radeon RX 580 8GB GDDR5",
 "code": "AX-RX580/8GD5P6IP2",
 "img": "https://resim.epey.com/943560/k_axle-radeon-rx-580-8gb-gddr5-1.jpg",
-"price": 8796.9,
-"sites": 9,
+"price": 8799.0,
+"sites": 8,
 "score": 28,
 "cols": {
 "4557": "8 GB",
@@ -7246,7 +7288,7 @@
 "code": "20X22AA",
 "img": "https://resim.epey.com/835272/k_hp-quadro-t1000-1.jpg",
 "price": 29417.28,
-"sites": 3,
+"sites": 2,
 "score": 26,
 "cols": {
 "4557": "4 GB",
@@ -7274,7 +7316,7 @@
 "code": "VCNT1000-PB",
 "img": "https://resim.epey.com/713956/k_pny-quadro-t1000-1.jpg",
 "price": 43542.61,
-"sites": 2,
+"sites": 1,
 "score": 26,
 "cols": {
 "4557": "4 GB",
@@ -7343,8 +7385,8 @@
 "name": "Afox GeForce GTX 1050 Ti Dual",
 "code": "AF1050TI-4096D5H5",
 "img": "https://resim.epey.com/426728/k_afox-geforce-gtx-1050-ti-dual-1.jpg",
-"price": 11323.0,
-"sites": 5,
+"price": 12589.9,
+"sites": 3,
 "score": 25,
 "cols": {
 "4557": "4 GB",
@@ -7422,20 +7464,6 @@
 }
 },
 {
-"id": "369852",
-"url": "https://www.epey.com/ekran-karti/asus-arez-phoenix-radeon-rx-550-2gb-gddr5.html",
-"name": "Asus Arez Phoenix Radeon RX 550 2GB GDDR5",
-"code": "AREZ-PH-RX550-2G",
-"img": "https://resim.epey.com/369852/k_asus-arez-phoenix-radeon-rx-550-2gb-gddr5-1.jpg",
-"price": 4699.06,
-"sites": 1,
-"score": 23,
-"cols": {
-"4557": "2 GB",
-"4555": "1183 MHz"
-}
-},
-{
 "id": "639873",
 "url": "https://www.epey.com/ekran-karti/pny-quadro-p620-v2.html",
 "name": "PNY Quadro P620 V2",
@@ -7497,8 +7525,8 @@
 "name": "Axle Radeon RX 560 4GB DDR5 128bit Dual",
 "code": "AX-RX5604GD5P8DIPD",
 "img": "https://resim.epey.com/720620/k_axle-radeon-rx-560-4gb-ddr5-128bit-dual-1.jpg",
-"price": 5393.1,
-"sites": 8,
+"price": 5799.0,
+"sites": 7,
 "score": 22,
 "cols": {
 "4557": "4 GB",
@@ -7511,8 +7539,8 @@
 "name": "Turbox Arcade Hero N RX 560 4GB",
 "code": "BD9922252",
 "img": "https://resim.epey.com/704679/k_turbox-arcade-hero-n-rx560-3.jpg",
-"price": 5977.1,
-"sites": 2,
+"price": 6427.0,
+"sites": 1,
 "score": 22,
 "cols": {
 "4557": "4 GB",
@@ -7526,7 +7554,7 @@
 "code": "",
 "img": "https://resim.epey.com/643180/k_turbox-radeon-rx-560-4gb-1.jpg",
 "price": 5267.09,
-"sites": 2,
+"sites": 1,
 "score": 22,
 "cols": {
 "4557": "4 GB",
@@ -7540,7 +7568,7 @@
 "code": "AX-RX-550/8GD5P8DIP",
 "img": "https://resim.epey.com/921535/k_axle-radeon-rx-550-8gb-gddr5-ax-rx-550-8gd5p8dip-1.jpg",
 "price": 8480.74,
-"sites": 6,
+"sites": 5,
 "score": 22,
 "cols": {
 "4557": "8 GB",
@@ -7553,7 +7581,7 @@
 "name": "Afox Radeon RX 550 8GB",
 "code": "AFRX550-8192D5H2-V2",
 "img": "https://resim.epey.com/1039267/k_afox-radeon-rx-550-8gb-afrx550-8192d5h2-v2-1.jpg",
-"price": 9012.49,
+"price": 9012.64,
 "sites": 2,
 "score": 22,
 "cols": {
@@ -7567,8 +7595,8 @@
 "name": "Asus Phoenix Radeon 550 2GB GDDR5",
 "code": "PH-550-2G",
 "img": "https://resim.epey.com/660264/k_asus-phoenix-radeon-550-2gb-gddr5-1.jpg",
-"price": 5249.0,
-"sites": 2,
+"price": 7176.0,
+"sites": 1,
 "score": 22,
 "cols": {
 "4557": "2 GB",
@@ -7595,8 +7623,8 @@
 "name": "MSI GeForce GT 1030 Aero ITX 2G OC",
 "code": "V809-2492R",
 "img": "https://resim.epey.com/102834/k_msi-geforce-gt-1030-aero-itx-2g-oc-1.png",
-"price": 7939.0,
-"sites": 2,
+"price": 8193.02,
+"sites": 1,
 "score": 22,
 "cols": {
 "4557": "2 GB",
@@ -7609,8 +7637,8 @@
 "name": "Asus Phoenix GeForce GT 1030 OC",
 "code": "PH-GT1030-O2G",
 "img": "https://resim.epey.com/102655/k_asus-phoenix-geforce-gt-1030-oc-2.jpg",
-"price": 13938.75,
-"sites": 3,
+"price": 5979.08,
+"sites": 2,
 "score": 22,
 "cols": {
 "4557": "2 GB",
@@ -7624,7 +7652,7 @@
 "code": "",
 "img": "https://resim.epey.com/1055524/k_msi-geforce-gt-1030-aero-itx-4gd4-oc-1.jpg",
 "price": 7999.0,
-"sites": 9,
+"sites": 8,
 "score": 22,
 "cols": {
 "4557": "4 GB",
@@ -7638,7 +7666,7 @@
 "code": "",
 "img": "https://resim.epey.com/1019982/k_axle-geforce-gt-1030-4gb-1.jpg",
 "price": 5452.17,
-"sites": 6,
+"sites": 5,
 "score": 22,
 "cols": {
 "4557": "4 GB",
@@ -7679,26 +7707,12 @@
 "name": "Afox Radeon RX 550 4GB",
 "code": "AFRX550-4096D5H2-V4",
 "img": "https://resim.epey.com/1039269/k_afox-radeon-rx-550-8gb-1.jpg",
-"price": 5876.7,
-"sites": 7,
+"price": 5929.0,
+"sites": 6,
 "score": 22,
 "cols": {
 "4557": "4 GB",
 "4555": "1183 MHz"
-}
-},
-{
-"id": "614649",
-"url": "https://www.epey.com/ekran-karti/msi-radeon-rx-550-2gt-lp-oc.html",
-"name": "MSI Radeon RX 550 2GT LP OC",
-"code": "",
-"img": "https://resim.epey.com/614649/k_msi-radeon-rx-550-2gt-lp-oc-1.jpg",
-"price": 4139.08,
-"sites": 2,
-"score": 22,
-"cols": {
-"4557": "2 GB",
-"4555": "1203 MHz"
 }
 },
 {
@@ -7721,8 +7735,8 @@
 "name": "İzoly Radeon RX 550 4GB",
 "code": "",
 "img": "https://resim.epey.com/813511/k_izoly-radeon-rx-550-4gb-1.jpg",
-"price": 7458.5,
-"sites": 2,
+"price": 8019.9,
+"sites": 1,
 "score": 21,
 "cols": {
 "4557": "4 GB",
@@ -7735,8 +7749,8 @@
 "name": "Turbox Arcade Hero M Radeon RX 550 4GB",
 "code": "BD9922248",
 "img": "https://resim.epey.com/704666/k_turbox-arcade-hero-m-rx550-3.jpg",
-"price": 4556.1,
-"sites": 4,
+"price": 4599.08,
+"sites": 3,
 "score": 21,
 "cols": {
 "4557": "4 GB",
@@ -7750,21 +7764,7 @@
 "code": "SEC-4096RX550",
 "img": "https://resim.epey.com/655413/k_seclife-radeon-rx-550-4gb-1.jpg",
 "price": 5573.75,
-"sites": 5,
-"score": 21,
-"cols": {
-"4557": "4 GB",
-"4555": "1183 MHz"
-}
-},
-{
-"id": "643163",
-"url": "https://www.epey.com/ekran-karti/turbox-radeon-rx-550-4gb.html",
-"name": "Turbox Radeon RX 550 4GB",
-"code": "",
-"img": "https://resim.epey.com/643163/k_turbox-radeon-rx-550-4gb-1.jpg",
-"price": 5803.2,
-"sites": 1,
+"sites": 4,
 "score": 21,
 "cols": {
 "4557": "4 GB",
@@ -7777,7 +7777,7 @@
 "name": "Biostar Radeon RX 550 4GB 128bit GDDR5",
 "code": "VA5515RF41",
 "img": "https://resim.epey.com/645028/k_biostar-radeon-rx-550-4gb-128bit-gddr5-1.jpg",
-"price": 4800.0,
+"price": 4498.8,
 "sites": 1,
 "score": 21,
 "cols": {
@@ -7791,8 +7791,8 @@
 "name": "Axle Radeon RX 550 4GB",
 "code": "AX-RX550/4GD5P8DIP",
 "img": "https://resim.epey.com/753307/k_axle-radeon-rx-550-4gb-1.jpg",
-"price": 6341.7,
-"sites": 9,
+"price": 6399.0,
+"sites": 8,
 "score": 21,
 "cols": {
 "4557": "4 GB",
@@ -7806,7 +7806,7 @@
 "code": "GT1030-2G-BRK",
 "img": "https://resim.epey.com/203611/k_asus-geforce-gt-1030-2gb-gddr5-1.jpg",
 "price": 5799.0,
-"sites": 10,
+"sites": 9,
 "score": 21,
 "cols": {
 "4557": "2 GB",
@@ -7819,7 +7819,7 @@
 "name": "PNY GeForce GT 1030",
 "code": "VCGGT10302PB",
 "img": "https://resim.epey.com/739751/k_pny-geforce-gt-1030-1.jpg",
-"price": 10427.03,
+"price": 10427.19,
 "sites": 1,
 "score": 21,
 "cols": {
@@ -7834,7 +7834,7 @@
 "code": "",
 "img": "https://resim.epey.com/203391/k_msi-geforce-gt-1030-aero-itx-2gd4-oc-1.png",
 "price": 6411.19,
-"sites": 9,
+"sites": 8,
 "score": 21,
 "cols": {
 "4557": "2 GB",
@@ -7847,7 +7847,7 @@
 "name": "PNY GeForce GT 1030 2GB DDR4",
 "code": "VCG10302D4SFPPB",
 "img": "https://resim.epey.com/835245/k_pny-geforce-gt-1030-2gb-gddr4-1.jpg",
-"price": 9872.53,
+"price": 9872.68,
 "sites": 1,
 "score": 21,
 "cols": {
@@ -7861,8 +7861,8 @@
 "name": "Asus GeForce GT 1030",
 "code": "GT1030-SL-2G-BRK",
 "img": "https://resim.epey.com/203614/k_asus-geforce-gt-1030-1.jpg",
-"price": 5596.9,
-"sites": 11,
+"price": 5619.76,
+"sites": 10,
 "score": 20,
 "cols": {
 "4557": "2 GB",
@@ -7889,26 +7889,12 @@
 "name": "MSI GeForce GT 1030 2GHD4 LP OC",
 "code": "",
 "img": "https://resim.epey.com/203370/k_msi-geforce-gt-1030-2ghd4-lp-oc-1.png",
-"price": 5499.0,
-"sites": 1,
+"price": 5059.08,
+"sites": 2,
 "score": 20,
 "cols": {
 "4557": "2 GB",
 "4555": "1430 MHz"
-}
-},
-{
-"id": "754468",
-"url": "https://www.epey.com/ekran-karti/asus-geforce-gt-1030-2gb-ddr4.html",
-"name": "Asus GeForce GT 1030 2GB DDR4",
-"code": "GT1030-SL-2GD4-BRK",
-"img": "https://resim.epey.com/754468/k_asus-geforce-gt-1030-2gb-ddr4-1.jpg",
-"price": 5395.2,
-"sites": 1,
-"score": 20,
-"cols": {
-"4557": "2 GB",
-"4555": "1417 MHz"
 }
 },
 {
@@ -7917,8 +7903,8 @@
 "name": "Turbox GeForce GTX 750 Ti 4G",
 "code": "",
 "img": "https://resim.epey.com/639878/k_turbox-geforce-gtx-750-ti-4g-3.jpg",
-"price": 5021.1,
-"sites": 2,
+"price": 5499.0,
+"sites": 1,
 "score": 19,
 "cols": {
 "4557": "4 GB",
@@ -7959,8 +7945,8 @@
 "name": "Axle GeForce GTX 750 2GB",
 "code": "AX-GTX750/2GD5P8CDI",
 "img": "https://resim.epey.com/991121/k_axle-geforce-gtx-750-2gb-1.jpg",
-"price": 4295.7,
-"sites": 9,
+"price": 4329.0,
+"sites": 8,
 "score": 19,
 "cols": {
 "4557": "2 GB",
@@ -7988,7 +7974,7 @@
 "code": "AX-GTX750Ti/4GD5P8CDI",
 "img": "https://resim.epey.com/642110/k_axle-geforce-gtx-750-ti-ax-gtx750ti-4gd5p8cdi-1.jpg",
 "price": 6259.53,
-"sites": 7,
+"sites": 6,
 "score": 19,
 "cols": {
 "4557": "4 GB",
@@ -8029,8 +8015,8 @@
 "name": "Axle GeForce GTX 740 4GB GDDR5",
 "code": "AX-GT740/4GD5P8CDI",
 "img": "https://resim.epey.com/991120/k_axle-geforce-gtx-740-4gb-ax-gt740-4gd5p8cdi-1.jpg",
-"price": 4602.6,
-"sites": 8,
+"price": 4649.0,
+"sites": 7,
 "score": 18,
 "cols": {
 "4557": "4 GB",
@@ -8043,8 +8029,8 @@
 "name": "İzoly GeForce GT 740 4GB GDDR5",
 "code": "",
 "img": "https://resim.epey.com/963333/k_izoly-geforce-gt-740-1.jpg",
-"price": 4486.3,
-"sites": 4,
+"price": 4534.56,
+"sites": 3,
 "score": 18,
 "cols": {
 "4557": "4 GB",
@@ -8086,7 +8072,7 @@
 "code": "BD9920578",
 "img": "https://resim.epey.com/704799/k_turbox-guildwreck-gt740-4gb-1.jpg",
 "price": 4546.0,
-"sites": 2,
+"sites": 1,
 "score": 17,
 "cols": {
 "4557": "2 GB",
@@ -8100,7 +8086,7 @@
 "code": "",
 "img": "https://resim.epey.com/835270/k_turbox-thewis-geforce-gt-740-4gb-gddr3-128bit-1.jpg",
 "price": 2942.16,
-"sites": 5,
+"sites": 4,
 "score": 17,
 "cols": {
 "4557": "4 GB",
@@ -8122,26 +8108,12 @@
 }
 },
 {
-"id": "643250",
-"url": "https://www.epey.com/ekran-karti/pny-quadro-k600.html",
-"name": "PNY Quadro K600",
-"code": "VCQK600-PB",
-"img": "https://resim.epey.com/643250/k_pny-nvidia-quadro-k600-1-gb-3.jpg",
-"price": 4500.0,
-"sites": 1,
-"score": 16,
-"cols": {
-"4557": "1 GB",
-"4555": "-"
-}
-},
-{
 "id": "1022901",
 "url": "https://www.epey.com/ekran-karti/axle-geforce-gt-710-4gb.html",
 "name": "Axle GeForce GT 710 4GB",
 "code": "AX-GT710/4GD3P4CDIL",
 "img": "https://resim.epey.com/1022901/k_axle-geforce-gt-710-4gb-1.jpg",
-"price": 3235.5,
+"price": 3269.0,
 "sites": 7,
 "score": 16,
 "cols": {
@@ -8155,7 +8127,7 @@
 "name": "Axle GeForce GT 710 2GB",
 "code": "GT710/2GD3P4CDIL",
 "img": "https://resim.epey.com/1048291/k_axle-geforce-gt-710-2gb-1.jpg",
-"price": 2519.4,
+"price": 2539.0,
 "sites": 7,
 "score": 16,
 "cols": {
@@ -8169,8 +8141,8 @@
 "name": "Colorful GeForce GT710-2GD3-V",
 "code": "",
 "img": "https://resim.epey.com/856291/k_colorful-geforce-gt710-2gd3-v-1.jpg",
-"price": 2673.0,
-"sites": 2,
+"price": 3999.0,
+"sites": 1,
 "score": 16,
 "cols": {
 "4557": "2 GB",
@@ -8183,8 +8155,8 @@
 "name": "Afox GeForce GT 710 2GB DDR3",
 "code": "AF710-2048D3L5-V3",
 "img": "https://resim.epey.com/845349/k_afox-geforce-gt-710-2gb-ddr3-1.jpg",
-"price": 3110.94,
-"sites": 6,
+"price": 3115.28,
+"sites": 5,
 "score": 16,
 "cols": {
 "4557": "2 GB",
@@ -8211,26 +8183,12 @@
 "name": "Asus GeForce GT 730 2GB DDR3 BRK Evo",
 "code": "GT730-2GD3-BRK-EVO",
 "img": "https://resim.epey.com/906391/k_asus-geforce-gt-730-2gb-ddr3-brk-evo-2.jpg",
-"price": 4483.7,
-"sites": 8,
+"price": 4619.0,
+"sites": 7,
 "score": 16,
 "cols": {
 "4557": "2 GB",
 "4555": "927 MHz"
-}
-},
-{
-"id": "203612",
-"url": "https://www.epey.com/ekran-karti/asus-geforce-gt-730-2gb-gddr5.html",
-"name": "Asus GeForce GT 730 2GB GDDR5",
-"code": "",
-"img": "https://resim.epey.com/203612/k_asus-geforce-gt-730-2gb-gddr5-1.jpg",
-"price": 5375.7,
-"sites": 1,
-"score": 15,
-"cols": {
-"4557": "2 GB",
-"4555": "-"
 }
 },
 {
@@ -8239,8 +8197,8 @@
 "name": "Asus GeForce GT 710",
 "code": "GT710-SL-2GD5-BRK",
 "img": "https://resim.epey.com/102715/k_asus-geforce-gt-710-gt710-sl-2gd5-1.jpg",
-"price": 3141.95,
-"sites": 10,
+"price": 3112.75,
+"sites": 9,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8267,8 +8225,8 @@
 "name": "Peladn GeForce GT 730 4GB",
 "code": "",
 "img": "https://resim.epey.com/1048274/k_peladn-geforce-gt-730-4gb-1.jpg",
-"price": 3596.6,
-"sites": 2,
+"price": 4065.03,
+"sites": 1,
 "score": 15,
 "cols": {
 "4557": "4 GB",
@@ -8281,7 +8239,7 @@
 "name": "Pcwinmax GeForce GT 730 4GB",
 "code": "",
 "img": "https://resim.epey.com/893481/k_pcwinmax-geforce-gt-730-4gb-1.jpg",
-"price": 3110.14,
+"price": 3110.19,
 "sites": 1,
 "score": 15,
 "cols": {
@@ -8296,7 +8254,7 @@
 "code": "AF730-4096D3L5",
 "img": "https://resim.epey.com/813443/k_afox-geforce-gt-730-4gb-af730-4096d3l5-1.jpg",
 "price": 3549.0,
-"sites": 4,
+"sites": 5,
 "score": 15,
 "cols": {
 "4557": "4 GB",
@@ -8309,8 +8267,8 @@
 "name": "Afox GeForce GT 730 4GB",
 "code": "AF730-4096D3L3",
 "img": "https://resim.epey.com/722034/k_afox-geforce-gt-730-4gb-af730-4096d3l3-1.jpg",
-"price": 4195.8,
-"sites": 6,
+"price": 4221.33,
+"sites": 5,
 "score": 15,
 "cols": {
 "4557": "4 GB",
@@ -8324,7 +8282,7 @@
 "code": "",
 "img": "https://resim.epey.com/654005/k_nvidia-quadro-2gb-gt730-4gd3l-1.jpg",
 "price": 3656.84,
-"sites": 3,
+"sites": 2,
 "score": 15,
 "cols": {
 "4557": "4 GB",
@@ -8351,8 +8309,8 @@
 "name": "Axle GeForce GT 730 4GB GDDR3",
 "code": "AX-GT730/4GD3P8CDIL",
 "img": "https://resim.epey.com/906122/k_axle-geforce-gt-730-4gb-gddr3-ax-gt730-4gd3p8cdil-1.jpg",
-"price": 3299.0,
-"sites": 8,
+"price": 3481.18,
+"sites": 7,
 "score": 15,
 "cols": {
 "4557": "4 GB",
@@ -8393,8 +8351,8 @@
 "name": "Arktek GeForce GT 730 4GB 128bit LP",
 "code": "",
 "img": "https://resim.epey.com/622935/k_arktek-geforce-gt-730-4gb-128bit-lp-1.jpg",
-"price": 4125.5,
-"sites": 3,
+"price": 4169.92,
+"sites": 2,
 "score": 15,
 "cols": {
 "4557": "4 GB",
@@ -8421,7 +8379,7 @@
 "name": "Seclife GeForce GT 730 4GB",
 "code": "",
 "img": "https://resim.epey.com/125795/k_seclife-geforce-gt-730-4gb-1.jpg",
-"price": 2947.9,
+"price": 2870.15,
 "sites": 5,
 "score": 15,
 "cols": {
@@ -8436,7 +8394,7 @@
 "code": "",
 "img": "https://resim.epey.com/875848/k_turbox-knight-zen-max-radeon-r7-240-4gb-1.jpg",
 "price": 3973.48,
-"sites": 3,
+"sites": 2,
 "score": 15,
 "cols": {
 "4557": "4 GB",
@@ -8450,7 +8408,7 @@
 "code": "ID0002694",
 "img": "https://resim.epey.com/704803/k_turbox-knight-zen-n-r7-240-4gb-2.jpg",
 "price": 2205.85,
-"sites": 4,
+"sites": 3,
 "score": 15,
 "cols": {
 "4557": "4 GB",
@@ -8478,7 +8436,7 @@
 "code": "",
 "img": "https://resim.epey.com/203373/k_msi-geforce-gt-710-2gd3h-lp-v809-2000r-1.png",
 "price": 3295.47,
-"sites": 13,
+"sites": 12,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8491,8 +8449,8 @@
 "name": "Peladn GeForce GT 730 2GB",
 "code": "",
 "img": "https://resim.epey.com/1048275/k_peladn-geforce-gt-730-2gb-1.jpg",
-"price": 3384.3,
-"sites": 2,
+"price": 3826.9,
+"sites": 1,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8505,8 +8463,8 @@
 "name": "Axle GeForce GT 730 2GB 128-bit",
 "code": "",
 "img": "https://resim.epey.com/851098/k_axle-nvidia-gt730-2gb-gddr3-1.jpg",
-"price": 3138.6,
-"sites": 6,
+"price": 3141.24,
+"sites": 3,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8520,7 +8478,7 @@
 "code": "AF730-2048D3L6",
 "img": "https://resim.epey.com/643268/k_afox-geforce-gt-730-2gb-1.jpg",
 "price": 3109.27,
-"sites": 7,
+"sites": 6,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8533,8 +8491,8 @@
 "name": "Turbox Radeon R5 230 2GB 64bit DDR3",
 "code": "",
 "img": "https://resim.epey.com/643161/k_turbox-radeon-r5-230-2gb-64bit-ddr3-1.jpg",
-"price": 2088.8,
-"sites": 2,
+"price": 2021.4,
+"sites": 1,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8548,7 +8506,7 @@
 "code": "GT730-4H-SL-2GD5",
 "img": "https://resim.epey.com/723030/k_asus-geforce-gt-730-1.jpg",
 "price": 5799.0,
-"sites": 11,
+"sites": 10,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8561,7 +8519,7 @@
 "name": "Asus GeForce GT 730 2GB GDDR5",
 "code": "GT730-SL-2GD5-BRK-E",
 "img": "https://resim.epey.com/754466/k_asus-geforce-gt-730-2gb-gddr5-gt730-sl-2gd5-brk-e-1.jpg",
-"price": 6305.05,
+"price": 6305.15,
 "sites": 1,
 "score": 15,
 "cols": {
@@ -8575,8 +8533,8 @@
 "name": "Afox Radeon R5 230 2G",
 "code": "AFR5230-2048D3L2",
 "img": "https://resim.epey.com/715296/k_afox-radeon-r5-230-2g-1.jpg",
-"price": 2058.21,
-"sites": 3,
+"price": 2165.97,
+"sites": 1,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8617,8 +8575,8 @@
 "name": "Seclife Radeon R5 230 2GB",
 "code": "",
 "img": "https://resim.epey.com/944046/k_seclife-radeon-r5-230-2gb-1.jpg",
-"price": 2066.9,
-"sites": 4,
+"price": 2246.2,
+"sites": 3,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8631,7 +8589,7 @@
 "name": "Turbox Knight Zen S R5 230 2GB",
 "code": "",
 "img": "https://resim.epey.com/704805/k_turbox-knight-zen-s-r5-230-2gb-2.jpg",
-"price": 2133.7,
+"price": 2021.4,
 "sites": 1,
 "score": 15,
 "cols": {
@@ -8645,8 +8603,8 @@
 "name": "Axle Radeon R5 230 2GB",
 "code": "",
 "img": "https://resim.epey.com/1019981/k_axle-radeon-r5-230-2gb-ddr3-64bit-1.jpg",
-"price": 1999.0,
-"sites": 7,
+"price": 2045.07,
+"sites": 6,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8660,7 +8618,7 @@
 "code": "AFR5230-1024D3L5",
 "img": "https://resim.epey.com/943530/k_afox-radeon-r5-230-2gb-afr5230-1024d3l5-1.jpg",
 "price": 1999.0,
-"sites": 3,
+"sites": 6,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8673,8 +8631,8 @@
 "name": "Axle Radeon R5 230 1GB",
 "code": "R5 230/1GD3P4CDIL",
 "img": "https://resim.epey.com/1022903/k_axle-radeon-r5-230-2gb-ddr3-64bit-1.jpg",
-"price": 1868.4,
-"sites": 8,
+"price": 1879.0,
+"sites": 7,
 "score": 15,
 "cols": {
 "4557": "1 GB",
@@ -8688,7 +8646,7 @@
 "code": "GT730-SL-2GD5-BRK",
 "img": "https://resim.epey.com/615408/k_asus-gt730-sl-2gd5-brk-1.jpg",
 "price": 4139.08,
-"sites": 11,
+"sites": 10,
 "score": 15,
 "cols": {
 "4557": "2 GB",
@@ -8701,7 +8659,7 @@
 "name": "Peladn GeForce GT 610",
 "code": "",
 "img": "https://resim.epey.com/1048290/k_peladn-geforce-gt-610-1.jpg",
-"price": 2421.3,
+"price": 2375.81,
 "sites": 3,
 "score": 13,
 "cols": {
@@ -8715,8 +8673,8 @@
 "name": "Afox GeForce GT 610",
 "code": "AF610-2048D3L6",
 "img": "https://resim.epey.com/1075463/k_afox-geforce-gt-610-af610-2048d3l6-1.jpg",
-"price": 2650.5,
-"sites": 4,
+"price": 2686.41,
+"sites": 3,
 "score": 13,
 "cols": {
 "4557": "2 GB",
@@ -8744,7 +8702,7 @@
 "code": "",
 "img": "https://resim.epey.com/813446/k_seclife-geforce-gt-610-lp-ddr3-2gb-1.jpg",
 "price": 2087.48,
-"sites": 6,
+"sites": 5,
 "score": 13,
 "cols": {
 "4557": "2 GB",
@@ -8757,8 +8715,8 @@
 "name": "Afox GeForce GT 610",
 "code": "AF610-2048D3L5",
 "img": "https://resim.epey.com/1022744/k_afox-geforce-gt-610-af610-2048d3l5-1.jpg",
-"price": 2304.47,
-"sites": 5,
+"price": 2307.63,
+"sites": 4,
 "score": 13,
 "cols": {
 "4557": "2 GB",
@@ -8772,7 +8730,7 @@
 "code": "AX-GT610/2GD3P4CDIL",
 "img": "https://resim.epey.com/929914/k_axle-geforce-gt-610-1.jpg",
 "price": 2134.4,
-"sites": 8,
+"sites": 7,
 "score": 12,
 "cols": {
 "4557": "2 GB",
@@ -8799,8 +8757,8 @@
 "name": "Axle Radeon R5 220 2GB",
 "code": "AX-R5 220/2GD3P4CDIL",
 "img": "https://resim.epey.com/944047/k_axle-radeon-r5-220-2gb-1.jpg",
-"price": 2175.3,
-"sites": 8,
+"price": 2199.0,
+"sites": 7,
 "score": 11,
 "cols": {
 "4557": "2 GB",
@@ -8813,8 +8771,8 @@
 "name": "Axle Radeon R5 220 1GB",
 "code": "R5-220/1GD3P4CDIL",
 "img": "https://resim.epey.com/1048292/k_axle-radeon-r5-220-1gb-1.jpg",
-"price": 1888.2,
-"sites": 8,
+"price": 1882.31,
+"sites": 7,
 "score": 11,
 "cols": {
 "4557": "1 GB",
@@ -8841,8 +8799,8 @@
 "name": "Afox GeForce GT 240",
 "code": "AF240-1024D3L2",
 "img": "https://resim.epey.com/741344/k_afox-geforce-gt-240-1.jpg",
-"price": 2055.87,
-"sites": 6,
+"price": 2199.9,
+"sites": 4,
 "score": 10,
 "cols": {
 "4557": "1 GB",
@@ -8883,7 +8841,7 @@
 "name": "Axle GeForce 210 1GB DDR3",
 "code": "AX-G210/1GD3P4CDIL",
 "img": "https://resim.epey.com/906125/k_axle-geforce-210-1gb-ddr3-1.jpg",
-"price": 1728.9,
+"price": 1739.0,
 "sites": 8,
 "score": 9,
 "cols": {
@@ -8912,7 +8870,7 @@
 "code": "HLV210D31G64S",
 "img": "https://resim.epey.com/863141/k_hi-level-geforce-gt-210-1gb-1.jpg",
 "price": 3500.0,
-"sites": 3,
+"sites": 2,
 "score": 9,
 "cols": {
 "4557": "1 GB",
@@ -8926,7 +8884,7 @@
 "code": "N210-MD1G/D3",
 "img": "https://resim.epey.com/655398/k_msi-geforce-210-1gb-2.jpg",
 "price": 2699.0,
-"sites": 9,
+"sites": 8,
 "score": 9,
 "cols": {
 "4557": "1 GB",

@@ -1,13 +1,29 @@
 {
-"updated": "2026-10-09T09:38:28+00:00",
+"updated": "2026-10-10T09:21:52+00:00",
 "rows": [
+{
+"id": "910884",
+"url": "https://www.epey.com/sabit-disk/kioxia-exceria-plus-g3.html",
+"name": "Kioxia Exceria Plus G3",
+"code": "LSD10Z001TG8",
+"img": "https://resim.epey.com/910884/k_kioxia-exceria-plus-g3-1.jpg",
+"price": 8999.0,
+"sites": 7,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "3900 MB/s",
+"2354": "5000 MB/s",
+"4931": "950 K IOPS"
+}
+},
 {
 "id": "548297",
 "url": "https://www.epey.com/sabit-disk/kioxia-exceria-ltc10z960gc8.html",
 "name": "Kioxia Exceria",
 "code": "LTC10Z960GG8",
 "img": "https://resim.epey.com/548297/k_kioxia-exceria-ltc10z960gc8-1.png",
-"price": 5369.0,
+"price": 5345.0,
 "sites": 10,
 "score": null,
 "cols": {
@@ -39,7 +55,7 @@
 "name": "Kingston NV3",
 "code": "SNV3S/1000G",
 "img": "https://resim.epey.com/956062/k_kingston-nv3-snv3s-1000g-1.jpg",
-"price": 8099.0,
+"price": 8097.99,
 "sites": 13,
 "score": null,
 "cols": {
@@ -50,28 +66,12 @@
 }
 },
 {
-"id": "910884",
-"url": "https://www.epey.com/sabit-disk/kioxia-exceria-plus-g3.html",
-"name": "Kioxia Exceria Plus G3",
-"code": "LSD10Z001TG8",
-"img": "https://resim.epey.com/910884/k_kioxia-exceria-plus-g3-1.jpg",
-"price": 8999.0,
-"sites": 7,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "3900 MB/s",
-"2354": "5000 MB/s",
-"4931": "950 K IOPS"
-}
-},
-{
 "id": "1034440",
 "url": "https://www.epey.com/sabit-disk/wd-blue-sn5100-1-tb.html",
 "name": "WD Blue SN5100",
 "code": "WDS100T5B0E",
 "img": "https://resim.epey.com/1034440/k_wd-blue-sn5100-1.jpg",
-"price": 8929.06,
+"price": 8851.56,
 "sites": 9,
 "score": null,
 "cols": {
@@ -88,7 +88,7 @@
 "code": "LVE10Z1T02G8",
 "img": "https://resim.epey.com/1043433/k_kioxia-exceria-pro-g2-1.jpg",
 "price": 12999.0,
-"sites": 7,
+"sites": 6,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -98,44 +98,12 @@
 }
 },
 {
-"id": "1040076",
-"url": "https://www.epey.com/sabit-disk/kioxia-exceria-basic-2-tb.html",
-"name": "Kioxia Exceria Basic",
-"code": "LSF10Z002TG8",
-"img": "https://resim.epey.com/1040076/k_kioxia-exceria-basic-1.jpg",
-"price": 14710.8,
-"sites": 10,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "6800 MB/s",
-"2354": "7300 MB/s",
-"4931": "1.250 K IOPS"
-}
-},
-{
-"id": "1043444",
-"url": "https://www.epey.com/sabit-disk/kioxia-exceria-pro-g2-2-tb.html",
-"name": "Kioxia Exceria Pro G2",
-"code": "LVE10Z2T04G8",
-"img": "https://resim.epey.com/1043444/k_kioxia-exceria-pro-g2-1.jpg",
-"price": 22999.0,
-"sites": 6,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "13400 MB/s",
-"2354": "14900 MB/s",
-"4931": "1.950 K IOPS"
-}
-},
-{
 "id": "999242",
 "url": "https://www.epey.com/sabit-disk/wd-green-sn3000-1-tb.html",
 "name": "WD Green SN3000",
 "code": "WDS100T4G0E",
 "img": "https://resim.epey.com/999242/k_wd-green-sn3000-1.jpg",
-"price": 7639.74,
+"price": 7799.0,
 "sites": 8,
 "score": null,
 "cols": {
@@ -146,19 +114,19 @@
 }
 },
 {
-"id": "832793",
-"url": "https://www.epey.com/sabit-disk/samsung-990-pro.html",
-"name": "Samsung 990 Pro",
-"code": "MZ-V9P1T0BW",
-"img": "https://resim.epey.com/832793/k_samsung-990-pro-1.jpg",
-"price": 13347.82,
-"sites": 12,
+"id": "1043444",
+"url": "https://www.epey.com/sabit-disk/kioxia-exceria-pro-g2-2-tb.html",
+"name": "Kioxia Exceria Pro G2",
+"code": "LVE10Z2T04G8",
+"img": "https://resim.epey.com/1043444/k_kioxia-exceria-pro-g2-1.jpg",
+"price": 22999.0,
+"sites": 7,
 "score": null,
 "cols": {
-"2352": "1 TB",
-"2353": "6900 MB/s",
-"2354": "7450 MB/s",
-"4931": "1.550 K IOPS"
+"2352": "2 TB",
+"2353": "13400 MB/s",
+"2354": "14900 MB/s",
+"4931": "1.950 K IOPS"
 }
 },
 {
@@ -178,19 +146,35 @@
 }
 },
 {
-"id": "729851",
-"url": "https://www.epey.com/sabit-disk/kingston-kc3000-skc3000d-2048g.html",
-"name": "Kingston KC3000",
-"code": "SKC3000D/2048G",
-"img": "https://resim.epey.com/729851/k_kingston-kc3000-skc3000d-2048g-1.jpg",
-"price": 20899.0,
-"sites": 9,
+"id": "1040076",
+"url": "https://www.epey.com/sabit-disk/kioxia-exceria-basic-2-tb.html",
+"name": "Kioxia Exceria Basic",
+"code": "LSF10Z002TG8",
+"img": "https://resim.epey.com/1040076/k_kioxia-exceria-basic-1.jpg",
+"price": 15057.4,
+"sites": 10,
 "score": null,
 "cols": {
 "2352": "2 TB",
-"2353": "7000 MB/s",
-"2354": "7000 MB/s",
-"4931": "1.000 K IOPS"
+"2353": "6800 MB/s",
+"2354": "7300 MB/s",
+"4931": "1.250 K IOPS"
+}
+},
+{
+"id": "1000492",
+"url": "https://www.epey.com/sabit-disk/samsung-9100-pro-1-tb.html",
+"name": "Samsung 9100 Pro",
+"code": "MZ-VAP1T0BW",
+"img": "https://resim.epey.com/1000492/k_samsung-9100-pro-1.jpg",
+"price": 15777.1,
+"sites": 13,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "13300 MB/s",
+"2354": "14700 MB/s",
+"4931": "2.600 K IOPS"
 }
 },
 {
@@ -226,83 +210,35 @@
 }
 },
 {
-"id": "1000492",
-"url": "https://www.epey.com/sabit-disk/samsung-9100-pro-1-tb.html",
+"id": "1000501",
+"url": "https://www.epey.com/sabit-disk/samsung-9100-pro-2-tb.html",
 "name": "Samsung 9100 Pro",
-"code": "MZ-VAP1T0BW",
-"img": "https://resim.epey.com/1000492/k_samsung-9100-pro-1.jpg",
-"price": 15462.99,
-"sites": 12,
+"code": "MZ-VAP2T0BW",
+"img": "https://resim.epey.com/1000501/k_samsung-9100-pro-1.jpg",
+"price": 26077.2,
+"sites": 14,
 "score": null,
 "cols": {
-"2352": "1 TB",
-"2353": "13300 MB/s",
+"2352": "2 TB",
+"2353": "13400 MB/s",
 "2354": "14700 MB/s",
 "4931": "2.600 K IOPS"
 }
 },
 {
-"id": "737948",
-"url": "https://www.epey.com/sabit-disk/mld-m700.html",
-"name": "MLD M700",
-"code": "MLD22M700P18-1000",
-"img": "https://resim.epey.com/737948/k_mld-m700-1.jpg",
-"price": 9419.89,
-"sites": 6,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "5500 MB/s",
-"2354": "7000 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "995235",
-"url": "https://www.epey.com/sabit-disk/kioxia-exceria-plus-g4-2-tb.html",
-"name": "Kioxia Exceria Plus G4",
-"code": "LVD10Z002TG8",
-"img": "https://resim.epey.com/995235/k_kioxia-exceria-plus-g4-1.jpg",
-"price": 18590.7,
+"id": "729851",
+"url": "https://www.epey.com/sabit-disk/kingston-kc3000-skc3000d-2048g.html",
+"name": "Kingston KC3000",
+"code": "SKC3000D/2048G",
+"img": "https://resim.epey.com/729851/k_kingston-kc3000-skc3000d-2048g-1.jpg",
+"price": 20580.0,
 "sites": 10,
 "score": null,
 "cols": {
 "2352": "2 TB",
-"2353": "8200 MB/s",
-"2354": "10000 MB/s",
-"4931": "1.400 K IOPS"
-}
-},
-{
-"id": "729840",
-"url": "https://www.epey.com/sabit-disk/kingston-kc3000-skc3000s-1024g.html",
-"name": "Kingston KC3000",
-"code": "SKC3000S/1024G",
-"img": "https://resim.epey.com/729840/k_kingston-kc3000-skc3000s-1024g-1.jpg",
-"price": 12299.0,
-"sites": 10,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "6000 MB/s",
+"2353": "7000 MB/s",
 "2354": "7000 MB/s",
 "4931": "1.000 K IOPS"
-}
-},
-{
-"id": "876112",
-"url": "https://www.epey.com/sabit-disk/msi-spatium-m461-1tb.html",
-"name": "MSI Spatium M461",
-"code": "",
-"img": "https://resim.epey.com/876112/k_msi-spatium-m461-1tb-1.jpg",
-"price": 7737.0,
-"sites": 11,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "3200 MB/s",
-"2354": "5000 MB/s",
-"4931": "750 K IOPS"
 }
 },
 {
@@ -322,19 +258,163 @@
 }
 },
 {
+"id": "832793",
+"url": "https://www.epey.com/sabit-disk/samsung-990-pro.html",
+"name": "Samsung 990 Pro",
+"code": "MZ-V9P1T0BW",
+"img": "https://resim.epey.com/832793/k_samsung-990-pro-1.jpg",
+"price": 13018.0,
+"sites": 12,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "6900 MB/s",
+"2354": "7450 MB/s",
+"4931": "1.550 K IOPS"
+}
+},
+{
+"id": "729840",
+"url": "https://www.epey.com/sabit-disk/kingston-kc3000-skc3000s-1024g.html",
+"name": "Kingston KC3000",
+"code": "SKC3000S/1024G",
+"img": "https://resim.epey.com/729840/k_kingston-kc3000-skc3000s-1024g-1.jpg",
+"price": 12299.0,
+"sites": 11,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "6000 MB/s",
+"2354": "7000 MB/s",
+"4931": "1.000 K IOPS"
+}
+},
+{
+"id": "737948",
+"url": "https://www.epey.com/sabit-disk/mld-m700.html",
+"name": "MLD M700",
+"code": "MLD22M700P18-1000",
+"img": "https://resim.epey.com/737948/k_mld-m700-1.jpg",
+"price": 9419.89,
+"sites": 6,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "5500 MB/s",
+"2354": "7000 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "1003462",
 "url": "https://www.epey.com/sabit-disk/kingston-renegade-g5-1-tb.html",
 "name": "Kingston Renegade G5",
 "code": "SRNG2S/1T0",
 "img": "https://resim.epey.com/1003462/k_kingston-renegade-g5-1.jpg",
 "price": 13999.0,
-"sites": 10,
+"sites": 11,
 "score": null,
 "cols": {
 "2352": "1 TB",
 "2353": "11000 MB/s",
 "2354": "14200 MB/s",
 "4931": "2.150 K IOPS"
+}
+},
+{
+"id": "995235",
+"url": "https://www.epey.com/sabit-disk/kioxia-exceria-plus-g4-2-tb.html",
+"name": "Kioxia Exceria Plus G4",
+"code": "LVD10Z002TG8",
+"img": "https://resim.epey.com/995235/k_kioxia-exceria-plus-g4-1.jpg",
+"price": 18590.7,
+"sites": 11,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "8200 MB/s",
+"2354": "10000 MB/s",
+"4931": "1.400 K IOPS"
+}
+},
+{
+"id": "923176",
+"url": "https://www.epey.com/sabit-disk/lexar-nm790-lnm790x001t.html",
+"name": "Lexar NM790",
+"code": "LNM790X001T",
+"img": "https://resim.epey.com/923176/k_lexar-nm790-lnm790x001t-1.jpg",
+"price": 8999.0,
+"sites": 6,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "6500 MB/s",
+"2354": "7400 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "876112",
+"url": "https://www.epey.com/sabit-disk/msi-spatium-m461-1tb.html",
+"name": "MSI Spatium M461",
+"code": "",
+"img": "https://resim.epey.com/876112/k_msi-spatium-m461-1tb-1.jpg",
+"price": 7737.0,
+"sites": 11,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "3200 MB/s",
+"2354": "5000 MB/s",
+"4931": "750 K IOPS"
+}
+},
+{
+"id": "1044724",
+"url": "https://www.epey.com/sabit-disk/kioxia-exceria-g3-2-tb.html",
+"name": "Kioxia Exceria G3",
+"code": "LVC10Z002TG8",
+"img": "https://resim.epey.com/1044724/k_kioxia-exceria-g3-1.jpg",
+"price": 15979.0,
+"sites": 9,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "9600 MB/s",
+"2354": "10000 MB/s",
+"4931": "1.450 K IOPS"
+}
+},
+{
+"id": "743734",
+"url": "https://www.epey.com/sabit-disk/colorful-sl500.html",
+"name": "Colorful SL500",
+"code": "SL500-240GB",
+"img": "https://resim.epey.com/743734/k_colorful-sl500-240gb-1.jpg",
+"price": 1799.0,
+"sites": 7,
+"score": null,
+"cols": {
+"2352": "240 GB",
+"2353": "400 MB/s",
+"2354": "400 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "1003525",
+"url": "https://www.epey.com/sabit-disk/msi-spatium-m560-1-tb.html",
+"name": "MSI Spatium M560",
+"code": "SM560N1TB",
+"img": "https://resim.epey.com/1003525/k_msi-spatium-m560-1.jpg",
+"price": 10999.0,
+"sites": 12,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "8400 MB/s",
+"2354": "10200 MB/s",
+"4931": "1.400 K IOPS"
 }
 },
 {
@@ -348,22 +428,6 @@
 "score": null,
 "cols": {
 "2352": "2 TB",
-"2353": "6500 MB/s",
-"2354": "7400 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "923176",
-"url": "https://www.epey.com/sabit-disk/lexar-nm790-lnm790x001t.html",
-"name": "Lexar NM790",
-"code": "LNM790X001T",
-"img": "https://resim.epey.com/923176/k_lexar-nm790-lnm790x001t-1.jpg",
-"price": 8999.0,
-"sites": 7,
-"score": null,
-"cols": {
-"2352": "1 TB",
 "2353": "6500 MB/s",
 "2354": "7400 MB/s",
 "4931": "-"
@@ -391,8 +455,8 @@
 "name": "Kioxia Exceria Pro",
 "code": "LSE10Z001TG8",
 "img": "https://resim.epey.com/741336/k_kioxia-exceria-pro-1.jpg",
-"price": 11199.0,
-"sites": 8,
+"price": 11859.0,
+"sites": 7,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -402,75 +466,12 @@
 }
 },
 {
-"id": "1003525",
-"url": "https://www.epey.com/sabit-disk/msi-spatium-m560-1-tb.html",
-"name": "MSI Spatium M560",
-"code": "SM560N1TB",
-"img": "https://resim.epey.com/1003525/k_msi-spatium-m560-1.jpg",
-"price": 10999.0,
-"sites": 13,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "8400 MB/s",
-"2354": "10200 MB/s",
-"4931": "1.400 K IOPS"
-}
-},
-{
-"id": "1000501",
-"url": "https://www.epey.com/sabit-disk/samsung-9100-pro-2-tb.html",
-"name": "Samsung 9100 Pro",
-"code": "MZ-VAP2T0BW",
-"img": "https://resim.epey.com/1000501/k_samsung-9100-pro-1.jpg",
-"price": 26077.2,
-"sites": 13,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "13400 MB/s",
-"2354": "14700 MB/s",
-"4931": "2.600 K IOPS"
-}
-},
-{
-"id": "873770",
-"url": "https://www.epey.com/sabit-disk/samsung-990-pro-sogutuculu-mz-v9p2t0cw.html",
-"name": "Samsung 990 Pro Soğutuculu",
-"code": "MZ-V9P2T0CW",
-"img": "https://resim.epey.com/873770/k_samsung-990-pro-sogutuculu-mz-v9p2t0cw-1.jpg",
-"price": 25999.0,
-"sites": 10,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "6900 MB/s",
-"2354": "7450 MB/s",
-"4931": "1.550 K IOPS"
-}
-},
-{
-"id": "71652",
-"url": "https://www.epey.com/sabit-disk/seagate-mobile-1tb.html",
-"name": "Seagate Mobile",
-"code": "ST1000LM035",
-"img": "https://resim.epey.com/71652/k_seagate-mobil-1tb-1.jpg",
-"price": 3250.0,
-"sites": 5,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "-",
-"2354": "140 MB/s"
-}
-},
-{
 "id": "999207",
 "url": "https://www.epey.com/sabit-disk/wd-blue-sn5000-2-tb.html",
 "name": "WD Blue SN5000",
 "code": "WDS200T4B0E",
 "img": "https://resim.epey.com/999207/k_wd-blue-sn5000-1.jpg",
-"price": 14599.0,
+"price": 14849.01,
 "sites": 9,
 "score": null,
 "cols": {
@@ -481,28 +482,12 @@
 }
 },
 {
-"id": "743734",
-"url": "https://www.epey.com/sabit-disk/colorful-sl500.html",
-"name": "Colorful SL500",
-"code": "SL500-240GB",
-"img": "https://resim.epey.com/743734/k_colorful-sl500-240gb-1.jpg",
-"price": 1799.0,
-"sites": 7,
-"score": null,
-"cols": {
-"2352": "240 GB",
-"2353": "400 MB/s",
-"2354": "400 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "660177",
 "url": "https://www.epey.com/sabit-disk/samsung-870-evo-mz-77e1t0bw.html",
 "name": "Samsung 870 Evo",
 "code": "MZ-77E1T0BW",
 "img": "https://resim.epey.com/660177/k_samsung-870-evo-mz-77e250bw-mz-77e250bw-1.jpg",
-"price": 11280.0,
+"price": 12999.0,
 "sites": 12,
 "score": null,
 "cols": {
@@ -510,54 +495,6 @@
 "2353": "530 MB/s",
 "2354": "560 MB/s",
 "4931": "88 K IOPS"
-}
-},
-{
-"id": "1044724",
-"url": "https://www.epey.com/sabit-disk/kioxia-exceria-g3-2-tb.html",
-"name": "Kioxia Exceria G3",
-"code": "LVC10Z002TG8",
-"img": "https://resim.epey.com/1044724/k_kioxia-exceria-g3-1.jpg",
-"price": 15999.0,
-"sites": 9,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "9600 MB/s",
-"2354": "10000 MB/s",
-"4931": "1.450 K IOPS"
-}
-},
-{
-"id": "1003465",
-"url": "https://www.epey.com/sabit-disk/kingston-renegade-g5-2-tb.html",
-"name": "Kingston Renegade G5",
-"code": "SRNG2S/2T0",
-"img": "https://resim.epey.com/1003465/k_kingston-renegade-g5-1.jpg",
-"price": 25999.0,
-"sites": 9,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "14000 MB/s",
-"2354": "14700 MB/s",
-"4931": "2.200 K IOPS"
-}
-},
-{
-"id": "903422",
-"url": "https://www.epey.com/sabit-disk/twinmos-alphapro-nvme1tb2280ap.html",
-"name": "TwinMOS AlphaPro",
-"code": "NVME1TB2280AP",
-"img": "https://resim.epey.com/903422/k_twinmos-512-gb-nvme512gb2280ap-1.jpg",
-"price": 7489.0,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "3250 MB/s",
-"2354": "3600 MB/s",
-"4931": "-"
 }
 },
 {
@@ -577,19 +514,98 @@
 }
 },
 {
-"id": "712562",
-"url": "https://www.epey.com/sabit-disk/samsung-mzvl2512hcjq.html",
-"name": "Samsung PM9A1",
-"code": "MZVL2512HCJQ",
-"img": "https://resim.epey.com/712562/k_samsung-mzvl2512hcjq-2.jpg",
-"price": 5999.0,
-"sites": 1,
+"id": "72913",
+"url": "https://www.epey.com/sabit-disk/seagate-skyhawk-1tb.html",
+"name": "Seagate SkyHawk",
+"code": "ST1000VX005",
+"img": "https://resim.epey.com/72913/k_seagate-skyhawk-1tb-1.jpg",
+"price": 3600.0,
+"sites": 8,
 "score": null,
 "cols": {
-"2352": "512 GB",
-"2353": "5000 MB/s",
-"2354": "6900 MB/s",
-"4931": "800 K IOPS"
+"2352": "1 TB",
+"2353": "-",
+"2354": "180 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "873770",
+"url": "https://www.epey.com/sabit-disk/samsung-990-pro-sogutuculu-mz-v9p2t0cw.html",
+"name": "Samsung 990 Pro Soğutuculu",
+"code": "MZ-V9P2T0CW",
+"img": "https://resim.epey.com/873770/k_samsung-990-pro-sogutuculu-mz-v9p2t0cw-1.jpg",
+"price": 25599.0,
+"sites": 10,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "6900 MB/s",
+"2354": "7450 MB/s",
+"4931": "1.550 K IOPS"
+}
+},
+{
+"id": "71652",
+"url": "https://www.epey.com/sabit-disk/seagate-mobile-1tb.html",
+"name": "Seagate Mobile",
+"code": "ST1000LM035",
+"img": "https://resim.epey.com/71652/k_seagate-mobil-1tb-1.jpg",
+"price": 3250.0,
+"sites": 4,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "-",
+"2354": "140 MB/s"
+}
+},
+{
+"id": "1003465",
+"url": "https://www.epey.com/sabit-disk/kingston-renegade-g5-2-tb.html",
+"name": "Kingston Renegade G5",
+"code": "SRNG2S/2T0",
+"img": "https://resim.epey.com/1003465/k_kingston-renegade-g5-1.jpg",
+"price": 25999.0,
+"sites": 9,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "14000 MB/s",
+"2354": "14700 MB/s",
+"4931": "2.200 K IOPS"
+}
+},
+{
+"id": "146018",
+"url": "https://www.epey.com/sabit-disk/samsung-970-evo-plus-mz-v7s1t0bw.html",
+"name": "Samsung 970 EVO Plus",
+"code": "MZ-V7S1T0BW",
+"img": "https://resim.epey.com/146018/k_samsung-970-evo-plus-mz-v7s1t0bw-2.png",
+"price": 11495.0,
+"sites": 2,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "3300 MB/s",
+"2354": "3500 MB/s",
+"4931": "550 K IOPS"
+}
+},
+{
+"id": "956275",
+"url": "https://www.epey.com/sabit-disk/kingston-renegade.html",
+"name": "Kingston Renegade",
+"code": "SRNGS/1000G",
+"img": "https://resim.epey.com/956275/k_kingston-renegade-srngs-1000g-1.jpg",
+"price": 12991.24,
+"sites": 7,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "6000 MB/s",
+"2354": "7300 MB/s",
+"4931": "1.000 K IOPS"
 }
 },
 {
@@ -598,7 +614,7 @@
 "name": "Samsung 990 Evo Plus",
 "code": "MZ-V9S4T0BW",
 "img": "https://resim.epey.com/963405/k_samsung-990-evo-plus-mz-v9s4t0bw-1.jpg",
-"price": 37499.5,
+"price": 37999.0,
 "sites": 10,
 "score": null,
 "cols": {
@@ -606,22 +622,6 @@
 "2353": "6300 MB/s",
 "2354": "7250 MB/s",
 "4931": "1.400 K IOPS"
-}
-},
-{
-"id": "72913",
-"url": "https://www.epey.com/sabit-disk/seagate-skyhawk-1tb.html",
-"name": "Seagate SkyHawk",
-"code": "ST1000VX005",
-"img": "https://resim.epey.com/72913/k_seagate-skyhawk-1tb-1.jpg",
-"price": 3499.0,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "-",
-"2354": "180 MB/s",
-"4931": "-"
 }
 },
 {
@@ -638,6 +638,22 @@
 "2353": "4500 MB/s",
 "2354": "5000 MB/s",
 "4931": "850 K IOPS"
+}
+},
+{
+"id": "1034474",
+"url": "https://www.epey.com/sabit-disk/hiksemi-waves-1-tb.html",
+"name": "Hiksemi Wave(S)",
+"code": "HS-SSD-WAVE(S)-1024G",
+"img": "https://resim.epey.com/1034474/k_hiksemi-waves-1.jpg",
+"price": 6164.98,
+"sites": 5,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "470 MB/s",
+"2354": "550 MB/s",
+"4931": "75 K IOPS"
 }
 },
 {
@@ -673,6 +689,22 @@
 }
 },
 {
+"id": "903422",
+"url": "https://www.epey.com/sabit-disk/twinmos-alphapro-nvme1tb2280ap.html",
+"name": "TwinMOS AlphaPro",
+"code": "NVME1TB2280AP",
+"img": "https://resim.epey.com/903422/k_twinmos-512-gb-nvme512gb2280ap-1.jpg",
+"price": 7489.0,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "3250 MB/s",
+"2354": "3600 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "811251",
 "url": "https://www.epey.com/sabit-disk/goodram-px500-ssdpr-px500-01t-80.html",
 "name": "Goodram PX500",
@@ -686,38 +718,6 @@
 "2353": "1650 MB/s",
 "2354": "2050 MB/s",
 "4931": "143 K IOPS"
-}
-},
-{
-"id": "1040074",
-"url": "https://www.epey.com/sabit-disk/kioxia-exceria-basic-1-tb.html",
-"name": "Kioxia Exceria Basic",
-"code": "LSF10Z001TG8",
-"img": "https://resim.epey.com/1040074/k_kioxia-exceria-basic-1.jpg",
-"price": 8799.0,
-"sites": 11,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "6600 MB/s",
-"2354": "7200 MB/s",
-"4931": "1.150 K IOPS"
-}
-},
-{
-"id": "1034474",
-"url": "https://www.epey.com/sabit-disk/hiksemi-waves-1-tb.html",
-"name": "Hiksemi Wave(S)",
-"code": "HS-SSD-WAVE(S)-1024G",
-"img": "https://resim.epey.com/1034474/k_hiksemi-waves-1.jpg",
-"price": 6164.98,
-"sites": 5,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "470 MB/s",
-"2354": "550 MB/s",
-"4931": "75 K IOPS"
 }
 },
 {
@@ -737,19 +737,35 @@
 }
 },
 {
-"id": "146018",
-"url": "https://www.epey.com/sabit-disk/samsung-970-evo-plus-mz-v7s1t0bw.html",
-"name": "Samsung 970 EVO Plus",
-"code": "MZ-V7S1T0BW",
-"img": "https://resim.epey.com/146018/k_samsung-970-evo-plus-mz-v7s1t0bw-2.png",
-"price": 11499.0,
-"sites": 2,
+"id": "712562",
+"url": "https://www.epey.com/sabit-disk/samsung-mzvl2512hcjq.html",
+"name": "Samsung PM9A1",
+"code": "MZVL2512HCJQ",
+"img": "https://resim.epey.com/712562/k_samsung-mzvl2512hcjq-2.jpg",
+"price": 5999.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "512 GB",
+"2353": "5000 MB/s",
+"2354": "6900 MB/s",
+"4931": "800 K IOPS"
+}
+},
+{
+"id": "977358",
+"url": "https://www.epey.com/sabit-disk/lexar-nq790-1-tb.html",
+"name": "Lexar NQ790",
+"code": "LNQ790X001T",
+"img": "https://resim.epey.com/977358/k_lexar-nq79-lnq790x001t-1.jpg",
+"price": 9999.0,
+"sites": 8,
 "score": null,
 "cols": {
 "2352": "1 TB",
-"2353": "3300 MB/s",
-"2354": "3500 MB/s",
-"4931": "550 K IOPS"
+"2353": "6000 MB/s",
+"2354": "7000 MB/s",
+"4931": "600 K IOPS"
 }
 },
 {
@@ -758,7 +774,7 @@
 "name": "Samsung 9100 Pro",
 "code": "MZ-VAP4T0BW",
 "img": "https://resim.epey.com/1000503/k_samsung-9100-pro-1.jpg",
-"price": 55986.0,
+"price": 56999.0,
 "sites": 7,
 "score": null,
 "cols": {
@@ -766,38 +782,6 @@
 "2353": "13400 MB/s",
 "2354": "14800 MB/s",
 "4931": "2.600 K IOPS"
-}
-},
-{
-"id": "956275",
-"url": "https://www.epey.com/sabit-disk/kingston-renegade.html",
-"name": "Kingston Renegade",
-"code": "SRNGS/1000G",
-"img": "https://resim.epey.com/956275/k_kingston-renegade-srngs-1000g-1.jpg",
-"price": 12999.0,
-"sites": 7,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "6000 MB/s",
-"2354": "7300 MB/s",
-"4931": "1.000 K IOPS"
-}
-},
-{
-"id": "694926",
-"url": "https://www.epey.com/sabit-disk/hi-level-hlv-m2pciessd2280-1t.html",
-"name": "Hi-Level HLV-M2PCIESSD2280/1T",
-"code": "",
-"img": "https://resim.epey.com/694926/k_hi-level-512gb-hlv-m2pciessd2280-512g-1.jpg",
-"price": 7348.0,
-"sites": 10,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "3100 MB/s",
-"2354": "3300 MB/s",
-"4931": "-"
 }
 },
 {
@@ -817,34 +801,34 @@
 }
 },
 {
-"id": "1019591",
-"url": "https://www.epey.com/sabit-disk/wd-black-sn8100-2-tb.html",
-"name": "WD Black SN8100",
-"code": "WDS200T1X0M",
-"img": "https://resim.epey.com/1019591/k_wd-black-sn8100-1.jpg",
-"price": 28200.0,
-"sites": 1,
+"id": "995233",
+"url": "https://www.epey.com/sabit-disk/kioxia-exceria-plus-g4-1-tb.html",
+"name": "Kioxia Exceria Plus G4",
+"code": "LVD10Z001TG8",
+"img": "https://resim.epey.com/995233/k_kioxia-exceria-plus-g4-1.jpg",
+"price": 10844.41,
+"sites": 12,
 "score": null,
 "cols": {
-"2352": "2 TB",
-"2353": "14000 MB/s",
-"2354": "14900 MB/s",
-"4931": "2.400 K IOPS"
+"2352": "1 TB",
+"2353": "7900 MB/s",
+"2354": "10000 MB/s",
+"4931": "1.400 K IOPS"
 }
 },
 {
-"id": "418049",
-"url": "https://www.epey.com/sabit-disk/hi-level-elite-series-hlv-ssd30elt-128g.html",
-"name": "Hi-Level Elite Series",
-"code": "HLV-SSD30ELT/128G",
-"img": "https://resim.epey.com/418049/k_hi-level-elite-128-gb-hlv-ssd30elt-128g-1.jpg",
-"price": 1444.4,
+"id": "956980",
+"url": "https://www.epey.com/sabit-disk/kingston-nv3-snv3s-2000g.html",
+"name": "Kingston NV3",
+"code": "SNV3S/2000G",
+"img": "https://resim.epey.com/956980/k_kingston-nv3-snv3s-2000g-1.jpg",
+"price": 15444.0,
 "sites": 10,
 "score": null,
 "cols": {
-"2352": "128 GB",
-"2353": "540 MB/s",
-"2354": "560 MB/s",
+"2352": "2 TB",
+"2353": "5000 MB/s",
+"2354": "6000 MB/s",
 "4931": "-"
 }
 },
@@ -865,34 +849,18 @@
 }
 },
 {
-"id": "1034441",
-"url": "https://www.epey.com/sabit-disk/wd-blue-sn5100-2-tb.html",
-"name": "WD Blue SN5100",
-"code": "WDS200T5B0E",
-"img": "https://resim.epey.com/1034441/k_wd-blue-sn5100-1.jpg",
-"price": 17019.1,
-"sites": 5,
+"id": "694926",
+"url": "https://www.epey.com/sabit-disk/hi-level-hlv-m2pciessd2280-1t.html",
+"name": "Hi-Level HLV-M2PCIESSD2280/1T",
+"code": "",
+"img": "https://resim.epey.com/694926/k_hi-level-512gb-hlv-m2pciessd2280-512g-1.jpg",
+"price": 7348.0,
+"sites": 10,
 "score": null,
 "cols": {
-"2352": "2 TB",
-"2353": "6700 MB/s",
-"2354": "7100 MB/s",
-"4931": "1.300 K IOPS"
-}
-},
-{
-"id": "397150",
-"url": "https://www.epey.com/sabit-disk/hitachi-travelstar-z5k500-500.html",
-"name": "Hitachi Travelstar Z5K500-500",
-"code": "HTS545050A7E380",
-"img": "https://resim.epey.com/397150/k_hitachi-z5k500-320-gb-1.png",
-"price": 1150.0,
-"sites": 3,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "-",
-"2354": "-",
+"2352": "1 TB",
+"2353": "3100 MB/s",
+"2354": "3300 MB/s",
 "4931": "-"
 }
 },
@@ -913,19 +881,19 @@
 }
 },
 {
-"id": "995233",
-"url": "https://www.epey.com/sabit-disk/kioxia-exceria-plus-g4-1-tb.html",
-"name": "Kioxia Exceria Plus G4",
-"code": "LVD10Z001TG8",
-"img": "https://resim.epey.com/995233/k_kioxia-exceria-plus-g4-1.jpg",
-"price": 10844.41,
-"sites": 12,
+"id": "1040074",
+"url": "https://www.epey.com/sabit-disk/kioxia-exceria-basic-1-tb.html",
+"name": "Kioxia Exceria Basic",
+"code": "LSF10Z001TG8",
+"img": "https://resim.epey.com/1040074/k_kioxia-exceria-basic-1.jpg",
+"price": 8799.0,
+"sites": 11,
 "score": null,
 "cols": {
 "2352": "1 TB",
-"2353": "7900 MB/s",
-"2354": "10000 MB/s",
-"4931": "1.400 K IOPS"
+"2353": "6600 MB/s",
+"2354": "7200 MB/s",
+"4931": "1.150 K IOPS"
 }
 },
 {
@@ -945,35 +913,19 @@
 }
 },
 {
-"id": "956980",
-"url": "https://www.epey.com/sabit-disk/kingston-nv3-snv3s-2000g.html",
-"name": "Kingston NV3",
-"code": "SNV3S/2000G",
-"img": "https://resim.epey.com/956980/k_kingston-nv3-snv3s-2000g-1.jpg",
-"price": 15444.0,
+"id": "368462",
+"url": "https://www.epey.com/sabit-disk/kingston-kc600-skc600-512g.html",
+"name": "Kingston KC600",
+"code": "SKC600/512G",
+"img": "https://resim.epey.com/368462/k_kingston-kc600-skc600-512g-1.jpg",
+"price": 5500.0,
 "sites": 10,
 "score": null,
 "cols": {
-"2352": "2 TB",
-"2353": "5000 MB/s",
-"2354": "6000 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "223915",
-"url": "https://www.epey.com/sabit-disk/adata-xpg-sx8200-pro-asx8200pnp-2tt-c.html",
-"name": "XPG SX8200 Pro",
-"code": "ASX8200PNP-2TT-C",
-"img": "https://resim.epey.com/223915/k_adata-xpg-sx8200-pro-2.jpg",
-"price": 13764.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "2900 MB/s",
-"2354": "3350 MB/s",
-"4931": "360 K IOPS"
+"2352": "512 GB",
+"2353": "520 MB/s",
+"2354": "550 MB/s",
+"4931": "80 K IOPS"
 }
 },
 {
@@ -982,7 +934,7 @@
 "name": "Sandisk Optimus 5100",
 "code": "SDSP51500GAN",
 "img": "https://resim.epey.com/1070860/k_sandisk-optimus-5100-1.jpg",
-"price": 5390.98,
+"price": 5694.0,
 "sites": 7,
 "score": null,
 "cols": {
@@ -993,28 +945,12 @@
 }
 },
 {
-"id": "1045778",
-"url": "https://www.epey.com/sabit-disk/goodram-px600-lite-512-gb.html",
-"name": "Goodram PX600 Lite",
-"code": "SSDPB-PX600L-512-80",
-"img": "https://resim.epey.com/1045778/k_goodram-px600-lite-1.jpg",
-"price": 4889.0,
-"sites": 9,
-"score": null,
-"cols": {
-"2352": "512 GB",
-"2353": "2000 MB/s",
-"2354": "3400 MB/s",
-"4931": "550 K IOPS"
-}
-},
-{
 "id": "1044227",
 "url": "https://www.epey.com/sabit-disk/samsung-9100-pro-8-tb.html",
 "name": "Samsung 9100 Pro",
 "code": "MZ-VAP8T0BW",
 "img": "https://resim.epey.com/1044227/k_samsung-9100-pro-1.jpg",
-"price": 195303.8,
+"price": 195313.2,
 "sites": 3,
 "score": null,
 "cols": {
@@ -1022,6 +958,38 @@
 "2353": "13400 MB/s",
 "2354": "14800 MB/s",
 "4931": "2.600 K IOPS"
+}
+},
+{
+"id": "956282",
+"url": "https://www.epey.com/sabit-disk/kingston-renegade-srngd-2000g.html",
+"name": "Kingston Renegade",
+"code": "SRNGD/2000G",
+"img": "https://resim.epey.com/956282/k_kingston-renegade-srngd-2000g-1.jpg",
+"price": 21200.73,
+"sites": 9,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "7000 MB/s",
+"2354": "7300 MB/s",
+"4931": "1.000 K IOPS"
+}
+},
+{
+"id": "907970",
+"url": "https://www.epey.com/sabit-disk/seagate-exos-7e10-st4000nm024b.html",
+"name": "Seagate Exos 7E10",
+"code": "ST4000NM024B",
+"img": "https://resim.epey.com/907970/k_seagate-4-tb-3-5-exos-7e10-st4000nm024b-1.jpg",
+"price": 7543.08,
+"sites": 2,
+"score": null,
+"cols": {
+"2352": "4 TB",
+"2353": "-",
+"2354": "250 MB/s",
+"4931": "-"
 }
 },
 {
@@ -1046,8 +1014,8 @@
 "name": "Samsung 870 Evo",
 "code": "MZ-77E500BW",
 "img": "https://resim.epey.com/660176/k_samsung-870-evo-mz-77e250bw-mz-77e250bw-1.jpg",
-"price": 8499.0,
-"sites": 12,
+"price": 9613.08,
+"sites": 11,
 "score": null,
 "cols": {
 "2352": "500 GB",
@@ -1057,13 +1025,29 @@
 }
 },
 {
+"id": "223915",
+"url": "https://www.epey.com/sabit-disk/adata-xpg-sx8200-pro-asx8200pnp-2tt-c.html",
+"name": "XPG SX8200 Pro",
+"code": "ASX8200PNP-2TT-C",
+"img": "https://resim.epey.com/223915/k_adata-xpg-sx8200-pro-2.jpg",
+"price": 13764.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "2900 MB/s",
+"2354": "3350 MB/s",
+"4931": "360 K IOPS"
+}
+},
+{
 "id": "140219",
 "url": "https://www.epey.com/sabit-disk/wd-purple-wd10purz.html",
 "name": "WD Purple",
 "code": "WD10PURZ",
 "img": "https://resim.epey.com/140219/k_wd-purple-wd10purz-2.jpg",
 "price": 3679.08,
-"sites": 10,
+"sites": 11,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -1073,49 +1057,98 @@
 }
 },
 {
-"id": "963376",
-"url": "https://www.epey.com/sabit-disk/samsung-990-evo-plus.html",
-"name": "Samsung 990 Evo Plus",
-"code": "MZ-V9S1T0BW",
-"img": "https://resim.epey.com/963376/k_samsung-990-evo-plus-1.jpg",
-"price": 12474.0,
-"sites": 13,
+"id": "84508",
+"url": "https://www.epey.com/sabit-disk/kingston-a400-480gb.html",
+"name": "Kingston A400",
+"code": "SA400S37/480G",
+"img": "https://resim.epey.com/84508/k_kingston-sa400s37-120g-1.jpg",
+"price": 4967.1,
+"sites": 10,
 "score": null,
 "cols": {
-"2352": "1 TB",
-"2353": "6300 MB/s",
-"2354": "7150 MB/s",
-"4931": "1.350 K IOPS"
+"2352": "480 GB",
+"2353": "450 MB/s",
+"2354": "500 MB/s",
+"4931": "35 K IOPS"
 }
 },
 {
-"id": "70746",
-"url": "https://www.epey.com/sabit-disk/seagate-barracuda-3-5-inc-500gb.html",
-"name": "Seagate BarraCuda",
-"code": "ST500DM009",
-"img": "https://resim.epey.com/70746/k_seagate-barracuda-3-5-inc-500gb-1.jpg",
-"price": 1302.0,
-"sites": 6,
+"id": "811224",
+"url": "https://www.epey.com/sabit-disk/goodram-px500.html",
+"name": "Goodram PX500",
+"code": "SSDPR-PX500-512-80",
+"img": "https://resim.epey.com/811224/k_goodram-px500-1.jpg",
+"price": 4746.28,
+"sites": 5,
+"score": null,
+"cols": {
+"2352": "512 GB",
+"2353": "1600 MB/s",
+"2354": "2000 MB/s",
+"4931": "140 K IOPS"
+}
+},
+{
+"id": "397150",
+"url": "https://www.epey.com/sabit-disk/hitachi-travelstar-z5k500-500.html",
+"name": "Hitachi Travelstar Z5K500-500",
+"code": "HTS545050A7E380",
+"img": "https://resim.epey.com/397150/k_hitachi-z5k500-320-gb-1.png",
+"price": 1150.0,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "500 GB",
-"2353": "156 MB/s",
-"2354": "210 MB/s"
+"2353": "-",
+"2354": "-",
+"4931": "-"
 }
 },
 {
-"id": "907970",
-"url": "https://www.epey.com/sabit-disk/seagate-exos-7e10-st4000nm024b.html",
-"name": "Seagate Exos 7E10",
-"code": "ST4000NM024B",
-"img": "https://resim.epey.com/907970/k_seagate-4-tb-3-5-exos-7e10-st4000nm024b-1.jpg",
-"price": 7543.08,
-"sites": 2,
+"id": "1061976",
+"url": "https://www.epey.com/sabit-disk/mld-m600-2-tb.html",
+"name": "MLD M600",
+"code": "MLD22M600E27-2000",
+"img": "https://resim.epey.com/1061976/k_mld-m600-1.jpg",
+"price": 14209.02,
+"sites": 6,
 "score": null,
 "cols": {
-"2352": "4 TB",
+"2352": "2 TB",
+"2353": "6400 MB/s",
+"2354": "7000 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "1034480",
+"url": "https://www.epey.com/sabit-disk/hiksemi-waves-2-tb.html",
+"name": "Hiksemi Wave(S)",
+"code": "HS-SSD-WAVE(S)-2048G",
+"img": "https://resim.epey.com/1034480/k_hiksemi-waves-1.jpg",
+"price": 10325.06,
+"sites": 6,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "510 MB/s",
+"2354": "550 MB/s",
+"4931": "70 K IOPS"
+}
+},
+{
+"id": "1010245",
+"url": "https://www.epey.com/sabit-disk/toshiba-mg11-24-tb.html",
+"name": "Toshiba MG11",
+"code": "MG11ACA24TE",
+"img": "https://resim.epey.com/1010245/k_toshiba-mg11aca24te-1.jpg",
+"price": 58261.0,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "24 TB",
 "2353": "-",
-"2354": "250 MB/s",
+"2354": "295 MB/s",
 "4931": "-"
 }
 },
@@ -1136,19 +1169,19 @@
 }
 },
 {
-"id": "875487",
-"url": "https://www.epey.com/sabit-disk/wd-black-sn850x-wds100t2xhe.html",
-"name": "WD Black SN850X",
-"code": "WDS100T2XHE",
-"img": "https://resim.epey.com/875487/k_wd-black-sn850x-nvme-1tb-wds100t2xhe-1.jpg",
-"price": 18399.08,
-"sites": 4,
+"id": "872844",
+"url": "https://www.epey.com/sabit-disk/wd-purple-wd23purz.html",
+"name": "WD Purple",
+"code": "WD23PURZ",
+"img": "https://resim.epey.com/872844/k_wd-purple-wd23purz-1.jpg",
+"price": 6999.0,
+"sites": 12,
 "score": null,
 "cols": {
-"2352": "1 TB",
-"2353": "6300 MB/s",
-"2354": "7300 MB/s",
-"4931": "1.100 K IOPS"
+"2352": "2 TB",
+"2353": "-",
+"2354": "180 MB/s",
+"4931": "-"
 }
 },
 {
@@ -1168,19 +1201,33 @@
 }
 },
 {
-"id": "368394",
-"url": "https://www.epey.com/sabit-disk/samsung-mzvlb256hbhq.html",
-"name": "Samsung MZVLB256HBHQ",
-"code": "",
-"img": "https://resim.epey.com/368394/k_samsung-256gb-mzvlb256hbhq-1.jpg",
-"price": 3899.0,
-"sites": 1,
+"id": "72915",
+"url": "https://www.epey.com/sabit-disk/seagate-skyhawk-2tb.html",
+"name": "Seagate SkyHawk",
+"code": "ST2000VX008",
+"img": "https://resim.epey.com/72915/k_seagate-skyhawk-2tb-3.jpg",
+"price": 5519.08,
+"sites": 5,
 "score": null,
 "cols": {
-"2352": "256 GB",
-"2353": "2200 MB/s",
-"2354": "3500 MB/s",
-"4931": "480 K IOPS"
+"2352": "2 TB",
+"2353": "-",
+"2354": "180 MB/s"
+}
+},
+{
+"id": "72137",
+"url": "https://www.epey.com/sabit-disk/wd-blue-desktop-1tb.html",
+"name": "WD Blue Desktop",
+"code": "WD10EZEX",
+"img": "https://resim.epey.com/72137/k_wd-blue-desktop-1tb-1.jpg",
+"price": 3899.0,
+"sites": 4,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "-",
+"2354": "150 MB/s"
 }
 },
 {
@@ -1190,7 +1237,7 @@
 "code": "ST1000DM010",
 "img": "https://resim.epey.com/70748/k_seagate-barracuda-3-5-inc-1tb-1.jpg",
 "price": 3699.0,
-"sites": 5,
+"sites": 4,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -1199,19 +1246,19 @@
 }
 },
 {
-"id": "813279",
-"url": "https://www.epey.com/sabit-disk/kingston-nv2-snv2s-1000g.html",
-"name": "Kingston NV2",
-"code": "SNV2S/1000G",
-"img": "https://resim.epey.com/813279/k_kingston-nv2-snv2s-1000g-1.jpg",
-"price": 8599.25,
-"sites": 7,
+"id": "596583",
+"url": "https://www.epey.com/sabit-disk/samsung-980-pro.html",
+"name": "Samsung 980 Pro",
+"code": "MZ-V8P1T0BW",
+"img": "https://resim.epey.com/596583/k_samsung-980-pro-1.jpg",
+"price": 12689.06,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "1 TB",
-"2353": "2100 MB/s",
-"2354": "3500 MB/s",
-"4931": "-"
+"2353": "5000 MB/s",
+"2354": "7000 MB/s",
+"4931": "1.000 K IOPS"
 }
 },
 {
@@ -1231,35 +1278,19 @@
 }
 },
 {
-"id": "977358",
-"url": "https://www.epey.com/sabit-disk/lexar-nq790-1-tb.html",
-"name": "Lexar NQ790",
-"code": "LNQ790X001T",
-"img": "https://resim.epey.com/977358/k_lexar-nq79-lnq790x001t-1.jpg",
-"price": 9999.0,
-"sites": 8,
+"id": "1004821",
+"url": "https://www.epey.com/sabit-disk/mld-m800-2-tb.html",
+"name": "MLD M800",
+"code": "MLD22M800E31-2000",
+"img": "https://resim.epey.com/1004821/k_mld-m800-1.jpg",
+"price": 15810.0,
+"sites": 4,
 "score": null,
 "cols": {
-"2352": "1 TB",
-"2353": "6000 MB/s",
-"2354": "7000 MB/s",
-"4931": "600 K IOPS"
-}
-},
-{
-"id": "665205",
-"url": "https://www.epey.com/sabit-disk/samsung-980-mz-v8v1t0bw.html",
-"name": "Samsung 980",
-"code": "MZ-V8V1T0BW",
-"img": "https://resim.epey.com/665205/k_samsung-980-mz-v8v1t0bw-1.jpg",
-"price": 10782.5,
-"sites": 9,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "3000 MB/s",
-"2354": "3500 MB/s",
-"4931": "480 K IOPS"
+"2352": "2 TB",
+"2353": "8600 MB/s",
+"2354": "10300 MB/s",
+"4931": "1.300 K IOPS"
 }
 },
 {
@@ -1279,19 +1310,18 @@
 }
 },
 {
-"id": "811224",
-"url": "https://www.epey.com/sabit-disk/goodram-px500.html",
-"name": "Goodram PX500",
-"code": "SSDPR-PX500-512-80",
-"img": "https://resim.epey.com/811224/k_goodram-px500-1.jpg",
-"price": 4746.28,
+"id": "70746",
+"url": "https://www.epey.com/sabit-disk/seagate-barracuda-3-5-inc-500gb.html",
+"name": "Seagate BarraCuda",
+"code": "ST500DM009",
+"img": "https://resim.epey.com/70746/k_seagate-barracuda-3-5-inc-500gb-1.jpg",
+"price": 1200.0,
 "sites": 5,
 "score": null,
 "cols": {
-"2352": "512 GB",
-"2353": "1600 MB/s",
-"2354": "2000 MB/s",
-"4931": "140 K IOPS"
+"2352": "500 GB",
+"2353": "156 MB/s",
+"2354": "210 MB/s"
 }
 },
 {
@@ -1300,7 +1330,7 @@
 "name": "Samsung 980 Pro Soğutuculu",
 "code": "MZ-V8P1T0CW",
 "img": "https://resim.epey.com/731563/k_samsung-980-pro-sogutuculu-mz-v8p1t0cw-1.jpg",
-"price": 14999.0,
+"price": 15039.06,
 "sites": 7,
 "score": null,
 "cols": {
@@ -1311,67 +1341,35 @@
 }
 },
 {
-"id": "1070862",
-"url": "https://www.epey.com/sabit-disk/sandisk-optimus-5100-1-tb.html",
-"name": "Sandisk Optimus 5100",
-"code": "SDSP51100TAN",
-"img": "https://resim.epey.com/1070862/k_sandisk-optimus-5100-1.jpg",
-"price": 10829.0,
-"sites": 4,
+"id": "1069114",
+"url": "https://www.epey.com/sabit-disk/wd-red-plus-4-tb.html",
+"name": "WD Red Plus",
+"code": "WD40EFZZ",
+"img": "https://resim.epey.com/1069114/k_wd-red-plus-8-1.jpg",
+"price": 12664.0,
+"sites": 3,
 "score": null,
 "cols": {
-"2352": "1 TB",
-"2353": "6700 MB/s",
-"2354": "7100 MB/s",
-"4931": "1.300 K IOPS"
-}
-},
-{
-"id": "1056433",
-"url": "https://www.epey.com/sabit-disk/lexar-nq100-256-gb.html",
-"name": "Lexar NQ100",
-"code": "LNQ100X256G",
-"img": "https://resim.epey.com/1056433/k_lexar-nq100-lnq100x512g-1.jpg",
-"price": 2699.0,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "256 GB",
+"2352": "4 TB",
 "2353": "-",
-"2354": "550 MB/s",
+"2354": "175 MB/s",
 "4931": "-"
 }
 },
 {
-"id": "1055977",
-"url": "https://www.epey.com/sabit-disk/hiksemi-waves-512-gb.html",
-"name": "Hiksemi Wave(S)",
-"code": "HS-SSD-WAVE(S) 512G",
-"img": "https://resim.epey.com/1055977/k_hiksemi-waves-1.jpg",
-"price": 3489.0,
-"sites": 7,
+"id": "1045778",
+"url": "https://www.epey.com/sabit-disk/goodram-px600-lite-512-gb.html",
+"name": "Goodram PX600 Lite",
+"code": "SSDPB-PX600L-512-80",
+"img": "https://resim.epey.com/1045778/k_goodram-px600-lite-1.jpg",
+"price": 4889.0,
+"sites": 9,
 "score": null,
 "cols": {
 "2352": "512 GB",
-"2353": "450 MB/s",
-"2354": "530 MB/s",
-"4931": "69 K IOPS"
-}
-},
-{
-"id": "1034480",
-"url": "https://www.epey.com/sabit-disk/hiksemi-waves-2-tb.html",
-"name": "Hiksemi Wave(S)",
-"code": "HS-SSD-WAVE(S)-2048G",
-"img": "https://resim.epey.com/1034480/k_hiksemi-waves-1.jpg",
-"price": 10325.06,
-"sites": 6,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "510 MB/s",
-"2354": "550 MB/s",
-"4931": "70 K IOPS"
+"2353": "2000 MB/s",
+"2354": "3400 MB/s",
+"4931": "550 K IOPS"
 }
 },
 {
@@ -1380,7 +1378,7 @@
 "name": "MSI Spatium M450 V1",
 "code": "",
 "img": "https://resim.epey.com/1018369/k_msi-spatium-m450-v1-1.jpg",
-"price": 6815.0,
+"price": 6347.08,
 "sites": 6,
 "score": null,
 "cols": {
@@ -1407,34 +1405,34 @@
 }
 },
 {
+"id": "907996",
+"url": "https://www.epey.com/sabit-disk/wd-purple-wd11purz.html",
+"name": "WD Purple",
+"code": "WD11PURZ",
+"img": "https://resim.epey.com/907996/k_wd-purple-1-tb-wd11purz-1.jpg",
+"price": 3899.0,
+"sites": 10,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "-",
+"2354": "180 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "890928",
 "url": "https://www.epey.com/sabit-disk/patriot-viper-vp4300-lite-vp4300l1tbm28h.html",
 "name": "Patriot Viper VP4300 Lite",
 "code": "VP4300L1TBM28H",
 "img": "https://resim.epey.com/890928/k_patriot-viper-vp4300-lite-vp4300l1tbm28h-1.jpg",
 "price": 9292.0,
-"sites": 4,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "1 TB",
 "2353": "6400 MB/s",
 "2354": "7400 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "872844",
-"url": "https://www.epey.com/sabit-disk/wd-purple-wd23purz.html",
-"name": "WD Purple",
-"code": "WD23PURZ",
-"img": "https://resim.epey.com/872844/k_wd-purple-wd23purz-1.jpg",
-"price": 6999.0,
-"sites": 12,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "-",
-"2354": "180 MB/s",
 "4931": "-"
 }
 },
@@ -1455,6 +1453,38 @@
 }
 },
 {
+"id": "809518",
+"url": "https://www.epey.com/sabit-disk/wd-green-sn350-nvme-wds200t3g0c.html",
+"name": "WD Green SN350 NVMe",
+"code": "WDS200T3G0C",
+"img": "https://resim.epey.com/809518/k_wd-green-sn350-nvme-2.jpg",
+"price": 13299.0,
+"sites": 4,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "3000 MB/s",
+"2354": "3200 MB/s",
+"4931": "450 K IOPS"
+}
+},
+{
+"id": "418049",
+"url": "https://www.epey.com/sabit-disk/hi-level-elite-series-hlv-ssd30elt-128g.html",
+"name": "Hi-Level Elite Series",
+"code": "HLV-SSD30ELT/128G",
+"img": "https://resim.epey.com/418049/k_hi-level-elite-128-gb-hlv-ssd30elt-128g-1.jpg",
+"price": 1518.0,
+"sites": 10,
+"score": null,
+"cols": {
+"2352": "128 GB",
+"2353": "540 MB/s",
+"2354": "560 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "418048",
 "url": "https://www.epey.com/sabit-disk/hi-level-elite-series-hlv-ssd30elt-256g.html",
 "name": "Hi-Level Elite Series",
@@ -1471,83 +1501,51 @@
 }
 },
 {
-"id": "368462",
-"url": "https://www.epey.com/sabit-disk/kingston-kc600-skc600-512g.html",
-"name": "Kingston KC600",
-"code": "SKC600/512G",
-"img": "https://resim.epey.com/368462/k_kingston-kc600-skc600-512g-1.jpg",
-"price": 5500.0,
-"sites": 10,
+"id": "368394",
+"url": "https://www.epey.com/sabit-disk/samsung-mzvlb256hbhq.html",
+"name": "Samsung MZVLB256HBHQ",
+"code": "",
+"img": "https://resim.epey.com/368394/k_samsung-256gb-mzvlb256hbhq-1.jpg",
+"price": 3899.0,
+"sites": 1,
 "score": null,
 "cols": {
-"2352": "512 GB",
-"2353": "520 MB/s",
-"2354": "550 MB/s",
-"4931": "80 K IOPS"
+"2352": "256 GB",
+"2353": "2200 MB/s",
+"2354": "3500 MB/s",
+"4931": "480 K IOPS"
 }
 },
 {
-"id": "84508",
-"url": "https://www.epey.com/sabit-disk/kingston-a400-480gb.html",
-"name": "Kingston A400",
-"code": "SA400S37/480G",
-"img": "https://resim.epey.com/84508/k_kingston-sa400s37-120g-1.jpg",
-"price": 4822.71,
-"sites": 10,
-"score": null,
-"cols": {
-"2352": "480 GB",
-"2353": "450 MB/s",
-"2354": "500 MB/s",
-"4931": "35 K IOPS"
-}
-},
-{
-"id": "941787",
-"url": "https://www.epey.com/sabit-disk/lexar-nm610pro-lnm610p001t.html",
-"name": "Lexar NM610Pro",
-"code": "LNM610P001T",
-"img": "https://resim.epey.com/941787/k_lexar-nm610pro-lnm610p001t-1.jpg",
-"price": 8740.0,
-"sites": 6,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "2600 MB/s",
-"2354": "3300 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "1004821",
-"url": "https://www.epey.com/sabit-disk/mld-m800-2-tb.html",
-"name": "MLD M800",
-"code": "MLD22M800E31-2000",
-"img": "https://resim.epey.com/1004821/k_mld-m800-1.jpg",
-"price": 15810.0,
-"sites": 4,
+"id": "1034441",
+"url": "https://www.epey.com/sabit-disk/wd-blue-sn5100-2-tb.html",
+"name": "WD Blue SN5100",
+"code": "WDS200T5B0E",
+"img": "https://resim.epey.com/1034441/k_wd-blue-sn5100-1.jpg",
+"price": 17019.1,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "2 TB",
-"2353": "8600 MB/s",
-"2354": "10300 MB/s",
+"2353": "6700 MB/s",
+"2354": "7100 MB/s",
 "4931": "1.300 K IOPS"
 }
 },
 {
-"id": "721792",
-"url": "https://www.epey.com/sabit-disk/wd-blue-sn570-wds500g3b0c.html",
-"name": "WD Blue SN570",
-"code": "WDS500G3B0C",
-"img": "https://resim.epey.com/721792/k_wd-blue-sn570-wds500g3b0c-wds250g3b0c-1.jpg",
-"price": 31142.0,
-"sites": 1,
+"id": "963376",
+"url": "https://www.epey.com/sabit-disk/samsung-990-evo-plus.html",
+"name": "Samsung 990 Evo Plus",
+"code": "MZ-V9S1T0BW",
+"img": "https://resim.epey.com/963376/k_samsung-990-evo-plus-1.jpg",
+"price": 12549.0,
+"sites": 11,
 "score": null,
 "cols": {
-"2352": "500 GB",
-"2353": "2300 MB/s",
-"2354": "3500 MB/s",
-"4931": "390 K IOPS"
+"2352": "1 TB",
+"2353": "6300 MB/s",
+"2354": "7150 MB/s",
+"4931": "1.350 K IOPS"
 }
 },
 {
@@ -1557,282 +1555,12 @@
 "code": "MLD22M300P13-500",
 "img": "https://resim.epey.com/691659/k_mld-m300-mld22m300p13-500-1.jpg",
 "price": 5299.2,
-"sites": 8,
+"sites": 7,
 "score": null,
 "cols": {
 "2352": "500 GB",
 "2353": "3100 MB/s",
 "2354": "3300 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "1069114",
-"url": "https://www.epey.com/sabit-disk/wd-red-plus-4-tb.html",
-"name": "WD Red Plus",
-"code": "WD40EFZZ",
-"img": "https://resim.epey.com/1069114/k_wd-red-plus-8-1.jpg",
-"price": 12517.2,
-"sites": 6,
-"score": null,
-"cols": {
-"2352": "4 TB",
-"2353": "-",
-"2354": "175 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "1056245",
-"url": "https://www.epey.com/sabit-disk/hiksemi-waves-256-gb.html",
-"name": "Hiksemi Wave(S)",
-"code": "HS-SSD-WAVE(S)-256G",
-"img": "https://resim.epey.com/1056245/k_hiksemi-waves-1.jpg",
-"price": 2099.0,
-"sites": 7,
-"score": null,
-"cols": {
-"2352": "256 GB",
-"2353": "400 MB/s",
-"2354": "530 MB/s",
-"4931": "75 K IOPS"
-}
-},
-{
-"id": "1025533",
-"url": "https://www.epey.com/sabit-disk/lexar-nq780-1-tb.html",
-"name": "Lexar NQ780",
-"code": "LNQ780X001T",
-"img": "https://resim.epey.com/1025533/k_lexar-nq780-1.jpg",
-"price": 8269.0,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "-",
-"2354": "-",
-"4931": "-"
-}
-},
-{
-"id": "1019592",
-"url": "https://www.epey.com/sabit-disk/wd-black-sn8100-4-tb.html",
-"name": "WD Black SN8100",
-"code": "WDS400T1X0M",
-"img": "https://resim.epey.com/1019592/k_wd-black-sn8100-1.jpg",
-"price": 51605.06,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "4 TB",
-"2353": "14000 MB/s",
-"2354": "14900 MB/s",
-"4931": "2.400 K IOPS"
-}
-},
-{
-"id": "1010245",
-"url": "https://www.epey.com/sabit-disk/toshiba-mg11-24-tb.html",
-"name": "Toshiba MG11",
-"code": "MG11ACA24TE",
-"img": "https://resim.epey.com/1010245/k_toshiba-mg11aca24te-1.jpg",
-"price": 58239.8,
-"sites": 9,
-"score": null,
-"cols": {
-"2352": "24 TB",
-"2353": "-",
-"2354": "295 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "1003527",
-"url": "https://www.epey.com/sabit-disk/msi-spatium-m560-2-tb.html",
-"name": "MSI Spatium M560",
-"code": "SM560N2TB",
-"img": "https://resim.epey.com/1003527/k_msi-spatium-m560-1.jpg",
-"price": 19919.0,
-"sites": 12,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "8700 MB/s",
-"2354": "10300 MB/s",
-"4931": "1.400 K IOPS"
-}
-},
-{
-"id": "963404",
-"url": "https://www.epey.com/sabit-disk/samsung-990-evo-plus-mz-v9s2t0bw.html",
-"name": "Samsung 990 Evo Plus",
-"code": "MZ-V9S2T0BW",
-"img": "https://resim.epey.com/963404/k_samsung-990-evo-plus-mz-v9s2t0bw-1.jpg",
-"price": 21189.0,
-"sites": 9,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "6300 MB/s",
-"2354": "7250 MB/s",
-"4931": "1.350 K IOPS"
-}
-},
-{
-"id": "956282",
-"url": "https://www.epey.com/sabit-disk/kingston-renegade-srngd-2000g.html",
-"name": "Kingston Renegade",
-"code": "SRNGD/2000G",
-"img": "https://resim.epey.com/956282/k_kingston-renegade-srngd-2000g-1.jpg",
-"price": 21200.73,
-"sites": 9,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "7000 MB/s",
-"2354": "7300 MB/s",
-"4931": "1.000 K IOPS"
-}
-},
-{
-"id": "916013",
-"url": "https://www.epey.com/sabit-disk/intenso-m-2-ssd-pcie-premium-3835460.html",
-"name": "Intenso M.2 SSD PCIe Premium",
-"code": "3835460",
-"img": "https://resim.epey.com/916013/k_intenso-m-2-ssd-pcie-premium-3835460-3835440-1.jpg",
-"price": 7852.08,
-"sites": 7,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "1700 MB/s",
-"2354": "2100 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "907996",
-"url": "https://www.epey.com/sabit-disk/wd-purple-wd11purz.html",
-"name": "WD Purple",
-"code": "WD11PURZ",
-"img": "https://resim.epey.com/907996/k_wd-purple-1-tb-wd11purz-1.jpg",
-"price": 3899.0,
-"sites": 10,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "-",
-"2354": "180 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "882101",
-"url": "https://www.epey.com/sabit-disk/crucial-t700.html",
-"name": "Crucial T700",
-"code": "CT1000T700SSD5",
-"img": "https://resim.epey.com/882101/k_crucial-t700-1.jpg",
-"price": 13399.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "9500 MB/s",
-"2354": "11700 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "729821",
-"url": "https://www.epey.com/sabit-disk/kingston-kc3000.html",
-"name": "Kingston KC3000",
-"code": "SKC3000S/512G",
-"img": "https://resim.epey.com/729821/k_kingston-kc3000-1.jpg",
-"price": 10999.9,
-"sites": 5,
-"score": null,
-"cols": {
-"2352": "512 GB",
-"2353": "3900 MB/s",
-"2354": "7000 MB/s",
-"4931": "900 K IOPS"
-}
-},
-{
-"id": "145411",
-"url": "https://www.epey.com/sabit-disk/crucial-bx500-ct240bx500ssd1.html",
-"name": "Crucial BX500",
-"code": "CT240BX500SSD1",
-"img": "https://resim.epey.com/145411/k_crucial-bx500-ct240bx500ssd1-ct120bx500ssd1-1.jpg",
-"price": 3588.0,
-"sites": 3,
-"score": null,
-"cols": {
-"2352": "240 GB",
-"2353": "500 MB/s",
-"2354": "540 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "72137",
-"url": "https://www.epey.com/sabit-disk/wd-blue-desktop-1tb.html",
-"name": "WD Blue Desktop",
-"code": "WD10EZEX",
-"img": "https://resim.epey.com/72137/k_wd-blue-desktop-1tb-1.jpg",
-"price": 3899.0,
-"sites": 4,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "-",
-"2354": "150 MB/s"
-}
-},
-{
-"id": "71043",
-"url": "https://www.epey.com/sabit-disk/sandisk-ssd-plus-480gb.html",
-"name": "Sandisk SSD Plus",
-"code": "SDSSDA-480G-G26",
-"img": "https://resim.epey.com/71043/k_sandisk-ssd-plus-1.png",
-"price": 5704.0,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "480 GB",
-"2353": "445 MB/s",
-"2354": "535 MB/s"
-}
-},
-{
-"id": "741339",
-"url": "https://www.epey.com/sabit-disk/kioxia-exceria-pro-lse10z002tg8.html",
-"name": "Kioxia Exceria Pro",
-"code": "LSE10Z002TG8",
-"img": "https://resim.epey.com/741339/k_kioxia-exceria-pro-lse10z002tg8-1.jpg",
-"price": 28999.0,
-"sites": 3,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "6400 MB/s",
-"2354": "7300 MB/s",
-"4931": "1.300 K IOPS"
-}
-},
-{
-"id": "1036077",
-"url": "https://www.epey.com/sabit-disk/adata-legend-900-pro-2-tb.html",
-"name": "Adata Legend 900 Pro",
-"code": "SLEG-900P-2TCS",
-"img": "https://resim.epey.com/1036077/k_adata-legend-900-pro-1.jpg",
-"price": 19686.6,
-"sites": 7,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "6500 MB/s",
-"2354": "7400 MB/s",
 "4931": "-"
 }
 },
@@ -1853,19 +1581,259 @@
 }
 },
 {
+"id": "1055977",
+"url": "https://www.epey.com/sabit-disk/hiksemi-waves-512-gb.html",
+"name": "Hiksemi Wave(S)",
+"code": "HS-SSD-WAVE(S) 512G",
+"img": "https://resim.epey.com/1055977/k_hiksemi-waves-1.jpg",
+"price": 3489.0,
+"sites": 7,
+"score": null,
+"cols": {
+"2352": "512 GB",
+"2353": "450 MB/s",
+"2354": "530 MB/s",
+"4931": "69 K IOPS"
+}
+},
+{
+"id": "1019592",
+"url": "https://www.epey.com/sabit-disk/wd-black-sn8100-4-tb.html",
+"name": "WD Black SN8100",
+"code": "WDS400T1X0M",
+"img": "https://resim.epey.com/1019592/k_wd-black-sn8100-1.jpg",
+"price": 51605.06,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "4 TB",
+"2353": "14000 MB/s",
+"2354": "14900 MB/s",
+"4931": "2.400 K IOPS"
+}
+},
+{
+"id": "988487",
+"url": "https://www.epey.com/sabit-disk/patriot-vp400-v4-1-tb.html",
+"name": "Patriot VP400 V4",
+"code": "P400VP1TBM28H",
+"img": "https://resim.epey.com/988487/k_patriot-vp400-v4-1.jpg",
+"price": 8371.16,
+"sites": 3,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "5000 MB/s",
+"2354": "6000 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "963404",
+"url": "https://www.epey.com/sabit-disk/samsung-990-evo-plus-mz-v9s2t0bw.html",
+"name": "Samsung 990 Evo Plus",
+"code": "MZ-V9S2T0BW",
+"img": "https://resim.epey.com/963404/k_samsung-990-evo-plus-mz-v9s2t0bw-1.jpg",
+"price": 21189.0,
+"sites": 9,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "6300 MB/s",
+"2354": "7250 MB/s",
+"4931": "1.350 K IOPS"
+}
+},
+{
+"id": "896760",
+"url": "https://www.epey.com/sabit-disk/wd-blue-sn580-wds100t3b0e.html",
+"name": "WD Blue SN580",
+"code": "WDS100T3B0E",
+"img": "https://resim.epey.com/896760/k_wd-blue-sn580-wds100t3b0e-1.jpg",
+"price": 55473.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "4150 MB/s",
+"2354": "4150 MB/s",
+"4931": "750 K IOPS"
+}
+},
+{
+"id": "729821",
+"url": "https://www.epey.com/sabit-disk/kingston-kc3000.html",
+"name": "Kingston KC3000",
+"code": "SKC3000S/512G",
+"img": "https://resim.epey.com/729821/k_kingston-kc3000-1.jpg",
+"price": 10999.9,
+"sites": 4,
+"score": null,
+"cols": {
+"2352": "512 GB",
+"2353": "3900 MB/s",
+"2354": "7000 MB/s",
+"4931": "900 K IOPS"
+}
+},
+{
+"id": "167748",
+"url": "https://www.epey.com/sabit-disk/toshiba-mq04abf100.html",
+"name": "Toshiba MQ04ABF100",
+"code": "",
+"img": "https://resim.epey.com/167748/k_toshiba-mq04abf100-1.jpg",
+"price": 3219.0,
+"sites": 3,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "-",
+"2354": "-",
+"4931": "-"
+}
+},
+{
+"id": "145411",
+"url": "https://www.epey.com/sabit-disk/crucial-bx500-ct240bx500ssd1.html",
+"name": "Crucial BX500",
+"code": "CT240BX500SSD1",
+"img": "https://resim.epey.com/145411/k_crucial-bx500-ct240bx500ssd1-ct120bx500ssd1-1.jpg",
+"price": 3588.0,
+"sites": 3,
+"score": null,
+"cols": {
+"2352": "240 GB",
+"2353": "500 MB/s",
+"2354": "540 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "84510",
+"url": "https://www.epey.com/sabit-disk/kingston-a400-240gb.html",
+"name": "Kingston A400",
+"code": "SA400S37/240G",
+"img": "https://resim.epey.com/84510/k_kingston-sa400s37-120g-1.jpg",
+"price": 3499.6,
+"sites": 10,
+"score": null,
+"cols": {
+"2352": "240 GB",
+"2353": "350 MB/s",
+"2354": "500 MB/s",
+"4931": "25 K IOPS"
+}
+},
+{
+"id": "941787",
+"url": "https://www.epey.com/sabit-disk/lexar-nm610pro-lnm610p001t.html",
+"name": "Lexar NM610Pro",
+"code": "LNM610P001T",
+"img": "https://resim.epey.com/941787/k_lexar-nm610pro-lnm610p001t-1.jpg",
+"price": 8739.14,
+"sites": 6,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "2600 MB/s",
+"2354": "3300 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "665205",
+"url": "https://www.epey.com/sabit-disk/samsung-980-mz-v8v1t0bw.html",
+"name": "Samsung 980",
+"code": "MZ-V8V1T0BW",
+"img": "https://resim.epey.com/665205/k_samsung-980-mz-v8v1t0bw-1.jpg",
+"price": 10782.5,
+"sites": 9,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "3000 MB/s",
+"2354": "3500 MB/s",
+"4931": "480 K IOPS"
+}
+},
+{
+"id": "1036077",
+"url": "https://www.epey.com/sabit-disk/adata-legend-900-pro-2-tb.html",
+"name": "Adata Legend 900 Pro",
+"code": "SLEG-900P-2TCS",
+"img": "https://resim.epey.com/1036077/k_adata-legend-900-pro-1.jpg",
+"price": 19875.7,
+"sites": 7,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "6500 MB/s",
+"2354": "7400 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "721792",
+"url": "https://www.epey.com/sabit-disk/wd-blue-sn570-wds500g3b0c.html",
+"name": "WD Blue SN570",
+"code": "WDS500G3B0C",
+"img": "https://resim.epey.com/721792/k_wd-blue-sn570-wds500g3b0c-wds250g3b0c-1.jpg",
+"price": 31142.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "500 GB",
+"2353": "2300 MB/s",
+"2354": "3500 MB/s",
+"4931": "390 K IOPS"
+}
+},
+{
+"id": "660173",
+"url": "https://www.epey.com/sabit-disk/samsung-870-evo.html",
+"name": "Samsung 870 Evo",
+"code": "MZ-77E250BW",
+"img": "https://resim.epey.com/660173/k_samsung-870-evo-mz-77e250bw-1.jpg",
+"price": 4299.0,
+"sites": 9,
+"score": null,
+"cols": {
+"2352": "250 GB",
+"2353": "530 MB/s",
+"2354": "560 MB/s",
+"4931": "88 K IOPS"
+}
+},
+{
 "id": "146017",
 "url": "https://www.epey.com/sabit-disk/samsung-970-evo-plus-mz-v7s500bw.html",
 "name": "Samsung 970 EVO Plus",
 "code": "MZ-V7S500BW",
 "img": "https://resim.epey.com/146017/k_samsung-970-evo-plus-mz-v7s500bw-2.png",
 "price": 19500.0,
-"sites": 2,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "500 GB",
 "2353": "3200 MB/s",
 "2354": "3500 MB/s",
 "4931": "550 K IOPS"
+}
+},
+{
+"id": "1056433",
+"url": "https://www.epey.com/sabit-disk/lexar-nq100-256-gb.html",
+"name": "Lexar NQ100",
+"code": "LNQ100X256G",
+"img": "https://resim.epey.com/1056433/k_lexar-nq100-lnq100x512g-1.jpg",
+"price": 2699.0,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "256 GB",
+"2353": "-",
+"2354": "550 MB/s",
+"4931": "-"
 }
 },
 {
@@ -1885,19 +1853,19 @@
 }
 },
 {
-"id": "1056037",
-"url": "https://www.epey.com/sabit-disk/addlink-s20-256-gb.html",
-"name": "addlink S20",
-"code": "AD256GBS20S3S",
-"img": "https://resim.epey.com/1056037/k_addlink-s20-1.jpg",
+"id": "1056245",
+"url": "https://www.epey.com/sabit-disk/hiksemi-waves-256-gb.html",
+"name": "Hiksemi Wave(S)",
+"code": "HS-SSD-WAVE(S)-256G",
+"img": "https://resim.epey.com/1056245/k_hiksemi-waves-1.jpg",
 "price": 2099.0,
-"sites": 7,
+"sites": 8,
 "score": null,
 "cols": {
 "2352": "256 GB",
 "2353": "400 MB/s",
-"2354": "510 MB/s",
-"4931": "-"
+"2354": "530 MB/s",
+"4931": "75 K IOPS"
 }
 },
 {
@@ -1917,12 +1885,28 @@
 }
 },
 {
+"id": "1004820",
+"url": "https://www.epey.com/sabit-disk/mld-m800-1-tb.html",
+"name": "MLD M800",
+"code": "MLD22M800E31-1000",
+"img": "https://resim.epey.com/1004820/k_mld-m800-1.jpg",
+"price": 10252.03,
+"sites": 6,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "8300 MB/s",
+"2354": "10200 MB/s",
+"4931": "1.300 K IOPS"
+}
+},
+{
 "id": "1000514",
 "url": "https://www.epey.com/sabit-disk/samsung-9100-pro-sogutuculu-4-tb.html",
 "name": "Samsung 9100 Pro Soğutuculu",
 "code": "MZ-VAP4T0CW",
 "img": "https://resim.epey.com/1000514/k_samsung-9100-pro-sogutuculu-1.jpg",
-"price": 65799.06,
+"price": 64999.0,
 "sites": 6,
 "score": null,
 "cols": {
@@ -1970,7 +1954,7 @@
 "name": "Kingston DC600M",
 "code": "SEDC600M/960G",
 "img": "https://resim.epey.com/908638/k_kingston-dc600m-1.jpg",
-"price": 41540.11,
+"price": 40959.0,
 "sites": 8,
 "score": null,
 "cols": {
@@ -1981,45 +1965,13 @@
 }
 },
 {
-"id": "896760",
-"url": "https://www.epey.com/sabit-disk/wd-blue-sn580-wds100t3b0e.html",
-"name": "WD Blue SN580",
-"code": "WDS100T3B0E",
-"img": "https://resim.epey.com/896760/k_wd-blue-sn580-wds100t3b0e-1.jpg",
-"price": 55473.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "4150 MB/s",
-"2354": "4150 MB/s",
-"4931": "750 K IOPS"
-}
-},
-{
-"id": "891237",
-"url": "https://www.epey.com/sabit-disk/patriot-p220-p220s256g25.html",
-"name": "Patriot P220",
-"code": "P220S256G25",
-"img": "https://resim.epey.com/891237/k_patriot-p220-p220s256g25-2.jpg",
-"price": 2431.7,
-"sites": 9,
-"score": null,
-"cols": {
-"2352": "256 GB",
-"2353": "490 MB/s",
-"2354": "550 MB/s",
-"4931": "50 K IOPS"
-}
-},
-{
 "id": "875475",
 "url": "https://www.epey.com/sabit-disk/wd-ultrastar-dc-hc570.html",
 "name": "WD Ultrastar DC HC570",
 "code": "0F48155",
 "img": "https://resim.epey.com/875475/k_wd-ultrastar-dc-hc570-0f48155-1.jpg",
 "price": 58308.41,
-"sites": 7,
+"sites": 6,
 "score": null,
 "cols": {
 "2352": "22 TB",
@@ -2034,8 +1986,8 @@
 "name": "WD Black SN850X",
 "code": "WDS400T2X0E",
 "img": "https://resim.epey.com/875478/k_wd-black-sn850x-nvme-1tb-wds100t2x0e-1.jpg",
-"price": 59999.9,
-"sites": 1,
+"price": 46999.0,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "4 TB",
@@ -2045,51 +1997,19 @@
 }
 },
 {
-"id": "873768",
-"url": "https://www.epey.com/sabit-disk/samsung-990-pro-sogutuculu.html",
-"name": "Samsung 990 Pro Soğutuculu",
-"code": "MZ-V9P1T0CW",
-"img": "https://resim.epey.com/873768/k_samsung-990-pro-sogutuculu-1.jpg",
-"price": 16744.0,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "6900 MB/s",
-"2354": "7450 MB/s",
-"4931": "1.550 K IOPS"
-}
-},
-{
-"id": "865947",
-"url": "https://www.epey.com/sabit-disk/verbatim-vi7000g.html",
-"name": "Verbatim Vi7000G",
-"code": "49367",
-"img": "https://resim.epey.com/865947/k_verbatim-vi7000g-1.jpg",
-"price": 10713.03,
-"sites": 4,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "5000 MB/s",
-"2354": "7000 MB/s",
-"4931": "800 K IOPS"
-}
-},
-{
-"id": "809518",
-"url": "https://www.epey.com/sabit-disk/wd-green-sn350-nvme-wds200t3g0c.html",
-"name": "WD Green SN350 NVMe",
-"code": "WDS200T3G0C",
-"img": "https://resim.epey.com/809518/k_wd-green-sn350-nvme-2.jpg",
-"price": 13299.0,
+"id": "818014",
+"url": "https://www.epey.com/sabit-disk/crucial-p3-plus.html",
+"name": "Crucial P3 Plus",
+"code": "CT500P3PSSD8",
+"img": "https://resim.epey.com/818014/k_crucial-p3-plus-1.jpg",
+"price": 5347.5,
 "sites": 3,
 "score": null,
 "cols": {
-"2352": "2 TB",
-"2353": "3000 MB/s",
-"2354": "3200 MB/s",
-"4931": "450 K IOPS"
+"2352": "500 GB",
+"2353": "1900 MB/s",
+"2354": "4700 MB/s",
+"4931": "-"
 }
 },
 {
@@ -2125,22 +2045,6 @@
 }
 },
 {
-"id": "365562",
-"url": "https://www.epey.com/sabit-disk/hi-level-hlv-m2pciessd2280-256g.html",
-"name": "Hi-Level HLV-M2PCIeSSD2280/256G",
-"code": "",
-"img": "https://resim.epey.com/365562/k_hi-level-256gb-hlv-m2pciessd2280-256g-1.jpg",
-"price": 3440.51,
-"sites": 10,
-"score": null,
-"cols": {
-"2352": "256 GB",
-"2353": "1200 MB/s",
-"2354": "3300 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "334899",
 "url": "https://www.epey.com/sabit-disk/patriot-burst-pbu480gs25ssdr.html",
 "name": "Patriot Burst",
@@ -2154,38 +2058,6 @@
 "2353": "540 MB/s",
 "2354": "560 MB/s",
 "4931": "60 K IOPS"
-}
-},
-{
-"id": "160786",
-"url": "https://www.epey.com/sabit-disk/hitachi-travelstar-z7k320.html",
-"name": "Hitachi Travelstar Z7K320",
-"code": "HTS723225A7A364",
-"img": "https://resim.epey.com/160786/k_hitachi-travelstar-250gb-hts723225a7a364-1.jpg",
-"price": 348.8,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "250 GB",
-"2353": "-",
-"2354": "-",
-"4931": "-"
-}
-},
-{
-"id": "167748",
-"url": "https://www.epey.com/sabit-disk/toshiba-mq04abf100.html",
-"name": "Toshiba MQ04ABF100",
-"code": "",
-"img": "https://resim.epey.com/167748/k_toshiba-mq04abf100-1.jpg",
-"price": 3219.0,
-"sites": 3,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "-",
-"2354": "-",
-"4931": "-"
 }
 },
 {
@@ -2205,28 +2077,13 @@
 }
 },
 {
-"id": "73611",
-"url": "https://www.epey.com/sabit-disk/seagate-laptop-thin-sshd-500gb.html",
-"name": "Seagate Laptop Thin",
-"code": "ST500LM000",
-"img": "https://resim.epey.com/73611/k_seagate-st500lm001-1.jpg",
-"price": 1250.0,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "-",
-"2354": "100 MB/s"
-}
-},
-{
 "id": "72918",
 "url": "https://www.epey.com/sabit-disk/seagate-skyhawk-4tb.html",
 "name": "Seagate SkyHawk",
 "code": "ST4000VX007",
 "img": "https://resim.epey.com/72918/k_seagate-skyhawk-4tb-1.jpg",
 "price": 9000.0,
-"sites": 5,
+"sites": 4,
 "score": null,
 "cols": {
 "2352": "4 TB",
@@ -2235,28 +2092,13 @@
 }
 },
 {
-"id": "72915",
-"url": "https://www.epey.com/sabit-disk/seagate-skyhawk-2tb.html",
-"name": "Seagate SkyHawk",
-"code": "ST2000VX008",
-"img": "https://resim.epey.com/72915/k_seagate-skyhawk-2tb-3.jpg",
-"price": 5519.08,
-"sites": 6,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "-",
-"2354": "180 MB/s"
-}
-},
-{
 "id": "72477",
 "url": "https://www.epey.com/sabit-disk/wd-caviar-blue-320gb.html",
 "name": "WD Caviar Blue",
 "code": "WD3200AAJS",
 "img": "https://resim.epey.com/72477/k_western-digital-wd3200aajs-320gb-1.jpg",
-"price": 492.9,
-"sites": 3,
+"price": 510.6,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "320 GB",
@@ -2265,12 +2107,43 @@
 }
 },
 {
+"id": "71043",
+"url": "https://www.epey.com/sabit-disk/sandisk-ssd-plus-480gb.html",
+"name": "Sandisk SSD Plus",
+"code": "SDSSDA-480G-G26",
+"img": "https://resim.epey.com/71043/k_sandisk-ssd-plus-1.png",
+"price": 5681.97,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "480 GB",
+"2353": "445 MB/s",
+"2354": "535 MB/s"
+}
+},
+{
+"id": "813279",
+"url": "https://www.epey.com/sabit-disk/kingston-nv2-snv2s-1000g.html",
+"name": "Kingston NV2",
+"code": "SNV2S/1000G",
+"img": "https://resim.epey.com/813279/k_kingston-nv2-snv2s-1000g-1.jpg",
+"price": 8599.25,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "2100 MB/s",
+"2354": "3500 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "71041",
 "url": "https://www.epey.com/sabit-disk/sandisk-ssd-plus-240gb.html",
 "name": "Sandisk SSD Plus",
 "code": "SDSSDA-240G-G26",
 "img": "https://resim.epey.com/71041/k_sandisk-ssd-plus-1.png",
-"price": 4444.01,
+"price": 4199.0,
 "sites": 3,
 "score": null,
 "cols": {
@@ -2333,7 +2206,7 @@
 "name": "Toshiba S300",
 "code": "HDWT840UZSVA",
 "img": "https://resim.epey.com/713614/k_toshiba-s300-hdwt840uzsva-1.jpg",
-"price": 9310.0,
+"price": 9227.3,
 "sites": 10,
 "score": null,
 "cols": {
@@ -2360,12 +2233,92 @@
 }
 },
 {
+"id": "137831",
+"url": "https://www.epey.com/sabit-disk/seagate-barracuda-st2000dm008.html",
+"name": "Seagate BarraCuda",
+"code": "ST2000DM008",
+"img": "https://resim.epey.com/137831/k_seagate-barracuda-st2000dm008-1.png",
+"price": 7750.0,
+"sites": 3,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "-",
+"2354": "220 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "1070862",
+"url": "https://www.epey.com/sabit-disk/sandisk-optimus-5100-1-tb.html",
+"name": "Sandisk Optimus 5100",
+"code": "SDSP51100TAN",
+"img": "https://resim.epey.com/1070862/k_sandisk-optimus-5100-1.jpg",
+"price": 10829.0,
+"sites": 4,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "6700 MB/s",
+"2354": "7100 MB/s",
+"4931": "1.300 K IOPS"
+}
+},
+{
+"id": "1062004",
+"url": "https://www.epey.com/sabit-disk/lexar-nq790-512-gb.html",
+"name": "Lexar NQ790",
+"code": "LNQ790X512G",
+"img": "https://resim.epey.com/1062004/k_lexar-nq79-lnq790x001t-1.jpg",
+"price": 6957.31,
+"sites": 5,
+"score": null,
+"cols": {
+"2352": "512 GB",
+"2353": "2900 MB/s",
+"2354": "6400 MB/s",
+"4931": "600 K IOPS"
+}
+},
+{
+"id": "1058212",
+"url": "https://www.epey.com/sabit-disk/kingston-renegade-g5-8-tb.html",
+"name": "Kingston Renegade G5",
+"code": "SRNG2D/8T1",
+"img": "https://resim.epey.com/1058212/k_kingston-renegade-g5-1.jpg",
+"price": 139052.62,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "8 TB",
+"2353": "14000 MB/s",
+"2354": "14800 MB/s",
+"4931": "2.200 K IOPS"
+}
+},
+{
+"id": "1056037",
+"url": "https://www.epey.com/sabit-disk/addlink-s20-256-gb.html",
+"name": "addlink S20",
+"code": "AD256GBS20S3S",
+"img": "https://resim.epey.com/1056037/k_addlink-s20-1.jpg",
+"price": 2099.0,
+"sites": 7,
+"score": null,
+"cols": {
+"2352": "256 GB",
+"2353": "400 MB/s",
+"2354": "510 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "1055980",
 "url": "https://www.epey.com/sabit-disk/seagate-exos-x24-16-tb.html",
 "name": "Seagate Exos X24",
 "code": "ST16000NM002H",
 "img": "https://resim.epey.com/1055980/k_seagate-exos-x24-st24000nm002h-1.jpg",
-"price": 43328.04,
+"price": 43119.02,
 "sites": 9,
 "score": null,
 "cols": {
@@ -2382,7 +2335,7 @@
 "code": "",
 "img": "https://resim.epey.com/1054235/k_msi-spatium-m571-dlp-1.jpg",
 "price": 46999.06,
-"sites": 1,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "4 TB",
@@ -2408,34 +2361,50 @@
 }
 },
 {
-"id": "1004820",
-"url": "https://www.epey.com/sabit-disk/mld-m800-1-tb.html",
-"name": "MLD M800",
-"code": "MLD22M800E31-1000",
-"img": "https://resim.epey.com/1004820/k_mld-m800-1.jpg",
-"price": 10252.03,
-"sites": 6,
+"id": "1025533",
+"url": "https://www.epey.com/sabit-disk/lexar-nq780-1-tb.html",
+"name": "Lexar NQ780",
+"code": "LNQ780X001T",
+"img": "https://resim.epey.com/1025533/k_lexar-nq780-1.jpg",
+"price": 8269.0,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "-",
+"2354": "-",
+"4931": "-"
+}
+},
+{
+"id": "1019662",
+"url": "https://www.epey.com/sabit-disk/pny-cs2150-1-tb.html",
+"name": "PNY CS2150",
+"code": "M280CS2150-1TB",
+"img": "https://resim.epey.com/1019662/k_pny-cs2150-1.jpg",
+"price": 10328.82,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "1 TB",
 "2353": "8300 MB/s",
 "2354": "10200 MB/s",
-"4931": "1.300 K IOPS"
+"4931": "-"
 }
 },
 {
-"id": "1001820",
-"url": "https://www.epey.com/sabit-disk/wd-black-sn7100-1-tb.html",
-"name": "WD Black SN7100",
-"code": "WDS100T4X0E",
-"img": "https://resim.epey.com/1001820/k_wd-black-sn7100-1.jpg",
-"price": 11807.94,
-"sites": 2,
+"id": "1003527",
+"url": "https://www.epey.com/sabit-disk/msi-spatium-m560-2-tb.html",
+"name": "MSI Spatium M560",
+"code": "SM560N2TB",
+"img": "https://resim.epey.com/1003527/k_msi-spatium-m560-1.jpg",
+"price": 19919.0,
+"sites": 12,
 "score": null,
 "cols": {
-"2352": "1 TB",
-"2353": "6900 MB/s",
-"2354": "7250 MB/s",
+"2352": "2 TB",
+"2353": "8700 MB/s",
+"2354": "10300 MB/s",
 "4931": "1.400 K IOPS"
 }
 },
@@ -2461,7 +2430,7 @@
 "name": "WD Green SN3000",
 "code": "WDS200T4G0E",
 "img": "https://resim.epey.com/999241/k_wd-green-sn3000-1.jpg",
-"price": 14599.0,
+"price": 14379.0,
 "sites": 11,
 "score": null,
 "cols": {
@@ -2488,22 +2457,6 @@
 }
 },
 {
-"id": "986832",
-"url": "https://www.epey.com/sabit-disk/wd-red-sn700-1-tb.html",
-"name": "WD Red SN700",
-"code": "WDS100T1R0C",
-"img": "https://resim.epey.com/986832/k_wd-red-sn700-1.jpg",
-"price": 33225.4,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "3000 MB/s",
-"2354": "3430 MB/s",
-"4931": "560 K IOPS"
-}
-},
-{
 "id": "965056",
 "url": "https://www.epey.com/sabit-disk/team-group-mp44l.html",
 "name": "Team Group MP44L",
@@ -2517,6 +2470,22 @@
 "2353": "2500 MB/s",
 "2354": "5000 MB/s",
 "4931": "545 K IOPS"
+}
+},
+{
+"id": "944427",
+"url": "https://www.epey.com/sabit-disk/kioxia-exceria-g2-lrc20z500gg8.html",
+"name": "Kioxia Exceria G2",
+"code": "LRC20Z500GG8",
+"img": "https://resim.epey.com/944427/k_kioxia-exceria-g2-lrc20z500gg8-1.jpg",
+"price": 6645.0,
+"sites": 2,
+"score": null,
+"cols": {
+"2352": "500 GB",
+"2353": "1700 MB/s",
+"2354": "2100 MB/s",
+"4931": "400 K IOPS"
 }
 },
 {
@@ -2552,12 +2521,44 @@
 }
 },
 {
+"id": "891237",
+"url": "https://www.epey.com/sabit-disk/patriot-p220-p220s256g25.html",
+"name": "Patriot P220",
+"code": "P220S256G25",
+"img": "https://resim.epey.com/891237/k_patriot-p220-p220s256g25-2.jpg",
+"price": 2431.7,
+"sites": 9,
+"score": null,
+"cols": {
+"2352": "256 GB",
+"2353": "490 MB/s",
+"2354": "550 MB/s",
+"4931": "50 K IOPS"
+}
+},
+{
+"id": "882101",
+"url": "https://www.epey.com/sabit-disk/crucial-t700.html",
+"name": "Crucial T700",
+"code": "CT1000T700SSD5",
+"img": "https://resim.epey.com/882101/k_crucial-t700-1.jpg",
+"price": 13399.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "9500 MB/s",
+"2354": "11700 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "876114",
 "url": "https://www.epey.com/sabit-disk/msi-spatium-m461-2tb.html",
 "name": "MSI Spatium M461",
 "code": "",
 "img": "https://resim.epey.com/876114/k_msi-spatium-m461-2tb-1.jpg",
-"price": 14799.0,
+"price": 14995.1,
 "sites": 13,
 "score": null,
 "cols": {
@@ -2568,19 +2569,67 @@
 }
 },
 {
-"id": "826969",
-"url": "https://www.epey.com/sabit-disk/corsair-mp600-pro-nh-cssd-f1000gbmp600pnh.html",
-"name": "Corsair MP600 Pro NH",
-"code": "CSSD-F1000GBMP600PNH",
-"img": "https://resim.epey.com/826969/k_corsair-mp600-pro-nh-cssd-f1000gbmp600pnh-1.jpg",
-"price": 12474.0,
-"sites": 6,
+"id": "875487",
+"url": "https://www.epey.com/sabit-disk/wd-black-sn850x-wds100t2xhe.html",
+"name": "WD Black SN850X",
+"code": "WDS100T2XHE",
+"img": "https://resim.epey.com/875487/k_wd-black-sn850x-nvme-1tb-wds100t2xhe-1.jpg",
+"price": 17534.0,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "1 TB",
-"2353": "5700 MB/s",
-"2354": "7000 MB/s",
+"2353": "6300 MB/s",
+"2354": "7300 MB/s",
 "4931": "1.100 K IOPS"
+}
+},
+{
+"id": "860097",
+"url": "https://www.epey.com/sabit-disk/adata-legend-850-lite-aleg-850l-1000gcs.html",
+"name": "Adata Legend 850 Lite",
+"code": "ALEG-850L-1000GCS",
+"img": "https://resim.epey.com/860097/k_adata-legend-850-lite-aleg-850l-1000gcs-1.jpg",
+"price": 8499.0,
+"sites": 9,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "3200 MB/s",
+"2354": "5000 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "858613",
+"url": "https://www.epey.com/sabit-disk/seagate-ironwolf-pro-st6000nt001.html",
+"name": "Seagate IronWolf Pro",
+"code": "ST6000NT001",
+"img": "https://resim.epey.com/858613/k_seagate-6tb-st6000ne000-1.jpg",
+"price": 17500.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "6 TB",
+"2353": "-",
+"2354": "250 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "843370",
+"url": "https://www.epey.com/sabit-disk/seagate-exos-x18-st12000nm000j.html",
+"name": "Seagate Exos X18",
+"code": "ST12000NM000J",
+"img": "https://resim.epey.com/843370/k_seagate-exos-x18-st12000nm000j-1.jpg",
+"price": 27480.4,
+"sites": 3,
+"score": null,
+"cols": {
+"2352": "12 TB",
+"2353": "-",
+"2354": "258 MB/s",
+"4931": "-"
 }
 },
 {
@@ -2589,8 +2638,8 @@
 "name": "Crucial P3 Plus",
 "code": "CT1000P3PSSD8",
 "img": "https://resim.epey.com/818016/k_crucial-p3-plus-ct1000p3pssd8-1.jpg",
-"price": 9054.9,
-"sites": 7,
+"price": 8968.57,
+"sites": 8,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -2605,28 +2654,12 @@
 "name": "Kingston NV2",
 "code": "SNV2S/2000G",
 "img": "https://resim.epey.com/813280/k_kingston-nv2-snv2s-2000g-1.jpg",
-"price": 17599.0,
+"price": 17499.0,
 "sites": 3,
 "score": null,
 "cols": {
 "2352": "2 TB",
 "2353": "2800 MB/s",
-"2354": "3500 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "810557",
-"url": "https://www.epey.com/sabit-disk/crucial-p3-ct1000p3ssd8.html",
-"name": "Crucial P3",
-"code": "CT1000P3SSD8",
-"img": "https://resim.epey.com/810557/k_crucial-p3-ct1000p3ssd8-1.jpg",
-"price": 8910.0,
-"sites": 9,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "3000 MB/s",
 "2354": "3500 MB/s",
 "4931": "-"
 }
@@ -2653,7 +2686,7 @@
 "name": "Seagate SkyHawk",
 "code": "ST4000VX016",
 "img": "https://resim.epey.com/805652/k_seagate-skyhawk-st4000vx016-1.jpg",
-"price": 10000.0,
+"price": 10119.99,
 "sites": 10,
 "score": null,
 "cols": {
@@ -2664,19 +2697,51 @@
 }
 },
 {
+"id": "743740",
+"url": "https://www.epey.com/sabit-disk/colorful-sl500-sl500-512gb.html",
+"name": "Colorful SL500",
+"code": "SL500-512GB",
+"img": "https://resim.epey.com/743740/k_colorful-sl500-512gb-240gb-1.jpg",
+"price": 3499.0,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "512 GB",
+"2353": "450 MB/s",
+"2354": "500 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "695709",
 "url": "https://www.epey.com/sabit-disk/seagate-skyhawk-surveillance.html",
 "name": "Seagate Skyhawk Surveillance",
 "code": "ST4000VX013",
 "img": "https://resim.epey.com/695709/k_seagate-st4000vx013-1.jpg",
 "price": 9990.0,
-"sites": 5,
+"sites": 4,
 "score": null,
 "cols": {
 "2352": "4 TB",
 "2353": "-",
 "2354": "180 MB/s",
 "4931": "-"
+}
+},
+{
+"id": "657115",
+"url": "https://www.epey.com/sabit-disk/kingspec-ne-2280.html",
+"name": "Kingspec NE 2280",
+"code": "NE-256",
+"img": "https://resim.epey.com/657115/k_kingspec-ne-2280-1.jpg",
+"price": 2799.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "256 GB",
+"2353": "1990 MB/s",
+"2354": "2400 MB/s",
+"4931": "14 K IOPS"
 }
 },
 {
@@ -2696,34 +2761,34 @@
 }
 },
 {
-"id": "628469",
-"url": "https://www.epey.com/sabit-disk/netac-n600s.html",
-"name": "Netac N600S",
-"code": "NT01N600S-128G",
-"img": "https://resim.epey.com/628469/k_netac-n600s-2.jpg",
-"price": 1655.91,
-"sites": 3,
+"id": "173148",
+"url": "https://www.epey.com/sabit-disk/seagate-st320vt000.html",
+"name": "Seagate ST320VT000",
+"code": "",
+"img": "https://resim.epey.com/173148/k_seagate-320gb-st320vt000-1.jpg",
+"price": 675.0,
+"sites": 1,
 "score": null,
 "cols": {
-"2352": "128 GB",
-"2353": "520 MB/s",
-"2354": "560 MB/s",
+"2352": "320 GB",
+"2353": "-",
+"2354": "100 MB/s",
 "4931": "-"
 }
 },
 {
-"id": "162688",
-"url": "https://www.epey.com/sabit-disk/wd-blue-wd5000aakx.html",
-"name": "WD Blue",
-"code": "WD5000AAKX",
-"img": "https://resim.epey.com/162688/k_wd-wd5000aakx-1.jpg",
-"price": 1200.0,
-"sites": 3,
+"id": "418044",
+"url": "https://www.epey.com/sabit-disk/hitachi-travelstar-z7k500.html",
+"name": "Hitachi Travelstar Z7K500",
+"code": "0J26055",
+"img": "https://resim.epey.com/418044/k_hitachi-travelstar-z7k500-0j26055-500-gb-1.jpg",
+"price": 1150.0,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "500 GB",
 "2353": "-",
-"2354": "126 MB/s",
+"2354": "-",
 "4931": "-"
 }
 },
@@ -2734,13 +2799,45 @@
 "code": "SSDPR-CX400-01T",
 "img": "https://resim.epey.com/401413/k_goodram-ssdpr-cx400-512-512gb-1.jpg",
 "price": 6500.0,
-"sites": 7,
+"sites": 8,
 "score": null,
 "cols": {
 "2352": "1 TB",
 "2353": "490 MB/s",
 "2354": "550 MB/s",
 "4931": "-"
+}
+},
+{
+"id": "365562",
+"url": "https://www.epey.com/sabit-disk/hi-level-hlv-m2pciessd2280-256g.html",
+"name": "Hi-Level HLV-M2PCIeSSD2280/256G",
+"code": "",
+"img": "https://resim.epey.com/365562/k_hi-level-256gb-hlv-m2pciessd2280-256g-1.jpg",
+"price": 3440.57,
+"sites": 10,
+"score": null,
+"cols": {
+"2352": "256 GB",
+"2353": "1200 MB/s",
+"2354": "3300 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "140367",
+"url": "https://www.epey.com/sabit-disk/hikvision-c100-hs-ssd-c100-480g.html",
+"name": "Hikvision C100",
+"code": "HS-SSD-C100/480G",
+"img": "https://resim.epey.com/140367/k_hikvision-c100-hs-ssd-c100-480g-2.jpg",
+"price": 4019.26,
+"sites": 6,
+"score": null,
+"cols": {
+"2352": "480 GB",
+"2353": "470 MB/s",
+"2354": "550 MB/s",
+"4931": "76 K IOPS"
 }
 },
 {
@@ -2760,35 +2857,18 @@
 }
 },
 {
-"id": "84510",
-"url": "https://www.epey.com/sabit-disk/kingston-a400-240gb.html",
-"name": "Kingston A400",
-"code": "SA400S37/240G",
-"img": "https://resim.epey.com/84510/k_kingston-sa400s37-120g-1.jpg",
-"price": 3499.6,
-"sites": 10,
-"score": null,
-"cols": {
-"2352": "240 GB",
-"2353": "350 MB/s",
-"2354": "500 MB/s",
-"4931": "25 K IOPS"
-}
-},
-{
-"id": "596583",
-"url": "https://www.epey.com/sabit-disk/samsung-980-pro.html",
-"name": "Samsung 980 Pro",
-"code": "MZ-V8P1T0BW",
-"img": "https://resim.epey.com/596583/k_samsung-980-pro-1.jpg",
-"price": 12689.06,
+"id": "73611",
+"url": "https://www.epey.com/sabit-disk/seagate-laptop-thin-sshd-500gb.html",
+"name": "Seagate Laptop Thin",
+"code": "ST500LM000",
+"img": "https://resim.epey.com/73611/k_seagate-st500lm001-1.jpg",
+"price": 1149.91,
 "sites": 2,
 "score": null,
 "cols": {
-"2352": "1 TB",
-"2353": "5000 MB/s",
-"2354": "7000 MB/s",
-"4931": "1.000 K IOPS"
+"2352": "500 GB",
+"2353": "-",
+"2354": "100 MB/s"
 }
 },
 {
@@ -2797,7 +2877,7 @@
 "name": "Crucial P310",
 "code": "CT2000P310SSD8",
 "img": "https://resim.epey.com/977091/k_crucial-p310-ct1000p310ssd8-1.jpg",
-"price": 21046.19,
+"price": 21053.92,
 "sites": 3,
 "score": null,
 "cols": {
@@ -2805,22 +2885,6 @@
 "2353": "6000 MB/s",
 "2354": "7100 MB/s",
 "4931": "1.000 K IOPS"
-}
-},
-{
-"id": "984130",
-"url": "https://www.epey.com/sabit-disk/samsung-pm9b1-512-gb.html",
-"name": "Samsung PM9B1",
-"code": "MZVL4512HBLU",
-"img": "https://resim.epey.com/984130/k_samsung-pm9b1-mzvl4512hblu-1.jpg",
-"price": 5990.0,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "512 GB",
-"2353": "2500 MB/s",
-"2354": "3500 MB/s",
-"4931": "400 K IOPS"
 }
 },
 {
@@ -2853,6 +2917,38 @@
 "2353": "6800 MB/s",
 "2354": "7300 MB/s",
 "4931": "1.440 K IOPS"
+}
+},
+{
+"id": "809541",
+"url": "https://www.epey.com/sabit-disk/wd-green-sn350-nvme-wds100t3g0c.html",
+"name": "WD Green SN350 NVMe",
+"code": "WDS100T3G0C",
+"img": "https://resim.epey.com/809541/k_wd-green-sn350-nvme-2.jpg",
+"price": 9499.0,
+"sites": 3,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "2500 MB/s",
+"2354": "3200 MB/s",
+"4931": "400 K IOPS"
+}
+},
+{
+"id": "800322",
+"url": "https://www.epey.com/sabit-disk/adata-legend-700-aleg-700-512gcs.html",
+"name": "Adata Legend 700",
+"code": "ALEG-700-512GCS",
+"img": "https://resim.epey.com/800322/k_adata-legend-700-aleg-700-512gcs-1.jpg",
+"price": 4299.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "512 GB",
+"2353": "1600 MB/s",
+"2354": "2000 MB/s",
+"4931": "260 K IOPS"
 }
 },
 {
@@ -2941,7 +3037,7 @@
 "name": "Samsung 990 Pro Soğutuculu",
 "code": "MZ-V9P4T0CW",
 "img": "https://resim.epey.com/893743/k_samsung-990-pro-sogutuculu-mz-v9p4t0cw-1.jpg",
-"price": 56185.3,
+"price": 56242.3,
 "sites": 6,
 "score": null,
 "cols": {
@@ -2957,7 +3053,7 @@
 "name": "TwinMOS Hyper H2 Ultra",
 "code": "TM512GH2U",
 "img": "https://resim.epey.com/715747/k_twinmos-hyper-h2-ultra-hssdegbmh2u1-1.jpg",
-"price": 4978.31,
+"price": 4984.05,
 "sites": 1,
 "score": null,
 "cols": {
@@ -2968,67 +3064,35 @@
 }
 },
 {
-"id": "660173",
-"url": "https://www.epey.com/sabit-disk/samsung-870-evo.html",
-"name": "Samsung 870 Evo",
-"code": "MZ-77E250BW",
-"img": "https://resim.epey.com/660173/k_samsung-870-evo-mz-77e250bw-1.jpg",
-"price": 4699.0,
-"sites": 8,
+"id": "576122",
+"url": "https://www.epey.com/sabit-disk/samsung-870-qvo-mz-77q2t0.html",
+"name": "Samsung 870 QVO",
+"code": "MZ-77Q2T0",
+"img": "https://resim.epey.com/576122/k_samsung-870-qvo-mz-77q2t0-1.jpg",
+"price": 51450.0,
+"sites": 2,
 "score": null,
 "cols": {
-"2352": "250 GB",
+"2352": "2 TB",
 "2353": "530 MB/s",
 "2354": "560 MB/s",
 "4931": "88 K IOPS"
 }
 },
 {
-"id": "140355",
-"url": "https://www.epey.com/sabit-disk/hikvision-c100-hs-ssd-c100-240g.html",
-"name": "Hikvision C100",
-"code": "HS-SSD-C100/240G",
-"img": "https://resim.epey.com/140355/k_hikvision-c100-hs-ssd-c100-240g-1.jpg",
-"price": 2575.08,
-"sites": 7,
+"id": "1072330",
+"url": "https://www.epey.com/sabit-disk/colorful-cn600-128-gb.html",
+"name": "Colorful CN600",
+"code": "",
+"img": "https://resim.epey.com/1072330/k_colorful-cn600-1.jpg",
+"price": 2009.0,
+"sites": 3,
 "score": null,
 "cols": {
-"2352": "240 GB",
-"2353": "450 MB/s",
-"2354": "550 MB/s",
-"4931": "73 K IOPS"
-}
-},
-{
-"id": "137831",
-"url": "https://www.epey.com/sabit-disk/seagate-barracuda-st2000dm008.html",
-"name": "Seagate BarraCuda",
-"code": "ST2000DM008",
-"img": "https://resim.epey.com/137831/k_seagate-barracuda-st2000dm008-1.png",
-"price": 6136.1,
-"sites": 4,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "-",
-"2354": "220 MB/s",
+"2352": "128 GB",
+"2353": "1000 MB/s",
+"2354": "1500 MB/s",
 "4931": "-"
-}
-},
-{
-"id": "1062004",
-"url": "https://www.epey.com/sabit-disk/lexar-nq790-512-gb.html",
-"name": "Lexar NQ790",
-"code": "LNQ790X512G",
-"img": "https://resim.epey.com/1062004/k_lexar-nq79-lnq790x001t-1.jpg",
-"price": 6957.31,
-"sites": 5,
-"score": null,
-"cols": {
-"2352": "512 GB",
-"2353": "2900 MB/s",
-"2354": "6400 MB/s",
-"4931": "600 K IOPS"
 }
 },
 {
@@ -3064,34 +3128,66 @@
 }
 },
 {
+"id": "1045847",
+"url": "https://www.epey.com/sabit-disk/wd-purple-4-tb.html",
+"name": "WD Purple",
+"code": "WD44PURZ",
+"img": "https://resim.epey.com/1045847/k_wd-purple-wd44purz-1.jpg",
+"price": 9845.14,
+"sites": 11,
+"score": null,
+"cols": {
+"2352": "4 TB",
+"2353": "-",
+"2354": "180 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "1036068",
+"url": "https://www.epey.com/sabit-disk/adata-legend-900-pro-1-tb.html",
+"name": "Adata Legend 900 Pro",
+"code": "SLEG-900P-1TCS",
+"img": "https://resim.epey.com/1036068/k_adata-legend-900-pro-1.jpg",
+"price": 9858.0,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "6000 MB/s",
+"2354": "7400 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "1024267",
+"url": "https://www.epey.com/sabit-disk/twinmos-corex-pro-1-tb.html",
+"name": "TwinMOS CoreX Pro",
+"code": "NVCXP1TBG52280",
+"img": "https://resim.epey.com/1024267/k_twinmos-corex-pro-1.jpg",
+"price": 13513.88,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "10000 MB/s",
+"2354": "14000 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "1023589",
 "url": "https://www.epey.com/sabit-disk/patriot-p410-2-tb.html",
 "name": "Patriot P410",
 "code": "P410P2TBM28H",
 "img": "https://resim.epey.com/1023589/k_patriot-p410-1.jpg",
 "price": 33888.9,
-"sites": 1,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "2 TB",
 "2353": "4500 MB/s",
 "2354": "5000 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "1019662",
-"url": "https://www.epey.com/sabit-disk/pny-cs2150-1-tb.html",
-"name": "PNY CS2150",
-"code": "M280CS2150-1TB",
-"img": "https://resim.epey.com/1019662/k_pny-cs2150-1.jpg",
-"price": 10328.82,
-"sites": 3,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "8300 MB/s",
-"2354": "10200 MB/s",
 "4931": "-"
 }
 },
@@ -3102,7 +3198,7 @@
 "code": "",
 "img": "https://resim.epey.com/1018370/k_msi-spatium-m450-v1-1.jpg",
 "price": 8499.0,
-"sites": 11,
+"sites": 10,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -3112,35 +3208,51 @@
 }
 },
 {
+"id": "1005293",
+"url": "https://www.epey.com/sabit-disk/seagate-firecuda-530r-2-tb.html",
+"name": "Seagate FireCuda 530R",
+"code": "ZP2000GM3A063",
+"img": "https://resim.epey.com/1005293/k_seagate-firecuda-530r-1.jpg",
+"price": 23969.06,
+"sites": 5,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "6900 MB/s",
+"2354": "7400 MB/s",
+"4931": "1.300 K IOPS"
+}
+},
+{
+"id": "1001820",
+"url": "https://www.epey.com/sabit-disk/wd-black-sn7100-1-tb.html",
+"name": "WD Black SN7100",
+"code": "WDS100T4X0E",
+"img": "https://resim.epey.com/1001820/k_wd-black-sn7100-1.jpg",
+"price": 11807.94,
+"sites": 2,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "6900 MB/s",
+"2354": "7250 MB/s",
+"4931": "1.400 K IOPS"
+}
+},
+{
 "id": "1001019",
 "url": "https://www.epey.com/sabit-disk/wd-black-sn850x-4-tb.html",
 "name": "WD Black SN850X",
 "code": "WDS400T2XHE",
 "img": "https://resim.epey.com/1001019/k_wd-black-sn850x-nvme-1tb-wds100t2xhe-1.jpg",
 "price": 39777.0,
-"sites": 6,
+"sites": 7,
 "score": null,
 "cols": {
 "2352": "4 TB",
 "2353": "6600 MB/s",
 "2354": "7300 MB/s",
 "4931": "1.100 K IOPS"
-}
-},
-{
-"id": "999190",
-"url": "https://www.epey.com/sabit-disk/wd-blue-sn5000-500-gb.html",
-"name": "WD Blue SN5000",
-"code": "WDS500G4B0E",
-"img": "https://resim.epey.com/999190/k_wd-blue-sn5000-1.jpg",
-"price": 6430.1,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "4000 MB/s",
-"2354": "5000 MB/s",
-"4931": "770 K IOPS"
 }
 },
 {
@@ -3176,28 +3288,12 @@
 }
 },
 {
-"id": "988487",
-"url": "https://www.epey.com/sabit-disk/patriot-vp400-v4-1-tb.html",
-"name": "Patriot VP400 V4",
-"code": "P400VP1TBM28H",
-"img": "https://resim.epey.com/988487/k_patriot-vp400-v4-1.jpg",
-"price": 8371.16,
-"sites": 3,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "5000 MB/s",
-"2354": "6000 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "977325",
 "url": "https://www.epey.com/sabit-disk/msi-spatium-m480-pro-2-tb.html",
 "name": "MSI Spatium M480 Pro",
 "code": "M480P2T",
 "img": "https://resim.epey.com/977325/k_msi-spatium-m480-pro-1.jpg",
-"price": 20999.0,
+"price": 20479.0,
 "sites": 11,
 "score": null,
 "cols": {
@@ -3213,7 +3309,7 @@
 "name": "Team Group T-Force Vulcan Z",
 "code": "T253TZ256G0C101",
 "img": "https://resim.epey.com/959584/k_team-group-t-force-vulcan-z-1.jpg",
-"price": 2571.97,
+"price": 2548.59,
 "sites": 6,
 "score": null,
 "cols": {
@@ -3237,22 +3333,6 @@
 "2353": "2700 MB/s",
 "2354": "3500 MB/s",
 "4931": "430 K IOPS"
-}
-},
-{
-"id": "944427",
-"url": "https://www.epey.com/sabit-disk/kioxia-exceria-g2-lrc20z500gg8.html",
-"name": "Kioxia Exceria G2",
-"code": "LRC20Z500GG8",
-"img": "https://resim.epey.com/944427/k_kioxia-exceria-g2-lrc20z500gg8-1.jpg",
-"price": 6645.0,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "1700 MB/s",
-"2354": "2100 MB/s",
-"4931": "400 K IOPS"
 }
 },
 {
@@ -3304,22 +3384,6 @@
 }
 },
 {
-"id": "923175",
-"url": "https://www.epey.com/sabit-disk/lexar-nm790.html",
-"name": "Lexar NM790",
-"code": "LNM790X512G",
-"img": "https://resim.epey.com/923175/k_lexar-nm790-1.jpg",
-"price": 7439.1,
-"sites": 6,
-"score": null,
-"cols": {
-"2352": "512 GB",
-"2353": "4400 MB/s",
-"2354": "7200 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "903470",
 "url": "https://www.epey.com/sabit-disk/everest-es512a.html",
 "name": "Everest ES512A",
@@ -3333,22 +3397,6 @@
 "2353": "460 MB/s",
 "2354": "550 MB/s",
 "4931": "-"
-}
-},
-{
-"id": "907194",
-"url": "https://www.epey.com/sabit-disk/hiksemi-wave-pro-hs-ssd-wave-prop-512gb.html",
-"name": "Hiksemi Wave Pro",
-"code": "HS-SSD-WAVE-PRO(P)-512GB",
-"img": "https://resim.epey.com/907194/k_hiksemi-wave-pro-hs-ssd-wave-prop-512gb-1.jpg",
-"price": 4499.0,
-"sites": 5,
-"score": null,
-"cols": {
-"2352": "512 GB",
-"2353": "1800 MB/s",
-"2354": "3500 MB/s",
-"4931": "155 K IOPS"
 }
 },
 {
@@ -3384,22 +3432,6 @@
 }
 },
 {
-"id": "886104",
-"url": "https://www.epey.com/sabit-disk/gigabyte-aorus-gen4-7300.html",
-"name": "Gigabyte Aorus Gen4 7300",
-"code": "AG4731TB",
-"img": "https://resim.epey.com/886104/k_gigabyte-aorus-gen4-7300-1.jpg",
-"price": 12675.0,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "6000 MB/s",
-"2354": "7300 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "882105",
 "url": "https://www.epey.com/sabit-disk/crucial-t700-ct1000t700ssd3.html",
 "name": "Crucial T700",
@@ -3412,22 +3444,6 @@
 "2352": "1 TB",
 "2353": "9500 MB/s",
 "2354": "11700 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "872846",
-"url": "https://www.epey.com/sabit-disk/wd-purple-wd43purz.html",
-"name": "WD Purple",
-"code": "WD43PURZ",
-"img": "https://resim.epey.com/872846/k_wd-purple-wd43purz-1.jpg",
-"price": 10450.03,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "4 TB",
-"2353": "-",
-"2354": "180 MB/s",
 "4931": "-"
 }
 },
@@ -3448,51 +3464,19 @@
 }
 },
 {
-"id": "860097",
-"url": "https://www.epey.com/sabit-disk/adata-legend-850-lite-aleg-850l-1000gcs.html",
-"name": "Adata Legend 850 Lite",
-"code": "ALEG-850L-1000GCS",
-"img": "https://resim.epey.com/860097/k_adata-legend-850-lite-aleg-850l-1000gcs-1.jpg",
-"price": 8499.0,
-"sites": 9,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "3200 MB/s",
-"2354": "5000 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "858613",
-"url": "https://www.epey.com/sabit-disk/seagate-ironwolf-pro-st6000nt001.html",
-"name": "Seagate IronWolf Pro",
-"code": "ST6000NT001",
-"img": "https://resim.epey.com/858613/k_seagate-6tb-st6000ne000-1.jpg",
-"price": 17500.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "6 TB",
-"2353": "-",
-"2354": "250 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "843370",
-"url": "https://www.epey.com/sabit-disk/seagate-exos-x18-st12000nm000j.html",
-"name": "Seagate Exos X18",
-"code": "ST12000NM000J",
-"img": "https://resim.epey.com/843370/k_seagate-exos-x18-st12000nm000j-1.jpg",
-"price": 25852.1,
+"id": "865947",
+"url": "https://www.epey.com/sabit-disk/verbatim-vi7000g.html",
+"name": "Verbatim Vi7000G",
+"code": "49367",
+"img": "https://resim.epey.com/865947/k_verbatim-vi7000g-1.jpg",
+"price": 10713.03,
 "sites": 4,
 "score": null,
 "cols": {
-"2352": "12 TB",
-"2353": "-",
-"2354": "258 MB/s",
-"4931": "-"
+"2352": "1 TB",
+"2353": "5000 MB/s",
+"2354": "7000 MB/s",
+"4931": "800 K IOPS"
 }
 },
 {
@@ -3534,7 +3518,7 @@
 "code": "HDWD320UZSVA",
 "img": "https://resim.epey.com/832957/k_toshiba-p300-hdwd320uzsva-1.jpg",
 "price": 9649.0,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -3544,19 +3528,19 @@
 }
 },
 {
-"id": "818014",
-"url": "https://www.epey.com/sabit-disk/crucial-p3-plus.html",
-"name": "Crucial P3 Plus",
-"code": "CT500P3PSSD8",
-"img": "https://resim.epey.com/818014/k_crucial-p3-plus-1.jpg",
-"price": 5347.5,
-"sites": 3,
+"id": "826969",
+"url": "https://www.epey.com/sabit-disk/corsair-mp600-pro-nh-cssd-f1000gbmp600pnh.html",
+"name": "Corsair MP600 Pro NH",
+"code": "CSSD-F1000GBMP600PNH",
+"img": "https://resim.epey.com/826969/k_corsair-mp600-pro-nh-cssd-f1000gbmp600pnh-1.jpg",
+"price": 12474.0,
+"sites": 6,
 "score": null,
 "cols": {
-"2352": "500 GB",
-"2353": "1900 MB/s",
-"2354": "4700 MB/s",
-"4931": "-"
+"2352": "1 TB",
+"2353": "5700 MB/s",
+"2354": "7000 MB/s",
+"4931": "1.100 K IOPS"
 }
 },
 {
@@ -3592,6 +3576,38 @@
 }
 },
 {
+"id": "784457",
+"url": "https://www.epey.com/sabit-disk/wd-black-sn770-wds100t3x0e.html",
+"name": "WD Black SN770",
+"code": "WDS100T3X0E",
+"img": "https://resim.epey.com/784457/k_wd-black-sn770-wds100t3x0e-1.jpg",
+"price": 49718.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "4900 MB/s",
+"2354": "5150 MB/s",
+"4931": "800 K IOPS"
+}
+},
+{
+"id": "752259",
+"url": "https://www.epey.com/sabit-disk/bory-r500-c256.html",
+"name": "Bory R500",
+"code": "R500-C256",
+"img": "https://resim.epey.com/752259/k_bory-r500-c256-1.jpg",
+"price": 2339.0,
+"sites": 9,
+"score": null,
+"cols": {
+"2352": "256 GB",
+"2353": "500 MB/s",
+"2354": "550 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "727454",
 "url": "https://www.epey.com/sabit-disk/hikvision-minder.html",
 "name": "Hikvision Minder",
@@ -3605,22 +3621,6 @@
 "2353": "360 MB/s",
 "2354": "460 MB/s",
 "4931": "43 K IOPS"
-}
-},
-{
-"id": "743740",
-"url": "https://www.epey.com/sabit-disk/colorful-sl500-sl500-512gb.html",
-"name": "Colorful SL500",
-"code": "SL500-512GB",
-"img": "https://resim.epey.com/743740/k_colorful-sl500-512gb-240gb-1.jpg",
-"price": 3529.0,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "512 GB",
-"2353": "450 MB/s",
-"2354": "500 MB/s",
-"4931": "-"
 }
 },
 {
@@ -3656,22 +3656,6 @@
 }
 },
 {
-"id": "713967",
-"url": "https://www.epey.com/sabit-disk/dahua-ssd-e900n256g.html",
-"name": "Dahua SSD-E900N256G",
-"code": "",
-"img": "https://resim.epey.com/713967/k_dahua-ssd-e900n256g-1.jpg",
-"price": 3299.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "256 GB",
-"2353": "1250 MB/s",
-"2354": "2000 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "645176",
 "url": "https://www.epey.com/sabit-disk/wd-black-sn850-nvme.html",
 "name": "WD Black SN850 NVMe",
@@ -3685,22 +3669,6 @@
 "2353": "5300 MB/s",
 "2354": "7000 MB/s",
 "4931": "-"
-}
-},
-{
-"id": "682453",
-"url": "https://www.epey.com/sabit-disk/samsung-980-pro-mz-v8p2t0bw.html",
-"name": "Samsung 980 Pro",
-"code": "MZ-V8P2T0BW",
-"img": "https://resim.epey.com/682453/k_samsung-980-pro-mz-v8p2t0bw-1.jpg",
-"price": 44599.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "5000 MB/s",
-"2354": "7000 MB/s",
-"4931": "1.000 K IOPS"
 }
 },
 {
@@ -3720,34 +3688,66 @@
 }
 },
 {
-"id": "657115",
-"url": "https://www.epey.com/sabit-disk/kingspec-ne-2280.html",
-"name": "Kingspec NE 2280",
-"code": "NE-256",
-"img": "https://resim.epey.com/657115/k_kingspec-ne-2280-1.jpg",
-"price": 2799.0,
-"sites": 1,
+"id": "657015",
+"url": "https://www.epey.com/sabit-disk/kioxia-bg4-series-kbg40zns512g.html",
+"name": "Kioxia BG4 Series",
+"code": "KBG40ZNS512G",
+"img": "https://resim.epey.com/657015/k_kioxia-kbg40zns128g-1.jpg",
+"price": 4599.08,
+"sites": 2,
 "score": null,
 "cols": {
-"2352": "256 GB",
-"2353": "1990 MB/s",
-"2354": "2400 MB/s",
-"4931": "14 K IOPS"
+"2352": "512 GB",
+"2353": "1400 MB/s",
+"2354": "2200 MB/s",
+"4931": "190 K IOPS"
 }
 },
 {
-"id": "173074",
-"url": "https://www.epey.com/sabit-disk/seagate-barracuda-pro-st500lm034.html",
-"name": "Seagate Barracuda Pro",
+"id": "627804",
+"url": "https://www.epey.com/sabit-disk/intenso-3813440.html",
+"name": "Intenso 3813440",
 "code": "",
-"img": "https://resim.epey.com/173074/k_seagate-barracuda-pro-500-gb-st500lm034-1.jpg",
-"price": 1249.0,
+"img": "https://resim.epey.com/627804/k_intenso-ssd-festplatte-120-gb-3813430-0-1.jpg",
+"price": 2422.5,
+"sites": 6,
+"score": null,
+"cols": {
+"2352": "240 GB",
+"2353": "480 MB/s",
+"2354": "520 MB/s",
+"4931": "122 K IOPS"
+}
+},
+{
+"id": "628469",
+"url": "https://www.epey.com/sabit-disk/netac-n600s.html",
+"name": "Netac N600S",
+"code": "NT01N600S-128G",
+"img": "https://resim.epey.com/628469/k_netac-n600s-2.jpg",
+"price": 1655.91,
+"sites": 3,
+"score": null,
+"cols": {
+"2352": "128 GB",
+"2353": "520 MB/s",
+"2354": "560 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "162688",
+"url": "https://www.epey.com/sabit-disk/wd-blue-wd5000aakx.html",
+"name": "WD Blue",
+"code": "WD5000AAKX",
+"img": "https://resim.epey.com/162688/k_wd-wd5000aakx-1.jpg",
+"price": 1150.0,
 "sites": 2,
 "score": null,
 "cols": {
 "2352": "500 GB",
 "2353": "-",
-"2354": "160 MB/s",
+"2354": "126 MB/s",
 "4931": "-"
 }
 },
@@ -3765,22 +3765,6 @@
 "2353": "500 MB/s",
 "2354": "520 MB/s",
 "4931": "59 K IOPS"
-}
-},
-{
-"id": "370622",
-"url": "https://www.epey.com/sabit-disk/crucial-bx500-ct1000bx500ssd1.html",
-"name": "Crucial BX500",
-"code": "CT1000BX500SSD1",
-"img": "https://resim.epey.com/370622/k_crucial-bx500-ct1000bx500ssd1-ct120bx500ssd1-1.jpg",
-"price": 7468.54,
-"sites": 5,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "500 MB/s",
-"2354": "540 MB/s",
-"4931": "-"
 }
 },
 {
@@ -3816,35 +3800,35 @@
 }
 },
 {
-"id": "140367",
-"url": "https://www.epey.com/sabit-disk/hikvision-c100-hs-ssd-c100-480g.html",
-"name": "Hikvision C100",
-"code": "HS-SSD-C100/480G",
-"img": "https://resim.epey.com/140367/k_hikvision-c100-hs-ssd-c100-480g-2.jpg",
-"price": 4019.26,
-"sites": 6,
+"id": "140200",
+"url": "https://www.epey.com/sabit-disk/wd-purple-wd60purz.html",
+"name": "WD Purple",
+"code": "WD60PURZ",
+"img": "https://resim.epey.com/140200/k_wd-purple-wd60purz-2.jpg",
+"price": 15410.0,
+"sites": 5,
 "score": null,
 "cols": {
-"2352": "480 GB",
-"2353": "470 MB/s",
-"2354": "550 MB/s",
-"4931": "76 K IOPS"
+"2352": "6 TB",
+"2353": "-",
+"2354": "175 MB/s",
+"4931": "-"
 }
 },
 {
-"id": "140202",
-"url": "https://www.epey.com/sabit-disk/wd-purple-wd40purz.html",
-"name": "WD Purple",
-"code": "WD40PURZ",
-"img": "https://resim.epey.com/140202/k_wd-purple-wd40purz-1.jpg",
-"price": 9189.88,
-"sites": 6,
+"id": "112816",
+"url": "https://www.epey.com/sabit-disk/samsung-970-evo-mz-v7e500bw.html",
+"name": "Samsung 970 EVO",
+"code": "MZ-V7E500BW",
+"img": "https://resim.epey.com/112816/k_samsung-970-evo-mz-v7e500bw-1.png",
+"price": 8739.08,
+"sites": 2,
 "score": null,
 "cols": {
-"2352": "4 TB",
-"2353": "-",
-"2354": "150 MB/s",
-"4931": "-"
+"2352": "500 GB",
+"2353": "2300 MB/s",
+"2354": "3400 MB/s",
+"4931": "370 K IOPS"
 }
 },
 {
@@ -3869,7 +3853,7 @@
 "name": "Seagate BarraCuda",
 "code": "ST4000DM004",
 "img": "https://resim.epey.com/99311/k_seagate-barracuda-3-5-inc-4tb-st4000dm004-1.jpg",
-"price": 10630.6,
+"price": 10729.0,
 "sites": 5,
 "score": null,
 "cols": {
@@ -3941,6 +3925,36 @@
 }
 },
 {
+"id": "72876",
+"url": "https://www.epey.com/sabit-disk/seagate-ironwolf-2tb.html",
+"name": "Seagate IronWolf",
+"code": "ST2000VN004",
+"img": "https://resim.epey.com/72876/k_seagate-ironwolf-2tb-1.jpg",
+"price": 8184.5,
+"sites": 4,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "-",
+"2354": "180 MB/s"
+}
+},
+{
+"id": "72853",
+"url": "https://www.epey.com/sabit-disk/seagate-firecuda-3-5-inc-1tb.html",
+"name": "Seagate FireCuda",
+"code": "ST1000DX002",
+"img": "https://resim.epey.com/72853/k_seagate-firecuda-3-5-inc-1tb-1.jpg",
+"price": 4000.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "156 MB/s",
+"2354": "210 MB/s"
+}
+},
+{
 "id": "71704",
 "url": "https://www.epey.com/sabit-disk/samsung-850-pro-256gb.html",
 "name": "Samsung 850 PRO",
@@ -3957,19 +3971,67 @@
 }
 },
 {
+"id": "741339",
+"url": "https://www.epey.com/sabit-disk/kioxia-exceria-pro-lse10z002tg8.html",
+"name": "Kioxia Exceria Pro",
+"code": "LSE10Z002TG8",
+"img": "https://resim.epey.com/741339/k_kioxia-exceria-pro-lse10z002tg8-1.jpg",
+"price": 28999.0,
+"sites": 3,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "6400 MB/s",
+"2354": "7300 MB/s",
+"4931": "1.300 K IOPS"
+}
+},
+{
 "id": "818017",
 "url": "https://www.epey.com/sabit-disk/crucial-p3-plus-ct2000p3pssd8.html",
 "name": "Crucial P3 Plus",
 "code": "CT2000P3PSSD8",
 "img": "https://resim.epey.com/818017/k_crucial-p3-plus-ct2000p3pssd8-1.jpg",
-"price": 18606.23,
-"sites": 4,
+"price": 23991.63,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "2 TB",
 "2353": "4200 MB/s",
 "2354": "5000 MB/s",
 "4931": "-"
+}
+},
+{
+"id": "984130",
+"url": "https://www.epey.com/sabit-disk/samsung-pm9b1-512-gb.html",
+"name": "Samsung PM9B1",
+"code": "MZVL4512HBLU",
+"img": "https://resim.epey.com/984130/k_samsung-pm9b1-mzvl4512hblu-1.jpg",
+"price": 5990.0,
+"sites": 2,
+"score": null,
+"cols": {
+"2352": "512 GB",
+"2353": "2500 MB/s",
+"2354": "3500 MB/s",
+"4931": "400 K IOPS"
+}
+},
+{
+"id": "896140",
+"url": "https://www.epey.com/sabit-disk/apacer-as2280q4u-ap1tbas2280q4u-1.html",
+"name": "Apacer AS2280Q4U",
+"code": "AP1TBAS2280Q4U-1",
+"img": "https://resim.epey.com/896140/k_apacer-as2280q4u-ap1tbas2280q4u-1-1.jpg",
+"price": 16198.85,
+"sites": 2,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "6000 MB/s",
+"2354": "7300 MB/s",
+"4931": "1.000 K IOPS"
 }
 },
 {
@@ -4021,19 +4083,19 @@
 }
 },
 {
-"id": "1000512",
-"url": "https://www.epey.com/sabit-disk/samsung-9100-pro-sogutuculu-2-tb.html",
-"name": "Samsung 9100 Pro Soğutuculu",
-"code": "MZ-VAP2T0CW",
-"img": "https://resim.epey.com/1000512/k_samsung-9100-pro-sogutuculu-1.jpg",
-"price": 27807.0,
-"sites": 9,
+"id": "1020321",
+"url": "https://www.epey.com/sabit-disk/lexar-professional-nm1090-pro-2-tb.html",
+"name": "Lexar Professional NM1090 Pro",
+"code": "",
+"img": "https://resim.epey.com/1020321/k_lexar-professional-nm1090-pro-1.jpg",
+"price": 25999.0,
+"sites": 4,
 "score": null,
 "cols": {
 "2352": "2 TB",
-"2353": "13400 MB/s",
-"2354": "14700 MB/s",
-"4931": "2.600 K IOPS"
+"2353": "13000 MB/s",
+"2354": "14000 MB/s",
+"4931": "1.800 K IOPS"
 }
 },
 {
@@ -4059,13 +4121,61 @@
 "code": "WDS500G3B0E",
 "img": "https://resim.epey.com/896759/k_wd-blue-sn580-wds500g3b0e-1.jpg",
 "price": 34505.0,
-"sites": 1,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "500 GB",
 "2353": "3600 MB/s",
 "2354": "4000 MB/s",
 "4931": "750 K IOPS"
+}
+},
+{
+"id": "175485",
+"url": "https://www.epey.com/sabit-disk/apacer-panther-as340-ap240gas340g-1.html",
+"name": "Apacer Panther AS340",
+"code": "AP240GAS340G-1",
+"img": "https://resim.epey.com/175485/k_apacer-panther-120gb-ap120gas340g-1-1.png",
+"price": 2670.0,
+"sites": 5,
+"score": null,
+"cols": {
+"2352": "240 GB",
+"2353": "520 MB/s",
+"2354": "550 MB/s",
+"4931": "70 K IOPS"
+}
+},
+{
+"id": "924635",
+"url": "https://www.epey.com/sabit-disk/hp-fx700.html",
+"name": "HP FX700",
+"code": "8U2N5AA",
+"img": "https://resim.epey.com/924635/k_hp-fx700-1.jpg",
+"price": 17823.87,
+"sites": 6,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "6200 MB/s",
+"2354": "7200 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "924435",
+"url": "https://www.epey.com/sabit-disk/twinmos-xtreme-gen4-x4-nvme-pro.html",
+"name": "TwinMOS Xtreme Gen4 X4 NVMe Pro",
+"code": "NV1TBG42280",
+"img": "https://resim.epey.com/924435/k_twinmos-xtreme-gen4-x4-nvme-pro-1.jpg",
+"price": 10692.0,
+"sites": 10,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "6800 MB/s",
+"2354": "7500 MB/s",
+"4931": "-"
 }
 },
 {
@@ -4106,7 +4216,7 @@
 "name": "Corsair MP600 Pro NH",
 "code": "CSSD-F2000GBMP600PNH",
 "img": "https://resim.epey.com/826970/k_corsair-mp600-pro-nh-cssd-f2000gbmp600pnh-1.jpg",
-"price": 21254.38,
+"price": 21255.22,
 "sites": 5,
 "score": null,
 "cols": {
@@ -4133,6 +4243,22 @@
 }
 },
 {
+"id": "765331",
+"url": "https://www.epey.com/sabit-disk/msi-spatium-m450-500gb.html",
+"name": "MSI Spatium M450",
+"code": "",
+"img": "https://resim.epey.com/765331/k_msi-spatium-m450-500gb-1.jpg",
+"price": 18140.15,
+"sites": 2,
+"score": null,
+"cols": {
+"2352": "500 GB",
+"2353": "2300 MB/s",
+"2354": "3600 MB/s",
+"4931": "550 K IOPS"
+}
+},
+{
 "id": "741331",
 "url": "https://www.epey.com/sabit-disk/kioxia-exceria-g2.html",
 "name": "Kioxia Exceria G2",
@@ -4146,22 +4272,6 @@
 "2353": "1700 MB/s",
 "2354": "2100 MB/s",
 "4931": "400 K IOPS"
-}
-},
-{
-"id": "162615",
-"url": "https://www.epey.com/sabit-disk/wd-av.html",
-"name": "WD AV",
-"code": "WD3200AVJS",
-"img": "https://resim.epey.com/162615/k_wd-wd3200avjs-320gb-1.jpg",
-"price": 516.2,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "320 GB",
-"2353": "-",
-"2354": "-",
-"4931": "-"
 }
 },
 {
@@ -4181,6 +4291,22 @@
 }
 },
 {
+"id": "140355",
+"url": "https://www.epey.com/sabit-disk/hikvision-c100-hs-ssd-c100-240g.html",
+"name": "Hikvision C100",
+"code": "HS-SSD-C100/240G",
+"img": "https://resim.epey.com/140355/k_hikvision-c100-hs-ssd-c100-240g-1.jpg",
+"price": 2549.0,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "240 GB",
+"2353": "450 MB/s",
+"2354": "550 MB/s",
+"4931": "73 K IOPS"
+}
+},
+{
 "id": "1073161",
 "url": "https://www.epey.com/sabit-disk/lexar-play-x-512-gb.html",
 "name": "Lexar Play X",
@@ -4197,18 +4323,18 @@
 }
 },
 {
-"id": "1072330",
-"url": "https://www.epey.com/sabit-disk/colorful-cn600-128-gb.html",
-"name": "Colorful CN600",
+"id": "1072332",
+"url": "https://www.epey.com/sabit-disk/colorful-cn600-pro-1-tb.html",
+"name": "Colorful CN600 Pro",
 "code": "",
-"img": "https://resim.epey.com/1072330/k_colorful-cn600-1.jpg",
-"price": 2009.0,
-"sites": 2,
+"img": "https://resim.epey.com/1072332/k_colorful-cn600-pro-1.jpg",
+"price": 9149.0,
+"sites": 3,
 "score": null,
 "cols": {
-"2352": "128 GB",
-"2353": "1000 MB/s",
-"2354": "1500 MB/s",
+"2352": "1 TB",
+"2353": "3100 MB/s",
+"2354": "3400 MB/s",
 "4931": "-"
 }
 },
@@ -4250,7 +4376,7 @@
 "name": "Kingston DC3000ME",
 "code": "SEDC3000ME/3T8",
 "img": "https://resim.epey.com/1062955/k_kingston-dc3000me-1.jpg",
-"price": 153521.2,
+"price": 160074.7,
 "sites": 5,
 "score": null,
 "cols": {
@@ -4258,22 +4384,6 @@
 "2353": "5800 MB/s",
 "2354": "14000 MB/s",
 "4931": "300 K IOPS"
-}
-},
-{
-"id": "1061973",
-"url": "https://www.epey.com/sabit-disk/mld-m520-500-gb.html",
-"name": "MLD M520",
-"code": "MLD22M520E16-500",
-"img": "https://resim.epey.com/1061973/k_mld-m520-2.jpg",
-"price": 6248.05,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "2500 MB/s",
-"2354": "5000 MB/s",
-"4931": "-"
 }
 },
 {
@@ -4293,29 +4403,13 @@
 }
 },
 {
-"id": "1056018",
-"url": "https://www.epey.com/sabit-disk/lexar-nq100-512-gb.html",
-"name": "Lexar NQ100",
-"code": "LNQ100X512G",
-"img": "https://resim.epey.com/1056018/k_lexar-nq100-lnq100x512g-1.jpg",
-"price": 3970.0,
-"sites": 5,
-"score": null,
-"cols": {
-"2352": "512 GB",
-"2353": "-",
-"2354": "550 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "1055983",
 "url": "https://www.epey.com/sabit-disk/toshiba-nas-n300-mn10ada800s.html",
 "name": "Toshiba NAS N300",
 "code": "MN10ADA800S",
 "img": "https://resim.epey.com/1055983/k_toshiba-nas-n300-mn10ada800s-1.jpg",
 "price": 23545.62,
-"sites": 8,
+"sites": 9,
 "score": null,
 "cols": {
 "2352": "8 TB",
@@ -4331,12 +4425,28 @@
 "code": "",
 "img": "https://resim.epey.com/1055957/k_synology-hat3320-8t-1.jpg",
 "price": 38876.49,
-"sites": 6,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "8 TB",
 "2353": "-",
 "2354": "281 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "1055935",
+"url": "https://www.epey.com/sabit-disk/toshiba-mg10-d-8-tb.html",
+"name": "Toshiba MG10-D",
+"code": "MG10ADA800E",
+"img": "https://resim.epey.com/1055935/k_toshiba-mg10-d-1.jpg",
+"price": 22471.2,
+"sites": 9,
+"score": null,
+"cols": {
+"2352": "8 TB",
+"2353": "-",
+"2354": "268 MB/s",
 "4931": "-"
 }
 },
@@ -4347,7 +4457,7 @@
 "code": "F2000GBMP700PRO",
 "img": "https://resim.epey.com/1053356/k_corsair-hava-sogutuculu-mp700-pro-1-tb-cssd-f1000gbmp700pro-1.jpg",
 "price": 25199.0,
-"sites": 1,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -4369,22 +4479,6 @@
 "2352": "12 TB",
 "2353": "-",
 "2354": "285 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "1045847",
-"url": "https://www.epey.com/sabit-disk/wd-purple-4-tb.html",
-"name": "WD Purple",
-"code": "WD44PURZ",
-"img": "https://resim.epey.com/1045847/k_wd-purple-wd44purz-1.jpg",
-"price": 9845.14,
-"sites": 11,
-"score": null,
-"cols": {
-"2352": "4 TB",
-"2353": "-",
-"2354": "180 MB/s",
 "4931": "-"
 }
 },
@@ -4421,35 +4515,35 @@
 }
 },
 {
-"id": "1036068",
-"url": "https://www.epey.com/sabit-disk/adata-legend-900-pro-1-tb.html",
-"name": "Adata Legend 900 Pro",
-"code": "SLEG-900P-1TCS",
-"img": "https://resim.epey.com/1036068/k_adata-legend-900-pro-1.jpg",
-"price": 9858.0,
-"sites": 8,
+"id": "1044721",
+"url": "https://www.epey.com/sabit-disk/kioxia-exceria-g3-1-tb.html",
+"name": "Kioxia Exceria G3",
+"code": "LVC10Z001TG8",
+"img": "https://resim.epey.com/1044721/k_kioxia-exceria-g3-1.jpg",
+"price": 13699.0,
+"sites": 4,
 "score": null,
 "cols": {
 "2352": "1 TB",
-"2353": "6000 MB/s",
-"2354": "7400 MB/s",
-"4931": "-"
+"2353": "8900 MB/s",
+"2354": "10000 MB/s",
+"4931": "1.450 K IOPS"
 }
 },
 {
-"id": "1024267",
-"url": "https://www.epey.com/sabit-disk/twinmos-corex-pro-1-tb.html",
-"name": "TwinMOS CoreX Pro",
-"code": "NVCXP1TBG52280",
-"img": "https://resim.epey.com/1024267/k_twinmos-corex-pro-1.jpg",
-"price": 13513.88,
-"sites": 8,
+"id": "1034443",
+"url": "https://www.epey.com/sabit-disk/wd-blue-sn5100-4-tb.html",
+"name": "WD Blue SN5100",
+"code": "WDS400T5B0E",
+"img": "https://resim.epey.com/1034443/k_wd-blue-sn5100-1.jpg",
+"price": 39559.1,
+"sites": 3,
 "score": null,
 "cols": {
-"2352": "1 TB",
-"2353": "10000 MB/s",
-"2354": "14000 MB/s",
-"4931": "-"
+"2352": "4 TB",
+"2353": "6700 MB/s",
+"2354": "6900 MB/s",
+"4931": "1.100 K IOPS"
 }
 },
 {
@@ -4458,30 +4552,14 @@
 "name": "Lexar Professional NM1090 Pro",
 "code": "LNM109P004T",
 "img": "https://resim.epey.com/1020320/k_lexar-professional-nm1090-pro-1.jpg",
-"price": 38153.61,
-"sites": 3,
+"price": 92654.0,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "4 TB",
 "2353": "13000 MB/s",
 "2354": "14000 MB/s",
 "4931": "1.700 K IOPS"
-}
-},
-{
-"id": "1020318",
-"url": "https://www.epey.com/sabit-disk/lexar-nm990.html",
-"name": "Lexar NM990",
-"code": "LNM990X004T",
-"img": "https://resim.epey.com/1020318/k_lexar-nm990-1.jpg",
-"price": 42999.0,
-"sites": 3,
-"score": null,
-"cols": {
-"2352": "4 TB",
-"2353": "11000 MB/s",
-"2354": "14000 MB/s",
-"4931": "1.500 K IOPS"
 }
 },
 {
@@ -4517,22 +4595,6 @@
 }
 },
 {
-"id": "1005293",
-"url": "https://www.epey.com/sabit-disk/seagate-firecuda-530r-2-tb.html",
-"name": "Seagate FireCuda 530R",
-"code": "ZP2000GM3A063",
-"img": "https://resim.epey.com/1005293/k_seagate-firecuda-530r-1.jpg",
-"price": 24021.7,
-"sites": 3,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "6900 MB/s",
-"2354": "7400 MB/s",
-"4931": "1.300 K IOPS"
-}
-},
-{
 "id": "1004819",
 "url": "https://www.epey.com/sabit-disk/mld-m600-1-tb.html",
 "name": "MLD M600",
@@ -4549,28 +4611,12 @@
 }
 },
 {
-"id": "1002091",
-"url": "https://www.epey.com/sabit-disk/wd-black-sn850p-8-tb.html",
-"name": "WD Black SN850P",
-"code": "WDBBYV0080BNC",
-"img": "https://resim.epey.com/1002091/k_wd-sn850p-1.jpg",
-"price": 172514.59,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "8 TB",
-"2353": "6600 MB/s",
-"2354": "7200 MB/s",
-"4931": "1.200 K IOPS"
-}
-},
-{
 "id": "1001058",
 "url": "https://www.epey.com/sabit-disk/lenovo-4xb1n36073-1-tb.html",
 "name": "Lenovo 4XB1N36073",
 "code": "",
 "img": "https://resim.epey.com/1001058/k_lenovo-4xb1n36072-1.jpg",
-"price": 9500.0,
+"price": 10212.35,
 "sites": 3,
 "score": null,
 "cols": {
@@ -4597,6 +4643,22 @@
 }
 },
 {
+"id": "999190",
+"url": "https://www.epey.com/sabit-disk/wd-blue-sn5000-500-gb.html",
+"name": "WD Blue SN5000",
+"code": "WDS500G4B0E",
+"img": "https://resim.epey.com/999190/k_wd-blue-sn5000-1.jpg",
+"price": 6430.1,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "500 GB",
+"2353": "4000 MB/s",
+"2354": "5000 MB/s",
+"4931": "770 K IOPS"
+}
+},
+{
 "id": "999011",
 "url": "https://www.epey.com/sabit-disk/crucial-e100-480-gb.html",
 "name": "Crucial E100",
@@ -4613,19 +4675,19 @@
 }
 },
 {
-"id": "997741",
-"url": "https://www.epey.com/sabit-disk/netac-nv3000-1-tb.html",
-"name": "Netac NV3000",
-"code": "NT01NV3000-1T0-E4X",
-"img": "https://resim.epey.com/997741/k_netac-nv3000-1.jpg",
-"price": 8741.07,
-"sites": 5,
+"id": "986832",
+"url": "https://www.epey.com/sabit-disk/wd-red-sn700-1-tb.html",
+"name": "WD Red SN700",
+"code": "WDS100T1R0C",
+"img": "https://resim.epey.com/986832/k_wd-red-sn700-1.jpg",
+"price": 41389.1,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "1 TB",
-"2353": "2100 MB/s",
-"2354": "3100 MB/s",
-"4931": "160 K IOPS"
+"2353": "3000 MB/s",
+"2354": "3430 MB/s",
+"4931": "560 K IOPS"
 }
 },
 {
@@ -4682,8 +4744,8 @@
 "name": "Crucial T500",
 "code": "CT4000T500SSD5",
 "img": "https://resim.epey.com/974282/k_crucial-t500-ct4000t500ssd5-1.jpg",
-"price": 42349.9,
-"sites": 2,
+"price": 55646.79,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "4 TB",
@@ -4730,7 +4792,7 @@
 "name": "Seagate IronWolf",
 "code": "ST6000VN006",
 "img": "https://resim.epey.com/954957/k_seagate-6tb-ironwolf-st6000vn006-1.jpg",
-"price": 16764.7,
+"price": 16589.0,
 "sites": 9,
 "score": null,
 "cols": {
@@ -4747,7 +4809,7 @@
 "code": "LNQ790X002T",
 "img": "https://resim.epey.com/956286/k_lexar-nq79-1.jpg",
 "price": 19782.5,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -4794,7 +4856,7 @@
 "name": "WD Black SN770M",
 "code": "WDS500G3X0G",
 "img": "https://resim.epey.com/950097/k_wd-black-sn770m-wds500g3x0g-1.jpg",
-"price": 10151.88,
+"price": 10163.8,
 "sites": 2,
 "score": null,
 "cols": {
@@ -4810,7 +4872,7 @@
 "name": "Patriot P320",
 "code": "P320P512GM28",
 "img": "https://resim.epey.com/943950/k_patriot-p320-1.jpg",
-"price": 5348.08,
+"price": 5297.75,
 "sites": 7,
 "score": null,
 "cols": {
@@ -4874,8 +4936,8 @@
 "name": "WD Red Plus",
 "code": "WD40EFPX",
 "img": "https://resim.epey.com/908399/k_wd-4tb-red-wd40efpx-1.jpg",
-"price": 27747.5,
-"sites": 6,
+"price": 33961.41,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "4 TB",
@@ -4949,13 +5011,29 @@
 }
 },
 {
+"id": "916013",
+"url": "https://www.epey.com/sabit-disk/intenso-m-2-ssd-pcie-premium-3835460.html",
+"name": "Intenso M.2 SSD PCIe Premium",
+"code": "3835460",
+"img": "https://resim.epey.com/916013/k_intenso-m-2-ssd-pcie-premium-3835460-3835440-1.jpg",
+"price": 7852.08,
+"sites": 7,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "1700 MB/s",
+"2354": "2100 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "907993",
 "url": "https://www.epey.com/sabit-disk/wd-wd5000aakb.html",
 "name": "WD WD5000AAKB",
 "code": "",
 "img": "https://resim.epey.com/907993/k_wd-500gb-wd5000aakb-1.jpg",
 "price": 1784.8,
-"sites": 7,
+"sites": 6,
 "score": null,
 "cols": {
 "2352": "500 GB",
@@ -4986,8 +5064,8 @@
 "name": "TwinMOS AlphaPro",
 "code": "NVME512GB2280AP",
 "img": "https://resim.epey.com/904814/k_twinmos-512-gb-nvme512gb2280ap-1.jpg",
-"price": 5240.69,
-"sites": 11,
+"price": 5301.04,
+"sites": 10,
 "score": null,
 "cols": {
 "2352": "512 GB",
@@ -5013,34 +5091,18 @@
 }
 },
 {
-"id": "902382",
-"url": "https://www.epey.com/sabit-disk/lexar-nm710-lnm710x002t.html",
-"name": "Lexar NM710",
-"code": "LNM710X002T",
-"img": "https://resim.epey.com/902382/k_lexar-nm710-lnm710x002t-1.jpg",
-"price": 72903.0,
-"sites": 1,
+"id": "902552",
+"url": "https://www.epey.com/sabit-disk/seagate-skyhawk-st1000vx013.html",
+"name": "Seagate SkyHawk",
+"code": "ST1000VX013",
+"img": "https://resim.epey.com/902552/k_seagate-skyhawk-st1000vx013-2.jpg",
+"price": 3999.0,
+"sites": 10,
 "score": null,
 "cols": {
-"2352": "2 TB",
-"2353": "4500 MB/s",
-"2354": "4850 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "886097",
-"url": "https://www.epey.com/sabit-disk/mld-m500-mld22m500p21-500.html",
-"name": "MLD M500",
-"code": "MLD22M500P21-500",
-"img": "https://resim.epey.com/886097/k_mld-m500-mld22m500p21-500-1.jpg",
-"price": 23569.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "4700 MB/s",
-"2354": "7000 MB/s",
+"2352": "1 TB",
+"2353": "-",
+"2354": "180 MB/s",
 "4931": "-"
 }
 },
@@ -5058,6 +5120,38 @@
 "2353": "3600 MB/s",
 "2354": "4500 MB/s",
 "4931": "650 K IOPS"
+}
+},
+{
+"id": "873768",
+"url": "https://www.epey.com/sabit-disk/samsung-990-pro-sogutuculu.html",
+"name": "Samsung 990 Pro Soğutuculu",
+"code": "MZ-V9P1T0CW",
+"img": "https://resim.epey.com/873768/k_samsung-990-pro-sogutuculu-1.jpg",
+"price": 13162.82,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "6900 MB/s",
+"2354": "7450 MB/s",
+"4931": "1.550 K IOPS"
+}
+},
+{
+"id": "867356",
+"url": "https://www.epey.com/sabit-disk/goodram-px600-ssdpr-px600-1k0-80.html",
+"name": "Goodram PX600",
+"code": "SSDPR-PX600-1K0-80",
+"img": "https://resim.epey.com/867356/k_goodram-px600-ssdpr-px600-1k0-80-1.jpg",
+"price": 8329.02,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "3200 MB/s",
+"2354": "5000 MB/s",
+"4931": "-"
 }
 },
 {
@@ -5099,7 +5193,7 @@
 "code": "ST10000NT001",
 "img": "https://resim.epey.com/858614/k_seagate-10tb-st10000ne0008-1.jpg",
 "price": 35300.0,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "10 TB",
@@ -5146,8 +5240,8 @@
 "name": "Seagate Exos 7E10",
 "code": "ST8000NM017B",
 "img": "https://resim.epey.com/843369/k_seagate-exos-7e10-st8000nm017b-st10000nm017b-1.jpg",
-"price": 24102.32,
-"sites": 9,
+"price": 24102.71,
+"sites": 10,
 "score": null,
 "cols": {
 "2352": "8 TB",
@@ -5162,7 +5256,7 @@
 "name": "Seagate IronWolf",
 "code": "ST10000VN000",
 "img": "https://resim.epey.com/840965/k_seagate-ironwolf-st10000vn000-1.jpg",
-"price": 28444.87,
+"price": 28453.55,
 "sites": 9,
 "score": null,
 "cols": {
@@ -5173,35 +5267,51 @@
 }
 },
 {
-"id": "818018",
-"url": "https://www.epey.com/sabit-disk/crucial-p3-plus-ct4000p3pssd8.html",
-"name": "Crucial P3 Plus",
-"code": "CT4000P3PSSD8",
-"img": "https://resim.epey.com/818018/k_crucial-p3-plus-ct4000p3pssd8-1.jpg",
-"price": 51914.9,
-"sites": 3,
+"id": "810557",
+"url": "https://www.epey.com/sabit-disk/crucial-p3-ct1000p3ssd8.html",
+"name": "Crucial P3",
+"code": "CT1000P3SSD8",
+"img": "https://resim.epey.com/810557/k_crucial-p3-ct1000p3ssd8-1.jpg",
+"price": 8910.0,
+"sites": 9,
 "score": null,
 "cols": {
-"2352": "4 TB",
-"2353": "4100 MB/s",
-"2354": "4800 MB/s",
+"2352": "1 TB",
+"2353": "3000 MB/s",
+"2354": "3500 MB/s",
 "4931": "-"
 }
 },
 {
-"id": "784457",
-"url": "https://www.epey.com/sabit-disk/wd-black-sn770-wds100t3x0e.html",
-"name": "WD Black SN770",
-"code": "WDS100T3X0E",
-"img": "https://resim.epey.com/784457/k_wd-black-sn770-wds100t3x0e-1.jpg",
-"price": 49718.0,
+"id": "806595",
+"url": "https://www.epey.com/sabit-disk/wd-blue-sa510-wds500g3b0a.html",
+"name": "WD Blue SA510",
+"code": "WDS500G3B0A",
+"img": "https://resim.epey.com/806595/k_wd-blue-sa510-wds500g3b0a-wds250g3b0a-1.jpg",
+"price": 6512.57,
 "sites": 1,
 "score": null,
 "cols": {
-"2352": "1 TB",
-"2353": "4900 MB/s",
-"2354": "5150 MB/s",
-"4931": "800 K IOPS"
+"2352": "500 GB",
+"2353": "510 MB/s",
+"2354": "560 MB/s",
+"4931": "82 K IOPS"
+}
+},
+{
+"id": "776428",
+"url": "https://www.epey.com/sabit-disk/apacer-as350-panther-ap128gas350-1.html",
+"name": "Apacer AS350 Panther",
+"code": "AP128GAS350-1",
+"img": "https://resim.epey.com/776428/k_apacer-as350-panther-ap128gas350-1-ap1tbas350-1-1.jpg",
+"price": 1656.0,
+"sites": 4,
+"score": null,
+"cols": {
+"2352": "128 GB",
+"2353": "540 MB/s",
+"2354": "560 MB/s",
+"4931": "75 K IOPS"
 }
 },
 {
@@ -5211,7 +5321,7 @@
 "code": "ST16000NM000J",
 "img": "https://resim.epey.com/776248/k_seagate-exos-enterprise-st16000nm000j-1.jpg",
 "price": 42553.4,
-"sites": 8,
+"sites": 7,
 "score": null,
 "cols": {
 "2352": "16 TB",
@@ -5226,7 +5336,7 @@
 "name": "Patriot P300",
 "code": "P300P512GM28US",
 "img": "https://resim.epey.com/765574/k_patriot-p300-p300p512gm28us-1.jpg",
-"price": 4500.0,
+"price": 5000.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -5253,28 +5363,12 @@
 }
 },
 {
-"id": "752259",
-"url": "https://www.epey.com/sabit-disk/bory-r500-c256.html",
-"name": "Bory R500",
-"code": "R500-C256",
-"img": "https://resim.epey.com/752259/k_bory-r500-c256-1.jpg",
-"price": 2339.0,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "256 GB",
-"2353": "500 MB/s",
-"2354": "550 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "746415",
 "url": "https://www.epey.com/sabit-disk/patriot-burst-elite-pbe240gs25ssdr.html",
 "name": "Patriot Burst Elite",
 "code": "PBE240GS25SSDR",
 "img": "https://resim.epey.com/746415/k_patriot-burst-elite-pbe240gs25ssdr-1.jpg",
-"price": 2650.0,
+"price": 2900.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -5365,6 +5459,54 @@
 }
 },
 {
+"id": "718136",
+"url": "https://www.epey.com/sabit-disk/xpg-gammix-sx8100.html",
+"name": "XPG Gammix SX8100",
+"code": "ASX8100NP-2TT-C",
+"img": "https://resim.epey.com/718136/k_xpg-gammix-sx8100-asx8100np-2tt-c-1.jpg",
+"price": 16999.0,
+"sites": 2,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "1900 MB/s",
+"2354": "3500 MB/s",
+"4931": "240 K IOPS"
+}
+},
+{
+"id": "718104",
+"url": "https://www.epey.com/sabit-disk/twinmos-ngffegbm2280.html",
+"name": "TwinMOS NGFFEGBM2280",
+"code": "",
+"img": "https://resim.epey.com/718104/k_twinmos-ngffegbm2280-1.jpg",
+"price": 2851.08,
+"sites": 9,
+"score": null,
+"cols": {
+"2352": "256 GB",
+"2353": "550 MB/s",
+"2354": "580 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "713967",
+"url": "https://www.epey.com/sabit-disk/dahua-ssd-e900n256g.html",
+"name": "Dahua SSD-E900N256G",
+"code": "",
+"img": "https://resim.epey.com/713967/k_dahua-ssd-e900n256g-1.jpg",
+"price": 3299.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "256 GB",
+"2353": "1250 MB/s",
+"2354": "2000 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "713611",
 "url": "https://www.epey.com/sabit-disk/crucial-p5-plus-ct1000p5pssd8.html",
 "name": "Crucial P5 Plus",
@@ -5377,6 +5519,22 @@
 "2352": "1 TB",
 "2353": "5000 MB/s",
 "2354": "6600 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "704951",
+"url": "https://www.epey.com/sabit-disk/mld-m100.html",
+"name": "MLD M100",
+"code": "MLD25M100P11-240",
+"img": "https://resim.epey.com/704951/k_mld-m100-1.jpg",
+"price": 27580.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "240 GB",
+"2353": "520 MB/s",
+"2354": "530 MB/s",
 "4931": "-"
 }
 },
@@ -5402,7 +5560,7 @@
 "name": "Toshiba S300",
 "code": "HDWT860UZSVA",
 "img": "https://resim.epey.com/698332/k_toshiba-s300-hdwt860uzsva-1.jpg",
-"price": 14626.22,
+"price": 12639.24,
 "sites": 10,
 "score": null,
 "cols": {
@@ -5499,13 +5657,29 @@
 "code": "HDWT720UZSVA",
 "img": "https://resim.epey.com/693608/k_toshiba-s300-hdwt720uzsva-1.jpg",
 "price": 7099.0,
-"sites": 10,
+"sites": 9,
 "score": null,
 "cols": {
 "2352": "2 TB",
 "2353": "-",
 "2354": "184 MB/s",
 "4931": "-"
+}
+},
+{
+"id": "692702",
+"url": "https://www.epey.com/sabit-disk/kingston-kc2500-skc2500m8-2000g.html",
+"name": "Kingston KC2500",
+"code": "SKC2500M8/2000G",
+"img": "https://resim.epey.com/692702/k_kingston-kc2500-skc2500m8-2000g-1.jpg",
+"price": 22999.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "2900 MB/s",
+"2354": "3500 MB/s",
+"4931": "300 K IOPS"
 }
 },
 {
@@ -5525,12 +5699,28 @@
 }
 },
 {
+"id": "682453",
+"url": "https://www.epey.com/sabit-disk/samsung-980-pro-mz-v8p2t0bw.html",
+"name": "Samsung 980 Pro",
+"code": "MZ-V8P2T0BW",
+"img": "https://resim.epey.com/682453/k_samsung-980-pro-mz-v8p2t0bw-1.jpg",
+"price": 44599.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "5000 MB/s",
+"2354": "7000 MB/s",
+"4931": "1.000 K IOPS"
+}
+},
+{
 "id": "678524",
 "url": "https://www.epey.com/sabit-disk/acer-sa100-sa100-960gb.html",
 "name": "Acer SA100",
 "code": "SA100-960GB",
 "img": "https://resim.epey.com/678524/k_acer-sa100-sa100-960gb-1.jpg",
-"price": 6875.8,
+"price": 6875.9,
 "sites": 7,
 "score": null,
 "cols": {
@@ -5546,29 +5736,13 @@
 "name": "Acer SA100",
 "code": "SA100-240GB",
 "img": "https://resim.epey.com/678520/k_acer-sa100-sa100-240gb-1.jpg",
-"price": 2940.0,
-"sites": 6,
+"price": 3099.81,
+"sites": 7,
 "score": null,
 "cols": {
 "2352": "240 GB",
 "2353": "500 MB/s",
 "2354": "560 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "677964",
-"url": "https://www.epey.com/sabit-disk/crucial-p2-ct1000p2ssd8.html",
-"name": "Crucial P2",
-"code": "CT1000P2SSD8",
-"img": "https://resim.epey.com/677964/k_crucial-p2-ct1000p2ssd8-1.png",
-"price": 32999.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "1800 MB/s",
-"2354": "2400 MB/s",
 "4931": "-"
 }
 },
@@ -5586,38 +5760,6 @@
 "2353": "530 MB/s",
 "2354": "560 MB/s",
 "4931": "88 K IOPS"
-}
-},
-{
-"id": "657015",
-"url": "https://www.epey.com/sabit-disk/kioxia-bg4-series-kbg40zns512g.html",
-"name": "Kioxia BG4 Series",
-"code": "KBG40ZNS512G",
-"img": "https://resim.epey.com/657015/k_kioxia-kbg40zns128g-1.jpg",
-"price": 4599.08,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "512 GB",
-"2353": "1400 MB/s",
-"2354": "2200 MB/s",
-"4931": "190 K IOPS"
-}
-},
-{
-"id": "444926",
-"url": "https://www.epey.com/sabit-disk/seagate-momentus-7200-4.html",
-"name": "Seagate Momentus 7200.4",
-"code": "ST9320423AS",
-"img": "https://resim.epey.com/444926/k_seagate-momentus-320-gb-st9320423as-1.jpg",
-"price": 539.4,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "320 GB",
-"2353": "-",
-"2354": "-",
-"4931": "-"
 }
 },
 {
@@ -5642,7 +5784,7 @@
 "name": "PNY CS900",
 "code": "SSD7CS900-250-RB",
 "img": "https://resim.epey.com/640467/k_pny-480gb-ssd7cs900-480-rb-1.jpg",
-"price": 2446.16,
+"price": 2385.32,
 "sites": 9,
 "score": null,
 "cols": {
@@ -5650,22 +5792,6 @@
 "2353": "500 MB/s",
 "2354": "535 MB/s",
 "4931": "-"
-}
-},
-{
-"id": "627804",
-"url": "https://www.epey.com/sabit-disk/intenso-3813440.html",
-"name": "Intenso 3813440",
-"code": "",
-"img": "https://resim.epey.com/627804/k_intenso-ssd-festplatte-120-gb-3813430-0-1.jpg",
-"price": 2422.5,
-"sites": 6,
-"score": null,
-"cols": {
-"2352": "240 GB",
-"2353": "480 MB/s",
-"2354": "520 MB/s",
-"4931": "122 K IOPS"
 }
 },
 {
@@ -5697,22 +5823,6 @@
 "2352": "1 TB",
 "2353": "1720 MB/s",
 "2354": "2130 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "418044",
-"url": "https://www.epey.com/sabit-disk/hitachi-travelstar-z7k500.html",
-"name": "Hitachi Travelstar Z7K500",
-"code": "0J26055",
-"img": "https://resim.epey.com/418044/k_hitachi-travelstar-z7k500-0j26055-500-gb-1.jpg",
-"price": 837.0,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "-",
-"2354": "-",
 "4931": "-"
 }
 },
@@ -5778,6 +5888,38 @@
 "2353": "530 MB/s",
 "2354": "560 MB/s",
 "4931": "85 K IOPS"
+}
+},
+{
+"id": "392715",
+"url": "https://www.epey.com/sabit-disk/hp-s700-2dp98aaabb.html",
+"name": "HP S700",
+"code": "2DP98AA#ABB",
+"img": "https://resim.epey.com/392715/k_hp-2dp97aa-1.jpg",
+"price": 4500.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "250 GB",
+"2353": "515 MB/s",
+"2354": "555 MB/s",
+"4931": "80 K IOPS"
+}
+},
+{
+"id": "370622",
+"url": "https://www.epey.com/sabit-disk/crucial-bx500-ct1000bx500ssd1.html",
+"name": "Crucial BX500",
+"code": "CT1000BX500SSD1",
+"img": "https://resim.epey.com/370622/k_crucial-bx500-ct1000bx500ssd1-ct120bx500ssd1-1.jpg",
+"price": 7397.61,
+"sites": 5,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "500 MB/s",
+"2354": "540 MB/s",
+"4931": "-"
 }
 },
 {
@@ -5857,6 +5999,22 @@
 "2352": "2 TB",
 "2353": "-",
 "2354": "194 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "167756",
+"url": "https://www.epey.com/sabit-disk/toshiba-mk3276gsx.html",
+"name": "Toshiba MK3276GSX",
+"code": "",
+"img": "https://resim.epey.com/167756/k_toshiba-mk3276gsx-320gb-1.jpg",
+"price": 999.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "320 GB",
+"2353": "-",
+"2354": "-",
 "4931": "-"
 }
 },
@@ -5957,6 +6115,38 @@
 }
 },
 {
+"id": "146019",
+"url": "https://www.epey.com/sabit-disk/samsung-970-evo-plus-mz-v7s2t0bw.html",
+"name": "Samsung 970 EVO Plus",
+"code": "MZ-V7S2T0BW",
+"img": "https://resim.epey.com/146019/k_samsung-970-evo-plus-mz-v7s2t0bw-2.png",
+"price": 23500.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "3300 MB/s",
+"2354": "3500 MB/s",
+"4931": "560 K IOPS"
+}
+},
+{
+"id": "142577",
+"url": "https://www.epey.com/sabit-disk/intel-optane-hafiza.html",
+"name": "Intel Optane Hafıza",
+"code": "MEMPEK1W016GA",
+"img": "https://resim.epey.com/142577/k_intel-optane-memory-1.jpg",
+"price": 24419.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "16 GB",
+"2353": "145 MB/s",
+"2354": "900 MB/s",
+"4931": "35 K IOPS"
+}
+},
+{
 "id": "140414",
 "url": "https://www.epey.com/sabit-disk/toshiba-mq01abd032v.html",
 "name": "Toshiba MQ01ABD032V",
@@ -5995,7 +6185,7 @@
 "code": "WD20PURZ",
 "img": "https://resim.epey.com/140212/k_wd-purple-wd20purz-1.jpg",
 "price": 7000.0,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -6010,7 +6200,7 @@
 "name": "WD Purple",
 "code": "WD30PURZ",
 "img": "https://resim.epey.com/140204/k_wd-purple-wd30purz-2.jpg",
-"price": 6499.0,
+"price": 7165.0,
 "sites": 3,
 "score": null,
 "cols": {
@@ -6021,18 +6211,18 @@
 }
 },
 {
-"id": "137818",
-"url": "https://www.epey.com/sabit-disk/seagate-barracuda.html",
-"name": "Seagate BarraCuda",
-"code": "ST3000DM007",
-"img": "https://resim.epey.com/137818/k_seagate-st3000dm007-1.jpg",
-"price": 6450.0,
-"sites": 3,
+"id": "140202",
+"url": "https://www.epey.com/sabit-disk/wd-purple-wd40purz.html",
+"name": "WD Purple",
+"code": "WD40PURZ",
+"img": "https://resim.epey.com/140202/k_wd-purple-wd40purz-1.jpg",
+"price": 9189.88,
+"sites": 5,
 "score": null,
 "cols": {
-"2352": "3 TB",
+"2352": "4 TB",
 "2353": "-",
-"2354": "185 MB/s",
+"2354": "150 MB/s",
 "4931": "-"
 }
 },
@@ -6123,28 +6313,12 @@
 "code": "WD10SPZX",
 "img": "https://resim.epey.com/99251/k_wd-wd10spzx-1.jpg",
 "price": 3699.0,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "1 TB",
 "2353": "-",
 "2354": "-"
-}
-},
-{
-"id": "98530",
-"url": "https://www.epey.com/sabit-disk/wd-WDS240G2G0A.html",
-"name": "WD Green",
-"code": "WDS240G2G0A",
-"img": "https://resim.epey.com/98530/k_wd-green-ssd-240gb-2-1.jpg",
-"price": 3349.0,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "240 GB",
-"2353": "-",
-"2354": "545 MB/s",
-"4931": "-"
 }
 },
 {
@@ -6170,12 +6344,27 @@
 "code": "ST4000NM0035",
 "img": "https://resim.epey.com/74296/k_seagate-st6000nm0115-1.jpg",
 "price": 8999.0,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "4 TB",
 "2353": "-",
 "2354": "215 MB/s"
+}
+},
+{
+"id": "74293",
+"url": "https://www.epey.com/sabit-disk/wd-re3-500gb.html",
+"name": "WD RE3",
+"code": "WD5002ABYS",
+"img": "https://resim.epey.com/74293/k_wd-re3-500gb-1.jpg",
+"price": 1499.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "500 GB",
+"2353": "-",
+"2354": "113 MB/s"
 }
 },
 {
@@ -6229,7 +6418,7 @@
 "name": "Seagate Surveillance",
 "code": "ST1000VX001",
 "img": "https://resim.epey.com/72904/k_seagate-surveillance-1tb-1.jpg",
-"price": 35570.97,
+"price": 35610.99,
 "sites": 1,
 "score": null,
 "cols": {
@@ -6244,7 +6433,7 @@
 "name": "Seagate IronWolf",
 "code": "ST4000VN008",
 "img": "https://resim.epey.com/72878/k_seagate-ironwolf-4tb-1.jpg",
-"price": 13050.0,
+"price": 12869.0,
 "sites": 3,
 "score": null,
 "cols": {
@@ -6269,27 +6458,12 @@
 }
 },
 {
-"id": "72853",
-"url": "https://www.epey.com/sabit-disk/seagate-firecuda-3-5-inc-1tb.html",
-"name": "Seagate FireCuda",
-"code": "ST1000DX002",
-"img": "https://resim.epey.com/72853/k_seagate-firecuda-3-5-inc-1tb-1.jpg",
-"price": 4000.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "156 MB/s",
-"2354": "210 MB/s"
-}
-},
-{
 "id": "72577",
 "url": "https://www.epey.com/sabit-disk/wd-blue-azlx-500gb.html",
 "name": "WD Blue",
 "code": "WD5000AZLX",
 "img": "https://resim.epey.com/72577/k_wd-blue-wd5000azlx-1.jpg",
-"price": 1300.0,
+"price": 1274.0,
 "sites": 4,
 "score": null,
 "cols": {
@@ -6299,18 +6473,18 @@
 }
 },
 {
-"id": "72483",
-"url": "https://www.epey.com/sabit-disk/wd-av-gp-1tb.html",
-"name": "WD AV-GP",
-"code": "WD10EURX",
-"img": "https://resim.epey.com/72483/k_western-digital-greenpower-wd10eurx-1tb-1.jpg",
-"price": 4434.4,
-"sites": 5,
+"id": "72506",
+"url": "https://www.epey.com/sabit-disk/wd-blue-mobile-spcx-1tb.html",
+"name": "WD Blue Mobile",
+"code": "WD10JPCX",
+"img": "https://resim.epey.com/72506/k_western-digital-wd10jpcx-1.jpg",
+"price": 5999.0,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "1 TB",
 "2353": "-",
-"2354": "110 MB/s"
+"2354": "140 MB/s"
 }
 },
 {
@@ -6327,6 +6501,21 @@
 "2353": "-",
 "2354": "147 MB/s",
 "4931": "-"
+}
+},
+{
+"id": "72483",
+"url": "https://www.epey.com/sabit-disk/wd-av-gp-1tb.html",
+"name": "WD AV-GP",
+"code": "WD10EURX",
+"img": "https://resim.epey.com/72483/k_western-digital-greenpower-wd10eurx-1tb-1.jpg",
+"price": 4434.4,
+"sites": 4,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "-",
+"2354": "110 MB/s"
 }
 },
 {
@@ -6361,28 +6550,13 @@
 }
 },
 {
-"id": "72224",
-"url": "https://www.epey.com/sabit-disk/wd-red-1tb.html",
-"name": "WD Red",
-"code": "WD10EFRX",
-"img": "https://resim.epey.com/72224/k_wd-red-nas-1.jpg",
-"price": 3500.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "-",
-"2354": "150 MB/s"
-}
-},
-{
 "id": "72180",
 "url": "https://www.epey.com/sabit-disk/wd-purple-4tb.html",
 "name": "WD Purple",
 "code": "WD40PURX",
 "img": "https://resim.epey.com/72180/k_wd-purple-4tb-1.jpg",
-"price": 10400.0,
-"sites": 4,
+"price": 10299.0,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "4 TB",
@@ -6398,7 +6572,7 @@
 "code": "WD10PURX",
 "img": "https://resim.epey.com/72177/k_wd-purple-1tb-1.jpg",
 "price": 3955.0,
-"sites": 6,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -6407,19 +6581,18 @@
 }
 },
 {
-"id": "71706",
-"url": "https://www.epey.com/sabit-disk/samsung-850-pro-1tb.html",
-"name": "Samsung 850 PRO",
-"code": "MZ-7KE1T0BW",
-"img": "https://resim.epey.com/71706/k_samsung-850-pro-1tb-1.jpg",
-"price": 15979.06,
-"sites": 1,
+"id": "72126",
+"url": "https://www.epey.com/sabit-disk/wd-blue-desktop-500gb.html",
+"name": "WD Blue Desktop",
+"code": "WD5000AZRZ",
+"img": "https://resim.epey.com/72126/k_wd-blue-desktop-1tb-1.jpg",
+"price": 1150.0,
+"sites": 2,
 "score": null,
 "cols": {
-"2352": "1 TB",
-"2353": "520 MB/s",
-"2354": "550 MB/s",
-"4931": "90 K IOPS"
+"2352": "500 GB",
+"2353": "-",
+"2354": "150 MB/s"
 }
 },
 {
@@ -6443,7 +6616,7 @@
 "name": "WD Blue SN580",
 "code": "WDS200T3B0E",
 "img": "https://resim.epey.com/896761/k_wd-blue-sn580-wds200t3b0e-1.jpg",
-"price": 16999.0,
+"price": 15979.0,
 "sites": 5,
 "score": null,
 "cols": {
@@ -6470,28 +6643,12 @@
 }
 },
 {
-"id": "896140",
-"url": "https://www.epey.com/sabit-disk/apacer-as2280q4u-ap1tbas2280q4u-1.html",
-"name": "Apacer AS2280Q4U",
-"code": "AP1TBAS2280Q4U-1",
-"img": "https://resim.epey.com/896140/k_apacer-as2280q4u-ap1tbas2280q4u-1-1.jpg",
-"price": 16198.85,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "6000 MB/s",
-"2354": "7300 MB/s",
-"4931": "1.000 K IOPS"
-}
-},
-{
 "id": "740854",
 "url": "https://www.epey.com/sabit-disk/msi-spatium-m470.html",
 "name": "MSI Spatium M470",
 "code": "",
 "img": "https://resim.epey.com/740854/k_msi-spatium-m470-1.jpg",
-"price": 24716.16,
+"price": 23671.77,
 "sites": 1,
 "score": null,
 "cols": {
@@ -6566,19 +6723,19 @@
 }
 },
 {
-"id": "1020321",
-"url": "https://www.epey.com/sabit-disk/lexar-professional-nm1090-pro-2-tb.html",
-"name": "Lexar Professional NM1090 Pro",
-"code": "",
-"img": "https://resim.epey.com/1020321/k_lexar-professional-nm1090-pro-1.jpg",
-"price": 25999.0,
-"sites": 4,
+"id": "1000512",
+"url": "https://www.epey.com/sabit-disk/samsung-9100-pro-sogutuculu-2-tb.html",
+"name": "Samsung 9100 Pro Soğutuculu",
+"code": "MZ-VAP2T0CW",
+"img": "https://resim.epey.com/1000512/k_samsung-9100-pro-sogutuculu-1.jpg",
+"price": 27807.0,
+"sites": 9,
 "score": null,
 "cols": {
 "2352": "2 TB",
-"2353": "13000 MB/s",
-"2354": "14000 MB/s",
-"4931": "1.800 K IOPS"
+"2353": "13400 MB/s",
+"2354": "14700 MB/s",
+"4931": "2.600 K IOPS"
 }
 },
 {
@@ -6662,22 +6819,6 @@
 }
 },
 {
-"id": "809541",
-"url": "https://www.epey.com/sabit-disk/wd-green-sn350-nvme-wds100t3g0c.html",
-"name": "WD Green SN350 NVMe",
-"code": "WDS100T3G0C",
-"img": "https://resim.epey.com/809541/k_wd-green-sn350-nvme-2.jpg",
-"price": 9499.0,
-"sites": 4,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "2500 MB/s",
-"2354": "3200 MB/s",
-"4931": "400 K IOPS"
-}
-},
-{
 "id": "787098",
 "url": "https://www.epey.com/sabit-disk/wd-green-wds480g3g0a.html",
 "name": "WD Green",
@@ -6715,7 +6856,7 @@
 "name": "Kingston Fury Renegade",
 "code": "SFYRD/2000G",
 "img": "https://resim.epey.com/735733/k_kingston-fury-renegade-sfyrd-2000g-sfyrs-500g-1.jpg",
-"price": 24195.33,
+"price": 23962.06,
 "sites": 1,
 "score": null,
 "cols": {
@@ -6779,7 +6920,7 @@
 "name": "Acer FA100",
 "code": "FA100-256GB",
 "img": "https://resim.epey.com/678509/k_acer-fa100-1.jpg",
-"price": 3999.0,
+"price": 4854.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -6790,29 +6931,13 @@
 }
 },
 {
-"id": "175485",
-"url": "https://www.epey.com/sabit-disk/apacer-panther-as340-ap240gas340g-1.html",
-"name": "Apacer Panther AS340",
-"code": "AP240GAS340G-1",
-"img": "https://resim.epey.com/175485/k_apacer-panther-120gb-ap120gas340g-1-1.png",
-"price": 2670.0,
-"sites": 5,
-"score": null,
-"cols": {
-"2352": "240 GB",
-"2353": "520 MB/s",
-"2354": "550 MB/s",
-"4931": "70 K IOPS"
-}
-},
-{
 "id": "173004",
 "url": "https://www.epey.com/sabit-disk/toshiba-l200-slim.html",
 "name": "Toshiba L200 Slim",
 "code": "HDWL110UZSVA",
 "img": "https://resim.epey.com/173004/k_toshiba-l200-slim-1.jpg",
 "price": 4990.0,
-"sites": 10,
+"sites": 9,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -6901,54 +7026,6 @@
 }
 },
 {
-"id": "924635",
-"url": "https://www.epey.com/sabit-disk/hp-fx700.html",
-"name": "HP FX700",
-"code": "8U2N5AA",
-"img": "https://resim.epey.com/924635/k_hp-fx700-1.jpg",
-"price": 17823.87,
-"sites": 7,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "6200 MB/s",
-"2354": "7200 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "924435",
-"url": "https://www.epey.com/sabit-disk/twinmos-xtreme-gen4-x4-nvme-pro.html",
-"name": "TwinMOS Xtreme Gen4 X4 NVMe Pro",
-"code": "NV1TBG42280",
-"img": "https://resim.epey.com/924435/k_twinmos-xtreme-gen4-x4-nvme-pro-1.jpg",
-"price": 10692.0,
-"sites": 10,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "6800 MB/s",
-"2354": "7500 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "765331",
-"url": "https://www.epey.com/sabit-disk/msi-spatium-m450-500gb.html",
-"name": "MSI Spatium M450",
-"code": "",
-"img": "https://resim.epey.com/765331/k_msi-spatium-m450-500gb-1.jpg",
-"price": 18140.15,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "2300 MB/s",
-"2354": "3600 MB/s",
-"4931": "550 K IOPS"
-}
-},
-{
 "id": "698692",
 "url": "https://www.epey.com/sabit-disk/pny-xlr8-cs3040-m280cs3040-2tb-rb.html",
 "name": "PNY XLR8 CS3040",
@@ -6971,7 +7048,7 @@
 "code": "MLD22M300P13-1000",
 "img": "https://resim.epey.com/694275/k_mld-m300-mld22m300p13-1000-1.jpg",
 "price": 8797.04,
-"sites": 7,
+"sites": 8,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -7026,22 +7103,6 @@
 "2353": "520 MB/s",
 "2354": "560 MB/s",
 "4931": "-"
-}
-},
-{
-"id": "576122",
-"url": "https://www.epey.com/sabit-disk/samsung-870-qvo-mz-77q2t0.html",
-"name": "Samsung 870 QVO",
-"code": "MZ-77Q2T0",
-"img": "https://resim.epey.com/576122/k_samsung-870-qvo-mz-77q2t0-1.jpg",
-"price": 51450.0,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "530 MB/s",
-"2354": "560 MB/s",
-"4931": "88 K IOPS"
 }
 },
 {
@@ -7114,28 +7175,12 @@
 "code": "",
 "img": "https://resim.epey.com/1073308/k_colorful-cn700-plus-1.jpg",
 "price": 8999.0,
-"sites": 5,
+"sites": 7,
 "score": null,
 "cols": {
 "2352": "1 TB",
 "2353": "4000 MB/s",
 "2354": "4000 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "1072332",
-"url": "https://www.epey.com/sabit-disk/colorful-cn600-pro-1-tb.html",
-"name": "Colorful CN600 Pro",
-"code": "",
-"img": "https://resim.epey.com/1072332/k_colorful-cn600-pro-1.jpg",
-"price": 9149.0,
-"sites": 3,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "3100 MB/s",
-"2354": "3400 MB/s",
 "4931": "-"
 }
 },
@@ -7193,8 +7238,8 @@
 "name": "Toshiba MG11",
 "code": "MG11ACA20TE",
 "img": "https://resim.epey.com/1069492/k_toshiba-mg11aca24te-1.jpg",
-"price": 51629.0,
-"sites": 7,
+"price": 53480.4,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "20 TB",
@@ -7242,7 +7287,7 @@
 "code": "MG11ACA18TE",
 "img": "https://resim.epey.com/1069125/k_toshiba-mg11aca24te-1.jpg",
 "price": 47084.8,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "18 TB",
@@ -7273,8 +7318,8 @@
 "name": "WD Red Plus",
 "code": "WD120EFGX",
 "img": "https://resim.epey.com/1069115/k_wd-red-plus-8-1.jpg",
-"price": 34332.0,
-"sites": 4,
+"price": 36117.24,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "12 TB",
@@ -7289,8 +7334,8 @@
 "name": "Synology HAT3320-20T",
 "code": "",
 "img": "https://resim.epey.com/1067903/k_synology-hat3320-20t-1.jpg",
-"price": 61521.1,
-"sites": 3,
+"price": 62407.0,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "20 TB",
@@ -7305,8 +7350,8 @@
 "name": "addlink S93",
 "code": "AD2TBS93M2P",
 "img": "https://resim.epey.com/1067895/k_addlink-s93-3.jpg",
-"price": 24606.3,
-"sites": 3,
+"price": 27746.56,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -7322,7 +7367,7 @@
 "code": "AD1TBS93M2P",
 "img": "https://resim.epey.com/1067894/k_addlink-s93-3.jpg",
 "price": 8515.0,
-"sites": 4,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -7337,8 +7382,8 @@
 "name": "Toshiba S300 AI",
 "code": "MG11ACA22TE-V",
 "img": "https://resim.epey.com/1066411/k_toshiba-s300-ai-1.jpg",
-"price": 53088.4,
-"sites": 3,
+"price": 53875.0,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "22 TB",
@@ -7353,8 +7398,8 @@
 "name": "Toshiba S300 AI",
 "code": "MG11ACA20TE-V",
 "img": "https://resim.epey.com/1066410/k_toshiba-s300-ai-1.jpg",
-"price": 50603.5,
-"sites": 8,
+"price": 51309.0,
+"sites": 6,
 "score": null,
 "cols": {
 "2352": "20 TB",
@@ -7370,7 +7415,7 @@
 "code": "MG11ACA16TE-V",
 "img": "https://resim.epey.com/1066409/k_toshiba-s300-ai-1.jpg",
 "price": 43779.0,
-"sites": 6,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "16 TB",
@@ -7417,7 +7462,7 @@
 "name": "Samsung 990",
 "code": "MZ-V9V1T0BW",
 "img": "https://resim.epey.com/1065198/k_samsung-990-1.jpg",
-"price": 12125.06,
+"price": 11709.0,
 "sites": 9,
 "score": null,
 "cols": {
@@ -7434,7 +7479,7 @@
 "code": "NT01NV3000Q-1T0-E4X",
 "img": "https://resim.epey.com/1063065/k_netac-nv3000-q-1.jpg",
 "price": 7585.11,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -7449,7 +7494,7 @@
 "name": "Netac NV3000-Q",
 "code": "NT01NV3000Q-512-E4X",
 "img": "https://resim.epey.com/1063058/k_netac-nv3000-q-1.jpg",
-"price": 4649.07,
+"price": 4875.08,
 "sites": 5,
 "score": null,
 "cols": {
@@ -7481,7 +7526,7 @@
 "name": "Synology SNV5420-1600G",
 "code": "",
 "img": "https://resim.epey.com/1062912/k_synology-snv5420-400g-1.jpg",
-"price": 123997.1,
+"price": 125519.0,
 "sites": 6,
 "score": null,
 "cols": {
@@ -7497,7 +7542,7 @@
 "name": "Synology SNV5420-800G",
 "code": "",
 "img": "https://resim.epey.com/1062911/k_synology-snv5420-400g-1.jpg",
-"price": 58800.8,
+"price": 59599.0,
 "sites": 5,
 "score": null,
 "cols": {
@@ -7513,7 +7558,7 @@
 "name": "Synology SNV5420-400G",
 "code": "",
 "img": "https://resim.epey.com/1062900/k_synology-snv5420-400g-1.jpg",
-"price": 33964.2,
+"price": 34489.0,
 "sites": 6,
 "score": null,
 "cols": {
@@ -7636,22 +7681,6 @@
 }
 },
 {
-"id": "1061976",
-"url": "https://www.epey.com/sabit-disk/mld-m600-2-tb.html",
-"name": "MLD M600",
-"code": "MLD22M600E27-2000",
-"img": "https://resim.epey.com/1061976/k_mld-m600-1.jpg",
-"price": 14209.02,
-"sites": 6,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "6400 MB/s",
-"2354": "7000 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "1061974",
 "url": "https://www.epey.com/sabit-disk/mld-m520-1-tb.html",
 "name": "MLD M520",
@@ -7662,6 +7691,22 @@
 "score": null,
 "cols": {
 "2352": "1 TB",
+"2353": "2500 MB/s",
+"2354": "5000 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "1061973",
+"url": "https://www.epey.com/sabit-disk/mld-m520-500-gb.html",
+"name": "MLD M520",
+"code": "MLD22M520E16-500",
+"img": "https://resim.epey.com/1061973/k_mld-m520-2.jpg",
+"price": 6248.05,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "500 GB",
 "2353": "2500 MB/s",
 "2354": "5000 MB/s",
 "4931": "-"
@@ -7801,7 +7846,7 @@
 "name": "Samsung 870 Evo",
 "code": "MZ-77E8T0BW",
 "img": "https://resim.epey.com/1056321/k_samsung-870-evo-mz-77e250bw-mz-77e250bw-1.jpg",
-"price": 165999.0,
+"price": 157316.8,
 "sites": 7,
 "score": null,
 "cols": {
@@ -7897,7 +7942,7 @@
 "name": "Synology HAT5310-20T",
 "code": "",
 "img": "https://resim.epey.com/1056020/k_synology-hat5310-20t-1.jpg",
-"price": 78670.1,
+"price": 79689.0,
 "sites": 7,
 "score": null,
 "cols": {
@@ -7914,12 +7959,28 @@
 "code": "",
 "img": "https://resim.epey.com/1056019/k_synology-hat3300-6t-1.jpg",
 "price": 20490.0,
-"sites": 8,
+"sites": 7,
 "score": null,
 "cols": {
 "2352": "6 TB",
 "2353": "-",
 "2354": "202 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "1056018",
+"url": "https://www.epey.com/sabit-disk/lexar-nq100-512-gb.html",
+"name": "Lexar NQ100",
+"code": "LNQ100X512G",
+"img": "https://resim.epey.com/1056018/k_lexar-nq100-lnq100x512g-1.jpg",
+"price": 4508.0,
+"sites": 4,
+"score": null,
+"cols": {
+"2352": "512 GB",
+"2353": "-",
+"2354": "550 MB/s",
 "4931": "-"
 }
 },
@@ -7936,22 +7997,6 @@
 "2352": "2 TB",
 "2353": "8500 MB/s",
 "2354": "10000 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "1055935",
-"url": "https://www.epey.com/sabit-disk/toshiba-mg10-d-8-tb.html",
-"name": "Toshiba MG10-D",
-"code": "MG10ADA800E",
-"img": "https://resim.epey.com/1055935/k_toshiba-mg10-d-1.jpg",
-"price": 22471.2,
-"sites": 9,
-"score": null,
-"cols": {
-"2352": "8 TB",
-"2353": "-",
-"2354": "268 MB/s",
 "4931": "-"
 }
 },
@@ -8009,8 +8054,8 @@
 "name": "WD Purple Pro",
 "code": "WD8002PURP",
 "img": "https://resim.epey.com/1049858/k_wd-purple-pro-wd8002purp-1.png",
-"price": 27092.9,
-"sites": 4,
+"price": 27698.61,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "8 TB",
@@ -8057,7 +8102,7 @@
 "name": "Seagate Exos M",
 "code": "ST28000NM003K",
 "img": "https://resim.epey.com/1047962/k_seagate-exos-m-1.jpg",
-"price": 79999.0,
+"price": 81403.15,
 "sites": 7,
 "score": null,
 "cols": {
@@ -8113,22 +8158,6 @@
 "2353": "2000 MB/s",
 "2354": "3400 MB/s",
 "4931": "550 K IOPS"
-}
-},
-{
-"id": "1044721",
-"url": "https://www.epey.com/sabit-disk/kioxia-exceria-g3-1-tb.html",
-"name": "Kioxia Exceria G3",
-"code": "LVC10Z001TG8",
-"img": "https://resim.epey.com/1044721/k_kioxia-exceria-g3-1.jpg",
-"price": 13699.0,
-"sites": 4,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "8900 MB/s",
-"2354": "10000 MB/s",
-"4931": "1.450 K IOPS"
 }
 },
 {
@@ -8201,8 +8230,8 @@
 "name": "HP EH0600JEDHE",
 "code": "",
 "img": "https://resim.epey.com/627788/k_hp-870794-001-1.jpg",
-"price": 11034.5,
-"sites": 3,
+"price": 11865.0,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "600 GB",
@@ -8212,45 +8241,13 @@
 }
 },
 {
-"id": "1034443",
-"url": "https://www.epey.com/sabit-disk/wd-blue-sn5100-4-tb.html",
-"name": "WD Blue SN5100",
-"code": "WDS400T5B0E",
-"img": "https://resim.epey.com/1034443/k_wd-blue-sn5100-1.jpg",
-"price": 39559.1,
-"sites": 3,
-"score": null,
-"cols": {
-"2352": "4 TB",
-"2353": "6700 MB/s",
-"2354": "6900 MB/s",
-"4931": "1.100 K IOPS"
-}
-},
-{
-"id": "1033157",
-"url": "https://www.epey.com/sabit-disk/hiksemi-future-pro-1-tb.html",
-"name": "Hiksemi Future Pro",
-"code": "HS-SSD-FUTURE-PRO-1024G",
-"img": "https://resim.epey.com/1033157/k_hiksemi-future-pro-1.jpg",
-"price": 16954.6,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "5335 MB/s",
-"2354": "7450 MB/s",
-"4931": "1.032 K IOPS"
-}
-},
-{
 "id": "1030652",
 "url": "https://www.epey.com/sabit-disk/toshiba-nas-n300-4-tb.html",
 "name": "Toshiba NAS N300",
 "code": "MN10ADA400ES",
 "img": "https://resim.epey.com/1030652/k_toshiba-nas-n300-mn10ada400es-1.jpg",
-"price": 29858.4,
-"sites": 2,
+"price": 30503.0,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "4 TB",
@@ -8356,6 +8353,22 @@
 }
 },
 {
+"id": "1020318",
+"url": "https://www.epey.com/sabit-disk/lexar-nm990.html",
+"name": "Lexar NM990",
+"code": "LNM990X004T",
+"img": "https://resim.epey.com/1020318/k_lexar-nm990-1.jpg",
+"price": 44999.0,
+"sites": 3,
+"score": null,
+"cols": {
+"2352": "4 TB",
+"2353": "11000 MB/s",
+"2354": "14000 MB/s",
+"4931": "1.500 K IOPS"
+}
+},
+{
 "id": "1020310",
 "url": "https://www.epey.com/sabit-disk/lexar-nm990-2-tb.html",
 "name": "Lexar NM990",
@@ -8394,7 +8407,7 @@
 "code": "WD203KRYZ",
 "img": "https://resim.epey.com/1019642/k_wd-gold-enterprise-wd203kryz-1.jpg",
 "price": 72121.61,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "20 TB",
@@ -8457,7 +8470,7 @@
 "name": "Adata Legend 860",
 "code": "SLEG-860-2000GCS",
 "img": "https://resim.epey.com/1014123/k_adata-legend-860-1.jpg",
-"price": 20374.4,
+"price": 20385.7,
 "sites": 6,
 "score": null,
 "cols": {
@@ -8512,22 +8525,6 @@
 "2352": "14 TB",
 "2353": "-",
 "2354": "281 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "1005970",
-"url": "https://www.epey.com/sabit-disk/team-group-t-force-g50-2-tb.html",
-"name": "Team Group T-Force G50",
-"code": "TM8FFE002T0C129",
-"img": "https://resim.epey.com/1005970/k_team-group-t-force-g50-1.jpg",
-"price": 16458.2,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "4500 MB/s",
-"2354": "5000 MB/s",
 "4931": "-"
 }
 },
@@ -8612,22 +8609,6 @@
 }
 },
 {
-"id": "201427",
-"url": "https://www.epey.com/sabit-disk/wd-av-gp-500-gb.html",
-"name": "WD AV-GP",
-"code": "WD5000AUDX",
-"img": "https://resim.epey.com/201427/k_wd-av-gp-wd5000audx-1.jpg",
-"price": 1302.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "-",
-"2354": "130 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "727439",
 "url": "https://www.epey.com/sabit-disk/hi-level-ultra-128-gb.html",
 "name": "Hi-Level Ultra",
@@ -8641,6 +8622,22 @@
 "2353": "540 MB/s",
 "2354": "560 MB/s",
 "4931": "-"
+}
+},
+{
+"id": "1002091",
+"url": "https://www.epey.com/sabit-disk/wd-black-sn850p-8-tb.html",
+"name": "WD Black SN850P",
+"code": "WDBBYV0080BNC",
+"img": "https://resim.epey.com/1002091/k_wd-sn850p-1.jpg",
+"price": 172514.59,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "8 TB",
+"2353": "6600 MB/s",
+"2354": "7200 MB/s",
+"4931": "1.200 K IOPS"
 }
 },
 {
@@ -8665,7 +8662,7 @@
 "name": "WD Black SN850P",
 "code": "WDBBYV0010BNC",
 "img": "https://resim.epey.com/1002085/k_wd-sn850p-1.jpg",
-"price": 27635.0,
+"price": 44116.9,
 "sites": 3,
 "score": null,
 "cols": {
@@ -8762,7 +8759,7 @@
 "code": "LNM1090001T",
 "img": "https://resim.epey.com/999391/k_lexar-professional-nm1090-1.jpg",
 "price": 15590.82,
-"sites": 6,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -8778,7 +8775,7 @@
 "code": "HDWG51GUZSVA",
 "img": "https://resim.epey.com/999353/k_toshiba-nas-n300-16-tb-1.jpg",
 "price": 49072.22,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "16 TB",
@@ -8810,7 +8807,7 @@
 "code": "0F62795",
 "img": "https://resim.epey.com/999236/k_ultrastar-dc-hc580-1.jpg",
 "price": 79291.2,
-"sites": 6,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "24 TB",
@@ -8825,7 +8822,7 @@
 "name": "Mushkin Element",
 "code": "MKNSSDEL512GB",
 "img": "https://resim.epey.com/999210/k_mushkin-element-256gb-ssd-mknssdel256gb-1.jpg",
-"price": 4702.6,
+"price": 4740.0,
 "sites": 4,
 "score": null,
 "cols": {
@@ -8849,22 +8846,6 @@
 "2353": "-",
 "2354": "268 MB/s",
 "4931": "-"
-}
-},
-{
-"id": "999168",
-"url": "https://www.epey.com/sabit-disk/hiksemi-future-x-lite-2-tb.html",
-"name": "Hiksemi Future X Lite",
-"code": "",
-"img": "https://resim.epey.com/999168/k_hiksemi-future-x-lite-1.jpg",
-"price": 28482.2,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "6350 MB/s",
-"2354": "7100 MB/s",
-"4931": "480 K IOPS"
 }
 },
 {
@@ -8953,7 +8934,7 @@
 "name": "Intenso MI500",
 "code": "3836460",
 "img": "https://resim.epey.com/999126/k_intenso-mi500-1.jpg",
-"price": 8965.26,
+"price": 8879.81,
 "sites": 7,
 "score": null,
 "cols": {
@@ -8969,8 +8950,8 @@
 "name": "Intenso MI500",
 "code": "3836450",
 "img": "https://resim.epey.com/999125/k_intenso-mi500-1.jpg",
-"price": 6001.78,
-"sites": 6,
+"price": 5952.51,
+"sites": 7,
 "score": null,
 "cols": {
 "2352": "500 GB",
@@ -9012,12 +8993,28 @@
 }
 },
 {
+"id": "997741",
+"url": "https://www.epey.com/sabit-disk/netac-nv3000-1-tb.html",
+"name": "Netac NV3000",
+"code": "NT01NV3000-1T0-E4X",
+"img": "https://resim.epey.com/997741/k_netac-nv3000-1.jpg",
+"price": 8741.07,
+"sites": 5,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "2100 MB/s",
+"2354": "3100 MB/s",
+"4931": "160 K IOPS"
+}
+},
+{
 "id": "997684",
 "url": "https://www.epey.com/sabit-disk/toshiba-mg09-12-tb.html",
 "name": "Toshiba MG09",
 "code": "MG09ACA12TE",
 "img": "https://resim.epey.com/997684/k_toshiba-mg09-mg09aca12te-1.jpg",
-"price": 37962.0,
+"price": 37975.8,
 "sites": 6,
 "score": null,
 "cols": {
@@ -9129,8 +9126,8 @@
 "name": "Seagate Exos X24",
 "code": "ST24000NM002H",
 "img": "https://resim.epey.com/989923/k_seagate-exos-x24-st24000nm002h-1.jpg",
-"price": 58405.56,
-"sites": 8,
+"price": 58261.0,
+"sites": 7,
 "score": null,
 "cols": {
 "2352": "24 TB",
@@ -9257,7 +9254,7 @@
 "name": "Adata Legend 900",
 "code": "SLEG-900-1TCS",
 "img": "https://resim.epey.com/984381/k_adata-legend-900-1.jpg",
-"price": 13815.79,
+"price": 13681.66,
 "sites": 2,
 "score": null,
 "cols": {
@@ -9284,29 +9281,13 @@
 }
 },
 {
-"id": "984126",
-"url": "https://www.epey.com/sabit-disk/samsung-pm893-7-68-tb.html",
-"name": "Samsung PM893",
-"code": "MZ-7L37T600",
-"img": "https://resim.epey.com/984126/k_samsung-pm893-mz7l31t9hblt-960gb-mz-7l3960hcjr-1.jpg",
-"price": 222909.1,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "7.68 TB",
-"2353": "520 MB/s",
-"2354": "550 MB/s",
-"4931": "30 K IOPS"
-}
-},
-{
 "id": "984125",
 "url": "https://www.epey.com/sabit-disk/samsung-pm893-1-92-tb.html",
 "name": "Samsung PM893",
 "code": "MZ-7L31T900",
 "img": "https://resim.epey.com/984125/k_samsung-pm893-mz7l31t9hblt-960gb-mz-7l3960hcjr-1.jpg",
-"price": 99059.9,
-"sites": 4,
+"price": 100489.0,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "1.92 TB",
@@ -9321,8 +9302,8 @@
 "name": "Intenso 3812470",
 "code": "",
 "img": "https://resim.epey.com/984095/k_intenso-3812470-1.jpg",
-"price": 18000.0,
-"sites": 6,
+"price": 14682.3,
+"sites": 7,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -9625,8 +9606,8 @@
 "name": "Seagate Exos X22",
 "code": "ST22000NM001E",
 "img": "https://resim.epey.com/955082/k_seagate-exos-x22-22-tb-st22000nm001e-1.jpg",
-"price": 55261.6,
-"sites": 5,
+"price": 56309.0,
+"sites": 4,
 "score": null,
 "cols": {
 "2352": "22 TB",
@@ -9641,7 +9622,7 @@
 "name": "Kingston Renegade",
 "code": "SRNGD/4000G",
 "img": "https://resim.epey.com/956283/k_kingston-renegade-srngd-4000g-1.jpg",
-"price": 52449.0,
+"price": 51942.0,
 "sites": 8,
 "score": null,
 "cols": {
@@ -9658,26 +9639,10 @@
 "code": "WD60EFPX",
 "img": "https://resim.epey.com/954765/k_wd-red-plus-wd10efrx-1.jpg",
 "price": 20679.06,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "6 TB",
-"2353": "-",
-"2354": "180 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "950127",
-"url": "https://www.epey.com/sabit-disk/seagate-ironwolf-st1000vn008.html",
-"name": "Seagate IronWolf",
-"code": "ST1000VN008",
-"img": "https://resim.epey.com/950127/k_seagate-ironwolf-st1000vn008-1.jpg",
-"price": 7999.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "1 TB",
 "2353": "-",
 "2354": "180 MB/s",
 "4931": "-"
@@ -9737,7 +9702,7 @@
 "name": "Patriot P320",
 "code": "P320P1TBM28",
 "img": "https://resim.epey.com/943952/k_patriot-p320-p320p1tbm28-1.jpg",
-"price": 8696.37,
+"price": 8613.51,
 "sites": 8,
 "score": null,
 "cols": {
@@ -9802,7 +9767,7 @@
 "code": "WD121PURP",
 "img": "https://resim.epey.com/875479/k_wd-purple-pro-wd101purp-1.jpg",
 "price": 35497.0,
-"sites": 7,
+"sites": 6,
 "score": null,
 "cols": {
 "2352": "12 TB",
@@ -9818,7 +9783,7 @@
 "code": "WD85PURZ",
 "img": "https://resim.epey.com/926916/k_wd-purple-wd85purz-1.jpg",
 "price": 21610.81,
-"sites": 10,
+"sites": 9,
 "score": null,
 "cols": {
 "2352": "8 TB",
@@ -9849,8 +9814,8 @@
 "name": "Mushkin Vortex",
 "code": "MKNSSDVT2TB-D8",
 "img": "https://resim.epey.com/925410/k_mushkin-vortex-mknssdvt2tb-d8-1.jpg",
-"price": 51848.5,
-"sites": 2,
+"price": 81753.38,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -9865,8 +9830,8 @@
 "name": "TwinMOS AlphaPro",
 "code": "NVME2TB2280AP",
 "img": "https://resim.epey.com/924503/k_twinmos-512-gb-nvme512gb2280ap-1.jpg",
-"price": 22900.0,
-"sites": 3,
+"price": 33979.8,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -9897,7 +9862,7 @@
 "name": "TwinMOS Hyper H2 Ultra",
 "code": "TM512GH2UGL",
 "img": "https://resim.epey.com/924451/k_twinmos-hyper-h2-ultra-tm512gh2ugl-1.jpg",
-"price": 4410.48,
+"price": 4396.68,
 "sites": 9,
 "score": null,
 "cols": {
@@ -9914,7 +9879,7 @@
 "code": "TM2000GH2UGL",
 "img": "https://resim.epey.com/924447/k_twinmos-hyper-h2-ultra-tm2000gh2ugl-1.jpg",
 "price": 15264.35,
-"sites": 8,
+"sites": 9,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -9930,7 +9895,7 @@
 "code": "NV2TBG42280",
 "img": "https://resim.epey.com/924444/k_twinmos-xtreme-gen4-x4-nvme-pro-nv2tbg42280-1.jpg",
 "price": 22397.4,
-"sites": 9,
+"sites": 8,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -9956,6 +9921,22 @@
 }
 },
 {
+"id": "923175",
+"url": "https://www.epey.com/sabit-disk/lexar-nm790.html",
+"name": "Lexar NM790",
+"code": "LNM790X512G",
+"img": "https://resim.epey.com/923175/k_lexar-nm790-1.jpg",
+"price": 7439.1,
+"sites": 6,
+"score": null,
+"cols": {
+"2352": "512 GB",
+"2353": "4400 MB/s",
+"2354": "7200 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "921065",
 "url": "https://www.epey.com/sabit-disk/samsung-990-evo-mz-v9e2t0bw.html",
 "name": "Samsung 990 Evo",
@@ -9977,8 +9958,8 @@
 "name": "Intenso 2.5\" SSD SATA III Performance",
 "code": "3814470",
 "img": "https://resim.epey.com/921026/k_intenso-2-5-ssd-sata-iii-performance-3814470-1.jpg",
-"price": 40979.7,
-"sites": 2,
+"price": 51489.0,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -10041,8 +10022,8 @@
 "name": "Seagate Savvio 10K.6",
 "code": "ST600MM0006",
 "img": "https://resim.epey.com/907968/k_seagate-savvio-st600mm0006-600-gb-1.jpg",
-"price": 2092.5,
-"sites": 3,
+"price": 12990.0,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "600 GB",
@@ -10153,7 +10134,7 @@
 "name": "Intenso M.2 SSD PCIe Premium",
 "code": "3835440",
 "img": "https://resim.epey.com/916010/k_intenso-m-2-ssd-pcie-premium-3835440-1.jpg",
-"price": 3919.32,
+"price": 3923.83,
 "sites": 2,
 "score": null,
 "cols": {
@@ -10209,22 +10190,6 @@
 "2353": "11800 MB/s",
 "2354": "12000 MB/s",
 "4931": "1.400 K IOPS"
-}
-},
-{
-"id": "162622",
-"url": "https://www.epey.com/sabit-disk/wd-blue-wd5000aaks.html",
-"name": "WD Blue",
-"code": "WD5000AAKS",
-"img": "https://resim.epey.com/162622/k_wd-wd5000aakx-1.jpg",
-"price": 1499.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "-",
-"2354": "126 MB/s",
-"4931": "-"
 }
 },
 {
@@ -10388,6 +10353,22 @@
 }
 },
 {
+"id": "907194",
+"url": "https://www.epey.com/sabit-disk/hiksemi-wave-pro-hs-ssd-wave-prop-512gb.html",
+"name": "Hiksemi Wave Pro",
+"code": "HS-SSD-WAVE-PRO(P)-512GB",
+"img": "https://resim.epey.com/907194/k_hiksemi-wave-pro-hs-ssd-wave-prop-512gb-1.jpg",
+"price": 4499.0,
+"sites": 5,
+"score": null,
+"cols": {
+"2352": "512 GB",
+"2353": "1800 MB/s",
+"2354": "3500 MB/s",
+"4931": "155 K IOPS"
+}
+},
+{
 "id": "907147",
 "url": "https://www.epey.com/sabit-disk/hiksemi-future-lite-4-tb.html",
 "name": "Hiksemi Future Lite",
@@ -10433,22 +10414,6 @@
 "2353": "1700 MB/s",
 "2354": "2100 MB/s",
 "4931": "200 K IOPS"
-}
-},
-{
-"id": "902552",
-"url": "https://www.epey.com/sabit-disk/seagate-skyhawk-st1000vx013.html",
-"name": "Seagate SkyHawk",
-"code": "ST1000VX013",
-"img": "https://resim.epey.com/902552/k_seagate-skyhawk-st1000vx013-2.jpg",
-"price": 4199.0,
-"sites": 10,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "-",
-"2354": "180 MB/s",
-"4931": "-"
 }
 },
 {
@@ -10516,6 +10481,22 @@
 }
 },
 {
+"id": "902382",
+"url": "https://www.epey.com/sabit-disk/lexar-nm710-lnm710x002t.html",
+"name": "Lexar NM710",
+"code": "LNM710X002T",
+"img": "https://resim.epey.com/902382/k_lexar-nm710-lnm710x002t-1.jpg",
+"price": 72903.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "2 TB",
+"2353": "4500 MB/s",
+"2354": "4850 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "902378",
 "url": "https://www.epey.com/sabit-disk/lexar-nm710.html",
 "name": "Lexar NM710",
@@ -10537,7 +10518,7 @@
 "name": "Synology HAT3300-4T",
 "code": "",
 "img": "https://resim.epey.com/902179/k_synology-hat3300-4t-1.jpg",
-"price": 20900.1,
+"price": 24721.0,
 "sites": 3,
 "score": null,
 "cols": {
@@ -10692,6 +10673,38 @@
 }
 },
 {
+"id": "886104",
+"url": "https://www.epey.com/sabit-disk/gigabyte-aorus-gen4-7300.html",
+"name": "Gigabyte Aorus Gen4 7300",
+"code": "AG4731TB",
+"img": "https://resim.epey.com/886104/k_gigabyte-aorus-gen4-7300-1.jpg",
+"price": 12675.0,
+"sites": 2,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "6000 MB/s",
+"2354": "7300 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "886097",
+"url": "https://www.epey.com/sabit-disk/mld-m500-mld22m500p21-500.html",
+"name": "MLD M500",
+"code": "MLD22M500P21-500",
+"img": "https://resim.epey.com/886097/k_mld-m500-mld22m500p21-500-1.jpg",
+"price": 23569.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "500 GB",
+"2353": "4700 MB/s",
+"2354": "7000 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "882529",
 "url": "https://www.epey.com/sabit-disk/toshiba-mg06aca10te.html",
 "name": "Toshiba MG06ACA10TE",
@@ -10729,7 +10742,7 @@
 "name": "Crucial T700",
 "code": "CT4000T700SSD5",
 "img": "https://resim.epey.com/882129/k_crucial-t700-ct4000t700ssd5-1.jpg",
-"price": 51639.0,
+"price": 51849.0,
 "sites": 3,
 "score": null,
 "cols": {
@@ -10794,7 +10807,7 @@
 "code": "ST16000NT001",
 "img": "https://resim.epey.com/877492/k_seagate-16tb-st16000ne000-1.jpg",
 "price": 51502.16,
-"sites": 6,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "16 TB",
@@ -10932,12 +10945,28 @@
 }
 },
 {
+"id": "872846",
+"url": "https://www.epey.com/sabit-disk/wd-purple-wd43purz.html",
+"name": "WD Purple",
+"code": "WD43PURZ",
+"img": "https://resim.epey.com/872846/k_wd-purple-wd43purz-1.jpg",
+"price": 10450.03,
+"sites": 8,
+"score": null,
+"cols": {
+"2352": "4 TB",
+"2353": "-",
+"2354": "180 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "872195",
 "url": "https://www.epey.com/sabit-disk/stormax-black-series-smx-ssd30blck-512g.html",
 "name": "Stormax Black Series",
 "code": "SMX-SSD30BLCK/512G",
 "img": "https://resim.epey.com/872195/k_stormax-black-series-smx-ssd30blck-512g-1.jpg",
-"price": 4875.0,
+"price": 4975.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -10969,7 +10998,7 @@
 "name": "Stormax Black Series",
 "code": "SMX-SSD30BLCK/128G",
 "img": "https://resim.epey.com/872159/k_stormax-black-series-1.jpg",
-"price": 1888.0,
+"price": 2100.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -11049,28 +11078,12 @@
 "name": "Goodram PX600",
 "code": "SSDPR-PX600-2K0-80",
 "img": "https://resim.epey.com/867357/k_goodram-px600-ssdpr-px600-2k0-80-1.jpg",
-"price": 22628.0,
+"price": 22410.0,
 "sites": 6,
 "score": null,
 "cols": {
 "2352": "2 TB",
 "2353": "4200 MB/s",
-"2354": "5000 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "867356",
-"url": "https://www.epey.com/sabit-disk/goodram-px600-ssdpr-px600-1k0-80.html",
-"name": "Goodram PX600",
-"code": "SSDPR-PX600-1K0-80",
-"img": "https://resim.epey.com/867356/k_goodram-px600-ssdpr-px600-1k0-80-1.jpg",
-"price": 8329.02,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "3200 MB/s",
 "2354": "5000 MB/s",
 "4931": "-"
 }
@@ -11402,7 +11415,7 @@
 "code": "ST3000VX015",
 "img": "https://resim.epey.com/848854/k_seagate-st3000vx009-1.jpg",
 "price": 7000.0,
-"sites": 2,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "3 TB",
@@ -11457,22 +11470,6 @@
 "2353": "450 MB/s",
 "2354": "520 MB/s",
 "4931": "75 K IOPS"
-}
-},
-{
-"id": "628007",
-"url": "https://www.epey.com/sabit-disk/seagate-constellation-es-st2000nm0001.html",
-"name": "Seagate Constellation ES",
-"code": "ST2000NM0001",
-"img": "https://resim.epey.com/628007/k_seagate-2-tb-st2000nm0001-1.jpg",
-"price": 19814.2,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "-",
-"2354": "150 MB/s",
-"4931": "-"
 }
 },
 {
@@ -11561,7 +11558,7 @@
 "name": "Seagate Exos X18",
 "code": "ST18000NM000J",
 "img": "https://resim.epey.com/827114/k_seagate-exos-x18-st18000nm000j-1.jpg",
-"price": 49151.83,
+"price": 50179.0,
 "sites": 9,
 "score": null,
 "cols": {
@@ -11578,7 +11575,7 @@
 "code": "NT01SA500-256-S3X",
 "img": "https://resim.epey.com/824187/k_netac-sa500-nt01sa500-256-s3x-1.jpg",
 "price": 2899.0,
-"sites": 1,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "256 GB",
@@ -11625,7 +11622,7 @@
 "name": "Apacer AS2280P4X",
 "code": "AP1TBAS2280P4X-1",
 "img": "https://resim.epey.com/822926/k_apacer-as2280p4x-1.jpg",
-"price": 21245.9,
+"price": 25835.5,
 "sites": 1,
 "score": null,
 "cols": {
@@ -11648,6 +11645,22 @@
 "2352": "2 TB",
 "2353": "1900 MB/s",
 "2354": "2100 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "818018",
+"url": "https://www.epey.com/sabit-disk/crucial-p3-plus-ct4000p3pssd8.html",
+"name": "Crucial P3 Plus",
+"code": "CT4000P3PSSD8",
+"img": "https://resim.epey.com/818018/k_crucial-p3-plus-ct4000p3pssd8-1.jpg",
+"price": 51914.9,
+"sites": 3,
+"score": null,
+"cols": {
+"2352": "4 TB",
+"2353": "4100 MB/s",
+"2354": "4800 MB/s",
 "4931": "-"
 }
 },
@@ -11689,7 +11702,7 @@
 "name": "HP S650",
 "code": "345M7AA",
 "img": "https://resim.epey.com/811257/k_hp-s650-345m7aa-1.jpg",
-"price": 2198.8,
+"price": 2189.0,
 "sites": 3,
 "score": null,
 "cols": {
@@ -11705,7 +11718,7 @@
 "name": "Goodram PX500",
 "code": "SSDPR-PX500-256-80",
 "img": "https://resim.epey.com/811250/k_goodram-px500-ssdpr-px500-256-80-1.jpg",
-"price": 3985.1,
+"price": 3965.0,
 "sites": 4,
 "score": null,
 "cols": {
@@ -11764,29 +11777,13 @@
 }
 },
 {
-"id": "806595",
-"url": "https://www.epey.com/sabit-disk/wd-blue-sa510-wds500g3b0a.html",
-"name": "WD Blue SA510",
-"code": "WDS500G3B0A",
-"img": "https://resim.epey.com/806595/k_wd-blue-sa510-wds500g3b0a-wds250g3b0a-1.jpg",
-"price": 6512.57,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "510 MB/s",
-"2354": "560 MB/s",
-"4931": "82 K IOPS"
-}
-},
-{
 "id": "805109",
 "url": "https://www.epey.com/sabit-disk/toshiba-mg08-mg08ada800e.html",
 "name": "Toshiba MG08",
 "code": "MG08ADA800E",
 "img": "https://resim.epey.com/805109/k_toshiba-mg08-mg08ada800e-1.jpg",
-"price": 25570.3,
-"sites": 5,
+"price": 26760.0,
+"sites": 4,
 "score": null,
 "cols": {
 "2352": "8 TB",
@@ -11865,13 +11862,29 @@
 "name": "TwinMOS Hyper H2 Ultra",
 "code": "TM128GH2UG",
 "img": "https://resim.epey.com/785256/k_twinmos-hyper-h2-ultra-tm128gh2ug-1.jpg",
-"price": 1978.52,
+"price": 1978.56,
 "sites": 1,
 "score": null,
 "cols": {
 "2352": "128 GB",
 "2353": "550 MB/s",
 "2354": "580 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "782111",
+"url": "https://www.epey.com/sabit-disk/samsung-hd501lj.html",
+"name": "Samsung HD501LJ",
+"code": "",
+"img": "https://resim.epey.com/782111/k_samsung-hd501lj-1.jpg",
+"price": 1449.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "500 GB",
+"2353": "-",
+"2354": "-",
 "4931": "-"
 }
 },
@@ -11913,7 +11926,7 @@
 "name": "Samsung MZ7L3480HCHQ",
 "code": "",
 "img": "https://resim.epey.com/776821/k_samsung-mz7l3480hchq-2.jpg",
-"price": 30828.3,
+"price": 31385.0,
 "sites": 8,
 "score": null,
 "cols": {
@@ -11937,22 +11950,6 @@
 "2353": "380 MB/s",
 "2354": "550 MB/s",
 "4931": "15 K IOPS"
-}
-},
-{
-"id": "776428",
-"url": "https://www.epey.com/sabit-disk/apacer-as350-panther-ap128gas350-1.html",
-"name": "Apacer AS350 Panther",
-"code": "AP128GAS350-1",
-"img": "https://resim.epey.com/776428/k_apacer-as350-panther-ap128gas350-1-ap1tbas350-1-1.jpg",
-"price": 1656.0,
-"sites": 4,
-"score": null,
-"cols": {
-"2352": "128 GB",
-"2353": "540 MB/s",
-"2354": "560 MB/s",
-"4931": "75 K IOPS"
 }
 },
 {
@@ -12057,29 +12054,13 @@
 "name": "WD Green",
 "code": "WDS100T3G0A",
 "img": "https://resim.epey.com/765335/k_wd-green-wds100t3g0a-1.jpg",
-"price": 8066.56,
+"price": 8613.51,
 "sites": 8,
 "score": null,
 "cols": {
 "2352": "1 TB",
 "2353": "465 MB/s",
 "2354": "545 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "764793",
-"url": "https://www.epey.com/sabit-disk/seagate-skyhawk-ai-st18000ve002.html",
-"name": "Seagate Skyhawk AI",
-"code": "ST18000VE002",
-"img": "https://resim.epey.com/764793/k_seagate-skyhawk-ai-st18000ve002-1.jpg",
-"price": 113724.3,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "18 TB",
-"2353": "-",
-"2354": "260 MB/s",
 "4931": "-"
 }
 },
@@ -12185,8 +12166,8 @@
 "name": "Toshiba N300",
 "code": "HDWG160UZSVA",
 "img": "https://resim.epey.com/752655/k_toshiba-n300-hdwg160uzsva-hdwg180uzsva-1.jpg",
-"price": 22320.0,
-"sites": 2,
+"price": 27072.0,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "6 TB",
@@ -12281,7 +12262,7 @@
 "name": "Patriot Burst Elite",
 "code": "PBE120GS25SSDR",
 "img": "https://resim.epey.com/746408/k_patriot-burst-elite-1.jpg",
-"price": 1750.0,
+"price": 1950.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -12297,7 +12278,7 @@
 "name": "Toshiba MQ04ABD200",
 "code": "",
 "img": "https://resim.epey.com/744075/k_toshiba-mq04abd200-1.jpg",
-"price": 16425.0,
+"price": 19800.0,
 "sites": 2,
 "score": null,
 "cols": {
@@ -12441,8 +12422,8 @@
 "name": "WD Purple",
 "code": "WD42PURZ",
 "img": "https://resim.epey.com/737049/k_wd-purple-wd42purz-1.jpg",
-"price": 15535.33,
-"sites": 3,
+"price": 55917.0,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "4 TB",
@@ -12473,7 +12454,7 @@
 "name": "Toshiba MG07ACA Series",
 "code": "MG07ACA14TE",
 "img": "https://resim.epey.com/734154/k_toshiba-mg07aca-series-1.jpg",
-"price": 34150.4,
+"price": 34983.1,
 "sites": 4,
 "score": null,
 "cols": {
@@ -12489,7 +12470,7 @@
 "name": "WD Purple",
 "code": "WD22PURZ",
 "img": "https://resim.epey.com/733781/k_wd-purple-wd22purz-1.jpg",
-"price": 9323.8,
+"price": 9999.0,
 "sites": 4,
 "score": null,
 "cols": {
@@ -12506,7 +12487,7 @@
 "code": "",
 "img": "https://resim.epey.com/730741/k_wd-slim-wd10s21x-3.jpg",
 "price": 3800.0,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -12601,8 +12582,8 @@
 "name": "WD Blue Desktop",
 "code": "WD30EZAZ",
 "img": "https://resim.epey.com/721961/k_wd-blue-desktop-wd30ezaz-1.jpg",
-"price": 48552.6,
-"sites": 2,
+"price": 58889.56,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "3 TB",
@@ -12660,22 +12641,6 @@
 }
 },
 {
-"id": "720200",
-"url": "https://www.epey.com/sabit-disk/bory-r500.html",
-"name": "Bory R500",
-"code": "SSD01-C120G",
-"img": "https://resim.epey.com/720200/k_bory-ssd01-c120g-2.jpg",
-"price": 1746.1,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "120 GB",
-"2353": "500 MB/s",
-"2354": "550 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "718854",
 "url": "https://www.epey.com/sabit-disk/seagate-savvio-10k-3-st9300603ss.html",
 "name": "Seagate Savvio 10K.3",
@@ -12705,22 +12670,6 @@
 "2353": "-",
 "2354": "234 MB/s",
 "4931": "-"
-}
-},
-{
-"id": "718136",
-"url": "https://www.epey.com/sabit-disk/xpg-gammix-sx8100.html",
-"name": "XPG Gammix SX8100",
-"code": "ASX8100NP-2TT-C",
-"img": "https://resim.epey.com/718136/k_xpg-gammix-sx8100-asx8100np-2tt-c-1.jpg",
-"price": 16999.0,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "1900 MB/s",
-"2354": "3500 MB/s",
-"4931": "240 K IOPS"
 }
 },
 {
@@ -12762,26 +12711,10 @@
 "code": "",
 "img": "https://resim.epey.com/718106/k_twinmos-ngffggbm2280-1.jpg",
 "price": 7948.0,
-"sites": 8,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "550 MB/s",
-"2354": "580 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "718104",
-"url": "https://www.epey.com/sabit-disk/twinmos-ngffegbm2280.html",
-"name": "TwinMOS NGFFEGBM2280",
-"code": "",
-"img": "https://resim.epey.com/718104/k_twinmos-ngffegbm2280-1.jpg",
-"price": 2851.08,
 "sites": 9,
 "score": null,
 "cols": {
-"2352": "256 GB",
+"2352": "1 TB",
 "2353": "550 MB/s",
 "2354": "580 MB/s",
 "4931": "-"
@@ -12841,7 +12774,7 @@
 "name": "TwinMOS Hyper H2 Ultra",
 "code": "TM256GH2U",
 "img": "https://resim.epey.com/715746/k_twinmos-hyper-h2-ultra-hssdegbmh2u1-1.jpg",
-"price": 3342.1,
+"price": 3349.87,
 "sites": 2,
 "score": null,
 "cols": {
@@ -12857,7 +12790,7 @@
 "name": "TwinMOS Hyper H2 Ultra",
 "code": "TM128GH2U",
 "img": "https://resim.epey.com/715744/k_twinmos-hyper-h2-ultra-1.jpg",
-"price": 2014.5,
+"price": 2010.14,
 "sites": 2,
 "score": null,
 "cols": {
@@ -12889,8 +12822,8 @@
 "name": "WD Blue",
 "code": "WD20EZBX",
 "img": "https://resim.epey.com/714784/k_wd-blue-wd20ezbx-1.jpg",
-"price": 8875.46,
-"sites": 2,
+"price": 8875.6,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -13012,29 +12945,13 @@
 }
 },
 {
-"id": "704951",
-"url": "https://www.epey.com/sabit-disk/mld-m100.html",
-"name": "MLD M100",
-"code": "MLD25M100P11-240",
-"img": "https://resim.epey.com/704951/k_mld-m100-1.jpg",
-"price": 27580.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "240 GB",
-"2353": "520 MB/s",
-"2354": "530 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "702872",
 "url": "https://www.epey.com/sabit-disk/toshiba-p300-hdwd220uzsva.html",
 "name": "Toshiba P300",
 "code": "HDWD220UZSVA",
 "img": "https://resim.epey.com/702872/k_toshiba-p300-hdwd220uzsva-1.jpg",
 "price": 6500.0,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -13113,8 +13030,8 @@
 "name": "Turbox Spherical 9 KTA320 256GB",
 "code": "",
 "img": "https://resim.epey.com/699252/k_turbox-kta320-256gb-1.jpg",
-"price": 2917.2,
-"sites": 2,
+"price": 3559.19,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "256 GB",
@@ -13172,28 +13089,12 @@
 }
 },
 {
-"id": "698698",
-"url": "https://www.epey.com/sabit-disk/pny-cs2130-m280cs2130-1tb-rb.html",
-"name": "PNY CS2130",
-"code": "M280CS2130-1TB-RB",
-"img": "https://resim.epey.com/698698/k_pny-cs2130-m280cs2130-1tb-rb-m280cs2130-500-rb-1.jpg",
-"price": 35208.8,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "1800 MB/s",
-"2354": "3500 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "698688",
 "url": "https://www.epey.com/sabit-disk/bory-ssd01-c128g.html",
 "name": "Bory SSD01-C128G",
 "code": "",
 "img": "https://resim.epey.com/698688/k_bory-ssd01-c128g-1.jpg",
-"price": 1828.8,
+"price": 2056.3,
 "sites": 2,
 "score": null,
 "cols": {
@@ -13274,7 +13175,7 @@
 "code": "ST8000VE001",
 "img": "https://resim.epey.com/697353/k_seagate-skyhawk-ai-st8000ve001-1.jpg",
 "price": 24421.69,
-"sites": 10,
+"sites": 9,
 "score": null,
 "cols": {
 "2352": "8 TB",
@@ -13322,7 +13223,7 @@
 "code": "ST2000VX015",
 "img": "https://resim.epey.com/696025/k_seagate-st2000vx015-1.jpg",
 "price": 11999.0,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -13370,7 +13271,7 @@
 "code": "SKC600MS/512G",
 "img": "https://resim.epey.com/695264/k_kingston-kc600-skc600ms-512g-1.jpg",
 "price": 6222.0,
-"sites": 6,
+"sites": 7,
 "score": null,
 "cols": {
 "2352": "512 GB",
@@ -13433,7 +13334,7 @@
 "name": "Dahua DHI-SSD-C800AS256G",
 "code": "",
 "img": "https://resim.epey.com/694919/k_dahua-ssd-c800as128g-1.jpg",
-"price": 2966.0,
+"price": 3968.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -13449,7 +13350,7 @@
 "name": "Dahua DHI-SSD-C800AS128G",
 "code": "",
 "img": "https://resim.epey.com/694909/k_dahua-ssd-c800as128g-1.jpg",
-"price": 1999.0,
+"price": 2854.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -13481,8 +13382,8 @@
 "name": "Toshiba P300",
 "code": "HDWD110UZSVA",
 "img": "https://resim.epey.com/694277/k_toshiba-p300-hdwd105ezsta-1.jpg",
-"price": 3750.0,
-"sites": 5,
+"price": 6500.0,
+"sites": 4,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -13514,7 +13415,7 @@
 "code": "WD62PURZ",
 "img": "https://resim.epey.com/694095/k_wd-purple-wd62purz-1.jpg",
 "price": 12999.0,
-"sites": 5,
+"sites": 4,
 "score": null,
 "cols": {
 "2352": "6 TB",
@@ -13668,6 +13569,22 @@
 }
 },
 {
+"id": "693600",
+"url": "https://www.epey.com/sabit-disk/intenso-3834440.html",
+"name": "Intenso 3834440",
+"code": "",
+"img": "https://resim.epey.com/693600/k_intenso-3834440-1.jpg",
+"price": 5323.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "240 GB",
+"2353": "800 MB/s",
+"2354": "1700 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "693599",
 "url": "https://www.epey.com/sabit-disk/intenso-3834450.html",
 "name": "Intenso 3834450",
@@ -13697,22 +13614,6 @@
 "2353": "530 MB/s",
 "2354": "560 MB/s",
 "4931": "-"
-}
-},
-{
-"id": "692702",
-"url": "https://www.epey.com/sabit-disk/kingston-kc2500-skc2500m8-2000g.html",
-"name": "Kingston KC2500",
-"code": "SKC2500M8/2000G",
-"img": "https://resim.epey.com/692702/k_kingston-kc2500-skc2500m8-2000g-1.jpg",
-"price": 22999.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "2900 MB/s",
-"2354": "3500 MB/s",
-"4931": "300 K IOPS"
 }
 },
 {
@@ -13865,13 +13766,29 @@
 "name": "Acer FA100",
 "code": "FA100-512GB",
 "img": "https://resim.epey.com/678512/k_acer-fa100-fa100-512gb-1.jpg",
-"price": 5381.71,
+"price": 5387.98,
 "sites": 7,
 "score": null,
 "cols": {
 "2352": "512 GB",
 "2353": "2700 MB/s",
 "2354": "3300 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "677964",
+"url": "https://www.epey.com/sabit-disk/crucial-p2-ct1000p2ssd8.html",
+"name": "Crucial P2",
+"code": "CT1000P2SSD8",
+"img": "https://resim.epey.com/677964/k_crucial-p2-ct1000p2ssd8-1.png",
+"price": 32999.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "1800 MB/s",
+"2354": "2400 MB/s",
 "4931": "-"
 }
 },
@@ -13913,7 +13830,7 @@
 "name": "WD Blue",
 "code": "WD10SPCX",
 "img": "https://resim.epey.com/162683/k_wd-blue-wd10spcx-1.jpg",
-"price": 4799.0,
+"price": 4599.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -14009,8 +13926,8 @@
 "name": "WD Ultrastar 0F38462",
 "code": "WUH721816ALE6L4 0F38462",
 "img": "https://resim.epey.com/599152/k_wd-ultrastar-16tb-0f38462-1.jpg",
-"price": 49487.1,
-"sites": 4,
+"price": 50616.68,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "1.6 TB",
@@ -14026,7 +13943,7 @@
 "code": "ST12000NM001G",
 "img": "https://resim.epey.com/628022/k_seagate-exos-3-5-12tb-st12000nm001g-1.jpg",
 "price": 32200.0,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "12 TB",
@@ -14042,7 +13959,7 @@
 "code": "",
 "img": "https://resim.epey.com/654449/k_intenso-3812460-1.jpg",
 "price": 7544.0,
-"sites": 8,
+"sites": 9,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -14105,7 +14022,7 @@
 "name": "Turbox SwipeTurn KTA512",
 "code": "",
 "img": "https://resim.epey.com/651330/k_turbox-kta512-1.jpg",
-"price": 3679.08,
+"price": 3496.0,
 "sites": 3,
 "score": null,
 "cols": {
@@ -14196,22 +14113,6 @@
 }
 },
 {
-"id": "173148",
-"url": "https://www.epey.com/sabit-disk/seagate-st320vt000.html",
-"name": "Seagate ST320VT000",
-"code": "",
-"img": "https://resim.epey.com/173148/k_seagate-320gb-st320vt000-1.jpg",
-"price": 675.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "320 GB",
-"2353": "-",
-"2354": "100 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "645725",
 "url": "https://www.epey.com/sabit-disk/team-group-cx2.html",
 "name": "Team Group CX2",
@@ -14249,8 +14150,8 @@
 "name": "Seagate Savvio 10K.6",
 "code": "ST900MM0006",
 "img": "https://resim.epey.com/173084/k_seagate-300-gb-st900mm0006-1.jpg",
-"price": 2232.0,
-"sites": 3,
+"price": 3055.0,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "900 GB",
@@ -14345,8 +14246,8 @@
 "name": "Micron 5300 Pro",
 "code": "MTFDDAK1T9TDS-1AW1ZABYY",
 "img": "https://resim.epey.com/643097/k_micron-5300-pro-1.jpg",
-"price": 160787.83,
-"sites": 1,
+"price": 125000.0,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "1.92 TB",
@@ -14377,7 +14278,7 @@
 "name": "PNY CS900",
 "code": "SSD7CS900-1TB-RB",
 "img": "https://resim.epey.com/640471/k_pny-480gb-ssd7cs900-480-rb-1.jpg",
-"price": 8059.12,
+"price": 7982.46,
 "sites": 7,
 "score": null,
 "cols": {
@@ -14441,8 +14342,8 @@
 "name": "Toshiba AL14SEB060N",
 "code": "",
 "img": "https://resim.epey.com/627964/k_toshiba-600-gb-al14seb060n-1.jpg",
-"price": 11349.7,
-"sites": 3,
+"price": 12204.0,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "600 GB",
@@ -14489,7 +14390,7 @@
 "name": "Codegen CDG-1TB-SSD25",
 "code": "",
 "img": "https://resim.epey.com/628880/k_codegen-cdg-1tb-ssd25-1.jpg",
-"price": 6854.63,
+"price": 6789.66,
 "sites": 8,
 "score": null,
 "cols": {
@@ -14676,6 +14577,22 @@
 }
 },
 {
+"id": "173074",
+"url": "https://www.epey.com/sabit-disk/seagate-barracuda-pro-st500lm034.html",
+"name": "Seagate Barracuda Pro",
+"code": "",
+"img": "https://resim.epey.com/173074/k_seagate-barracuda-pro-500-gb-st500lm034-1.jpg",
+"price": 1249.0,
+"sites": 2,
+"score": null,
+"cols": {
+"2352": "500 GB",
+"2353": "-",
+"2354": "160 MB/s",
+"4931": "-"
+}
+},
+{
 "id": "406910",
 "url": "https://www.epey.com/sabit-disk/kingston-dc450r-sedc450r-1920g.html",
 "name": "Kingston DC450R",
@@ -14745,7 +14662,7 @@
 "name": "WD Red",
 "code": "WD30EFAX",
 "img": "https://resim.epey.com/423073/k_wd-red-wd30efax-1.jpg",
-"price": 6999.0,
+"price": 6899.0,
 "sites": 2,
 "score": null,
 "cols": {
@@ -14761,7 +14678,7 @@
 "name": "WD AV-GP",
 "code": "WD5000AVDS",
 "img": "https://resim.epey.com/365253/k_wd-500-gb-wd5000avds-1.jpg",
-"price": 1974.25,
+"price": 1976.4,
 "sites": 3,
 "score": null,
 "cols": {
@@ -14857,8 +14774,8 @@
 "name": "Goodram CX400",
 "code": "SSDPR-CX400-256",
 "img": "https://resim.epey.com/401415/k_goodram-ssdpr-cx400-512-512gb-1.jpg",
-"price": 2705.81,
-"sites": 8,
+"price": 2681.12,
+"sites": 9,
 "score": null,
 "cols": {
 "2352": "256 GB",
@@ -14921,8 +14838,8 @@
 "name": "Toshiba P300",
 "code": "HDWD260UZSVA",
 "img": "https://resim.epey.com/408076/k_toshiba-p300-hdwd260uzsva-hdwd105ezsta-1.jpg",
-"price": 32468.4,
-"sites": 3,
+"price": 39381.06,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "6 TB",
@@ -14938,7 +14855,7 @@
 "code": "HDWD240UZSVA",
 "img": "https://resim.epey.com/408002/k_toshiba-p300-hdwd105ezsta-1.jpg",
 "price": 10571.09,
-"sites": 5,
+"sites": 4,
 "score": null,
 "cols": {
 "2352": "4 TB",
@@ -15018,7 +14935,7 @@
 "code": "ST6000VX001",
 "img": "https://resim.epey.com/224105/k_seagate-6tb-st6000vx001-1.jpg",
 "price": 15500.0,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "6 TB",
@@ -15033,7 +14950,7 @@
 "name": "Seagate SkyHawk",
 "code": "ST8000VX004",
 "img": "https://resim.epey.com/325827/k_seagate-skyhawk-8tb-st8000vx004-1.jpg",
-"price": 25900.0,
+"price": 24999.0,
 "sites": 3,
 "score": null,
 "cols": {
@@ -15073,22 +14990,6 @@
 "2353": "515 MB/s",
 "2354": "560 MB/s",
 "4931": "90 K IOPS"
-}
-},
-{
-"id": "392715",
-"url": "https://www.epey.com/sabit-disk/hp-s700-2dp98aaabb.html",
-"name": "HP S700",
-"code": "2DP98AA#ABB",
-"img": "https://resim.epey.com/392715/k_hp-2dp97aa-1.jpg",
-"price": 4500.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "250 GB",
-"2353": "515 MB/s",
-"2354": "555 MB/s",
-"4931": "80 K IOPS"
 }
 },
 {
@@ -15241,8 +15142,8 @@
 "name": "Toshiba NAS N300",
 "code": "HDWG21CUZSVA",
 "img": "https://resim.epey.com/224458/k_toshiba-nas-n300-12tb-hdwg21cuzsva-1.jpg",
-"price": 49303.0,
-"sites": 2,
+"price": 29183.32,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "12 TB",
@@ -15268,29 +15169,13 @@
 }
 },
 {
-"id": "224457",
-"url": "https://www.epey.com/sabit-disk/toshiba-nas-n300.html",
-"name": "Toshiba NAS N300",
-"code": "HDEXW10ZNA51F",
-"img": "https://resim.epey.com/224457/k_toshiba-nas-n300-14tb-hdexw10zna51f-1.jpg",
-"price": 41674.2,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "14 TB",
-"2353": "-",
-"2354": "260 MB/s",
-"4931": "-"
-}
-},
-{
 "id": "224102",
 "url": "https://www.epey.com/sabit-disk/seagate-ironwolf-st12000vn0008.html",
 "name": "Seagate IronWolf",
 "code": "ST12000VN0008",
 "img": "https://resim.epey.com/224102/k_seagate-ironwolf-12tb-st12000vn0008-1.jpg",
 "price": 31499.0,
-"sites": 9,
+"sites": 8,
 "score": null,
 "cols": {
 "2352": "12 TB",
@@ -15321,8 +15206,8 @@
 "name": "Seagate IronWolf",
 "code": "ST8000VN004",
 "img": "https://resim.epey.com/224109/k_seagate-8tb-st8000vn004-1.jpg",
-"price": 22570.7,
-"sites": 9,
+"price": 22578.9,
+"sites": 10,
 "score": null,
 "cols": {
 "2352": "8 TB",
@@ -15338,7 +15223,7 @@
 "code": "ST3750640NS",
 "img": "https://resim.epey.com/173047/k_seagate-750gb-st3750640ns-1.jpg",
 "price": 5549.0,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "750 GB",
@@ -15434,7 +15319,7 @@
 "code": "WD20EFAX",
 "img": "https://resim.epey.com/172999/k_wd-red-wd20efax-1.jpg",
 "price": 8450.0,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -15540,22 +15425,6 @@
 }
 },
 {
-"id": "167756",
-"url": "https://www.epey.com/sabit-disk/toshiba-mk3276gsx.html",
-"name": "Toshiba MK3276GSX",
-"code": "",
-"img": "https://resim.epey.com/167756/k_toshiba-mk3276gsx-320gb-1.jpg",
-"price": 539.4,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "320 GB",
-"2353": "-",
-"2354": "-",
-"4931": "-"
-}
-},
-{
 "id": "162751",
 "url": "https://www.epey.com/sabit-disk/wd-blue-wd60ezaz.html",
 "name": "WD Blue",
@@ -15633,22 +15502,6 @@
 "2353": "1000 MB/s",
 "2354": "1500 MB/s",
 "4931": "220 K IOPS"
-}
-},
-{
-"id": "160761",
-"url": "https://www.epey.com/sabit-disk/ezcool-s280-480gb.html",
-"name": "Ezcool S280 480GB",
-"code": "",
-"img": "https://resim.epey.com/160761/k_ezcool-s280-240gb-1.jpg",
-"price": 3890.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "480 GB",
-"2353": "530 MB/s",
-"2354": "560 MB/s",
-"4931": "-"
 }
 },
 {
@@ -15732,29 +15585,13 @@
 }
 },
 {
-"id": "146019",
-"url": "https://www.epey.com/sabit-disk/samsung-970-evo-plus-mz-v7s2t0bw.html",
-"name": "Samsung 970 EVO Plus",
-"code": "MZ-V7S2T0BW",
-"img": "https://resim.epey.com/146019/k_samsung-970-evo-plus-mz-v7s2t0bw-2.png",
-"price": 22705.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "3300 MB/s",
-"2354": "3500 MB/s",
-"4931": "560 K IOPS"
-}
-},
-{
 "id": "146014",
 "url": "https://www.epey.com/sabit-disk/samsung-970-evo-plus.html",
 "name": "Samsung 970 EVO Plus",
 "code": "MZ-V7S250BW",
 "img": "https://resim.epey.com/146014/k_samsung-970-evo-plus-2.png",
 "price": 7999.0,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "250 GB",
@@ -15801,7 +15638,7 @@
 "name": "Adata Ultimate SU650",
 "code": "ASU650SS-960GT-R",
 "img": "https://resim.epey.com/145396/k_adata-ultimate-su650-asu650ss-960gt-r-1.jpg",
-"price": 7791.47,
+"price": 7717.4,
 "sites": 5,
 "score": null,
 "cols": {
@@ -15833,7 +15670,7 @@
 "name": "Seagate BarraCuda",
 "code": "ST8000DM004",
 "img": "https://resim.epey.com/143580/k_seagate-barracuda-st8000dm004-1.jpg",
-"price": 18399.08,
+"price": 21000.0,
 "sites": 3,
 "score": null,
 "cols": {
@@ -15841,22 +15678,6 @@
 "2353": "-",
 "2354": "190 MB/s",
 "4931": "-"
-}
-},
-{
-"id": "142577",
-"url": "https://www.epey.com/sabit-disk/intel-optane-hafiza.html",
-"name": "Intel Optane Hafıza",
-"code": "MEMPEK1W016GA",
-"img": "https://resim.epey.com/142577/k_intel-optane-memory-1.jpg",
-"price": 24419.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "16 GB",
-"2353": "145 MB/s",
-"2354": "900 MB/s",
-"4931": "35 K IOPS"
 }
 },
 {
@@ -15913,8 +15734,8 @@
 "name": "Seagate Constellation ES",
 "code": "ST32000644NS",
 "img": "https://resim.epey.com/137846/k_seagate-constellation-es-1.jpg",
-"price": 41776.2,
-"sites": 2,
+"price": 50670.5,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -15929,7 +15750,7 @@
 "name": "Toshiba S300",
 "code": "HDWT31AUZSVA",
 "img": "https://resim.epey.com/140383/k_toshiba-s300-hdwt31auzsva-2.jpg",
-"price": 26860.4,
+"price": 27639.4,
 "sites": 9,
 "score": null,
 "cols": {
@@ -15946,7 +15767,7 @@
 "code": "HDWT380UZSVA",
 "img": "https://resim.epey.com/140381/k_toshiba-s300-hdwt380uzsva-1.jpg",
 "price": 25999.0,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "8 TB",
@@ -15962,28 +15783,12 @@
 "code": "HDWT360UZSVA",
 "img": "https://resim.epey.com/140380/k_toshiba-s300-hdwt360uzsva-2.jpg",
 "price": 16574.6,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "6 TB",
 "2353": "-",
 "2354": "241 MB/s",
-"4931": "-"
-}
-},
-{
-"id": "140200",
-"url": "https://www.epey.com/sabit-disk/wd-purple-wd60purz.html",
-"name": "WD Purple",
-"code": "WD60PURZ",
-"img": "https://resim.epey.com/140200/k_wd-purple-wd60purz-2.jpg",
-"price": 15410.0,
-"sites": 5,
-"score": null,
-"cols": {
-"2352": "6 TB",
-"2353": "-",
-"2354": "175 MB/s",
 "4931": "-"
 }
 },
@@ -16048,6 +15853,22 @@
 "2352": "6 TB",
 "2353": "-",
 "2354": "238 MB/s",
+"4931": "-"
+}
+},
+{
+"id": "137818",
+"url": "https://www.epey.com/sabit-disk/seagate-barracuda.html",
+"name": "Seagate BarraCuda",
+"code": "ST3000DM007",
+"img": "https://resim.epey.com/137818/k_seagate-st3000dm007-1.jpg",
+"price": 6450.0,
+"sites": 3,
+"score": null,
+"cols": {
+"2352": "3 TB",
+"2353": "-",
+"2354": "185 MB/s",
 "4931": "-"
 }
 },
@@ -16121,8 +15942,8 @@
 "name": "Seagate Exos X10",
 "code": "ST10000NM0086",
 "img": "https://resim.epey.com/115353/k_seagate-st10000nm0086-10tb-1.jpg",
-"price": 31666.8,
-"sites": 4,
+"price": 30758.99,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "10 TB",
@@ -16145,22 +15966,6 @@
 "2353": "-",
 "2354": "210 MB/s",
 "4931": "-"
-}
-},
-{
-"id": "112816",
-"url": "https://www.epey.com/sabit-disk/samsung-970-evo-mz-v7e500bw.html",
-"name": "Samsung 970 EVO",
-"code": "MZ-V7E500BW",
-"img": "https://resim.epey.com/112816/k_samsung-970-evo-mz-v7e500bw-1.png",
-"price": 8739.08,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "2300 MB/s",
-"2354": "3400 MB/s",
-"4931": "370 K IOPS"
 }
 },
 {
@@ -16319,18 +16124,18 @@
 }
 },
 {
-"id": "84502",
-"url": "https://www.epey.com/sabit-disk/hitachi-ultrastar-c10k600-600gb.html",
-"name": "Hitachi Ultrastar C10K600",
-"code": "HUC106060CSS600",
-"img": "https://resim.epey.com/84502/k_hitachi-ultrastar-c10k600-1.jpg",
-"price": 1953.0,
-"sites": 1,
+"id": "98530",
+"url": "https://www.epey.com/sabit-disk/wd-WDS240G2G0A.html",
+"name": "WD Green",
+"code": "WDS240G2G0A",
+"img": "https://resim.epey.com/98530/k_wd-green-ssd-240gb-2-1.jpg",
+"price": 3349.0,
+"sites": 3,
 "score": null,
 "cols": {
-"2352": "600 GB",
+"2352": "240 GB",
 "2353": "-",
-"2354": "-",
+"2354": "545 MB/s",
 "4931": "-"
 }
 },
@@ -16412,21 +16217,6 @@
 }
 },
 {
-"id": "74293",
-"url": "https://www.epey.com/sabit-disk/wd-re3-500gb.html",
-"name": "WD RE3",
-"code": "WD5002ABYS",
-"img": "https://resim.epey.com/74293/k_wd-re3-500gb-1.jpg",
-"price": 1499.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "-",
-"2354": "113 MB/s"
-}
-},
-{
 "id": "74258",
 "url": "https://www.epey.com/sabit-disk/wd-scorpio-blue-320gb.html",
 "name": "WD Scorpio Blue",
@@ -16437,21 +16227,6 @@
 "score": null,
 "cols": {
 "2352": "320 GB",
-"2353": "-",
-"2354": "-"
-}
-},
-{
-"id": "74256",
-"url": "https://www.epey.com/sabit-disk/wd-scorpio-blue-bevt-250gb.html",
-"name": "WD Scorpio Blue",
-"code": "WD2500BEVT",
-"img": "https://resim.epey.com/74256/k_wd-blue-wd2500bpvt-1.jpg",
-"price": 446.4,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "250 GB",
 "2353": "-",
 "2354": "-"
 }
@@ -16522,8 +16297,8 @@
 "name": "Toshiba MQ01ABD",
 "code": "MQ01ABD050",
 "img": "https://resim.epey.com/73745/k_toshiba-500gb-mq01abd050-1.jpg",
-"price": 1350.0,
-"sites": 3,
+"price": 1325.0,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "500 GB",
@@ -16567,8 +16342,8 @@
 "name": "WD Red Pro",
 "code": "WD4001FFSX",
 "img": "https://resim.epey.com/73583/k_wd-wd2002ffsx-2.jpg",
-"price": 48563.9,
-"sites": 2,
+"price": 58903.26,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "4 TB",
@@ -16667,21 +16442,6 @@
 }
 },
 {
-"id": "73260",
-"url": "https://www.epey.com/sabit-disk/wd-re4-500gb.html",
-"name": "WD RE4",
-"code": "WD5003ABYX",
-"img": "https://resim.epey.com/73260/k_wd-wd5003abyx-1.jpg",
-"price": 1180.0,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "-",
-"2354": "128 MB/s"
-}
-},
-{
 "id": "73259",
 "url": "https://www.epey.com/sabit-disk/wd-red-pro-2tb.html",
 "name": "WD Red Pro",
@@ -16694,6 +16454,21 @@
 "2352": "2 TB",
 "2353": "-",
 "2354": "164 MB/s"
+}
+},
+{
+"id": "73260",
+"url": "https://www.epey.com/sabit-disk/wd-re4-500gb.html",
+"name": "WD RE4",
+"code": "WD5003ABYX",
+"img": "https://resim.epey.com/73260/k_wd-wd5003abyx-1.jpg",
+"price": 1180.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "500 GB",
+"2353": "-",
+"2354": "128 MB/s"
 }
 },
 {
@@ -16717,8 +16492,8 @@
 "name": "Seagate IronWolf Pro",
 "code": "ST10000NE0004",
 "img": "https://resim.epey.com/72899/k_seagate-ironwolf-pro-10tb-1.jpg",
-"price": 31666.8,
-"sites": 3,
+"price": 35652.93,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "10 TB",
@@ -16732,8 +16507,8 @@
 "name": "Seagate Enterprise NAS",
 "code": "ST4000VN0001",
 "img": "https://resim.epey.com/72886/k_seagate-enterprise-nas-1.jpg",
-"price": 18161.7,
-"sites": 2,
+"price": 22028.42,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "4 TB",
@@ -16772,43 +16547,13 @@
 }
 },
 {
-"id": "72876",
-"url": "https://www.epey.com/sabit-disk/seagate-ironwolf-2tb.html",
-"name": "Seagate IronWolf",
-"code": "ST2000VN004",
-"img": "https://resim.epey.com/72876/k_seagate-ironwolf-2tb-1.jpg",
-"price": 8184.5,
-"sites": 4,
-"score": null,
-"cols": {
-"2352": "2 TB",
-"2353": "-",
-"2354": "180 MB/s"
-}
-},
-{
-"id": "72506",
-"url": "https://www.epey.com/sabit-disk/wd-blue-mobile-spcx-1tb.html",
-"name": "WD Blue Mobile",
-"code": "WD10JPCX",
-"img": "https://resim.epey.com/72506/k_western-digital-wd10jpcx-1.jpg",
-"price": 5999.0,
-"sites": 1,
-"score": null,
-"cols": {
-"2352": "1 TB",
-"2353": "-",
-"2354": "140 MB/s"
-}
-},
-{
 "id": "72479",
 "url": "https://www.epey.com/sabit-disk/wd-blue-mobile-lpcx-500gb.html",
 "name": "WD Blue Mobile",
 "code": "WD5000LPCX",
 "img": "https://resim.epey.com/72479/k_western-digital-wd5000lpcx-scorpio-blue-1.jpg",
 "price": 1399.0,
-"sites": 5,
+"sites": 4,
 "score": null,
 "cols": {
 "2352": "500 GB",
@@ -16822,7 +16567,7 @@
 "name": "WD Red",
 "code": "WD40EFRX",
 "img": "https://resim.epey.com/72231/k_wd-red-nas-1.jpg",
-"price": 10994.0,
+"price": 10119.99,
 "sites": 2,
 "score": null,
 "cols": {
@@ -16837,13 +16582,28 @@
 "name": "WD Red",
 "code": "WD30EFRX",
 "img": "https://resim.epey.com/72230/k_wd-red-nas-1.jpg",
-"price": 7390.0,
-"sites": 4,
+"price": 7400.0,
+"sites": 3,
 "score": null,
 "cols": {
 "2352": "3 TB",
 "2353": "-",
 "2354": "147 MB/s"
+}
+},
+{
+"id": "72224",
+"url": "https://www.epey.com/sabit-disk/wd-red-1tb.html",
+"name": "WD Red",
+"code": "WD10EFRX",
+"img": "https://resim.epey.com/72224/k_wd-red-nas-1.jpg",
+"price": 3500.0,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "-",
+"2354": "150 MB/s"
 }
 },
 {
@@ -16869,7 +16629,7 @@
 "code": "WD30PURX",
 "img": "https://resim.epey.com/72179/k_wd-purple-3tb-1.jpg",
 "price": 7403.0,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "2352": "3 TB",
@@ -16885,7 +16645,7 @@
 "code": "WD20PURX",
 "img": "https://resim.epey.com/72178/k_wd-purple-2tb-1.jpg",
 "price": 6999.0,
-"sites": 7,
+"sites": 6,
 "score": null,
 "cols": {
 "2352": "2 TB",
@@ -16938,21 +16698,6 @@
 "2352": "2 TB",
 "2353": "-",
 "2354": "147 MB/s"
-}
-},
-{
-"id": "72126",
-"url": "https://www.epey.com/sabit-disk/wd-blue-desktop-500gb.html",
-"name": "WD Blue Desktop",
-"code": "WD5000AZRZ",
-"img": "https://resim.epey.com/72126/k_wd-blue-desktop-1tb-1.jpg",
-"price": 1999.0,
-"sites": 2,
-"score": null,
-"cols": {
-"2352": "500 GB",
-"2353": "-",
-"2354": "150 MB/s"
 }
 },
 {
@@ -17017,6 +16762,22 @@
 }
 },
 {
+"id": "71706",
+"url": "https://www.epey.com/sabit-disk/samsung-850-pro-1tb.html",
+"name": "Samsung 850 PRO",
+"code": "MZ-7KE1T0BW",
+"img": "https://resim.epey.com/71706/k_samsung-850-pro-1tb-1.jpg",
+"price": 15979.06,
+"sites": 1,
+"score": null,
+"cols": {
+"2352": "1 TB",
+"2353": "520 MB/s",
+"2354": "550 MB/s",
+"4931": "90 K IOPS"
+}
+},
+{
 "id": "71697",
 "url": "https://www.epey.com/sabit-disk/samsung-750-evo-120gb.html",
 "name": "Samsung 750 EVO",
@@ -17039,7 +16800,7 @@
 "code": "ST1000DM003",
 "img": "https://resim.epey.com/71663/k_seagate-desktop-1tb-1.jpg",
 "price": 4699.0,
-"sites": 2,
+"sites": 1,
 "score": null,
 "cols": {
 "2352": "1 TB",
@@ -17055,7 +16816,7 @@
 "code": "ST250DM000",
 "img": "https://resim.epey.com/71660/k_seagate-desktop-250gb-1.jpg",
 "price": 600.0,
-"sites": 7,
+"sites": 5,
 "score": null,
 "cols": {
 "2352": "250 GB",
