@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-23T22:40:31+00:00",
+"updated": "2026-10-24T11:50:40+00:00",
 "rows": [
 {
 "id": "1037204",
@@ -66,22 +66,6 @@
 }
 },
 {
-"id": "925831",
-"url": "https://www.epey.com/islemci-sogutucu/asus-rog-strix-lc-iii-360-argb.html",
-"name": "Asus ROG Strix LC III 360 ARGB",
-"code": "",
-"img": "https://resim.epey.com/925831/k_asus-rog-strix-lc-iii-360-argb-1.jpg",
-"price": 8371.08,
-"sites": 6,
-"score": null,
-"cols": {
-"7845": "70.38 CFM",
-"7847": "2200 RPM",
-"7841": "120 mm",
-"7846": "36 dBA"
-}
-},
-{
 "id": "911146",
 "url": "https://www.epey.com/islemci-sogutucu/thermalright-peerless-assassin-120.html",
 "name": "Thermalright Peerless Assassin 120",
@@ -98,19 +82,19 @@
 }
 },
 {
-"id": "1025960",
-"url": "https://www.epey.com/islemci-sogutucu/msi-mag-corefrozr-aa13.html",
-"name": "MSI MAG CoreFrozr AA13",
+"id": "925831",
+"url": "https://www.epey.com/islemci-sogutucu/asus-rog-strix-lc-iii-360-argb.html",
+"name": "Asus ROG Strix LC III 360 ARGB",
 "code": "",
-"img": "https://resim.epey.com/1025960/k_msi-mag-corefrozr-1.png",
-"price": 1459.9,
-"sites": 12,
+"img": "https://resim.epey.com/925831/k_asus-rog-strix-lc-iii-360-argb-1.jpg",
+"price": 8398.0,
+"sites": 6,
 "score": null,
 "cols": {
-"7845": "62.6 CFM",
-"7847": "2070 RPM",
+"7845": "70.38 CFM",
+"7847": "2200 RPM",
 "7841": "120 mm",
-"7846": "30.11 dBA"
+"7846": "36 dBA"
 }
 },
 {
@@ -130,35 +114,19 @@
 }
 },
 {
-"id": "911161",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-x-120-refined-se-argb.html",
-"name": "Thermalright Assassin X 120 Refined SE ARGB",
+"id": "1025960",
+"url": "https://www.epey.com/islemci-sogutucu/msi-mag-corefrozr-aa13.html",
+"name": "MSI MAG CoreFrozr AA13",
 "code": "",
-"img": "https://resim.epey.com/911161/k_thermalright-assassin-x-120-refined-se-argb-1.jpg",
-"price": 1119.0,
-"sites": 8,
+"img": "https://resim.epey.com/1025960/k_msi-mag-corefrozr-1.png",
+"price": 1459.9,
+"sites": 12,
 "score": null,
 "cols": {
-"7845": "66.17 CFM",
-"7847": "1550 RPM",
+"7845": "62.6 CFM",
+"7847": "2070 RPM",
 "7841": "120 mm",
-"7846": "25.6 dBA"
-}
-},
-{
-"id": "893451",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-peerless-assassin-120-se-argb.html",
-"name": "Thermalright Peerless Assassin 120 SE ARGB",
-"code": "",
-"img": "https://resim.epey.com/893451/k_thermalright-peerless-assassin-120-se-argb-1.jpg",
-"price": 2635.22,
-"sites": 6,
-"score": null,
-"cols": {
-"7845": "66.17 CFM",
-"7847": "1550 RPM",
-"7841": "120 mm",
-"7846": "25.6 dBA"
+"7846": "30.11 dBA"
 }
 },
 {
@@ -194,19 +162,35 @@
 }
 },
 {
-"id": "959427",
-"url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-i360.html",
-"name": "MSI MAG CoreLiquid I360",
+"id": "911158",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-x-120-refined-se.html",
+"name": "Thermalright Assassin X 120 Refined SE",
 "code": "",
-"img": "https://resim.epey.com/959427/k_msi-mag-coreliquid-i360-1.png",
-"price": 6651.81,
-"sites": 9,
+"img": "https://resim.epey.com/911158/k_thermalright-assassin-x-120-1.jpg",
+"price": 1184.82,
+"sites": 6,
 "score": null,
 "cols": {
-"7845": "70.7 CFM",
-"7847": "-",
+"7845": "66.17 CFM",
+"7847": "1550 RPM",
 "7841": "120 mm",
-"7846": "-"
+"7846": "25.6 dBA"
+}
+},
+{
+"id": "893451",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-peerless-assassin-120-se-argb.html",
+"name": "Thermalright Peerless Assassin 120 SE ARGB",
+"code": "",
+"img": "https://resim.epey.com/893451/k_thermalright-peerless-assassin-120-se-argb-1.jpg",
+"price": 2713.62,
+"sites": 6,
+"score": null,
+"cols": {
+"7845": "66.17 CFM",
+"7847": "1550 RPM",
+"7841": "120 mm",
+"7846": "25.6 dBA"
 }
 },
 {
@@ -226,19 +210,35 @@
 }
 },
 {
-"id": "911158",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-x-120-refined-se.html",
-"name": "Thermalright Assassin X 120 Refined SE",
+"id": "992192",
+"url": "https://www.epey.com/islemci-sogutucu/asus-rog-strix-lc-iii-360-argb-lcd.html",
+"name": "Asus ROG Strix LC III 360 ARGB LCD",
 "code": "",
-"img": "https://resim.epey.com/911158/k_thermalright-assassin-x-120-1.jpg",
-"price": 1184.82,
-"sites": 6,
+"img": "https://resim.epey.com/992192/k_asus-rog-strix-lc-iii-360-argb-lcd-1.png",
+"price": 13160.0,
+"sites": 9,
 "score": null,
 "cols": {
-"7845": "66.17 CFM",
-"7847": "1550 RPM",
+"7845": "70.38 CFM",
+"7847": "2200 RPM",
 "7841": "120 mm",
-"7846": "25.6 dBA"
+"7846": "36 dBA"
+}
+},
+{
+"id": "1041161",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-phantom-spirit-120-digital-evo.html",
+"name": "Thermalright Phantom Spirit 120 Digital EVO",
+"code": "",
+"img": "https://resim.epey.com/1041161/k_thermalright-phantom-spirit-120-digital-evo-3.png",
+"price": 3821.02,
+"sites": 5,
+"score": null,
+"cols": {
+"7845": "69 CFM",
+"7847": "2150 RPM",
+"7841": "120 mm",
+"7846": "27 dBA"
 }
 },
 {
@@ -258,22 +258,6 @@
 }
 },
 {
-"id": "992192",
-"url": "https://www.epey.com/islemci-sogutucu/asus-rog-strix-lc-iii-360-argb-lcd.html",
-"name": "Asus ROG Strix LC III 360 ARGB LCD",
-"code": "",
-"img": "https://resim.epey.com/992192/k_asus-rog-strix-lc-iii-360-argb-lcd-1.png",
-"price": 8299.0,
-"sites": 9,
-"score": null,
-"cols": {
-"7845": "70.38 CFM",
-"7847": "2200 RPM",
-"7841": "120 mm",
-"7846": "36 dBA"
-}
-},
-{
 "id": "992075",
 "url": "https://www.epey.com/islemci-sogutucu/nzxt-kraken-elite-280-rgb.html",
 "name": "NZXT Kraken Elite 280 RGB",
@@ -290,19 +274,67 @@
 }
 },
 {
-"id": "1041161",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-phantom-spirit-120-digital-evo.html",
-"name": "Thermalright Phantom Spirit 120 Digital EVO",
+"id": "959427",
+"url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-i360.html",
+"name": "MSI MAG CoreLiquid I360",
 "code": "",
-"img": "https://resim.epey.com/1041161/k_thermalright-phantom-spirit-120-digital-evo-3.png",
-"price": 3821.02,
-"sites": 5,
+"img": "https://resim.epey.com/959427/k_msi-mag-coreliquid-i360-1.png",
+"price": 6651.81,
+"sites": 9,
 "score": null,
 "cols": {
-"7845": "69 CFM",
-"7847": "2150 RPM",
+"7845": "70.7 CFM",
+"7847": "-",
 "7841": "120 mm",
-"7846": "27 dBA"
+"7846": "-"
+}
+},
+{
+"id": "911161",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-x-120-refined-se-argb.html",
+"name": "Thermalright Assassin X 120 Refined SE ARGB",
+"code": "",
+"img": "https://resim.epey.com/911161/k_thermalright-assassin-x-120-refined-se-argb-1.jpg",
+"price": 1119.0,
+"sites": 8,
+"score": null,
+"cols": {
+"7845": "66.17 CFM",
+"7847": "1550 RPM",
+"7841": "120 mm",
+"7846": "25.6 dBA"
+}
+},
+{
+"id": "898252",
+"url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-e240.html",
+"name": "MSI MAG CoreLiquid E240",
+"code": "",
+"img": "https://resim.epey.com/898252/k_msi-mag-coreliquid-e240-1.jpg",
+"price": 3561.9,
+"sites": 13,
+"score": null,
+"cols": {
+"7845": "75.04 CFM",
+"7847": "-",
+"7841": "120 mm",
+"7846": "-"
+}
+},
+{
+"id": "976019",
+"url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-a13-240.html",
+"name": "MSI MAG CoreLiquid A13 240",
+"code": "",
+"img": "https://resim.epey.com/976019/k_msi-mag-coreliquid-a13-1.png",
+"price": 3479.99,
+"sites": 13,
+"score": null,
+"cols": {
+"7845": "62.6 CFM",
+"7847": "-",
+"7841": "120 mm",
+"7846": "-"
 }
 },
 {
@@ -354,38 +386,6 @@
 }
 },
 {
-"id": "976019",
-"url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-a13-240.html",
-"name": "MSI MAG CoreLiquid A13 240",
-"code": "",
-"img": "https://resim.epey.com/976019/k_msi-mag-coreliquid-a13-1.png",
-"price": 3479.99,
-"sites": 13,
-"score": null,
-"cols": {
-"7845": "62.6 CFM",
-"7847": "-",
-"7841": "120 mm",
-"7846": "-"
-}
-},
-{
-"id": "1073133",
-"url": "https://www.epey.com/islemci-sogutucu/cooler-master-masterliquid-core-lcd-360.html",
-"name": "Cooler Master MasterLiquid Core LCD 360",
-"code": "MLW-D36M-A24PA-L1",
-"img": "https://resim.epey.com/1073133/k_cooler-master-masterliquid-core-lcd-1.jpg",
-"price": 9199.0,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "75.2 CFM",
-"7847": "2400 RPM",
-"7841": "120 mm",
-"7846": "30 dBA"
-}
-},
-{
 "id": "1041554",
 "url": "https://www.epey.com/islemci-sogutucu/asus-max-gaming-lc-360-argb-lcd.html",
 "name": "Asus MAX Gaming LC 360 ARGB LCD",
@@ -402,19 +402,19 @@
 }
 },
 {
-"id": "1018361",
-"url": "https://www.epey.com/islemci-sogutucu/fazeon-a2120tra.html",
-"name": "Fazeon A2120TRA",
+"id": "988930",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-spirit-120-v2.html",
+"name": "Thermalright Assassin Spirit 120 V2",
 "code": "",
-"img": "https://resim.epey.com/1018361/k_fazeon-a2120tra-1.png",
-"price": 328.1,
-"sites": 9,
+"img": "https://resim.epey.com/988930/k_thermalright-assassin-spirit-120-v2-1.png",
+"price": 1049.97,
+"sites": 5,
 "score": null,
 "cols": {
-"7845": "35 CFM",
-"7847": "1600 RPM",
-"7841": "90 mm",
-"7846": "-"
+"7845": "66.17 CFM",
+"7847": "1500 RPM",
+"7841": "120 mm",
+"7846": "25.6 dBA"
 }
 },
 {
@@ -450,67 +450,35 @@
 }
 },
 {
-"id": "898252",
-"url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-e240.html",
-"name": "MSI MAG CoreLiquid E240",
+"id": "1052507",
+"url": "https://www.epey.com/islemci-sogutucu/xpg-maestro-plus-42sa.html",
+"name": "XPG Maestro Plus 42SA",
 "code": "",
-"img": "https://resim.epey.com/898252/k_msi-mag-coreliquid-e240-1.jpg",
-"price": 3561.9,
-"sites": 12,
+"img": "https://resim.epey.com/1052507/k_xpg-maestro-plus-42sa-1.png",
+"price": 1320.15,
+"sites": 7,
 "score": null,
 "cols": {
-"7845": "75.04 CFM",
-"7847": "-",
+"7845": "70.81 CFM",
+"7847": "1800 RPM",
 "7841": "120 mm",
+"7846": "21.44 dBA"
+}
+},
+{
+"id": "1018361",
+"url": "https://www.epey.com/islemci-sogutucu/fazeon-a2120tra.html",
+"name": "Fazeon A2120TRA",
+"code": "",
+"img": "https://resim.epey.com/1018361/k_fazeon-a2120tra-1.png",
+"price": 328.1,
+"sites": 9,
+"score": null,
+"cols": {
+"7845": "35 CFM",
+"7847": "1600 RPM",
+"7841": "90 mm",
 "7846": "-"
-}
-},
-{
-"id": "1068489",
-"url": "https://www.epey.com/islemci-sogutucu/deepcool-ag400-g2.html",
-"name": "DeepCool AG400 G2",
-"code": "R-AG400-BKNPMG2-G",
-"img": "https://resim.epey.com/1068489/k_deepcool-ag400-g2-6.png",
-"price": 1292.62,
-"sites": 8,
-"score": null,
-"cols": {
-"7845": "70.09 CFM",
-"7847": "2200 RPM",
-"7841": "120 mm",
-"7846": "29.22 dBA"
-}
-},
-{
-"id": "1039686",
-"url": "https://www.epey.com/islemci-sogutucu/ocypus-delta-a62-argb.html",
-"name": "Ocypus Delta A62 ARGB",
-"code": "Delta-A62-BK2NAWN00X-GL",
-"img": "https://resim.epey.com/1039686/k_ocypus-delta-a62-argb-2.png",
-"price": 1620.0,
-"sites": 3,
-"score": null,
-"cols": {
-"7845": "73 CFM",
-"7847": "2000 RPM",
-"7841": "120 mm",
-"7846": "29 dBA"
-}
-},
-{
-"id": "988930",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-spirit-120-v2.html",
-"name": "Thermalright Assassin Spirit 120 V2",
-"code": "",
-"img": "https://resim.epey.com/988930/k_thermalright-assassin-spirit-120-v2-1.png",
-"price": 1049.97,
-"sites": 5,
-"score": null,
-"cols": {
-"7845": "66.17 CFM",
-"7847": "1500 RPM",
-"7841": "120 mm",
-"7846": "25.6 dBA"
 }
 },
 {
@@ -530,19 +498,19 @@
 }
 },
 {
-"id": "1051177",
-"url": "https://www.epey.com/islemci-sogutucu/asus-rog-ryuo-iv-360-argb.html",
-"name": "Asus ROG Ryuo IV 360 ARGB",
-"code": "",
-"img": "https://resim.epey.com/1051177/k_asus-rog-ryuo-iv-360-argb-4.png",
-"price": 21999.0,
-"sites": 6,
+"id": "1068489",
+"url": "https://www.epey.com/islemci-sogutucu/deepcool-ag400-g2.html",
+"name": "DeepCool AG400 G2",
+"code": "R-AG400-BKNPMG2-G",
+"img": "https://resim.epey.com/1068489/k_deepcool-ag400-g2-6.png",
+"price": 1292.62,
+"sites": 8,
 "score": null,
 "cols": {
-"7845": "56.66 CFM",
-"7847": "2000 RPM",
+"7845": "70.09 CFM",
+"7847": "2200 RPM",
 "7841": "120 mm",
-"7846": "30.7 dBA"
+"7846": "29.22 dBA"
 }
 },
 {
@@ -562,6 +530,54 @@
 }
 },
 {
+"id": "1023201",
+"url": "https://www.epey.com/islemci-sogutucu/arctic-liquid-freezer-iii-pro-420-argb.html",
+"name": "Arctic Liquid Freezer III Pro 420 ARGB",
+"code": "ACFRE00185A",
+"img": "https://resim.epey.com/1023201/k_arctic-liquid-freezer-iii-pro-420-argb-3.png",
+"price": 6570.0,
+"sites": 6,
+"score": null,
+"cols": {
+"7845": "110 CFM",
+"7847": "2500 RPM",
+"7841": "140 mm",
+"7846": "-"
+}
+},
+{
+"id": "988812",
+"url": "https://www.epey.com/islemci-sogutucu/dark-freezer-w362-2025-edition.html",
+"name": "Dark Freezer W362 2025 Edition",
+"code": "",
+"img": "https://resim.epey.com/988812/k_dark-freezer-w362-2025-edition-1.png",
+"price": 2749.0,
+"sites": 8,
+"score": null,
+"cols": {
+"7845": "75 CFM",
+"7847": "1800 RPM",
+"7841": "120 mm",
+"7846": "20 dBA"
+}
+},
+{
+"id": "1051177",
+"url": "https://www.epey.com/islemci-sogutucu/asus-rog-ryuo-iv-360-argb.html",
+"name": "Asus ROG Ryuo IV 360 ARGB",
+"code": "",
+"img": "https://resim.epey.com/1051177/k_asus-rog-ryuo-iv-360-argb-4.png",
+"price": 21999.0,
+"sites": 6,
+"score": null,
+"cols": {
+"7845": "56.66 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "30.7 dBA"
+}
+},
+{
 "id": "1026111",
 "url": "https://www.epey.com/islemci-sogutucu/msi-mpg-coreliquid-p13-360.html",
 "name": "MSI MPG CoreLiquid P13 360",
@@ -575,54 +591,6 @@
 "7847": "2050 RPM",
 "7841": "120 mm",
 "7846": "-"
-}
-},
-{
-"id": "986201",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-frozen-magic-360-argb.html",
-"name": "Thermalright Frozen Magic 360 ARGB",
-"code": "",
-"img": "https://resim.epey.com/986201/k_thermalright-frozen-magic-360-1.png",
-"price": 3517.22,
-"sites": 6,
-"score": null,
-"cols": {
-"7845": "66.17 CFM",
-"7847": "1500 RPM",
-"7841": "120 mm",
-"7846": "25.6 dBA"
-}
-},
-{
-"id": "1052507",
-"url": "https://www.epey.com/islemci-sogutucu/xpg-maestro-plus-42sa.html",
-"name": "XPG Maestro Plus 42SA",
-"code": "",
-"img": "https://resim.epey.com/1052507/k_xpg-maestro-plus-42sa-1.png",
-"price": 1320.15,
-"sites": 7,
-"score": null,
-"cols": {
-"7845": "70.81 CFM",
-"7847": "1800 RPM",
-"7841": "120 mm",
-"7846": "21.44 dBA"
-}
-},
-{
-"id": "988812",
-"url": "https://www.epey.com/islemci-sogutucu/dark-freezer-w362-2025-edition.html",
-"name": "Dark Freezer W362 2025 Edition",
-"code": "",
-"img": "https://resim.epey.com/988812/k_dark-freezer-w362-2025-edition-1.png",
-"price": 2899.0,
-"sites": 8,
-"score": null,
-"cols": {
-"7845": "75 CFM",
-"7847": "1800 RPM",
-"7841": "120 mm",
-"7846": "20 dBA"
 }
 },
 {
@@ -642,6 +610,22 @@
 }
 },
 {
+"id": "752754",
+"url": "https://www.epey.com/islemci-sogutucu/cougar-aqua-240.html",
+"name": "Cougar Aqua 240",
+"code": "",
+"img": "https://resim.epey.com/752754/k_cougar-aqua-240-3.jpg",
+"price": 2306.72,
+"sites": 5,
+"score": null,
+"cols": {
+"7845": "87.1 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "40 dBA"
+}
+},
+{
 "id": "1073137",
 "url": "https://www.epey.com/islemci-sogutucu/deepcool-ak400-g2.html",
 "name": "DeepCool AK400 G2",
@@ -655,6 +639,22 @@
 "7847": "2200 RPM",
 "7841": "120 mm",
 "7846": "31.45 dBA"
+}
+},
+{
+"id": "1073133",
+"url": "https://www.epey.com/islemci-sogutucu/cooler-master-masterliquid-core-lcd-360.html",
+"name": "Cooler Master MasterLiquid Core LCD 360",
+"code": "MLW-D36M-A24PA-L1",
+"img": "https://resim.epey.com/1073133/k_cooler-master-masterliquid-core-lcd-1.jpg",
+"price": 9199.0,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "75.2 CFM",
+"7847": "2400 RPM",
+"7841": "120 mm",
+"7846": "30 dBA"
 }
 },
 {
@@ -690,19 +690,19 @@
 }
 },
 {
-"id": "1023201",
-"url": "https://www.epey.com/islemci-sogutucu/arctic-liquid-freezer-iii-pro-420-argb.html",
-"name": "Arctic Liquid Freezer III Pro 420 ARGB",
-"code": "ACFRE00185A",
-"img": "https://resim.epey.com/1023201/k_arctic-liquid-freezer-iii-pro-420-argb-3.png",
-"price": 6570.0,
-"sites": 7,
+"id": "999315",
+"url": "https://www.epey.com/islemci-sogutucu/fsp-nc5-argb.html",
+"name": "FSP NC5 ARGB",
+"code": "",
+"img": "https://resim.epey.com/999315/k_fsp-nc5-argb-1.png",
+"price": 1129.0,
+"sites": 10,
 "score": null,
 "cols": {
-"7845": "110 CFM",
-"7847": "2500 RPM",
-"7841": "140 mm",
-"7846": "-"
+"7845": "52.8 CFM",
+"7847": "1600 RPM",
+"7841": "120 mm",
+"7846": "31.5 dBA"
 }
 },
 {
@@ -722,76 +722,12 @@
 }
 },
 {
-"id": "752754",
-"url": "https://www.epey.com/islemci-sogutucu/cougar-aqua-240.html",
-"name": "Cougar Aqua 240",
-"code": "",
-"img": "https://resim.epey.com/752754/k_cougar-aqua-240-3.jpg",
-"price": 2306.72,
-"sites": 5,
-"score": null,
-"cols": {
-"7845": "87.1 CFM",
-"7847": "2000 RPM",
-"7841": "120 mm",
-"7846": "40 dBA"
-}
-},
-{
-"id": "961739",
-"url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-i240.html",
-"name": "MSI MAG CoreLiquid I240",
-"code": "",
-"img": "https://resim.epey.com/961739/k_msi-mag-coreliquid-i240-1.png",
-"price": 3821.09,
-"sites": 9,
-"score": null,
-"cols": {
-"7845": "70.7 CFM",
-"7847": "-",
-"7841": "120 mm",
-"7846": "-"
-}
-},
-{
-"id": "1069963",
-"url": "https://www.epey.com/islemci-sogutucu/dark-aqua-force-w246-pro.html",
-"name": "Dark Aqua Force W246 Pro",
-"code": "DKCCW246PRO",
-"img": "https://resim.epey.com/1069963/k_dark-aqua-force-w246-pro-1.jpg",
-"price": 2249.0,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "90.5 CFM",
-"7847": "2500 RPM",
-"7841": "120 mm",
-"7846": "35 dBA"
-}
-},
-{
-"id": "1024495",
-"url": "https://www.epey.com/islemci-sogutucu/fazeon-a3120tra.html",
-"name": "Fazeon A3120TRA",
-"code": "",
-"img": "https://resim.epey.com/1024495/k_fazeon-a3120tra-1.png",
-"price": 596.1,
-"sites": 7,
-"score": null,
-"cols": {
-"7845": "56 CFM",
-"7847": "1600 RPM",
-"7841": "120 mm",
-"7846": "-"
-}
-},
-{
 "id": "1017844",
 "url": "https://www.epey.com/islemci-sogutucu/arctic-liquid-freezer-iii-pro-240-argb.html",
 "name": "Arctic Liquid Freezer III Pro 240 ARGB",
 "code": "ACFRE00182A",
 "img": "https://resim.epey.com/1017844/k_arctic-liquid-freezer-iii-pro-240-argb-2.png",
-"price": 6044.07,
+"price": 5699.0,
 "sites": 5,
 "score": null,
 "cols": {
@@ -799,22 +735,6 @@
 "7847": "3000 RPM",
 "7841": "120 mm",
 "7846": "-"
-}
-},
-{
-"id": "999315",
-"url": "https://www.epey.com/islemci-sogutucu/fsp-nc5-argb.html",
-"name": "FSP NC5 ARGB",
-"code": "",
-"img": "https://resim.epey.com/999315/k_fsp-nc5-argb-1.png",
-"price": 1129.0,
-"sites": 10,
-"score": null,
-"cols": {
-"7845": "52.8 CFM",
-"7847": "1600 RPM",
-"7841": "120 mm",
-"7846": "31.5 dBA"
 }
 },
 {
@@ -834,99 +754,19 @@
 }
 },
 {
-"id": "911152",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-burst-assassin-120.html",
-"name": "Thermalright Burst Assassin 120",
+"id": "986201",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-frozen-magic-360-argb.html",
+"name": "Thermalright Frozen Magic 360 ARGB",
 "code": "",
-"img": "https://resim.epey.com/911152/k_thermalright-burst-assassin-120-1.jpg",
-"price": 1547.42,
-"sites": 5,
-"score": null,
-"cols": {
-"7845": "66.17 CFM",
-"7847": "1550 RPM",
-"7841": "120 mm",
-"7846": "25.6 dBA"
-}
-},
-{
-"id": "1073310",
-"url": "https://www.epey.com/islemci-sogutucu/asus-rog-strix-lc-iv-360-argb-lcd.html",
-"name": "Asus ROG Strix LC IV 360 ARGB LCD",
-"code": "90RC01M1-B0EAY0",
-"img": "https://resim.epey.com/1073310/k_asus-rog-strix-lc-iv-360-argb-lcd-1.jpg",
-"price": 14649.0,
-"sites": 3,
-"score": null,
-"cols": {
-"7845": "82.57 CFM",
-"7847": "2500 RPM",
-"7841": "120 mm",
-"7846": "35.78 dBA"
-}
-},
-{
-"id": "1072216",
-"url": "https://www.epey.com/islemci-sogutucu/dark-freezer-aqua-force-w363-pro.html",
-"name": "Dark Freezer Aqua Force W363 Pro",
-"code": "DKCCW363PRO",
-"img": "https://resim.epey.com/1072216/k_dark-freezer-w363-pro-1.jpg",
-"price": 2989.08,
-"sites": 3,
-"score": null,
-"cols": {
-"7845": "90.5 CFM",
-"7847": "2500 RPM",
-"7841": "-",
-"7846": "35 dBA"
-}
-},
-{
-"id": "1030256",
-"url": "https://www.epey.com/islemci-sogutucu/thermaltake-ux400-argb.html",
-"name": "Thermaltake UX400 ARGB",
-"code": "CL-P142-AL12SW-A",
-"img": "https://resim.epey.com/1030256/k_thermaltake-ux400-argb-1.png",
-"price": 1269.0,
-"sites": 10,
-"score": null,
-"cols": {
-"7845": "62.72 CFM",
-"7847": "1800 RPM",
-"7841": "120 mm",
-"7846": "25 dBA"
-}
-},
-{
-"id": "996467",
-"url": "https://www.epey.com/islemci-sogutucu/dark-freezer-w247-2025-edition.html",
-"name": "Dark Freezer W247 2025 Edition",
-"code": "DKCCW247",
-"img": "https://resim.epey.com/996467/k_dark-freezer-w247-2025-edition-1.jpg",
-"price": 1999.0,
+"img": "https://resim.epey.com/986201/k_thermalright-frozen-magic-360-1.png",
+"price": 3517.22,
 "sites": 6,
 "score": null,
 "cols": {
-"7845": "56.3 CFM",
-"7847": "2000 RPM",
+"7845": "66.17 CFM",
+"7847": "1500 RPM",
 "7841": "120 mm",
-"7846": "20 dBA"
-}
-},
-{
-"id": "951727",
-"url": "https://www.epey.com/islemci-sogutucu/gigabyte-aorus-waterforce-ii-360.html",
-"name": "Gigabyte Aorus WaterForce II 360",
-"code": "",
-"img": "https://resim.epey.com/951727/k_gigabyte-aorus-waterforce-ii-360-1.jpg",
-"price": 5951.4,
-"sites": 5,
-"score": null,
-"cols": {
-"7845": "64.95 CFM",
-"7847": "2300 RPM",
-"7841": "120 mm",
-"7846": "36.9 dBA"
+"7846": "25.6 dBA"
 }
 },
 {
@@ -962,67 +802,131 @@
 }
 },
 {
-"id": "1033828",
-"url": "https://www.epey.com/islemci-sogutucu/arctic-liquid-freezer-iii-pro-420.html",
-"name": "Arctic Liquid Freezer III Pro 420",
-"code": "ACFRE00181A",
-"img": "https://resim.epey.com/1033828/k_arctic-liquid-freezer-iii-pro-420-1.png",
-"price": 6599.0,
+"id": "1073310",
+"url": "https://www.epey.com/islemci-sogutucu/asus-rog-strix-lc-iv-360-argb-lcd.html",
+"name": "Asus ROG Strix LC IV 360 ARGB LCD",
+"code": "90RC01M1-B0EAY0",
+"img": "https://resim.epey.com/1073310/k_asus-rog-strix-lc-iv-360-argb-lcd-1.jpg",
+"price": 14649.0,
+"sites": 3,
+"score": null,
+"cols": {
+"7845": "82.57 CFM",
+"7847": "2500 RPM",
+"7841": "120 mm",
+"7846": "35.78 dBA"
+}
+},
+{
+"id": "1072216",
+"url": "https://www.epey.com/islemci-sogutucu/dark-freezer-aqua-force-w363-pro.html",
+"name": "Dark Freezer Aqua Force W363 Pro",
+"code": "DKCCW363PRO",
+"img": "https://resim.epey.com/1072216/k_dark-freezer-w363-pro-1.jpg",
+"price": 2999.0,
+"sites": 3,
+"score": null,
+"cols": {
+"7845": "90.5 CFM",
+"7847": "2500 RPM",
+"7841": "-",
+"7846": "35 dBA"
+}
+},
+{
+"id": "1069963",
+"url": "https://www.epey.com/islemci-sogutucu/dark-aqua-force-w246-pro.html",
+"name": "Dark Aqua Force W246 Pro",
+"code": "DKCCW246PRO",
+"img": "https://resim.epey.com/1069963/k_dark-aqua-force-w246-pro-1.jpg",
+"price": 2249.0,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "90.5 CFM",
+"7847": "2500 RPM",
+"7841": "120 mm",
+"7846": "35 dBA"
+}
+},
+{
+"id": "1039686",
+"url": "https://www.epey.com/islemci-sogutucu/ocypus-delta-a62-argb.html",
+"name": "Ocypus Delta A62 ARGB",
+"code": "Delta-A62-BK2NAWN00X-GL",
+"img": "https://resim.epey.com/1039686/k_ocypus-delta-a62-argb-2.png",
+"price": 1620.0,
+"sites": 3,
+"score": null,
+"cols": {
+"7845": "73 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "29 dBA"
+}
+},
+{
+"id": "1033146",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-wonder-vision-360-ub-argb.html",
+"name": "Thermalright Wonder Vision 360 UB ARGB",
+"code": "",
+"img": "https://resim.epey.com/1033146/k_thermalright-wonder-vision-360-ub-argb-1.png",
+"price": 15275.21,
 "sites": 5,
 "score": null,
 "cols": {
-"7845": "110 CFM",
-"7847": "2500 RPM",
-"7841": "140 mm",
+"7845": "69 CFM",
+"7847": "2150 RPM",
+"7841": "120 mm",
+"7846": "27 dBA"
+}
+},
+{
+"id": "1024495",
+"url": "https://www.epey.com/islemci-sogutucu/fazeon-a3120tra.html",
+"name": "Fazeon A3120TRA",
+"code": "",
+"img": "https://resim.epey.com/1024495/k_fazeon-a3120tra-1.png",
+"price": 596.1,
+"sites": 7,
+"score": null,
+"cols": {
+"7845": "56 CFM",
+"7847": "1600 RPM",
+"7841": "120 mm",
 "7846": "-"
 }
 },
 {
-"id": "1033703",
-"url": "https://www.epey.com/islemci-sogutucu/cooler-master-hyper-212-3dhp-black.html",
-"name": "Cooler Master Hyper 212 3DHP Black",
-"code": "MAY-T2HP-217PK-R1",
-"img": "https://resim.epey.com/1033703/k_cooler-master-hyper-212-3dhp-black-1.png",
-"price": 1997.1,
-"sites": 7,
+"id": "996467",
+"url": "https://www.epey.com/islemci-sogutucu/dark-freezer-w247-2025-edition.html",
+"name": "Dark Freezer W247 2025 Edition",
+"code": "DKCCW247",
+"img": "https://resim.epey.com/996467/k_dark-freezer-w247-2025-edition-1.jpg",
+"price": 1999.0,
+"sites": 5,
 "score": null,
 "cols": {
-"7845": "63.1 CFM",
-"7847": "2050 RPM",
-"7841": "120 mm",
-"7846": "22.6 dBA"
-}
-},
-{
-"id": "1025207",
-"url": "https://www.epey.com/islemci-sogutucu/deepcool-le360-v2.html",
-"name": "DeepCool LE360 V2",
-"code": "R-LE360-BKAMMC-G-2",
-"img": "https://resim.epey.com/1025207/k_deepcool-le360-v2-1.png",
-"price": 3723.02,
-"sites": 8,
-"score": null,
-"cols": {
-"7845": "75.89 CFM",
-"7847": "2100 RPM",
-"7841": "120 mm",
-"7846": "31.6 dBA"
-}
-},
-{
-"id": "1001190",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-x-120-r-digital-argb.html",
-"name": "Thermalright Assassin X 120 R Digital ARGB",
-"code": "",
-"img": "https://resim.epey.com/1001190/k_thermalright-assassin-x-120-r-digital-argb-1.png",
-"price": 1959.02,
-"sites": 6,
-"score": null,
-"cols": {
-"7845": "70.84 CFM",
+"7845": "56.3 CFM",
 "7847": "2000 RPM",
 "7841": "120 mm",
-"7846": "29.8 dBA"
+"7846": "20 dBA"
+}
+},
+{
+"id": "1072095",
+"url": "https://www.epey.com/islemci-sogutucu/tcomas-neox.html",
+"name": "Tcomas Neox",
+"code": "NEOXN2BK36DWW",
+"img": "https://resim.epey.com/1072095/k_tcomas-neox-1.jpg",
+"price": 11499.0,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "75.5 CFM",
+"7847": "3000 RPM",
+"7841": "120 mm",
+"7846": "37.5 dBA"
 }
 },
 {
@@ -1058,6 +962,22 @@
 }
 },
 {
+"id": "951727",
+"url": "https://www.epey.com/islemci-sogutucu/gigabyte-aorus-waterforce-ii-360.html",
+"name": "Gigabyte Aorus WaterForce II 360",
+"code": "",
+"img": "https://resim.epey.com/951727/k_gigabyte-aorus-waterforce-ii-360-1.jpg",
+"price": 5951.4,
+"sites": 5,
+"score": null,
+"cols": {
+"7845": "64.95 CFM",
+"7847": "2300 RPM",
+"7841": "120 mm",
+"7846": "36.9 dBA"
+}
+},
+{
 "id": "945912",
 "url": "https://www.epey.com/islemci-sogutucu/cooler-master-masterliquid-240l-core-argb.html",
 "name": "Cooler Master MasterLiquid 240L Core ARGB",
@@ -1074,35 +994,35 @@
 }
 },
 {
-"id": "849907",
-"url": "https://www.epey.com/islemci-sogutucu/asus-rog-ryuo-iii-360.html",
-"name": "Asus ROG Ryuo III 360",
+"id": "911152",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-burst-assassin-120.html",
+"name": "Thermalright Burst Assassin 120",
 "code": "",
-"img": "https://resim.epey.com/849907/k_asus-rog-ryuo-iii-360-1.jpg",
-"price": 7999.0,
-"sites": 4,
+"img": "https://resim.epey.com/911152/k_thermalright-burst-assassin-120-1.jpg",
+"price": 1547.42,
+"sites": 5,
 "score": null,
 "cols": {
-"7845": "70.07 CFM",
-"7847": "2200 RPM",
+"7845": "66.17 CFM",
+"7847": "1550 RPM",
 "7841": "120 mm",
-"7846": "36.45 dBA"
+"7846": "25.6 dBA"
 }
 },
 {
-"id": "848373",
-"url": "https://www.epey.com/islemci-sogutucu/deep-cool-ag400-argb.html",
-"name": "DeepCool AG400 ARGB",
-"code": "R-AG400-BKANMC-G-2",
-"img": "https://resim.epey.com/848373/k_deep-cool-ag400-argb-2.jpg",
-"price": 1347.57,
-"sites": 8,
+"id": "763869",
+"url": "https://www.epey.com/islemci-sogutucu/arctic-liquid-freezer-ii-420-a-rgb.html",
+"name": "Arctic Liquid Freezer II 420 A-RGB",
+"code": "ACFRE00109A",
+"img": "https://resim.epey.com/763869/k_arctic-liquid-freezer-ii-420-a-rgb-1.jpg",
+"price": 4455.0,
+"sites": 3,
 "score": null,
 "cols": {
-"7845": "75.89 CFM",
-"7847": "2000 RPM",
-"7841": "120 mm",
-"7846": "31.6 dBA"
+"7845": "68.9 CFM",
+"7847": "1800 RPM",
+"7841": "140 mm",
+"7846": "22.5 dBA"
 }
 },
 {
@@ -1122,22 +1042,6 @@
 }
 },
 {
-"id": "1072095",
-"url": "https://www.epey.com/islemci-sogutucu/tcomas-neox.html",
-"name": "Tcomas Neox",
-"code": "NEOXN2BK36DWW",
-"img": "https://resim.epey.com/1072095/k_tcomas-neox-1.jpg",
-"price": 11499.0,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "75.5 CFM",
-"7847": "3000 RPM",
-"7841": "120 mm",
-"7846": "37.5 dBA"
-}
-},
-{
 "id": "1068816",
 "url": "https://www.epey.com/islemci-sogutucu/james-donkey-lugis-jdc360.html",
 "name": "James Donkey Lugis JDC360",
@@ -1154,35 +1058,19 @@
 }
 },
 {
-"id": "1054080",
-"url": "https://www.epey.com/islemci-sogutucu/dragos-rock-360.html",
-"name": "Dragos Rock 360",
-"code": "",
-"img": "https://resim.epey.com/1054080/k_dragos-rock-360-4.png",
-"price": 5799.0,
-"sites": 1,
+"id": "1033828",
+"url": "https://www.epey.com/islemci-sogutucu/arctic-liquid-freezer-iii-pro-420.html",
+"name": "Arctic Liquid Freezer III Pro 420",
+"code": "ACFRE00181A",
+"img": "https://resim.epey.com/1033828/k_arctic-liquid-freezer-iii-pro-420-1.png",
+"price": 6599.0,
+"sites": 5,
 "score": null,
 "cols": {
-"7845": "57 CFM",
-"7847": "2000 RPM",
-"7841": "120 mm",
-"7846": "25 dBA"
-}
-},
-{
-"id": "1037274",
-"url": "https://www.epey.com/islemci-sogutucu/green-glacier-240-eco.html",
-"name": "Green Glacier 240 Eco",
-"code": "",
-"img": "https://resim.epey.com/1037274/k_green-glacier-240-eco-1.png",
-"price": 1809.0,
-"sites": 2,
-"score": null,
-"cols": {
-"7845": "80 CFM",
-"7847": "2100 RPM",
-"7841": "120 mm",
-"7846": "26 dBA"
+"7845": "110 CFM",
+"7847": "2500 RPM",
+"7841": "140 mm",
+"7846": "-"
 }
 },
 {
@@ -1266,6 +1154,22 @@
 }
 },
 {
+"id": "962791",
+"url": "https://www.epey.com/islemci-sogutucu/asus-proart-lc360.html",
+"name": "Asus ProArt LC360",
+"code": "",
+"img": "https://resim.epey.com/962791/k_asus-proart-lc360-1.png",
+"price": 8911.2,
+"sites": 10,
+"score": null,
+"cols": {
+"7845": "68.99 CFM",
+"7847": "3000 RPM",
+"7841": "120 mm",
+"7846": "39.5 dBA"
+}
+},
+{
 "id": "919454",
 "url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-spirit-120-evo-argb.html",
 "name": "Thermalright Assassin Spirit 120 EVO ARGB",
@@ -1282,35 +1186,19 @@
 }
 },
 {
-"id": "814703",
-"url": "https://www.epey.com/islemci-sogutucu/deep-cool-ak400.html",
-"name": "DeepCool AK400",
-"code": "R-AK400-BKNNMN-G-1",
-"img": "https://resim.epey.com/814703/k_deep-cool-ak400-4.jpg",
-"price": 2204.02,
-"sites": 1,
+"id": "848373",
+"url": "https://www.epey.com/islemci-sogutucu/deep-cool-ag400-argb.html",
+"name": "DeepCool AG400 ARGB",
+"code": "R-AG400-BKANMC-G-2",
+"img": "https://resim.epey.com/848373/k_deep-cool-ag400-argb-2.jpg",
+"price": 1347.57,
+"sites": 8,
 "score": null,
 "cols": {
-"7845": "66.47 CFM",
-"7847": "1850 RPM",
+"7845": "75.89 CFM",
+"7847": "2000 RPM",
 "7841": "120 mm",
-"7846": "29 dBA"
-}
-},
-{
-"id": "763869",
-"url": "https://www.epey.com/islemci-sogutucu/arctic-liquid-freezer-ii-420-a-rgb.html",
-"name": "Arctic Liquid Freezer II 420 A-RGB",
-"code": "ACFRE00109A",
-"img": "https://resim.epey.com/763869/k_arctic-liquid-freezer-ii-420-a-rgb-1.jpg",
-"price": 4455.0,
-"sites": 3,
-"score": null,
-"cols": {
-"7845": "68.9 CFM",
-"7847": "1800 RPM",
-"7841": "140 mm",
-"7846": "22.5 dBA"
+"7846": "31.6 dBA"
 }
 },
 {
@@ -1327,38 +1215,6 @@
 "7847": "1500 RPM",
 "7841": "140 mm",
 "7846": "24.6 dBA"
-}
-},
-{
-"id": "744677",
-"url": "https://www.epey.com/islemci-sogutucu/deep-cool-ak620.html",
-"name": "DeepCool AK620",
-"code": "R-AK620-BKNNMT-G",
-"img": "https://resim.epey.com/744677/k_deep-cool-ak620-3.jpg",
-"price": 3772.02,
-"sites": 8,
-"score": null,
-"cols": {
-"7845": "68.99 CFM",
-"7847": "1850 RPM",
-"7841": "120 mm",
-"7846": "28 dBA"
-}
-},
-{
-"id": "1041120",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-wonder-vision-360-turbo-argb.html",
-"name": "Thermalright Wonder Vision 360 Turbo ARGB",
-"code": "",
-"img": "https://resim.epey.com/1041120/k_thermalright-wonder-vision-360-turbo-argb-1.png",
-"price": 15806.42,
-"sites": 5,
-"score": null,
-"cols": {
-"7845": "120.38 CFM",
-"7847": "3000 RPM",
-"7841": "120 mm",
-"7846": "44.7 dBA"
 }
 },
 {
@@ -1410,6 +1266,22 @@
 }
 },
 {
+"id": "1077872",
+"url": "https://www.epey.com/islemci-sogutucu/asus-rog-strix-slc-iv-360-argb-lcd.html",
+"name": "Asus ROG Strix SLC IV 360 ARGB LCD",
+"code": "90RC01S1-B0EAY0",
+"img": "https://resim.epey.com/1077872/k_asus-rog-strix-slc-iv-360-argb-1.jpg",
+"price": 12599.0,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "82.57 CFM",
+"7847": "2500 RPM",
+"7841": "120 mm",
+"7846": "35.78 dBA"
+}
+},
+{
 "id": "1065998",
 "url": "https://www.epey.com/islemci-sogutucu/1stplayer-cryo-cy12d.html",
 "name": "1Stplayer Cryo CY12D",
@@ -1442,6 +1314,22 @@
 }
 },
 {
+"id": "1047226",
+"url": "https://www.epey.com/islemci-sogutucu/next-gaming-nitro-cool-ng-360c.html",
+"name": "Next Gaming Nitro Cool NG-360C",
+"code": "",
+"img": "https://resim.epey.com/1047226/k_next-gaming-nitro-cool-ng-360c-1.png",
+"price": 2692.35,
+"sites": 5,
+"score": null,
+"cols": {
+"7845": "67.3 CFM",
+"7847": "1800 RPM",
+"7841": "120 mm",
+"7846": "-"
+}
+},
+{
 "id": "1047159",
 "url": "https://www.epey.com/islemci-sogutucu/thermaltake-th360-v3-argb.html",
 "name": "Thermaltake TH360 V3 ARGB",
@@ -1458,19 +1346,35 @@
 }
 },
 {
-"id": "1032824",
-"url": "https://www.epey.com/islemci-sogutucu/lian-li-hydroshift-ii-lcd-c-360tl.html",
-"name": "Lian Li HydroShift II LCD-C 360TL",
-"code": "GHS2LCD36TB",
-"img": "https://resim.epey.com/1032824/k_lian-li-hydroshift-ii-lcd-c-360tl-2.png",
-"price": 11000.0,
-"sites": 8,
+"id": "1037274",
+"url": "https://www.epey.com/islemci-sogutucu/green-glacier-240-eco.html",
+"name": "Green Glacier 240 Eco",
+"code": "",
+"img": "https://resim.epey.com/1037274/k_green-glacier-240-eco-1.png",
+"price": 1809.0,
+"sites": 2,
 "score": null,
 "cols": {
-"7845": "90.1 CFM",
-"7847": "2600 RPM",
+"7845": "80 CFM",
+"7847": "2100 RPM",
 "7841": "120 mm",
-"7846": "33 dBA"
+"7846": "26 dBA"
+}
+},
+{
+"id": "1030256",
+"url": "https://www.epey.com/islemci-sogutucu/thermaltake-ux400-argb.html",
+"name": "Thermaltake UX400 ARGB",
+"code": "CL-P142-AL12SW-A",
+"img": "https://resim.epey.com/1030256/k_thermaltake-ux400-argb-1.png",
+"price": 1269.0,
+"sites": 10,
+"score": null,
+"cols": {
+"7845": "62.72 CFM",
+"7847": "1800 RPM",
+"7841": "120 mm",
+"7846": "25 dBA"
 }
 },
 {
@@ -1487,6 +1391,54 @@
 "7847": "-",
 "7841": "120 mm",
 "7846": "28.8 dBA"
+}
+},
+{
+"id": "1025207",
+"url": "https://www.epey.com/islemci-sogutucu/deepcool-le360-v2.html",
+"name": "DeepCool LE360 V2",
+"code": "R-LE360-BKAMMC-G-2",
+"img": "https://resim.epey.com/1025207/k_deepcool-le360-v2-1.png",
+"price": 3723.02,
+"sites": 8,
+"score": null,
+"cols": {
+"7845": "75.89 CFM",
+"7847": "2100 RPM",
+"7841": "120 mm",
+"7846": "31.6 dBA"
+}
+},
+{
+"id": "1004864",
+"url": "https://www.epey.com/islemci-sogutucu/fsp-ae24.html",
+"name": "FSP AE24",
+"code": "",
+"img": "https://resim.epey.com/1004864/k_fsp-ae24-1.png",
+"price": 3199.0,
+"sites": 8,
+"score": null,
+"cols": {
+"7845": "81.7 CFM",
+"7847": "2300 RPM",
+"7841": "120 mm",
+"7846": "36 dBA"
+}
+},
+{
+"id": "1001190",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-x-120-r-digital-argb.html",
+"name": "Thermalright Assassin X 120 R Digital ARGB",
+"code": "",
+"img": "https://resim.epey.com/1001190/k_thermalright-assassin-x-120-r-digital-argb-1.png",
+"price": 1959.02,
+"sites": 6,
+"score": null,
+"cols": {
+"7845": "70.84 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "29.8 dBA"
 }
 },
 {
@@ -1538,22 +1490,6 @@
 }
 },
 {
-"id": "985405",
-"url": "https://www.epey.com/islemci-sogutucu/thermaltake-astria-200.html",
-"name": "Thermaltake Astria 200",
-"code": "CL-P119-AL12SW-A",
-"img": "https://resim.epey.com/985405/k_thermaltake-astria-200-1.png",
-"price": 2159.1,
-"sites": 9,
-"score": null,
-"cols": {
-"7845": "65 CFM",
-"7847": "1800 RPM",
-"7841": "120 mm",
-"7846": "26.8 dBA"
-}
-},
-{
 "id": "985340",
 "url": "https://www.epey.com/islemci-sogutucu/thermalright-frozen-vision-360.html",
 "name": "Thermalright Frozen Vision 360",
@@ -1570,51 +1506,35 @@
 }
 },
 {
-"id": "985030",
-"url": "https://www.epey.com/islemci-sogutucu/deepcool-ak620-digital.html",
-"name": "DeepCool AK620 Digital",
-"code": "R-AK620-BKADMN-G",
-"img": "https://resim.epey.com/985030/k_deepcool-ak620-digital-1.png",
-"price": 3199.0,
-"sites": 3,
+"id": "983770",
+"url": "https://www.epey.com/islemci-sogutucu/zoko-ice-pro-wp4-rgb.html",
+"name": "Zoko Ice Pro WP4",
+"code": "BP4",
+"img": "https://resim.epey.com/983770/k_zoko-ice-pro-4.png",
+"price": 957.9,
+"sites": 4,
 "score": null,
 "cols": {
-"7845": "68.99 CFM",
-"7847": "1850 RPM",
+"7845": "58.5 CFM",
+"7847": "2000 RPM",
 "7841": "120 mm",
-"7846": "28 dBA"
+"7846": "-"
 }
 },
 {
-"id": "962791",
-"url": "https://www.epey.com/islemci-sogutucu/asus-proart-lc360.html",
-"name": "Asus ProArt LC360",
+"id": "973176",
+"url": "https://www.epey.com/islemci-sogutucu/asus-prime-lc-360.html",
+"name": "Asus Prime LC 360",
 "code": "",
-"img": "https://resim.epey.com/962791/k_asus-proart-lc360-1.png",
-"price": 8911.2,
-"sites": 10,
+"img": "https://resim.epey.com/973176/k_asus-prime-lc-360-1.png",
+"price": 4999.0,
+"sites": 12,
 "score": null,
 "cols": {
-"7845": "68.99 CFM",
-"7847": "3000 RPM",
+"7845": "75.7 CFM",
+"7847": "2200 RPM",
 "7841": "120 mm",
-"7846": "39.5 dBA"
-}
-},
-{
-"id": "941320",
-"url": "https://www.epey.com/islemci-sogutucu/intel-laminar-rm1.html",
-"name": "Intel Laminar RM1",
-"code": "M23901-001",
-"img": "https://resim.epey.com/941320/k_intel-laminar-rm1-1.jpg",
-"price": 700.0,
-"sites": 9,
-"score": null,
-"cols": {
-"7845": "-",
-"7847": "3150 RPM",
-"7841": "80 mm",
-"7846": "29 dBA"
+"7846": "37.6 dBA"
 }
 },
 {
@@ -1634,22 +1554,6 @@
 }
 },
 {
-"id": "935809",
-"url": "https://www.epey.com/islemci-sogutucu/revenge-nitro-cold-100.html",
-"name": "Revenge Nitro Cold 100",
-"code": "",
-"img": "https://resim.epey.com/935809/k_revenge-nitro-cold-100-1.jpg",
-"price": 1319.0,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "-",
-"7847": "2200 RPM",
-"7841": "120 mm",
-"7846": "25 dBA"
-}
-},
-{
 "id": "924422",
 "url": "https://www.epey.com/islemci-sogutucu/corsair-icue-link-h100i.html",
 "name": "Corsair iCUE Link H100i",
@@ -1663,6 +1567,38 @@
 "7847": "2400 RPM",
 "7841": "120 mm",
 "7846": "-"
+}
+},
+{
+"id": "849907",
+"url": "https://www.epey.com/islemci-sogutucu/asus-rog-ryuo-iii-360.html",
+"name": "Asus ROG Ryuo III 360",
+"code": "",
+"img": "https://resim.epey.com/849907/k_asus-rog-ryuo-iii-360-1.jpg",
+"price": 7999.0,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "70.07 CFM",
+"7847": "2200 RPM",
+"7841": "120 mm",
+"7846": "36.45 dBA"
+}
+},
+{
+"id": "814703",
+"url": "https://www.epey.com/islemci-sogutucu/deep-cool-ak400.html",
+"name": "DeepCool AK400",
+"code": "R-AK400-BKNNMN-G-1",
+"img": "https://resim.epey.com/814703/k_deep-cool-ak400-4.jpg",
+"price": 2204.02,
+"sites": 1,
+"score": null,
+"cols": {
+"7845": "66.47 CFM",
+"7847": "1850 RPM",
+"7841": "120 mm",
+"7846": "29 dBA"
 }
 },
 {
@@ -1698,19 +1634,67 @@
 }
 },
 {
-"id": "1077872",
-"url": "https://www.epey.com/islemci-sogutucu/asus-rog-strix-slc-iv-360-argb-lcd.html",
-"name": "Asus ROG Strix SLC IV 360 ARGB LCD",
-"code": "90RC01S1-B0EAY0",
-"img": "https://resim.epey.com/1077872/k_asus-rog-strix-slc-iv-360-argb-1.jpg",
-"price": 12599.0,
-"sites": 4,
+"id": "961739",
+"url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-i240.html",
+"name": "MSI MAG CoreLiquid I240",
+"code": "",
+"img": "https://resim.epey.com/961739/k_msi-mag-coreliquid-i240-1.png",
+"price": 3821.09,
+"sites": 9,
 "score": null,
 "cols": {
-"7845": "82.57 CFM",
-"7847": "2500 RPM",
+"7845": "70.7 CFM",
+"7847": "-",
 "7841": "120 mm",
-"7846": "35.78 dBA"
+"7846": "-"
+}
+},
+{
+"id": "744677",
+"url": "https://www.epey.com/islemci-sogutucu/deep-cool-ak620.html",
+"name": "DeepCool AK620",
+"code": "R-AK620-BKNNMT-G",
+"img": "https://resim.epey.com/744677/k_deep-cool-ak620-3.jpg",
+"price": 3772.02,
+"sites": 7,
+"score": null,
+"cols": {
+"7845": "68.99 CFM",
+"7847": "1850 RPM",
+"7841": "120 mm",
+"7846": "28 dBA"
+}
+},
+{
+"id": "1041120",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-wonder-vision-360-turbo-argb.html",
+"name": "Thermalright Wonder Vision 360 Turbo ARGB",
+"code": "",
+"img": "https://resim.epey.com/1041120/k_thermalright-wonder-vision-360-turbo-argb-1.png",
+"price": 15806.42,
+"sites": 5,
+"score": null,
+"cols": {
+"7845": "120.38 CFM",
+"7847": "3000 RPM",
+"7841": "120 mm",
+"7846": "44.7 dBA"
+}
+},
+{
+"id": "911139",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-phantom-spirit-120-se.html",
+"name": "Thermalright Phantom Spirit 120 SE",
+"code": "",
+"img": "https://resim.epey.com/911139/k_thermalright-phantom-spirit-120-se-1.jpg",
+"price": 3390.55,
+"sites": 2,
+"score": null,
+"cols": {
+"7845": "66.17 CFM",
+"7847": "1500 RPM",
+"7841": "120 mm",
+"7846": "25.6 dBA"
 }
 },
 {
@@ -1727,22 +1711,6 @@
 "7847": "2300 RPM",
 "7841": "120 mm",
 "7846": "39.58 dBA"
-}
-},
-{
-"id": "1075349",
-"url": "https://www.epey.com/islemci-sogutucu/asus-prime-slc-ii-360.html",
-"name": "Asus Prime SLC II 360",
-"code": "",
-"img": "https://resim.epey.com/1075349/k_asus-prime-slc-ii-360-1.jpg",
-"price": 9799.0,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "78.3 CFM",
-"7847": "2600 RPM",
-"7841": "120 mm",
-"7846": "35.6 dBA"
 }
 },
 {
@@ -1794,22 +1762,6 @@
 }
 },
 {
-"id": "1061564",
-"url": "https://www.epey.com/islemci-sogutucu/ocypus-delta-a40-se-argb.html",
-"name": "Ocypus Delta A40 SE ARGB",
-"code": "Delta-A40-BK1AAWN00S-GL",
-"img": "https://resim.epey.com/1061564/k_ocypus-delta-a40-se-argb-7.png",
-"price": 799.0,
-"sites": 1,
-"score": null,
-"cols": {
-"7845": "60 CFM",
-"7847": "1800 RPM",
-"7841": "120 mm",
-"7846": "31 dBA"
-}
-},
-{
 "id": "1054291",
 "url": "https://www.epey.com/islemci-sogutucu/xigmatek-fenix-ii-360.html",
 "name": "Xigmatek Fenix II 360",
@@ -1826,19 +1778,19 @@
 }
 },
 {
-"id": "1047226",
-"url": "https://www.epey.com/islemci-sogutucu/next-gaming-nitro-cool-ng-360c.html",
-"name": "Next Gaming Nitro Cool NG-360C",
+"id": "1048699",
+"url": "https://www.epey.com/islemci-sogutucu/green-notus-95-argb.html",
+"name": "Green Notus 95 ARGB",
 "code": "",
-"img": "https://resim.epey.com/1047226/k_next-gaming-nitro-cool-ng-360c-1.png",
-"price": 2692.35,
-"sites": 5,
+"img": "https://resim.epey.com/1048699/k_green-notus-95-argb-1.png",
+"price": 424.0,
+"sites": 2,
 "score": null,
 "cols": {
-"7845": "67.3 CFM",
-"7847": "1800 RPM",
-"7841": "120 mm",
-"7846": "-"
+"7845": "35 CFM",
+"7847": "2000 RPM",
+"7841": "92 mm",
+"7846": "28 dBA"
 }
 },
 {
@@ -1879,7 +1831,7 @@
 "name": "Arctic Liquid Freezer III Pro 280 ARGB",
 "code": "ACFRE00183A",
 "img": "https://resim.epey.com/1036066/k_arctic-liquid-freezer-iii-pro-280-argb-5.png",
-"price": 5059.08,
+"price": 5114.07,
 "sites": 1,
 "score": null,
 "cols": {
@@ -1887,6 +1839,38 @@
 "7847": "2500 RPM",
 "7841": "140 mm",
 "7846": "-"
+}
+},
+{
+"id": "1035548",
+"url": "https://www.epey.com/islemci-sogutucu/zoko-ice-pro-wp6-rgb.html",
+"name": "Zoko Ice Pro WP6",
+"code": "BP6",
+"img": "https://resim.epey.com/1035548/k_zoko-ice-pro-wp6-rgb-1.png",
+"price": 1106.7,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "58.5 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "50 dBA"
+}
+},
+{
+"id": "1032824",
+"url": "https://www.epey.com/islemci-sogutucu/lian-li-hydroshift-ii-lcd-c-360tl.html",
+"name": "Lian Li HydroShift II LCD-C 360TL",
+"code": "GHS2LCD36TB",
+"img": "https://resim.epey.com/1032824/k_lian-li-hydroshift-ii-lcd-c-360tl-2.png",
+"price": 11000.0,
+"sites": 8,
+"score": null,
+"cols": {
+"7845": "90.1 CFM",
+"7847": "2600 RPM",
+"7841": "120 mm",
+"7846": "33 dBA"
 }
 },
 {
@@ -1986,6 +1970,22 @@
 }
 },
 {
+"id": "999252",
+"url": "https://www.epey.com/islemci-sogutucu/asus-prime-lc-360-lcd.html",
+"name": "Asus Prime LC 360 ARGB LCD",
+"code": "",
+"img": "https://resim.epey.com/999252/k_asus-prime-lc-360-lcd-1.png",
+"price": 6928.5,
+"sites": 8,
+"score": null,
+"cols": {
+"7845": "77.22 CFM",
+"7847": "2500 RPM",
+"7841": "120 mm",
+"7846": "36.5 dBA"
+}
+},
+{
 "id": "988933",
 "url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-x-120-refined-se-plus-v2.html",
 "name": "Thermalright Assassin X 120 Refined SE Plus V2",
@@ -2018,35 +2018,35 @@
 }
 },
 {
-"id": "983770",
-"url": "https://www.epey.com/islemci-sogutucu/zoko-ice-pro-wp4-rgb.html",
-"name": "Zoko Ice Pro WP4",
-"code": "BP4",
-"img": "https://resim.epey.com/983770/k_zoko-ice-pro-4.png",
-"price": 957.9,
-"sites": 4,
+"id": "985030",
+"url": "https://www.epey.com/islemci-sogutucu/deepcool-ak620-digital.html",
+"name": "DeepCool AK620 Digital",
+"code": "R-AK620-BKADMN-G",
+"img": "https://resim.epey.com/985030/k_deepcool-ak620-digital-1.png",
+"price": 3199.0,
+"sites": 3,
 "score": null,
 "cols": {
-"7845": "58.5 CFM",
-"7847": "2000 RPM",
+"7845": "68.99 CFM",
+"7847": "1850 RPM",
 "7841": "120 mm",
-"7846": "-"
+"7846": "28 dBA"
 }
 },
 {
-"id": "973176",
-"url": "https://www.epey.com/islemci-sogutucu/asus-prime-lc-360.html",
-"name": "Asus Prime LC 360",
-"code": "",
-"img": "https://resim.epey.com/973176/k_asus-prime-lc-360-1.png",
-"price": 4999.0,
-"sites": 12,
+"id": "983778",
+"url": "https://www.epey.com/islemci-sogutucu/green-notus-400-argb.html",
+"name": "Green Notus 400 ARGB",
+"code": "30900910",
+"img": "https://resim.epey.com/983778/k_green-notus-400-argb-1.png",
+"price": 859.0,
+"sites": 2,
 "score": null,
 "cols": {
-"7845": "75.7 CFM",
-"7847": "2200 RPM",
+"7845": "70 CFM",
+"7847": "1800 RPM",
 "7841": "120 mm",
-"7846": "37.6 dBA"
+"7846": "28 dBA"
 }
 },
 {
@@ -2082,19 +2082,19 @@
 }
 },
 {
-"id": "935868",
-"url": "https://www.epey.com/islemci-sogutucu/archon-forza-240.html",
-"name": "Archon Forza 240",
-"code": "",
-"img": "https://resim.epey.com/935868/k_archon-forza-240-2.jpg",
-"price": 2253.02,
-"sites": 4,
+"id": "941320",
+"url": "https://www.epey.com/islemci-sogutucu/intel-laminar-rm1.html",
+"name": "Intel Laminar RM1",
+"code": "M23901-001",
+"img": "https://resim.epey.com/941320/k_intel-laminar-rm1-1.jpg",
+"price": 700.0,
+"sites": 9,
 "score": null,
 "cols": {
-"7845": "75 CFM",
-"7847": "1800 RPM",
-"7841": "120 mm",
-"7846": "35 dBA"
+"7845": "-",
+"7847": "3150 RPM",
+"7841": "80 mm",
+"7846": "29 dBA"
 }
 },
 {
@@ -2114,22 +2114,6 @@
 }
 },
 {
-"id": "855182",
-"url": "https://www.epey.com/islemci-sogutucu/cougar-forza-85.html",
-"name": "Cougar Forza 85",
-"code": "3MFZA85.0001",
-"img": "https://resim.epey.com/855182/k_cougar-forza-85-1.jpg",
-"price": 2799.0,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "82.48 CFM",
-"7847": "2000 RPM",
-"7841": "120 mm",
-"7846": "34.5 dBA"
-}
-},
-{
 "id": "886645",
 "url": "https://www.epey.com/islemci-sogutucu/lian-li-galahad-ii-trinity-aio-240.html",
 "name": "Lian Li Galahad II Trinity AIO 240",
@@ -2146,6 +2130,22 @@
 }
 },
 {
+"id": "883226",
+"url": "https://www.epey.com/islemci-sogutucu/cooler-master-masterliquid-360l-core-argb.html",
+"name": "Cooler Master MasterLiquid 360L Core ARGB",
+"code": "MLW-D36M-A18PZ-R1",
+"img": "https://resim.epey.com/883226/k_cooler-master-masterliquid-ml360l-1.jpg",
+"price": 5499.0,
+"sites": 2,
+"score": null,
+"cols": {
+"7845": "71.93 CFM",
+"7847": "1750 RPM",
+"7841": "120 mm",
+"7846": "27.2 dBA"
+}
+},
+{
 "id": "794451",
 "url": "https://www.epey.com/islemci-sogutucu/thermaltake-water-3-0-argb-240.html",
 "name": "Thermaltake Water 3.0 ARGB 240",
@@ -2159,6 +2159,22 @@
 "7847": "1500 RPM",
 "7841": "120 mm",
 "7846": "25.8 dBA"
+}
+},
+{
+"id": "768988",
+"url": "https://www.epey.com/islemci-sogutucu/asus-rog-strix-lc-ii-240-argb.html",
+"name": "Asus ROG Strix LC II 240 ARGB",
+"code": "90RC00E0-M0UAY0",
+"img": "https://resim.epey.com/768988/k_asus-rog-strix-lc-ii-240-argb-90rc00e0-m0uay0-1.jpg",
+"price": 4999.0,
+"sites": 9,
+"score": null,
+"cols": {
+"7845": "80.95 CFM",
+"7847": "2500 RPM",
+"7841": "120 mm",
+"7846": "37.6 dBA"
 }
 },
 {
@@ -2194,19 +2210,19 @@
 }
 },
 {
-"id": "911139",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-phantom-spirit-120-se.html",
-"name": "Thermalright Phantom Spirit 120 SE",
+"id": "1075349",
+"url": "https://www.epey.com/islemci-sogutucu/asus-prime-slc-ii-360.html",
+"name": "Asus Prime SLC II 360",
 "code": "",
-"img": "https://resim.epey.com/911139/k_thermalright-phantom-spirit-120-se-1.jpg",
-"price": 3390.55,
-"sites": 2,
+"img": "https://resim.epey.com/1075349/k_asus-prime-slc-ii-360-1.jpg",
+"price": 9799.0,
+"sites": 4,
 "score": null,
 "cols": {
-"7845": "66.17 CFM",
-"7847": "1500 RPM",
+"7845": "78.3 CFM",
+"7847": "2600 RPM",
 "7841": "120 mm",
-"7846": "25.6 dBA"
+"7846": "35.6 dBA"
 }
 },
 {
@@ -2242,6 +2258,22 @@
 }
 },
 {
+"id": "1061564",
+"url": "https://www.epey.com/islemci-sogutucu/ocypus-delta-a40-se-argb.html",
+"name": "Ocypus Delta A40 SE ARGB",
+"code": "Delta-A40-BK1AAWN00S-GL",
+"img": "https://resim.epey.com/1061564/k_ocypus-delta-a40-se-argb-7.png",
+"price": 799.0,
+"sites": 1,
+"score": null,
+"cols": {
+"7845": "60 CFM",
+"7847": "1800 RPM",
+"7841": "120 mm",
+"7846": "31 dBA"
+}
+},
+{
 "id": "1054451",
 "url": "https://www.epey.com/islemci-sogutucu/rampage-octagon-b70.html",
 "name": "Rampage Octagon B70",
@@ -2274,6 +2306,38 @@
 }
 },
 {
+"id": "1054251",
+"url": "https://www.epey.com/islemci-sogutucu/xigmatek-ak6.html",
+"name": "Xigmatek AK6",
+"code": "EN45844",
+"img": "https://resim.epey.com/1054251/k_xigmatek-ak6-4.png",
+"price": 2199.0,
+"sites": 2,
+"score": null,
+"cols": {
+"7845": "78 CFM",
+"7847": "1800 RPM",
+"7841": "120 mm",
+"7846": "28 dBA"
+}
+},
+{
+"id": "1054080",
+"url": "https://www.epey.com/islemci-sogutucu/dragos-rock-360.html",
+"name": "Dragos Rock 360",
+"code": "",
+"img": "https://resim.epey.com/1054080/k_dragos-rock-360-4.png",
+"price": 5799.0,
+"sites": 1,
+"score": null,
+"cols": {
+"7845": "57 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "25 dBA"
+}
+},
+{
 "id": "1053809",
 "url": "https://www.epey.com/islemci-sogutucu/hyper-rocket-wl240l040-argb.html",
 "name": "Hyper Rocket WL240L040 ARGB",
@@ -2287,6 +2351,22 @@
 "7847": "2300 RPM",
 "7841": "120 mm",
 "7846": "36 dBA"
+}
+},
+{
+"id": "1053298",
+"url": "https://www.epey.com/islemci-sogutucu/cooler-master-masterliquid-core-nex-digital-360.html",
+"name": "Cooler Master MasterLiquid Core Nex Digital 360",
+"code": "MLX-D36M-A18PA-RD​",
+"img": "https://resim.epey.com/1053298/k_cooler-master-masterliquid-core-nex-digital-360-1.png",
+"price": 6799.0,
+"sites": 9,
+"score": null,
+"cols": {
+"7845": "71.9 CFM",
+"7847": "1750 RPM",
+"7841": "120 mm",
+"7846": "27.2 dBA"
 }
 },
 {
@@ -2306,6 +2386,22 @@
 }
 },
 {
+"id": "1052494",
+"url": "https://www.epey.com/islemci-sogutucu/xpg-maestro-plus-62da.html",
+"name": "XPG Maestro Plus 62DA",
+"code": "",
+"img": "https://resim.epey.com/1052494/k_xpg-maestro-plus-62da-3.png",
+"price": 2819.06,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "70.81 CFM",
+"7847": "1800 RPM",
+"7841": "120 mm",
+"7846": "21.44 dBA"
+}
+},
+{
 "id": "1049889",
 "url": "https://www.epey.com/islemci-sogutucu/thermalright-peerless-vision-360-ub-argb.html",
 "name": "Thermalright Peerless Vision 360 UB ARGB",
@@ -2322,19 +2418,19 @@
 }
 },
 {
-"id": "1048699",
-"url": "https://www.epey.com/islemci-sogutucu/green-notus-95-argb.html",
-"name": "Green Notus 95 ARGB",
-"code": "",
-"img": "https://resim.epey.com/1048699/k_green-notus-95-argb-1.png",
-"price": 424.0,
+"id": "1048648",
+"url": "https://www.epey.com/islemci-sogutucu/nzxt-kraken-plus-280.html",
+"name": "NZXT Kraken Plus 280",
+"code": "RL-KN280-B2",
+"img": "https://resim.epey.com/1048648/k_nzxt-kraken-plus-280-1.png",
+"price": 6499.0,
 "sites": 2,
 "score": null,
 "cols": {
-"7845": "35 CFM",
-"7847": "2000 RPM",
-"7841": "92 mm",
-"7846": "28 dBA"
+"7845": "93.20 CFM",
+"7847": "1700 RPM",
+"7841": "140 mm",
+"7846": "30 dBA"
 }
 },
 {
@@ -2418,6 +2514,22 @@
 }
 },
 {
+"id": "1039774",
+"url": "https://www.epey.com/islemci-sogutucu/ocypus-iota-a40.html",
+"name": "Ocypus Iota A40",
+"code": "Iota-A40-BK1NNWD00X-GL",
+"img": "https://resim.epey.com/1039774/k_ocypus-iota-a40-5.png",
+"price": 1175.02,
+"sites": 6,
+"score": null,
+"cols": {
+"7845": "77 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "29 dBA"
+}
+},
+{
 "id": "1035086",
 "url": "https://www.epey.com/islemci-sogutucu/segotep-k6-se.html",
 "name": "Segotep K6 SE",
@@ -2450,19 +2562,19 @@
 }
 },
 {
-"id": "1033146",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-wonder-vision-360-ub-argb.html",
-"name": "Thermalright Wonder Vision 360 UB ARGB",
-"code": "",
-"img": "https://resim.epey.com/1033146/k_thermalright-wonder-vision-360-ub-argb-1.png",
-"price": 15275.21,
-"sites": 5,
+"id": "1033703",
+"url": "https://www.epey.com/islemci-sogutucu/cooler-master-hyper-212-3dhp-black.html",
+"name": "Cooler Master Hyper 212 3DHP Black",
+"code": "MAY-T2HP-217PK-R1",
+"img": "https://resim.epey.com/1033703/k_cooler-master-hyper-212-3dhp-black-1.png",
+"price": 2181.53,
+"sites": 7,
 "score": null,
 "cols": {
-"7845": "69 CFM",
-"7847": "2150 RPM",
+"7845": "63.1 CFM",
+"7847": "2050 RPM",
 "7841": "120 mm",
-"7846": "27 dBA"
+"7846": "22.6 dBA"
 }
 },
 {
@@ -2511,54 +2623,6 @@
 "7847": "2050 RPM",
 "7841": "120 mm",
 "7846": "28.7 dBA"
-}
-},
-{
-"id": "1004864",
-"url": "https://www.epey.com/islemci-sogutucu/fsp-ae24.html",
-"name": "FSP AE24",
-"code": "",
-"img": "https://resim.epey.com/1004864/k_fsp-ae24-1.png",
-"price": 3199.0,
-"sites": 8,
-"score": null,
-"cols": {
-"7845": "81.7 CFM",
-"7847": "2300 RPM",
-"7841": "120 mm",
-"7846": "36 dBA"
-}
-},
-{
-"id": "1000219",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-hyper-vision-360-ub-argb.html",
-"name": "Thermalright Hyper Vision 360 UB ARGB",
-"code": "",
-"img": "https://resim.epey.com/1000219/k_thermalright-hyper-vision-360-ub-argb-1.png",
-"price": 9779.42,
-"sites": 7,
-"score": null,
-"cols": {
-"7845": "207 CFM",
-"7847": "2150 RPM",
-"7841": "120 mm",
-"7846": "27 dBA"
-}
-},
-{
-"id": "999252",
-"url": "https://www.epey.com/islemci-sogutucu/asus-prime-lc-360-lcd.html",
-"name": "Asus Prime LC 360 ARGB LCD",
-"code": "",
-"img": "https://resim.epey.com/999252/k_asus-prime-lc-360-lcd-1.png",
-"price": 6928.5,
-"sites": 8,
-"score": null,
-"cols": {
-"7845": "77.22 CFM",
-"7847": "2500 RPM",
-"7841": "120 mm",
-"7846": "36.5 dBA"
 }
 },
 {
@@ -2626,19 +2690,35 @@
 }
 },
 {
-"id": "983778",
-"url": "https://www.epey.com/islemci-sogutucu/green-notus-400-argb.html",
-"name": "Green Notus 400 ARGB",
-"code": "30900910",
-"img": "https://resim.epey.com/983778/k_green-notus-400-argb-1.png",
-"price": 859.0,
-"sites": 2,
+"id": "985405",
+"url": "https://www.epey.com/islemci-sogutucu/thermaltake-astria-200.html",
+"name": "Thermaltake Astria 200",
+"code": "CL-P119-AL12SW-A",
+"img": "https://resim.epey.com/985405/k_thermaltake-astria-200-1.png",
+"price": 2200.0,
+"sites": 9,
 "score": null,
 "cols": {
-"7845": "70 CFM",
+"7845": "65 CFM",
 "7847": "1800 RPM",
 "7841": "120 mm",
-"7846": "28 dBA"
+"7846": "26.8 dBA"
+}
+},
+{
+"id": "973438",
+"url": "https://www.epey.com/islemci-sogutucu/lian-li-hydroshift-lcd-aio-360s.html",
+"name": "Lian Li HydroShift LCD AIO 360S",
+"code": "G89.GHSLCD36SB.00",
+"img": "https://resim.epey.com/973438/k_lian-li-hydroshift-lcd-360s-1.png",
+"price": 10445.0,
+"sites": 6,
+"score": null,
+"cols": {
+"7845": "73.14 CFM",
+"7847": "2500 RPM",
+"7841": "120 mm",
+"7846": "29.8 dBA"
 }
 },
 {
@@ -2706,6 +2786,22 @@
 }
 },
 {
+"id": "935868",
+"url": "https://www.epey.com/islemci-sogutucu/archon-forza-240.html",
+"name": "Archon Forza 240",
+"code": "",
+"img": "https://resim.epey.com/935868/k_archon-forza-240-2.jpg",
+"price": 2253.02,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "75 CFM",
+"7847": "1800 RPM",
+"7841": "120 mm",
+"7846": "35 dBA"
+}
+},
+{
 "id": "935810",
 "url": "https://www.epey.com/islemci-sogutucu/revenge-nitro-cold-300.html",
 "name": "Revenge Nitro Cold 300",
@@ -2713,6 +2809,22 @@
 "img": "https://resim.epey.com/935810/k_revenge-nitro-cold-300-1.jpg",
 "price": 2421.0,
 "sites": 3,
+"score": null,
+"cols": {
+"7845": "-",
+"7847": "2200 RPM",
+"7841": "120 mm",
+"7846": "25 dBA"
+}
+},
+{
+"id": "935809",
+"url": "https://www.epey.com/islemci-sogutucu/revenge-nitro-cold-100.html",
+"name": "Revenge Nitro Cold 100",
+"code": "",
+"img": "https://resim.epey.com/935809/k_revenge-nitro-cold-100-1.jpg",
+"price": 1319.0,
+"sites": 4,
 "score": null,
 "cols": {
 "7845": "-",
@@ -2735,6 +2847,22 @@
 "7847": "1800 RPM",
 "7841": "120 mm",
 "7846": "35.2 dBA"
+}
+},
+{
+"id": "855182",
+"url": "https://www.epey.com/islemci-sogutucu/cougar-forza-85.html",
+"name": "Cougar Forza 85",
+"code": "3MFZA85.0001",
+"img": "https://resim.epey.com/855182/k_cougar-forza-85-1.jpg",
+"price": 2799.0,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "82.48 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "34.5 dBA"
 }
 },
 {
@@ -2770,22 +2898,6 @@
 }
 },
 {
-"id": "883226",
-"url": "https://www.epey.com/islemci-sogutucu/cooler-master-masterliquid-360l-core-argb.html",
-"name": "Cooler Master MasterLiquid 360L Core ARGB",
-"code": "MLW-D36M-A18PZ-R1",
-"img": "https://resim.epey.com/883226/k_cooler-master-masterliquid-ml360l-1.jpg",
-"price": 5499.0,
-"sites": 2,
-"score": null,
-"cols": {
-"7845": "71.93 CFM",
-"7847": "1750 RPM",
-"7841": "120 mm",
-"7846": "27.2 dBA"
-}
-},
-{
 "id": "884849",
 "url": "https://www.epey.com/islemci-sogutucu/asus-rog-ryujin-iii-240.html",
 "name": "Asus ROG Ryujin III 240",
@@ -2815,22 +2927,6 @@
 "7847": "1800 RPM",
 "7841": "120 mm",
 "7846": "33 dBA"
-}
-},
-{
-"id": "768988",
-"url": "https://www.epey.com/islemci-sogutucu/asus-rog-strix-lc-ii-240-argb.html",
-"name": "Asus ROG Strix LC II 240 ARGB",
-"code": "90RC00E0-M0UAY0",
-"img": "https://resim.epey.com/768988/k_asus-rog-strix-lc-ii-240-argb-90rc00e0-m0uay0-1.jpg",
-"price": 4999.0,
-"sites": 9,
-"score": null,
-"cols": {
-"7845": "80.95 CFM",
-"7847": "2500 RPM",
-"7841": "120 mm",
-"7846": "37.6 dBA"
 }
 },
 {
@@ -2914,6 +3010,22 @@
 }
 },
 {
+"id": "814748",
+"url": "https://www.epey.com/islemci-sogutucu/gameforce-copper-6.html",
+"name": "Gameforce Copper 6",
+"code": "",
+"img": "https://resim.epey.com/814748/k_gameforce-copper-6-1.png",
+"price": 986.9,
+"sites": 5,
+"score": null,
+"cols": {
+"7845": "-",
+"7847": "-",
+"7841": "90 mm",
+"7846": "-"
+}
+},
+{
 "id": "1018188",
 "url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-a15-360.html",
 "name": "MSI MAG CoreLiquid A15 360",
@@ -2952,7 +3064,7 @@
 "code": "",
 "img": "https://resim.epey.com/1076128/k_msi-mpg-coreliquid-p22-360-1.jpg",
 "price": 8399.0,
-"sites": 2,
+"sites": 3,
 "score": null,
 "cols": {
 "7845": "62.6 CFM",
@@ -3047,7 +3159,7 @@
 "name": "Fazeon A5 120TRA",
 "code": "",
 "img": "https://resim.epey.com/1063855/k_fazeon-a5-120tra-1.png",
-"price": 1015.93,
+"price": 1026.97,
 "sites": 5,
 "score": null,
 "cols": {
@@ -3064,7 +3176,7 @@
 "code": "",
 "img": "https://resim.epey.com/1061471/k_thermalright-peerless-assassin-120-digital-black-1.png",
 "price": 3144.82,
-"sites": 5,
+"sites": 6,
 "score": null,
 "cols": {
 "7845": "88.89 CFM",
@@ -3080,7 +3192,7 @@
 "code": "",
 "img": "https://resim.epey.com/1058623/k_thermalright-peerless-assassin-140-se-1.png",
 "price": 2575.17,
-"sites": 5,
+"sites": 4,
 "score": null,
 "cols": {
 "7845": "77.8 CFM",
@@ -3127,7 +3239,7 @@
 "name": "James Donkey Lugis JDC240",
 "code": "",
 "img": "https://resim.epey.com/1055420/k_james-donkey-lugis-jdc240-1.png",
-"price": 2099.0,
+"price": 2459.0,
 "sites": 9,
 "score": null,
 "cols": {
@@ -3167,22 +3279,6 @@
 "7847": "2000 RPM",
 "7841": "120 mm",
 "7846": "25 dBA"
-}
-},
-{
-"id": "1053298",
-"url": "https://www.epey.com/islemci-sogutucu/cooler-master-masterliquid-core-nex-digital-360.html",
-"name": "Cooler Master MasterLiquid Core Nex Digital 360",
-"code": "MLX-D36M-A18PA-RD​",
-"img": "https://resim.epey.com/1053298/k_cooler-master-masterliquid-core-nex-digital-360-1.png",
-"price": 6799.0,
-"sites": 8,
-"score": null,
-"cols": {
-"7845": "71.9 CFM",
-"7847": "1750 RPM",
-"7841": "120 mm",
-"7846": "27.2 dBA"
 }
 },
 {
@@ -3234,22 +3330,6 @@
 }
 },
 {
-"id": "1048648",
-"url": "https://www.epey.com/islemci-sogutucu/nzxt-kraken-plus-280.html",
-"name": "NZXT Kraken Plus 280",
-"code": "RL-KN280-B2",
-"img": "https://resim.epey.com/1048648/k_nzxt-kraken-plus-280-1.png",
-"price": 6499.0,
-"sites": 2,
-"score": null,
-"cols": {
-"7845": "93.20 CFM",
-"7847": "1700 RPM",
-"7841": "140 mm",
-"7846": "30 dBA"
-}
-},
-{
 "id": "1047260",
 "url": "https://www.epey.com/islemci-sogutucu/next-gaming-nitro-cool-ng-240c.html",
 "name": "Next Gaming Nitro Cool NG-240C",
@@ -3272,7 +3352,7 @@
 "code": "R-AK500S-BKADMN-GJD",
 "img": "https://resim.epey.com/1045733/k_deepcool-ak500s-digital-se-1.png",
 "price": 2106.02,
-"sites": 6,
+"sites": 5,
 "score": null,
 "cols": {
 "7845": "68.99 CFM",
@@ -3314,51 +3394,19 @@
 }
 },
 {
-"id": "1039774",
-"url": "https://www.epey.com/islemci-sogutucu/ocypus-iota-a40.html",
-"name": "Ocypus Iota A40",
-"code": "Iota-A40-BK1NNWD00X-GL",
-"img": "https://resim.epey.com/1039774/k_ocypus-iota-a40-5.png",
-"price": 1175.02,
-"sites": 6,
-"score": null,
-"cols": {
-"7845": "77 CFM",
-"7847": "2000 RPM",
-"7841": "120 mm",
-"7846": "29 dBA"
-}
-},
-{
 "id": "1039744",
 "url": "https://www.epey.com/islemci-sogutucu/ocypus-iota-a62.html",
 "name": "Ocypus Iota A62",
 "code": "Iota-A62-BK2NNWD00X-GL",
 "img": "https://resim.epey.com/1039744/k_ocypus-iota-a62-6.png",
 "price": 2350.0,
-"sites": 4,
+"sites": 5,
 "score": null,
 "cols": {
 "7845": "77 CFM",
 "7847": "2000 RPM",
 "7841": "120 mm",
 "7846": "29 dBA"
-}
-},
-{
-"id": "1035548",
-"url": "https://www.epey.com/islemci-sogutucu/zoko-ice-pro-wp6-rgb.html",
-"name": "Zoko Ice Pro WP6",
-"code": "BP6",
-"img": "https://resim.epey.com/1035548/k_zoko-ice-pro-wp6-rgb-1.png",
-"price": 1106.7,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "58.5 CFM",
-"7847": "2000 RPM",
-"7841": "120 mm",
-"7846": "50 dBA"
 }
 },
 {
@@ -3399,7 +3447,7 @@
 "name": "Cooler Master Hyper 212 3DHP Black ARGB",
 "code": "MAY-T2HP-217PA-R1",
 "img": "https://resim.epey.com/1033708/k_cooler-master-hyper-212-3dhp-black-argb-2.png",
-"price": 2213.1,
+"price": 2318.8,
 "sites": 6,
 "score": null,
 "cols": {
@@ -3407,6 +3455,22 @@
 "7847": "2050 RPM",
 "7841": "120 mm",
 "7846": "22.6 dBA"
+}
+},
+{
+"id": "1027587",
+"url": "https://www.epey.com/islemci-sogutucu/nzxt-kraken-plus-360-rgb.html",
+"name": "NZXT Kraken Plus 360 RGB",
+"code": "RL-KR360-W2",
+"img": "https://resim.epey.com/1027587/k_nzxt-kraken-plus-360-rgb-2.png",
+"price": 8556.8,
+"sites": 8,
+"score": null,
+"cols": {
+"7845": "75.05 CFM",
+"7847": "2400 RPM",
+"7841": "120 mm",
+"7846": "31.9 dBA"
 }
 },
 {
@@ -3423,22 +3487,6 @@
 "7847": "1900 RPM",
 "7841": "120 mm",
 "7846": "31.78 dBA"
-}
-},
-{
-"id": "1026007",
-"url": "https://www.epey.com/islemci-sogutucu/montech-hyperflow-argb-360.html",
-"name": "Montech HyperFlow ARGB 360",
-"code": "",
-"img": "https://resim.epey.com/1026007/k_montech-hyperflow-argb-360-1.jpg",
-"price": 4599.0,
-"sites": 3,
-"score": null,
-"cols": {
-"7845": "76.2 CFM",
-"7847": "2100 RPM",
-"7841": "120 mm",
-"7846": "29.1 dBA"
 }
 },
 {
@@ -3522,19 +3570,19 @@
 }
 },
 {
-"id": "1001185",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-x-120-r-digital.html",
-"name": "Thermalright Assassin X 120 R Digital",
+"id": "1000219",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-hyper-vision-360-ub-argb.html",
+"name": "Thermalright Hyper Vision 360 UB ARGB",
 "code": "",
-"img": "https://resim.epey.com/1001185/k_thermalright-assassin-x-120-r-digital-5.png",
-"price": 1478.82,
-"sites": 5,
+"img": "https://resim.epey.com/1000219/k_thermalright-hyper-vision-360-ub-argb-1.png",
+"price": 9779.42,
+"sites": 7,
 "score": null,
 "cols": {
-"7845": "70.84 CFM",
-"7847": "2000 RPM",
+"7845": "207 CFM",
+"7847": "2150 RPM",
 "7841": "120 mm",
-"7846": "29.8 dBA"
+"7846": "27 dBA"
 }
 },
 {
@@ -3570,22 +3618,6 @@
 }
 },
 {
-"id": "992042",
-"url": "https://www.epey.com/islemci-sogutucu/corsair-icue-link-titan-240-rx.html",
-"name": "Corsair iCUE Link Titan 240 RX",
-"code": "CW-9061016-WW",
-"img": "https://resim.epey.com/992042/k_corsair-icue-link-titan-240-rx-1.png",
-"price": 5274.25,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "73.5 CFM",
-"7847": "2100 RPM",
-"7841": "120 mm",
-"7846": "-"
-}
-},
-{
 "id": "951746",
 "url": "https://www.epey.com/islemci-sogutucu/thermalright-frozen-warframe-240.html",
 "name": "Thermalright Frozen Warframe 240",
@@ -3607,7 +3639,7 @@
 "name": "AMD Wraith Stealth",
 "code": "712-000071",
 "img": "https://resim.epey.com/777155/k_amd-wraith-stealth-712-000071-1.png",
-"price": 349.0,
+"price": 371.07,
 "sites": 10,
 "score": null,
 "cols": {
@@ -3615,6 +3647,22 @@
 "7847": "2500 RPM",
 "7841": "98 mm",
 "7846": "-"
+}
+},
+{
+"id": "986421",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-king-120-mini-argb-v3.html",
+"name": "Thermalright Assassin King 120 Mini ARGB V3",
+"code": "",
+"img": "https://resim.epey.com/986421/k_thermalright-assassin-king-120-mini-argb-v3-1.png",
+"price": 1233.82,
+"sites": 6,
+"score": null,
+"cols": {
+"7845": "64.87 CFM",
+"7847": "1500 RPM",
+"7841": "120 mm",
+"7846": "25.6 dBA"
 }
 },
 {
@@ -3631,38 +3679,6 @@
 "7847": "2200 RPM",
 "7841": "92 mm",
 "7846": "23.85 dBA"
-}
-},
-{
-"id": "986178",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-frozen-warframe-420-argb.html",
-"name": "Thermalright Frozen Warframe 420 ARGB",
-"code": "",
-"img": "https://resim.epey.com/986178/k_thermalright-frozen-warframe-420-argb-1.png",
-"price": 4997.02,
-"sites": 6,
-"score": null,
-"cols": {
-"7845": "88.7 CFM",
-"7847": "1750 RPM",
-"7841": "140 mm",
-"7846": "29.8 dBA"
-}
-},
-{
-"id": "983796",
-"url": "https://www.epey.com/islemci-sogutucu/green-notus-100-argb.html",
-"name": "Green Notus 100 ARGB",
-"code": "30900908",
-"img": "https://resim.epey.com/983796/k_green-notus-100-argb-1.png",
-"price": 699.0,
-"sites": 1,
-"score": null,
-"cols": {
-"7845": "42 CFM",
-"7847": "2400 RPM",
-"7841": "92 mm",
-"7846": "28 dBA"
 }
 },
 {
@@ -3746,22 +3762,6 @@
 }
 },
 {
-"id": "973438",
-"url": "https://www.epey.com/islemci-sogutucu/lian-li-hydroshift-lcd-aio-360s.html",
-"name": "Lian Li HydroShift LCD AIO 360S",
-"code": "G89.GHSLCD36SB.00",
-"img": "https://resim.epey.com/973438/k_lian-li-hydroshift-lcd-360s-1.png",
-"price": 10445.0,
-"sites": 6,
-"score": null,
-"cols": {
-"7845": "73.14 CFM",
-"7847": "2500 RPM",
-"7841": "120 mm",
-"7846": "29.8 dBA"
-}
-},
-{
 "id": "954182",
 "url": "https://www.epey.com/islemci-sogutucu/green-glacier-glc360-argb.html",
 "name": "Green Glacier GLC360 ARGB",
@@ -3775,6 +3775,22 @@
 "7847": "2100 RPM",
 "7841": "120 mm",
 "7846": "26 dBA"
+}
+},
+{
+"id": "936980",
+"url": "https://www.epey.com/islemci-sogutucu/scythe-fuma-3.html",
+"name": "Scythe Fuma 3",
+"code": "SCFM-3000",
+"img": "https://resim.epey.com/936980/k_scythe-fuma-3-1.png",
+"price": 2549.0,
+"sites": 5,
+"score": null,
+"cols": {
+"7845": "67.62 CFM",
+"7847": "1500 RPM",
+"7841": "120 mm",
+"7846": "28.6 dBA"
 }
 },
 {
@@ -3831,7 +3847,7 @@
 "name": "Gamepower Skadi Round 240",
 "code": "",
 "img": "https://resim.epey.com/931514/k_gamepower-skadi-round-240-1.jpg",
-"price": 4019.0,
+"price": 2599.0,
 "sites": 5,
 "score": null,
 "cols": {
@@ -3986,6 +4002,22 @@
 }
 },
 {
+"id": "756149",
+"url": "https://www.epey.com/islemci-sogutucu/id-cooling-se-234.html",
+"name": "ID-Cooling SE-234",
+"code": "",
+"img": "https://resim.epey.com/756149/k_id-cooling-se-234-1.jpg",
+"price": 3499.0,
+"sites": 2,
+"score": null,
+"cols": {
+"7845": "56.5 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "31.5 dBA"
+}
+},
+{
 "id": "752830",
 "url": "https://www.epey.com/islemci-sogutucu/zalman-cnps20x.html",
 "name": "Zalman CNPS20X",
@@ -4008,7 +4040,7 @@
 "code": "",
 "img": "https://resim.epey.com/752811/k_noctua-nh-d15s-1.jpg",
 "price": 8990.0,
-"sites": 2,
+"sites": 1,
 "score": null,
 "cols": {
 "7845": "140.2 CFM",
@@ -4079,22 +4111,6 @@
 "7847": "1500 RPM",
 "7841": "120 mm",
 "7846": "21.8 dBA"
-}
-},
-{
-"id": "709857",
-"url": "https://www.epey.com/islemci-sogutucu/dark-freezer-x96.html",
-"name": "Dark Freezer X96",
-"code": "DKCCX96",
-"img": "https://resim.epey.com/709857/k_dark-freezer-x96-1.jpg",
-"price": 719.0,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "44 CFM",
-"7847": "2300 RPM",
-"7841": "90 mm",
-"7846": "26 dBA"
 }
 },
 {
@@ -4178,6 +4194,38 @@
 }
 },
 {
+"id": "756686",
+"url": "https://www.epey.com/islemci-sogutucu/nzxt-kraken-z73.html",
+"name": "NZXT Kraken Z73",
+"code": "RL-KRZ73-01",
+"img": "https://resim.epey.com/756686/k_nzxt-kraken-z73-1.jpg",
+"price": 39999.0,
+"sites": 1,
+"score": null,
+"cols": {
+"7845": "73.11 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "36 dBA"
+}
+},
+{
+"id": "1037157",
+"url": "https://www.epey.com/islemci-sogutucu/darkflash-twister-dx480-v2-6-argb.html",
+"name": "DarkFlash Twister DX480 V2.6 ARGB",
+"code": "",
+"img": "https://resim.epey.com/1037157/k_darkflash-twister-dx480-v2-6-argb-1.png",
+"price": 3627.0,
+"sites": 1,
+"score": null,
+"cols": {
+"7845": "51 CFM",
+"7847": "1800 RPM",
+"7841": "120 mm",
+"7846": "32 dBA"
+}
+},
+{
 "id": "960866",
 "url": "https://www.epey.com/islemci-sogutucu/strong-m2-pro.html",
 "name": "Strong M2 Pro",
@@ -4199,7 +4247,7 @@
 "name": "Cooler Master Hyper 212 Black X Duo",
 "code": "RR-S4KK-25DN-R1",
 "img": "https://resim.epey.com/905275/k_cooler-master-hyper-212-black-x-duo-1.jpg",
-"price": 3059.1,
+"price": 3399.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -4258,19 +4306,19 @@
 }
 },
 {
-"id": "1072775",
-"url": "https://www.epey.com/islemci-sogutucu/zalman-cnps9x-eco-ds.html",
-"name": "Zalman CNPS9X ECO DS",
+"id": "1073507",
+"url": "https://www.epey.com/islemci-sogutucu/bitfenix-s7-360.html",
+"name": "BitFenix S7 360",
 "code": "",
-"img": "https://resim.epey.com/1072775/k_zalman-cnps9x-eco-ds-1.jpg",
-"price": 1999.0,
-"sites": 6,
+"img": "https://resim.epey.com/1073507/k_bitfenix-s7-1.jpg",
+"price": 3959.0,
+"sites": 4,
 "score": null,
 "cols": {
-"7845": "57.1 CFM",
-"7847": "2100 RPM",
+"7845": "59.1 CFM",
+"7847": "2000 RPM",
 "7841": "120 mm",
-"7846": "31.4 dBA"
+"7846": "30 dBA"
 }
 },
 {
@@ -4335,22 +4383,6 @@
 "7847": "3000 RPM",
 "7841": "120 mm",
 "7846": "37.5 dBA"
-}
-},
-{
-"id": "1070876",
-"url": "https://www.epey.com/islemci-sogutucu/deepcool-ak500-g2.html",
-"name": "DeepCool AK500 G2",
-"code": "R-AK500G2-BKNNMN-GJD",
-"img": "https://resim.epey.com/1070876/k_deepcool-ak500-g2-1.jpg",
-"price": 3617.83,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "63.4 CFM",
-"7847": "2200 RPM",
-"7841": "120 mm",
-"7846": "31.45 dBA"
 }
 },
 {
@@ -4591,38 +4623,6 @@
 "7847": "2100 RPM",
 "7841": "120 mm",
 "7846": "26 dBA"
-}
-},
-{
-"id": "1052494",
-"url": "https://www.epey.com/islemci-sogutucu/xpg-maestro-plus-62da.html",
-"name": "XPG Maestro Plus 62DA",
-"code": "",
-"img": "https://resim.epey.com/1052494/k_xpg-maestro-plus-62da-3.png",
-"price": 2819.06,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "70.81 CFM",
-"7847": "1800 RPM",
-"7841": "120 mm",
-"7846": "21.44 dBA"
-}
-},
-{
-"id": "1052458",
-"url": "https://www.epey.com/islemci-sogutucu/ocypus-gamma-a40.html",
-"name": "Ocypus Gamma A40",
-"code": "Gamma-A40-BK1NNWN00X-GL",
-"img": "https://resim.epey.com/1052458/k_ocypus-gamma-a40-1.png",
-"price": 1140.0,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "41 CFM",
-"7847": "2400 RPM",
-"7841": "100 mm",
-"7846": "29.5 dBA"
 }
 },
 {
@@ -4994,28 +4994,12 @@
 }
 },
 {
-"id": "1027587",
-"url": "https://www.epey.com/islemci-sogutucu/nzxt-kraken-plus-360-rgb.html",
-"name": "NZXT Kraken Plus 360 RGB",
-"code": "RL-KR360-W2",
-"img": "https://resim.epey.com/1027587/k_nzxt-kraken-plus-360-rgb-2.png",
-"price": 8556.8,
-"sites": 8,
-"score": null,
-"cols": {
-"7845": "75.05 CFM",
-"7847": "2400 RPM",
-"7841": "120 mm",
-"7846": "31.9 dBA"
-}
-},
-{
 "id": "1026293",
 "url": "https://www.epey.com/islemci-sogutucu/gamdias-boreas-e2-410.html",
 "name": "Gamdias Boreas E2-410",
 "code": "",
 "img": "https://resim.epey.com/1026293/k_gamdias-boreas-e2-410-1.png",
-"price": 1553.86,
+"price": 1553.8,
 "sites": 5,
 "score": null,
 "cols": {
@@ -5042,19 +5026,35 @@
 }
 },
 {
-"id": "1025208",
-"url": "https://www.epey.com/islemci-sogutucu/deepcool-ag500-v2-argb.html",
-"name": "DeepCool AG500 V2 ARGB",
-"code": "R-AG500-BKAMMN-GJD",
-"img": "https://resim.epey.com/1025208/k_deepcool-ag500-v2-argb-1.png",
-"price": 4650.12,
-"sites": 2,
+"id": "1026151",
+"url": "https://www.epey.com/islemci-sogutucu/thermaltake-la240-s-argb.html",
+"name": "Thermaltake LA240-S ARGB",
+"code": "CL-W461-PL12SW-A",
+"img": "https://resim.epey.com/1026151/k_thermaltake-la240-s-argb-1.png",
+"price": 5119.0,
+"sites": 1,
 "score": null,
 "cols": {
-"7845": "67.88 CFM",
-"7847": "1950 RPM",
+"7845": "79.3 CFM",
+"7847": "2500 RPM",
 "7841": "120 mm",
-"7846": "29.4 dBA"
+"7846": "38.35 dBA"
+}
+},
+{
+"id": "1026007",
+"url": "https://www.epey.com/islemci-sogutucu/montech-hyperflow-argb-360.html",
+"name": "Montech HyperFlow ARGB 360",
+"code": "",
+"img": "https://resim.epey.com/1026007/k_montech-hyperflow-argb-360-1.jpg",
+"price": 4599.0,
+"sites": 3,
+"score": null,
+"cols": {
+"7845": "76.2 CFM",
+"7847": "2100 RPM",
+"7841": "120 mm",
+"7846": "29.1 dBA"
 }
 },
 {
@@ -5087,6 +5087,22 @@
 "7847": "2500 RPM",
 "7841": "92 mm",
 "7846": "31.78 dBA"
+}
+},
+{
+"id": "1017357",
+"url": "https://www.epey.com/islemci-sogutucu/cooler-master-hyper-212-pro.html",
+"name": "Cooler Master Hyper 212 Pro",
+"code": "RR-212S-25PZ-R1",
+"img": "https://resim.epey.com/1017357/k_cooler-master-hyper-212-pro-1.png",
+"price": 1799.0,
+"sites": 3,
+"score": null,
+"cols": {
+"7845": "70.7 CFM",
+"7847": "2500 RPM",
+"7841": "120 mm",
+"7846": "32.8 dBA"
 }
 },
 {
@@ -5154,6 +5170,22 @@
 }
 },
 {
+"id": "1001185",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-x-120-r-digital.html",
+"name": "Thermalright Assassin X 120 R Digital",
+"code": "",
+"img": "https://resim.epey.com/1001185/k_thermalright-assassin-x-120-r-digital-5.png",
+"price": 1478.82,
+"sites": 5,
+"score": null,
+"cols": {
+"7845": "70.84 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "29.8 dBA"
+}
+},
+{
 "id": "995593",
 "url": "https://www.epey.com/islemci-sogutucu/lian-li-galahad-ii-lite-performance-240.html",
 "name": "Lian Li Galahad II Lite Performance 240",
@@ -5186,6 +5218,22 @@
 }
 },
 {
+"id": "992042",
+"url": "https://www.epey.com/islemci-sogutucu/corsair-icue-link-titan-240-rx.html",
+"name": "Corsair iCUE Link Titan 240 RX",
+"code": "CW-9061016-WW",
+"img": "https://resim.epey.com/992042/k_corsair-icue-link-titan-240-rx-1.png",
+"price": 5274.25,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "73.5 CFM",
+"7847": "2100 RPM",
+"7841": "120 mm",
+"7846": "-"
+}
+},
+{
 "id": "992037",
 "url": "https://www.epey.com/islemci-sogutucu/corsair-icue-link-titan-360-rx-lcd.html",
 "name": "Corsair iCUE Link Titan 360 RX LCD",
@@ -5215,22 +5263,6 @@
 "7847": "2500 RPM",
 "7841": "92 mm",
 "7846": "30.04 dBA"
-}
-},
-{
-"id": "988706",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-si-100.html",
-"name": "Thermalright SI-100",
-"code": "",
-"img": "https://resim.epey.com/988706/k_thermalright-si-100-1.png",
-"price": 1841.42,
-"sites": 6,
-"score": null,
-"cols": {
-"7845": "72.37 CFM",
-"7847": "2000 RPM",
-"7841": "120 mm",
-"7846": "27.7 dBA"
 }
 },
 {
@@ -5298,22 +5330,6 @@
 }
 },
 {
-"id": "986421",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-king-120-mini-argb-v3.html",
-"name": "Thermalright Assassin King 120 Mini ARGB V3",
-"code": "",
-"img": "https://resim.epey.com/986421/k_thermalright-assassin-king-120-mini-argb-v3-1.png",
-"price": 1233.82,
-"sites": 6,
-"score": null,
-"cols": {
-"7845": "64.87 CFM",
-"7847": "1500 RPM",
-"7841": "120 mm",
-"7846": "25.6 dBA"
-}
-},
-{
 "id": "986270",
 "url": "https://www.epey.com/islemci-sogutucu/thermalright-frozen-warframe-pro-360.html",
 "name": "Thermalright Frozen Warframe Pro 360",
@@ -5326,6 +5342,22 @@
 "7845": "70.84 CFM",
 "7847": "2000 RPM",
 "7841": "120 mm",
+"7846": "29.8 dBA"
+}
+},
+{
+"id": "986178",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-frozen-warframe-420-argb.html",
+"name": "Thermalright Frozen Warframe 420 ARGB",
+"code": "",
+"img": "https://resim.epey.com/986178/k_thermalright-frozen-warframe-420-argb-1.png",
+"price": 4997.02,
+"sites": 6,
+"score": null,
+"cols": {
+"7845": "88.7 CFM",
+"7847": "1750 RPM",
+"7841": "140 mm",
 "7846": "29.8 dBA"
 }
 },
@@ -5343,6 +5375,22 @@
 "7847": "2000 RPM",
 "7841": "120 mm",
 "7846": "28.2 dBA"
+}
+},
+{
+"id": "983796",
+"url": "https://www.epey.com/islemci-sogutucu/green-notus-100-argb.html",
+"name": "Green Notus 100 ARGB",
+"code": "30900908",
+"img": "https://resim.epey.com/983796/k_green-notus-100-argb-1.png",
+"price": 699.0,
+"sites": 1,
+"score": null,
+"cols": {
+"7845": "42 CFM",
+"7847": "2400 RPM",
+"7841": "92 mm",
+"7846": "28 dBA"
 }
 },
 {
@@ -5410,6 +5458,22 @@
 }
 },
 {
+"id": "959440",
+"url": "https://www.epey.com/islemci-sogutucu/xigmatek-frozr-o-ii-240.html",
+"name": "Xigmatek Frozr-O II 240",
+"code": "EN40429",
+"img": "https://resim.epey.com/959440/k_xigmatek-frozr-o-ii-240-2.png",
+"price": 9499.0,
+"sites": 1,
+"score": null,
+"cols": {
+"7845": "82.2 CFM",
+"7847": "1800 RPM",
+"7841": "120 mm",
+"7846": "25.3 dBA"
+}
+},
+{
 "id": "948449",
 "url": "https://www.epey.com/islemci-sogutucu/corsair-icue-h100i-elite-lcd-xt.html",
 "name": "Corsair iCUE H100i Elite LCD XT",
@@ -5423,22 +5487,6 @@
 "7847": "2100 RPM",
 "7841": "120 mm",
 "7846": "34.1 dBA"
-}
-},
-{
-"id": "936980",
-"url": "https://www.epey.com/islemci-sogutucu/scythe-fuma-3.html",
-"name": "Scythe Fuma 3",
-"code": "SCFM-3000",
-"img": "https://resim.epey.com/936980/k_scythe-fuma-3-1.png",
-"price": 2749.0,
-"sites": 5,
-"score": null,
-"cols": {
-"7845": "67.62 CFM",
-"7847": "1500 RPM",
-"7841": "120 mm",
-"7846": "28.6 dBA"
 }
 },
 {
@@ -5655,7 +5703,7 @@
 "name": "Enermax Liqmaxflo SR 240",
 "code": "ELC-LMF240-SF",
 "img": "https://resim.epey.com/927492/k_enermax-liqmaxflo-sr-240-1.jpg",
-"price": 2169.0,
+"price": 2948.82,
 "sites": 2,
 "score": null,
 "cols": {
@@ -5762,22 +5810,6 @@
 }
 },
 {
-"id": "911165",
-"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-king-120-se.html",
-"name": "Thermalright Assassin King 120 SE",
-"code": "",
-"img": "https://resim.epey.com/911165/k_thermalright-assassin-king-120-se-1.jpg",
-"price": 2211.97,
-"sites": 3,
-"score": null,
-"cols": {
-"7845": "66.17 CFM",
-"7847": "1550 RPM",
-"7841": "120 mm",
-"7846": "25.6 dBA"
-}
-},
-{
 "id": "903250",
 "url": "https://www.epey.com/islemci-sogutucu/bitfenix-cube-240-argb.html",
 "name": "BitFenix Cube 240 ARGB",
@@ -5799,29 +5831,13 @@
 "name": "Arctic Alpine 17",
 "code": "ACALP00040A",
 "img": "https://resim.epey.com/814679/k_arctic-alpine-17-1.jpg",
-"price": 599.0,
+"price": 649.0,
 "sites": 1,
 "score": null,
 "cols": {
 "7845": "-",
 "7847": "2000 RPM",
 "7841": "92 mm",
-"7846": "-"
-}
-},
-{
-"id": "892361",
-"url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-m240.html",
-"name": "MSI MAG CoreLiquid M240",
-"code": "",
-"img": "https://resim.epey.com/892361/k_msi-mag-coreliquid-m240-1.jpg",
-"price": 4199.0,
-"sites": 5,
-"score": null,
-"cols": {
-"7845": "78.73 CFM",
-"7847": "-",
-"7841": "120 mm",
 "7846": "-"
 }
 },
@@ -6018,6 +6034,22 @@
 }
 },
 {
+"id": "850596",
+"url": "https://www.epey.com/islemci-sogutucu/deep-cool-lt520.html",
+"name": "DeepCool LT520",
+"code": "R-LT520-BKAMNF-G-1",
+"img": "https://resim.epey.com/850596/k_deepcool-lt520-1.jpg",
+"price": 3599.0,
+"sites": 7,
+"score": null,
+"cols": {
+"7845": "85.85 CFM",
+"7847": "2250 RPM",
+"7841": "120 mm",
+"7846": "32.9 dBA"
+}
+},
+{
 "id": "814783",
 "url": "https://www.epey.com/islemci-sogutucu/rampage-chily-120.html",
 "name": "Rampage Chily-120",
@@ -6079,22 +6111,6 @@
 "7847": "2000 RPM",
 "7841": "120 mm",
 "7846": "36 dBA"
-}
-},
-{
-"id": "756149",
-"url": "https://www.epey.com/islemci-sogutucu/id-cooling-se-234.html",
-"name": "ID-Cooling SE-234",
-"code": "",
-"img": "https://resim.epey.com/756149/k_id-cooling-se-234-1.jpg",
-"price": 3499.0,
-"sites": 2,
-"score": null,
-"cols": {
-"7845": "56.5 CFM",
-"7847": "2000 RPM",
-"7841": "120 mm",
-"7846": "31.5 dBA"
 }
 },
 {
@@ -6258,12 +6274,28 @@
 }
 },
 {
+"id": "744431",
+"url": "https://www.epey.com/islemci-sogutucu/arctic-liquid-freezer-ii-280.html",
+"name": "Arctic Liquid Freezer II 280",
+"code": "AR-ACFRE00066A",
+"img": "https://resim.epey.com/744431/k_arctic-ar-acfre00066a-1.jpg",
+"price": 9536.73,
+"sites": 3,
+"score": null,
+"cols": {
+"7845": "72.8 CFM",
+"7847": "1700 RPM",
+"7841": "140 mm",
+"7846": "22.5 dBA"
+}
+},
+{
 "id": "744981",
 "url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-240r-v2.html",
 "name": "MSI MAG CoreLiquid 240R V2",
 "code": "",
 "img": "https://resim.epey.com/744981/k_msi-mag-coreliquid-240r-v2-1.jpg",
-"price": 5356.12,
+"price": 5335.99,
 "sites": 3,
 "score": null,
 "cols": {
@@ -6354,19 +6386,35 @@
 }
 },
 {
-"id": "744572",
-"url": "https://www.epey.com/islemci-sogutucu/corsair-hydro-h55.html",
-"name": "Corsair H55 RGB",
-"code": "CW-9060052-WW",
-"img": "https://resim.epey.com/744572/k_corsair-hydro-h55-rgb-120mm-cw-9060052-ww-1.jpg",
-"price": 3289.1,
+"id": "743893",
+"url": "https://www.epey.com/islemci-sogutucu/cooler-master-nepton-140xl.html",
+"name": "Cooler Master Nepton 140XL",
+"code": "RL-N14X-20PK-R1",
+"img": "https://resim.epey.com/743893/k_cooler-master-nepton-140xl-1.jpg",
+"price": 3599.0,
+"sites": 1,
+"score": null,
+"cols": {
+"7845": "122.5 CFM",
+"7847": "2000 RPM",
+"7841": "140 mm",
+"7846": "39 dBA"
+}
+},
+{
+"id": "709857",
+"url": "https://www.epey.com/islemci-sogutucu/dark-freezer-x96.html",
+"name": "Dark Freezer X96",
+"code": "DKCCX96",
+"img": "https://resim.epey.com/709857/k_dark-freezer-x96-1.jpg",
+"price": 719.0,
 "sites": 4,
 "score": null,
 "cols": {
-"7845": "-",
-"7847": "1500 RPM",
-"7841": "120 mm",
-"7846": "-"
+"7845": "44 CFM",
+"7847": "2300 RPM",
+"7841": "90 mm",
+"7846": "26 dBA"
 }
 },
 {
@@ -6375,7 +6423,7 @@
 "name": "Thermaltake UX200",
 "code": "CL-P065-AL12SW-A",
 "img": "https://resim.epey.com/733217/k_thermaltake-ux200-argb-1.jpg",
-"price": 2213.1,
+"price": 2274.0,
 "sites": 9,
 "score": null,
 "cols": {
@@ -6434,22 +6482,6 @@
 }
 },
 {
-"id": "756686",
-"url": "https://www.epey.com/islemci-sogutucu/nzxt-kraken-z73.html",
-"name": "NZXT Kraken Z73",
-"code": "RL-KRZ73-01",
-"img": "https://resim.epey.com/756686/k_nzxt-kraken-z73-1.jpg",
-"price": 39999.0,
-"sites": 1,
-"score": null,
-"cols": {
-"7845": "73.11 CFM",
-"7847": "2000 RPM",
-"7841": "120 mm",
-"7846": "36 dBA"
-}
-},
-{
 "id": "1072274",
 "url": "https://www.epey.com/islemci-sogutucu/next-gaming-ng-twin-frost-600.html",
 "name": "Next Gaming NG Twin Frost 600",
@@ -6463,22 +6495,6 @@
 "7847": "2000 RPM",
 "7841": "90 mm",
 "7846": "29 dBA"
-}
-},
-{
-"id": "1037157",
-"url": "https://www.epey.com/islemci-sogutucu/darkflash-twister-dx480-v2-6-argb.html",
-"name": "DarkFlash Twister DX480 V2.6 ARGB",
-"code": "",
-"img": "https://resim.epey.com/1037157/k_darkflash-twister-dx480-v2-6-argb-1.png",
-"price": 3627.0,
-"sites": 1,
-"score": null,
-"cols": {
-"7845": "51 CFM",
-"7847": "1800 RPM",
-"7841": "120 mm",
-"7846": "32 dBA"
 }
 },
 {
@@ -6503,7 +6519,7 @@
 "name": "Dark Freezer X120",
 "code": "DKCCX120AM4",
 "img": "https://resim.epey.com/744624/k_dark-dkccx120-freezer-x120-1.jpg",
-"price": 1450.54,
+"price": 1451.21,
 "sites": 6,
 "score": null,
 "cols": {
@@ -6511,22 +6527,6 @@
 "7847": "1600 RPM",
 "7841": "120 mm",
 "7846": "28 dBA"
-}
-},
-{
-"id": "814748",
-"url": "https://www.epey.com/islemci-sogutucu/gameforce-copper-6.html",
-"name": "Gameforce Copper 6",
-"code": "",
-"img": "https://resim.epey.com/814748/k_gameforce-copper-6-1.png",
-"price": 986.9,
-"sites": 5,
-"score": null,
-"cols": {
-"7845": "-",
-"7847": "-",
-"7841": "90 mm",
-"7846": "-"
 }
 },
 {
@@ -6551,7 +6551,7 @@
 "name": "Gameforce Copper 2",
 "code": "",
 "img": "https://resim.epey.com/814747/k_gameforce-copper-2-1.jpg",
-"price": 575.0,
+"price": 569.25,
 "sites": 5,
 "score": null,
 "cols": {
@@ -6599,8 +6599,8 @@
 "name": "SilverStone PF360",
 "code": "SST-PF360-ARGB",
 "img": "https://resim.epey.com/752838/k_silverstone-pf360-1.jpg",
-"price": 14685.9,
-"sites": 4,
+"price": 14682.0,
+"sites": 3,
 "score": null,
 "cols": {
 "7845": "94 CFM",
@@ -6631,7 +6631,7 @@
 "name": "Rampage RM-C01 Cool Fix",
 "code": "",
 "img": "https://resim.epey.com/745010/k_rampage-rm-c01-cool-fix-1.jpg",
-"price": 722.0,
+"price": 722.3,
 "sites": 6,
 "score": null,
 "cols": {
@@ -6695,7 +6695,7 @@
 "name": "Cooler Master Hyper 212 Flow",
 "code": "",
 "img": "https://resim.epey.com/1075767/k_cooler-master-hyper-212-flow-1.jpg",
-"price": 2321.1,
+"price": 2579.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -6722,22 +6722,6 @@
 }
 },
 {
-"id": "1073507",
-"url": "https://www.epey.com/islemci-sogutucu/bitfenix-s7-360.html",
-"name": "BitFenix S7 360",
-"code": "",
-"img": "https://resim.epey.com/1073507/k_bitfenix-s7-1.jpg",
-"price": 3959.0,
-"sites": 4,
-"score": null,
-"cols": {
-"7845": "59.1 CFM",
-"7847": "2000 RPM",
-"7841": "120 mm",
-"7846": "30 dBA"
-}
-},
-{
 "id": "1072780",
 "url": "https://www.epey.com/islemci-sogutucu/zalman-cnps9x-performa-argb.html",
 "name": "Zalman CNPS9X Performa ARGB",
@@ -6754,12 +6738,28 @@
 }
 },
 {
+"id": "1072775",
+"url": "https://www.epey.com/islemci-sogutucu/zalman-cnps9x-eco-ds.html",
+"name": "Zalman CNPS9X ECO DS",
+"code": "",
+"img": "https://resim.epey.com/1072775/k_zalman-cnps9x-eco-ds-1.jpg",
+"price": 1999.0,
+"sites": 5,
+"score": null,
+"cols": {
+"7845": "57.1 CFM",
+"7847": "2100 RPM",
+"7841": "120 mm",
+"7846": "31.4 dBA"
+}
+},
+{
 "id": "1072577",
 "url": "https://www.epey.com/islemci-sogutucu/zoko-frozen-1.html",
 "name": "Zoko Frozen-1",
 "code": "",
 "img": "https://resim.epey.com/1072577/k_zoko-frozen-i-1.jpg",
-"price": 736.0,
+"price": 744.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -6962,6 +6962,22 @@
 }
 },
 {
+"id": "1070876",
+"url": "https://www.epey.com/islemci-sogutucu/deepcool-ak500-g2.html",
+"name": "DeepCool AK500 G2",
+"code": "R-AK500G2-BKNNMN-GJD",
+"img": "https://resim.epey.com/1070876/k_deepcool-ak500-g2-1.jpg",
+"price": 3617.83,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "63.4 CFM",
+"7847": "2200 RPM",
+"7841": "120 mm",
+"7846": "31.45 dBA"
+}
+},
+{
 "id": "1070855",
 "url": "https://www.epey.com/islemci-sogutucu/deepcool-ak400-g2-digital-nyx.html",
 "name": "DeepCool AK400 G2 Digital NYX",
@@ -6984,7 +7000,7 @@
 "code": "R-LM240-BKDMMC-1",
 "img": "https://resim.epey.com/1070848/k_deepcool-lm240-1.jpg",
 "price": 3999.0,
-"sites": 4,
+"sites": 2,
 "score": null,
 "cols": {
 "7845": "66.23 CFM",
@@ -7144,7 +7160,7 @@
 "code": "BFW-PUZ-360-BB27A-RP",
 "img": "https://resim.epey.com/1068315/k_bitfenix-puzzle-360-1.png",
 "price": 3919.42,
-"sites": 3,
+"sites": 2,
 "score": null,
 "cols": {
 "7845": "74.58 CFM",
@@ -7199,6 +7215,22 @@
 "7847": "2500 RPM",
 "7841": "120 mm",
 "7846": "37 dBA"
+}
+},
+{
+"id": "1066161",
+"url": "https://www.epey.com/islemci-sogutucu/zalman-zet-5.html",
+"name": "Zalman ZET 5",
+"code": "",
+"img": "https://resim.epey.com/1066161/k_zalman-zet-5-4.png",
+"price": 3299.0,
+"sites": 2,
+"score": null,
+"cols": {
+"7845": "44.48 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "30.4 dBA"
 }
 },
 {
@@ -7303,7 +7335,7 @@
 "name": "PowerBoost PB-511B6P",
 "code": "",
 "img": "https://resim.epey.com/1061561/k_powerboost-pb-511b6p-2.png",
-"price": 1187.1,
+"price": 1319.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -7319,7 +7351,7 @@
 "name": "PowerBoost PB-510B4P",
 "code": "",
 "img": "https://resim.epey.com/1061558/k_powerboost-pb-510b4p-2.png",
-"price": 944.1,
+"price": 1049.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -7335,7 +7367,7 @@
 "name": "Thermaltake MINECUBE 360 Ultra",
 "code": "CL-W481-PL12SW-A",
 "img": "https://resim.epey.com/1060662/k_thermaltake-minecube-360-ultra-6.png",
-"price": 23758.0,
+"price": 23394.9,
 "sites": 4,
 "score": null,
 "cols": {
@@ -7634,22 +7666,6 @@
 }
 },
 {
-"id": "1054251",
-"url": "https://www.epey.com/islemci-sogutucu/xigmatek-ak6.html",
-"name": "Xigmatek AK6",
-"code": "EN45844",
-"img": "https://resim.epey.com/1054251/k_xigmatek-ak6-4.png",
-"price": 2199.0,
-"sites": 2,
-"score": null,
-"cols": {
-"7845": "78 CFM",
-"7847": "1800 RPM",
-"7841": "120 mm",
-"7846": "28 dBA"
-}
-},
-{
 "id": "1054096",
 "url": "https://www.epey.com/islemci-sogutucu/dragos-rock-240.html",
 "name": "Dragos Rock 240",
@@ -7746,6 +7762,22 @@
 }
 },
 {
+"id": "1052458",
+"url": "https://www.epey.com/islemci-sogutucu/ocypus-gamma-a40.html",
+"name": "Ocypus Gamma A40",
+"code": "Gamma-A40-BK1NNWN00X-GL",
+"img": "https://resim.epey.com/1052458/k_ocypus-gamma-a40-1.png",
+"price": 1140.0,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "41 CFM",
+"7847": "2400 RPM",
+"7841": "100 mm",
+"7846": "29.5 dBA"
+}
+},
+{
 "id": "1051265",
 "url": "https://www.epey.com/islemci-sogutucu/bugatek-liquid-240-argb.html",
 "name": "Bugatek Liquid 240 ARGB",
@@ -7800,7 +7832,7 @@
 "code": "",
 "img": "https://resim.epey.com/1049898/k_thermalright-peerless-vision-240-argb-1.png",
 "price": 5055.82,
-"sites": 6,
+"sites": 5,
 "score": null,
 "cols": {
 "7845": "68.9 CFM",
@@ -8040,7 +8072,7 @@
 "code": "",
 "img": "https://resim.epey.com/1043766/k_nodar-nd2504-1.png",
 "price": 3900.0,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "7845": "45.6 CFM",
@@ -8263,7 +8295,7 @@
 "name": "Gamepower Skadi LCD 240",
 "code": "",
 "img": "https://resim.epey.com/1037840/k_gamepower-skadi-lcd-240-1.png",
-"price": 4700.0,
+"price": 4649.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -8503,7 +8535,7 @@
 "name": "Seclife SCL-1505",
 "code": "",
 "img": "https://resim.epey.com/1035491/k_seclife-scl-1505-2.png",
-"price": 752.2,
+"price": 751.9,
 "sites": 3,
 "score": null,
 "cols": {
@@ -8519,7 +8551,7 @@
 "name": "Seclife SLF-1208",
 "code": "",
 "img": "https://resim.epey.com/1035490/k_seclife-slf-1208-1.png",
-"price": 703.59,
+"price": 703.28,
 "sites": 3,
 "score": null,
 "cols": {
@@ -8695,7 +8727,7 @@
 "name": "Cooler Master RR-CEE-L9C1-GP",
 "code": "",
 "img": "https://resim.epey.com/744520/k_cooler-master-rr-cee-l9c1-gp-1.png",
-"price": 866.52,
+"price": 868.71,
 "sites": 1,
 "score": null,
 "cols": {
@@ -8872,7 +8904,7 @@
 "code": "",
 "img": "https://resim.epey.com/1027166/k_msi-coreliquid-a17-mlg-edition-1.png",
 "price": 8399.0,
-"sites": 5,
+"sites": 4,
 "score": null,
 "cols": {
 "7845": "64.89 CFM",
@@ -8887,7 +8919,7 @@
 "name": "Gamdias Boreas E1-210 Mono",
 "code": "",
 "img": "https://resim.epey.com/1026314/k_gamdias-boreas-e1-210-mono-1.png",
-"price": 711.77,
+"price": 711.72,
 "sites": 6,
 "score": null,
 "cols": {
@@ -8903,7 +8935,7 @@
 "name": "Gamdias Boreas E1-210 Lite",
 "code": "",
 "img": "https://resim.epey.com/1026295/k_gamdias-boreas-e1-210-lite-1.png",
-"price": 748.38,
+"price": 748.32,
 "sites": 6,
 "score": null,
 "cols": {
@@ -8962,28 +8994,12 @@
 }
 },
 {
-"id": "1026151",
-"url": "https://www.epey.com/islemci-sogutucu/thermaltake-la240-s-argb.html",
-"name": "Thermaltake LA240-S ARGB",
-"code": "CL-W461-PL12SW-A",
-"img": "https://resim.epey.com/1026151/k_thermaltake-la240-s-argb-1.png",
-"price": 5119.0,
-"sites": 1,
-"score": null,
-"cols": {
-"7845": "79.3 CFM",
-"7847": "2500 RPM",
-"7841": "120 mm",
-"7846": "38.35 dBA"
-}
-},
-{
 "id": "1025996",
 "url": "https://www.epey.com/islemci-sogutucu/montech-hyperflow-argb-240.html",
 "name": "Montech HyperFlow ARGB 240",
 "code": "",
 "img": "https://resim.epey.com/1025996/k_montech-hyperflow-argb-240-4.png",
-"price": 3625.02,
+"price": 3599.0,
 "sites": 3,
 "score": null,
 "cols": {
@@ -9007,6 +9023,22 @@
 "7847": "1600 RPM",
 "7841": "120 mm",
 "7846": "-"
+}
+},
+{
+"id": "1025208",
+"url": "https://www.epey.com/islemci-sogutucu/deepcool-ag500-v2-argb.html",
+"name": "DeepCool AG500 V2 ARGB",
+"code": "R-AG500-BKAMMN-GJD",
+"img": "https://resim.epey.com/1025208/k_deepcool-ag500-v2-argb-1.png",
+"price": 4650.12,
+"sites": 2,
+"score": null,
+"cols": {
+"7845": "67.88 CFM",
+"7847": "1950 RPM",
+"7841": "120 mm",
+"7846": "29.4 dBA"
 }
 },
 {
@@ -9048,7 +9080,7 @@
 "code": "",
 "img": "https://resim.epey.com/1018251/k_1stplayer-x-240-1.png",
 "price": 4674.06,
-"sites": 2,
+"sites": 3,
 "score": null,
 "cols": {
 "7845": "56.8 CFM",
@@ -9071,22 +9103,6 @@
 "7847": "1800 RPM",
 "7841": "120 mm",
 "7846": "36 dBA"
-}
-},
-{
-"id": "1017357",
-"url": "https://www.epey.com/islemci-sogutucu/cooler-master-hyper-212-pro.html",
-"name": "Cooler Master Hyper 212 Pro",
-"code": "RR-212S-25PZ-R1",
-"img": "https://resim.epey.com/1017357/k_cooler-master-hyper-212-pro-1.png",
-"price": 1799.0,
-"sites": 3,
-"score": null,
-"cols": {
-"7845": "70.7 CFM",
-"7847": "2500 RPM",
-"7841": "120 mm",
-"7846": "32.8 dBA"
 }
 },
 {
@@ -9239,7 +9255,7 @@
 "name": "Cooler Master MasterLiquid 360 Core II",
 "code": "MLW-D36M-A18PA-R1",
 "img": "https://resim.epey.com/993182/k_cooler-master-masterliquid-360-core-ii-2.png",
-"price": 7793.85,
+"price": 7178.46,
 "sites": 3,
 "score": null,
 "cols": {
@@ -9321,6 +9337,22 @@
 "img": "https://resim.epey.com/988733/k_thermalright-si-100-argb-1.png",
 "price": 1959.02,
 "sites": 5,
+"score": null,
+"cols": {
+"7845": "72.37 CFM",
+"7847": "2000 RPM",
+"7841": "120 mm",
+"7846": "27.7 dBA"
+}
+},
+{
+"id": "988706",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-si-100.html",
+"name": "Thermalright SI-100",
+"code": "",
+"img": "https://resim.epey.com/988706/k_thermalright-si-100-1.png",
+"price": 1841.42,
+"sites": 6,
 "score": null,
 "cols": {
 "7845": "72.37 CFM",
@@ -9543,8 +9575,8 @@
 "name": "DeepCool LT360 ARGB",
 "code": "R-LT360-BKAMNC-G-1",
 "img": "https://resim.epey.com/976045/k_deepcool-lt360-argb-1.png",
-"price": 7520.0,
-"sites": 5,
+"price": 7649.73,
+"sites": 4,
 "score": null,
 "cols": {
 "7845": "72.04 CFM",
@@ -9591,7 +9623,7 @@
 "name": "Lian Li HydroShift LCD AIO 360R",
 "code": "G89.GHSLCD36RB.00",
 "img": "https://resim.epey.com/973428/k_lian-li-hydroshift-lcd-360r-1.png",
-"price": 13869.0,
+"price": 13879.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -9615,22 +9647,6 @@
 "7847": "2200 RPM",
 "7841": "120 mm",
 "7846": "23 dBA"
-}
-},
-{
-"id": "959440",
-"url": "https://www.epey.com/islemci-sogutucu/xigmatek-frozr-o-ii-240.html",
-"name": "Xigmatek Frozr-O II 240",
-"code": "EN40429",
-"img": "https://resim.epey.com/959440/k_xigmatek-frozr-o-ii-240-2.png",
-"price": 9499.0,
-"sites": 1,
-"score": null,
-"cols": {
-"7845": "82.2 CFM",
-"7847": "1800 RPM",
-"7841": "120 mm",
-"7846": "25.3 dBA"
 }
 },
 {
@@ -9848,7 +9864,7 @@
 "code": "",
 "img": "https://resim.epey.com/941090/k_frisby-fcl-f1330c-1.jpg",
 "price": 311.1,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "7845": "45 CFM",
@@ -10119,7 +10135,7 @@
 "name": "Cooler Master Hyper 212 Spectrum V3",
 "code": "RR-S4NA-17PA-R1",
 "img": "https://resim.epey.com/931190/k_cooler-master-hyper-212-spectrum-v3-1.jpg",
-"price": 1889.1,
+"price": 2055.8,
 "sites": 6,
 "score": null,
 "cols": {
@@ -10226,6 +10242,22 @@
 }
 },
 {
+"id": "925455",
+"url": "https://www.epey.com/islemci-sogutucu/lian-li-galahad-ii-trinity-performance-360.html",
+"name": "Lian Li Galahad II Trinity Performance 360",
+"code": "",
+"img": "https://resim.epey.com/925455/k_lian-li-galahad-ii-trinity-performance-360-1.jpg",
+"price": 14647.5,
+"sites": 1,
+"score": null,
+"cols": {
+"7845": "109.6 CFM",
+"7847": "3000 RPM",
+"7841": "120 mm",
+"7846": "38.1 dBA"
+}
+},
+{
 "id": "925178",
 "url": "https://www.epey.com/islemci-sogutucu/msi-mpg-coreliquid-d240.html",
 "name": "MSI MPG CoreLiquid D240",
@@ -10296,7 +10328,7 @@
 "code": "3MPSD360.0001",
 "img": "https://resim.epey.com/923551/k_cougar-poseidon-elite-360-argb-1.jpg",
 "price": 5449.0,
-"sites": 4,
+"sites": 3,
 "score": null,
 "cols": {
 "7845": "62.53 CFM",
@@ -10367,6 +10399,22 @@
 "7847": "2000 RPM",
 "7841": "120 mm",
 "7846": "27.7 dBA"
+}
+},
+{
+"id": "911165",
+"url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-king-120-se.html",
+"name": "Thermalright Assassin King 120 SE",
+"code": "",
+"img": "https://resim.epey.com/911165/k_thermalright-assassin-king-120-se-1.jpg",
+"price": 2211.97,
+"sites": 3,
+"score": null,
+"cols": {
+"7845": "66.17 CFM",
+"7847": "1550 RPM",
+"7841": "120 mm",
+"7846": "25.6 dBA"
 }
 },
 {
@@ -10530,13 +10578,29 @@
 }
 },
 {
+"id": "892361",
+"url": "https://www.epey.com/islemci-sogutucu/msi-mag-coreliquid-m240.html",
+"name": "MSI MAG CoreLiquid M240",
+"code": "",
+"img": "https://resim.epey.com/892361/k_msi-mag-coreliquid-m240-1.jpg",
+"price": 4199.0,
+"sites": 5,
+"score": null,
+"cols": {
+"7845": "78.73 CFM",
+"7847": "-",
+"7841": "120 mm",
+"7846": "-"
+}
+},
+{
 "id": "890071",
 "url": "https://www.epey.com/islemci-sogutucu/thermalright-assassin-king-120-se-argb.html",
 "name": "Thermalright Assassin King 120 SE ARGB",
 "code": "",
 "img": "https://resim.epey.com/890071/k_thermalright-assassin-king-120-se-argb-3.jpg",
-"price": 1379.0,
-"sites": 5,
+"price": 1351.42,
+"sites": 6,
 "score": null,
 "cols": {
 "7845": "66.17 CFM",
@@ -10962,22 +11026,6 @@
 }
 },
 {
-"id": "850596",
-"url": "https://www.epey.com/islemci-sogutucu/deep-cool-lt520.html",
-"name": "DeepCool LT520",
-"code": "R-LT520-BKAMNF-G-1",
-"img": "https://resim.epey.com/850596/k_deepcool-lt520-1.jpg",
-"price": 3599.0,
-"sites": 7,
-"score": null,
-"cols": {
-"7845": "85.85 CFM",
-"7847": "2250 RPM",
-"7841": "120 mm",
-"7846": "32.9 dBA"
-}
-},
-{
 "id": "849912",
 "url": "https://www.epey.com/islemci-sogutucu/thermaltake-th120.html",
 "name": "Thermaltake TH120",
@@ -11159,7 +11207,7 @@
 "name": "Gamdias Boreas E1-410 Lite",
 "code": "",
 "img": "https://resim.epey.com/788590/k_gamdias-boreas-lite-e1-410-rgb-1.jpg",
-"price": 1385.43,
+"price": 1385.38,
 "sites": 5,
 "score": null,
 "cols": {
@@ -11272,7 +11320,7 @@
 "code": "",
 "img": "https://resim.epey.com/769011/k_frisby-fcl-f1316c-1.jpg",
 "price": 306.21,
-"sites": 6,
+"sites": 5,
 "score": null,
 "cols": {
 "7845": "38 CFM",
@@ -11367,7 +11415,7 @@
 "name": "İzoly Ufo",
 "code": "",
 "img": "https://resim.epey.com/764414/k_izoly-ufo-1.jpg",
-"price": 665.71,
+"price": 675.65,
 "sites": 2,
 "score": null,
 "cols": {
@@ -11383,13 +11431,29 @@
 "name": "Arctic Liquid Freezer II 240 A-RGB",
 "code": "ACFRE00093A",
 "img": "https://resim.epey.com/763888/k_arctic-liquid-freezer-ii-240-a-rgb-1.jpg",
-"price": 10926.0,
+"price": 10923.0,
 "sites": 5,
 "score": null,
 "cols": {
 "7845": "48.8 CFM",
 "7847": "1800 RPM",
 "7841": "120 mm",
+"7846": "22.5 dBA"
+}
+},
+{
+"id": "763734",
+"url": "https://www.epey.com/islemci-sogutucu/arctic-alpine-23-co.html",
+"name": "Arctic Alpine 23 CO",
+"code": "ACALP00036A",
+"img": "https://resim.epey.com/763734/k_arctic-alpine-23-co-1.jpg",
+"price": 1199.0,
+"sites": 1,
+"score": null,
+"cols": {
+"7845": "-",
+"7847": "2700 RPM",
+"7841": "90 mm",
 "7846": "22.5 dBA"
 }
 },
@@ -11767,7 +11831,7 @@
 "name": "Zalman Reserator5 Z24",
 "code": "",
 "img": "https://resim.epey.com/755091/k_zalman-reserator5-z24-1.jpg",
-"price": 3599.0,
+"price": 3759.06,
 "sites": 8,
 "score": null,
 "cols": {
@@ -12194,22 +12258,6 @@
 }
 },
 {
-"id": "744431",
-"url": "https://www.epey.com/islemci-sogutucu/arctic-liquid-freezer-ii-280.html",
-"name": "Arctic Liquid Freezer II 280",
-"code": "AR-ACFRE00066A",
-"img": "https://resim.epey.com/744431/k_arctic-ar-acfre00066a-1.jpg",
-"price": 9536.73,
-"sites": 3,
-"score": null,
-"cols": {
-"7845": "72.8 CFM",
-"7847": "1700 RPM",
-"7841": "140 mm",
-"7846": "22.5 dBA"
-}
-},
-{
 "id": "744569",
 "url": "https://www.epey.com/islemci-sogutucu/corsair-icue-h100i-elite.html",
 "name": "Corsair iCUE H100i Elite",
@@ -12327,7 +12375,7 @@
 "name": "Dark DKCCA91",
 "code": "",
 "img": "https://resim.epey.com/744629/k_dark-dkcca91-2.jpg",
-"price": 301.27,
+"price": 301.23,
 "sites": 7,
 "score": null,
 "cols": {
@@ -12359,8 +12407,8 @@
 "name": "Arctic Freezer i35 A-RGB",
 "code": "ACFRE00104A",
 "img": "https://resim.epey.com/744428/k_arctic-freezer-i35-a-rgb-acfre00104a-1.jpg",
-"price": 5361.0,
-"sites": 3,
+"price": 5363.8,
+"sites": 2,
 "score": null,
 "cols": {
 "7845": "-",
@@ -12391,8 +12439,8 @@
 "name": "Be Quiet! Pure Loop 240",
 "code": "BW006",
 "img": "https://resim.epey.com/744473/k_be-quiet-pure-loop-240mm-bw006-1.jpg",
-"price": 8985.5,
-"sites": 4,
+"price": 8579.74,
+"sites": 3,
 "score": null,
 "cols": {
 "7845": "-",
@@ -12514,6 +12562,22 @@
 }
 },
 {
+"id": "744572",
+"url": "https://www.epey.com/islemci-sogutucu/corsair-hydro-h55.html",
+"name": "Corsair H55 RGB",
+"code": "CW-9060052-WW",
+"img": "https://resim.epey.com/744572/k_corsair-hydro-h55-rgb-120mm-cw-9060052-ww-1.jpg",
+"price": 3289.1,
+"sites": 4,
+"score": null,
+"cols": {
+"7845": "-",
+"7847": "1500 RPM",
+"7841": "120 mm",
+"7846": "-"
+}
+},
+{
 "id": "744999",
 "url": "https://www.epey.com/islemci-sogutucu/rampage-cool-blade-rm-c03.html",
 "name": "Rampage Cool Blade RM-C03",
@@ -12610,28 +12674,12 @@
 }
 },
 {
-"id": "743893",
-"url": "https://www.epey.com/islemci-sogutucu/cooler-master-nepton-140xl.html",
-"name": "Cooler Master Nepton 140XL",
-"code": "RL-N14X-20PK-R1",
-"img": "https://resim.epey.com/743893/k_cooler-master-nepton-140xl-1.jpg",
-"price": 3599.0,
-"sites": 1,
-"score": null,
-"cols": {
-"7845": "122.5 CFM",
-"7847": "2000 RPM",
-"7841": "140 mm",
-"7846": "39 dBA"
-}
-},
-{
 "id": "743884",
 "url": "https://www.epey.com/islemci-sogutucu/cooler-master-hyper-212-spectrum.html",
 "name": "Cooler Master Hyper 212 Spectrum",
 "code": "RR-212A-20PD-R1",
 "img": "https://resim.epey.com/743884/k_cooler-master-hyper-212-spectrum-1.jpg",
-"price": 2321.1,
+"price": 2579.0,
 "sites": 1,
 "score": null,
 "cols": {
@@ -12663,7 +12711,7 @@
 "name": "Corsair Hydro H100x",
 "code": "CW-9060040-WW",
 "img": "https://resim.epey.com/743825/k_corsair-hydro-h100x-1.jpg",
-"price": 3797.6,
+"price": 3943.2,
 "sites": 3,
 "score": null,
 "cols": {
@@ -12743,8 +12791,8 @@
 "name": "Thermaltake Contac Silent 12",
 "code": "CL-P039-AL12BL-A",
 "img": "https://resim.epey.com/733225/k_thermaltake-contac-silent-12-5.png",
-"price": 2146.6,
-"sites": 6,
+"price": 2109.0,
+"sites": 7,
 "score": null,
 "cols": {
 "7845": "74.33 CFM",
@@ -12759,7 +12807,7 @@
 "name": "Thermaltake UX100",
 "code": "CL-P064-AL12SW-A",
 "img": "https://resim.epey.com/733214/k_thermaltake-ux100-argb-1.png",
-"price": 1151.1,
+"price": 1279.0,
 "sites": 1,
 "score": null,
 "cols": {
