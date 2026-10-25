@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-24T11:46:49+00:00",
+"updated": "2026-10-25T19:16:29+00:00",
 "rows": [
 {
 "id": "1022564",
@@ -142,7 +142,7 @@
 "name": "Intel Core Ultra 9 285K",
 "code": "BX80768285K",
 "img": "https://resim.epey.com/967473/k_intel-core-ultra-9-285k-1.jpg",
-"price": 31140.0,
+"price": 27965.34,
 "sites": 11,
 "score": 74,
 "cols": {
@@ -322,8 +322,8 @@
 "name": "AMD Ryzen 9 9950X3D",
 "code": "100-100000719WOF",
 "img": "https://resim.epey.com/984853/k_amd-ryzen-9-9950x3d-2.jpg",
-"price": 33107.07,
-"sites": 13,
+"price": 36802.35,
+"sites": 11,
 "score": 68,
 "cols": {
 "5099": "16",
@@ -397,7 +397,7 @@
 "name": "AMD Ryzen 9 9950X",
 "code": "100-100001277WOF",
 "img": "https://resim.epey.com/943053/k_amd-ryzen-9950x-1.jpg",
-"price": 26034.4,
+"price": 26338.6,
 "sites": 11,
 "score": 67,
 "cols": {
@@ -472,7 +472,7 @@
 "name": "Intel Core i9-14900KF",
 "code": "BX8071514900KF",
 "img": "https://resim.epey.com/901404/k_intel-core-i9-14900kf-1.jpg",
-"price": 21587.08,
+"price": 22052.0,
 "sites": 10,
 "score": 65,
 "cols": {
@@ -637,7 +637,7 @@
 "name": "Intel Core i7-14700K",
 "code": "BX8071514700K",
 "img": "https://resim.epey.com/901406/k_intel-core-i7-14700k-1.jpg",
-"price": 19019.12,
+"price": 19428.0,
 "sites": 11,
 "score": 62,
 "cols": {
@@ -742,7 +742,7 @@
 "name": "AMD Ryzen 7 9800X3D",
 "code": "100-1000001084WOF",
 "img": "https://resim.epey.com/970306/k_amd-ryzen-7-9800x3d-1.jpg",
-"price": 22650.0,
+"price": 22638.0,
 "sites": 13,
 "score": 60,
 "cols": {
@@ -758,7 +758,7 @@
 "code": "BX80768225",
 "img": "https://resim.epey.com/994586/k_intel-core-ultra-5-225-5032037282352-1.jpg",
 "price": 10799.0,
-"sites": 9,
+"sites": 8,
 "score": 60,
 "cols": {
 "5099": "10",
@@ -818,7 +818,7 @@
 "code": "BX8071513700KF",
 "img": "https://resim.epey.com/811769/k_intel-core-i9-13700k-1.jpg",
 "price": 16910.2,
-"sites": 8,
+"sites": 7,
 "score": 59,
 "cols": {
 "5099": "16",
@@ -862,7 +862,7 @@
 "name": "Intel Core i7-14700F",
 "code": "BX8071514700F",
 "img": "https://resim.epey.com/919211/k_intel-core-i7-14700f-1.jpg",
-"price": 16802.5,
+"price": 16799.0,
 "sites": 11,
 "score": 58,
 "cols": {
@@ -1022,6 +1022,21 @@
 }
 },
 {
+"id": "811827",
+"url": "https://www.epey.com/islemci/intel-core-i5-13600kf.html",
+"name": "Intel Core i5-13600KF",
+"code": "BX8071513600KF",
+"img": "https://resim.epey.com/811827/k_intel-core-i5-13600kf-1.jpg",
+"price": 35403.0,
+"sites": 1,
+"score": 56,
+"cols": {
+"5099": "14",
+"5102": "5.1 GHz",
+"5088": "2022"
+}
+},
+{
 "id": "922725",
 "url": "https://www.epey.com/islemci/amd-ryzen-5-8600g.html",
 "name": "AMD Ryzen 5 8600G",
@@ -1057,7 +1072,7 @@
 "name": "AMD Ryzen 5 7600X",
 "code": "100-100000593",
 "img": "https://resim.epey.com/811922/k_amd-ryzen-5-7600x-1.jpg",
-"price": 8788.0,
+"price": 8499.0,
 "sites": 10,
 "score": 55,
 "cols": {
@@ -1118,7 +1133,7 @@
 "code": "BX8071514500",
 "img": "https://resim.epey.com/931096/k_intel-core-i5-14500-1.jpg",
 "price": 12500.0,
-"sites": 6,
+"sites": 5,
 "score": 54,
 "cols": {
 "5099": "14",
@@ -1202,6 +1217,21 @@
 }
 },
 {
+"id": "953720",
+"url": "https://www.epey.com/islemci/amd-ryzen-9-5900xt.html",
+"name": "AMD Ryzen 9 5900XT",
+"code": "100-100001581WOF",
+"img": "https://resim.epey.com/953720/k_amd-ryzen-9-5900xt-1.jpg",
+"price": 57307.0,
+"sites": 1,
+"score": 52,
+"cols": {
+"5099": "16",
+"5102": "4.8 GHz",
+"5088": "2024"
+}
+},
+{
 "id": "939493",
 "url": "https://www.epey.com/islemci/amd-ryzen-5-8400f.html",
 "name": "AMD Ryzen 5 8400F",
@@ -1267,7 +1297,7 @@
 "name": "Intel Core i5-12600K",
 "code": "BX8071512600K",
 "img": "https://resim.epey.com/728096/k_intel-core-i5-12600k-1.jpg",
-"price": 9286.05,
+"price": 9285.28,
 "sites": 7,
 "score": 52,
 "cols": {
@@ -1382,6 +1412,21 @@
 }
 },
 {
+"id": "612721",
+"url": "https://www.epey.com/islemci/amd-ryzen-9-5900x.html",
+"name": "AMD Ryzen 9 5900X",
+"code": "",
+"img": "https://resim.epey.com/612721/k_amd-ryzen-9-5900x-1.jpg",
+"price": 31999.0,
+"sites": 1,
+"score": 50,
+"cols": {
+"5099": "12",
+"5102": "4.8 GHz",
+"5088": "2020"
+}
+},
+{
 "id": "919220",
 "url": "https://www.epey.com/islemci/intel-core-i5-14400.html",
 "name": "Intel Core i5-14400",
@@ -1433,7 +1478,7 @@
 "code": "BX8071513500",
 "img": "https://resim.epey.com/844678/k_intel-core-i5-13400-1.jpg",
 "price": 9793.3,
-"sites": 8,
+"sites": 7,
 "score": 49,
 "cols": {
 "5099": "10",
@@ -1478,7 +1523,7 @@
 "code": "",
 "img": "https://resim.epey.com/612722/k_amd-ryzen-7-5800x-1.jpg",
 "price": 12949.0,
-"sites": 7,
+"sites": 6,
 "score": 48,
 "cols": {
 "5099": "8",
@@ -1687,7 +1732,7 @@
 "name": "Intel Core i5-12400",
 "code": "",
 "img": "https://resim.epey.com/742684/k_intel-core-i5-12400-1.png",
-"price": 7997.91,
+"price": 8698.4,
 "sites": 11,
 "score": 46,
 "cols": {
@@ -1709,6 +1754,21 @@
 "5099": "6",
 "5102": "4.4 GHz",
 "5088": "2022"
+}
+},
+{
+"id": "165976",
+"url": "https://www.epey.com/islemci/amd-ryzen-9-3900x.html",
+"name": "AMD Ryzen 9 3900X",
+"code": "",
+"img": "https://resim.epey.com/165976/k_amd-ryzen-9-3900x-1.png",
+"price": 49079.0,
+"sites": 1,
+"score": 45,
+"cols": {
+"5099": "12",
+"5102": "4.6 GHz",
+"5088": "2019"
 }
 },
 {
@@ -1739,6 +1799,21 @@
 "5099": "4",
 "5102": "4.3 GHz",
 "5088": "2022"
+}
+},
+{
+"id": "597288",
+"url": "https://www.epey.com/islemci/intel-core-i9-10850k.html",
+"name": "Intel Core i9-10850K",
+"code": "",
+"img": "https://resim.epey.com/597288/k_intel-core-i9-10850k-1.jpg",
+"price": 61412.0,
+"sites": 1,
+"score": 45,
+"cols": {
+"5099": "10",
+"5102": "5.2 GHz",
+"5088": "2020"
 }
 },
 {
@@ -1777,7 +1852,7 @@
 "name": "AMD Ryzen 5 5500GT",
 "code": "100-100001489",
 "img": "https://resim.epey.com/922688/k_amd-ryzen-5-5500gt-1.jpg",
-"price": 8360.78,
+"price": 9185.1,
 "sites": 7,
 "score": 44,
 "cols": {
@@ -1877,6 +1952,21 @@
 }
 },
 {
+"id": "132085",
+"url": "https://www.epey.com/islemci/intel-core-i9-9900k.html",
+"name": "Intel Core i9-9900K",
+"code": "",
+"img": "https://resim.epey.com/132085/k_intel-core-i9-9900k-1.jpg",
+"price": 53891.0,
+"sites": 1,
+"score": 42,
+"cols": {
+"5099": "8",
+"5102": "5.0 GHz",
+"5088": "2018"
+}
+},
+{
 "id": "1045315",
 "url": "https://www.epey.com/islemci/intel-xeon-gold-5220r.html",
 "name": "Intel Xeon Gold 5220R",
@@ -1889,6 +1979,21 @@
 "5099": "24",
 "5102": "4.0 GHz",
 "5088": "2020"
+}
+},
+{
+"id": "336288",
+"url": "https://www.epey.com/islemci/intel-core-i9-9900.html",
+"name": "Intel Core i9-9900",
+"code": "",
+"img": "https://resim.epey.com/336288/k_intel-core-i9-9900-2.jpg",
+"price": 67365.0,
+"sites": 1,
+"score": 42,
+"cols": {
+"5099": "8",
+"5102": "5.0 GHz",
+"5088": "2018"
 }
 },
 {
@@ -1973,7 +2078,7 @@
 "code": "",
 "img": "https://resim.epey.com/674329/k_intel-core-i5-11400-1.jpg",
 "price": 10821.9,
-"sites": 5,
+"sites": 4,
 "score": 41,
 "cols": {
 "5099": "6",
@@ -2047,8 +2152,8 @@
 "name": "AMD Ryzen 5 3500X",
 "code": "",
 "img": "https://resim.epey.com/420789/k_amd-ryzen-5-3500x-1.jpg",
-"price": 3810.05,
-"sites": 7,
+"price": 3812.73,
+"sites": 6,
 "score": 40,
 "cols": {
 "5099": "6",
@@ -2108,7 +2213,7 @@
 "code": "",
 "img": "https://resim.epey.com/770558/k_amd-ryzen-3-4100-1.jpg",
 "price": 2553.2,
-"sites": 6,
+"sites": 5,
 "score": 40,
 "cols": {
 "5099": "4",
@@ -2242,7 +2347,7 @@
 "name": "Intel Core i3-10105",
 "code": "CM8070104291321",
 "img": "https://resim.epey.com/678976/k_intel-core-i3-10105-1.jpg",
-"price": 3745.9,
+"price": 3796.8,
 "sites": 6,
 "score": 38,
 "cols": {
@@ -2387,21 +2492,6 @@
 }
 },
 {
-"id": "118404",
-"url": "https://www.epey.com/islemci/intel-core-i7-6700k.html",
-"name": "Intel Core i7-6700K",
-"code": "",
-"img": "https://resim.epey.com/118404/k_intel-core-i7-6700k-1.jpg",
-"price": 4045.5,
-"sites": 1,
-"score": 36,
-"cols": {
-"5099": "4",
-"5102": "4.2 GHz",
-"5088": "2015"
-}
-},
-{
 "id": "638344",
 "url": "https://www.epey.com/islemci/intel-xeon-silver-4214r.html",
 "name": "Intel Xeon Silver 4214R",
@@ -2512,7 +2602,7 @@
 "name": "Intel Core i7-7700",
 "code": "",
 "img": "https://resim.epey.com/118342/k_intel-core-i7-7700-1.jpg",
-"price": 5192.35,
+"price": 5141.0,
 "sites": 2,
 "score": 36,
 "cols": {
@@ -2662,7 +2752,7 @@
 "name": "Intel Core i7-6700",
 "code": "",
 "img": "https://resim.epey.com/118410/k_intel-core-i7-6700-1.jpg",
-"price": 4376.07,
+"price": 4370.07,
 "sites": 6,
 "score": 34,
 "cols": {
@@ -2783,7 +2873,7 @@
 "code": "",
 "img": "https://resim.epey.com/118355/k_intel-core-i5-7400-1.jpg",
 "price": 2154.97,
-"sites": 3,
+"sites": 4,
 "score": 32,
 "cols": {
 "5099": "4",
@@ -3277,7 +3367,7 @@
 "name": "Intel Core i5-2400",
 "code": "",
 "img": "https://resim.epey.com/118361/k_intel-core-i5-2400-1.jpg",
-"price": 749.0,
+"price": 699.0,
 "sites": 5,
 "score": 25,
 "cols": {
@@ -3367,7 +3457,7 @@
 "name": "Intel Core i5-650",
 "code": "",
 "img": "https://resim.epey.com/118362/k_intel-core-i5-650-1.jpg",
-"price": 226.92,
+"price": 236.22,
 "sites": 4,
 "score": 25,
 "cols": {
@@ -3397,7 +3487,7 @@
 "name": "Intel Core i5-2300",
 "code": "",
 "img": "https://resim.epey.com/420791/k_intel-core-i5-2300-1.jpg",
-"price": 563.58,
+"price": 572.88,
 "sites": 1,
 "score": 24,
 "cols": {

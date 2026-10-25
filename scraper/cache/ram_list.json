@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-24T11:48:15+00:00",
+"updated": "2026-10-25T19:18:20+00:00",
 "rows": [
 {
 "id": "1023705",
@@ -143,7 +143,7 @@
 "code": "VEU596G6432K",
 "img": "https://resim.epey.com/1077912/k_patriot-viper-elite-5-ultra-veu596g6432k-1.jpg",
 "price": 166849.0,
-"sites": 2,
+"sites": 3,
 "score": 72,
 "cols": {
 "5193": "DDR5",
@@ -218,7 +218,7 @@
 "code": "VEU596G6028K",
 "img": "https://resim.epey.com/1077913/k_patriot-viper-elite-5-ultra-veu596g6028k-1.jpg",
 "price": 172809.0,
-"sites": 2,
+"sites": 3,
 "score": 71,
 "cols": {
 "5193": "DDR5",
@@ -233,7 +233,7 @@
 "code": "AX5CU9200C4224G-DCLACRSG",
 "img": "https://resim.epey.com/1008853/k_xpg-lancer-rgb-ax5cu9200c4224g-dclacrsg-1.jpg",
 "price": 55199.0,
-"sites": 2,
+"sites": 3,
 "score": 71,
 "cols": {
 "5193": "DDR5",
@@ -623,7 +623,7 @@
 "code": "VIR564G64C36K",
 "img": "https://resim.epey.com/1077920/k_patriot-viper-steel-5-infinite-2.jpg",
 "price": 84919.0,
-"sites": 2,
+"sites": 3,
 "score": 66,
 "cols": {
 "5193": "DDR5",
@@ -653,7 +653,7 @@
 "code": "IR-6800D564L34/64GDC",
 "img": "https://resim.epey.com/899668/k_goodram-irdm-1.jpg",
 "price": 108769.0,
-"sites": 1,
+"sites": 2,
 "score": 66,
 "cols": {
 "5193": "DDR5",
@@ -689,21 +689,6 @@
 "5193": "DDR5",
 "5194": "64 GB",
 "5195": "6000 MT/s"
-}
-},
-{
-"id": "949350",
-"url": "https://www.epey.com/bellek-ram/patriot-viper-elite-5-rgb-tuf-pver548g66c34kt.html",
-"name": "Patriot Viper Elite 5 RGB TUF",
-"code": "PVER548G66C34KT",
-"img": "https://resim.epey.com/949350/k_patriot-viper-elite-5-rgb-tuf-pver548g66c34kt-pver532g60c36kt-3.jpg",
-"price": 45000.0,
-"sites": 1,
-"score": 65,
-"cols": {
-"5193": "DDR5",
-"5194": "48 GB",
-"5195": "6600 MT/s"
 }
 },
 {
@@ -794,21 +779,6 @@
 "5193": "DDR5",
 "5194": "64 GB",
 "5195": "6000 MT/s"
-}
-},
-{
-"id": "970857",
-"url": "https://www.epey.com/bellek-ram/patriot-viper-xtreme-5-pvx548g70c32k.html",
-"name": "Patriot Viper Xtreme 5",
-"code": "PVX548G70C32K",
-"img": "https://resim.epey.com/970857/k_patriot-viper-xtreme-5-pvx548g70c32k-pvx548g76c36k-1.jpg",
-"price": 41640.0,
-"sites": 1,
-"score": 65,
-"cols": {
-"5193": "DDR5",
-"5194": "48 GB",
-"5195": "7000 MT/s"
 }
 },
 {
@@ -953,7 +923,7 @@
 "code": "KF564C32BBEK2-64TR",
 "img": "https://resim.epey.com/970358/k_kingston-beast-kf564c32bbek2-64tr-2.jpg",
 "price": 95690.2,
-"sites": 6,
+"sites": 7,
 "score": 65,
 "cols": {
 "5193": "DDR5",
@@ -1027,7 +997,7 @@
 "name": "Kingston Renegade RGB",
 "code": "KF580C38RSAK2-32TR",
 "img": "https://resim.epey.com/1013235/k_kingston-renegade-rgb-kf580c38rsak2-32tr-1.jpg",
-"price": 44157.89,
+"price": 44245.68,
 "sites": 4,
 "score": 65,
 "cols": {
@@ -1043,7 +1013,7 @@
 "code": "F5-8000J3848H16GX2-TZ5NR",
 "img": "https://resim.epey.com/991801/k_g-skill-trident-z5-neo-rgb-1.jpg",
 "price": 44263.28,
-"sites": 4,
+"sites": 3,
 "score": 65,
 "cols": {
 "5193": "DDR5",
@@ -1079,21 +1049,6 @@
 "5193": "DDR5",
 "5194": "64 GB",
 "5195": "5600 MT/s"
-}
-},
-{
-"id": "920031",
-"url": "https://www.epey.com/bellek-ram/patriot-viper-venom-rgb-pvvr532g720c34k.html",
-"name": "Patriot Viper Venom RGB",
-"code": "PVVR532G720C34K",
-"img": "https://resim.epey.com/920031/k_patriot-viper-venom-rgb-pvvr532g720c34k-pvvr532g700c32k-1.jpg",
-"price": 33240.0,
-"sites": 1,
-"score": 64,
-"cols": {
-"5193": "DDR5",
-"5194": "32 GB",
-"5195": "7200 MT/s"
 }
 },
 {
@@ -1223,7 +1178,7 @@
 "code": "F5-7600J3646G16GX2-TZ5RK",
 "img": "https://resim.epey.com/830657/k_g-skill-trident-z5-rgb-f5-7600j3646g16gx2-tz5rk-2.jpg",
 "price": 48679.0,
-"sites": 1,
+"sites": 2,
 "score": 64,
 "cols": {
 "5193": "DDR5",
@@ -1328,7 +1283,7 @@
 "code": "KF580C38RSK2-32TR",
 "img": "https://resim.epey.com/1013236/k_kingston-renegade-kf580c38rsk2-32tr-1.jpg",
 "price": 38115.8,
-"sites": 3,
+"sites": 2,
 "score": 63,
 "cols": {
 "5193": "DDR5",
@@ -1667,6 +1622,21 @@
 }
 },
 {
+"id": "891236",
+"url": "https://www.epey.com/bellek-ram/patriot-viper-venom-pvv532g700c32k.html",
+"name": "Patriot Viper Venom",
+"code": "PVV532G700C32K",
+"img": "https://resim.epey.com/891236/k_patriot-viper-venom-pvv532g700c32k-pvv516g560c40k-1.jpg",
+"price": 104397.69,
+"sites": 1,
+"score": 61,
+"cols": {
+"5193": "DDR5",
+"5194": "32 GB",
+"5195": "7000 MT/s"
+}
+},
+{
 "id": "1000030",
 "url": "https://www.epey.com/bellek-ram/klevv-urbane-v.html",
 "name": "Klevv Urbane V",
@@ -1763,7 +1733,7 @@
 "code": "F5-6400J3039G16GX2-TZ5NR",
 "img": "https://resim.epey.com/962978/k_g-skill-trident-z5-neo-rgb-f5-6400j3039g16gx2-tz5nr-1.jpg",
 "price": 49800.0,
-"sites": 4,
+"sites": 3,
 "score": 61,
 "cols": {
 "5193": "DDR5",
@@ -1928,7 +1898,7 @@
 "code": "GAVSG532GB6400C42ADC",
 "img": "https://resim.epey.com/1065692/k_geil-orion-v-rgb-gavsg532gb6400c42adc-12.jpg",
 "price": 30000.0,
-"sites": 2,
+"sites": 3,
 "score": 61,
 "cols": {
 "5193": "DDR5",
@@ -2017,8 +1987,8 @@
 "name": "Kingston Fury Impact",
 "code": "KF556S40IBK2-64",
 "img": "https://resim.epey.com/973359/k_kingston-fury-impact-kf556s40ibk2-64-1.jpg",
-"price": 56999.0,
-"sites": 3,
+"price": 61379.1,
+"sites": 1,
 "score": 60,
 "cols": {
 "5193": "DDR5",
@@ -2032,7 +2002,7 @@
 "name": "Kingston Impact",
 "code": "KF556S40IBK2-64TR",
 "img": "https://resim.epey.com/970355/k_kingston-impact-kf556s40ibk2-64tr-1.jpg",
-"price": 56999.0,
+"price": 66869.79,
 "sites": 5,
 "score": 60,
 "cols": {
@@ -2078,7 +2048,7 @@
 "code": "KD5AGUA80-60A300G",
 "img": "https://resim.epey.com/950432/k_klevv-cras-v-rgb-1.jpg",
 "price": 40041.82,
-"sites": 5,
+"sites": 6,
 "score": 60,
 "cols": {
 "5193": "DDR5",
@@ -2482,8 +2452,8 @@
 "name": "Kingston Beast",
 "code": "KF564C32BBEK2-32TR",
 "img": "https://resim.epey.com/970400/k_kingston-beast-kf564c32bbek2-32tr-2.jpg",
-"price": 48988.8,
-"sites": 6,
+"price": 39897.0,
+"sites": 7,
 "score": 59,
 "cols": {
 "5193": "DDR5",
@@ -2572,8 +2542,8 @@
 "name": "XPG Lancer Blade",
 "code": "AX5U6000C4816G-DTLABBK",
 "img": "https://resim.epey.com/961918/k_xpg-lancer-blade-ax5u6000c4816g-dtlabbk-1.jpg",
-"price": 29625.64,
-"sites": 4,
+"price": 32079.44,
+"sites": 3,
 "score": 59,
 "cols": {
 "5193": "DDR5",
@@ -2723,7 +2693,7 @@
 "code": "GAVSG532GB5600C38ADC",
 "img": "https://resim.epey.com/1065491/k_geil-orion-v-rgb-gavsg532gb5600c38adc-12.jpg",
 "price": 28803.83,
-"sites": 3,
+"sites": 4,
 "score": 58,
 "cols": {
 "5193": "DDR5",
@@ -2887,7 +2857,7 @@
 "name": "G.Skill Flare X5",
 "code": "F5-6000J3636F16GX2-FX5",
 "img": "https://resim.epey.com/811214/k_g-skill-f5-5600j3636c16gx2-fx5-1.jpg",
-"price": 273499.99,
+"price": 271999.99,
 "sites": 4,
 "score": 58,
 "cols": {
@@ -2902,7 +2872,7 @@
 "name": "XPG Lancer",
 "code": "AX5U6000C3016G-DCLABK",
 "img": "https://resim.epey.com/922639/k_xpg-ax5u5200c3816g-dclabk-1.jpg",
-"price": 45093.39,
+"price": 48483.94,
 "sites": 2,
 "score": 58,
 "cols": {
@@ -3232,7 +3202,7 @@
 "name": "Kingston Beast",
 "code": "KF560C30BBE-32TR",
 "img": "https://resim.epey.com/938242/k_kingston-fury-beast-32gb-6000mt-s-ddr5-cl30-dimm-siyah-masaustu-oyun-bellegi-tek-modul-kf560c30bbe-32-1.jpg",
-"price": 36876.42,
+"price": 38039.0,
 "sites": 9,
 "score": 57,
 "cols": {
@@ -3262,8 +3232,8 @@
 "name": "Kingston Fury Beast",
 "code": "KF560C40BB-32",
 "img": "https://resim.epey.com/854480/k_kingston-fury-beast-kf560c40bb-32-1.jpg",
-"price": 27848.9,
-"sites": 2,
+"price": 29945.0,
+"sites": 1,
 "score": 57,
 "cols": {
 "5193": "DDR5",
@@ -3277,7 +3247,7 @@
 "name": "Crucial Pro",
 "code": "CP32G56C46U5",
 "img": "https://resim.epey.com/922635/k_crucial-pro-cp32g56c46u5-1.jpg",
-"price": 31569.8,
+"price": 30234.3,
 "sites": 5,
 "score": 57,
 "cols": {
@@ -3398,7 +3368,7 @@
 "code": "GAVSG516GB6400C42ASC",
 "img": "https://resim.epey.com/1065484/k_geil-orion-v-rgb-gavsg516gb6400c42asc-2.jpg",
 "price": 14999.02,
-"sites": 3,
+"sites": 4,
 "score": 57,
 "cols": {
 "5193": "DDR5",
@@ -3473,7 +3443,7 @@
 "code": "AH5U32G56C522MBAA-1",
 "img": "https://resim.epey.com/1077895/k_apacer-nox-ah5u32g56c522mbaa-1-1.jpg",
 "price": 33669.0,
-"sites": 2,
+"sites": 3,
 "score": 56,
 "cols": {
 "5193": "DDR5",
@@ -3757,7 +3727,7 @@
 "name": "Crucial Pro",
 "code": "CP24G56C46U5",
 "img": "https://resim.epey.com/922634/k_crucial-pro-cp24g56c46u5-1.jpg",
-"price": 23275.0,
+"price": 23158.62,
 "sites": 1,
 "score": 56,
 "cols": {
@@ -3773,7 +3743,7 @@
 "code": "AX5U6000C3016G-SLABRBK",
 "img": "https://resim.epey.com/985766/k_xpg-lancer-blade-ax5u6000c3016g-slabrbk-1.jpg",
 "price": 21412.41,
-"sites": 7,
+"sites": 8,
 "score": 56,
 "cols": {
 "5193": "DDR5",
@@ -3929,21 +3899,6 @@
 "5193": "DDR5",
 "5194": "16 GB",
 "5195": "6000 MT/s"
-}
-},
-{
-"id": "1045330",
-"url": "https://www.epey.com/bellek-ram/goodram-irdm-ir-6400d564l32s-16g.html",
-"name": "Goodram IRDM",
-"code": "IR-6400D564L32S/16G",
-"img": "https://resim.epey.com/1045330/k_goodram-irdm-ir-6400d564l32s-16g-1.jpg",
-"price": 19422.12,
-"sites": 1,
-"score": 55,
-"cols": {
-"5193": "DDR5",
-"5194": "16 GB",
-"5195": "6400 MT/s"
 }
 },
 {
@@ -4267,7 +4222,7 @@
 "name": "Crucial CT2K16G56C46S5",
 "code": "",
 "img": "https://resim.epey.com/842712/k_crucial-32gb-kit-2x16gb-ct2k16g56c46s5-1.png",
-"price": 27169.0,
+"price": 26030.7,
 "sites": 2,
 "score": 54,
 "cols": {
@@ -4313,7 +4268,7 @@
 "code": "TMD516GB6000U36",
 "img": "https://resim.epey.com/972164/k_twinmos-tmd516gb5600u46-1.jpg",
 "price": 14972.07,
-"sites": 7,
+"sites": 8,
 "score": 54,
 "cols": {
 "5193": "DDR5",
@@ -4372,8 +4327,8 @@
 "name": "Kingston Beast",
 "code": "KF560C30BBE-16TR",
 "img": "https://resim.epey.com/956186/k_kingston-fury-beast-32gb-6000mt-s-ddr5-cl30-dimm-siyah-masaustu-oyun-bellegi-tek-modul-kf560c30bbe-32-1.jpg",
-"price": 20713.0,
-"sites": 8,
+"price": 20999.0,
+"sites": 7,
 "score": 54,
 "cols": {
 "5193": "DDR5",
@@ -4403,7 +4358,7 @@
 "code": "CMK16GX5M1D6000Z38",
 "img": "https://resim.epey.com/1072875/k_corsair-vengeance-cmk16gx5m1d6000z38-2.jpg",
 "price": 17499.0,
-"sites": 3,
+"sites": 4,
 "score": 54,
 "cols": {
 "5193": "DDR5",
@@ -4658,7 +4613,7 @@
 "code": "AX5U6000C4816G-SLABBK",
 "img": "https://resim.epey.com/955542/k_xpg-lancer-blade-ax5u6000c4816g-slabbk-1.jpg",
 "price": 13899.0,
-"sites": 10,
+"sites": 11,
 "score": 54,
 "cols": {
 "5193": "DDR5",
@@ -4703,7 +4658,7 @@
 "code": "GAVSG516GB5200C38BSC",
 "img": "https://resim.epey.com/1065480/k_geil-orion-v-rgb-2.jpg",
 "price": 13477.63,
-"sites": 2,
+"sites": 3,
 "score": 54,
 "cols": {
 "5193": "DDR5",
@@ -4777,7 +4732,7 @@
 "name": "Apacer Nox",
 "code": "AH5U16G56C522MBAA-1",
 "img": "https://resim.epey.com/1029371/k_apacer-nox-ah5u16g56c522mbaa-1-1.jpg",
-"price": 14518.74,
+"price": 14530.42,
 "sites": 6,
 "score": 54,
 "cols": {
@@ -4837,7 +4792,7 @@
 "name": "Goodram IRDM",
 "code": "IR-5600D564L36S/16G",
 "img": "https://resim.epey.com/989555/k_goodram-irdm-ir-5600d564l36s-16g-1.jpg",
-"price": 17536.12,
+"price": 17535.79,
 "sites": 6,
 "score": 53,
 "cols": {
@@ -4859,6 +4814,21 @@
 "5193": "DDR5",
 "5194": "16 GB",
 "5195": "5600 MT/s"
+}
+},
+{
+"id": "991802",
+"url": "https://www.epey.com/bellek-ram/g-skill-ripjaws-s5-f5-5200j4040a16gx1-rs5k.html",
+"name": "G.Skill Ripjaws S5",
+"code": "F5-5200J4040A16GX1-RS5K",
+"img": "https://resim.epey.com/991802/k_g-skill-ripjaws-f5-5200j4040a16gx1-rs5k-4.jpg",
+"price": 14100.0,
+"sites": 2,
+"score": 53,
+"cols": {
+"5193": "DDR5",
+"5194": "16 GB",
+"5195": "5200 MT/s"
 }
 },
 {
@@ -4987,7 +4957,7 @@
 "name": "Samsung M425R4GA3BB0-CWM",
 "code": "",
 "img": "https://resim.epey.com/985776/k_samsung-m425r4ga3bb0-cwm-1.jpg",
-"price": 29500.0,
+"price": 30689.07,
 "sites": 2,
 "score": 53,
 "cols": {
@@ -5032,7 +5002,7 @@
 "name": "Crucial CT32G56C46S5",
 "code": "",
 "img": "https://resim.epey.com/884967/k_crucial-ct32g56c46s5-1.jpg",
-"price": 26505.0,
+"price": 26067.07,
 "sites": 8,
 "score": 53,
 "cols": {
@@ -5063,7 +5033,7 @@
 "code": "CMSX32GX5M1A5600C48",
 "img": "https://resim.epey.com/965666/k_corsair-vengeancecmsx32gx5m1a4800c40-1.jpg",
 "price": 43748.96,
-"sites": 2,
+"sites": 3,
 "score": 53,
 "cols": {
 "5193": "DDR5",
@@ -5227,7 +5197,7 @@
 "name": "Crucial CT16G64C52CS5",
 "code": "",
 "img": "https://resim.epey.com/1011903/k_crucial-ct16g64c52cs5-3.jpg",
-"price": 13159.06,
+"price": 12540.12,
 "sites": 8,
 "score": 52,
 "cols": {
@@ -5407,7 +5377,7 @@
 "name": "XPG Lancer Blade",
 "code": "AX5U5600C468G-SLABBK",
 "img": "https://resim.epey.com/939871/k_xpg-lancer-blade-ax5u5600c468g-slabbk-1.jpg",
-"price": 8612.8,
+"price": 8617.1,
 "sites": 8,
 "score": 51,
 "cols": {
@@ -5582,21 +5552,6 @@
 }
 },
 {
-"id": "894640",
-"url": "https://www.epey.com/bellek-ram/xpg-hunter-ax5u5200c388g-shtbk.html",
-"name": "XPG Hunter",
-"code": "AX5U5200C388G-SHTBK",
-"img": "https://resim.epey.com/894640/k_xpg-hunter-ax5u5200c388g-shtbk-4.jpg",
-"price": 11881.49,
-"sites": 1,
-"score": 51,
-"cols": {
-"5193": "DDR5",
-"5194": "8 GB",
-"5195": "5200 MT/s"
-}
-},
-{
 "id": "657243",
 "url": "https://www.epey.com/bellek-ram/hyperx-impact-ddr4-hx432s20ibk2-64.html",
 "name": "HyperX Impact DDR4",
@@ -5707,7 +5662,7 @@
 "name": "Adata Premier",
 "code": "AD5S480032G-S",
 "img": "https://resim.epey.com/971698/k_adata-premier-ad5s480032g-s-2.jpg",
-"price": 160184.83,
+"price": 158684.83,
 "sites": 1,
 "score": 51,
 "cols": {
@@ -5722,7 +5677,7 @@
 "name": "Transcend JetRam",
 "code": "JM4800ASE-32G",
 "img": "https://resim.epey.com/855817/k_transcend-jetram-jm4800ase-32g-1.jpg",
-"price": 26628.25,
+"price": 26649.69,
 "sites": 7,
 "score": 51,
 "cols": {
@@ -5782,7 +5737,7 @@
 "name": "Biwın B45DSBG74840B-T03B",
 "code": "",
 "img": "https://resim.epey.com/1040336/k_biwin-b45dsbg74840b-t03b-1.jpg",
-"price": 29078.96,
+"price": 29102.36,
 "sites": 3,
 "score": 51,
 "cols": {
@@ -6047,21 +6002,6 @@
 }
 },
 {
-"id": "926949",
-"url": "https://www.epey.com/bellek-ram/lexar-ld5s16g56c46st-bgs.html",
-"name": "Lexar LD5S16G56C46ST-BGS",
-"code": "",
-"img": "https://resim.epey.com/926949/k_lexar-ld5s16g56c46st-bgs-1.jpg",
-"price": 42110.0,
-"sites": 1,
-"score": 50,
-"cols": {
-"5193": "DDR5",
-"5194": "16 GB",
-"5195": "5600 MT/s"
-}
-},
-{
 "id": "908219",
 "url": "https://www.epey.com/bellek-ram/thull-thl-sopc44800d5-16g.html",
 "name": "Thull THL-SOPC44800D5-16G",
@@ -6112,7 +6052,7 @@
 "name": "SK Hynix HMCG78AGBSA095N",
 "code": "",
 "img": "https://resim.epey.com/885104/k_sk-hynix-hmcg78agbsa095n-1.jpg",
-"price": 14250.0,
+"price": 14692.14,
 "sites": 2,
 "score": 50,
 "cols": {
@@ -6202,7 +6142,7 @@
 "name": "Goodram IRDM Pro",
 "code": "IRP-K3600V64L1832G",
 "img": "https://resim.epey.com/842855/k_goodram-irdm-pro-irp-k3600v64l1832g-1.jpg",
-"price": 13793.08,
+"price": 13803.79,
 "sites": 2,
 "score": 50,
 "cols": {
@@ -6218,7 +6158,7 @@
 "code": "IRP-K3600D4V64L18/32GDC",
 "img": "https://resim.epey.com/830676/k_goodram-irdm-pro-k3600d4v64l18-32gdc-2.jpg",
 "price": 14163.0,
-"sites": 4,
+"sites": 5,
 "score": 50,
 "cols": {
 "5193": "DDR4",
@@ -6398,7 +6338,7 @@
 "code": "",
 "img": "https://resim.epey.com/935890/k_twinmos-tmd516gb4800u40-1.jpg",
 "price": 16422.89,
-"sites": 4,
+"sites": 2,
 "score": 49,
 "cols": {
 "5193": "DDR5",
@@ -6458,7 +6398,7 @@
 "code": "",
 "img": "https://resim.epey.com/854909/k_crucial-ct16g52c42s5-1.jpg",
 "price": 14573.1,
-"sites": 3,
+"sites": 2,
 "score": 49,
 "cols": {
 "5193": "DDR5",
@@ -6667,7 +6607,7 @@
 "name": "SK Hynix HMCG66AGBSA092N",
 "code": "",
 "img": "https://resim.epey.com/928557/k_sk-hynix-hmcg66agbsa092n-1.jpg",
-"price": 7439.07,
+"price": 7244.7,
 "sites": 8,
 "score": 49,
 "cols": {
@@ -7507,8 +7447,8 @@
 "name": "Ramaxel RMSB3400KB06IVF-4800",
 "code": "",
 "img": "https://resim.epey.com/1053979/k_ramaxel-rmsb3400kb06ivf-4800-1.jpg",
-"price": 8183.1,
-"sites": 3,
+"price": 8500.0,
+"sites": 1,
 "score": 48,
 "cols": {
 "5193": "DDR5",
@@ -7582,8 +7522,8 @@
 "name": "Corsair Vengeance LPX",
 "code": "CMK32GX4M1D3000C16",
 "img": "https://resim.epey.com/396681/k_corsair-vengeance-lpx-2.jpg",
-"price": 26310.6,
-"sites": 2,
+"price": 27990.0,
+"sites": 1,
 "score": 47,
 "cols": {
 "5193": "DDR4",
@@ -7597,7 +7537,7 @@
 "name": "Kingston Fury Beast RGB",
 "code": "KF436C18BB2A/16",
 "img": "https://resim.epey.com/1054244/k_kingston-fury-beast-rgb-1.jpg",
-"price": 6931.0,
+"price": 8500.0,
 "sites": 1,
 "score": 47,
 "cols": {
@@ -7658,7 +7598,7 @@
 "code": "AX4U36008G18I-DR30",
 "img": "https://resim.epey.com/854269/k_adata-xpg-gammix-d30-ax4u300038g16-db30-ax4u266638g16-dr30-3.jpg",
 "price": 7894.8,
-"sites": 2,
+"sites": 1,
 "score": 47,
 "cols": {
 "5193": "DDR4",
@@ -7882,7 +7822,7 @@
 "name": "SK Hynix HMCG66MEBSA095N",
 "code": "",
 "img": "https://resim.epey.com/937549/k_sk-hynix-hmcg66mebsa095n-2.jpg",
-"price": 7770.02,
+"price": 7775.89,
 "sites": 5,
 "score": 47,
 "cols": {
@@ -7944,21 +7884,6 @@
 "img": "https://resim.epey.com/865873/k_samsung-m425r1gb4bb0-cqkod-1.jpg",
 "price": 6975.0,
 "sites": 7,
-"score": 47,
-"cols": {
-"5193": "DDR5",
-"5194": "8 GB",
-"5195": "4800 MT/s"
-}
-},
-{
-"id": "783563",
-"url": "https://www.epey.com/bellek-ram/crucial-ct8g48c40s5.html",
-"name": "Crucial CT8G48C40S5",
-"code": "",
-"img": "https://resim.epey.com/783563/k_crucial-ct8g48c40s5-1.jpg",
-"price": 8114.37,
-"sites": 1,
 "score": 47,
 "cols": {
 "5193": "DDR5",
@@ -8032,7 +7957,7 @@
 "name": "Lexar Thor",
 "code": "LD4BU008G-R3200GDXG",
 "img": "https://resim.epey.com/898769/k_lexar-thor-ld4bu008g-r3200gdxg-ld4bu016g-r3200gdxg-2.jpg",
-"price": 7944.06,
+"price": 7803.93,
 "sites": 2,
 "score": 46,
 "cols": {
@@ -8243,7 +8168,7 @@
 "code": "F4-3200C16D-16GVKB",
 "img": "https://resim.epey.com/122053/k_g-skill-ripjaws-v-f4-3200c16d-16gvkb-4.jpg",
 "price": 9350.8,
-"sites": 7,
+"sites": 6,
 "score": 46,
 "cols": {
 "5193": "DDR4",
@@ -8302,7 +8227,7 @@
 "name": "Kingston Beast",
 "code": "KF436C18BB/16TR",
 "img": "https://resim.epey.com/943006/k_kingston-fury-beast-kf432c16bb-8tr-1.jpg",
-"price": 8087.28,
+"price": 7776.66,
 "sites": 11,
 "score": 46,
 "cols": {
@@ -8332,7 +8257,7 @@
 "name": "G Skill Ripjaws V",
 "code": "F4-3600C18S-16GVK",
 "img": "https://resim.epey.com/842822/k_g-skill-ripjaws-v-f4-3600c18s-16gvk-1.jpg",
-"price": 9154.9,
+"price": 7799.0,
 "sites": 7,
 "score": 46,
 "cols": {
@@ -8452,7 +8377,7 @@
 "name": "Apacer Panther",
 "code": "AH4U16G32C08Y7GAA-1",
 "img": "https://resim.epey.com/682588/k_apacer-panther-1.png",
-"price": 8213.83,
+"price": 8220.05,
 "sites": 5,
 "score": 46,
 "cols": {
@@ -8827,7 +8752,7 @@
 "name": "Crucial Basics",
 "code": "CT32G4DFD832A",
 "img": "https://resim.epey.com/749658/k_crucial-ct32g4dfd832a-1.png",
-"price": 12451.0,
+"price": 13484.07,
 "sites": 7,
 "score": 45,
 "cols": {
@@ -8843,7 +8768,7 @@
 "code": "",
 "img": "https://resim.epey.com/725322/k_hi-level-hlv-pc25600d4-32g-3.jpg",
 "price": 12825.0,
-"sites": 8,
+"sites": 9,
 "score": 45,
 "cols": {
 "5193": "DDR4",
@@ -8858,7 +8783,7 @@
 "code": "KVR32N22D8/32",
 "img": "https://resim.epey.com/646671/k_kingston-valueram-kvr32n22d8-32-1.jpg",
 "price": 14999.0,
-"sites": 10,
+"sites": 9,
 "score": 45,
 "cols": {
 "5193": "DDR4",
@@ -8903,7 +8828,7 @@
 "code": "TMD416GB3200D16BKX7P",
 "img": "https://resim.epey.com/1003447/k_twinmos-tornadox7-pro-tmd416gb3200d16bkx7p-1.jpg",
 "price": 6871.77,
-"sites": 10,
+"sites": 9,
 "score": 45,
 "cols": {
 "5193": "DDR4",
@@ -9097,8 +9022,8 @@
 "name": "İzoly ZL16GD43200C19",
 "code": "",
 "img": "https://resim.epey.com/937902/k_izoly-zl16gd43200c19-3.jpg",
-"price": 6950.24,
-"sites": 2,
+"price": 7050.24,
+"sites": 1,
 "score": 45,
 "cols": {
 "5193": "DDR4",
@@ -9187,7 +9112,7 @@
 "name": "XPG Spectrix D50",
 "code": "AX4U32008G16A-ST50",
 "img": "https://resim.epey.com/680819/k_xpg-spectrix-d50-ax4u32008g16a-st50-8gb-ax4u320038g16a-st50-1.jpg",
-"price": 5358.85,
+"price": 5369.23,
 "sites": 3,
 "score": 45,
 "cols": {
@@ -9592,7 +9517,7 @@
 "name": "Apacer ES.32G21.PSI",
 "code": "",
 "img": "https://resim.epey.com/813591/k_apacer-es-32g21-psi-1.jpg",
-"price": 12476.16,
+"price": 11602.83,
 "sites": 2,
 "score": 44,
 "cols": {
@@ -9668,7 +9593,7 @@
 "code": "CT32G4SFD832A",
 "img": "https://resim.epey.com/740085/k_crucial-basics-ntb-16gb-cb16gs2400-1.jpg",
 "price": 12102.07,
-"sites": 8,
+"sites": 9,
 "score": 44,
 "cols": {
 "5193": "DDR4",
@@ -9712,7 +9637,7 @@
 "name": "Kingston ValueRAM",
 "code": "KVR32S22D8/32",
 "img": "https://resim.epey.com/660733/k_kingston-valueram-kvr32s22d8-32-1.jpg",
-"price": 13671.0,
+"price": 13257.72,
 "sites": 8,
 "score": 44,
 "cols": {
@@ -9847,7 +9772,7 @@
 "name": "Micron Server DRAM",
 "code": "MTA18ASF2G72PDZ-3G2R",
 "img": "https://resim.epey.com/855776/k_micron-server-dram-mta18asf2g72pdz-3g2r-1.png",
-"price": 17407.76,
+"price": 17421.76,
 "sites": 1,
 "score": 44,
 "cols": {
@@ -10087,7 +10012,7 @@
 "name": "Lexar Thor",
 "code": "LD4BU008G-R3200GSXG",
 "img": "https://resim.epey.com/946853/k_lexar-thor-ld4bu008g-r3200gsxg-1.jpg",
-"price": 3853.0,
+"price": 3849.0,
 "sites": 5,
 "score": 44,
 "cols": {
@@ -10117,7 +10042,7 @@
 "name": "XPG Gammix D35",
 "code": "AX4U32008G16A-SBKD35",
 "img": "https://resim.epey.com/871308/k_xpg-gammix-d35-ax4u32008g16a-sbkd35-1.jpg",
-"price": 4179.05,
+"price": 4091.07,
 "sites": 10,
 "score": 44,
 "cols": {
@@ -10552,7 +10477,7 @@
 "name": "TwinMOS MDD416GB3200D",
 "code": "",
 "img": "https://resim.epey.com/756696/k_twinmos-mdd416gb3200d-1.jpg",
-"price": 6999.0,
+"price": 7399.0,
 "sites": 8,
 "score": 43,
 "cols": {
@@ -10892,6 +10817,21 @@
 }
 },
 {
+"id": "956783",
+"url": "https://www.epey.com/bellek-ram/sk-hynix-hma82gu6cjr8n-xn.html",
+"name": "SK Hynix HMA82GU6CJR8N-XN",
+"code": "",
+"img": "https://resim.epey.com/956783/k_sk-hynix-hma82gu6cjr8n-xn-3.jpg",
+"price": 8835.0,
+"sites": 1,
+"score": 43,
+"cols": {
+"5193": "DDR4",
+"5194": "16 GB",
+"5195": "3200 MT/s"
+}
+},
+{
 "id": "1065610",
 "url": "https://www.epey.com/bellek-ram/micron-mta16atf2g64az-3g2j1.html",
 "name": "Micron MTA16ATF2G64AZ-3G2J1",
@@ -11047,8 +10987,8 @@
 "name": "Samsung M378A2G43AB3-CWE",
 "code": "",
 "img": "https://resim.epey.com/928295/k_samsung-m378a2g43ab3-cwe-3.jpg",
-"price": 8450.0,
-"sites": 2,
+"price": 8449.0,
+"sites": 3,
 "score": 43,
 "cols": {
 "5193": "DDR4",
@@ -11093,7 +11033,7 @@
 "code": "AD4U320016G22-SGN",
 "img": "https://resim.epey.com/842673/k_adata-ad4u320016g22-sgn-1.jpg",
 "price": 8500.0,
-"sites": 3,
+"sites": 2,
 "score": 43,
 "cols": {
 "5193": "DDR4",
@@ -11377,7 +11317,7 @@
 "name": "Hikvision U1",
 "code": "HKED4161CAB2F1ZB1-16G",
 "img": "https://resim.epey.com/809755/k_hikvision-hked4161cab2f1zb1-16g-1.jpg",
-"price": 48728.43,
+"price": 47228.43,
 "sites": 1,
 "score": 42,
 "cols": {
@@ -11647,7 +11587,7 @@
 "name": "Kingston Impact",
 "code": "KF432S20IB/16TR",
 "img": "https://resim.epey.com/997519/k_kingston-impact-kf432s20ib-16tr-1.jpg",
-"price": 6788.1,
+"price": 4500.0,
 "sites": 5,
 "score": 42,
 "cols": {
@@ -11768,7 +11708,7 @@
 "code": "",
 "img": "https://resim.epey.com/1040363/k_crucial-ct16g4sfd832a-2.jpg",
 "price": 7122.48,
-"sites": 5,
+"sites": 4,
 "score": 41,
 "cols": {
 "5193": "DDR4",
@@ -11887,7 +11827,7 @@
 "name": "Samsung M471A2K43EB1-CWE",
 "code": "",
 "img": "https://resim.epey.com/856723/k_samsung-m471a2k43eb1-cwe-1.jpg",
-"price": 5569.8,
+"price": 5299.72,
 "sites": 5,
 "score": 41,
 "cols": {
@@ -11947,7 +11887,7 @@
 "name": "Goodram GR3200S464L22-16G",
 "code": "",
 "img": "https://resim.epey.com/842860/k_goodram-gr3200s464l22-16g-1.jpg",
-"price": 6208.44,
+"price": 5999.0,
 "sites": 8,
 "score": 41,
 "cols": {
@@ -12007,7 +11947,7 @@
 "name": "Hi-Level HLV-SOPC25600D4/16G",
 "code": "",
 "img": "https://resim.epey.com/818375/k_hi-level-hlv-sopc25600d4-16g-1.jpg",
-"price": 4606.0,
+"price": 4590.0,
 "sites": 9,
 "score": 41,
 "cols": {
@@ -12172,8 +12112,8 @@
 "name": "Crucial Basics",
 "code": "CT16G4SFRA32A",
 "img": "https://resim.epey.com/651102/k_crucial-basics-ntb-16gb-cb16gs2400-1.jpg",
-"price": 5854.3,
-"sites": 8,
+"price": 5673.0,
+"sites": 6,
 "score": 41,
 "cols": {
 "5193": "DDR4",
@@ -12742,8 +12682,8 @@
 "name": "Samsung M378A2K43CB1-CRC",
 "code": "",
 "img": "https://resim.epey.com/937629/k_samsung-m378a2k43cb1-crc-16-gb-pc4-19200-ddr4-2400-mhz-1.jpg",
-"price": 6000.0,
-"sites": 2,
+"price": 6510.0,
+"sites": 1,
 "score": 41,
 "cols": {
 "5193": "DDR4",
@@ -12997,7 +12937,7 @@
 "name": "Hi-Level HLV-SOPC21300D4/16G",
 "code": "",
 "img": "https://resim.epey.com/170656/k_hi-level-sopc17066d4-16g-1.jpg",
-"price": 5099.42,
+"price": 5054.52,
 "sites": 10,
 "score": 41,
 "cols": {
@@ -13417,7 +13357,7 @@
 "name": "Crucial CT16G4S266M",
 "code": "",
 "img": "https://resim.epey.com/197402/k_crucial-16gb-for-mac-ct16g4s266m-1.png",
-"price": 5579.99,
+"price": 5579.07,
 "sites": 3,
 "score": 40,
 "cols": {
@@ -13672,7 +13612,7 @@
 "name": "Dragos EdgeHorizon M",
 "code": "ID0002390",
 "img": "https://resim.epey.com/871706/k_dragos-edgehorizon-m-8gb-ddr4-3200mhz-1.jpg",
-"price": 3800.0,
+"price": 3534.0,
 "sites": 3,
 "score": 40,
 "cols": {
@@ -13747,7 +13687,7 @@
 "name": "Samsung M471A1G44AB0-CWE",
 "code": "",
 "img": "https://resim.epey.com/854401/k_samsung-m471a1g44ab0-cwe-1.jpg",
-"price": 3347.07,
+"price": 3245.7,
 "sites": 3,
 "score": 40,
 "cols": {
@@ -13957,7 +13897,7 @@
 "name": "Crucial Basics",
 "code": "CT8G4SFRA32A",
 "img": "https://resim.epey.com/651101/k_crucial-basics-ct8g4sfra32a-1.jpg",
-"price": 3039.04,
+"price": 3300.57,
 "sites": 8,
 "score": 40,
 "cols": {
@@ -15187,8 +15127,8 @@
 "name": "Hi-Level HLV-PC19200D4-4G",
 "code": "",
 "img": "https://resim.epey.com/156987/k_hi-level-hlv-pc19200d4-4g-1.jpg",
-"price": 3069.0,
-"sites": 1,
+"price": 2797.48,
+"sites": 2,
 "score": 39,
 "cols": {
 "5193": "DDR4",
@@ -15292,7 +15232,7 @@
 "name": "SK Hynix HMA81GS6CJR8N-VK",
 "code": "",
 "img": "https://resim.epey.com/794042/k_sk-hynix-hma81gs6cjr8n-vk-1.jpg",
-"price": 3172.16,
+"price": 3200.0,
 "sites": 3,
 "score": 39,
 "cols": {
@@ -15502,7 +15442,7 @@
 "name": "Kingston ValueRAM",
 "code": "KVR26S19S8/8",
 "img": "https://resim.epey.com/156959/k_kingston-valueram-1.jpg",
-"price": 3138.75,
+"price": 3095.0,
 "sites": 2,
 "score": 39,
 "cols": {
@@ -15592,7 +15532,7 @@
 "name": "G.Skill Ripjaws V",
 "code": "F4-3200C16S-8GVKB",
 "img": "https://resim.epey.com/123106/k_g-skill-8gb-ripjawsv-f4-3200c16s-8gvkb-1.jpg",
-"price": 3884.0,
+"price": 4781.8,
 "sites": 9,
 "score": 39,
 "cols": {
@@ -15637,7 +15577,7 @@
 "name": "HyperX Fury DDR3",
 "code": "HX316C10FB/8",
 "img": "https://resim.epey.com/123147/k_kingston-hyperx-fury-hx316c10fb-8-1.jpg",
-"price": 1200.0,
+"price": 1299.0,
 "sites": 4,
 "score": 39,
 "cols": {
@@ -15772,7 +15712,7 @@
 "name": "Micron MTA8ATF1G64HZ-2G3B1",
 "code": "",
 "img": "https://resim.epey.com/855387/k_micron-mta8atf1g64hz-2g3b1-1.jpg",
-"price": 3000.0,
+"price": 3999.0,
 "sites": 1,
 "score": 38,
 "cols": {
@@ -15848,7 +15788,7 @@
 "code": "CB8GS2400",
 "img": "https://resim.epey.com/162071/k_crucial-basics-ntb-16gb-cb16gs2400-1.jpg",
 "price": 3254.1,
-"sites": 3,
+"sites": 2,
 "score": 38,
 "cols": {
 "5193": "DDR4",
@@ -17992,7 +17932,7 @@
 "name": "Kingston ValueRAM",
 "code": "KVR16N11/4",
 "img": "https://resim.epey.com/202941/k_kingston-valueram-kvr16n11-4-1.jpg",
-"price": 815.0,
+"price": 836.1,
 "sites": 3,
 "score": 35,
 "cols": {
@@ -18293,7 +18233,7 @@
 "code": "KCP3L16SD8/8",
 "img": "https://resim.epey.com/425134/k_kingston-8gb-kcp3l16sd8-8-1.jpg",
 "price": 7425.9,
-"sites": 4,
+"sites": 5,
 "score": 35,
 "cols": {
 "5193": "DDR3",
@@ -19838,7 +19778,7 @@
 "code": "",
 "img": "https://resim.epey.com/168849/k_samsung-m471b5273ch0-4gb-1.jpg",
 "price": 703.1,
-"sites": 5,
+"sites": 4,
 "score": 34,
 "cols": {
 "5193": "DDR3",
