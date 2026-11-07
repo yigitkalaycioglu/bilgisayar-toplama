@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-06T08:07:48+00:00",
+"updated": "2026-11-07T07:00:35+00:00",
 "rows": [
 {
 "id": "983823",
@@ -71,7 +71,7 @@
 "name": "ASRock Z890 Taichi OCF",
 "code": "90-MXBPM0-A0UAYZ",
 "img": "https://resim.epey.com/983836/k_asrock-z890-taichi-ocf-6.jpg",
-"price": 34741.5,
+"price": 34757.8,
 "sites": 2,
 "score": 93,
 "cols": {
@@ -98,22 +98,6 @@
 }
 },
 {
-"id": "968538",
-"url": "https://www.epey.com/anakart/msi-meg-z890-ace.html",
-"name": "MSI MEG Z890 Ace",
-"code": "",
-"img": "https://resim.epey.com/968538/k_msi-meg-z890-ace-1.jpg",
-"price": 29999.0,
-"sites": 1,
-"score": 93,
-"cols": {
-"5715": "Intel Z890",
-"5716": "LGA 1851",
-"5719": "DDR5",
-"5721": "9200 MT/s"
-}
-},
-{
 "id": "1047547",
 "url": "https://www.epey.com/anakart/asus-rog-crosshair-x870e-dark-hero.html",
 "name": "Asus ROG Crosshair X870E Dark Hero",
@@ -135,7 +119,7 @@
 "name": "Asus ROG Crosshair X870E Extreme",
 "code": "",
 "img": "https://resim.epey.com/1008855/k_asus-rog-crosshair-x870e-extreme-1.jpg",
-"price": 60499.0,
+"price": 63786.23,
 "sites": 5,
 "score": 92,
 "cols": {
@@ -216,7 +200,7 @@
 "code": "90MB1ID0-M0EAY0",
 "img": "https://resim.epey.com/968654/k_asus-rog-maximus-z890-hero-1.jpg",
 "price": 28615.02,
-"sites": 5,
+"sites": 6,
 "score": 89,
 "cols": {
 "5715": "Intel Z890",
@@ -343,8 +327,8 @@
 "name": "Gigabyte X870E Aorus Pro X3D",
 "code": "",
 "img": "https://resim.epey.com/1047390/k_gigabyte-x870e-aorus-pro-x3d-1.jpg",
-"price": 22232.47,
-"sites": 8,
+"price": 21989.0,
+"sites": 7,
 "score": 87,
 "cols": {
 "5715": "AMD X870E",
@@ -359,8 +343,8 @@
 "name": "Gigabyte X870E Aorus Pro X3D Ice",
 "code": "",
 "img": "https://resim.epey.com/1040344/k_gigabyte-x870e-aorus-pro-x3d-ice-1.jpg",
-"price": 23799.0,
-"sites": 7,
+"price": 22239.75,
+"sites": 8,
 "score": 87,
 "cols": {
 "5715": "AMD X870E",
@@ -439,7 +423,7 @@
 "name": "Asus ROG Strix Z890-E Gaming WiFi",
 "code": "90MB1IM0-M0EAY0",
 "img": "https://resim.epey.com/968652/k_asus-rog-strix-z890-e-gaming-wifi-1.jpg",
-"price": 26533.96,
+"price": 26586.92,
 "sites": 5,
 "score": 86,
 "cols": {
@@ -504,7 +488,7 @@
 "code": "",
 "img": "https://resim.epey.com/1074348/k_gigabyte-x870e-aero-x3d-dark-wood-1.jpg",
 "price": 25499.0,
-"sites": 7,
+"sites": 9,
 "score": 85,
 "cols": {
 "5715": "AMD X870E",
@@ -520,7 +504,7 @@
 "code": "",
 "img": "https://resim.epey.com/1048181/k_gigabyte-x870e-aero-x3d-wood-1.jpg",
 "price": 19999.0,
-"sites": 11,
+"sites": 12,
 "score": 85,
 "cols": {
 "5715": "AMD X870E",
@@ -567,7 +551,7 @@
 "name": "Colorful iGame X870E Vulcan OC V14",
 "code": "",
 "img": "https://resim.epey.com/1062066/k_colorful-igame-x870e-vulcan-oc-v14-1.jpg",
-"price": 29399.02,
+"price": 29999.0,
 "sites": 5,
 "score": 85,
 "cols": {
@@ -583,7 +567,7 @@
 "name": "ASRock X870 Nova WiFi",
 "code": "",
 "img": "https://resim.epey.com/1037187/k_asrock-x870-nova-wifi-1.jpg",
-"price": 34799.0,
+"price": 32599.0,
 "sites": 1,
 "score": 85,
 "cols": {
@@ -599,8 +583,8 @@
 "name": "Gigabyte X870 Aorus Stealth",
 "code": "",
 "img": "https://resim.epey.com/1074865/k_gigabyte-x870-aorus-stealth-1.jpg",
-"price": 18419.33,
-"sites": 9,
+"price": 17973.64,
+"sites": 10,
 "score": 84,
 "cols": {
 "5715": "AMD X870",
@@ -631,8 +615,8 @@
 "name": "ASRock Phantom Gaming Z890 Nova WiFi",
 "code": "90-MXBPS0-A0UAYZ",
 "img": "https://resim.epey.com/977148/k_asrock-phantom-gaming-z890-nova-wifi-1.jpg",
-"price": 28623.5,
-"sites": 1,
+"price": 28637.0,
+"sites": 2,
 "score": 84,
 "cols": {
 "5715": "Intel Z890",
@@ -744,7 +728,7 @@
 "code": "90MB1NY0-M0EAY0",
 "img": "https://resim.epey.com/1049141/k_asus-tuf-gaming-x870-pro-wifi7-w-neo-1.jpg",
 "price": 21999.0,
-"sites": 11,
+"sites": 12,
 "score": 83,
 "cols": {
 "5715": "AMD X870",
@@ -759,7 +743,7 @@
 "name": "MSI MPG Z890 Carbon WiFi",
 "code": "",
 "img": "https://resim.epey.com/968552/k_msi-mpg-z890-carbon-wifi-1.jpg",
-"price": 25611.95,
+"price": 25569.18,
 "sites": 12,
 "score": 83,
 "cols": {
@@ -775,7 +759,7 @@
 "name": "Asus ROG Strix Z890-F Gaming WiFi",
 "code": "90MB1I40-M0EAY0",
 "img": "https://resim.epey.com/968648/k_asus-rog-strix-z890-f-gaming-wifi-1.jpg",
-"price": 17640.42,
+"price": 17985.24,
 "sites": 11,
 "score": 83,
 "cols": {
@@ -823,8 +807,8 @@
 "name": "ASRock X670E Taichi",
 "code": "",
 "img": "https://resim.epey.com/862995/k_asrock-x670e-taichi-1.jpg",
-"price": 33429.0,
-"sites": 4,
+"price": 33569.0,
+"sites": 5,
 "score": 83,
 "cols": {
 "5715": "AMD X670E",
@@ -839,7 +823,7 @@
 "name": "Asus ROG Strix B850-F Gaming WiFi7 Neo",
 "code": "",
 "img": "https://resim.epey.com/1055233/k_asus-rog-strix-b850-f-gaming-wifi7-neo-1.jpg",
-"price": 17998.35,
+"price": 18555.0,
 "sites": 10,
 "score": 83,
 "cols": {
@@ -855,7 +839,7 @@
 "name": "Gigabyte X670E Aorus Xtreme",
 "code": "",
 "img": "https://resim.epey.com/915376/k_gigabyte-x670e-aorus-xtreme-1.jpg",
-"price": 45079.02,
+"price": 45999.0,
 "sites": 10,
 "score": 83,
 "cols": {
@@ -872,7 +856,7 @@
 "code": "90MB1J60-M0EAY0",
 "img": "https://resim.epey.com/986892/k_asus-rog-strix-b850-e-gaming-wifi-1.jpg",
 "price": 20199.0,
-"sites": 10,
+"sites": 11,
 "score": 83,
 "cols": {
 "5715": "AMD B850",
@@ -967,7 +951,7 @@
 "name": "Asus ProArt X870E-Creator WiFi",
 "code": "90MB1IG0-M0EAY0",
 "img": "https://resim.epey.com/963922/k_asus-proart-x870e-creator-wifi-1.jpg",
-"price": 36170.91,
+"price": 36187.94,
 "sites": 6,
 "score": 82,
 "cols": {
@@ -983,7 +967,7 @@
 "name": "MSI MAG X870E Tomahawk Max WiFi PZ",
 "code": "",
 "img": "https://resim.epey.com/1038976/k_msi-mag-x870e-tomahawk-max-wifi-pz-1.jpg",
-"price": 18144.05,
+"price": 19099.0,
 "sites": 10,
 "score": 82,
 "cols": {
@@ -999,7 +983,7 @@
 "name": "ASRock Z890 LiveMixer WiFi",
 "code": "90-MXBPE0-A0UAYZ",
 "img": "https://resim.epey.com/971072/k_asrock-z890-livemixer-wifi-1.jpg",
-"price": 17339.87,
+"price": 17348.03,
 "sites": 6,
 "score": 82,
 "cols": {
@@ -1047,7 +1031,7 @@
 "name": "Asus ProArt Z890-Creator WiFi",
 "code": "90MB1JD0-M0EAY0",
 "img": "https://resim.epey.com/968748/k_asus-proart-z890-creator-wifi-1.jpg",
-"price": 43332.12,
+"price": 43352.52,
 "sites": 2,
 "score": 82,
 "cols": {
@@ -1063,8 +1047,8 @@
 "name": "NZXT N9 Z890",
 "code": "N9-Z89XT-W1",
 "img": "https://resim.epey.com/1069670/k_nzxt-n9-z890-n9-z89xt-w1-1.jpg",
-"price": 9399.06,
-"sites": 4,
+"price": 9306.57,
+"sites": 5,
 "score": 82,
 "cols": {
 "5715": "Intel Z890",
@@ -1111,7 +1095,7 @@
 "name": "Asus ROG Strix B860-F Gaming WiFi",
 "code": "90MB1JG0-M0EAY0",
 "img": "https://resim.epey.com/988359/k_asus-rog-strix-b860-f-gaming-wifi-1.jpg",
-"price": 13152.23,
+"price": 13559.0,
 "sites": 3,
 "score": 81,
 "cols": {
@@ -1160,7 +1144,7 @@
 "code": "",
 "img": "https://resim.epey.com/993296/k_msi-mpg-x870e-edge-ti-wifi-1.jpg",
 "price": 22467.1,
-"sites": 7,
+"sites": 8,
 "score": 81,
 "cols": {
 "5715": "AMD X870E",
@@ -1191,8 +1175,8 @@
 "name": "NZXT N9 X870E",
 "code": "N9-X87XT-W1",
 "img": "https://resim.epey.com/1069501/k_nzxt-n9-x870e-n9-x87xt-w1-1.jpg",
-"price": 16000.0,
-"sites": 1,
+"price": 15477.1,
+"sites": 4,
 "score": 81,
 "cols": {
 "5715": "AMD X870E",
@@ -1207,8 +1191,8 @@
 "name": "NZXT N9 X870E",
 "code": "N9-X87XT-B1",
 "img": "https://resim.epey.com/1069500/k_nzxt-n9-x870e-1.jpg",
-"price": 15144.61,
-"sites": 5,
+"price": 14412.0,
+"sites": 6,
 "score": 81,
 "cols": {
 "5715": "AMD X870E",
@@ -1239,7 +1223,7 @@
 "name": "MSI MAG B850M Mortar WiFi",
 "code": "",
 "img": "https://resim.epey.com/1018280/k_msi-mag-b850m-mortar-wifi-1.jpg",
-"price": 13916.55,
+"price": 13995.86,
 "sites": 9,
 "score": 81,
 "cols": {
@@ -1256,7 +1240,7 @@
 "code": "",
 "img": "https://resim.epey.com/990334/k_msi-mag-x870e-tomahawk-wifi-1.jpg",
 "price": 21073.78,
-"sites": 12,
+"sites": 10,
 "score": 81,
 "cols": {
 "5715": "AMD X870E",
@@ -1272,7 +1256,7 @@
 "code": "",
 "img": "https://resim.epey.com/986969/k_msi-pro-z890-a-wifi-1.jpg",
 "price": 22999.0,
-"sites": 2,
+"sites": 3,
 "score": 81,
 "cols": {
 "5715": "Intel Z890",
@@ -1287,8 +1271,8 @@
 "name": "Asus ROG Strix X870-F Gaming WiFi",
 "code": "90MB1IV0-M0EAY0",
 "img": "https://resim.epey.com/963941/k_asus-rog-strix-x870-f-gaming-wifi-1.jpg",
-"price": 26299.0,
-"sites": 8,
+"price": 23599.0,
+"sites": 9,
 "score": 81,
 "cols": {
 "5715": "AMD X870",
@@ -1319,7 +1303,7 @@
 "name": "Asus ROG Strix B860-A Gaming WiFi",
 "code": "90MB1JI0-M0EAY0",
 "img": "https://resim.epey.com/993312/k_asus-rog-strix-b860-a-gaming-wifi-1.jpg",
-"price": 12483.01,
+"price": 12869.08,
 "sites": 6,
 "score": 81,
 "cols": {
@@ -1335,7 +1319,7 @@
 "name": "Asus ROG Strix B860-G Gaming WiFi",
 "code": "90MB1JF0-M0EAY0",
 "img": "https://resim.epey.com/988335/k_asus-rog-strix-b860-g-gaming-wifi-1.jpg",
-"price": 13249.0,
+"price": 13299.0,
 "sites": 2,
 "score": 81,
 "cols": {
@@ -1367,7 +1351,7 @@
 "name": "Asus ROG Strix X870-A Gaming WiFi",
 "code": "90MB1IF0-M0EAY0",
 "img": "https://resim.epey.com/964263/k_asus-rog-strix-x870-a-gaming-wifi-1.jpg",
-"price": 24617.4,
+"price": 24670.8,
 "sites": 12,
 "score": 80,
 "cols": {
@@ -1383,7 +1367,7 @@
 "name": "MSI Z890 Gaming Plus WiFi",
 "code": "",
 "img": "https://resim.epey.com/968460/k_msi-z890-gaming-plus-wifi-1.jpg",
-"price": 13385.03,
+"price": 13799.0,
 "sites": 5,
 "score": 80,
 "cols": {
@@ -1463,7 +1447,7 @@
 "name": "Asus ROG Strix X870E-H Gaming WiFi7",
 "code": "",
 "img": "https://resim.epey.com/1026549/k_asus-rog-strix-x870e-h-gaming-wifi7-1.jpg",
-"price": 22590.33,
+"price": 24799.0,
 "sites": 9,
 "score": 79,
 "cols": {
@@ -1495,7 +1479,7 @@
 "name": "MSI MAG B860 Tomahawk WiFi",
 "code": "",
 "img": "https://resim.epey.com/987478/k_msi-mag-b860-tomahawk-wifi-1.jpg",
-"price": 11374.09,
+"price": 11499.99,
 "sites": 6,
 "score": 79,
 "cols": {
@@ -1511,8 +1495,8 @@
 "name": "Gigabyte Z890 Aero G",
 "code": "",
 "img": "https://resim.epey.com/969195/k_gigabyte-z890-aero-g-1.jpg",
-"price": 16999.0,
-"sites": 7,
+"price": 16576.41,
+"sites": 8,
 "score": 79,
 "cols": {
 "5715": "Intel Z890",
@@ -1607,7 +1591,7 @@
 "name": "Asus TUF Gaming Z890-Pro WiFi",
 "code": "90MB1IR0-M0EAY0",
 "img": "https://resim.epey.com/968758/k_asus-tuf-gaming-z890-pro-wifi-1.jpg",
-"price": 15228.03,
+"price": 15099.0,
 "sites": 11,
 "score": 79,
 "cols": {
@@ -1623,7 +1607,7 @@
 "name": "MSI B850 MLG Edition",
 "code": "",
 "img": "https://resim.epey.com/1027164/k_msi-b850-mlg-edition-1.jpg",
-"price": 17203.19,
+"price": 16999.78,
 "sites": 5,
 "score": 79,
 "cols": {
@@ -1655,7 +1639,7 @@
 "name": "MSI MPG B850 Edge Ti WiFi",
 "code": "",
 "img": "https://resim.epey.com/993286/k_msi-mpg-b850-edge-ti-wifi-1.jpg",
-"price": 16096.13,
+"price": 16943.29,
 "sites": 12,
 "score": 79,
 "cols": {
@@ -1687,8 +1671,8 @@
 "name": "Gigabyte X870E Aorus Elite WiFi7 Ice",
 "code": "",
 "img": "https://resim.epey.com/1016836/k_gigabyte-x870e-aorus-elite-wifi7-ice-1.jpg",
-"price": 16399.0,
-"sites": 10,
+"price": 16299.0,
+"sites": 11,
 "score": 79,
 "cols": {
 "5715": "AMD X870E",
@@ -1736,7 +1720,7 @@
 "code": "",
 "img": "https://resim.epey.com/969246/k_gigabyte-x870e-aorus-elite-wifi7-1.jpg",
 "price": 15907.03,
-"sites": 11,
+"sites": 12,
 "score": 79,
 "cols": {
 "5715": "AMD X870E",
@@ -1783,7 +1767,7 @@
 "name": "MSI X870E Gaming Plus WiFi",
 "code": "",
 "img": "https://resim.epey.com/1016560/k_msi-x870e-gaming-plus-wifi-1.jpg",
-"price": 16396.38,
+"price": 16288.09,
 "sites": 11,
 "score": 79,
 "cols": {
@@ -1815,7 +1799,7 @@
 "name": "MSI MAG B850 Tomahawk",
 "code": "",
 "img": "https://resim.epey.com/1039031/k_msi-mag-b850-tomahawk-4.jpg",
-"price": 15049.0,
+"price": 14999.0,
 "sites": 13,
 "score": 79,
 "cols": {
@@ -1831,7 +1815,7 @@
 "name": "ASRock B860 Steel Legend WiFi",
 "code": "",
 "img": "https://resim.epey.com/993799/k_asrock-b860-steel-legend-wifi-1.jpg",
-"price": 14196.09,
+"price": 14202.78,
 "sites": 5,
 "score": 79,
 "cols": {
@@ -1879,7 +1863,7 @@
 "name": "Asus ROG Strix B850-A Gaming WiFi",
 "code": "",
 "img": "https://resim.epey.com/987202/k_asus-rog-strix-b850-a-gaming-wifi-1.jpg",
-"price": 14993.02,
+"price": 14999.0,
 "sites": 11,
 "score": 79,
 "cols": {
@@ -1943,7 +1927,7 @@
 "name": "Asus ROG Strix Z890-I Gaming WiFi",
 "code": "90MB1IC0-M0EAY0",
 "img": "https://resim.epey.com/968659/k_asus-rog-strix-z890-i-gaming-wifi-1.jpg",
-"price": 13705.13,
+"price": 14129.0,
 "sites": 3,
 "score": 78,
 "cols": {
@@ -2040,7 +2024,7 @@
 "code": "",
 "img": "https://resim.epey.com/987493/k_msi-pro-b860-p-wifi-2.jpg",
 "price": 11055.84,
-"sites": 4,
+"sites": 2,
 "score": 78,
 "cols": {
 "5715": "Intel B860",
@@ -2055,7 +2039,7 @@
 "name": "Asus TUF Gaming X870-Plus WiFi",
 "code": "90MB1IU0-M0EAY0",
 "img": "https://resim.epey.com/964285/k_asus-tuf-gaming-x870-plus-wifi-1.jpg",
-"price": 19352.75,
+"price": 19255.98,
 "sites": 12,
 "score": 78,
 "cols": {
@@ -2087,7 +2071,7 @@
 "name": "ASRock B860 LiveMixer WiFi",
 "code": "",
 "img": "https://resim.epey.com/993918/k_asrock-b860-livemixer-wifi-1.jpg",
-"price": 13589.0,
+"price": 13649.0,
 "sites": 2,
 "score": 77,
 "cols": {
@@ -2120,7 +2104,7 @@
 "code": "",
 "img": "https://resim.epey.com/987969/k_msi-b860m-gaming-plus-wifi-1.jpg",
 "price": 10010.0,
-"sites": 6,
+"sites": 7,
 "score": 77,
 "cols": {
 "5715": "Intel B860",
@@ -2199,8 +2183,8 @@
 "name": "Gigabyte B850 Aorus Elite WiFi7",
 "code": "",
 "img": "https://resim.epey.com/995157/k_gigabyte-b850-aorus-elite-wifi7-1.jpg",
-"price": 14058.39,
-"sites": 8,
+"price": 14064.94,
+"sites": 9,
 "score": 77,
 "cols": {
 "5715": "AMD B850",
@@ -2215,8 +2199,8 @@
 "name": "Gigabyte B850 Aorus Elite WiFi7 Ice",
 "code": "",
 "img": "https://resim.epey.com/995145/k_gigabyte-b850-aorus-elite-wifi7-ice-1.jpg",
-"price": 11949.0,
-"sites": 7,
+"price": 12369.0,
+"sites": 6,
 "score": 77,
 "cols": {
 "5715": "AMD B850",
@@ -2231,7 +2215,7 @@
 "name": "ASRock X870 Pro RS WiFi",
 "code": "90-MXBQ00-A0UAYZ",
 "img": "https://resim.epey.com/966274/k_asrock-x870-pro-rs-wifi-1.jpg",
-"price": 17319.0,
+"price": 17389.0,
 "sites": 1,
 "score": 77,
 "cols": {
@@ -2248,7 +2232,7 @@
 "code": "90-MXBPJ0-A0UAYZ",
 "img": "https://resim.epey.com/966351/k_asrock-x870-steel-legend-wifi-1.jpg",
 "price": 18039.0,
-"sites": 5,
+"sites": 6,
 "score": 77,
 "cols": {
 "5715": "AMD X870",
@@ -2263,7 +2247,7 @@
 "name": "MSI B850 Gaming Plus WiFi PZ",
 "code": "",
 "img": "https://resim.epey.com/1035034/k_msi-b850-gaming-plus-wifi-pz-1.jpg",
-"price": 10449.05,
+"price": 13611.78,
 "sites": 10,
 "score": 76,
 "cols": {
@@ -2279,7 +2263,7 @@
 "name": "MSI B850 Gaming Plus WiFi",
 "code": "",
 "img": "https://resim.epey.com/986950/k_msi-b850-gaming-plus-wifi-1.jpg",
-"price": 10449.05,
+"price": 10560.0,
 "sites": 12,
 "score": 76,
 "cols": {
@@ -2295,7 +2279,7 @@
 "name": "MSI Pro B850-P WiFi",
 "code": "",
 "img": "https://resim.epey.com/986799/k_msi-pro-b850-p-wifi-1.jpg",
-"price": 11709.0,
+"price": 10559.0,
 "sites": 5,
 "score": 76,
 "cols": {
@@ -2311,7 +2295,7 @@
 "name": "MSI Pro Z890-S WiFi7 PZ",
 "code": "",
 "img": "https://resim.epey.com/1007226/k_msi-pro-z890-s-wifi7-pz-1.jpg",
-"price": 17287.1,
+"price": 17821.75,
 "sites": 2,
 "score": 76,
 "cols": {
@@ -2343,7 +2327,7 @@
 "name": "NZXT N7 Z890",
 "code": "N7-Z89XT-B1",
 "img": "https://resim.epey.com/1070852/k_nzxt-n7-z890-1.jpg",
-"price": 13199.04,
+"price": 13061.55,
 "sites": 2,
 "score": 76,
 "cols": {
@@ -2359,7 +2343,7 @@
 "name": "Maxsun iCraft B860M Cross Pro",
 "code": "",
 "img": "https://resim.epey.com/1046768/k_maxsun-icraft-b860m-cross-pro-1.jpg",
-"price": 14384.13,
+"price": 14393.83,
 "sites": 6,
 "score": 76,
 "cols": {
@@ -2392,7 +2376,7 @@
 "code": "",
 "img": "https://resim.epey.com/1007228/k_colorful-cvn-x870-ark-frozen-v14-1.jpg",
 "price": 16469.0,
-"sites": 5,
+"sites": 6,
 "score": 76,
 "cols": {
 "5715": "AMD X870",
@@ -2423,7 +2407,7 @@
 "name": "MSI Pro Z890-S WiFi",
 "code": "",
 "img": "https://resim.epey.com/968462/k_msi-pro-z890-s-wifi-1.jpg",
-"price": 10395.08,
+"price": 9935.08,
 "sites": 5,
 "score": 76,
 "cols": {
@@ -2472,7 +2456,7 @@
 "code": "",
 "img": "https://resim.epey.com/969223/k_gigabyte-z890-gaming-x-wifi7-1.jpg",
 "price": 12749.0,
-"sites": 9,
+"sites": 10,
 "score": 76,
 "cols": {
 "5715": "Intel Z890",
@@ -2504,7 +2488,7 @@
 "code": "",
 "img": "https://resim.epey.com/990272/k_gigabyte-b860-aorus-elite-wifi7-ice-4.jpg",
 "price": 12480.0,
-"sites": 5,
+"sites": 6,
 "score": 76,
 "cols": {
 "5715": "Intel B860",
@@ -2599,8 +2583,8 @@
 "name": "Asus TUF Gaming B850M-Plus WiFi7",
 "code": "",
 "img": "https://resim.epey.com/1047515/k_asus-tuf-gaming-b850m-plus-wifi7-1.jpg",
-"price": 12739.02,
-"sites": 7,
+"price": 13500.73,
+"sites": 4,
 "score": 75,
 "cols": {
 "5715": "AMD B850",
@@ -2648,7 +2632,7 @@
 "code": "",
 "img": "https://resim.epey.com/925095/k_msi-x670e-gaming-plus-wifi-1.jpg",
 "price": 11040.0,
-"sites": 5,
+"sites": 2,
 "score": 75,
 "cols": {
 "5715": "AMD X670E",
@@ -2663,7 +2647,7 @@
 "name": "MSI Pro Z890-S WiFi6E",
 "code": "",
 "img": "https://resim.epey.com/1057640/k_msi-pro-z890-s-wifi6e-1.jpg",
-"price": 9404.05,
+"price": 9899.0,
 "sites": 9,
 "score": 75,
 "cols": {
@@ -2743,8 +2727,8 @@
 "name": "MSI MAG Z790 Tomahawk WiFi",
 "code": "",
 "img": "https://resim.epey.com/819301/k_msi-mag-z790-tomahawk-wifi-1.jpg",
-"price": 13153.2,
-"sites": 11,
+"price": 13560.0,
+"sites": 12,
 "score": 75,
 "cols": {
 "5715": "Intel Z790",
@@ -2887,7 +2871,7 @@
 "name": "Asus X870 Max Gaming WiFi7",
 "code": "90MB1LY0-M0EAY0",
 "img": "https://resim.epey.com/1009549/k_asus-x870-max-gaming-wifi7-1.jpg",
-"price": 13127.0,
+"price": 13532.99,
 "sites": 13,
 "score": 74,
 "cols": {
@@ -2919,7 +2903,7 @@
 "name": "ASRock B850M Steel Legend WiFi",
 "code": "",
 "img": "https://resim.epey.com/1048200/k_asrock-b850m-steel-legend-wifi-1.jpg",
-"price": 12029.0,
+"price": 12079.0,
 "sites": 1,
 "score": 74,
 "cols": {
@@ -2967,7 +2951,7 @@
 "name": "MSI B850M Gaming Plus WiFi",
 "code": "",
 "img": "https://resim.epey.com/1022817/k_msi-b850m-gaming-plus-wifi-1.jpg",
-"price": 12017.33,
+"price": 12389.0,
 "sites": 7,
 "score": 73,
 "cols": {
@@ -3048,7 +3032,7 @@
 "code": "",
 "img": "https://resim.epey.com/990273/k_gigabyte-b860m-aorus-elite-wifi6e-ice-degil-1.jpg",
 "price": 12799.0,
-"sites": 8,
+"sites": 9,
 "score": 73,
 "cols": {
 "5715": "Intel B860",
@@ -3095,7 +3079,7 @@
 "name": "ASRock B850 Rock WiFi7",
 "code": "",
 "img": "https://resim.epey.com/1063325/k_asrock-b850-rock-wifi7-1.jpg",
-"price": 10829.0,
+"price": 10869.0,
 "sites": 1,
 "score": 73,
 "cols": {
@@ -3127,8 +3111,8 @@
 "name": "Gigabyte B850M Aorus Elite WiFi6E Ice",
 "code": "",
 "img": "https://resim.epey.com/1012994/k_gigabyte-b850m-aorus-elite-wifi6e-ice-1.jpg",
-"price": 11999.0,
-"sites": 7,
+"price": 11661.02,
+"sites": 9,
 "score": 73,
 "cols": {
 "5715": "AMD B850",
@@ -3143,8 +3127,8 @@
 "name": "Gigabyte B860 Eagle WiFi6E",
 "code": "",
 "img": "https://resim.epey.com/986990/k_gigabyte-b860-eagle-wifi6e-1.jpg",
-"price": 11499.0,
-"sites": 8,
+"price": 10499.0,
+"sites": 9,
 "score": 73,
 "cols": {
 "5715": "Intel B860",
@@ -3176,7 +3160,7 @@
 "code": "90MB1J80-M0EAY0",
 "img": "https://resim.epey.com/968753/k_asus-prime-z890m-plus-wifi-1.jpg",
 "price": 11375.0,
-"sites": 8,
+"sites": 9,
 "score": 73,
 "cols": {
 "5715": "Intel Z890",
@@ -3191,7 +3175,7 @@
 "name": "ASRock B850 Challenger WiFi",
 "code": "",
 "img": "https://resim.epey.com/1063373/k_asrock-b850-challenger-wifi-1.jpg",
-"price": 11849.0,
+"price": 11899.0,
 "sites": 1,
 "score": 72,
 "cols": {
@@ -3239,8 +3223,8 @@
 "name": "Gigabyte B850 Gaming X WiFi6E",
 "code": "",
 "img": "https://resim.epey.com/986991/k_gigabyte-b850-gaming-x-wifi6e-1.jpg",
-"price": 13469.0,
-"sites": 9,
+"price": 11999.0,
+"sites": 10,
 "score": 72,
 "cols": {
 "5715": "AMD B850",
@@ -3320,7 +3304,7 @@
 "code": "52123-03-40G",
 "img": "https://resim.epey.com/1026918/k_sapphire-nitro-plus-b850a-wifi-7-1.jpg",
 "price": 11472.0,
-"sites": 4,
+"sites": 5,
 "score": 72,
 "cols": {
 "5715": "AMD B850",
@@ -3399,7 +3383,7 @@
 "name": "Colorful Battle-AX B850M-Plus S WiFi7 V14",
 "code": "",
 "img": "https://resim.epey.com/1045174/k_colorful-battle-ax-b850m-plus-s-wifi7-v14-1.jpg",
-"price": 9509.0,
+"price": 9519.0,
 "sites": 4,
 "score": 71,
 "cols": {
@@ -3415,8 +3399,8 @@
 "name": "Gigabyte B850 Eagle WiFi7 Ice",
 "code": "",
 "img": "https://resim.epey.com/1007229/k_gigabyte-b850-eagle-wifi7-ice-1.jpg",
-"price": 10431.53,
-"sites": 9,
+"price": 10499.0,
+"sites": 10,
 "score": 71,
 "cols": {
 "5715": "AMD B850",
@@ -3480,7 +3464,7 @@
 "code": "",
 "img": "https://resim.epey.com/990304/k_gigabyte-b860-ds3h-wifi6e-1.jpg",
 "price": 11109.0,
-"sites": 7,
+"sites": 6,
 "score": 71,
 "cols": {
 "5715": "Intel B860",
@@ -3495,7 +3479,7 @@
 "name": "MSI MAG B760 Tomahawk WiFi",
 "code": "",
 "img": "https://resim.epey.com/847032/k_msi-mag-b760-tomahawk-wifi-1.jpg",
-"price": 8729.03,
+"price": 8999.0,
 "sites": 9,
 "score": 71,
 "cols": {
@@ -3511,8 +3495,8 @@
 "name": "Gigabyte B760M Aorus Elite WIFI6E",
 "code": "B760M A E WF6E GEN5",
 "img": "https://resim.epey.com/1038920/k_gigabyte-b760m-aorus-elite-wifi6e-1.jpg",
-"price": 9999.0,
-"sites": 5,
+"price": 10282.09,
+"sites": 6,
 "score": 71,
 "cols": {
 "5715": "Intel B760",
@@ -3528,7 +3512,7 @@
 "code": "",
 "img": "https://resim.epey.com/1056622/k_msi-pro-b840-s-evo-wifi6e-1.jpg",
 "price": 7884.05,
-"sites": 12,
+"sites": 13,
 "score": 71,
 "cols": {
 "5715": "AMD B840",
@@ -3575,8 +3559,8 @@
 "name": "Gigabyte B860I Aorus Pro Ice",
 "code": "",
 "img": "https://resim.epey.com/1056605/k_gigabyte-b860i-aorus-pro-ice-1.jpg",
-"price": 13999.0,
-"sites": 4,
+"price": 12599.0,
+"sites": 5,
 "score": 70,
 "cols": {
 "5715": "Intel B860",
@@ -3639,7 +3623,7 @@
 "name": "Maxsun Terminator B850M PRO DARK WIFI",
 "code": "",
 "img": "https://resim.epey.com/1046726/k_maxsun-terminator-b850m-pro-dark-wifi-1.jpg",
-"price": 8321.63,
+"price": 8331.33,
 "sites": 6,
 "score": 70,
 "cols": {
@@ -3655,7 +3639,7 @@
 "name": "Asus B860M Max Gaming AX",
 "code": "90MB1JZ0-M0EAY0",
 "img": "https://resim.epey.com/1034197/k_asus-b860m-max-gaming-ax-1.jpg",
-"price": 8154.87,
+"price": 8407.08,
 "sites": 7,
 "score": 70,
 "cols": {
@@ -3719,7 +3703,7 @@
 "name": "Asus Prime B850-Plus WiFi",
 "code": "90MB1L80-M0EAY0",
 "img": "https://resim.epey.com/1000251/k_asus-prime-b850-plus-wifi-1.jpg",
-"price": 12229.0,
+"price": 12279.0,
 "sites": 3,
 "score": 70,
 "cols": {
@@ -3767,7 +3751,7 @@
 "name": "MSI B850 Gaming Plus WiFi6E",
 "code": "",
 "img": "https://resim.epey.com/1019577/k_msi-b850-gaming-plus-wifi6e-1.jpg",
-"price": 11114.03,
+"price": 11299.0,
 "sites": 13,
 "score": 70,
 "cols": {
@@ -3858,12 +3842,28 @@
 }
 },
 {
+"id": "814918",
+"url": "https://www.epey.com/anakart/msi-mag-b650-tomahawk-wifi.html",
+"name": "MSI MAG B650 Tomahawk WiFi",
+"code": "",
+"img": "https://resim.epey.com/814918/k_msi-mag-b650-tomahawk-wifi-1.jpg",
+"price": 15985.0,
+"sites": 1,
+"score": 70,
+"cols": {
+"5715": "AMD B650",
+"5716": "AM5 (LGA 1718)",
+"5719": "DDR5",
+"5721": "7600 MT/s"
+}
+},
+{
 "id": "1009591",
 "url": "https://www.epey.com/anakart/asus-tuf-gaming-b650e-e-wifi.html",
 "name": "Asus TUF Gaming B650E-E WiFi",
 "code": "90MB1LT0-M0EAY0",
 "img": "https://resim.epey.com/1009591/k_asus-tuf-gaming-b650e-e-wifi-1.jpg",
-"price": 13439.0,
+"price": 12589.0,
 "sites": 1,
 "score": 70,
 "cols": {
@@ -3880,7 +3880,7 @@
 "code": "",
 "img": "https://resim.epey.com/1050451/k_colorful-battle-ax-b850m-plus-pro-wifi-v14-1.jpg",
 "price": 8185.83,
-"sites": 8,
+"sites": 9,
 "score": 70,
 "cols": {
 "5715": "AMD B850",
@@ -3927,7 +3927,7 @@
 "name": "MSI B840 Gaming Plus WiFi",
 "code": "",
 "img": "https://resim.epey.com/986814/k_msi-b840-gaming-plus-wifi-1.jpg",
-"price": 7741.02,
+"price": 7999.0,
 "sites": 9,
 "score": 69,
 "cols": {
@@ -3943,8 +3943,8 @@
 "name": "Gigabyte B850M Eagle WiFi6E",
 "code": "",
 "img": "https://resim.epey.com/1049000/k_gigabyte-b850m-eagle-wifi6e-1.jpg",
-"price": 10469.0,
-"sites": 9,
+"price": 9390.0,
+"sites": 10,
 "score": 69,
 "cols": {
 "5715": "AMD B850",
@@ -3991,7 +3991,7 @@
 "name": "Gigabyte B850 Gaming WiFi6",
 "code": "",
 "img": "https://resim.epey.com/987030/k_gigabyte-b850-gaming-wifi6-1.jpg",
-"price": 13213.66,
+"price": 13219.89,
 "sites": 1,
 "score": 69,
 "cols": {
@@ -4007,8 +4007,8 @@
 "name": "MSI B850M Gaming Plus WiFi6E",
 "code": "",
 "img": "https://resim.epey.com/1023788/k_msi-b850m-gaming-plus-wifi6e-1.jpg",
-"price": 9499.0,
-"sites": 9,
+"price": 9539.0,
+"sites": 8,
 "score": 69,
 "cols": {
 "5715": "AMD B850",
@@ -4071,7 +4071,7 @@
 "name": "ASRock B860 Pro RS",
 "code": "",
 "img": "https://resim.epey.com/993756/k_asrock-b860-pro-rs-1.jpg",
-"price": 11489.0,
+"price": 11529.0,
 "sites": 1,
 "score": 69,
 "cols": {
@@ -4087,8 +4087,8 @@
 "name": "Gigabyte Z890 Eagle",
 "code": "",
 "img": "https://resim.epey.com/1056599/k_gigabyte-z890-eagle-wifi-yok-4719331865214-1.jpg",
-"price": 12199.0,
-"sites": 7,
+"price": 12000.0,
+"sites": 8,
 "score": 69,
 "cols": {
 "5715": "Intel Z890",
@@ -4103,7 +4103,7 @@
 "name": "Gigabyte B650 Aorus Elite AX",
 "code": "",
 "img": "https://resim.epey.com/832744/k_gigabyte-b650-aorus-elite-ax-1.jpg",
-"price": 10117.52,
+"price": 10324.0,
 "sites": 5,
 "score": 69,
 "cols": {
@@ -4168,7 +4168,7 @@
 "code": "",
 "img": "https://resim.epey.com/1048199/k_asus-tuf-gaming-b850m-plus-ii-1.jpg",
 "price": 11649.0,
-"sites": 11,
+"sites": 12,
 "score": 68,
 "cols": {
 "5715": "AMD B850",
@@ -4295,7 +4295,7 @@
 "name": "MSI B840M Gaming Plus WiFi6E",
 "code": "",
 "img": "https://resim.epey.com/1018273/k_msi-b840m-gaming-plus-wifi6e-2.jpg",
-"price": 8644.05,
+"price": 8882.5,
 "sites": 9,
 "score": 68,
 "cols": {
@@ -4311,7 +4311,7 @@
 "name": "Gigabyte B650 Gaming X AX V2",
 "code": "",
 "img": "https://resim.epey.com/1048183/k_gigabyte-b650-gaming-x-ax-v2-1.jpg",
-"price": 8913.33,
+"price": 9189.0,
 "sites": 7,
 "score": 68,
 "cols": {
@@ -4327,7 +4327,7 @@
 "name": "Colorful CVN B850I Gaming Frozen V14",
 "code": "",
 "img": "https://resim.epey.com/1016848/k_colorful-cvn-b850i-gaming-frozen-v14-1.jpg",
-"price": 9609.0,
+"price": 9619.0,
 "sites": 6,
 "score": 68,
 "cols": {
@@ -4360,7 +4360,7 @@
 "code": "90MB1IT0-M0EAY0",
 "img": "https://resim.epey.com/964324/k_asus-prime-x870-p-1.jpg",
 "price": 13535.06,
-"sites": 11,
+"sites": 12,
 "score": 67,
 "cols": {
 "5715": "AMD X870",
@@ -4375,7 +4375,7 @@
 "name": "Asus TUF Gaming B850M-Plus",
 "code": "90MB1IX0-M0EAY0",
 "img": "https://resim.epey.com/988879/k_asus-tuf-gaming-b850m-plus-1.jpg",
-"price": 11284.0,
+"price": 12400.0,
 "sites": 4,
 "score": 67,
 "cols": {
@@ -4391,7 +4391,7 @@
 "name": "ASRock B850M-X WiFi R2.0",
 "code": "",
 "img": "https://resim.epey.com/1044695/k_asrock-b850m-x-wifi-r2-0-1.jpg",
-"price": 7519.0,
+"price": 7549.0,
 "sites": 2,
 "score": 67,
 "cols": {
@@ -4407,7 +4407,7 @@
 "name": "ASRock X670E PG Lightning",
 "code": "90-MXBJ60-A0UAYZ",
 "img": "https://resim.epey.com/924718/k_asrock-x670e-pg-lightning-1.jpg",
-"price": 17104.96,
+"price": 17112.94,
 "sites": 3,
 "score": 67,
 "cols": {
@@ -4439,7 +4439,7 @@
 "name": "ASRock B650M Pro RS WiFi",
 "code": "",
 "img": "https://resim.epey.com/1030622/k_asrock-b650m-pro-rs-wifi-1.jpg",
-"price": 10139.0,
+"price": 10179.0,
 "sites": 1,
 "score": 67,
 "cols": {
@@ -4455,7 +4455,7 @@
 "name": "MSI Pro B650-P WiFi",
 "code": "",
 "img": "https://resim.epey.com/822842/k_msi-pro-b650-p-wifi-1.jpg",
-"price": 14115.19,
+"price": 14121.65,
 "sites": 5,
 "score": 67,
 "cols": {
@@ -4567,7 +4567,7 @@
 "name": "Colorful Battle-AX B650M-Plus WiFi V15",
 "code": "",
 "img": "https://resim.epey.com/990688/k_colorful-battle-ax-b650m-plus-wifi-v15-1.jpg",
-"price": 7574.73,
+"price": 7809.0,
 "sites": 5,
 "score": 67,
 "cols": {
@@ -4583,7 +4583,7 @@
 "name": "Asus B650E Max Gaming WiFi W",
 "code": "90MB1M00-M0EAY0",
 "img": "https://resim.epey.com/1019891/k_asus-b650e-max-gaming-wifi-w-1.jpg",
-"price": 13929.0,
+"price": 13979.0,
 "sites": 4,
 "score": 67,
 "cols": {
@@ -4679,8 +4679,8 @@
 "name": "Colorful Battle-AX B650M White WiFi V15",
 "code": "",
 "img": "https://resim.epey.com/1007235/k_colorful-battle-ax-b650m-white-wifi-v15-1.jpg",
-"price": 7565.03,
-"sites": 4,
+"price": 7799.0,
+"sites": 5,
 "score": 66,
 "cols": {
 "5715": "AMD B650",
@@ -4807,7 +4807,7 @@
 "name": "MSI B760 Gaming Plus WiFi",
 "code": "",
 "img": "https://resim.epey.com/870490/k_msi-b760-gaming-plus-wifi-1.jpg",
-"price": 5984.05,
+"price": 6299.0,
 "sites": 12,
 "score": 66,
 "cols": {
@@ -4824,7 +4824,7 @@
 "code": "",
 "img": "https://resim.epey.com/931001/k_gigabyte-b650-eagle-ax-1.jpg",
 "price": 9199.08,
-"sites": 6,
+"sites": 7,
 "score": 66,
 "cols": {
 "5715": "AMD B650",
@@ -4839,7 +4839,7 @@
 "name": "Asus TUF Gaming X670E-Plus",
 "code": "",
 "img": "https://resim.epey.com/814232/k_asus-tuf-gaming-x670e-plus-1.jpg",
-"price": 23659.09,
+"price": 22560.0,
 "sites": 4,
 "score": 66,
 "cols": {
@@ -4919,7 +4919,7 @@
 "name": "Asus Prime B840-Plus WiFi",
 "code": "",
 "img": "https://resim.epey.com/987226/k_asus-prime-b840-plus-wifi-1.jpg",
-"price": 8917.6,
+"price": 8889.79,
 "sites": 8,
 "score": 65,
 "cols": {
@@ -4935,8 +4935,8 @@
 "name": "MSI Pro B860M-B",
 "code": "",
 "img": "https://resim.epey.com/1036848/k_msi-pro-b860m-b-1.jpg",
-"price": 7859.0,
-"sites": 2,
+"price": 6999.0,
+"sites": 3,
 "score": 65,
 "cols": {
 "5715": "Intel B860",
@@ -4999,8 +4999,8 @@
 "name": "Gigabyte B850 Eagle Ice",
 "code": "",
 "img": "https://resim.epey.com/1016810/k_gigabyte-b850-eagle-1.jpg",
-"price": 9609.0,
-"sites": 9,
+"price": 9935.8,
+"sites": 8,
 "score": 64,
 "cols": {
 "5715": "AMD B850",
@@ -5080,7 +5080,7 @@
 "code": "",
 "img": "https://resim.epey.com/1020503/k_biostar-b850mt-e-pro-1.jpg",
 "price": 6599.0,
-"sites": 2,
+"sites": 3,
 "score": 64,
 "cols": {
 "5715": "AMD B850",
@@ -5095,7 +5095,7 @@
 "name": "Asus TUF Gaming B650M-E WiFi",
 "code": "",
 "img": "https://resim.epey.com/866206/k_asus-tuf-gaming-b650m-e-wifi-4.jpg",
-"price": 12402.79,
+"price": 12530.76,
 "sites": 2,
 "score": 64,
 "cols": {
@@ -5128,7 +5128,7 @@
 "code": "",
 "img": "https://resim.epey.com/876668/k_asus-tuf-gaming-a620-pro-wifi-1.jpg",
 "price": 7999.0,
-"sites": 9,
+"sites": 10,
 "score": 63,
 "cols": {
 "5715": "AMD A620",
@@ -5175,7 +5175,7 @@
 "name": "Gigabyte B760 DS3H AX",
 "code": "",
 "img": "https://resim.epey.com/870820/k_gigabyte-b760-ds3h-ax-1.jpg",
-"price": 6207.03,
+"price": 5879.02,
 "sites": 7,
 "score": 63,
 "cols": {
@@ -5255,7 +5255,7 @@
 "name": "Gigabyte B850M Force",
 "code": "",
 "img": "https://resim.epey.com/1037038/k_gigabyte-b850m-force-1.jpg",
-"price": 6700.0,
+"price": 6579.06,
 "sites": 11,
 "score": 63,
 "cols": {
@@ -5352,7 +5352,7 @@
 "code": "",
 "img": "https://resim.epey.com/923132/k_msi-b760m-gaming-plus-wifi-1.jpg",
 "price": 6785.28,
-"sites": 11,
+"sites": 12,
 "score": 62,
 "cols": {
 "5715": "Intel B760",
@@ -5399,8 +5399,8 @@
 "name": "Gigabyte Z890M Gaming X",
 "code": "",
 "img": "https://resim.epey.com/969200/k_gigabyte-z890m-gaming-x-1.jpg",
-"price": 15841.28,
-"sites": 3,
+"price": 10464.09,
+"sites": 4,
 "score": 61,
 "cols": {
 "5715": "Intel Z890",
@@ -5415,7 +5415,7 @@
 "name": "MSI B760 Gaming Plus WiFi DDR4",
 "code": "",
 "img": "https://resim.epey.com/1020600/k_msi-b760-gaming-plus-wifi-ddr4-1.jpg",
-"price": 8074.05,
+"price": 8499.0,
 "sites": 10,
 "score": 61,
 "cols": {
@@ -5448,7 +5448,7 @@
 "code": "",
 "img": "https://resim.epey.com/847035/k_msi-pro-b760-p-wifi-ddr4-1.jpg",
 "price": 9113.02,
-"sites": 12,
+"sites": 13,
 "score": 61,
 "cols": {
 "5715": "Intel B760",
@@ -5511,7 +5511,7 @@
 "name": "Maxsun Challenger B850M Plus WiFi",
 "code": "",
 "img": "https://resim.epey.com/1046626/k_maxsun-challenger-b850m-plus-wifi-1.jpg",
-"price": 7520.4,
+"price": 7524.0,
 "sites": 3,
 "score": 61,
 "cols": {
@@ -5543,7 +5543,7 @@
 "name": "Asus Prime B850M-A-CSM",
 "code": "90MB1LQ0-M0EAYC",
 "img": "https://resim.epey.com/1018869/k_asus-prime-b850m-a-csm-1.jpg",
-"price": 9587.06,
+"price": 9999.0,
 "sites": 4,
 "score": 60,
 "cols": {
@@ -5575,7 +5575,7 @@
 "name": "ASRock B650M PG Lightning",
 "code": "",
 "img": "https://resim.epey.com/951687/k_asrock-b650m-pg-lightning-1.jpg",
-"price": 7879.0,
+"price": 7909.0,
 "sites": 1,
 "score": 60,
 "cols": {
@@ -5591,8 +5591,8 @@
 "name": "MSI Pro B650M-A WiFi",
 "code": "",
 "img": "https://resim.epey.com/814920/k_msi-pro-b650m-a-wifi-1.jpg",
-"price": 11060.0,
-"sites": 1,
+"price": 9156.87,
+"sites": 3,
 "score": 60,
 "cols": {
 "5715": "AMD B650",
@@ -5672,7 +5672,7 @@
 "code": "",
 "img": "https://resim.epey.com/1004691/k_gigabyte-b860m-ds3h-1.jpg",
 "price": 9135.9,
-"sites": 7,
+"sites": 8,
 "score": 60,
 "cols": {
 "5715": "Intel B860",
@@ -5688,7 +5688,7 @@
 "code": "TUF-GAMING-A620AM-PLUS-WIFI",
 "img": "https://resim.epey.com/1034196/k_asus-tuf-gaming-a620am-plus-wifi-1.jpg",
 "price": 7643.09,
-"sites": 11,
+"sites": 12,
 "score": 60,
 "cols": {
 "5715": "AMD A620",
@@ -5751,8 +5751,8 @@
 "name": "Gigabyte B650 Eagle",
 "code": "",
 "img": "https://resim.epey.com/1016705/k_gigabyte-b650-eagle-1.jpg",
-"price": 8299.21,
-"sites": 8,
+"price": 8133.02,
+"sites": 9,
 "score": 59,
 "cols": {
 "5715": "AMD B650",
@@ -5783,7 +5783,7 @@
 "name": "Gigabyte B760M DS3H Gen5",
 "code": "",
 "img": "https://resim.epey.com/1053314/k_gigabyte-b760m-ds3h-gen5-1.jpg",
-"price": 6499.0,
+"price": 6489.0,
 "sites": 9,
 "score": 59,
 "cols": {
@@ -5799,7 +5799,7 @@
 "name": "ASRock B650M-H/M.2+ WiFi",
 "code": "",
 "img": "https://resim.epey.com/1063322/k_asrock-b650m-h-m-2-plus-wifi-1.jpg",
-"price": 7219.0,
+"price": 7249.0,
 "sites": 1,
 "score": 59,
 "cols": {
@@ -5831,8 +5831,8 @@
 "name": "Colorful Battle-AX B760M-Plus",
 "code": "",
 "img": "https://resim.epey.com/897627/k_colorful-battle-ax-b760m-plus-1.jpg",
-"price": 6144.9,
-"sites": 7,
+"price": 6033.33,
+"sites": 8,
 "score": 59,
 "cols": {
 "5715": "Intel B760",
@@ -5863,7 +5863,7 @@
 "name": "MSI B550 Gaming WiFi",
 "code": "",
 "img": "https://resim.epey.com/1044825/k_msi-b550-gaming-wifi-1.jpg",
-"price": 7161.38,
+"price": 7345.0,
 "sites": 9,
 "score": 59,
 "cols": {
@@ -5879,8 +5879,8 @@
 "name": "Gigabyte B840M DS3H",
 "code": "",
 "img": "https://resim.epey.com/1003449/k_gigabyte-b840m-ds3h-1.jpg",
-"price": 7598.5,
-"sites": 6,
+"price": 6999.0,
+"sites": 7,
 "score": 59,
 "cols": {
 "5715": "AMD B840",
@@ -5895,8 +5895,8 @@
 "name": "Asus Prime B650M-A WiFi II",
 "code": "90MB1EG0-M0EAY0",
 "img": "https://resim.epey.com/862855/k_asus-prime-b650m-a-wifi-ii-1.jpg",
-"price": 10257.97,
-"sites": 9,
+"price": 10278.45,
+"sites": 10,
 "score": 58,
 "cols": {
 "5715": "AMD B650",
@@ -5959,8 +5959,8 @@
 "name": "Biostar B860MT-E Pro",
 "code": "",
 "img": "https://resim.epey.com/1019921/k_biostar-b860mt-e-pro-1.jpg",
-"price": 8275.76,
-"sites": 3,
+"price": 5999.0,
+"sites": 4,
 "score": 58,
 "cols": {
 "5715": "Intel B860",
@@ -6055,8 +6055,8 @@
 "name": "Gigabyte B760 Gaming X",
 "code": "",
 "img": "https://resim.epey.com/870790/k_gigabyte-b760-gaming-x-1.jpg",
-"price": 9769.76,
-"sites": 5,
+"price": 7153.02,
+"sites": 6,
 "score": 58,
 "cols": {
 "5715": "Intel B760",
@@ -6088,7 +6088,7 @@
 "code": "",
 "img": "https://resim.epey.com/1045172/k_colorful-battle-ax-b850m-t-wifi-v14-1.jpg",
 "price": 6972.68,
-"sites": 3,
+"sites": 2,
 "score": 57,
 "cols": {
 "5715": "AMD B850",
@@ -6135,7 +6135,7 @@
 "name": "Gigabyte B760 DS3H AX DDR4",
 "code": "",
 "img": "https://resim.epey.com/865674/k_gigabyte-b760-ds3h-ax-ddr4-1.jpg",
-"price": 7299.0,
+"price": 6999.0,
 "sites": 12,
 "score": 57,
 "cols": {
@@ -6199,7 +6199,7 @@
 "name": "MSI Pro B860M-E",
 "code": "",
 "img": "https://resim.epey.com/1056121/k_msi-pro-b860m-e-1.jpg",
-"price": 5224.05,
+"price": 5499.0,
 "sites": 12,
 "score": 57,
 "cols": {
@@ -6231,7 +6231,7 @@
 "name": "Maxsun Terminator B760M D4 Ice",
 "code": "",
 "img": "https://resim.epey.com/1046747/k_maxsun-terminator-b760m-d4-ice-1.jpg",
-"price": 8389.53,
+"price": 8399.23,
 "sites": 6,
 "score": 57,
 "cols": {
@@ -6247,7 +6247,7 @@
 "name": "ASRock B650M-HDV/M.2",
 "code": "90-MXBLA0-A0UAYZ",
 "img": "https://resim.epey.com/896690/k_asrock-b650m-hdv-m-2-1.jpg",
-"price": 9169.0,
+"price": 9209.0,
 "sites": 3,
 "score": 57,
 "cols": {
@@ -6295,7 +6295,7 @@
 "name": "Maxsun B760M I-Cafe",
 "code": "",
 "img": "https://resim.epey.com/1048202/k_maxsun-b760m-i-cafe-1.jpg",
-"price": 6740.53,
+"price": 6750.23,
 "sites": 4,
 "score": 57,
 "cols": {
@@ -6327,7 +6327,7 @@
 "name": "Colorful Battle-AX B760M-GHA WiFi D5 V20",
 "code": "",
 "img": "https://resim.epey.com/937332/k_colorful-battle-ax-b760m-gha-wifi-d5-v20-1.jpg",
-"price": 5189.5,
+"price": 5350.0,
 "sites": 5,
 "score": 56,
 "cols": {
@@ -6343,8 +6343,8 @@
 "name": "Asus Prime B650-Plus",
 "code": "",
 "img": "https://resim.epey.com/828695/k_asus-prime-b650-plus-1.jpg",
-"price": 9762.1,
-"sites": 8,
+"price": 9069.4,
+"sites": 9,
 "score": 56,
 "cols": {
 "5715": "AMD B650",
@@ -6360,7 +6360,7 @@
 "code": "",
 "img": "https://resim.epey.com/915625/k_gigabyte-b760-ds3h-1.jpg",
 "price": 5868.42,
-"sites": 10,
+"sites": 9,
 "score": 56,
 "cols": {
 "5715": "Intel B760",
@@ -6407,7 +6407,7 @@
 "name": "Asus Pro WS W680-Ace",
 "code": "",
 "img": "https://resim.epey.com/868863/k_asus-pro-ws-w680-ace-1.jpg",
-"price": 31609.63,
+"price": 31624.52,
 "sites": 2,
 "score": 56,
 "cols": {
@@ -6471,7 +6471,7 @@
 "name": "Asus TUF Gaming B650M-E",
 "code": "",
 "img": "https://resim.epey.com/866210/k_asus-tuf-gaming-b650m-e-1.jpg",
-"price": 9990.0,
+"price": 9890.1,
 "sites": 8,
 "score": 56,
 "cols": {
@@ -6503,7 +6503,7 @@
 "name": "Asus B650M-AYW WiFi",
 "code": "",
 "img": "https://resim.epey.com/1038923/k_asus-b650m-ayw-wifi-1.jpg",
-"price": 8010.2,
+"price": 7452.66,
 "sites": 7,
 "score": 55,
 "cols": {
@@ -6519,7 +6519,7 @@
 "name": "Gigabyte B760M DS3H",
 "code": "",
 "img": "https://resim.epey.com/915347/k_gigabyte-b760m-ds3h-1.jpg",
-"price": 6824.09,
+"price": 6719.0,
 "sites": 4,
 "score": 55,
 "cols": {
@@ -6583,7 +6583,7 @@
 "name": "Maxsun B760M Gaming WiFi Ace",
 "code": "",
 "img": "https://resim.epey.com/1046548/k_maxsun-b760m-gaming-wifi-ace-1.jpg",
-"price": 8069.2,
+"price": 8073.0,
 "sites": 2,
 "score": 55,
 "cols": {
@@ -6599,7 +6599,7 @@
 "name": "MSI Pro B760M-P",
 "code": "",
 "img": "https://resim.epey.com/870492/k_msi-pro-b760m-p-1.jpg",
-"price": 4699.0,
+"price": 4719.0,
 "sites": 12,
 "score": 55,
 "cols": {
@@ -6615,8 +6615,8 @@
 "name": "Asus Prime B650M-A WiFi",
 "code": "",
 "img": "https://resim.epey.com/835891/k_asus-prime-b650m-a-wifi-1.jpg",
-"price": 15739.94,
-"sites": 1,
+"price": 8999.0,
+"sites": 2,
 "score": 55,
 "cols": {
 "5715": "AMD B650",
@@ -6712,7 +6712,7 @@
 "code": "",
 "img": "https://resim.epey.com/865729/k_asus-prime-b650-plus-csm-1.jpg",
 "price": 10919.09,
-"sites": 4,
+"sites": 5,
 "score": 54,
 "cols": {
 "5715": "AMD B650",
@@ -6743,7 +6743,7 @@
 "name": "MSI Pro B760-P DDR4 II",
 "code": "",
 "img": "https://resim.epey.com/907927/k_msi-pro-b760-p-ddr4-ii-1.jpg",
-"price": 10229.0,
+"price": 10269.0,
 "sites": 1,
 "score": 54,
 "cols": {
@@ -6760,7 +6760,7 @@
 "code": "TUF GAMING A620AM-PLUS",
 "img": "https://resim.epey.com/1034195/k_asus-tuf-gaming-a620am-plus-1.jpg",
 "price": 5599.0,
-"sites": 10,
+"sites": 9,
 "score": 54,
 "cols": {
 "5715": "AMD A620",
@@ -6823,7 +6823,7 @@
 "name": "MSI B550 Gaming",
 "code": "",
 "img": "https://resim.epey.com/1074646/k_msi-b550-gaming-1.jpg",
-"price": 7899.0,
+"price": 7627.55,
 "sites": 10,
 "score": 53,
 "cols": {
@@ -6984,7 +6984,7 @@
 "code": "",
 "img": "https://resim.epey.com/988475/k_asus-prime-h810m-a-wifi-1.jpg",
 "price": 7080.03,
-"sites": 9,
+"sites": 10,
 "score": 52,
 "cols": {
 "5715": "Intel H810",
@@ -7031,8 +7031,8 @@
 "name": "Sapphire B650M-E",
 "code": "52112-04-40G",
 "img": "https://resim.epey.com/1038986/k_sapphire-b650m-e-1.jpg",
-"price": 5726.68,
-"sites": 4,
+"price": 5437.28,
+"sites": 5,
 "score": 52,
 "cols": {
 "5715": "AMD B650",
@@ -7048,7 +7048,7 @@
 "code": "",
 "img": "https://resim.epey.com/882061/k_gigabyte-a620m-ds3h-1.jpg",
 "price": 4507.02,
-"sites": 9,
+"sites": 10,
 "score": 52,
 "cols": {
 "5715": "AMD A620",
@@ -7063,7 +7063,7 @@
 "name": "MSI Pro B840M-B",
 "code": "",
 "img": "https://resim.epey.com/1016563/k_msi-pro-b840m-b-1.jpg",
-"price": 4901.05,
+"price": 5159.0,
 "sites": 12,
 "score": 52,
 "cols": {
@@ -7079,7 +7079,7 @@
 "name": "Gigabyte H810M Gaming WiFi6",
 "code": "",
 "img": "https://resim.epey.com/1003453/k_gigabyte-h810m-gaming-wifi6-1.jpg",
-"price": 6565.02,
+"price": 6173.02,
 "sites": 9,
 "score": 52,
 "cols": {
@@ -7095,7 +7095,7 @@
 "name": "Asus A620M-F Gaming WiFi",
 "code": "90MB1KT0-M0EAY0",
 "img": "https://resim.epey.com/1003647/k_asus-a620m-f-gaming-wifi-2.jpg",
-"price": 6467.96,
+"price": 6417.59,
 "sites": 7,
 "score": 52,
 "cols": {
@@ -7111,8 +7111,8 @@
 "name": "MSI B550-A Pro",
 "code": "",
 "img": "https://resim.epey.com/563236/k_msi-b550-a-pro-1.png",
-"price": 6899.99,
-"sites": 11,
+"price": 6349.0,
+"sites": 14,
 "score": 52,
 "cols": {
 "5715": "AMD B550",
@@ -7143,8 +7143,8 @@
 "name": "MSI Pro B650M-P",
 "code": "",
 "img": "https://resim.epey.com/890991/k_msi-pro-b650m-p-1.jpg",
-"price": 7980.0,
-"sites": 5,
+"price": 7590.0,
+"sites": 6,
 "score": 52,
 "cols": {
 "5715": "AMD B650",
@@ -7159,7 +7159,7 @@
 "name": "MSI B550M Pro-VDH WiFi",
 "code": "",
 "img": "https://resim.epey.com/593892/k_msi-b550m-pro-vdh-wifi-1.png",
-"price": 5983.58,
+"price": 6137.0,
 "sites": 10,
 "score": 51,
 "cols": {
@@ -7240,7 +7240,7 @@
 "code": "",
 "img": "https://resim.epey.com/976189/k_gigabyte-b760-ds3h-ddr4-1.jpg",
 "price": 5372.83,
-"sites": 9,
+"sites": 10,
 "score": 51,
 "cols": {
 "5715": "Intel B760",
@@ -7271,8 +7271,8 @@
 "name": "Asus EX-B650M-V7",
 "code": "",
 "img": "https://resim.epey.com/897371/k_asus-ex-b650m-v7-1.jpg",
-"price": 7967.79,
-"sites": 5,
+"price": 7825.09,
+"sites": 6,
 "score": 51,
 "cols": {
 "5715": "AMD B650",
@@ -7287,7 +7287,7 @@
 "name": "Asus Prime B850M-F",
 "code": "",
 "img": "https://resim.epey.com/1039046/k_asus-prime-b850m-f-1.jpg",
-"price": 7879.0,
+"price": 7801.06,
 "sites": 5,
 "score": 51,
 "cols": {
@@ -7319,8 +7319,8 @@
 "name": "Asus Pro Q870M-C-CSM",
 "code": "",
 "img": "https://resim.epey.com/1020528/k_asus-pro-q870m-c-csm-1.jpg",
-"price": 8506.9,
-"sites": 11,
+"price": 8212.25,
+"sites": 12,
 "score": 50,
 "cols": {
 "5715": "Intel Q870",
@@ -7335,8 +7335,8 @@
 "name": "MSI Pro H810M-B",
 "code": "",
 "img": "https://resim.epey.com/1018842/k_msi-pro-h810m-b-1.jpg",
-"price": 4364.6,
-"sites": 13,
+"price": 4221.49,
+"sites": 14,
 "score": 50,
 "cols": {
 "5715": "Intel H810",
@@ -7367,7 +7367,7 @@
 "name": "Gigabyte B840M D2H",
 "code": "",
 "img": "https://resim.epey.com/1004042/k_gigabyte-b840m-d2h-1.jpg",
-"price": 6247.81,
+"price": 6304.53,
 "sites": 6,
 "score": 50,
 "cols": {
@@ -7447,7 +7447,7 @@
 "name": "Asus TUF Gaming A620M-Plus",
 "code": "",
 "img": "https://resim.epey.com/867404/k_asus-tuf-gaming-a620m-plus-1.jpg",
-"price": 7679.0,
+"price": 7709.0,
 "sites": 2,
 "score": 50,
 "cols": {
@@ -7479,7 +7479,7 @@
 "name": "Gigabyte B760 Gaming X DDR4",
 "code": "",
 "img": "https://resim.epey.com/850168/k_gigabyte-b760-gaming-x-ddr4-1.jpg",
-"price": 11498.76,
+"price": 11507.86,
 "sites": 1,
 "score": 50,
 "cols": {
@@ -7575,8 +7575,8 @@
 "name": "Asus Prime B650M-K",
 "code": "",
 "img": "https://resim.epey.com/891196/k_asus-prime-b650m-k-1.jpg",
-"price": 5999.0,
-"sites": 10,
+"price": 6649.0,
+"sites": 9,
 "score": 49,
 "cols": {
 "5715": "AMD B650",
@@ -7623,7 +7623,7 @@
 "name": "Asus Prime B650M-R",
 "code": "90MB1H30-M0EAY0",
 "img": "https://resim.epey.com/921469/k_asus-prime-b650m-r-1.jpg",
-"price": 5436.34,
+"price": 4875.01,
 "sites": 13,
 "score": 49,
 "cols": {
@@ -7703,7 +7703,7 @@
 "name": "ASRock H810M-X",
 "code": "90-MXBS40-A0UAYZ",
 "img": "https://resim.epey.com/1047228/k_asrock-h810m-x-90-mxbs40-a0uayz-1.jpg",
-"price": 6679.0,
+"price": 6709.0,
 "sites": 3,
 "score": 48,
 "cols": {
@@ -7720,7 +7720,7 @@
 "code": "",
 "img": "https://resim.epey.com/986275/k_gigabyte-b760m-d3hp-1.jpg",
 "price": 5625.03,
-"sites": 7,
+"sites": 6,
 "score": 48,
 "cols": {
 "5715": "Intel B760",
@@ -7767,7 +7767,7 @@
 "name": "ASRock A620AM-HVS",
 "code": "",
 "img": "https://resim.epey.com/1052660/k_asrock-a620am-hvs-1.jpg",
-"price": 3411.53,
+"price": 3499.0,
 "sites": 3,
 "score": 48,
 "cols": {
@@ -7912,7 +7912,7 @@
 "code": "",
 "img": "https://resim.epey.com/970160/k_dragos-dragmode-z790m-1.jpg",
 "price": 7300.8,
-"sites": 4,
+"sites": 5,
 "score": 47,
 "cols": {
 "5715": "Intel Z790",
@@ -7959,7 +7959,7 @@
 "name": "MSI B550M PRO-VDH",
 "code": "",
 "img": "https://resim.epey.com/644289/k_msi-b550m-pro-vdh-wifi-yok-1.jpg",
-"price": 4464.05,
+"price": 4499.0,
 "sites": 12,
 "score": 47,
 "cols": {
@@ -7991,7 +7991,7 @@
 "name": "MSI Pro A620AM-B Evo",
 "code": "",
 "img": "https://resim.epey.com/1044728/k_msi-pro-a620am-b-evo-1.jpg",
-"price": 3371.55,
+"price": 3549.0,
 "sites": 13,
 "score": 47,
 "cols": {
@@ -8215,7 +8215,7 @@
 "name": "ASRock B760M-HDV/M.2 D4",
 "code": "90-MXBL40-A0UAYZ",
 "img": "https://resim.epey.com/864614/k_asrock-b760m-hdv-m-2-d4-1.jpg",
-"price": 6019.0,
+"price": 6039.0,
 "sites": 3,
 "score": 46,
 "cols": {
@@ -8375,7 +8375,7 @@
 "name": "MSI Pro A620M-B",
 "code": "",
 "img": "https://resim.epey.com/993309/k_msi-pro-a620m-b-1.jpg",
-"price": 4539.0,
+"price": 4450.0,
 "sites": 12,
 "score": 45,
 "cols": {
@@ -8391,7 +8391,7 @@
 "name": "Biostar TZ590-BTC Duo",
 "code": "",
 "img": "https://resim.epey.com/735070/k_biostar-tz590-btc-duo-1.jpg",
-"price": 5869.5,
+"price": 5965.5,
 "sites": 2,
 "score": 45,
 "cols": {
@@ -8440,7 +8440,7 @@
 "code": "",
 "img": "https://resim.epey.com/1046784/k_maxsun-h610m-666-wifi6-d5-1.jpg",
 "price": 4066.02,
-"sites": 5,
+"sites": 6,
 "score": 45,
 "cols": {
 "5715": "Intel H610",
@@ -8536,7 +8536,7 @@
 "code": "",
 "img": "https://resim.epey.com/925113/k_msi-pro-b650m-b-1.jpg",
 "price": 4800.0,
-"sites": 9,
+"sites": 10,
 "score": 44,
 "cols": {
 "5715": "AMD B650",
@@ -8583,7 +8583,7 @@
 "name": "Gigabyte A620M S2H",
 "code": "",
 "img": "https://resim.epey.com/882097/k_gigabyte-a620m-s2h-1.jpg",
-"price": 4619.08,
+"price": 4558.03,
 "sites": 11,
 "score": 44,
 "cols": {
@@ -8599,8 +8599,8 @@
 "name": "Gigabyte A620M H",
 "code": "",
 "img": "https://resim.epey.com/886128/k_gigabyte-a620m-h-1.jpg",
-"price": 3697.64,
-"sites": 11,
+"price": 3782.03,
+"sites": 12,
 "score": 44,
 "cols": {
 "5715": "AMD A620",
@@ -8615,7 +8615,7 @@
 "name": "Gigabyte B650M S2H",
 "code": "",
 "img": "https://resim.epey.com/897300/k_gigabyte-b650m-s2h-1.jpg",
-"price": 4599.14,
+"price": 4594.59,
 "sites": 11,
 "score": 44,
 "cols": {
@@ -8663,8 +8663,8 @@
 "name": "Asus Prime B550M-K",
 "code": "",
 "img": "https://resim.epey.com/563245/k_asus-prime-b550m-k-1.jpg",
-"price": 4999.0,
-"sites": 10,
+"price": 5150.0,
+"sites": 9,
 "score": 44,
 "cols": {
 "5715": "AMD B550",
@@ -8680,7 +8680,7 @@
 "code": "90MB1HA0-M0EAY0",
 "img": "https://resim.epey.com/921548/k_asus-prime-b760m-r-d4-1.jpg",
 "price": 6199.0,
-"sites": 9,
+"sites": 10,
 "score": 44,
 "cols": {
 "5715": "Intel B760",
@@ -8695,8 +8695,8 @@
 "name": "Asus Prime B760M-K D4",
 "code": "",
 "img": "https://resim.epey.com/845615/k_asus-prime-b760m-k-d4-1.jpg",
-"price": 7440.45,
-"sites": 7,
+"price": 7455.3,
+"sites": 8,
 "score": 44,
 "cols": {
 "5715": "Intel B760",
@@ -8727,7 +8727,7 @@
 "name": "MSI Pro A620M-E",
 "code": "",
 "img": "https://resim.epey.com/890995/k_msi-pro-a620m-e-1.jpg",
-"price": 4411.56,
+"price": 4403.49,
 "sites": 10,
 "score": 43,
 "cols": {
@@ -8759,7 +8759,7 @@
 "name": "ASRock H610M-HDV/M.2+ D5",
 "code": "",
 "img": "https://resim.epey.com/1047317/k_asrock-h610m-hdv-m-2-plus-d5-1.jpg",
-"price": 2424.03,
+"price": 2499.0,
 "sites": 4,
 "score": 43,
 "cols": {
@@ -8775,7 +8775,7 @@
 "name": "Asus Prime A620M-E",
 "code": "",
 "img": "https://resim.epey.com/901986/k_asus-prime-a620m-e-1.jpg",
-"price": 4651.01,
+"price": 4660.28,
 "sites": 8,
 "score": 43,
 "cols": {
@@ -8839,7 +8839,7 @@
 "name": "Gigabyte A520M DS3H AC",
 "code": "",
 "img": "https://resim.epey.com/591597/k_gigabyte-a520m-ds3h-ac-1.png",
-"price": 4702.29,
+"price": 4599.08,
 "sites": 9,
 "score": 42,
 "cols": {
@@ -8935,7 +8935,7 @@
 "name": "Maxsun Challanger B760M-F",
 "code": "",
 "img": "https://resim.epey.com/1048222/k_maxsun-challanger-b760m-f-1.jpg",
-"price": 4567.73,
+"price": 4577.43,
 "sites": 6,
 "score": 42,
 "cols": {
@@ -9015,7 +9015,7 @@
 "name": "Asus Prime H810M-K",
 "code": "",
 "img": "https://resim.epey.com/1046841/k_asus-prime-h810m-k-1.jpg",
-"price": 4349.0,
+"price": 4299.0,
 "sites": 14,
 "score": 42,
 "cols": {
@@ -9063,7 +9063,7 @@
 "name": "ASRock B550M-HDV",
 "code": "",
 "img": "https://resim.epey.com/644362/k_asrock-b550m-hdv-1.jpg",
-"price": 4329.0,
+"price": 4349.0,
 "sites": 2,
 "score": 41,
 "cols": {
@@ -9111,7 +9111,7 @@
 "name": "MSI PRO B550M-B",
 "code": "",
 "img": "https://resim.epey.com/1060731/k_msi-pro-b550m-b-1.jpg",
-"price": 4369.05,
+"price": 4599.0,
 "sites": 12,
 "score": 41,
 "cols": {
@@ -9207,7 +9207,7 @@
 "name": "MSI Pro H610M-E",
 "code": "",
 "img": "https://resim.epey.com/896710/k_msi-pro-h610m-e-1.jpg",
-"price": 2146.05,
+"price": 2259.0,
 "sites": 13,
 "score": 40,
 "cols": {
@@ -9223,7 +9223,7 @@
 "name": "Gigabyte B760M D3HP DDR4",
 "code": "",
 "img": "https://resim.epey.com/1004115/k_gigabyte-b760m-d3hp-ddr4-1.jpg",
-"price": 10400.39,
+"price": 10404.94,
 "sites": 2,
 "score": 40,
 "cols": {
@@ -9271,7 +9271,7 @@
 "name": "MSI A520M Pro",
 "code": "",
 "img": "https://resim.epey.com/591559/k_msi-a520m-pro-1.png",
-"price": 3371.55,
+"price": 3549.0,
 "sites": 12,
 "score": 40,
 "cols": {
@@ -9352,7 +9352,7 @@
 "code": "",
 "img": "https://resim.epey.com/956176/k_dragos-dragmode-b760m-d4-pro-8683261168461-1.jpg",
 "price": 4268.7,
-"sites": 5,
+"sites": 6,
 "score": 39,
 "cols": {
 "5715": "Intel B760",
@@ -9368,7 +9368,7 @@
 "code": "",
 "img": "https://resim.epey.com/862355/k_gigabyte-b550m-k-1.jpg",
 "price": 4299.0,
-"sites": 11,
+"sites": 13,
 "score": 39,
 "cols": {
 "5715": "AMD B550",
@@ -9447,7 +9447,7 @@
 "name": "Gigabyte A520M DS3H",
 "code": "",
 "img": "https://resim.epey.com/591595/k_gigabyte-a520m-ds3h-1.png",
-"price": 4179.63,
+"price": 4139.08,
 "sites": 7,
 "score": 38,
 "cols": {
@@ -9463,7 +9463,7 @@
 "name": "Asus Prime H610M-E-CSM",
 "code": "",
 "img": "https://resim.epey.com/894271/k_asus-prime-h610m-e-csm-1.jpg",
-"price": 3112.81,
+"price": 3209.08,
 "sites": 10,
 "score": 38,
 "cols": {
@@ -9559,8 +9559,8 @@
 "name": "Asus Prime H610M-D",
 "code": "90MB1G80-M0EAY0",
 "img": "https://resim.epey.com/911128/k_asus-prime-h610m-d-1.jpg",
-"price": 2841.02,
-"sites": 9,
+"price": 2779.0,
+"sites": 10,
 "score": 37,
 "cols": {
 "5715": "Intel H610",
@@ -9576,7 +9576,7 @@
 "code": "",
 "img": "https://resim.epey.com/903348/k_asus-prime-h610m-k-1.jpg",
 "price": 2821.0,
-"sites": 11,
+"sites": 12,
 "score": 37,
 "cols": {
 "5715": "Intel H610",
@@ -9592,7 +9592,7 @@
 "code": "90MB1G90-M0EAY0",
 "img": "https://resim.epey.com/896425/k_asus-prime-h610m-k-1.jpg",
 "price": 2715.03,
-"sites": 13,
+"sites": 14,
 "score": 37,
 "cols": {
 "5715": "Intel H610",
@@ -9624,7 +9624,7 @@
 "code": "",
 "img": "https://resim.epey.com/1048223/k_dragos-pro-h610d-5-1.jpg",
 "price": 3369.6,
-"sites": 5,
+"sites": 6,
 "score": 37,
 "cols": {
 "5715": "Intel H610",
@@ -9704,7 +9704,7 @@
 "code": "",
 "img": "https://resim.epey.com/368218/k_msi-b450m-a-pro-max-1.png",
 "price": 6550.0,
-"sites": 1,
+"sites": 2,
 "score": 37,
 "cols": {
 "5715": "AMD B450",
@@ -9719,7 +9719,7 @@
 "name": "Asus Prime A520M-E/CSM",
 "code": "",
 "img": "https://resim.epey.com/591531/k_asus-prime-a520m-e-csm-1.jpg",
-"price": 2909.03,
+"price": 2999.0,
 "sites": 12,
 "score": 37,
 "cols": {
@@ -9751,7 +9751,7 @@
 "name": "MSI A520M-A Pro",
 "code": "",
 "img": "https://resim.epey.com/591543/k_msi-a520m-a-pro-1.png",
-"price": 3011.78,
+"price": 3038.0,
 "sites": 13,
 "score": 36,
 "cols": {
@@ -9767,7 +9767,7 @@
 "name": "Asus Prime A520M-K",
 "code": "",
 "img": "https://resim.epey.com/591525/k_asus-prime-a520m-k-1.jpg",
-"price": 2787.53,
+"price": 2859.0,
 "sites": 12,
 "score": 36,
 "cols": {
@@ -9783,7 +9783,7 @@
 "name": "ASRock A520M-HVS",
 "code": "",
 "img": "https://resim.epey.com/862392/k_asrock-a520m-hvs-1.jpg",
-"price": 3249.0,
+"price": 3259.0,
 "sites": 1,
 "score": 36,
 "cols": {
@@ -9831,7 +9831,7 @@
 "name": "ASRock H610M-HVS/M.2 R2.0",
 "code": "",
 "img": "https://resim.epey.com/862384/k_asrock-h610m-hvs-m-2-r2-0-1.jpg",
-"price": 4027.96,
+"price": 4029.85,
 "sites": 6,
 "score": 35,
 "cols": {
@@ -9879,8 +9879,8 @@
 "name": "Gigabyte H610M S2H DDR4",
 "code": "",
 "img": "https://resim.epey.com/783555/k_gigabyte-h610m-s2h-ddr4-1.jpg",
-"price": 4806.06,
-"sites": 7,
+"price": 4179.0,
+"sites": 8,
 "score": 35,
 "cols": {
 "5715": "Intel H610",
@@ -9959,7 +9959,7 @@
 "name": "Gigabyte H510M H",
 "code": "",
 "img": "https://resim.epey.com/704532/k_gigabyte-h510m-h-1.jpg",
-"price": 11375.0,
+"price": 10648.56,
 "sites": 1,
 "score": 34,
 "cols": {
@@ -9967,6 +9967,22 @@
 "5716": "LGA 1200",
 "5719": "DDR4",
 "5721": "3200 MT/s"
+}
+},
+{
+"id": "904085",
+"url": "https://www.epey.com/anakart/asus-pro-h610t-csm.html",
+"name": "Asus Pro H610T-CSM",
+"code": "",
+"img": "https://resim.epey.com/904085/k_asus-pro-h610t-csm-1.jpg",
+"price": 8742.38,
+"sites": 1,
+"score": 34,
+"cols": {
+"5715": "Intel H610",
+"5716": "LGA 1700",
+"5719": "DDR5",
+"5721": "5600 MT/s"
 }
 },
 {
@@ -10039,7 +10055,7 @@
 "name": "Biostar H610MH",
 "code": "",
 "img": "https://resim.epey.com/751755/k_biostar-h610mh-1.jpg",
-"price": 3130.91,
+"price": 3194.8,
 "sites": 5,
 "score": 34,
 "cols": {
@@ -10087,7 +10103,7 @@
 "name": "Maxsun Challenger H610M-H",
 "code": "",
 "img": "https://resim.epey.com/1046711/k_maxsun-challenger-h610m-h-1.jpg",
-"price": 3610.3,
+"price": 3612.0,
 "sites": 6,
 "score": 34,
 "cols": {
@@ -10095,22 +10111,6 @@
 "5716": "LGA 1700",
 "5719": "DDR4",
 "5721": "3200 MT/s"
-}
-},
-{
-"id": "697329",
-"url": "https://www.epey.com/anakart/gigabyte-h410m-h-v2.html",
-"name": "Gigabyte H410M H V2",
-"code": "",
-"img": "https://resim.epey.com/697329/k_gigabyte-h410m-h-v2-1.jpg",
-"price": 5790.9,
-"sites": 1,
-"score": 34,
-"cols": {
-"5715": "Intel H410",
-"5716": "LGA 1200",
-"5719": "DDR4",
-"5721": "2933 MT/s"
 }
 },
 {
@@ -10135,7 +10135,7 @@
 "name": "Seclife H610",
 "code": "H610DA1",
 "img": "https://resim.epey.com/865707/k_seclife-h610-2.jpg",
-"price": 3844.56,
+"price": 3852.32,
 "sites": 2,
 "score": 33,
 "cols": {
@@ -10215,8 +10215,8 @@
 "name": "Seclife H510DA1",
 "code": "",
 "img": "https://resim.epey.com/865714/k_seclife-h510da1-1.jpg",
-"price": 4330.63,
-"sites": 3,
+"price": 4290.0,
+"sites": 4,
 "score": 33,
 "cols": {
 "5715": "Intel H510",
@@ -10311,8 +10311,8 @@
 "name": "Colorful A520M-T V15",
 "code": "",
 "img": "https://resim.epey.com/1069498/k_colorful-a520m-t-v15-1.jpg",
-"price": 3119.0,
-"sites": 7,
+"price": 3129.0,
+"sites": 8,
 "score": 33,
 "cols": {
 "5715": "AMD A520",
@@ -10327,7 +10327,7 @@
 "name": "Gigabyte H610M D3W DDR4",
 "code": "",
 "img": "https://resim.epey.com/1039052/k_gigabyte-h610m-d3w-ddr4-1.jpg",
-"price": 3866.59,
+"price": 3869.32,
 "sites": 3,
 "score": 33,
 "cols": {
@@ -10344,7 +10344,7 @@
 "code": "90MB19N0-M0EAYC",
 "img": "https://resim.epey.com/745498/k_asus-prime-h610m-e-d4-csm-1.jpg",
 "price": 4499.0,
-"sites": 9,
+"sites": 8,
 "score": 33,
 "cols": {
 "5715": "Intel H610",
@@ -10391,7 +10391,7 @@
 "name": "Colorful A520M-T V14",
 "code": "",
 "img": "https://resim.epey.com/1062386/k_colorful-a520m-t-v14-1.jpg",
-"price": 3184.02,
+"price": 3249.0,
 "sites": 9,
 "score": 32,
 "cols": {
@@ -10455,7 +10455,7 @@
 "name": "Biostar TB360-BTC Pro",
 "code": "",
 "img": "https://resim.epey.com/681971/k_biostar-tb360-btc-pro-1.jpg",
-"price": 3640.0,
+"price": 3705.4,
 "sites": 4,
 "score": 32,
 "cols": {
@@ -10471,7 +10471,7 @@
 "name": "Asus Prime H610M-F-CSM",
 "code": "",
 "img": "https://resim.epey.com/1066553/k_asus-prime-h610m-f-csm-1.jpg",
-"price": 4549.46,
+"price": 4558.77,
 "sites": 2,
 "score": 32,
 "cols": {
@@ -10487,7 +10487,7 @@
 "name": "Asus Prime H610M-K D4 ARGB",
 "code": "90MB1HN0-M0EAY0",
 "img": "https://resim.epey.com/1004104/k_asus-prime-h610m-k-d4-argb-1.jpg",
-"price": 4499.04,
+"price": 4502.68,
 "sites": 10,
 "score": 32,
 "cols": {
@@ -10504,7 +10504,7 @@
 "code": "",
 "img": "https://resim.epey.com/784446/k_asus-prime-h610m-r-d4-1.jpg",
 "price": 4299.0,
-"sites": 8,
+"sites": 9,
 "score": 32,
 "cols": {
 "5715": "Intel H610",
@@ -10535,8 +10535,8 @@
 "name": "Asus Prime H510M-F R3.0",
 "code": "",
 "img": "https://resim.epey.com/956178/k_asus-prime-h510m-f-r3-0-4.jpg",
-"price": 17651.4,
-"sites": 1,
+"price": 8049.0,
+"sites": 5,
 "score": 32,
 "cols": {
 "5715": "Intel H510",
@@ -10583,7 +10583,7 @@
 "name": "Asus Prime H610M-F D4 R2.0-CSM",
 "code": "90MB1H70-M0EAYC",
 "img": "https://resim.epey.com/929590/k_asus-prime-h610m-f-d4-r2-0-csm-1.jpg",
-"price": 4458.6,
+"price": 4459.0,
 "sites": 7,
 "score": 32,
 "cols": {
@@ -10679,7 +10679,7 @@
 "name": "ASRock Q270 Pro BTC+",
 "code": "",
 "img": "https://resim.epey.com/756165/k_asrock-q270-pro-btc-plus-1.jpg",
-"price": 2246.4,
+"price": 2228.93,
 "sites": 5,
 "score": 29,
 "cols": {
@@ -10711,7 +10711,7 @@
 "name": "Asus Pro A620AT-CSM",
 "code": "90MB1L5M-M0EAYC",
 "img": "https://resim.epey.com/1031410/k_asus-pro-a620at-csm-1.jpg",
-"price": 7479.0,
+"price": 6569.0,
 "sites": 3,
 "score": 28,
 "cols": {
@@ -10743,7 +10743,7 @@
 "name": "Asus Prime J4005I-C",
 "code": "",
 "img": "https://resim.epey.com/644201/k_asus-prime-j4005i-c-1.jpg",
-"price": 2320.5,
+"price": 2536.99,
 "sites": 3,
 "score": 27,
 "cols": {
@@ -10808,7 +10808,7 @@
 "code": "",
 "img": "https://resim.epey.com/956205/k_dragos-dragmode-b450m-1.jpg",
 "price": 3088.8,
-"sites": 4,
+"sites": 3,
 "score": 25,
 "cols": {
 "5715": "AMD B450",
@@ -10823,7 +10823,7 @@
 "name": "Seclife H610DA",
 "code": "",
 "img": "https://resim.epey.com/1056637/k_esonic-h610da1-1.jpg",
-"price": 4001.57,
+"price": 4001.88,
 "sites": 2,
 "score": 25,
 "cols": {
@@ -10946,22 +10946,6 @@
 }
 },
 {
-"id": "152271",
-"url": "https://www.epey.com/anakart/asus-prime-h310m-k-r2-0.html",
-"name": "Asus Prime H310M-K R2.0",
-"code": "",
-"img": "https://resim.epey.com/152271/k_asus-prime-h310m-k-r2-0-1.jpg",
-"price": 6499.0,
-"sites": 1,
-"score": 22,
-"cols": {
-"5715": "Intel H310",
-"5716": "LGA 1151",
-"5719": "DDR4",
-"5721": "2666 MT/s"
-}
-},
-{
 "id": "1039007",
 "url": "https://www.epey.com/anakart/afox-ih81d3-ma2-v2.html",
 "name": "Afox IH81D3-MA2-V2",
@@ -10983,7 +10967,7 @@
 "name": "Esonic B250-BTC Gladiator",
 "code": "",
 "img": "https://resim.epey.com/391815/k_esonic-b250-btc-1.jpg",
-"price": 2346.24,
+"price": 2808.0,
 "sites": 7,
 "score": 21,
 "cols": {
@@ -11015,30 +10999,14 @@
 "name": "Turbox WorkProf X H110",
 "code": "",
 "img": "https://resim.epey.com/704816/k_turbox-workprof-x-h110-1.jpg",
-"price": 2903.77,
-"sites": 2,
+"price": 2999.0,
+"sites": 1,
 "score": 21,
 "cols": {
 "5715": "Intel H110",
 "5716": "LGA 1151",
 "5719": "DDR4",
 "5721": "2666 MT/s"
-}
-},
-{
-"id": "593904",
-"url": "https://www.epey.com/anakart/turbox-h110.html",
-"name": "Turbox H110",
-"code": "",
-"img": "https://resim.epey.com/593904/k_turbox-h110-1.jpg",
-"price": 3519.36,
-"sites": 2,
-"score": 20,
-"cols": {
-"5715": "Intel H110",
-"5716": "LGA 1151",
-"5719": "DDR4",
-"5721": "2400 MT/s"
 }
 },
 {
@@ -11431,7 +11399,7 @@
 "name": "Seclife H61DA",
 "code": "",
 "img": "https://resim.epey.com/738008/k_seclife-h61da-1.jpg",
-"price": 1610.2,
+"price": 1610.9,
 "sites": 6,
 "score": 13,
 "cols": {
